@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_sys.h,v 1.2 1999/02/16 00:03:31 niklas Exp $	*/
+/*	$OpenBSD: rf_sys.h,v 1.3 1999/08/04 13:10:55 peter Exp $	*/
 /*	$NetBSD: rf_sys.h,v 1.3 1999/02/05 00:06:18 oster Exp $	*/
 /*
  * rf_sys.h

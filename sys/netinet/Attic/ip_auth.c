@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_auth.c,v 1.17 2001/01/30 04:23:55 kjell Exp $	*/
+/*	$OpenBSD: ip_auth.c,v 1.18 2001/05/08 19:58:01 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1998-2001 by Darren Reed & Guido van Rooij.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: intrcnt.h,v 1.5 1997/01/24 19:57:13 niklas Exp $	*/
+/*	$OpenBSD: intrcnt.h,v 1.6 2003/02/28 23:02:09 jason Exp $	*/
 /*	$NetBSD: intrcnt.h,v 1.7 1996/11/16 23:11:57 cgd Exp $	*/
 
 /*

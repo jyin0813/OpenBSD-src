@@ -1,5 +1,5 @@
 /*	$OpenPackages$ */
-/*	$OpenBSD: sprite.h,v 1.5 1998/12/05 00:06:29 espie Exp $	*/
+/*	$OpenBSD: sprite.h,v 1.10 2001/05/03 13:41:10 espie Exp $	*/
 /*	$NetBSD: sprite.h,v 1.6 1996/11/06 17:59:22 christos Exp $	*/
 
 /*

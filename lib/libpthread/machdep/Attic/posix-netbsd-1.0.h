@@ -3,7 +3,7 @@
  *
  * Description : Convert an Ultrix-4.2 system to a more or less POSIX system.
  *
- * $Id: posix-netbsd-1.0.h,v 1.53 1995/02/17 03:41:34 proven Exp $
+ * $Id: posix-netbsd-1.0.h,v 1.1 1998/07/21 13:19:15 peter Exp $
  *
  *  1.00 93/07/20 proven
  *      -Started coding this file.

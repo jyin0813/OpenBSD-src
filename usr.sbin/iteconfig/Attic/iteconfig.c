@@ -1,4 +1,4 @@
-/* $OpenBSD: iteconfig.c,v 1.3 2000/01/19 16:33:00 espie Exp $ */
+/* $OpenBSD: iteconfig.c,v 1.4 2002/02/16 21:28:03 millert Exp $ */
 /*	$NetBSD: iteconfig.c,v 1.4.6.1 1996/06/04 16:48:24 is Exp $	*/
 /* Copyright (c) 1999 Marc Espie
  * All rights reserved.

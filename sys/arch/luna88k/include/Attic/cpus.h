@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpus.h,v 1.11 2001/12/19 07:04:41 smurph Exp $ */
+/*	$OpenBSD: cpus.h,v 1.1 2004/04/21 15:23:57 aoyama Exp $ */
 /* 
  * Mach Operating System
  * Copyright (c) 1993-1992 Carnegie Mellon University

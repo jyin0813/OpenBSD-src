@@ -25,7 +25,10 @@
  */
 /*
  * HISTORY
- * $Log:	trap.h,v $
+ * $Log: trap.h,v $
+ * Revision 1.1  1995/10/18 10:54:21  deraadt
+ * Initial revision
+ *
  * Revision 2.3  92/08/03  17:52:42  jfriedl
  * 	watchpoint support
  * 	[92/07/31            jfriedl]

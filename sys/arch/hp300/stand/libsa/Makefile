@@ -1,10 +1,10 @@
-#	$OpenBSD: Makefile,v 1.10 1997/07/14 08:14:46 downsj Exp $
+#	$OpenBSD: Makefile,v 1.11 1997/09/14 07:02:04 downsj Exp $
 
 LIB=	sa
 
 .PATH:	${.CURDIR}/../../../../lib/libsa
 
-CFLAGS= -O2 -msoft-float -D__INTERNAL_LIBSA_CREAD \
+CFLAGS= -O2 -msoft-float \
 	-I${.CURDIR} -I${.CURDIR}/../include -I${.CURDIR}/../.. \
 	-I${.CURDIR}/../../.. -I${.CURDIR}/../../../.. \
 	-I${.CURDIR}/../../../../lib/libsa
@@ -15,7 +15,7 @@ SRCS=	alloc.c devopen.c exit.c exec.c getfile.c gets.c globals.c \
 
 # io routines
 SRCS+=	close.c closeall.c dev.c disklabel.c dkcksum.c fstat.c ioctl.c lseek.c \
-	open.c read.c stat.c write.c cread.c
+	open.c read.c stat.c write.c
 
 # network routines
 SRCS+=	arp.c ether.c in_cksum.c net.c netif.c rpc.c

@@ -18,7 +18,7 @@
  *		Columbus, OH  43221
  *		(614)451-1883
  *
- * $Id: chat.h,v 1.9 1997/11/22 03:37:27 brian Exp $
+ * $Id: chat.h,v 1.1 1997/11/23 20:27:33 brian Exp $
  *
  */
 

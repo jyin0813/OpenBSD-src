@@ -1,5 +1,5 @@
 #!/bin/sh
-#$Id: dconf,v 0.1 1994/11/20 20:23:42 windl Exp $
+#$Id: dconf,v 1.1 1997/06/14 07:18:51 downsj Exp $
 # Create Adobe-PostScript file that graphically displays the output of
 # dumpe2fs(8). Use "dumpe2fs | dconf" to create a PostScript file on stdout.
 # Developed and tested for Linux 1.0.

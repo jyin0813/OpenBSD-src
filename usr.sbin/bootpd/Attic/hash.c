@@ -21,7 +21,7 @@ SOFTWARE.
 ************************************************************************/
 
 #ifndef lint
-static char rcsid[] = "$Id: hash.c,v 1.3 2002/05/27 19:49:58 deraadt Exp $";
+static char rcsid[] = "$Id: hash.c,v 1.4 2003/02/18 13:14:43 jmc Exp $";
 #endif
 
 

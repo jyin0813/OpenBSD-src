@@ -1,4 +1,4 @@
-/*	$OpenBSD: cy.c,v 1.3 1996/06/20 11:39:10 deraadt Exp $	*/
+/*	$OpenBSD: cy.c,v 1.4 1996/06/23 13:11:05 deraadt Exp deraadt $	*/
 
 /*
  * cy.c

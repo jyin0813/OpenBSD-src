@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_trace.c,v 1.4 1998/07/27 03:37:33 millert Exp $	*/
+/*	$OpenBSD: lib_trace.c,v 1.5 1998/10/31 06:30:30 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

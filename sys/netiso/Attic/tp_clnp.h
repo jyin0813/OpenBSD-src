@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_clnp.h,v 1.2 1996/03/04 10:35:50 mickey Exp $	*/
+/*	$OpenBSD: tp_clnp.h,v 1.3 2003/06/02 23:28:18 millert Exp $	*/
 /*	$NetBSD: tp_clnp.h,v 1.6 1996/02/13 22:10:42 christos Exp $	*/
 
 /*-

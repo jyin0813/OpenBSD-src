@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_nat.h,v 1.18 2001/01/17 04:47:15 fgsch Exp $	*/
+/*	$OpenBSD: ip_nat.h,v 1.19 2001/05/08 19:58:02 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1995-2000 by Darren Reed.

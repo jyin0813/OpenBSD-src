@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1997/05/11 16:17:51 pefo Exp $
+#	$OpenBSD: Makefile,v 1.2 1997/07/21 06:58:11 pefo Exp $
 
 PROG=boot
 SADIR=${.CURDIR}/..

@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD$	*/
+/*	$OpenBSD: grammar.y,v 1.1 1996/03/25 15:55:41 niklas Exp $	*/
 /*	From NetBSD: grammar.y,v 1.2 1995/03/06 11:38:27 mycroft Exp */
 
 /*
@@ -28,7 +28,7 @@
 from: static char rcsid[] =
     "@(#) Header: grammar.y,v 1.39 94/06/14 20:09:25 leres Exp (LBL)";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: grammar.y,v 1.1 1996/03/25 15:55:41 niklas Exp $";
 #endif
 #endif
 

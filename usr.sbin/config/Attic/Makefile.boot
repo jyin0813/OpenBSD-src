@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.boot,v 1.2 1997/09/21 11:43:32 deraadt Exp $
+#	$OpenBSD: Makefile.boot,v 1.3 1999/02/24 20:14:55 art Exp $
 #
 # a very simple makefile...
 #

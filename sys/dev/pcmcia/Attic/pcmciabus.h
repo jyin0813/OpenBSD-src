@@ -26,7 +26,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- *	$Id: pcmciabus.h,v 1.5 1995/11/05 21:32:17 jtk Exp $
+ *	$Id: pcmciabus.h,v 1.1 1996/01/15 00:05:13 hvozda Exp hvozda $
  */
  /* derived from scsicconf.[ch] writenn by Julian Elischer et al */
 

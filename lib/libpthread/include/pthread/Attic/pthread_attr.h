@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: pthread_attr.h,v 1.58.4.1 1996/11/11 05:56:42 proven Exp $
+ * $Id: pthread_attr.h,v 1.1 1998/07/21 13:19:12 peter Exp $
  *
  * Description : Basic pthread attributes header.
  *

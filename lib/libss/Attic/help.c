@@ -1,4 +1,4 @@
-/*	$OpenBSD: help.c,v 1.2 1996/09/16 18:49:08 millert Exp $	*/
+/*	$OpenBSD: help.c,v 1.1 1996/11/15 09:25:27 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board

@@ -14,8 +14,11 @@
 # based on original version by Alan R. Martello <al@ee.pitt.edu>
 # And by A.Macpherson@bnr.co.uk for multi-homed hosts
 #
-# $Header: /cvs/src/gnu/usr.bin/perl/lib/ftp.pl,v 1.6 2002/10/27 22:25:26 millert Exp $
+# $Header: /cvs/src/gnu/usr.bin/perl/lib/ftp.pl,v 1.7 2002/12/09 00:45:36 millert Exp $
 # $Log: ftp.pl,v $
+# Revision 1.7  2002/12/09 00:45:36  millert
+# From Andrushock, s/sucess/success/g
+#
 # Revision 1.6  2002/10/27 22:25:26  millert
 # Resolve conflicts, remove old files, merge local changes
 #

@@ -1,4 +1,4 @@
-/*	$OpenBSD: bpf_compile.h,v 1.1 1996/03/25 15:55:31 niklas Exp $	*/
+/*	$OpenBSD: bpf_compile.h,v 1.2 1997/06/27 02:16:21 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994

@@ -1,7 +1,7 @@
 /*
  * Языческие праздники
  *
- * $OpenBSD: calendar.pagan,v 1.1 1996/05/10 21:36:56 ache Exp $
+ * $OpenBSD: calendar.pagan,v 1.1 1996/12/05 06:05:01 millert Exp $
  */
 
 #ifndef _ru_SU_KOI8_R_pagan_

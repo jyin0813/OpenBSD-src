@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: compiler.h,v 1.1 1996/11/11 05:06:34 downsj Exp $	*/
 
 /*
  * definitions common to the source files of the error table compiler

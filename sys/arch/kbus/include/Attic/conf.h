@@ -1,5 +1,5 @@
 /*	$NetBSD: conf.h,v 1.1 1996/03/30 21:17:55 christos Exp $	*/
-/*	$OpenBSD: conf.h,v 1.4 1997/05/06 19:07:36 kstailey Exp $	*/
+/*	$OpenBSD: conf.h,v 1.1 1997/10/14 07:25:31 gingold Exp $	*/
 
 /*
  * Copyright (c) 1996 Christos Zoulas.  All rights reserved.

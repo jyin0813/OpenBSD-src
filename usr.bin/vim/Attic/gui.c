@@ -1,4 +1,4 @@
-/*	$OpenBSD: gui.c,v 1.2 1996/09/21 06:23:01 downsj Exp $	*/
+/*	$OpenBSD: gui.c,v 1.3 1996/10/15 08:22:08 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  *
  * VIM - Vi IMproved			by Bram Moolenaar

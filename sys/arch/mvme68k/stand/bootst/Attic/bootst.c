@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: bootst.c,v 1.5 1996/05/16 02:49:07 chuck Exp chuck $ */
 
 #include <sys/types.h>
 #include <sys/param.h>

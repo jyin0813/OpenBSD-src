@@ -1,4 +1,4 @@
-/*	$OpenBSD: memconf.h,v 1.1 1998/01/28 11:14:48 pefo Exp $	*/
+/*	$OpenBSD: memconf.h,v 1.2 1999/01/27 04:46:05 imp Exp $	*/
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

@@ -1,4 +1,4 @@
-/* $OpenBSD: common.c,v 1.3 1999/10/07 16:30:32 espie Exp $ */
+/* $OpenBSD: common.c,v 1.4 2003/06/04 04:29:03 deraadt Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: scp-common.h,v 1.1 2001/04/16 02:31:43 mouring Exp $ */
 /*
  * Copyright (c) 1999 Theo de Raadt.  All rights reserved.
  * Copyright (c) 1999 Aaron Campbell.  All rights reserved.

@@ -28,7 +28,7 @@
  */
 
 #ifndef LINT
-static char rcsid[] = "$Id: ypserv_xdr.c,v 1.0 1994/05/23 23:09:00 moj Exp $";
+static char rcsid[] = "$Id: ypserv_xdr.c,v 1.1 1995/10/23 07:46:47 deraadt Exp deraadt $";
 #endif
 
 

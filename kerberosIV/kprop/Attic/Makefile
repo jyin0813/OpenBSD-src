@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.2 1997/06/29 07:21:16 deraadt Exp $
+#	$Id: Makefile,v 1.3 1998/02/18 12:55:16 art Exp $
 
 PROG=	kprop
 LDADD+=	-lkrb -ldes

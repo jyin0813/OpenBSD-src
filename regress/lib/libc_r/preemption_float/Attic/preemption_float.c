@@ -1,4 +1,4 @@
-/*	$OpenBSD: preemption_float.c,v 1.1.1.1 2001/08/15 14:37:12 fgsch Exp $	*/
+/*	$OpenBSD: preemption_float.c,v 1.2 2002/06/23 20:21:22 marc Exp $	*/
 /*
  * Copyright (c) 1993, 1994, 1995, 1996 by Chris Provenzano and contributors, 
  * proven@mit.edu All rights reserved.

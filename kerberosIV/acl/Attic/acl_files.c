@@ -1,4 +1,4 @@
-/*	$OpenBSD: acl_files.c,v 1.7 1997/12/22 16:27:44 art Exp $	*/
+/*	$OpenBSD: acl_files.c,v 1.8 1998/02/25 15:50:30 art Exp $	*/
 /* $KTH: acl_files.c,v 1.10 1997/05/02 14:28:56 assar Exp $ */
 
 /*

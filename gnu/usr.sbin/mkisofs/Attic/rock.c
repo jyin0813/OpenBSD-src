@@ -1,4 +1,4 @@
-/*	$OpenBSD: rock.c,v 1.1.1.1 1997/09/15 06:01:53 downsj Exp $	*/
+/*	$OpenBSD: rock.c,v 1.2 1998/04/05 00:39:40 deraadt Exp $	*/
 /*
  * File rock.c - generate RRIP  records for iso9660 filesystems.
 

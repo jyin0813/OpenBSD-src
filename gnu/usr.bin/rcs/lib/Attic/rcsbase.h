@@ -1,6 +1,6 @@
 /* RCS common definitions and data structures */
 
-#define RCSBASE "$Id: rcsbase.h,v 1.1.1.1 1995/10/18 08:41:01 deraadt Exp $"
+#define RCSBASE "$Id: rcsbase.h,v 1.2 1996/04/19 12:40:06 mickey Exp millert $"
 
 /* Copyright 1982, 1988, 1989 Walter Tichy
    Copyright 1990, 1991, 1992, 1993, 1994 Paul Eggert
@@ -30,6 +30,10 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsbase.h,v $
+ * Revision 1.2  1996/04/19 12:40:06  mickey
+ * -L<string> option added to support LOCALID behaviour.
+ * maybe set up in RCSINIT environment variable.
+ *
  * Revision 1.1.1.1  1995/10/18 08:41:01  deraadt
  * initial import of NetBSD tree
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_sigaltstack.c,v 1.2 1999/11/25 07:01:44 d Exp $	*/
 
 #include <signal.h>
 #include <errno.h>

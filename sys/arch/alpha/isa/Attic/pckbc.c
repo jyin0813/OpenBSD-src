@@ -1,4 +1,4 @@
-/*	$OpenBSD: pckbc.c,v 1.2 1997/11/10 15:53:10 niklas Exp $	*/
+/*	$OpenBSD: pckbc.c,v 1.1 1999/01/08 03:16:14 niklas Exp $	*/
 /*	$NetBSD: pckbc.c,v 1.3 1996/12/05 01:39:31 cgd Exp $	*/
 
 /*

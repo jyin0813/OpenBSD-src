@@ -26,7 +26,10 @@
 /*
  *
  * HISTORY
- * $Log:	misc.s,v $
+ * $Log: misc.s,v $
+ * Revision 1.1  1995/10/18 10:54:27  deraadt
+ * Initial revision
+ *
  * Revision 2.3  93/01/26  18:01:25  danner
  * 	Conditionalied "#define ASSEMBLER".
  * 	[93/01/25            jfriedl]

@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_object.h,v 1.10 2000/01/27 18:52:42 art Exp $	*/
+/*	$OpenBSD: vm_object.h,v 1.11 2001/06/27 04:52:40 art Exp $	*/
 /*	$NetBSD: vm_object.h,v 1.16 1995/03/29 22:10:28 briggs Exp $	*/
 
 /* 

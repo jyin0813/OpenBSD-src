@@ -3,7 +3,7 @@
 LIB=	keynote
 MAN=	keynote.3 keynote.4
 
-CFLAGS+= -Wall -DCRYPTO -I/usr/include/ssl -I. -I${.CURDIR}
+CFLAGS+= -Wall -DCRYPTO -DHAVE_CONFIG_H -I. -I${.CURDIR}
 LEXFLAGS = -Cr -Pkn -s -i
 YACCFLAGS = -d -p kn -b k
 
@@ -20,7 +20,7 @@ lex.kn.c: keynote.l keynote.y keynote.h assertion.h signature.h
 	$(LEX.l) $(LEXFLAGS) ${.CURDIR}/keynote.l
 
 includes:
-	@cd ${.CURDIR}; for i in $(HDRS); do \
+	@@cd ${.CURDIR}; for i in $(HDRS); do \
 	    j="cmp -s $$i ${DESTDIR}/usr/include/$$i || \
 		${INSTALL} ${INSTALL_COPY} -o ${BINOWN} -g ${BINGRP} -m 444 \
 		$$i ${DESTDIR}/usr/include"; \

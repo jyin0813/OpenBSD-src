@@ -1,4 +1,4 @@
-/*	$OpenBSD: _atomic_lock.c,v 1.4 2002/10/11 19:08:41 marc Exp $	*/
+/*	$OpenBSD: _atomic_lock.c,v 1.5 2002/11/12 18:56:28 drahn Exp $	*/
 /*
  * Atomic lock for powerpc
  */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec_hppa.c,v 1.7 1999/05/06 02:13:15 mickey Exp $	*/
+/*	$OpenBSD: exec_hppa.c,v 1.8 2002/03/14 01:26:32 millert Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

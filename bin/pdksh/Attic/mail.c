@@ -1,4 +1,4 @@
-/*	$OpenBSD: mail.c,v 1.5 1997/06/19 13:58:44 kstailey Exp $	*/
+/*	$OpenBSD: mail.c,v 1.6 1997/11/16 12:07:28 niklas Exp $	*/
 
 /*
  * Mailbox checking code by Robert J. Gibson, adapted for PD ksh by

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: logging.c,v 1.2 1997/12/09 07:57:27 art Exp $	*/
 /* $KTH: logging.c,v 1.14 1997/05/11 09:01:40 assar Exp $ */
 
 /*

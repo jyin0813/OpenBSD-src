@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: xio.h,v 1.2 1997/01/16 04:03:57 kstailey Exp $	*/
 /* $NetBSD: xio.h,v 1.1 1995/10/30 20:58:20 gwr Exp $ */
 
 /*

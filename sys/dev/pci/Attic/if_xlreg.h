@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_xlreg.h,v 1.16 1999/12/07 20:19:37 jason Exp $	*/
+/*	$OpenBSD: if_xlreg.h,v 1.17 1999/12/16 22:15:45 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998

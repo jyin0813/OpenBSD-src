@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tigetflag.c,v 1.1 1996/05/31 05:40:02 tholo Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: tigetflag.c,v 1.1 1996/05/31 05:40:02 tholo Exp $";
 #endif
 
 #include <stdlib.h>

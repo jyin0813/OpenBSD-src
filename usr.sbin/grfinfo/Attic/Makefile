@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2000/05/18 16:46:38 espie Exp $
+#	$OpenBSD: Makefile,v 1.5 2002/09/06 22:08:36 miod Exp $
 
 .if ${MACHINE} == "hp300"
 PROG=	grfinfo

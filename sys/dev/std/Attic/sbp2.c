@@ -1,4 +1,4 @@
-/*	$OpenBSD: sbp2.c,v 1.5 2004/02/15 02:38:38 tedu Exp $	*/
+/*	$OpenBSD: sbp2.c,v 1.6 2004/04/08 16:08:21 henning Exp $	*/
 
 /*
  * Copyright (c) 2002 Thierry Deval.  All rights reserved.

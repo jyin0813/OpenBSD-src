@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: md_init.h,v 1.1 2004/01/28 01:46:17 mickey Exp $ */
 
 /*-
  * Copyright (c) 2001 Ross Harvey

@@ -1,4 +1,4 @@
-/*	$OpenBSD: esp.c,v 1.9 1998/08/04 23:15:20 millert Exp $	*/
+/*	$OpenBSD: esp.c,v 1.10 2000/02/04 17:30:07 deraadt Exp $	*/
 /*	$NetBSD: esp.c,v 1.26 1996/12/05 01:39:40 cgd Exp $	*/
 
 #ifdef __sparc__

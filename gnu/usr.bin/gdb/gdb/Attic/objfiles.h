@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: objfiles.h,v 1.1 1994/01/28 12:40:19 pk Exp $
+	$Id: objfiles.h,v 1.1 1995/10/18 08:40:02 deraadt Exp $
 */
 
 #if !defined (OBJFILES_H)

@@ -1,4 +1,4 @@
-$OpenBSD: IMPLEMENTATION,v 1.1 2002/06/25 17:11:49 itojun Exp $
+$OpenBSD: IMPLEMENTATION,v 1.2 2002/12/13 02:54:18 tdeval Exp $
 $NetBSD: IMPLEMENTATION,v 1.6 2002/02/03 07:29:14 jmc Exp $
 
 At this point in time, there are 3 controller drivers planned:

@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 # ex:ts=8 sw=4:
 
-# $OpenBSD: makewhatis.pl,v 1.28 2004/02/11 18:50:43 espie Exp $
+# $OpenBSD: makewhatis.pl,v 1.29 2004/03/01 20:13:24 espie Exp $
 #
 # Copyright (c) 2000 Marc Espie.
 # 

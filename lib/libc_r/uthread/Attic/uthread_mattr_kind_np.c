@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_mattr_kind_np.c,v 1.6 2001/08/09 08:50:54 fgsch Exp $	*/
+/*	$OpenBSD: uthread_mattr_kind_np.c,v 1.7 2001/08/10 14:37:20 fgsch Exp $	*/
 /*
  * Copyright (c) 1996 Jeffrey Hsu <hsu@freebsd.org>.
  * All rights reserved.

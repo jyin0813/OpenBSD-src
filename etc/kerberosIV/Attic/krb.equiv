@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: krb.equiv,v 1.4 2002/06/09 06:15:15 todd Exp $
 # krb.equiv contains a list of IP addresses that is to be considered being
 # the same host for KerberosIV purposes.
 # Please refer to krb.equiv(5) for more information.

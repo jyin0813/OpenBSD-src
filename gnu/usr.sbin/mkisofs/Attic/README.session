@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: README.session,v 1.1 1997/09/15 06:01:53 downsj Exp $
 #	$From: README.session,v 1.2 1997/02/23 15:45:50 eric Rel $	
 
 	This release of mkisofs has basic support completed for

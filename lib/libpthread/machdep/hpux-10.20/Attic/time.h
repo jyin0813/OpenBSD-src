@@ -1,4 +1,4 @@
-/* $Header: /afs/sipb.mit.edu/project/pthreads/src/CVS/pthreads/machdep/hpux-9.03/time.h,v 1.2 1995/03/10 04:00:01 snl Exp $ */
+/* $Header: /cvs/src/lib/libpthread/machdep/hpux-10.20/time.h,v 1.1 1998/07/21 13:19:37 peter Exp $ */
 
 #ifndef _SYS_TIME_INCLUDED
 #define _SYS_TIME_INCLUDED

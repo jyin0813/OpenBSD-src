@@ -1,4 +1,4 @@
-/*	$OpenBSD: subr.c,v 1.3 1998/08/30 03:39:21 deraadt Exp $	*/
+/*	$OpenBSD: subr.c,v 1.4 1998/11/23 18:00:59 deraadt Exp $	*/
 
 /*
  * ++Copyright++ 1985, 1989
@@ -60,7 +60,7 @@
 static char sccsid[] = "@(#)subr.c	5.24 (Berkeley) 3/2/91";
 static char rcsid[] = "$From: subr.c,v 8.6 1996/08/08 06:54:51 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD: subr.c,v 1.3 1998/08/30 03:39:21 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: subr.c,v 1.4 1998/11/23 18:00:59 deraadt Exp $";
 #endif
 #endif /* not lint */
 

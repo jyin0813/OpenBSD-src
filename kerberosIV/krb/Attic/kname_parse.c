@@ -1,7 +1,7 @@
 /*
  * This software may now be redistributed outside the US.
  *
- * $Source: /usr/src/kerberosIV/lib/krb/RCS/kname_parse.c,v $
+ * $Source: /cvs/src/kerberosIV/krb/kname_parse.c,v $
  *
  * $Locker:  $
  */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_sn.c,v 1.11 1999/01/11 05:11:09 millert Exp $	*/
+/*	$OpenBSD: if_sn.c,v 1.12 1999/05/13 15:44:48 jason Exp $	*/
 /*
  * National Semiconductor  SONIC Driver
  * Copyright (c) 1991   Algorithmics Ltd (http://www.algor.co.uk)

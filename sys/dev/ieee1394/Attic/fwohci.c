@@ -1,4 +1,4 @@
-/*	$OpenBSD: fwohci.c,v 1.13 2003/04/27 11:22:53 ho Exp $	*/
+/*	$OpenBSD: fwohci.c,v 1.14 2003/10/22 09:31:30 jmc Exp $	*/
 /*	$NetBSD: fwohci.c,v 1.54 2002/03/29 05:06:42 jmc Exp $	*/
 
 /*

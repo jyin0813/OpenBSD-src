@@ -1,4 +1,4 @@
-/*	$OpenBSD: get_cred.c,v 1.5 1998/02/25 15:51:08 art Exp $	*/
+/*	$OpenBSD: get_cred.c,v 1.6 1998/05/17 23:21:55 art Exp $	*/
 /*	$KTH: get_cred.c,v 1.7 1997/12/15 17:12:55 assar Exp $		*/
 
 /*

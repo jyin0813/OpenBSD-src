@@ -1,5 +1,5 @@
 # Makefile for GNU makeinfo.
-# $Id: Makefile.in,v 1.1.2.1 1996/11/19 14:52:56 niklas Exp $
+# $Id: Makefile.in,v 1.2 1996/11/23 04:03:19 niklas Exp $
 # 
 # Copyright (C) 1993, 96 Free Software Foundation, Inc.
 

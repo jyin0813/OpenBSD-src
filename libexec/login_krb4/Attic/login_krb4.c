@@ -1,4 +1,4 @@
-/*	$OpenBSD: login_krb4.c,v 1.4 2002/05/30 06:09:21 deraadt Exp $	*/
+/*	$OpenBSD: login_krb4.c,v 1.5 2002/09/06 18:45:06 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 2001 Hans Insulander <hin@openbsd.org>.

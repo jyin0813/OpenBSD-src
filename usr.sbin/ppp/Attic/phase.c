@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id$
+ *	$Id: phase.c,v 1.4 1997/12/21 14:27:10 brian Exp $
  */
 
 #include <sys/param.h>

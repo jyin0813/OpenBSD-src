@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_ip4.c,v 1.6 1998/07/29 21:02:55 angelos Exp $ */
+/* $OpenBSD: xf_ip4.c,v 1.1 1998/11/14 23:37:21 deraadt Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: name2name.c,v 1.2 1997/12/09 07:57:31 art Exp $	*/
+/*	$OpenBSD: name2name.c,v 1.3 1998/05/18 00:53:55 art Exp $	*/
 /*	$KTH: name2name.c,v 1.16 1998/01/19 15:28:38 joda Exp $		*/
 
 /*

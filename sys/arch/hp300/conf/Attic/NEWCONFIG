@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: NEWCONFIG,v 1.1 1997/01/12 15:12:14 downsj Exp $
 #	$NetBSD: NEWCONFIG,v 1.1 1996/12/17 08:40:56 thorpej Exp $
 #
 # "Generic" kernel for new-style config.

@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: //depot/src/aic7xxx/aicasm/aicasm_insformat.h#4 $
+ * $Id: aicasm_insformat.h,v 1.1 2002/02/16 04:36:33 smurph Exp $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aicasm/aicasm_insformat.h,v 1.4 2000/11/10 19:54:17 gibbs Exp $
  */

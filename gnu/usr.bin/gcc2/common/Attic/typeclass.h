@@ -1,6 +1,6 @@
 /* Values returned by __builtin_classify_type. 
 
-	$Id: typeclass.h,v 1.2 1993/08/02 17:36:19 mycroft Exp $
+	$Id: typeclass.h,v 1.1 1995/10/18 08:39:47 deraadt Exp niklas $
 */
 
 enum type_class

@@ -1,5 +1,5 @@
 #! /bin/sh
-# $OpenBSD$
+# $OpenBSD: configure,v 1.5 2000/10/03 01:41:24 angelos Exp $
 
 # Guess values for system-dependent variables and create Makefiles.
 # Generated automatically using autoconf version 2.13 

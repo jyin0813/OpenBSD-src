@@ -1,4 +1,4 @@
-#	$OpenBSD: AXPPCI33,v 1.6 2000/07/05 21:55:37 ericj Exp $
+#	$OpenBSD: AXPPCI33,v 1.7 2000/09/09 01:46:15 ericj Exp $
 #
 # Generic Alpha AXPPCI33 (NoName) kernel.
 # Enough to get booted, etc., but not much more.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: test_sleep.c,v 1.4 2000/01/06 06:58:34 d Exp $	*/
 /* ==== test_sleep.c ============================================================
  * Copyright (c) 1993 by Chris Provenzano, proven@athena.mit.edu
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kdb_edit.c,v 1.4 1997/12/17 10:21:26 art Exp $	*/
 /* $KTH: kdb_edit.c,v 1.25 1997/05/07 01:34:05 assar Exp $ */
 
 /*-

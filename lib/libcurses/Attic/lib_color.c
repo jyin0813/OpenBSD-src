@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_color.c,v 1.6 1998/08/03 17:02:45 millert Exp $	*/
+/*	$OpenBSD: lib_color.c,v 1.7 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: create_auth_reply.c,v 1.3 1997/12/09 07:57:11 art Exp $	*/
+/*	$OpenBSD: create_auth_reply.c,v 1.4 1998/07/07 19:06:44 art Exp $	*/
 /* $KTH: create_auth_reply.c,v 1.11 1997/04/01 08:18:20 joda Exp $ */
 
 /*

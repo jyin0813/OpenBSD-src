@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_vidattr.c,v 1.4 1998/07/23 21:19:47 millert Exp $	*/
+/*	$OpenBSD: lib_vidattr.c,v 1.5 1998/08/03 17:02:46 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

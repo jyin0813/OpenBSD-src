@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.7 2001/01/17 05:01:00 fgsch Exp $
+#	$OpenBSD: Makefile,v 1.8 2001/02/13 01:12:33 fgsch Exp $
 
 PROG=	ipfstat
 MAN=	ipfstat.8

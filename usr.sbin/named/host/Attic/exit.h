@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: exit.h,v 1.2 1997/03/12 10:41:52 downsj Exp $	*/
 
 /*
 ** Various exit codes.

@@ -1,7 +1,7 @@
 ;;;
 ;;;#ident "@(#)OrigId: pcl-cvs.el,v 1.93 1993/05/31 22:44:00 ceder Exp "
 ;;;
-;;;#ident "@(#)cvs/contrib/pcl-cvs:$Name:  $:$Id: pcl-cvs.el,v 1.2 1996/04/14 20:09:45 kfogel Exp $"
+;;;#ident "@(#)cvs/contrib/pcl-cvs:$Name:  $:$Id: pcl-cvs.el,v 1.1 1996/05/06 22:20:47 tholo Exp $"
 ;;;
 ;;; pcl-cvs.el -- A Front-end to CVS 1.3 or later.
 ;;; Release 1.05-CVS-$Name:  $.
@@ -1017,7 +1017,7 @@ ERR-BUF should be 'STDOUT or 'STDERR."
     (insert "Pcl-cvs Version: "
 	    "@(#)OrigId: pcl-cvs.el,v 1.93 1993/05/31 22:44:00 ceder Exp\n")
     (insert "CVS Version: "
-	    "@(#)cvs/contrib/pcl-cvs:$Name:  $:$Id: pcl-cvs.el,v 1.2 1996/04/14 20:09:45 kfogel Exp $\n\n")
+	    "@(#)cvs/contrib/pcl-cvs:$Name:  $:$Id: pcl-cvs.el,v 1.1 1996/05/06 22:20:47 tholo Exp $\n\n")
     (insert (format "--- Contents of stdout buffer (%d chars) ---\n"
 		    (length stdout)))
     (insert stdout)

@@ -15,7 +15,7 @@
 //    License along with this library; if not, write to the Free
 //    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 //
-//	$Id: fstream.h,v 1.2 1993/08/02 17:22:32 mycroft Exp $
+//	$Id: fstream.h,v 1.1 1995/10/18 08:38:12 deraadt Exp etheisen $
 
 #ifndef _FSTREAM_H
 #define _FSTREAM_H

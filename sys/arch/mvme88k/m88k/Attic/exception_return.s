@@ -28,7 +28,10 @@
  */
 /*
  * HISTORY
- * $Log:	exception_return.s,v $
+ * $Log: exception_return.s,v $
+ * Revision 1.1  1995/10/18 10:54:27  deraadt
+ * Initial revision
+ *
  * Revision 2.6  93/01/26  18:00:53  danner
  * 	conditionalized define of ASSEMBLER.
  * 	[93/01/22            jfriedl]

@@ -23,7 +23,7 @@
  * These notices must be retained in any copies of any part of this
  * documentation and/or software.
  *
- * $Id: md4.c,v 1.3 1995/06/05 19:48:33 pk Exp $
+ * $Id: md4.c,v 1.1 1995/10/18 08:43:11 deraadt Exp millert $
  */
 
 /* 

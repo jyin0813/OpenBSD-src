@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pm_ds.c,v 1.5 2000/08/19 18:43:30 maja Exp $	*/
 /*	$NetBSD: pm_ds.c,v 1.4 1997/05/24 08:19:52 jonathan Exp $	*/
 
 /*

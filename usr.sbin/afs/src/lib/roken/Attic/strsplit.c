@@ -42,7 +42,7 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-RCSID("$Id: strsplit.c,v 1.1 1999/06/11 01:16:58 assar Exp $");
+RCSID("$Id: strsplit.c,v 1.1 2000/09/11 14:41:05 art Exp $");
 #endif
 
 #include <string.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_raw.c,v 1.5 1998/07/23 21:19:14 millert Exp $	*/
+/*	$OpenBSD: lib_raw.c,v 1.6 1998/11/17 03:16:21 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

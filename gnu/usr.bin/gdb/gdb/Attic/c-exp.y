@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA. 
 
-	$Id: c-exp.y,v 1.1.1.1 1995/10/18 08:39:56 deraadt Exp $
+	$Id: c-exp.y,v 1.2 1997/02/17 09:11:23 niklas Exp $
 */
 
 /* Parse a C expression from text in a string,

@@ -1,9 +1,9 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: savelev.c,v 1.2 1998/09/15 05:12:33 pjanzen Exp $	*/
 /*	$NetBSD: savelev.c,v 1.4 1997/10/18 20:03:45 christos Exp $	*/
 
 /* savelev.c		 Larn is copyrighted 1986 by Noah Morgan. */
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: savelev.c,v 1.2 1998/09/15 05:12:33 pjanzen Exp $";
 #endif				/* not lint */
 #include "header.h"
 #include "extern.h"

@@ -42,7 +42,7 @@
  *	@(#)locore2.c	8.4 (Berkeley) 12/10/93
  *
  * from: Header: locore2.c,v 1.8 92/11/26 03:05:01 mccanne Exp (LBL)
- * $Id: locore2.c,v 1.1 1995/10/18 12:32:24 deraadt Exp $
+ * $Id: locore2.c,v 1.2 1996/11/23 23:19:43 kstailey Exp $
  */
 
 /*

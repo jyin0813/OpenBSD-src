@@ -1,7 +1,7 @@
 #! xPERL_PATHx
 # -*-Perl-*-
 #
-# $Id: cvs_acls.pl,v 1.2 1995/07/10 02:01:33 kfogel Exp $
+# $Id: cvs_acls.pl,v 1.1 1995/12/19 09:21:39 deraadt Exp $
 #
 # Access control lists for CVS.  dgg@ksr.com (David G. Grubbs)
 #

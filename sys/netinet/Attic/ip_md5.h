@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ip_md5.h,v 1.2 1997/02/24 14:06:43 niklas Exp $	*/
 
 /* GLOBAL.H - RSAREF types and constants
  */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: c++rt0.c,v 1.6 1999/02/01 17:02:47 pefo Exp $	*/
+/*	$OpenBSD: c++rt0.c,v 1.7 2002/02/16 21:27:20 millert Exp $	*/
 /*	$NetBSD: c++rt0.c,v 1.6 1997/12/29 15:36:50 pk Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_xl.c,v 1.37 2000/02/15 02:28:15 jason Exp $	*/
+/*	$OpenBSD: if_xl.c,v 1.38 2000/02/15 13:47:52 jason Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998, 1999

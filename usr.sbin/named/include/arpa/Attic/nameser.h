@@ -1,4 +1,4 @@
-/*	$OpenBSD: nameser.h,v 1.2 1997/03/12 11:21:16 downsj Exp $	*/
+/*	$OpenBSD: nameser.h,v 1.3 2002/02/16 21:28:05 millert Exp $	*/
 
 /*
  * ++Copyright++ 1983, 1989, 1993

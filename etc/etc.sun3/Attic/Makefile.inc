@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.4 2000/06/19 01:49:30 miod Exp $
+#	$OpenBSD: Makefile.inc,v 1.5 2002/05/13 07:22:43 espie Exp $
 #	etc.sun3/Makefile.inc -- sun3-specific etc Makefile targets
 
 .ifdef DESTDIR

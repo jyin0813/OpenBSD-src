@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: regsub.c,v 1.1 1996/09/07 21:40:25 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  * NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE
  *
@@ -30,7 +30,10 @@
  *		3. Altered versions must be plainly marked as such, and must not
  *				be misrepresented as being the original software.
  *
- * $Log:		regsub.c,v $
+ * $Log: regsub.c,v $
+ * Revision 1.1  1996/09/07 21:40:25  downsj
+ * Initial revision
+ *
  * Revision 1.2  88/04/28  08:11:25  tony
  * First modification of the regexp library. Added an external variable
  * 'reg_ic' which can be set to indicate that case should be ignored.

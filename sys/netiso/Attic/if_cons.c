@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_cons.c,v 1.6 2003/08/06 21:08:07 millert Exp $	*/
+/*	$OpenBSD: if_cons.c,v 1.7 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: if_cons.c,v 1.7 1996/02/13 22:09:44 christos Exp $	*/
 
 /*-

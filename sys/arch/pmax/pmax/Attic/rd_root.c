@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rd_root.c,v 1.1 1998/11/09 05:40:00 millert Exp $	*/
 
 /*
  * Copyright (c) 1995 Gordon W. Ross

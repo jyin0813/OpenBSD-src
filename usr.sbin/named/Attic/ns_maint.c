@@ -33,7 +33,7 @@
 
 #ifndef lint
 /*static char sccsid[] = "from: @(#)ns_maint.c	4.39 (Berkeley) 3/2/91";*/
-static char rcsid[] = "$Id: ns_maint.c,v 1.3 1995/06/07 17:40:54 cgd Exp $";
+static char rcsid[] = "$Id: ns_maint.c,v 1.1 1995/10/18 08:47:50 deraadt Exp dm $";
 #endif /* not lint */
 
 #include <sys/param.h>

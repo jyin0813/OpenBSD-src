@@ -1,4 +1,4 @@
-/*	$OpenBSD: time.c,v 1.2 1998/06/23 11:49:36 art Exp $	*/
+/*	$OpenBSD: time.c,v 1.3 1998/06/23 12:25:00 art Exp $	*/
 /*	$KTH: time.c,v 1.1 1998/02/19 19:12:55 joda Exp $	*/
 /*
  * Copyright (c) 1998 Kungliga Tekniska Högskolan

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.inc,v 1.2 1997/09/21 11:50:21 deraadt Exp $
 #	etc.atari/Makefile.inc -- atari-specific etc Makefile targets
 
 .ifdef DESTDIR

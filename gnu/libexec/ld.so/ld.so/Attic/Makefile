@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 1997/04/27 20:55:51 millert Exp $
+#	$OpenBSD: Makefile,v 1.5 2000/11/05 22:28:19 miod Exp $
 
 SUBDIR= # libdl
 

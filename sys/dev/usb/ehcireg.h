@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ehcireg.h,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
 /*	$NetBSD: ehcireg.h,v 1.13 2001/11/23 01:16:27 augustss Exp $	*/
 
 /*

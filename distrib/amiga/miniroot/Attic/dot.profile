@@ -1,4 +1,4 @@
-#	$OpenBSD: dot.profile,v 1.11 2002/04/01 01:31:39 deraadt Exp $
+#	$OpenBSD: dot.profile,v 1.12 2002/04/05 03:13:18 deraadt Exp $
 #	$NetBSD: dot.profile,v 1.1 1995/12/18 22:54:43 pk Exp $
 #
 # Copyright (c) 1995 Jason R. Thorpe

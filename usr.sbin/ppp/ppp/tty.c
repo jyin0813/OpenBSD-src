@@ -23,32 +23,20 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: tty.c,v 1.11 1999/07/15 02:10:32 brian Exp $
+ *	$Id: tty.c,v 1.12 1999/08/10 10:50:44 brian Exp $
  */
 
 #include <sys/param.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <netdb.h>
-#include <netinet/in_systm.h>
-#include <netinet/ip.h>
 #include <sys/un.h>
 #if defined(__OpenBSD__) || defined(__NetBSD__)
 #include <sys/ioctl.h>
-#include <util.h>
-#else
-#include <libutil.h>
 #endif
 
 #include <errno.h>
 #include <fcntl.h>
-#include <paths.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sysexits.h>
-#include <sys/wait.h>
 #include <sys/uio.h>
 #include <termios.h>
 #include <unistd.h>
@@ -57,8 +45,6 @@
 #include "defs.h"
 #include "mbuf.h"
 #include "log.h"
-#include "id.h"
-#include "sync.h"
 #include "timer.h"
 #include "lqr.h"
 #include "hdlc.h"
@@ -68,20 +54,10 @@
 #include "ccp.h"
 #include "link.h"
 #include "async.h"
-#include "slcompress.h"
-#include "iplist.h"
-#include "ipcp.h"
-#include "filter.h"
 #include "descriptor.h"
 #include "physical.h"
 #include "mp.h"
-#ifndef NORADIUS
-#include "radius.h"
-#endif
 #include "chat.h"
-#include "command.h"
-#include "bundle.h"
-#include "prompt.h"
 #include "auth.h"
 #include "chap.h"
 #include "cbcp.h"
@@ -89,12 +65,20 @@
 #include "main.h"
 #include "tty.h"
 
+#if defined(__mac68k__) || defined(__macppc__)
+#undef	CRTS_IFLOW
+#undef	CCTS_OFLOW
+#define	CRTS_IFLOW	CDTRCTS
+#define	CCTS_OFLOW	CDTRCTS
+#endif
+
 #define	Online(dev)	((dev)->mbits & TIOCM_CD)
 
 struct ttydevice {
   struct device dev;		/* What struct physical knows about */
   struct pppTimer Timer;	/* CD checks */
   int mbits;			/* Current DCD status */
+  int carrier_seconds;		/* seconds before CD is *required* */
   struct termios ios;		/* To be able to reset from raw mode */
 };
 
@@ -124,10 +108,12 @@ tty_Timeout(void *data)
 
   if (p->fd >= 0) {
     if (ioctl(p->fd, TIOCMGET, &dev->mbits) < 0) {
-      log_Printf(LogPHASE, "%s: ioctl error (%s)!\n", p->link.name,
-                 strerror(errno));
-      datalink_Down(p->dl, CLOSE_NORMAL);
+      /* we must be a pty ? */
+      if (p->cfg.cd.necessity != CD_DEFAULT)
+        log_Printf(LogWARN, "%s: Carrier ioctl not supported, "
+                   "using ``set cd off''\n", p->link.name);
       timer_Stop(&dev->Timer);
+      dev->mbits = TIOCM_CD;
       return;
     }
   } else
@@ -136,16 +122,24 @@ tty_Timeout(void *data)
   if (ombits == -1) {
     /* First time looking for carrier */
     if (Online(dev))
-      log_Printf(LogDEBUG, "%s: %s: CD detected\n", p->link.name, p->name.full);
-    else if (p->cfg.cd.required) {
-      log_Printf(LogPHASE, "%s: %s: Required CD not detected\n",
-                 p->link.name, p->name.full);
-      datalink_Down(p->dl, CLOSE_NORMAL);
-    } else {
-      log_Printf(LogPHASE, "%s: %s doesn't support CD\n",
-                 p->link.name, p->name.full);
+      log_Printf(LogPHASE, "%s: %s: CD detected\n", p->link.name, p->name.full);
+    else if (++dev->carrier_seconds >= dev->dev.cd.delay) {
+      if (dev->dev.cd.necessity == CD_REQUIRED)
+        log_Printf(LogPHASE, "%s: %s: Required CD not detected\n",
+                   p->link.name, p->name.full);
+      else {
+        log_Printf(LogPHASE, "%s: %s doesn't support CD\n",
+                   p->link.name, p->name.full);
+        dev->mbits = TIOCM_CD;		/* Dodgy null-modem cable ? */
+      }
       timer_Stop(&dev->Timer);
-      dev->mbits = TIOCM_CD;
+      /* tty_AwaitCarrier() will notice */
+    } else {
+      /* Keep waiting */
+      log_Printf(LogDEBUG, "%s: %s: Still no carrier (%d/%d)\n",
+                 p->link.name, p->name.full, dev->carrier_seconds,
+                 dev->dev.cd.delay);
+      dev->mbits = -1;
     }
   } else {
     change = ombits ^ dev->mbits;
@@ -170,14 +164,32 @@ tty_StartTimer(struct physical *p)
   struct ttydevice *dev = device2tty(p->handler);
 
   timer_Stop(&dev->Timer);
-  dev->Timer.load = SECTICKS * p->cfg.cd.delay;
+  dev->Timer.load = SECTICKS;
   dev->Timer.func = tty_Timeout;
   dev->Timer.name = "tty CD";
   dev->Timer.arg = p;
   log_Printf(LogDEBUG, "%s: Using tty_Timeout [%p]\n",
              p->link.name, tty_Timeout);
-  dev->mbits = -1;		/* So we know it's the first time */
   timer_Start(&dev->Timer);
+}
+
+static int
+tty_AwaitCarrier(struct physical *p)
+{
+  struct ttydevice *dev = device2tty(p->handler);
+
+  if (dev->dev.cd.necessity == CD_NOTREQUIRED || physical_IsSync(p))
+    return CARRIER_OK;
+
+  if (dev->mbits == -1) {
+    if (dev->Timer.state == TIMER_STOPPED) {
+      dev->carrier_seconds = 0;
+      tty_StartTimer(p);
+    }
+    return CARRIER_PENDING;			/* Not yet ! */
+  }
+
+  return Online(dev) ? CARRIER_OK : CARRIER_LOST;
 }
 
 static int
@@ -187,34 +199,30 @@ tty_Raw(struct physical *p)
   struct termios ios;
   int oldflag;
 
-  if (physical_IsSync(p))
-    return 1;
-
-  log_Printf(LogDEBUG, "%s: Entering physical_Raw\n", p->link.name);
+  log_Printf(LogDEBUG, "%s: Entering tty_Raw\n", p->link.name);
 
   if (p->type != PHYS_DIRECT && p->fd >= 0 && !Online(dev))
     log_Printf(LogDEBUG, "%s: Raw: descriptor = %d, mbits = %x\n",
               p->link.name, p->fd, dev->mbits);
 
-  tcgetattr(p->fd, &ios);
-  cfmakeraw(&ios);
-  if (p->cfg.rts_cts)
-    ios.c_cflag |= CLOCAL | CCTS_OFLOW | CRTS_IFLOW;
-  else
-    ios.c_cflag |= CLOCAL;
+  if (!physical_IsSync(p)) {
+    tcgetattr(p->fd, &ios);
+    cfmakeraw(&ios);
+    if (p->cfg.rts_cts)
+      ios.c_cflag |= CLOCAL | CCTS_OFLOW | CRTS_IFLOW;
+    else
+      ios.c_cflag |= CLOCAL;
 
-  if (p->type != PHYS_DEDICATED)
-    ios.c_cflag |= HUPCL;
+    if (p->type != PHYS_DEDICATED)
+      ios.c_cflag |= HUPCL;
 
-  tcsetattr(p->fd, TCSANOW, &ios);
+    tcsetattr(p->fd, TCSANOW, &ios);
+  }
 
   oldflag = fcntl(p->fd, F_GETFL, 0);
   if (oldflag < 0)
     return 0;
   fcntl(p->fd, F_SETFL, oldflag | O_NONBLOCK);
-
-  if (ioctl(p->fd, TIOCMGET, &dev->mbits) == 0)
-    tty_StartTimer(p);
 
   return 1;
 }
@@ -226,7 +234,7 @@ tty_Offline(struct physical *p)
 
   if (p->fd >= 0) {
     timer_Stop(&dev->Timer);
-    dev->mbits &= ~TIOCM_DTR;
+    dev->mbits &= ~TIOCM_DTR;	/* XXX: Hmm, what's this supposed to do ? */
     if (Online(dev)) {
       struct termios tio;
 
@@ -249,12 +257,12 @@ tty_Cooked(struct physical *p)
   tty_Offline(p);	/* In case of emergency close()s */
 
   tcflush(p->fd, TCIOFLUSH);
-  if (!physical_IsSync(p)) {
+
+  if (!physical_IsSync(p))
     tcsetattr(p->fd, TCSAFLUSH, &dev->ios);
-    oldflag = fcntl(p->fd, F_GETFL, 0);
-    if (oldflag == 0)
-      fcntl(p->fd, F_SETFL, oldflag & ~O_NONBLOCK);
-  }
+
+  if ((oldflag = fcntl(p->fd, F_GETFL, 0)) != -1)
+    fcntl(p->fd, F_SETFL, oldflag & ~O_NONBLOCK);
 }
 
 static void
@@ -296,12 +304,13 @@ tty_OpenInfo(struct physical *p)
   else
     strcpy(buf, "no");
   strcat(buf, " carrier");
+
   return buf;
 }
 
 static void
 tty_device2iov(struct device *d, struct iovec *iov, int *niov,
-               int maxiov, pid_t newpid)
+               int maxiov, int *auxfd, int *nauxfd)
 {
   struct ttydevice *dev = device2tty(d);
   int sz = physical_MaxDeviceSize();
@@ -323,6 +332,9 @@ tty_device2iov(struct device *d, struct iovec *iov, int *niov,
 static struct device basettydevice = {
   TTY_DEVICE,
   "tty",
+  { CD_VARIABLE, DEF_TTYCDDELAY },
+  tty_AwaitCarrier,
+  NULL,
   tty_Raw,
   tty_Offline,
   tty_Cooked,
@@ -337,7 +349,7 @@ static struct device basettydevice = {
 
 struct device *
 tty_iov2device(int type, struct physical *p, struct iovec *iov, int *niov,
-               int maxiov)
+               int maxiov, int *auxfd, int *nauxfd)
 {
   if (type == TTY_DEVICE) {
     struct ttydevice *dev = (struct ttydevice *)iov[(*niov)++].iov_base;
@@ -393,8 +405,13 @@ tty_Create(struct physical *p)
 
   memcpy(&dev->dev, &basettydevice, sizeof dev->dev);
   memset(&dev->Timer, '\0', sizeof dev->Timer);
+  dev->mbits = -1;
   tcgetattr(p->fd, &ios);
   dev->ios = ios;
+
+  if (p->cfg.cd.necessity != CD_DEFAULT)
+    /* Any override is ok for the tty device */
+    dev->dev.cd = p->cfg.cd;
 
   log_Printf(LogDEBUG, "%s: tty_Create: physical (get): fd = %d,"
              " iflag = %lx, oflag = %lx, cflag = %lx\n", p->link.name, p->fd,
@@ -408,10 +425,8 @@ tty_Create(struct physical *p)
     ios.c_iflag |= IXOFF;
   }
   ios.c_iflag |= IXON;
-  if (p->type != PHYS_DEDICATED) {
+  if (p->type != PHYS_DEDICATED)
     ios.c_cflag |= HUPCL;
-    ios.c_cflag &= ~CLOCAL;
-  }
 
   if (p->type != PHYS_DIRECT) {
       /* Change tty speed when we're not in -direct mode */
@@ -426,22 +441,6 @@ tty_Create(struct physical *p)
             "cflag = %lx\n", p->link.name, (u_long)ios.c_iflag,
             (u_long)ios.c_oflag, (u_long)ios.c_cflag);
 
-  if (ioctl(p->fd, TIOCMGET, &dev->mbits) == -1) {
-    if (p->type != PHYS_DIRECT) {
-      /* Complete failure - parent doesn't continue trying to ``create'' */
-
-      log_Printf(LogWARN, "%s: Open: Cannot get physical status: %s\n",
-                 p->link.name, strerror(errno));
-      tty_Cooked(p);
-      close(p->fd);
-      p->fd = -1;
-      return NULL;
-    } else
-      dev->mbits = TIOCM_CD;
-  }
-  log_Printf(LogDEBUG, "%s: Open: physical control = %o\n",
-             p->link.name, dev->mbits);
-
   oldflag = fcntl(p->fd, F_GETFL, 0);
   if (oldflag < 0) {
     /* Complete failure - parent doesn't continue trying to ``create'' */
@@ -451,6 +450,7 @@ tty_Create(struct physical *p)
     tty_Cooked(p);
     close(p->fd);
     p->fd = -1;
+    free(dev);
     return NULL;
   } else
     fcntl(p->fd, F_SETFL, oldflag & ~O_NONBLOCK);

@@ -33,7 +33,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: packet.c,v 1.1.1.1 1997/07/18 22:48:50 provos Exp $";
+static char rcsid[] = "$Id: packet.c,v 1.2 1998/03/04 11:43:35 provos Exp $";
 #endif
 
 #define _PACKET_C_

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: termlib.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* termlib.c */
 int tgetent __PARMS((char *tbuf, char *term));
 int tgetflag __PARMS((char *id));

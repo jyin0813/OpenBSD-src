@@ -1,9 +1,9 @@
-/*	$OpenBSD: help.c,v 1.2 1998/09/15 05:12:32 pjanzen Exp $	*/
+/*	$OpenBSD: help.c,v 1.3 2000/06/29 07:55:41 pjanzen Exp $	*/
 /*	$NetBSD: help.c,v 1.4 1997/10/18 20:03:24 christos Exp $	*/
 
 /* help.c		Larn is copyrighted 1986 by Noah Morgan. */
 #ifndef lint
-static char rcsid[] = "$OpenBSD: help.c,v 1.2 1998/09/15 05:12:32 pjanzen Exp $";
+static char rcsid[] = "$OpenBSD: help.c,v 1.3 2000/06/29 07:55:41 pjanzen Exp $";
 #endif /* not lint */
 
 #include <unistd.h>

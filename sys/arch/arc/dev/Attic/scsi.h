@@ -1,4 +1,4 @@
-/*	$OpenBSD: scsi.h,v 1.1.1.1 1996/06/24 09:07:19 pefo Exp $	*/
+/*	$OpenBSD: scsi.h,v 1.2 1997/04/19 17:19:54 pefo Exp $	*/
 /*
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)scsi.h	8.1 (Berkeley) 6/10/93
- *      $Id: scsi.h,v 1.1.1.1 1996/06/24 09:07:19 pefo Exp $
+ *      $Id: scsi.h,v 1.2 1997/04/19 17:19:54 pefo Exp $
  *
  * scsi.h --
  *
@@ -47,7 +47,7 @@
  *
  * from: Header: /sprite/src/kernel/dev/RCS/scsi.h,
  *	v 9.1 90/02/13 23:11:24 jhh Exp  SPRITE (Berkeley)
- * $Id: scsi.h,v 1.1.1.1 1996/06/24 09:07:19 pefo Exp $
+ * $Id: scsi.h,v 1.2 1997/04/19 17:19:54 pefo Exp $
  */
 
 #ifndef _SCSI_H

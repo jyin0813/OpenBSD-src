@@ -1,4 +1,4 @@
-/*	$Id: promcons.c,v 1.2 1996/02/03 03:22:12 build Exp $ */
+/*	$Id: promcons.c,v 1.1 1997/03/03 19:30:36 rahnds Exp $ */
 
 /*
  * Copyright (c) 1996 Nivas Madhur

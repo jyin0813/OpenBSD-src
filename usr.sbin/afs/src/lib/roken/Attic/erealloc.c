@@ -38,7 +38,7 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-RCSID("$Id: erealloc.c,v 1.3 1999/05/16 22:10:58 assar Exp $");
+RCSID("$Id: erealloc.c,v 1.2 2000/09/11 14:40:59 art Exp $");
 #endif
 
 #include <stdlib.h>

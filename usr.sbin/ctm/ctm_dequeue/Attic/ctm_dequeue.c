@@ -26,7 +26,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: ctm_dequeue.c,v 1.3 1998/06/23 22:40:33 millert Exp $
+ *	$Id: ctm_dequeue.c,v 1.4 1999/07/13 23:02:05 deraadt Exp $
  */
 
 /*

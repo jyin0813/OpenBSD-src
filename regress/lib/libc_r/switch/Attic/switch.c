@@ -1,4 +1,4 @@
-/*	$OpenBSD: switch.c,v 1.2 2002/06/16 23:06:53 marc Exp $	*/
+/*	$OpenBSD: switch.c,v 1.3 2002/10/12 18:59:13 marc Exp $	*/
 /*
  * Copyright (c) 1993, 1994, 1995, 1996 by Chris Provenzano and contributors, 
  * proven@mit.edu All rights reserved.

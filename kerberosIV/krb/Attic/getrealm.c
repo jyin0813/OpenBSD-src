@@ -1,4 +1,4 @@
-/*	$OpenBSD: getrealm.c,v 1.10 1998/02/25 15:51:15 art Exp $	*/
+/*	$OpenBSD: getrealm.c,v 1.11 1998/05/18 00:53:44 art Exp $	*/
 /*	$KTH: getrealm.c,v 1.26 1997/10/08 22:51:13 joda Exp $		*/
 
 /*

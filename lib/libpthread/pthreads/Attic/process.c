@@ -47,7 +47,7 @@
 extern void *alloca();
 
 #ifndef lint
-static const char rcsid[] = "$Id: process.c,v 1.53.4.1 1996/11/12 13:45:16 proven Exp $";
+static const char rcsid[] = "$Id: process.c,v 1.1 1998/07/21 13:20:09 peter Exp $";
 #endif
 
 /* ==========================================================================

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1998/01/26 04:16:56 dgregor Exp $
+#	$OpenBSD: Makefile,v 1.4 1999/02/21 23:11:05 tholo Exp $
 
 PROG=	ipresend
 BINDIR=	/usr/sbin

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: longrun.h,v 1.1 2003/05/14 22:08:04 tedu Exp $ */
 /*
  * Copyright (c) 2003 Ted Unangst
  * All rights reserved.

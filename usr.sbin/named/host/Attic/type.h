@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: type.h,v 1.2 1997/03/12 10:41:57 downsj Exp $	*/
 
 /*
 ** Various new resource record type and class values.

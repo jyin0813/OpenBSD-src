@@ -1,5 +1,5 @@
 /*	$NetBSD: types.h,v 1.12 1995/12/09 04:41:41 mycroft Exp $	*/
-/*	$OpenBSD: types.h,v 1.12 1995/12/09 04:41:41 mycroft Exp $	*/
+/*	$OpenBSD: types.h,v 1.5 1999/01/08 03:04:08 millert Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.

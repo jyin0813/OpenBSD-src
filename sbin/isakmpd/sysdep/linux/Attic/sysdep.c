@@ -1,7 +1,7 @@
-/*	$Id: sysdep.c,v 1.1 1999/02/26 03:59:48 niklas Exp $	*/
+/*	$Id: sysdep.c,v 1.13 2000/12/12 00:29:17 niklas Exp $	*/
 
 /*
- * Copyright (c) 1998 Niklas Hallqvist.  All rights reserved.
+ * Copyright (c) 1998, 1999 Niklas Hallqvist.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -35,24 +35,57 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <sys/time.h>
 #include <netinet/in.h>
 #include <stdlib.h>
 #include <string.h>
+#include <fcntl.h>
+#include <md5.h>
+#include <unistd.h>
+
+#include "sysdep.h"
 
 #ifdef NEED_SYSDEP_APP
 #include "app.h"
+#include "conf.h"
 #include "ipsec.h"
+#include "klips.h"
 #endif NEED_SYSDEP_APP
 #include "log.h"
 #include "sysdep.h"
 
 extern char *__progname;
-int regrand = 0;
 
 u_int32_t
 sysdep_random ()
 {
-  return (random () << 16) | random();
+  u_int32_t rndval;
+  u_char sig[16];
+  MD5_CTX ctx;
+  int fd, i;
+  struct {
+    struct timeval tv;
+    u_int rnd[(128 - sizeof (struct timeval)) / sizeof (u_int)];
+  } rdat;
+
+  fd = open ("/dev/urandom", O_RDONLY);
+  if (fd != -1)
+    {
+      read (fd, rdat.rnd, sizeof(rdat.rnd));
+      close (fd);
+    }
+  MD5Init (&ctx);
+  MD5Update (&ctx, (char *)&rdat, sizeof(rdat));
+  MD5Final (sig, &ctx);
+
+  rndval = 0;	
+  for (i = 0; i < 4; i++)
+    {
+      u_int32_t *tmp = (u_int32_t *)&sig[i * 4];
+      rndval ^= *tmp;
+    }
+		 
+  return rndval; 
 }
 
 char *
@@ -66,7 +99,7 @@ sysdep_progname ()
 int
 sysdep_app_open ()
 {
-  return -1;
+  return klips_open ();
 }
 
 void
@@ -74,17 +107,29 @@ sysdep_app_handler (int fd)
 {
 }
 
-u_int8_t *
-sysdep_ipsec_get_spi (size_t *sz, u_int8_t proto, void *id, size_t id_sz)
+/* Check that the connection named NAME is active, or else make it active.  */
+void
+sysdep_connection_check (char *name)
 {
-#ifdef notyet
+  klips_connection_check (name);
+}
+
+/*
+ * Generate a SPI for protocol PROTO and the source/destination pair given by
+ * SRC, SRCLEN, DST & DSTLEN.  Stash the SPI size in SZ.
+ */
+u_int8_t *
+sysdep_ipsec_get_spi (size_t *sz, u_int8_t proto, struct sockaddr *src,
+		      int srclen, struct sockaddr *dst, int dstlen)
+{
   if (app_none)
-#endif
     {
       *sz = IPSEC_SPI_SIZE;
       /* XXX should be random instead I think.  */
       return strdup ("\x12\x34\x56\x78");
     }
+
+  return klips_get_spi (sz, proto, src, srclen, dst, dstlen);
 }
 
 int
@@ -94,28 +139,27 @@ sysdep_cleartext (int fd)
 }
 
 int
-sysdep_ipsec_delete_spi (struct sa *sa, struct proto *proto, int initiator)
+sysdep_ipsec_delete_spi (struct sa *sa, struct proto *proto, int incoming)
 {
-  return 0;
+  return klips_delete_spi (sa, proto, incoming);
 }
 
 int
-sysdep_ipsec_enable_spi (struct sa *sa, int initiator)
+sysdep_ipsec_enable_sa (struct sa *sa, struct sa *isakmp_sa)
 {
-  return 0;
+  return klips_enable_sa (sa, isakmp_sa);
 }
 
 int
 sysdep_ipsec_group_spis (struct sa *sa, struct proto *proto1,
-		      struct proto *proto2, int role)
+			 struct proto *proto2, int incoming)
 {
-  return 0;
+  return klips_group_spis (sa, proto1, proto2, incoming);
 }
 
 int
-sysdep_ipsec_set_spi (struct sa *sa, struct proto *proto, int role,
-		      int initiator)
+sysdep_ipsec_set_spi (struct sa *sa, struct proto *proto, int incoming)
 {
-  return 0;
+  return klips_set_spi (sa, proto, incoming);
 }
 #endif

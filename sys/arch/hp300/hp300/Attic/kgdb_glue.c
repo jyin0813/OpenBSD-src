@@ -1,4 +1,4 @@
-/*	$OpenBSD: kgdb_glue.c,v 1.2 1997/01/12 15:13:18 downsj Exp $	*/
+/*	$OpenBSD: kgdb_glue.c,v 1.3 1997/04/16 11:56:26 downsj Exp $	*/
 /*	$NetBSD: kgdb_glue.c,v 1.3 1997/04/01 03:12:19 scottr Exp $	*/
 
 /*

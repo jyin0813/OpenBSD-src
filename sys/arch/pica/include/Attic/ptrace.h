@@ -1,4 +1,4 @@
-/*      $OpenBSD: ptrace.h,v 1.2 1996/05/01 18:23:50 pefo Exp $	*/
+/*      $OpenBSD: ptrace.h,v 1.3 1996/06/06 23:07:06 deraadt Exp pefo $	*/
 
 /*
  * Copyright (c) 1992, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD: identity.c,v 1.7 2002/06/10 19:58:20 espie Exp $	*/
+/*	$OpenBSD: identity.c,v 1.8 2002/12/06 02:17:42 deraadt Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -35,7 +35,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: identity.c,v 1.7 2002/06/10 19:58:20 espie Exp $";
+static char rcsid[] = "$OpenBSD: identity.c,v 1.8 2002/12/06 02:17:42 deraadt Exp $";
 #endif
 
 #define _IDENTITY_C_

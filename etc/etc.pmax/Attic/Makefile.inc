@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.15 1998/04/02 19:57:29 maja Exp $
+#	$OpenBSD: Makefile.inc,v 1.16 1998/04/08 18:39:30 maja Exp $
 #	etc.pmax/Makefile.inc -- pmax-specific etc Makefile targets
 
 .ifdef DESTDIR

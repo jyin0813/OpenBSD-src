@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: koi8,v 1.4 1996/09/01 19:41:21 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1996 Michael Shalayeff

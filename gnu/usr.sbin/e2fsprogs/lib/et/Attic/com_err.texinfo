@@ -1,7 +1,7 @@
 \input texinfo @c -*-texinfo-*-
 
-@c $Header: /mit/krb5/.cvsroot/src/util/et/com_err.texinfo,v 1.1 1993/06/03 12:29:38 tytso Exp $
-@c $Source: /mit/krb5/.cvsroot/src/util/et/com_err.texinfo,v $
+@c $Header: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/et/com_err.texinfo,v 1.1 1997/06/14 07:18:44 downsj Exp $
+@c $Source: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/et/com_err.texinfo,v $
 @c $Locker:  $
 
 @c Note that although this source file is in texinfo format (more

@@ -34,7 +34,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: handle_message_reject.c,v 1.1 1997/05/22 17:19:20 provos Exp $";
+static char rcsid[] = "$Id: handle_message_reject.c,v 1.1 1997/07/18 22:48:50 provos Exp $";
 #endif
 
 #include <stdio.h>

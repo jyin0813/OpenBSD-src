@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: genfs.h,v 1.1 2001/12/10 04:45:31 art Exp $	*/
 /* $NetBSD: genfs_node.h,v 1.2 2001/09/15 22:38:40 chs Exp $ */
 
 /*

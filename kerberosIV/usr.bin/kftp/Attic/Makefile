@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.1 2000/02/25 16:35:30 hin Exp $
+# $OpenBSD: Makefile,v 1.2 2002/05/11 00:20:18 espie Exp $
 
 PROG	= kftp
 

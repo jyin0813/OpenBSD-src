@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 2004/01/28 01:46:17 mickey Exp $
 
 CFLAGS+=	-DLIBC_SCCS -fno-omit-frame-pointer
 OBJS=		crt0.o gcrt0.o crtbegin.o crtend.o crtbeginS.o crtendS.o

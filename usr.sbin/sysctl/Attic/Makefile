@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 1999/12/10 10:12:56 itojun Exp $
+#	$OpenBSD: Makefile,v 1.5 1999/12/30 19:06:05 provos Exp $
 
 PROG=	sysctl
 MAN=	sysctl.8

@@ -1,4 +1,4 @@
-#	$Id: Makefile.inc,v 1.2 1999/02/25 16:14:24 niklas Exp $
+#	$Id: Makefile.inc,v 1.1 1999/02/26 04:01:15 niklas Exp $
 
 #
 # Copyright (c) 1999 Niklas Hallqvist.  All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: elf.h,v 1.2 1995/03/28 18:19:14 jtc Exp $	*/
+/*	$OpenBSD: elf.h,v 1.2 1996/06/06 23:06:38 deraadt Exp pefo $	*/
 /*	$NetBSD: elf.h,v 1.2 1995/03/28 18:19:14 jtc Exp $	*/
 
 /*

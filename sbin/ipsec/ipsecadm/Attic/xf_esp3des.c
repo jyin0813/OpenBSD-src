@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_esp3des.c,v 1.2 1997/07/01 22:18:05 provos Exp $ */
+/* $OpenBSD: xf_esp3des.c,v 1.3 1997/07/11 23:50:23 provos Exp $ */
 /*
  * The author of this code is John Ioannidis, ji@tla.org,
  * 	(except when noted otherwise).

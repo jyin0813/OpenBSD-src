@@ -6,7 +6,7 @@
  * this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
  * ----------------------------------------------------------------------------
  *
- * $Id: ctm.c,v 1.3 1998/11/23 04:35:25 millert Exp $
+ * $Id: ctm.c,v 1.4 1999/07/13 23:02:05 deraadt Exp $
  *
  * This is the client program of 'CTM'.  It will apply a CTM-patch to a
  * collection of files.

@@ -39,7 +39,7 @@ case "$1" in
     #
     # -version
     #
-    version="`expr '$Revision: 1.1.1.1 $' : '.*Revision: \(.*\) .*'`" ;
+    version="`expr '$Revision: 1.1 $' : '.*Revision: \(.*\) .*'`" ;
     echo "$name: version $version" ;
     exit 0;
     ;;

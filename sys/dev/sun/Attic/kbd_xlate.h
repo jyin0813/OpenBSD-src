@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbd_xlate.h,v 1.3 1997/08/08 08:17:19 downsj Exp $	*/
+/*	$OpenBSD: kbd_xlate.h,v 1.4 2002/03/14 01:27:02 millert Exp $	*/
 /*	$NetBSD: kbd_xlate.h,v 1.2 1996/12/17 20:46:15 gwr Exp $	*/
 
 /*

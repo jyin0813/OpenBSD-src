@@ -1,4 +1,4 @@
-/*	$OpenBSD: parse.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $	*/
+/*	$OpenBSD: parse.c,v 1.1 1996/11/15 09:25:31 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -25,7 +25,7 @@
 
 #ifndef lint
 static char const rcsid[] =
-    "$Id: parse.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $";
+    "$Id: parse.c,v 1.1 1996/11/15 09:25:31 downsj Exp $";
 #endif
 
 enum parse_mode { WHITESPACE, TOKEN, QUOTED_STRING };

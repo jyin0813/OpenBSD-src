@@ -1,4 +1,4 @@
-/*	$OpenBSD: iodc.h,v 1.1 1998/06/23 19:45:23 mickey Exp $	*/
+/*	$OpenBSD: iodc.h,v 1.2 1998/08/29 01:33:32 mickey Exp $	*/
 
 /*
  * Copyright (c) 1990 mt Xinu, Inc.  All rights reserved.

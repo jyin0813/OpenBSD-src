@@ -1,4 +1,4 @@
-/*	$OpenBSD: gifconfig.c,v 1.2 1999/12/21 08:48:06 itojun Exp $	*/
+/*	$OpenBSD: gifconfig.c,v 1.3 2000/01/09 00:32:01 angelos Exp $	*/
 
 /*
  * Copyright (c) 1983, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD: Version.c,v 1.2 1997/03/12 10:42:20 downsj Exp $	*/
+/*	$OpenBSD: Version.c,v 1.3 1998/05/22 00:47:30 millert Exp $	*/
 
 /*
  *	@(#)Version.c	4.9 (Berkeley) 7/21/90
@@ -10,7 +10,7 @@
 char sccsid[] = "@(#)named %VERSION% %WHEN% %WHOANDWHERE%";
 char rcsid[] = "$From: Version.c,v 8.2 1997/06/01 20:34:34 vixie Exp $";
 #else
-char rcsid[] = "$OpenBSD: Version.c,v 1.2 1997/03/12 10:42:20 downsj Exp $";
+char rcsid[] = "$OpenBSD: Version.c,v 1.3 1998/05/22 00:47:30 millert Exp $";
 #endif
 #endif /* not lint */
 

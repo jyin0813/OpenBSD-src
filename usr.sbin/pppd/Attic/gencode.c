@@ -1,4 +1,4 @@
-/*	$OpenBSD: gencode.c,v 1.1 1996/03/25 15:55:40 niklas Exp $	*/
+/*	$OpenBSD: gencode.c,v 1.2 1997/06/27 02:16:22 deraadt Exp $	*/
 /*	From NetBSD: gencode.c,v 1.2 1995/03/06 11:38:21 mycroft Exp */
 
 /*
@@ -26,7 +26,7 @@
 from: static char rcsid[] =
     "@(#) Header: gencode.c,v 1.55 94/06/20 19:07:53 leres Exp (LBL)";
 #else
-static char rcsid[] = "$OpenBSD: gencode.c,v 1.1 1996/03/25 15:55:40 niklas Exp $";
+static char rcsid[] = "$OpenBSD: gencode.c,v 1.2 1997/06/27 02:16:22 deraadt Exp $";
 #endif
 #endif
 

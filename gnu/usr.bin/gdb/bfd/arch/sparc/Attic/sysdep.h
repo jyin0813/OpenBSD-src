@@ -1,4 +1,4 @@
-/*	$Id: sysdep.h,v 1.4 1994/05/31 20:54:14 pk Exp $ */
+/*	$Id: sysdep.h,v 1.1 1995/10/18 08:39:55 deraadt Exp $ */
 
 #ifndef hosts_sparc_H
 #define hosts_sparc_H

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rd_safe.c,v 1.4 1997/12/09 07:57:34 art Exp $	*/
+/*	$OpenBSD: rd_safe.c,v 1.5 1997/12/12 05:30:29 art Exp $	*/
 /* $KTH: rd_safe.c,v 1.24 1997/04/19 23:18:20 joda Exp $ */
 
 /*

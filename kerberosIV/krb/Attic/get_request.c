@@ -1,7 +1,7 @@
 /*
  * This software may now be redistributed outside the US.
  *
- * $Source: /usr/src/kerberosIV/lib/krb/RCS/get_request.c,v $
+ * $Source: /cvs/src/kerberosIV/krb/get_request.c,v $
  *
  * $Locker:  $
  */

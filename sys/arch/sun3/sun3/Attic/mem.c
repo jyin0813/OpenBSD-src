@@ -1,4 +1,4 @@
-/*	$OpenBSD: mem.c,v 1.18 2001/12/08 02:24:07 art Exp $	*/
+/*	$OpenBSD: mem.c,v 1.19 2002/03/14 01:26:47 millert Exp $	*/
 /*	$NetBSD: mem.c,v 1.19 1995/08/08 21:09:01 gwr Exp $	*/
 
 /*

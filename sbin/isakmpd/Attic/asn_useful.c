@@ -1,4 +1,4 @@
-/*	$OpenBSD: asn_useful.c,v 1.6 1999/02/26 03:32:50 niklas Exp $	*/
+/*	$OpenBSD: asn_useful.c,v 1.7 1999/04/19 19:54:53 niklas Exp $	*/
 /*	$EOM: asn_useful.c,v 1.11 1999/04/02 00:57:27 niklas Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_fork.c,v 1.9 2000/01/06 07:17:09 d Exp $	*/
+/*	$OpenBSD: uthread_fork.c,v 1.10 2001/08/21 19:24:53 fgsch Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

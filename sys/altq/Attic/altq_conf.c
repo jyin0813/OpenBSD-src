@@ -1,4 +1,4 @@
-/*	$OpenBSD: altq_conf.c,v 1.3 2002/03/14 01:26:26 millert Exp $	*/
+/*	$OpenBSD: altq_conf.c,v 1.4 2002/11/26 01:03:34 henning Exp $	*/
 /*	$KAME: altq_conf.c,v 1.11 2001/06/21 11:00:36 kjc Exp $	*/
 
 /*

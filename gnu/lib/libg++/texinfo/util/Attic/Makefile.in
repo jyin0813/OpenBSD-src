@@ -1,5 +1,5 @@
 # Makefile for GNU Texindex and other utilities.
-# $Id: Makefile.in,v 1.1 1998/03/03 20:25:14 millert Exp $
+# $Id: Makefile.in,v 1.1.1.1 1997/08/21 22:58:12 jason Exp $
 # 
 # Copyright (C) 1990, 91, 92, 96 Free Software Foundation, Inc.
 

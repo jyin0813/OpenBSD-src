@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.6 1997/12/16 20:59:46 deraadt Exp $
+#	$Id: Makefile,v 1.7 1998/04/26 22:32:11 art Exp $
 
 .include <bsd.obj.mk>
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: busswfunc.h,v 1.3 2001/12/19 04:02:25 smurph Exp $ */
+/*	$OpenBSD: busswfunc.h,v 1.4 2002/03/14 01:26:39 millert Exp $ */
 
 #ifndef _MVME88K_BUSSWF_H_
 #define _MVME88K_BUSSWF_H_

@@ -1,10 +1,10 @@
-/*	$OpenBSD: dig.c,v 1.7 2002/07/12 21:11:10 deraadt Exp $	*/
+/*	$OpenBSD: dig.c,v 1.8 2003/01/03 17:59:45 jason Exp $	*/
 
 #ifndef lint
 #if 0
 static char rcsid[] = "$From: dig.c,v 8.8 1996/05/21 07:32:40 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD: dig.c,v 1.7 2002/07/12 21:11:10 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: dig.c,v 1.8 2003/01/03 17:59:45 jason Exp $";
 #endif
 #endif
 

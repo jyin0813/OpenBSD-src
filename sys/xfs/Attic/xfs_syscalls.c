@@ -1,4 +1,4 @@
-/*	$OpenBSD: xfs_syscalls.c,v 1.5 1998/09/17 20:50:25 art Exp $	*/
+/*	$OpenBSD: xfs_syscalls.c,v 1.6 1998/09/18 02:41:44 art Exp $	*/
 /*
  * Copyright (c) 1995, 1996, 1997, 1998 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).

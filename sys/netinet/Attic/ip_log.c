@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_log.c,v 1.11 2001/03/25 12:03:11 gluk Exp $	*/
+/*	$OpenBSD: ip_log.c,v 1.12 2001/05/08 19:58:01 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1997-2001 by Darren Reed.

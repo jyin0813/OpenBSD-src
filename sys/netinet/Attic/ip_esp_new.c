@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_esp_new.c,v 1.55 1999/12/09 20:22:03 angelos Exp $	*/
+/*	$OpenBSD: ip_esp_new.c,v 1.56 1999/12/26 20:46:13 angelos Exp $	*/
 
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),

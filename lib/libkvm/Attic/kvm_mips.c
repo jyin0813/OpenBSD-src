@@ -1,4 +1,4 @@
-/*	$OpenBSD: kvm_mips.c,v 1.8 2001/11/05 23:04:35 art Exp $ */
+/*	$OpenBSD: kvm_mips.c,v 1.7 2001/05/19 09:34:26 art Exp $ */
 /*	$NetBSD: kvm_mips.c,v 1.3 1996/03/18 22:33:44 thorpej Exp $	*/
 
 /*-
@@ -42,7 +42,7 @@
 #if 0
 static char sccsid[] = "@(#)kvm_mips.c	8.1 (Berkeley) 6/4/93";
 #else
-static char *rcsid = "$OpenBSD: kvm_mips.c,v 1.8 2001/11/05 23:04:35 art Exp $";
+static char *rcsid = "$OpenBSD: kvm_mips.c,v 1.7 2001/05/19 09:34:26 art Exp $";
 #endif
 #endif /* LIBC_SCCS and not lint */
 
@@ -58,8 +58,6 @@ static char *rcsid = "$OpenBSD: kvm_mips.c,v 1.8 2001/11/05 23:04:35 art Exp $";
 #include <unistd.h>
 #include <nlist.h>
 #include <kvm.h>
-
-#include <vm/vm.h>
 
 #include <limits.h>
 #include <db.h>
@@ -147,7 +145,7 @@ _kvm_kvatop(kd, va, pa)
 	    va >= VM_MIN_KERNEL_ADDRESS + vm->Sysmapsize * NBPG)
 		goto invalid;
 	if (va < VM_MIN_KERNEL_ADDRESS) {
-		*pa = CACHED_TO_PHYS(va);
+		*pa = KSEG0_TO_PHYS(va);
 		return (NBPG - offset);
 	}
 	addr = (u_long)(vm->Sysmap + ((va - VM_MIN_KERNEL_ADDRESS) >> PGSHIFT));
@@ -172,6 +170,6 @@ _kvm_pa2off(kd, pa)
 	kvm_t *kd;
 	u_long pa;
 {
-	_kvm_err(kd, 0, "pa2off not yet implemented!");
+	_kvm_err(kd, 0, "pa2off going to be implemented!");
 	return 0;
 }

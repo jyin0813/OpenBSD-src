@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.11 1995/01/12 19:11:12 jtc Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:38:05 deraadt Exp etheisen $
 
 SUBDIR= libg++ genclass
 

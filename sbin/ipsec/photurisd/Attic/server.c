@@ -35,7 +35,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: server.c,v 1.6 1998/06/30 16:58:40 provos Exp $";
+static char rcsid[] = "$Id: server.c,v 1.7 1998/08/17 22:12:42 provos Exp $";
 #endif
 
 #define _SERVER_C_

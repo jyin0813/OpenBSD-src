@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.4 2000/06/16 19:56:54 millert Exp $
+#	$OpenBSD: Makefile.inc,v 1.5 2000/12/18 18:40:45 provos Exp $
 
 SRCS+=	__main.c imax.c imin.c lmax.c lmin.c max.c min.c ulmax.c ulmin.c \
 	memchr.c memcmp.c \

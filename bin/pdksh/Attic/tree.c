@@ -1,4 +1,4 @@
-/*	$OpenBSD: tree.c,v 1.4 1997/06/19 13:58:48 kstailey Exp $	*/
+/*	$OpenBSD: tree.c,v 1.5 1997/09/01 18:30:15 deraadt Exp $	*/
 
 /*
  * command tree climbing

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbdreg.h,v 1.1.1.1 1995/10/18 10:39:15 deraadt Exp $	*/
+/*	$OpenBSD: kbdreg.h,v 1.2 1996/06/06 23:06:42 deraadt Exp pefo $	*/
 
 /*
  * Keyboard definitions

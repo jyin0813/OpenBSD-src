@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: sigdeliver.c,v 1.1 2002/10/12 03:39:21 marc Exp $ */
 /* PUBLIC DOMAIN Oct 2002 <marc@snafu.org> */
 
 /*

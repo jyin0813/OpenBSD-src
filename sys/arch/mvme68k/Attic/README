@@ -113,7 +113,7 @@ Server ip address is: 128.252.169.2
 3800 
 Download was a success!
 Start @ 0x8000 ... 
->> NetBSD netboot [$Revision: 1.1.1.1 $]
+>> NetBSD netboot [$Revision: 1.1 $]
 boot: client IP address: 128.252.169.63
 boot: client name: vme147
 root addr=128.252.169.2 path=/export/root/vme147

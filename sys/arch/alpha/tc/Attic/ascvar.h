@@ -1,4 +1,4 @@
-/*	$OpenBSD: ascvar.h,v 1.1 2000/07/05 21:50:38 ericj Exp $	*/
+/*	$OpenBSD: ascvar.h,v 1.2 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: espvar.h,v 1.12 1996/11/24 04:21:30 cgd Exp $	*/
 
 #if defined(__sparc__) && !defined(SPARC_DRIVER)

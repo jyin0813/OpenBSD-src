@@ -1,5 +1,5 @@
 #! /bin/sh
-#	$OpenBSD$
+#	$OpenBSD: ncp,v 1.2 2001/01/29 01:58:13 niklas Exp $
 
 ## Like "rcp" but uses netcat on a high port.
 ## do "ncp targetfile" on the RECEIVING machine

@@ -1,4 +1,4 @@
-/*	$OpenBSD: m88110.c,v 1.2 2001/12/14 04:30:12 smurph Exp $	*/
+/*	$OpenBSD: m197_cmmu.c,v 1.13 2001/12/16 23:49:46 miod Exp $	*/
 /*
  * Copyright (c) 1998 Steve Murphree, Jr.
  * All rights reserved.
@@ -70,11 +70,11 @@
 #define CMMU_DEBUG 1
 
 #ifdef DEBUG
-   #define DB_CMMU		0x4000	/* MMU debug */
+#define DB_CMMU		0x4000	/* MMU debug */
 unsigned int debuglevel = 0;
-   #define dprintf(_L_,_X_) { if (debuglevel & (_L_)) { unsigned int psr = disable_interrupts_return_psr(); printf("%d: ", cpu_number()); printf _X_;  set_psr(psr); } }
+#define dprintf(_L_,_X_) { if (debuglevel & (_L_)) { unsigned int psr = disable_interrupts_return_psr(); printf("%d: ", cpu_number()); printf _X_;  set_psr(psr); } }
 #else
-   #define dprintf(_L_,_X_)
+#define dprintf(_L_,_X_)
 #endif 
 
 #ifdef DDB
@@ -168,7 +168,7 @@ patc_load(int index, unsigned upper, unsigned lower, int which)
 	}
 }
 
-void 
+void
 patc_sync(int which)
 {
 	int i;
@@ -206,7 +206,7 @@ patc_clear(void)
 }
 
 /* implement a FIFO on the PATC entries */
-void
+void 
 patc_insert(unsigned upper, unsigned lower, int which)
 {
 	int i;
@@ -281,7 +281,7 @@ m88110_setup_cmmu_config(void)
 void m88110_cmmu_dump_config(void)
 {
 	/* dummy routine */
-	return;
+   return;
 }
 
 #ifdef DDB
@@ -337,7 +337,7 @@ void
 m88110_cmmu_init(void)
 {
 	int i;
-	
+
 	/* clear BATCs */
 	for (i=0; i<8; i++) {
 		m88110_cmmu_set_pair_batc_entry(0, i, 0);
@@ -358,12 +358,12 @@ m88110_cmmu_init(void)
 		 | CMMU_DCTL_SEN
 		 | CMMU_DCTL_ADS
 		 | CMMU_DCTL_HTEN);      
-	
+
 
 	mc88110_inval_inst();		/* clear instruction cache & TIC */
 	mc88110_inval_data();		/* clear data cache */
 	mc88410_inval();		/* clear external data cache */
-	
+
 	set_dcmd(CMMU_DCMD_INV_SATC);	/* invalidate ATCs */
 
 	set_isr(0);
@@ -459,7 +459,7 @@ m88110_cmmu_set_sapr(unsigned ap)
 
 	set_icmd(CMMU_ICMD_INV_SATC);
 	set_dcmd(CMMU_DCMD_INV_SATC);
-	
+
 	ictl = get_ictl();
 	dctl = get_dctl();
 	/* disabel translation */
@@ -658,7 +658,7 @@ void
 m88110_cmmu_flush_remote_inst_cache(int cpu, vm_offset_t physaddr, int size)
 {
 	register int s = splhigh();
-	
+
 	mc88110_inval_inst();
 	splx(s);
 }
@@ -707,7 +707,7 @@ void
 m88110_cmmu_sync_cache(vm_offset_t physaddr, int size)
 {
 	register int s = splhigh();
-	
+
 	mc88110_inval_inst();
 	mc88110_flush_data();
 	mc88410_flush();
@@ -718,7 +718,7 @@ void
 m88110_cmmu_sync_inval_cache(vm_offset_t physaddr, int size)
 {
 	register int s = splhigh();
-	
+
 	mc88110_sync_data();
 	mc88410_sync();
 	splx(s);
@@ -750,7 +750,7 @@ m88110_dma_cachectl(vm_offset_t va, int size, int op)
 
    #define VV_EX_UNMOD		0
    #define VV_EX_MOD		1
-   #define VV_SHARED_UNMOD	2
+   #define VV_SHARED_UNMOD		2
    #define VV_INVALID		3
 
    #define D(UNION, LINE) \
@@ -828,9 +828,9 @@ m88110_cmmu_show_translation(unsigned address,
 		if (result & CMMU_DSR_BH) DEBUG_MSG(", BATC");
 	} else {
 		DEBUG_MSG("probe of 0x%08x missed the ATCs");
-	}
+}
 	DEBUG_MSG(".\n");
-	
+
 	/******* INTERPRET AREA DESCRIPTOR *********/
 	{
 		union apr_template apr_template;
@@ -1044,10 +1044,10 @@ m88110_table_search(pmap_t map, vm_offset_t virt, int write, int kernel, int dat
 
 	/* OK, it's valid.  Now check permissions. */
 	if (!kernel && SDT_SUP(sdt))
-		return (6); /* Supervisor Violation */
+			return (6); /* Supervisor Violation */
 	if (write && SDT_WP(sdt))
-		return (7); /* Write Violation */
-	
+			return (7); /* Write Violation */
+
 	pte = (pt_entry_t *)(((sdt + SDT_ENTRIES)->table_addr)<<PDT_SHIFT) + PDTIDX(virt);
 	/*
 	 * Check whether page frame exist or not.
@@ -1057,9 +1057,9 @@ m88110_table_search(pmap_t map, vm_offset_t virt, int write, int kernel, int dat
 
 	/* OK, it's valid.  Now check permissions. */
 	if (!kernel && PDT_SUP(pte))
-		return (6); /* Supervisor Violation */
+			return (6); /* Supervisor Violation */
 	if (write && PDT_WP(pte))
-		return (7); /* Write Violation */
+			return (7); /* Write Violation */
 	/* If we get here, load the PATC. */
 	entry_num++;
 	if (entry_num > 32)
@@ -1069,8 +1069,8 @@ m88110_table_search(pmap_t map, vm_offset_t virt, int write, int kernel, int dat
 		lpa |= 0x01;
 	i = entry_num << 5;
 	if (data) {
-		set_dir(i);	/* set PATC index */
-		set_dppu(lpa);	/* set logical address */
+		set_dir(i); /* set PATC index */
+		set_dppu(lpa); /* set logical address */
 		set_dppl((unsigned)pte); /* set page fram address */
 	} else {
 		set_iir(i);

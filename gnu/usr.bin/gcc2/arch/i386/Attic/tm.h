@@ -1,6 +1,6 @@
 /* Configuration for an i386 running NetBSD as the target machine. 
 
-	$Id: tm.h,v 1.9 1995/06/05 01:59:14 pk Exp $
+	$Id: tm.h,v 1.1 1995/10/18 08:39:19 deraadt Exp niklas $
 */
 
 /* This is tested by i386gas.h.  */

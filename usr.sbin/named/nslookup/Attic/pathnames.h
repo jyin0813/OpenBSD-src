@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pathnames.h,v 1.2 1997/03/12 10:42:49 downsj Exp $	*/
 
 /*
  * ++Copyright++ 1990

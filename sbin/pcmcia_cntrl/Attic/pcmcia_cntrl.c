@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pcmcia_cntrl.c,v 1.2 1996/06/23 14:32:00 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994 Stefan Grefen.  All rights reserved.

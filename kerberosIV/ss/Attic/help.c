@@ -1,4 +1,4 @@
-/*	$Id: help.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $	*/
+/*	$Id: help.c,v 1.2 1996/09/16 18:49:08 millert Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board

@@ -1,4 +1,4 @@
-/*      $OpenBSD: trap.h,v 1.1.1.1 1996/06/24 09:07:18 pefo Exp $	*/
+/*      $OpenBSD: trap.h,v 1.1 1997/02/06 16:02:43 pefo Exp $	*/
 
 /*
  * Copyright (c) 1988 University of Utah.

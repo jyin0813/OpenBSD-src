@@ -3,7 +3,7 @@
  *
  * Jim Rees, University of Michigan CITI
  */
-static char *rcsid = "$Id: $";
+static char *rcsid = "$Id: atr.c,v 1.1 2001/05/22 15:35:57 rees Exp $";
 
 #include <stdio.h>
 #include <string.h>

@@ -75,7 +75,7 @@
 %type	<file>	swap_device_spec
 
 %{
-/*	$OpenBSD$	*/
+/*	$OpenBSD: config.y,v 1.2 1997/01/12 07:43:32 downsj Exp $	*/
 /*	$NetBSD: config.y,v 1.19 1996/06/10 02:32:21 thorpej Exp $	*/
 
 /*

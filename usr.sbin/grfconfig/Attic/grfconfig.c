@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfconfig.c,v 1.6 2002/05/29 09:47:20 deraadt Exp $	*/
+/*	$OpenBSD: grfconfig.c,v 1.7 2002/09/06 22:45:06 deraadt Exp $	*/
 /*	$NetBSD: grfconfig.c,v 1.6 1997/07/29 23:41:12 veego Exp $	*/
 
 /*-
@@ -40,7 +40,7 @@
 #include <sys/cdefs.h>
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: grfconfig.c,v 1.6 2002/05/29 09:47:20 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: grfconfig.c,v 1.7 2002/09/06 22:45:06 deraadt Exp $";
 #endif /* not lint */
 
 #include <sys/file.h>

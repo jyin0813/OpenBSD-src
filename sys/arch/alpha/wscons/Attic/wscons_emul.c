@@ -1,4 +1,4 @@
-/*	$OpenBSD: wscons_emul.c,v 1.10 1997/07/31 04:48:11 kstailey Exp $	*/
+/*	$OpenBSD: wscons_emul.c,v 1.11 1997/07/31 13:40:04 kstailey Exp $	*/
 /*	$NetBSD: wscons_emul.c,v 1.7 1996/11/19 05:23:13 cgd Exp $	*/
 
 /*

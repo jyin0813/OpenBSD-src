@@ -1,4 +1,4 @@
-/*	$OpenBSD: wresize.c,v 1.6 1998/08/15 18:44:47 millert Exp $	*/
+/*	$OpenBSD: wresize.c,v 1.7 1998/09/13 19:16:31 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

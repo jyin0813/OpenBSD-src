@@ -43,7 +43,7 @@ static char rcsid[] = "$NetBSD: inet_addr.c,v 1.1.1.1 1997/03/29 21:52:17 mellon
 
 #ifndef lint
 static char copyright[] =
-"$Id: inet_addr.c,v 1.1.1.1 1997/03/29 21:52:17 mellon Exp $ Copyright (c) 1983, 1990, 1993 The Regents of the University of California.  All rights reserved.\n";
+"$Id: inet_addr.c,v 1.1 1998/08/18 03:43:26 deraadt Exp $ Copyright (c) 1983, 1990, 1993 The Regents of the University of California.  All rights reserved.\n";
 #endif /* not lint */
 
 #include "dhcpd.h"

@@ -15,7 +15,7 @@
    along with this program; if not, write to the Free Software
    Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: getopt.h,v 1.1 1994/01/28 12:42:25 pk Exp $
+	$Id: getopt.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $
 */
 
 #ifndef _GETOPT_H

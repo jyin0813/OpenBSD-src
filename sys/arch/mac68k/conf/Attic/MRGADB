@@ -1,4 +1,4 @@
-#	$OpenBSD: MRGADB,v 1.3 2001/05/05 22:52:21 deraadt dead $
+#	$OpenBSD: MRGADB,v 1.4 2001/05/08 17:30:39 aaron Exp $
 #
 # MRGADB - generic kernel with the optional "mrg" adb driver by default
 #

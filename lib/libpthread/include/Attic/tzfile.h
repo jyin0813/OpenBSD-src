@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)tzfile.h	5.10 (Berkeley) 4/3/91
- *	$Id: tzfile.h,v 1.5 1995/02/04 09:00:21 proven Exp $
+ *	$Id: tzfile.h,v 1.1 1998/07/21 13:19:10 peter Exp $
  */
 
 #ifndef _TZFILE_H_

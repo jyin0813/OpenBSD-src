@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1996/08/20 05:14:06 tholo Exp $
+#	$OpenBSD: Makefile,v 1.4 2002/12/09 23:43:11 millert Exp $
 #	$NetBSD: Makefile,v 1.8 1995/07/12 07:21:05 cgd Exp $
 
 PROG=	diff

@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.4 1995/01/07 23:08:36 mycroft Exp $
+# $Id: Makefile,v 1.1 1995/10/18 08:39:50 deraadt Exp $
 
 LIB=		bfd
 NOPROFILE=

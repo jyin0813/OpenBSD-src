@@ -1,40 +1,41 @@
-#	$OpenBSD: Makefile.inc,v 1.1 1998/06/23 20:33:50 mickey Exp $
+#	$OpenBSD$
 #
-#	NOTE: $S must correspond to the top of the 'sys' tree
+#	NOTE:	$S must correspond to the top of the 'sys' tree
+#		$HPPA must correspond to the top of hppa tree
 
-SPMATHDIR=	$S/arch/hppa/spmath
+SPMATHDIR=	${HPPA}/spmath
 
 SPMATHDST?=	${.OBJDIR}/lib/spmath
-SPMATH_AS?=	obj
 
-SPMATHLIB=	${SPMATHDST}/libspmath.o
-SPMATHLIB_PROF=	${SPMATHDST}/libspmath_p.o
+SPMATH=		${SPMATHDST}/spmath.o
+SPMATH_PROF=	${SPMATHDST}/spmath.po
 
 SPMATHMAKE= \
 	cd ${SPMATHDIR} && MAKEOBJDIR=${SPMATHDST} ${MAKE} \
 	    CC='${CC}' CFLAGS='${CFLAGS}' \
+	    CPPFLAGS='${CPPFLAGS:S@^-I.@-I../../.@g}'\
 	    AS='${AS}' AFLAGS='${AFLAGS}' \
 	    LD='${LD}' STRIP='${STRIP}' \
 	    CPP='${CPP}' STRIP='${STRIP}' AR='${AR}' \
 	    NM='${NM}' LORDER='${LORDER}' \
 	    XMACHINE='${MACHINE}' XMACHINE_ARCH='${MACHINE_ARCH}' \
-	    SPMATHCPPFLAGS='${CPPFLAGS:S@^-I.@-I../../.@g}'
 
-${SPMATHLIB}:		.NOTMAIN __always_make_kernlib
+${SPMATH}:	.NOTMAIN __always_make_spmath
 	@echo making sure the kern library is up to date...
-	@${SPMATHMAKE} libkern.o
+	@${SPMATHMAKE} spmath.o
 
-${SPMATHLIB_PROF}:	.NOTMAIN __always_make_kernlib
+${SPMATH_PROF}:	.NOTMAIN __always_make_spmath
 	@echo making sure the profiled kern library is up to date...
-	@${SPMATHMAKE} libkern.po
+	@${SPMATHMAKE} spmath.po
 
-clean::			.NOTMAIN __always_make_kernlib
+clean::		.NOTMAIN __always_make_spmath
 	@echo cleaning the kern library objects
 	@${SPMATHMAKE} clean
 
-depend:: 		.NOTMAIN __always_make_kernlib
+depend:: 	.NOTMAIN __always_make_spmath
 	@echo depending the kern library objects
 	@${SPMATHMAKE} depend
 
-__always_make_kernlib:	.NOTMAIN
+__always_make_spmath:	.NOTMAIN
 	-mkdir -p ${SPMATHDST}
+

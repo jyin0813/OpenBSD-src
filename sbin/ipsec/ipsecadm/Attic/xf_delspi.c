@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_delspi.c,v 1.5 1997/08/26 12:04:41 provos Exp $ */
+/* $OpenBSD: xf_delspi.c,v 1.6 1998/05/24 13:29:06 provos Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

@@ -36,7 +36,7 @@
 
 #if defined(LIBC_SCCS) && !defined(lint)
 /*static char *sccsid = "from: @(#)setbuffer.c	5.5 (Berkeley) 3/18/91";*/
-static char *rcsid = "$Id: setbuffer.c,v 1.1 1994/02/07 22:06:37 proven Exp $";
+static char *rcsid = "$Id: setbuffer.c,v 1.1 1995/10/18 08:43:09 deraadt Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 #include <stdio.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: send_to_kdc.c,v 1.12 1998/07/07 19:07:01 art Exp $	*/
+/*	$OpenBSD: send_to_kdc.c,v 1.13 1998/08/16 20:48:39 art Exp $	*/
 /*	$KTH: send_to_kdc.c,v 1.54 1998/02/17 23:55:35 bg Exp $		*/
 
 /*

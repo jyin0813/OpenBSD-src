@@ -1,4 +1,4 @@
-/*	$OpenBSD: mtpr.h,v 1.5 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: mtpr.h,v 1.6 2002/03/14 03:15:52 millert Exp $	*/
 /*	$NetBSD: mtpr.h,v 1.10 1996/05/09 20:31:53 is Exp $	*/
 
 /*

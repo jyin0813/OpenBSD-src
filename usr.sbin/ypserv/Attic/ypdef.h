@@ -30,7 +30,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: ypdef.h,v 1.2 1994/12/17 22:27:26 moj Exp $
+ *	$Id: ypdef.h,v 1.1 1995/10/23 07:46:40 deraadt Exp deraadt $
  */
 
 #ifndef _YPDEF_H_

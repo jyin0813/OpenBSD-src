@@ -16,7 +16,7 @@
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: rtapelib.c,v 1.4 1994/10/18 06:04:08 andrew Exp $";
+static char rcsid[] = "$Id: rtapelib.c,v 1.1 1995/10/18 08:41:09 deraadt Exp tholo $";
 #endif /* not lint */
 
 /* The man page rmt(8) for /etc/rmt documents the remote mag tape

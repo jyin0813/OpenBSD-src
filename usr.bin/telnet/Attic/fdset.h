@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fdset.h,v 1.2 1996/03/27 19:33:02 niklas Exp $	*/
 /*	$NetBSD: fdset.h,v 1.5 1996/02/28 21:04:00 thorpej Exp $	*/
 
 /*

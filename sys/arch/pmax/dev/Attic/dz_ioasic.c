@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: dz_ioasic.c,v 1.1 2000/08/19 18:36:19 maja Exp $	*/
 /*	$NetBSD: dc_ioasic.c,v 1.4 1996/10/14 17:15:42 jonathan Exp $	*/
 
 /*

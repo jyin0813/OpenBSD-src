@@ -1,4 +1,4 @@
-/*	$OpenBSD: save_credentials.c,v 1.4 1997/12/22 15:02:13 art Exp $	*/
+/*	$OpenBSD: save_credentials.c,v 1.5 1998/02/25 15:51:38 art Exp $	*/
 /* $KTH: save_credentials.c,v 1.5 1997/03/23 03:53:17 joda Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cross.c,v 1.21 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: cross.c,v 1.22 2002/03/14 03:15:52 millert Exp $	*/
 
 /*
  * Copyright (c) 1994, 1996 Niklas Hallqvist, Carsten Hammer

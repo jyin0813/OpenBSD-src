@@ -1,5 +1,5 @@
 #	from @(#)Makefile	8.1 (Berkeley) 6/1/93
-#	$Id$
+#	$Id: Makefile,v 1.1 1995/12/14 06:52:41 tholo Exp $
 
 PROG=	kstash
 DPADD=	${LIBKDB} ${LIBKRB} ${LIBDES}

@@ -1,4 +1,4 @@
-/*	$Id: if_lereg.h,v 1.2 1995/11/07 08:51:10 deraadt Exp $ */
+/*	$Id: if_lereg.h,v 1.1 1997/03/03 19:31:11 rahnds Exp $ */
 
 /*-
  * Copyright (c) 1982, 1992, 1993

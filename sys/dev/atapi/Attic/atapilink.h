@@ -1,4 +1,4 @@
-/*	$OpenBSD: atapilink.h,v 1.9 1997/06/06 23:43:07 provos Exp $	*/
+/*	$OpenBSD: atapilink.h,v 1.10 1997/06/24 05:29:54 downsj Exp $	*/
 
 /*
  * Copyright (c) 1996 Manuel Bouyer.  All rights reserved.

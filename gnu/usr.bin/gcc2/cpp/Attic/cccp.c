@@ -22,7 +22,7 @@ Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
  what you give them.   Help stamp out software-hoarding!  */
 
 #ifndef lint
-static char rcsid[] = "$Id: cccp.c,v 1.3 1993/12/04 03:11:02 cgd Exp $";
+static char rcsid[] = "$Id: cccp.c,v 1.1 1995/10/18 08:39:48 deraadt Exp niklas $";
 #endif /* not lint */
 
 typedef unsigned char U_CHAR;

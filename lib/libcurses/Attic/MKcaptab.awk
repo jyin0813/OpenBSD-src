@@ -1,5 +1,5 @@
 #!/bin/sh
-# $OpenBSD$
+# $OpenBSD: MKcaptab.awk,v 1.1 1998/07/23 21:17:19 millert Exp $
 # $From: MKcaptab.awk,v 1.10 1997/09/11 17:40:46 tom Exp $
 AWK=${1-awk}
 DATA=${2-../include/Caps}

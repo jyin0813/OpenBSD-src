@@ -17,7 +17,7 @@
  * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
- * $Id: main.c,v 1.19 1998/06/27 12:06:46 brian Exp $
+ * $Id: main.c,v 1.20 1998/06/28 09:41:43 brian Exp $
  *
  *	TODO:
  *		o Add commands for traffic summary, version display, etc.

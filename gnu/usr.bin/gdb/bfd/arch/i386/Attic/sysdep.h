@@ -1,4 +1,4 @@
-/*	$Id: sysdep.h,v 1.1.1.1 1995/10/18 08:39:54 deraadt Exp $ */
+/*	$Id: sysdep.h,v 1.2 1997/02/17 09:08:33 niklas Exp $ */
 #ifndef	hosts_i386bsd_H
 /* Intel 386 running any BSD Unix */
 #include <fcntl.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: sd_compat.c,v 1.3 1997/01/12 15:13:04 downsj Exp $	*/
+/*	$OpenBSD: sd_compat.c,v 1.4 1997/02/03 04:47:47 downsj Exp $	*/
 /*	$NetBSD: sd_compat.c,v 1.5 1997/01/30 09:14:21 thorpej Exp $	*/
 
 /*

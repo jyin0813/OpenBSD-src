@@ -1,4 +1,4 @@
-/*	$OpenBSD: crossreg.h,v 1.3 1996/06/04 13:40:13 niklas Exp $	*/
+/*	$OpenBSD: crossreg.h,v 1.4 1996/11/28 23:33:07 niklas Exp $	*/
 
 /*
  * Copyright (c) 1994, 1996 Niklas Hallqvist, Carsten Hammer

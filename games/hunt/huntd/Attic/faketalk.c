@@ -1,5 +1,5 @@
 /*	$NetBSD: faketalk.c,v 1.4 1997/10/11 08:13:48 lukem Exp $	*/
-/*	$OpenBSD$	*/
+/*	$OpenBSD: faketalk.c,v 1.2 1999/01/21 05:47:41 d Exp $	*/
 /*
  *  Hunt
  *  Copyright (c) 1985 Conrad C. Huang, Gregory S. Couch, Kenneth C.R.C. Arnold

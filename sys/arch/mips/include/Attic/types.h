@@ -1,4 +1,4 @@
-/*	$OpenBSD: types.h,v 1.6 1999/01/27 04:46:06 imp Exp $	*/
+/*	$OpenBSD: types.h,v 1.7 1999/07/07 23:16:41 art Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

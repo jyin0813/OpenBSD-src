@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 1996/08/02 23:39:08 tholo Exp deraadt $
 
 PROG=	rdisc
 MAN=	rdisc.8

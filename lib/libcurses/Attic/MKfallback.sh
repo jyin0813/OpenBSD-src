@@ -1,5 +1,5 @@
 #!/bin/sh
-# $OpenBSD$
+# $OpenBSD: MKfallback.sh,v 1.1 1998/07/23 21:17:21 millert Exp $
 # $From: MKfallback.sh,v 1.8 1996/09/15 01:44:13 tom Exp $
 #
 # MKfallback.sh -- create fallback table for entry reads

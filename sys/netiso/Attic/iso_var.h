@@ -1,4 +1,4 @@
-/*	$OpenBSD: iso_var.h,v 1.5 2002/03/15 01:20:04 millert Exp $	*/
+/*	$OpenBSD: iso_var.h,v 1.6 2003/06/02 23:28:18 millert Exp $	*/
 /*	$NetBSD: iso_var.h,v 1.8 1996/02/13 22:10:32 christos Exp $	*/
 
 /*-

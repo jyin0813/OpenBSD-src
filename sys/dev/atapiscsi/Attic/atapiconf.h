@@ -1,4 +1,4 @@
-/*      $OpenBSD: atapiconf.h,v 1.1 1999/07/18 21:25:18 csapuntz Exp $     */
+/*      $OpenBSD: atapiconf.h,v 1.2 1999/07/22 03:10:47 csapuntz Exp $     */
 /*	$NetBSD: atapiconf.h,v 1.7 1998/10/12 16:09:24 bouyer Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-# $Id: Makefile.inc,v 1.1 1994/01/28 16:38:51 pk Exp $
+# $Id: Makefile.inc,v 1.1 1995/10/18 08:40:14 deraadt Exp $
 
 SRCS+=		i386-pinsn.c
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: modulus.c,v 1.7 2002/06/09 08:13:08 todd Exp $	*/
+/*	$OpenBSD: modulus.c,v 1.8 2002/06/10 19:58:20 espie Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: semaphore.h,v 1.2 2002/01/18 20:36:25 fgsch Exp $	*/
+/*	$OpenBSD: semaphore.h,v 1.3 2002/02/16 21:27:25 millert Exp $	*/
 
 /* semaphore.h: POSIX 1003.1b semaphores */
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $Id$
+# $Id: kipd-control.in,v 1.1 2000/07/11 09:05:58 hin Exp $
 #
 # Simple example how you can missuse kip to provide "mobile-ip".
 # This is since there is no way to tunnel ip over udp or any other

@@ -1,4 +1,4 @@
-/*	$OpenBSD: spinlock.h,v 1.2 1999/01/26 23:39:29 d Exp $	*/
+/*	$OpenBSD: spinlock.h,v 1.3 1999/01/27 04:46:06 imp Exp $	*/
 
 #ifndef _MIPS_SPINLOCK_H_
 #define _MIPS_SPINLOCK_H_

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_var.h,v 1.2 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: tp_var.h,v 1.3 2002/03/14 03:16:12 millert Exp $	*/
 /*	$NetBSD: tp_var.h,v 1.1 1996/02/13 22:12:29 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-$OpenBSD: NOTES,v 1.2 1996/08/19 20:08:43 downsj Exp $
+$OpenBSD: NOTES,v 1.3 1996/10/01 02:05:29 downsj Exp $
 
 General features of at&t ksh that are not (yet) in pdksh:
     - exported aliases.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: opt.c,v 1.15 2001/01/17 05:00:59 fgsch Exp $	*/
+/*	$OpenBSD: opt.c,v 1.16 2001/01/30 04:26:01 kjell Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: linefunc.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* linefunc.c */
 int coladvance __PARMS((colnr_t wcol));
 int inc_cursor __PARMS((void));

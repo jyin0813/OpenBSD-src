@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_input.c,v 1.7 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: tp_input.c,v 1.8 2004/01/03 14:08:54 espie Exp $	*/
 /*	$NetBSD: tp_input.c,v 1.9 1996/03/16 23:13:51 christos Exp $	*/
 
 /*-

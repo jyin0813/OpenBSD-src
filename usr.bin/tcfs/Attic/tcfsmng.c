@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfsmng.c,v 1.3 2000/06/19 22:42:28 aaron Exp $	*/
+/*	$OpenBSD: tcfsmng.c,v 1.4 2000/06/19 23:06:25 aaron Exp $	*/
 
 /*
  * Copyright 2000 Niels Provos <provos@citi.umich.edu>

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: Lint_ptrace.c,v 1.1 1998/02/08 22:45:10 tholo Exp $	*/
 /*	$NetBSD: Lint_ptrace.c,v 1.1 1997/11/06 00:53:02 cgd Exp $	*/
 
 /*

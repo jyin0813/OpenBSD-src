@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: umass_quirks.c,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
 /*	$NetBSD: umass_quirks.c,v 1.13 2002/04/22 12:48:40 augustss Exp $	*/
 
 /*

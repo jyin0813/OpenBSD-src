@@ -1,4 +1,4 @@
-/* *	$OpenBSD: md.c,v 1.1 1997/04/23 21:24:41 rahnds Exp $*/
+/* *	$OpenBSD: md.c,v 1.2 1998/03/26 19:47:07 niklas Exp $*/
 /*
  * Copyright (c) 1993 Paul Kranenburg
  * All rights reserved.

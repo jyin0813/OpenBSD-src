@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: kvm_arm32.c,v 1.1 1996/03/19 23:15:29 niklas Exp $ */
 /* $NetBSD: kvm_arm32.c,v 1.1.1.1 1996/03/16 10:05:25 leo Exp $ */
 
 /*
@@ -37,12 +37,12 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *  $OpenBSD$
+ *  $OpenBSD: kvm_arm32.c,v 1.1 1996/03/19 23:15:29 niklas Exp $
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
 /* from: static char sccsid[] = "@(#)kvm_hp300.c	8.1 (Berkeley) 6/4/93"; */
-static char *rcsid = "$OpenBSD$";
+static char *rcsid = "$OpenBSD: kvm_arm32.c,v 1.1 1996/03/19 23:15:29 niklas Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 /*

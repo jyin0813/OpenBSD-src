@@ -1,4 +1,4 @@
-/*	$OpenBSD: fwnodereg.h,v 1.1 2002/06/25 17:11:49 itojun Exp $	*/
+/*	$OpenBSD: fwnodereg.h,v 1.2 2002/12/13 02:52:04 tdeval Exp $	*/
 /*	$NetBSD: fwnodereg.h,v 1.1 2001/05/01 04:46:23 jmc Exp $	*/
 
 /*

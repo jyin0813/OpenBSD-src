@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_cpuutil.c,v 1.2 1999/02/16 00:02:27 niklas Exp $	*/
+/*	$OpenBSD: rf_cpuutil.c,v 1.3 2000/01/07 14:50:20 peter Exp $	*/
 /*	$NetBSD: rf_cpuutil.c,v 1.4 1999/08/13 03:41:53 oster Exp $	*/
 /*
  * Copyright (c) 1995 Carnegie-Mellon University.

@@ -1,7 +1,7 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hppa.c,v 1.1 2001/03/22 05:18:30 mickey Exp $	*/
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: hppa.c,v 1.1 2001/03/22 05:18:30 mickey Exp $";
 #endif /* not lint */
 
 #include "gprof.h"

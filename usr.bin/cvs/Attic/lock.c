@@ -1,4 +1,4 @@
-/*	$OpenBSD: lock.c,v 1.2 2004/08/02 17:32:48 jfb Exp $	*/
+/*	$OpenBSD: lock.c,v 1.3 2004/12/07 17:10:56 tedu Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

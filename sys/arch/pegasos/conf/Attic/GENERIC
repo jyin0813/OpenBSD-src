@@ -1,4 +1,4 @@
-#	$OpenBSD: GENERIC,v 1.4 2004/02/04 20:06:21 drahn Exp $g
+#	$OpenBSD: GENERIC,v 1.5 2004/02/24 19:52:24 deraadt Exp $g
 #
 # PPC GENERIC config file
 #

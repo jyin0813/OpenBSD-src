@@ -1,4 +1,4 @@
-/*	$OpenBSD: scsi.h,v 1.2 2002/02/16 21:27:29 millert Exp $	*/
+/*	$OpenBSD: scsi.h,v 1.3 2002/02/17 19:42:26 millert Exp $	*/
 
 /* Copyright (c) 1994 HD Associates (hd@world.std.com)
  * All rights reserved.

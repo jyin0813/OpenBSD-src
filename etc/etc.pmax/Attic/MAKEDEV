@@ -1,6 +1,6 @@
 #!/bin/sh -
 #
-#	$OpenBSD: MAKEDEV,v 1.36 2001/05/30 02:11:23 deraadt Exp $
+#	$OpenBSD: MAKEDEV,v 1.37 2001/06/24 23:36:07 kjell Exp $
 #	@(#)MAKEDEV	8.1 (Berkeley) 6/9/93
 #
 

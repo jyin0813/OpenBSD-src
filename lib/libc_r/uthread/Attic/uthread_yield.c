@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_yield.c,v 1.4 2001/08/04 14:43:53 fgsch Exp $	*/
+/*	$OpenBSD: uthread_yield.c,v 1.5 2001/08/21 19:24:53 fgsch Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

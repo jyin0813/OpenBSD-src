@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kvm_getloadavg.c,v 1.1 1996/03/19 23:15:33 niklas Exp $	*/
 
 /*-
  * Copyright (c) 1993

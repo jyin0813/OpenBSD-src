@@ -14,8 +14,8 @@
  * Supports:
  *	Linux SOCK_PACKET
  *	
- * $Author: maja $
- * $Revision: 1.1 $
+ * $Author: bitblt $
+ * $Revision: 1.2 $
  *
  *
  * Modified for use with the linux-mopd port by Karl Maftoum 

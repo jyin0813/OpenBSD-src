@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: clock_ds.c,v 1.1 1998/01/29 15:06:17 pefo Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

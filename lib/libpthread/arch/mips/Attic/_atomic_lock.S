@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: _atomic_lock.S,v 1.1 1998/08/28 01:54:57 d Exp $
+ * $OpenBSD: _atomic_lock.S,v 1.1 1998/11/09 03:13:14 d Exp $
  */
 
 #include "SYS.h"

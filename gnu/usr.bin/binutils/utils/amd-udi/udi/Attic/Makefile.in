@@ -16,7 +16,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA. 
 #
-# 	$Id: Makefile.in,v 1.1.2.1 1996/11/19 15:03:24 niklas Exp $
+# 	$Id: Makefile.in,v 1.2 1996/11/23 04:11:10 niklas Exp $
 #
 # Written by Jeffrey Wheat (cassidy@cygnus.com)
 #

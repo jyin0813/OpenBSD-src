@@ -1,4 +1,4 @@
-/*?$OpenBSD$?*/
+/*?$OpenBSD: sleep.c,v 1.1 1998/03/29 22:24:53 espie Exp $?*/
 
 #include <sys/types.h>
 #include <unistd.h>

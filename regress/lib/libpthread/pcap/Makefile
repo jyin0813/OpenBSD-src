@@ -1,8 +1,6 @@
-# $OpenBSD: Makefile,v 1.1 2001/11/10 02:44:48 marc Exp $
+# $OpenBSD: Makefile,v 1.1 2001/11/09 00:13:32 marc Exp $
 
 PROG=	pcap
 SRCS=	pcap.c
-
-LDADD+= -lpcap
 
 .include <bsd.prog.mk>

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: am9516.h,v 1.2 1997/01/16 04:03:41 kstailey Exp $	*/
 /*	$NetBSD: am9516.h,v 1.1 1995/10/29 21:19:06 gwr Exp $	*/
 
 /*

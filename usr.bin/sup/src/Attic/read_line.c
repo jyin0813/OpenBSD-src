@@ -32,7 +32,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: read_line.c,v 1.1 2001/05/02 22:56:52 millert Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *      $OpenBSD: SYS.h,v 1.9 2002/02/19 22:12:36 millert Exp $ 
+ *      $OpenBSD: SYS.h,v 1.10 2003/06/02 20:18:31 millert Exp $ 
  */
 
 #include <sys/syscall.h>

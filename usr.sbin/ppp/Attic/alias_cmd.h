@@ -2,7 +2,7 @@
  * The code in this file was written by Eivind Eklund <perhaps@yes.no>,
  * who places it in the public domain without restriction.
  *
- *	$Id: alias_cmd.h,v 1.2 1997/12/21 14:26:59 brian Exp $
+ *	$Id: alias_cmd.h,v 1.3 1997/12/24 10:28:15 brian Exp $
  */
 
 extern int AliasRedirectPort(struct cmdargs const *);

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: test_pause.c,v 1.3 2000/01/06 06:55:13 d Exp $	*/
 /*
  * Test pause() 
  */

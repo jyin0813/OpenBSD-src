@@ -28,6 +28,10 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcskeep.c,v $
+ * Revision 1.2  1996/04/19 12:40:08  mickey
+ * -L<string> option added to support LOCALID behaviour.
+ * maybe set up in RCSINIT environment variable.
+ *
  * Revision 1.1.1.1  1995/10/18 08:41:02  deraadt
  * initial import of NetBSD tree
  *
@@ -98,7 +102,7 @@ Report problems and direct all questions to:
 
 #include  "rcsbase.h"
 
-libId(keepId, "$Id: rcskeep.c,v 1.1.1.1 1995/10/18 08:41:02 deraadt Exp $")
+libId(keepId, "$Id: rcskeep.c,v 1.2 1996/04/19 12:40:08 mickey Exp millert $")
 
 static int badly_terminated P((void));
 static int checknum P((char const*));

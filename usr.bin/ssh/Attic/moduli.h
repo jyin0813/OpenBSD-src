@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: moduli.h,v 1.1 2003/07/28 09:49:56 djm Exp $ */
 
 #include <sys/types.h>
 #include <openssl/bn.h>

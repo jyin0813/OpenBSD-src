@@ -1,4 +1,4 @@
-/*	$OpenBSD: desktechbus.c,v 1.2 1996/09/14 15:58:24 pefo Exp $ */
+/*	$OpenBSD: desktechbus.c,v 1.3 1996/11/23 21:45:32 kstailey Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

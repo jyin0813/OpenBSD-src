@@ -1,5 +1,5 @@
 /* Prepare TeX index dribble output into an actual index.
-   $Id: texindex.c,v 1.1 1998/03/03 20:25:15 millert Exp $
+   $Id: texindex.c,v 1.1.1.1 1997/08/21 22:58:13 jason Exp $
 
    Copyright (C) 1987, 91, 92, 96 Free Software Foundation, Inc.
 

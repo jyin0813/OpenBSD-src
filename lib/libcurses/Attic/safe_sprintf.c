@@ -1,4 +1,4 @@
-/*	$OpenBSD: safe_sprintf.c,v 1.4 1998/08/15 19:06:38 millert Exp $	*/
+/*	$OpenBSD: safe_sprintf.c,v 1.5 1998/09/13 19:16:30 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

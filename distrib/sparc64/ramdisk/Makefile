@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 2001/09/20 23:15:59 jason Exp $
+#	$OpenBSD: Makefile,v 1.6 2001/09/21 20:09:14 jason Exp $
 
 TOP=		${.CURDIR}/..
 
@@ -12,12 +12,32 @@ UTILS?=		${.CURDIR}/../../miniroot
 MOUNT_POINT=	/mnt
 MTREE=		${.CURDIR}/mtree.conf
 
+FLOPPY=		floppy${REV}.fs
+FLOPPYSIZE?=	2880
+FLOPPYTYPE?=	floppy
+INSTALLBOOT?=	/usr/mdec/installboot
+
 VND?=		svnd0
 VND_DEV=	/dev/${VND}a
 VND_RDEV=	/dev/r${VND}a
 VND_CRDEV=	/dev/r${VND}c
 PID!=		echo $$$$
 
+GZIP?=			gzip
+GZIPFLAGS?=		-9v
+GZIPEXT?=		.gz
+
+MOUNT_POINT?=	/mnt
+DISKTYPE=	rdroot
+PID!=		echo $$$$
+REALIMAGE!=	echo /tmp/image.${PID}
+IMAGE?=		ramdisk${REV}.fs
+IMAGESIZE?=	8192 # 4MB in 512 byte blocks
+NEWFS_WILL_FAIL?=false
+CRUNCHGENOPTS?=
+KERNEL?=	RAMDISKU1
+UTILS?=		${.CURDIR}/../miniroot
+STRIP?=		strip
 
 DISKTYPE=       rdroot
 NBLKS=          6144
@@ -31,7 +51,28 @@ all ${IMAGE}:
 .else
 
 # mix config is not needed.
-all:	${BSD_RD}
+all:	${FLOPPY} ${BSD_RD}
+
+bsd.gz:	bsd.rd
+	${GZIP} ${GZIPFLAGS} < bsd.rd > bsd.gz
+
+${FLOPPY}:	bsd.gz ${BOOT} /usr/
+	dd if=/dev/zero of=${REALIMAGE} count=${FLOPPYSIZE}
+	vnconfig -v -c ${VND} ${REALIMAGE}
+	disklabel -w ${RAWLABEL} ${VND} ${FLOPPYTYPE}
+	newfs ${NEWFSOPTS_FD} ${VND_RDEV}
+	mount ${VND_DEV} ${MOUNT_POINT}
+	cp ${DESTDIR}/usr/mdec/ofwboot ${MOUNT_POINT}$/
+	cp bsd.gz ${MOUNT_POINT}/bsd
+	${INSTALLBOOT} -v ${DESTDIR}/usr/mdec/bootblk \
+		`echo ${VND_RDEV} | sed -e 's/a$$/c/'`
+	@echo ""
+	@df -i ${MOUNT_POINT}
+	@echo ""
+	umount ${MOUNT_POINT}
+	vnconfig -u ${VND}
+	dd if=${REALIMAGE} of=${FLOPPY} count=${FLOPPYSIZE}
+	rm -f ${REALIMAGE}
 
 ${BSD_RD}: ${CBIN} ${IMAGE} bsd elfrdsetroot
 	cp bsd ${BSD_RD}
@@ -42,10 +83,10 @@ ${IMAGE}: rd_setup do_files rd_teardown
 .endif
 
 bsd:
-	cd ${TOP}/../../sys/arch/sparc64/conf && config RAMDISK
-	cd ${TOP}/../../sys/arch/sparc64/compile/RAMDISK && \
-	    make clean && make depend && make
-	cp ${TOP}/../../sys/arch/sparc64/compile/RAMDISK/bsd bsd
+	cd ${TOP}/../../sys/arch/sparc64/conf && config ${KERNEL}
+	cd ${TOP}/../../sys/arch/sparc64/compile/${KERNEL} && \
+	    make clean && make depend && COPTS=-Os make
+	cp ${TOP}/../../sys/arch/sparc64/compile/${KERNEL}/bsd bsd
 
 rd_setup: 
 	dd if=/dev/zero of=${IMAGE} bs=512 count=${NBLKS}
@@ -70,7 +111,7 @@ unconfig:
 .PRECIOUS:	${IMAGE}
 
 install:
-	cp ${BSD_RD} ${DESTDIR}/snapshot/
+	cp ${FLOPPY} ${DESTDIR}/snapshot/
 
 ${CBIN}.mk ${CBIN}.cache ${CBIN}.c: ${CBIN}.conf
 	crunchgen -E -D ${.CURDIR}/../../.. -L ${DESTDIR}/usr/lib ${.ALLSRC}
@@ -82,12 +123,11 @@ do_files:
 	mtree -def ${MTREE} -p ${MOUNT_POINT}/ -u
 	TOPDIR=${TOP} CURDIR=${.CURDIR} OBJDIR=${.OBJDIR} \
 	    REV=${REV} ARCHDIR=${.CURDIR}/.. TARGDIR=${MOUNT_POINT} \
-	    sh ${TOP}/runlist.sh ${LISTS}
+	    sh ${TOP}/common/runlist.sh ${LISTS}
 
 clean cleandir:
 	/bin/rm -f core ${IMAGE} ${CBIN} ${CBIN}.mk ${CBIN}.cache \
-	*.o *.lo *.c bsd ${BSD_RD} \
-	elfrdsetroot
+	    *.o *.lo *.c bsd ${BSD_RD} bsd.gz ${FLOPPY} elfrdsetroot
 
 beforeinstall:
 	cp ${BSD.RD} ${DESTDIR}/snapshot

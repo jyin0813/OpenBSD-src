@@ -1,4 +1,4 @@
-/*	$OpenBSD: missing.c,v 1.4 1999/06/15 01:18:35 millert Exp $	*/
+/*	$OpenBSD: missing.c,v 1.5 2003/05/16 18:49:46 jsyn Exp $	*/
 
 /*
  * Routines which may be missing on some machines

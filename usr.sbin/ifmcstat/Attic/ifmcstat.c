@@ -1,4 +1,4 @@
-/*	$OpenBSD: ifmcstat.c,v 1.3 2001/11/16 04:46:54 itojun Exp $	*/
+/*	$OpenBSD: ifmcstat.c,v 1.4 2002/02/16 21:28:03 millert Exp $	*/
 
 /*
  * Copyright (C) 1995, 1996, 1997, and 1998 WIDE Project.

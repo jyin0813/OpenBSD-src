@@ -1,4 +1,4 @@
-/*	$OpenBSD: zx.c,v 1.4 2003/06/28 15:11:25 miod Exp $	*/
+/*	$OpenBSD: zx.c,v 1.5 2003/06/28 17:05:33 miod Exp $	*/
 /*	$NetBSD: zx.c,v 1.5 2002/10/02 16:52:46 thorpej Exp $	*/
 
 /*
@@ -92,7 +92,7 @@
 #include <dev/rasops/rasops.h>
 #include <machine/fbvar.h>
 
-#include <sparc/dev/zxreg.h>
+#include <dev/sbus/zxreg.h>
 #include <sparc/dev/sbusvar.h>
 
 #define	ZX_WID_SHARED_8		0

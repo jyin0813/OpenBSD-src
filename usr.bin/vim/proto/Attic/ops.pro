@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ops.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* ops.c */
 void do_shift __PARMS((int op, int curs_top, int amount));
 void shift_line __PARMS((int left, int round, int amount));

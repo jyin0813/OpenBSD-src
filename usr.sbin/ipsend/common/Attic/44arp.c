@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: 44arp.c,v 1.3 2001/01/17 06:01:24 fgsch Exp $	*/
 
 /*
  * Based upon 4.4BSD's /usr/sbin/arp

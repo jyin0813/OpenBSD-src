@@ -25,21 +25,8 @@
  * rights to redistribute these changes.
  */
 /*     "locore.h"		  Omron Corporation
- **********************************************************************
  * This file created by Omron Corporation, 1990.
- *
- * HISTORY
- * 
- *
- **********************************************************************
- *
- * This file contains defines and such used by (most of) the assembly
- * routines for Omron's Luna88 Mach system.  It also may be included by
- * some C language files.
- *
- **********************************************************************
  * NOTE: Any assembly file that includes this one must define ASSEMBLER first
- *
  */
 
 #ifndef __MACHINE_LOCORE_H__

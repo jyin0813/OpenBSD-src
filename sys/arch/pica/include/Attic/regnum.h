@@ -1,4 +1,4 @@
-/*	$OpenBSD: reg.h,v 1.5 1995/01/18 06:40:12 mellon Exp $	*/
+/*	$OpenBSD: regnum.h,v 1.2 1996/06/06 23:07:10 deraadt Exp pefo $	*/
 /*	$NetBSD: reg.h,v 1.5 1995/01/18 06:40:12 mellon Exp $	*/
 
 /*

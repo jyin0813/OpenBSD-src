@@ -1,4 +1,4 @@
-/*	$Id: new.h,v 1.2 1993/08/02 17:23:44 mycroft Exp $ */
+/*	$Id: new.h,v 1.1 1995/10/18 08:38:19 deraadt Exp etheisen $ */
 
 #ifndef _new_h
 #ifdef __GNUG__

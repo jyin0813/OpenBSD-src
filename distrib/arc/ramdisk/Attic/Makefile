@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.7 1997/09/05 21:16:46 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.8 1997/09/26 02:20:41 millert Exp $
 
 # NOTE! We don't do crunched yet!
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: trsp.c,v 1.9 2002/02/17 19:42:40 millert Exp $	*/
+/*	$OpenBSD: trsp.c,v 1.10 2002/06/19 08:45:52 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1997 The NetBSD Foundation, Inc.

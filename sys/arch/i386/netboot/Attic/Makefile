@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1996/04/26 18:22:51 mickey Exp $
 #	$NetBSD: Makefile,v 1.4 1994/10/27 04:20:59 cgd Exp $
 
 # uncomment one of these as appropriate for the board being used

@@ -1,4 +1,4 @@
-/*	 $OpenBSD: uthread_machdep.c,v 1.1 2000/09/25 01:16:40 d Exp $	*/
+/*	 $OpenBSD: uthread_machdep.c,v 1.2 2001/03/13 00:05:51 d Exp $	*/
 /* David Leonard, <d@csee.uq.edu.au>. Public domain. */
 
 /*

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: icmpv6_var.h,v 1.5 1999/12/10 08:53:17 angelos Exp $ */
 
 /*
 %%% copyright-nrl-95

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2000/03/09 00:08:07 mickey Exp $
+#	$OpenBSD: Makefile,v 1.5 2002/12/09 23:43:11 millert Exp $
 #	$NetBSD: Makefile,v 1.6 1995/04/23 07:58:41 cgd Exp $
 
 PROG=	grep

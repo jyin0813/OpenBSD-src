@@ -1,4 +1,4 @@
-#	$OpenBSD: INSTADP,v 1.6 1996/04/21 22:16:12 deraadt Exp $
+#	$OpenBSD: INSTADP,v 1.9 1996/05/10 12:44:26 deraadt Exp deraadt $
 #	$NetBSD: INSTADP,v 1.15 1996/05/07 01:00:12 thorpej Exp $
 #
 #	INSTADP -- like GENERICADP.  This supports only Adaptec SCSI

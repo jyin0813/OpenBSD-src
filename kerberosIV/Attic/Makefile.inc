@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.15 2002/06/09 19:05:39 hin Exp $
+# $OpenBSD: Makefile.inc,v 1.16 2002/06/11 15:23:28 hin Exp $
 
 KRBDIR	= ${.CURDIR}/${KRBDEPTH}
 KRBSRC	= ${.CURDIR}/${KRBDEPTH}/src

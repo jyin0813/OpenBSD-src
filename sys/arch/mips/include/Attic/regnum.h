@@ -1,4 +1,4 @@
-/*	$OpenBSD: regnum.h,v 1.2 1998/03/16 09:03:14 pefo Exp $	*/
+/*	$OpenBSD: regnum.h,v 1.3 1999/01/27 04:46:06 imp Exp $	*/
 
 /*
  * Copyright (c) 1988 University of Utah.

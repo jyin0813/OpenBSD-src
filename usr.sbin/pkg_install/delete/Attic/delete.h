@@ -1,4 +1,4 @@
-/* $OpenBSD: delete.h,v 1.2 2003/08/01 08:56:01 espie Exp $ */
+/* $OpenBSD: delete.h,v 1.3 2003/08/21 20:24:56 espie Exp $ */
 
 /*
  * FreeBSD install - a package for the installation and maintainance

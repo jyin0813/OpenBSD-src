@@ -1,9 +1,9 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: regen.c,v 1.3 1998/09/15 05:12:33 pjanzen Exp $	*/
 /*	$NetBSD: regen.c,v 1.5 1997/10/18 20:03:43 christos Exp $	*/
 
 /* regen.c		Larn is copyrighted 1986 by Noah Morgan. */
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: regen.c,v 1.3 1998/09/15 05:12:33 pjanzen Exp $";
 #endif				/* not lint */
 
 #include "header.h"

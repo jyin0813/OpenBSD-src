@@ -1,4 +1,4 @@
-/*	$OpenBSD: parse.c,v 1.37 2001/01/20 06:36:52 fgsch Exp $	*/
+/*	$OpenBSD: parse.c,v 1.38 2001/01/30 04:26:02 kjell Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

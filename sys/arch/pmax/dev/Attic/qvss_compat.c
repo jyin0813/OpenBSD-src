@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: qvss_compat.c,v 1.9 2000/08/19 18:43:30 maja Exp $	*/
 /*	$NetBSD: qvss_compat.c,v 1.8 1997/05/25 10:53:33 jonathan Exp $	*/
 
 /*-

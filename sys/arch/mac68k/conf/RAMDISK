@@ -1,4 +1,4 @@
-#	$OpenBSD: RAMDISK,v 1.7 1996/09/20 06:45:13 deraadt Exp $
+#	$OpenBSD: RAMDISK,v 1.8 1996/10/14 02:43:52 briggs Exp $
 #	$NetBSD: RAMDISK,v 1.6 1996/08/05 01:52:16 scottr Exp $
 
 # RAMDISK

@@ -24,6 +24,9 @@
 #ifndef KEY_H
 #define KEY_H
 
+#include <openssl/rsa.h>
+#include <openssl/dsa.h>
+
 typedef struct Key Key;
 enum types {
 	KEY_RSA1,

@@ -1,4 +1,4 @@
-/*	$OpenBSD: isovfy.c,v 1.1.1.1 1997/09/15 06:01:53 downsj Exp $	*/
+/*	$OpenBSD: isovfy.c,v 1.2 1998/04/05 00:39:44 deraadt Exp $	*/
 /*
  * File isovfy.c - verify consistency of iso9660 filesystem.
  *

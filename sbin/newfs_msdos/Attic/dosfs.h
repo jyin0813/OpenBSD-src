@@ -1,4 +1,4 @@
-/* * $OpenBSD: dosfs.h,v 1.1 1996/06/10 06:37:14 deraadt Exp $*/
+/* * $OpenBSD: dosfs.h,v 1.2 1996/06/23 14:31:49 deraadt Exp $*/
 /*
  * Copyright (c) 1995 Joerg Wunsch
  *

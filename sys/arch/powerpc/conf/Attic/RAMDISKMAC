@@ -1,4 +1,4 @@
-#	$OpenBSD: RAMDISKMAC,v 1.8 2000/03/31 04:44:39 rahnds Exp $
+#	$OpenBSD: RAMDISKMAC,v 1.9 2000/08/07 18:51:22 deraadt Exp $
 #
 # PPC GENERIC config file
 #

@@ -3,7 +3,7 @@
  *
  * Description : Convert an Ultrix-4.2 system to a more or less POSIX system.
  *
- * $Id: posix-bsdi-2.0.h,v 1.1.2.1 1996/10/01 18:59:04 proven Exp $
+ * $Id: posix-bsdi-2.0.h,v 1.1 1998/07/21 13:19:15 peter Exp $
  *
  *  1.00 93/07/20 proven
  *      -Started coding this file.

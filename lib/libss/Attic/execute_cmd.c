@@ -1,4 +1,4 @@
-/*	$OpenBSD: execute_cmd.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $	*/
+/*	$OpenBSD: execute_cmd.c,v 1.1 1996/11/15 09:25:26 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -24,7 +24,7 @@
 
 #ifndef lint
 static char const rcsid[] =
-    "$Id: execute_cmd.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $";
+    "$Id: execute_cmd.c,v 1.1 1996/11/15 09:25:26 downsj Exp $";
 #endif
 
 /*

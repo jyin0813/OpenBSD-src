@@ -1,4 +1,4 @@
-#	$OpenBSD: runlist.sh,v 1.1 1997/05/07 12:46:50 niklas Exp $
+#	$OpenBSD: runlist.sh,v 1.1 1998/11/09 06:16:06 millert Exp $
 
 if [ "X$1" = "X-d" ]; then
 	SHELLCMD=cat

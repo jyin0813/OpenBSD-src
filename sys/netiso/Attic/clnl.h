@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnl.h,v 1.3 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: clnl.h,v 1.4 2003/06/02 23:28:16 millert Exp $	*/
 /*	$NetBSD: clnl.h,v 1.6 1996/02/13 22:08:02 christos Exp $	*/
 
 /*-

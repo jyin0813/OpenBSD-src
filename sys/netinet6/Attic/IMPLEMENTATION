@@ -1,4 +1,4 @@
-$OpenBSD: IMPLEMENTATION,v 1.7 2000/06/03 13:50:51 itojun Exp $
+$OpenBSD: IMPLEMENTATION,v 1.8 2000/06/12 12:04:41 itojun Exp $
 
 # NOTE: this is from original KAME distribution.
 # Some portion of this document is not applicable to the code merged into

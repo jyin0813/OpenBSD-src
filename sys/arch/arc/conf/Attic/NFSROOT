@@ -1,4 +1,4 @@
-#	$OpenBSD: NFSROOT,v 1.1 1999/08/12 13:05:37 niklas Exp $
+#	$OpenBSD: NFSROOT,v 1.2 1999/08/29 12:14:03 niklas Exp $
 #
 #	Generic configuration file for MIPS R4x00 ARC Systems
 #

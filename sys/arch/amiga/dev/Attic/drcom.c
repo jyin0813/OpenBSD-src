@@ -1,4 +1,4 @@
-/*	$OpenBSD: drcom.c,v 1.2 1996/12/23 09:09:56 veego Exp $	*/
+/*	$OpenBSD: drcom.c,v 1.1 1997/01/16 09:23:55 niklas Exp $	*/
 /*	$NetBSD: drcom.c,v 1.2 1996/12/23 09:09:56 veego Exp $	*/
 
 /*-

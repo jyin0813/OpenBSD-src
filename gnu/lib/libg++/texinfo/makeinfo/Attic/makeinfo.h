@@ -1,5 +1,5 @@
 /* makeinfo.h -- Declarations for Makeinfo.
-   $Id: makeinfo.h,v 1.1.1.1 1997/08/21 22:58:08 jason Exp $
+   $Id: makeinfo.h,v 1.3 1998/03/03 21:49:27 millert Exp $
 
    Copyright (C) 1996 Free Software Foundation, Inc.
 

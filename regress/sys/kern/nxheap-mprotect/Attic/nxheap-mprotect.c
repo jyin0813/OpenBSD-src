@@ -1,4 +1,4 @@
-/*	$OpenBSD: nxheap-mprotect.c,v 1.2 2002/08/27 16:43:51 matthieu Exp $	*/
+/*	$OpenBSD: nxheap-mprotect.c,v 1.3 2002/08/27 18:32:12 matthieu Exp $	*/
 
 /*
  * Copyright (c) 2002 Michael Shalayeff

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: xdvar.h,v 1.4 1997/01/16 04:03:57 kstailey Exp $	*/
 /*	$NetBSD: xdvar.h,v 1.3 1996/02/22 06:55:33 thorpej Exp $	*/
 
 /*

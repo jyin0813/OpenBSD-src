@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)inet.h	5.7 (Berkeley) 4/3/91
- *	$Id: inet.h,v 1.6 1995/03/25 22:45:18 ghudson Exp $
+ *	$Id: inet.h,v 1.1 1998/07/21 13:19:11 peter Exp $
  */
 
 #ifndef _INET_H_

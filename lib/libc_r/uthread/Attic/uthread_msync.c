@@ -1,7 +1,7 @@
 /*
  * David Leonard <d@openbsd.org>, 1999. Public Domain.
  *
- * $OpenBSD: uthread_msync.c,v 1.2 1999/06/09 07:16:17 d Exp $
+ * $OpenBSD: uthread_msync.c,v 1.3 1999/11/25 07:01:38 d Exp $
  */
 
 #include <sys/types.h>

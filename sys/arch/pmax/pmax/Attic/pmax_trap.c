@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pmax_trap.c,v 1.8 2000/08/19 18:43:31 maja Exp $	*/
 /*	$NetBSD: pmax_trap.c,v 1.44 1997/05/31 20:33:35 mhitch Exp $	*/
 
 /*

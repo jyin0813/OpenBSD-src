@@ -1,4 +1,4 @@
-/*	$OpenBSD: dest_tkt.c,v 1.4 1997/12/22 15:02:04 art Exp $	*/
+/*	$OpenBSD: dest_tkt.c,v 1.5 1998/02/25 15:51:06 art Exp $	*/
 /* $KTH: dest_tkt.c,v 1.11 1997/05/19 03:03:40 assar Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lsb_addr_comp.c,v 1.3 1997/12/12 05:30:26 art Exp $	*/
+/*	$OpenBSD: lsb_addr_comp.c,v 1.4 1998/07/07 19:06:58 art Exp $	*/
 /*	$KTH: lsb_addr_comp.c,v 1.14 1998/05/26 20:37:32 joda Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: timerreg.h,v 1.3 1996/10/30 22:39:44 niklas Exp $	*/
+/*	$OpenBSD: timerreg.h,v 1.1 1998/09/27 03:55:58 rahnds Exp $	*/
 /*	$NetBSD: timerreg.h,v 1.1 1996/04/12 01:54:56 cgd Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp_er.c,v 1.4 2003/06/02 23:28:16 millert Exp $	*/
+/*	$OpenBSD: clnp_er.c,v 1.5 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: clnp_er.c,v 1.8 1996/04/13 01:34:20 cgd Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: idrp_var.h,v 1.1 1996/03/19 16:30:10 mickey Exp $	*/
+/*	$OpenBSD: idrp_var.h,v 1.2 2002/03/14 01:27:12 millert Exp $	*/
 /*	$NetBSD: idrp_var.h,v 1.1 1996/02/13 22:09:39 christos Exp $	*/
 
 /*

@@ -1,6 +1,6 @@
 # Makefile for Texinfo/emacs.
 # Copyright (C) 1995, 96 Free Software Foundation, Inc.
-# $Id: Makefile.in,v 1.1.1.1 1997/08/21 22:57:56 jason Exp $
+# $Id: Makefile.in,v 1.1 1998/03/03 20:25:11 millert Exp $
 
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

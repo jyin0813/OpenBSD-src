@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_func.h,v 1.3 2002/02/16 21:28:06 millert Exp $	*/
+/*	$OpenBSD: ns_func.h,v 1.4 2002/02/17 19:42:37 millert Exp $	*/
 
 /* ns_func.h - declarations for ns_*.c's externally visible functions
  *

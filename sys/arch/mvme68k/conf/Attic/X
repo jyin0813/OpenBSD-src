@@ -1,4 +1,4 @@
-#	$OpenBSD: X,v 1.2 1997/02/11 02:55:10 deraadt Exp $
+#	$OpenBSD: X,v 1.3 1997/03/31 00:23:55 downsj Exp $
 
 machine		mvme68k m68k
 

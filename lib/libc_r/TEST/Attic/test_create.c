@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: test_create.c,v 1.4 2000/01/06 06:52:45 d Exp $	*/
 /*
  * Copyright (c) 1993 by Chris Provenzano, proven@athena.mit.edu
  *

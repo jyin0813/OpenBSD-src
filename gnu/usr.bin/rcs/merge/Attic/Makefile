@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.3 1993/11/03 16:09:25 cgd Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:41:02 deraadt Exp millert $
 
 PROG=	merge
 CFLAGS+= -I${.CURDIR}/../lib

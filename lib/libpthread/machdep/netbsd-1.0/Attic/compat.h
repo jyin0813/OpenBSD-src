@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: compat.h,v 1.50 1994/08/08 03:44:05 proven Exp $
+ * $Id: compat.h,v 1.1 1998/07/21 13:19:29 peter Exp $
  *
  * Description : COmpat header to make socket code compile.
  *

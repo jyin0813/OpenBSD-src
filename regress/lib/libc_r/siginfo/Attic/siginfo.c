@@ -1,4 +1,4 @@
-/* $OpenBSD: siginfo.c,v 1.7 2002/10/23 22:30:04 marc Exp $ */
+/* $OpenBSD: siginfo.c,v 1.8 2002/10/27 21:49:45 marc Exp $ */
 /* PUBLIC DOMAIN Oct 2002 <marc@snafu.org> */
 
 /*

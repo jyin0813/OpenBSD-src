@@ -1,4 +1,4 @@
-/*	$OpenBSD: samachdep.h,v 1.4 1997/07/13 07:21:52 downsj Exp $	*/
+/*	$OpenBSD: samachdep.h,v 1.5 1997/07/13 09:43:32 downsj Exp $	*/
 /*	$NetBSD: samachdep.h,v 1.3 1997/05/12 07:54:45 thorpej Exp $	*/
 
 /*

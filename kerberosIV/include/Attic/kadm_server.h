@@ -1,5 +1,5 @@
-/*	$OpenBSD: kadm_server.h,v 1.3 1998/02/18 11:53:34 art Exp $	*/
-/*	$Id: kadm_server.h,v 1.3 1998/02/18 11:53:34 art Exp $	*/
+/*	$OpenBSD: kadm_server.h,v 1.4 1998/02/25 15:50:33 art Exp $	*/
+/*	$Id: kadm_server.h,v 1.4 1998/02/25 15:50:33 art Exp $	*/
 
 /*
  * This source code is no longer held under any constraint of USA

@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with GNU Tar; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: open3.h,v 1.3 1993/08/02 17:48:54 mycroft Exp $
+	$Id: open3.h,v 1.1 1995/10/18 08:41:09 deraadt Exp tholo $
 */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: sfbreg.h,v 1.4 1996/12/22 15:22:07 graichen Exp $	*/
+/*	$OpenBSD: sfbreg.h,v 1.5 2000/03/03 00:54:55 todd Exp $	*/
 /*-
  * Copyright (c) 1995
  *	The Regents of the University of California.  All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: m8820x.c,v 1.7 2001/12/14 08:55:45 miod Exp $	*/
+/*	$OpenBSD: m18x_cmmu.c,v 1.18 2001/12/22 07:35:43 smurph Exp $	*/
 /*
  * Copyright (c) 2001 Steve Murphree, Jr.
  * Copyright (c) 1996 Nivas Madhur
@@ -159,7 +159,7 @@ struct cmmu_regs {
 
    /* The rest for the 88204 */
 #define cssp0 cssp
-   /*             */unsigned padding7[0x03]; 
+   /*             */ unsigned padding7[0x03]; 
    /* base + $890 */volatile unsigned cssp1; 
    /*             */unsigned padding8[0x03]; 
    /* base + $8A0 */volatile unsigned cssp2; 
@@ -374,15 +374,13 @@ m8820x_setup_board_config()
 		max_cmmus = bd_config[vme188_config].ncmmus;
 		break;
 #endif /* MVME188 */
-	default:
-		panic("m8820x_setup_board_config: Unknown CPU type.");
 	}
 	cpu_cmmu_ratio = max_cmmus / max_cpus;
 	switch (bd_config[vme188_config].supported) {
 	case 0:
 		printf("MVME%x board configuration #%X: %d CPUs %d CMMUs\n", cputyp, 
 		       vme188_config, max_cpus, max_cmmus);
-		panic("This configuration is not supported - go and get another OS.\n");
+		panic("This configuration is not supported - go and get another OS.");
 		/* NOTREACHED */
 		break;
 	case 1:
@@ -391,7 +389,7 @@ m8820x_setup_board_config()
 		m8820x_setup_cmmu_config();
 		break;
 	default:
-		panic("UNKNOWN MVME%x board configuration: WHOAMI = 0x%02x\n", cputyp, *whoami);
+		panic("UNKNOWN MVME%x board configuration: WHOAMI = 0x%02x", cputyp, *whoami);
 		/* NOTREACHED */
 		break;
 	}
@@ -611,7 +609,7 @@ m8820x_setup_cmmu_config()
 }
 
 #ifdef MVME188
-char *cmmu_strat_string[] = {
+static char *cmmu_strat_string[] = {
 	"address split ",
 	"user/spv split",
 	"spv SRAM split",
@@ -637,9 +635,9 @@ m8820x_cmmu_dump_config()
 #endif /* MVME187 */
 #ifdef MVME188
 	case BRD_188:
-		DEBUG_MSG("VME188 address decoder: PCNFA = 0x%1x, PCNFB = 0x%1x\n\n", *pcnfa & 0xf, *pcnfb & 0xf);
 		pcnfa = (volatile unsigned long *)MVME188_PCNFA;
 		pcnfb = (volatile unsigned long *)MVME188_PCNFB;
+		DEBUG_MSG("VME188 address decoder: PCNFA = 0x%1x, PCNFB = 0x%1x\n\n", *pcnfa & 0xf, *pcnfb & 0xf);
 		for (cmmu_num = 0; cmmu_num < max_cmmus; cmmu_num++) {
 			DEBUG_MSG("CMMU #%d: %s CMMU for CPU %d:\n Strategy: %s\n %s access addr 0x%08x mask 0x%08x match %s\n",
 				  cmmu_num,
@@ -656,13 +654,11 @@ m8820x_cmmu_dump_config()
 				  m8820x_cmmu[cmmu_num].cmmu_addr_match ? "TRUE" : "FALSE");
 		}
 #endif /* MVME188 */
-	default:
-		DEBUG_MSG("Unknown CPU\n\n");
 	}
 }
 
 /* To be implemented as a macro for speedup - XXX-em */
-void 
+void
 m8820x_cmmu_store(mmu, reg, val)
 	int mmu, reg;
 	unsigned val;
@@ -750,7 +746,7 @@ m8820x_cmmu_get_by_mode(cpu, mode)
 }
 #endif
 
-char *mmutypes[8] = {
+static char *mmutypes[8] = {
 	"Unknown (0)",
 	"Unknown (1)",
 	"Unknown (2)",
@@ -1044,7 +1040,7 @@ m8820x_cmmu_cpu_number()
 {
 	register unsigned cmmu_no;
 	int i;
-	
+
 	CMMU_LOCK;
 
 	for (i=0; i < 10; i++) {
@@ -1076,9 +1072,26 @@ m8820x_cmmu_cpu_number()
 	return 0; /* to make compiler happy */
 }
 
+#if 0
 /*
  * Functions that actually modify CMMU registers.
  */
+void
+m8820x_cmmu_remote_set(unsigned cpu, unsigned r, unsigned data, unsigned x)
+{
+	*(volatile unsigned *)(r + (char*)&REGS(cpu,data)) = x;
+}
+
+/*
+ * cmmu_cpu_lock should be held when called if read
+ * the CMMU_SCR or CMMU_SAR.
+ */
+unsigned
+m8820x_cmmu_remote_get(unsigned cpu, unsigned r, unsigned data)
+{
+	return (*(volatile unsigned *)(r + (char*)&REGS(cpu,data)));
+}
+#endif 
 
 /* Needs no locking - read only registers */
 unsigned
@@ -1125,7 +1138,7 @@ m8820x_cmmu_set_uapr(ap)
 	int cpu;
 	
 	cpu = cpu_number();
-	
+
 	CMMU_LOCK;
 	/* this functionality also mimiced in m8820x_cmmu_pmap_activate() */
 	m8820x_cmmu_set(CMMU_UAPR, ap, ACCESS_VAL,

@@ -1,8 +1,8 @@
-/*	$Id: version.c,v 1.3 1995/12/06 10:54:56 deraadt Exp $ */
+/*	$Id: version.c,v 1.1 1997/03/03 19:31:02 rahnds Exp $ */
 
 /*
  * make a random change to this file when you want the bootblock
  * revision to increase. like change this x to a y, or something.
  */
 
-char *version = "$Revision: 1.3 $";
+char *version = "$Revision: 1.1 $";

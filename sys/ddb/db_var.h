@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: db_var.h,v 1.1 1996/03/11 11:16:27 mickey Exp $	*/
 
 /*
  * Copyright (c) 1996 Michael Shalayeff.  All rights reserved.
@@ -40,4 +40,30 @@
 #define	DB_HISTORY_SIZE	4000
 #endif
 
+#define DBCTL_RADIX	1
+#define DBCTL_MAXWIDTH	2
+#define DBCTL_MAXLINE	3
+#define DBCTL_TABSTOP	4
+#define DBCTL_MAXID	5
+
+#define	CTL_DDB_NAMES { \
+	{ NULL, 0 }, \
+	{ "radix", CTLTYPE_INT }, \
+	{ "max_width", CTLTYPE_INT }, \
+	{ "max_line", CTLTYPE_INT }, \
+	{ "tab_stop_width", CTLTYPE_INT },\
+}
+
+#ifdef	_KERNEL
+extern u_int	db_maxoff;
+extern int	db_radix;
+extern int	db_max_width;
+extern int	db_tab_stop_width;
+extern int	db_max_line;
+
+int	ddb_sysctl __P((int *, u_int, void *, size_t *, void *, size_t,
+		       struct proc *));
+#endif
+
 #endif /* _DDB_DB_VAR_H_ */
+

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_pnreg.h,v 1.3 1999/06/29 02:28:22 jason Exp $	*/
+/*	$OpenBSD: if_pnreg.h,v 1.4 1999/09/15 01:17:49 jason Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998

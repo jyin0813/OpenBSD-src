@@ -1,4 +1,4 @@
-/*	$OpenBSD: pfctl_altq.h,v 1.6 2002/12/07 19:52:33 henning Exp $	*/
+/*	$OpenBSD: pfctl_altq.h,v 1.7 2002/12/17 11:29:04 henning Exp $	*/
 
 /*
  * Copyright (C) 2002

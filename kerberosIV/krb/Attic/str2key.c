@@ -1,4 +1,4 @@
-/*	$OpenBSD: str2key.c,v 1.5 1997/12/09 07:57:39 art Exp $	*/
+/*	$OpenBSD: str2key.c,v 1.6 1998/06/22 15:22:27 beck Exp $	*/
 /* $KTH: str2key.c,v 1.10 1997/03/23 03:53:19 joda Exp $ */
 
 /* This defines the Andrew string_to_key function.  It accepts a password

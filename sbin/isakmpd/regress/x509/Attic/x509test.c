@@ -1,4 +1,4 @@
-/*	$OpenBSD: x509test.c,v 1.2 1998/11/15 00:44:12 niklas Exp $	*/
+/*	$Id: x509test.c,v 1.3 1998/08/21 14:33:12 provos Exp $	*/
 
 /*
  * Copyright (c) 1998 Niels Provos.  All rights reserved.

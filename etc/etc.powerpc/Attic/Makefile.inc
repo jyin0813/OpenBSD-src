@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.15 2000/02/03 03:06:55 rahnds Exp $
+#	$OpenBSD: Makefile.inc,v 1.16 2000/08/08 01:08:07 deraadt Exp $
 #	etc.powerpc/Makefile.inc -- powerpc-specific etc Makefile targets
 
 .ifdef DESTDIR

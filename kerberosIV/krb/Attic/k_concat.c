@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: k_concat.c,v 1.2 1997/12/09 07:57:20 art Exp $	*/
 /* $KTH: k_concat.c,v 1.5 1997/05/02 08:56:39 joda Exp $ */
 
 /*

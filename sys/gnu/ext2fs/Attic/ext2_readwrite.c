@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ext2_readwrite.c,v 1.1 1996/06/24 03:34:57 downsj Exp downsj $	*/
 
 /*
  *  modified for Lites 1.1

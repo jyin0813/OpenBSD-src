@@ -1,5 +1,5 @@
-/*	$OpenBSD: hpux_machdep.h,v 1.3 1997/01/12 15:13:36 downsj Exp $	*/
-/*	$NetBSD: hpux_machdep.h,v 1.6 1997/03/16 10:02:40 thorpej Exp $	*/
+/*	$OpenBSD: hpux_machdep.h,v 1.4 1997/03/26 08:32:46 downsj Exp $	*/
+/*	$NetBSD: hpux_machdep.h,v 1.7 1997/04/01 20:05:14 scottr Exp $	*/
 
 /*-
  * Copyright (c) 1996, 1997 The NetBSD Foundation, Inc.
@@ -66,6 +66,10 @@ struct hpuxsigcontext {
 	int	_hsc_ap;		/* pointer to hpuxsigstate */
 };
 
+#ifdef _KERNEL
+struct exec_package;
+struct exec_vmcmd;
+
 int	hpux_cpu_makecmds __P((struct proc *, struct exec_package *));
 int	hpux_cpu_vmcmd __P((struct proc *, struct exec_vmcmd *));
 void	hpux_cpu_bsd_to_hpux_stat __P((struct stat *, struct hpux_stat *));
@@ -76,5 +80,6 @@ int	hpux_to_bsd_uoff __P((int *, int *, struct proc *));
 void	hpux_sendsig __P((sig_t, int, int, u_long, int, union sigval));
 void	hpux_setregs __P((struct proc *, struct exec_package *,
 	    u_long, register_t *));
+#endif /* _KERNEL */
 
 #endif /* ! _MACHINE_HPUX_MACHDEP_H_ */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcvt_hdr.h,v 1.43 2000/12/21 16:54:53 aaron Exp $	*/
+/*	$OpenBSD: pcvt_hdr.h,v 1.44 2001/01/22 18:48:43 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch.

@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: pthread_once.h,v 1.51 1994/09/11 20:56:41 proven Exp $
+ * $Id: pthread_once.h,v 1.1 1998/07/21 13:19:12 peter Exp $
  *
  * Description : mutex header.
  *

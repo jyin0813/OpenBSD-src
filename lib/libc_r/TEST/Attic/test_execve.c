@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_execve.c,v 1.4 2000/01/06 06:53:30 d Exp $	*/
+/*	$OpenBSD: test_execve.c,v 1.5 2000/10/04 05:50:58 d Exp $	*/
 /*
  * Copyright (c) 1994 by Chris Provenzano, proven@athena.mit.edu
  *

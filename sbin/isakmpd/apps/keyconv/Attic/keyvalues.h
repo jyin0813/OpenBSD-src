@@ -1,4 +1,4 @@
-/*	$OpenBSD: keyvalues.h,v 1.1 2001/08/22 15:29:22 ho Exp $	*/
+/*	$OpenBSD: keyvalues.h,v 1.2 2003/06/03 14:34:03 ho Exp $	*/
 
 /*
  * Copyright (c) 2001 Hakan Olsson.  All rights reserved.

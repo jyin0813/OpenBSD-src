@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_bitops.c,v 1.1 1996/07/13 21:21:15 downsj Exp $	*/
+/*	$OpenBSD: ext2_bitops.c,v 1.2 1996/10/18 15:23:35 mickey Exp $	*/
 
 /*
  * bitops.c --- Bitmap frobbing code.  See bitops.h for the inlined

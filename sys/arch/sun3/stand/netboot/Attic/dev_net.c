@@ -1,4 +1,4 @@
-/*	$OpenBSD: dev_net.c,v 1.4 2001/07/04 08:33:54 niklas Exp $	*/
+/*	$OpenBSD: dev_net.c,v 1.5 2002/03/14 03:16:01 millert Exp $	*/
 /*	$NetBSD: dev_net.c,v 1.4 1996/01/29 23:54:15 gwr Exp $	*/
 
 /*

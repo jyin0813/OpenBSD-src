@@ -1,4 +1,4 @@
-/*	$OpenBSD: _atomic_lock.c,v 1.2 2004/02/25 03:48:36 deraadt Exp $	*/
+/*	$OpenBSD: _atomic_lock.c,v 1.3 2004/02/25 04:10:53 deraadt Exp $	*/
 
 /* David Leonard, <d@csee.uq.edu.au>. Public domain. */
 

@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.1.1.1 1997/03/03 19:31:10 rahnds Exp $
+#	$Id: Makefile,v 1.2 1997/04/27 20:56:34 millert Exp $
 
 S=	${.CURDIR}/../../../..
 INCL?= -I${.CURDIR} -I${.CURDIR}/../libsa -I${S}/lib/libsa -I${S}

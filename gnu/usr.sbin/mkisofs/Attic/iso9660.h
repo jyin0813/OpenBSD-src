@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: iso9660.h,v 1.1 1997/09/15 06:01:53 downsj Exp $	*/
 /*
  * Header file iso9660.h - assorted structure definitions and typecasts.
  * specific to iso9660 filesystem.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: clockvar.h,v 1.1.1.1 1996/06/24 09:07:20 pefo Exp $	*/
+/*	$OpenBSD: clockvar.h,v 1.1 1998/01/29 15:06:19 pefo Exp $	*/
 /*	$NetBSD: clockvar.h,v 1.1 1995/06/28 02:44:59 cgd Exp $	*/
 
 /*

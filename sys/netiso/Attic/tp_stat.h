@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_stat.h,v 1.2 1996/03/04 10:36:24 mickey Exp $	*/
+/*	$OpenBSD: tp_stat.h,v 1.3 2003/06/02 23:28:18 millert Exp $	*/
 /*	$NetBSD: tp_stat.h,v 1.6 1996/02/13 22:11:53 christos Exp $	*/
 
 /*-

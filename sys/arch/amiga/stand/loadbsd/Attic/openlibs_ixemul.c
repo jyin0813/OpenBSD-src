@@ -1,4 +1,4 @@
-/*?$OpenBSD$?*/
+/*?$OpenBSD: openlibs_ixemul.c,v 1.1 1998/03/29 22:24:53 espie Exp $?*/
 
 #include <graphics/gfxbase.h>
 #include <libraries/expansion.h>

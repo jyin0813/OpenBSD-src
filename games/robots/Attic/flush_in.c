@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: flush_in.c,v 1.2 1998/07/09 04:34:13 pjanzen Exp $	*/
 /*	$NetBSD: flush_in.c,v 1.4 1995/04/28 23:09:08 mycroft Exp $	*/
 
 /*
@@ -38,7 +38,7 @@
 #if 0
 static char sccsid[] = "@(#)flush_in.c	8.1 (Berkeley) 5/31/93";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: flush_in.c,v 1.2 1998/07/09 04:34:13 pjanzen Exp $";
 #endif
 #endif /* not lint */
 

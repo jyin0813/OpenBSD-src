@@ -73,40 +73,39 @@ int     ahc_debug = AHC_DEBUG;
 #endif
 
 #if UNUSED
-static void	ahc_dump_targcmd(struct target_cmd *cmd);
+static void     ahc_dump_targcmd(struct target_cmd *cmd);
 #endif
 void		ahc_build_free_scb_list(struct ahc_softc *ahc);
 int		ahc_execute_scb(void *arg, bus_dma_segment_t *dm_segs,
-				     int nsegments);
+				int nsegments);
 int		ahc_poll(struct ahc_softc *ahc, int wait);
 void		ahc_timeout(void *);
 int		ahc_setup_data(struct ahc_softc *ahc,
 				    struct scsi_xfer *xs,
-				    struct scb *scb);
+			       struct scb *scb);
 void		ahc_set_recoveryscb(struct ahc_softc *ahc,
-					 struct scb *scb);
+				    struct scb *scb);
 int		ahc_init_scbdata(struct ahc_softc *ahc);
 void		ahc_fini_scbdata(struct ahc_softc *ahc);
-
 int		ahc_istagged_device(struct ahc_softc *ahc,
 					 struct scsi_xfer *xs,
-					 int nocmdcheck);
+				    int nocmdcheck);
 void		ahc_check_tags(struct ahc_softc *ahc,
-				    struct scsi_xfer *xs);
+			       struct scsi_xfer *xs);
 
 /*
- * Routines to manage busy targets.  The old driver didn't need to
+ * Routines to manage busy targets.  The old driver didn't need to 
  * pause the sequencer because no device registers were accessed.  Now
  * busy targets are controlled via the device registers and thus, we
  * have to pause the sequencer for chips that don't have the
  * auto-pause feature.  XXX smurph
  */
 static __inline u_int	ahc_pause_index_busy_tcl(struct ahc_softc *ahc, 
-						      u_int tcl);
+						 u_int tcl);
 static __inline void	ahc_pause_unbusy_tcl(struct ahc_softc *ahc,
-						  u_int tcl);
+					     u_int tcl);
 static __inline void	ahc_pause_busy_tcl(struct ahc_softc *ahc,
-						u_int tcl, u_int busyid);
+					   u_int tcl, u_int busyid);
 
 static __inline u_int
 ahc_pause_index_busy_tcl(ahc, tcl)
@@ -228,7 +227,7 @@ ahc_createdmamem(ahc, dmat, size, mapp, vaddr, baddr, seg, nseg, what)
 		printf("%s: failed to create DMA map for %s, error = %d\n",
 			myname, what, error);
 		goto out;
-        }
+	}
 	level++;
 
 	if ((error = bus_dmamap_load(dmat, *mapp, *vaddr, size, NULL,
@@ -236,7 +235,7 @@ ahc_createdmamem(ahc, dmat, size, mapp, vaddr, baddr, seg, nseg, what)
 		printf("%s: failed to load DMA map for %s, error = %d\n",
 			myname, what, error);
 		goto out;
-        }
+	}
 
 	*baddr = (*mapp)->dm_segs[0].ds_addr;
 	return 0;
@@ -363,7 +362,7 @@ ahc_init_scbdata(ahc)
 	struct scb_data *scb_data;
 
 	scb_data = ahc->scb_data;
-        scb_data->init_level = 0;
+	scb_data->init_level = 0;
 	SLIST_INIT(&scb_data->free_scbs);
 	SLIST_INIT(&scb_data->sg_maps);
 
@@ -378,7 +377,7 @@ ahc_init_scbdata(ahc)
 	/* set dma tags */
 	scb_data->hscb_dmat = ahc->parent_dmat;
 	scb_data->sense_dmat = ahc->parent_dmat;
-        scb_data->sg_dmat = ahc->parent_dmat;
+	scb_data->sg_dmat = ahc->parent_dmat;
 	
 	/* Determine the number of hardware SCBs and initialize them */
 	scb_data->maxhscbs = ahc_probe_scbs(ahc);
@@ -756,7 +755,7 @@ ahc_done(ahc, scb)
 		if ((xs->sc_link->lun == 0) &&
 		    (xs->flags & SCSI_POLL) &&
 		    (xs->error == XS_NOERROR))
-			ahc_check_tags(ahc, xs);
+		ahc_check_tags(ahc, xs);
 		xs->flags |= ITSDONE;
 		scsi_done(xs);
 	}
@@ -1408,7 +1407,7 @@ bus_reset:
 
 				ahc_print_path(ahc, active_scb);
 				printf("Other SCB Timeout%s",
-			 	       (scb->flags & SCB_OTHERTCL_TIMEOUT) != 0
+				       (scb->flags & SCB_OTHERTCL_TIMEOUT) != 0
 				       ? " again\n" : "\n");
 				scb->flags |= SCB_OTHERTCL_TIMEOUT;
 				newtimeout = MAX(active_scb->io_ctx->timeout,
@@ -1559,7 +1558,7 @@ ahc_send_async(ahc, channel, target, lun, code, opt_arg)
 	struct ahc_softc *ahc;
 	char channel;
 	u_int target, lun, code;
-        void *opt_arg;
+	void *opt_arg;
 {
 	/* Nothing to do here for OpenBSD */
 }
@@ -1602,7 +1601,7 @@ ahc_platform_alloc(ahc, platform_arg)
 	
 	/* Just do some initialization... */
 	ahc->scb_data = NULL;
-        ahc->platform_data->ih = NULL;
+	ahc->platform_data->ih = NULL;
 	ahc->platform_data->pci_intr_func = NULL;
 	ahc->platform_data->channel_b_primary = FALSE;
 
@@ -1632,6 +1631,22 @@ ahc_check_tags(ahc, xs)
 {
 	struct ahc_devinfo devinfo;
 
+	if (ahc->scb_data->maxhscbs >= 16 ||
+	    (ahc->flags & AHC_PAGESCBS)) {
+		/* Default to 16 tags */
+		xs->sc_link->openings += 14;
+	} else {
+		/*
+		 * Default to 4 tags on whimpy
+		 * cards that don't have much SCB
+		 * space and can't page.  This prevents
+		 * a single device from hogging all
+		 * slots.  We should really have a better
+		 * way of providing fairness.
+		 */
+		xs->sc_link->openings += 2;
+	}
+	
 	if (xs->sc_link->quirks & SDEV_NOTAGS)
 		return;
 
@@ -1650,21 +1665,6 @@ ahc_check_tags(ahc, xs)
 	printf("%s: target %d using tagged queuing\n",
 	    ahc_name(ahc), XS_SCSI_ID(xs));
 
-	if (ahc->scb_data->maxhscbs >= 16 ||
-	    (ahc->flags & AHC_PAGESCBS)) {
-		/* Default to 16 tags */
-		xs->sc_link->openings += 14;
-	} else {
-		/*	
-		 * Default to 4 tags on whimpy
-		 * cards that don't have much SCB
-		 * space and can't page.  This prevents
-		 * a single device from hogging all
-		 * slots.  We should really have a better
-		 * way of providing fairness.
-		 */
-		xs->sc_link->openings += 2;
-	}
 }
 
 int

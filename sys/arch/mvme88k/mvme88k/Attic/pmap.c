@@ -1,4 +1,4 @@
-/*	$OpenBSD: pmap.c,v 1.116 2004/06/22 05:04:59 miod Exp $	*/
+/*	$OpenBSD: pmap.c,v 1.117 2004/06/24 19:59:14 miod Exp $	*/
 /*
  * Copyright (c) 2001, 2002, 2003 Miodrag Vallat
  * Copyright (c) 1998-2001 Steve Murphree, Jr.

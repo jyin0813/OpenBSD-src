@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_rst.h,v 1.1 1998/11/13 04:20:34 oster Exp $	*/
+/*	$OpenBSD: rf_rst.h,v 1.1 1999/01/11 14:29:49 niklas Exp $	*/
 /*	$NetBSD: rf_rst.h,v 1.1 1998/11/13 04:20:34 oster Exp $	*/
 /*
  * Copyright (c) 1995 Carnegie-Mellon University.

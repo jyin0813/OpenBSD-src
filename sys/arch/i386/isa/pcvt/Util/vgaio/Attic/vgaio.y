@@ -1,4 +1,4 @@
-/*	$OpenBSD: vgaio.y,v 1.2 1999/01/13 07:26:07 niklas Exp $	*/
+/*	$OpenBSD: vgaio.y,v 1.3 1999/05/23 17:19:22 aaron Exp $	*/
 
 /* Hello emacs, this should be edited in -*- Fundamental -*- mode */
 %{
@@ -36,7 +36,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ident "$Header: /cvs/src/sys/arch/i386/isa/pcvt/Util/vgaio/vgaio.y,v 1.2 1999/01/13 07:26:07 niklas Exp $"
+#ident "$Header: /cvs/src/sys/arch/i386/isa/pcvt/Util/vgaio/vgaio.y,v 1.3 1999/05/23 17:19:22 aaron Exp $"
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1997/09/21 11:43:39 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.4 2000/02/12 15:21:17 espie Exp $
 
 .if ${MACHINE} == "amiga"
 PROG=		grfconfig

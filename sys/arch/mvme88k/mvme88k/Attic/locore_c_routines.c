@@ -1,4 +1,4 @@
-/* $OpenBSD: locore_c_routines.c,v 1.42 2004/08/02 08:35:00 miod Exp $	*/
+/* $OpenBSD: locore_c_routines.c,v 1.43 2004/09/30 21:48:57 miod Exp $	*/
 /*
  * Mach Operating System
  * Copyright (c) 1993-1991 Carnegie Mellon University

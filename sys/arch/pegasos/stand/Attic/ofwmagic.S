@@ -1,4 +1,4 @@
-/*	$OpenBSD: ofwmagic.S,v 1.1 2001/09/01 15:39:02 drahn Exp $	*/
+/*	$OpenBSD: ofwmagic.S,v 1.1 2003/10/31 03:54:34 drahn Exp $	*/
 /*	$NetBSD: ofwmagic.S,v 1.1 1997/04/16 21:19:00 thorpej Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu.h,v 1.2 1996/06/06 23:06:35 deraadt Exp $	*/
+/*	$OpenBSD: cpu.h,v 1.3 1996/06/07 21:25:17 deraadt Exp pefo $	*/
 
 /*-
  * Copyright (c) 1992, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec_aout.c,v 1.1 1998/07/14 03:29:08 mickey Exp $	*/
+/*	$OpenBSD: exec_aout.c,v 1.2 2000/05/30 21:59:30 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

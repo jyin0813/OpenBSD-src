@@ -29,7 +29,7 @@ divert(-1)
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-VERSIONID(`$OpenBSD: gandalf.mc,v 1.2 2000/04/02 21:22:35 millert Exp $')dnl
+VERSIONID(`$OpenBSD: gandalf.mc,v 1.3 2001/09/11 19:02:48 millert Exp $')dnl
 OSTYPE(openbsd)dnl
 DOMAIN(sigmasoft)dnl
 MASQUERADE_AS(SigmaSoft.COM)dnl

@@ -1,5 +1,5 @@
 dnl Process this file with autoconf to produce a configure script.
-dnl $Id: configure.in,v 1.1.2.1 1996/11/19 14:51:22 niklas Exp $
+dnl $Id: configure.in,v 1.2 1996/11/23 04:02:03 niklas Exp $
 AC_PREREQ(2.5)
 AC_INIT(texinfo.texi)
 

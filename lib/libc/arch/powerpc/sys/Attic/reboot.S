@@ -1,4 +1,4 @@
-/* $OpenBSD:$ */
+/* $OpenBSD: reboot.S,v 1.3 2002/10/07 04:47:12 drahn Exp $ */
 
 /*
  * Copyright (c) 1996 Dale Rahn

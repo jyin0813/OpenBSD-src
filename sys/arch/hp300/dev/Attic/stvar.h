@@ -1,4 +1,4 @@
-/*	$OpenBSD: stvar.h,v 1.4 2002/03/14 01:26:30 millert Exp $	*/
+/*	$OpenBSD: stvar.h,v 1.5 2003/06/02 23:27:45 millert Exp $	*/
 /*	$NetBSD: stvar.h,v 1.6 1997/04/02 22:37:40 scottr Exp $	*/
 
 /*

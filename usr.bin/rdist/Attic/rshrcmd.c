@@ -1,4 +1,4 @@
-/*	$OpenBSD: rshrcmd.c,v 1.5 1996/09/07 03:14:27 millert Exp $	*/
+/*	$OpenBSD: rshrcmd.c,v 1.6 1996/09/07 03:15:52 millert Exp $	*/
 
 
 /*
@@ -8,7 +8,7 @@
 
 #ifndef lint
 static char RCSid[] = 
-"$OpenBSD: rshrcmd.c,v 1.5 1996/09/07 03:14:27 millert Exp $";
+"$OpenBSD: rshrcmd.c,v 1.6 1996/09/07 03:15:52 millert Exp $";
 #endif
 
 #include	"defs.h"

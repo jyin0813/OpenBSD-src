@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.3 2002/01/03 00:43:48 art Exp $
+# $OpenBSD: Makefile,v 1.4 2002/09/02 20:01:43 avsm Exp $
 
 PROG=	stdarg
 

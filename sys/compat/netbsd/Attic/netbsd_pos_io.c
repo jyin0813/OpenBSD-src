@@ -1,4 +1,4 @@
-/*	$OpenBSD: netbsd_pos_io.c,v 1.6 2000/11/10 18:15:45 art Exp $	*/
+/*	$OpenBSD: netbsd_pos_io.c,v 1.7 2001/01/15 11:43:13 art Exp $	*/
 
 /*	$NetBSD: vfs_syscalls.c,v 1.71 1996/04/23 10:29:02 mycroft Exp $	*/
 

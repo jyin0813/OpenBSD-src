@@ -1,7 +1,7 @@
 /*
  * David Leonard <d@openbsd.org>, 1998. Public Domain.
  *
- * $OpenBSD$
+ * $OpenBSD: uthread_attr_priosched.c,v 1.1 1999/01/18 00:06:56 d Exp $
  */
 #include <errno.h>
 #ifdef _THREAD_SAFE

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: expand.h,v 1.1 1996/08/14 06:19:11 downsj Exp $	*/
 
 /*
  * Expanding strings

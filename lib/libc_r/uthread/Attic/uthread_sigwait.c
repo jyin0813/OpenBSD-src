@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_sigwait.c,v 1.10 2002/02/21 20:57:41 fgsch Exp $	*/
+/*	$OpenBSD: uthread_sigwait.c,v 1.11 2002/10/30 19:11:56 marc Exp $	*/
 /*
  * Copyright (c) 1997 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.6 1996/10/12 01:12:02 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.8 1997/01/05 08:17:31 deraadt Exp $
 #	$NetBSD: Makefile,v 1.23 1996/02/18 12:29:18 mycroft Exp $
 
 STATIC=	-static

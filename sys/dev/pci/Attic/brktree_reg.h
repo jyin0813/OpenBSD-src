@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: brktree_reg.h,v 1.5 1999/08/05 21:18:43 niklas Exp $	*/
 
 /*
  * Copyright (c) 1999 Roger Hardiman

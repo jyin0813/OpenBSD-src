@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: flashreg.h,v 1.1 1997/02/23 21:59:28 pefo Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

@@ -1,4 +1,4 @@
-/*	$Id: clock.c,v 1.2 1995/11/07 08:51:08 deraadt Exp $ */
+/*	$Id: clock.c,v 1.1 1997/03/03 19:31:11 rahnds Exp $ */
 
 /*
  * Copyright (c) 1992, 1993

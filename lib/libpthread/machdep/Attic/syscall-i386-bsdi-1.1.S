@@ -45,7 +45,7 @@
 
 #ifndef lint
 	.text
-	.asciz "$Id: syscall-i386-bsdi-1.1.S,v 1.51 1994/09/05 21:31:24 proven Exp $";
+	.asciz "$Id: syscall-i386-bsdi-1.1.S,v 1.1 1998/07/21 13:19:16 peter Exp $";
 #endif
  
 #if defined(SYSLIBC_SCCS) && !defined(lint)

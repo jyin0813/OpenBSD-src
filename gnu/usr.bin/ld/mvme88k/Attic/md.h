@@ -1,4 +1,4 @@
-/* * $OpenBSD: md.h,v 1.1 1997/04/23 21:24:41 rahnds Exp $*/
+/* * $OpenBSD: md.h,v 1.2 1998/03/26 19:47:09 niklas Exp $*/
 /*
  *	- m68k dependent definitions
  */

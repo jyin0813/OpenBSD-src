@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: exec_som.c,v 1.1 1999/12/23 04:10:30 mickey Exp $	*/
 
 /*
  * Copyright (c) 1999 Michael Shalayeff

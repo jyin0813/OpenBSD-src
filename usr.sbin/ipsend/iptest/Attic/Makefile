@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1998/01/26 04:17:08 dgregor Exp $
 
 PROG=	iptest
 BINDIR=	/usr/sbin

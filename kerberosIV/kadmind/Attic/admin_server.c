@@ -1,4 +1,4 @@
-/*	$OpenBSD: admin_server.c,v 1.4 1998/08/16 02:42:09 art Exp $	*/
+/*	$OpenBSD: admin_server.c,v 1.5 1999/05/23 17:19:24 aaron Exp $	*/
 /* $KTH: admin_server.c,v 1.42 1997/12/04 19:31:39 assar Exp $ */
 
 /* 

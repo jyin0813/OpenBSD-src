@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_urlreg.h,v 1.1 2002/05/07 18:08:04 nate Exp $ */
+/*	$OpenBSD$ */
 /*	$NetBSD: if_urlreg.h,v 1.1 2002/03/28 21:09:11 ichiro Exp $	*/
 /*
  * Copyright (c) 2001, 2002
@@ -131,7 +131,7 @@ typedef	uWord url_rxhdr_t;	/* Recive Header */
 #define	URL_RXHDR_PHYPKT_MASK	(0x4000) /* Physical match packet */
 #define	URL_RXHDR_MCASTPKT_MASK	(0x8000) /* Multicast packet */
 
-#define	GET_IFP(sc)		(&(sc)->sc_ec.ec_if)
+#define	GET_IFP(sc)		(&(sc)->sc_ac.ac_if)
 #define	GET_MII(sc)		(&(sc)->sc_mii)
 
 struct url_chain {
@@ -174,7 +174,7 @@ struct url_softc {
 	struct timeval		sc_rx_notice;
 
 	/* Ethernet */
-	struct ethercom		sc_ec; /* ethernet common */
+	struct arpcom		sc_ac; /* ethernet common */
 	struct mii_data		sc_mii;
 	struct lock		sc_mii_lock;
 	int			sc_link;

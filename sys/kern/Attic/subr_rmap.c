@@ -1,4 +1,4 @@
-/*	$OpenBSD: subr_rmap.c,v 1.3 1996/04/21 22:27:23 deraadt Exp $	*/
+/*	$OpenBSD: subr_rmap.c,v 1.4 1999/01/11 01:29:17 niklas Exp $	*/
 /*	$NetBSD: subr_rmap.c,v 1.11 1996/03/16 23:17:11 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$Id: dev_net.c,v 1.4 1995/11/17 22:13:11 deraadt Exp $ */
+/*	$Id: dev_net.c,v 1.1 1997/03/03 19:31:08 rahnds Exp $ */
 
 /*
  * Copyright (c) 1995 Gordon W. Ross

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: exec_sup.h,v 1.1 1996/05/28 14:11:21 etheisen Exp deraadt $	*/
 /*
  * Copyright (c) 1995, 1996 Erik Theisen
  * All rights reserved.

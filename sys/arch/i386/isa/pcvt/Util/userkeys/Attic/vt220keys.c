@@ -1,4 +1,4 @@
-/*	$OpenBSD: vt220keys.c,v 1.5 1999/05/24 15:37:44 aaron Exp $	*/
+/*	$OpenBSD: vt220keys.c,v 1.6 2000/12/21 16:54:54 aaron Exp $	*/
 
 /*
  *      Trivial program to load VT220 Function keys with strings,

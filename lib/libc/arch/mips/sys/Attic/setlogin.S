@@ -34,7 +34,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: setlogin.S,v 1.4 1996/08/19 08:16:25 tholo Exp $"
+	.asciz "$OpenBSD: setlogin.S,v 1.5 2003/06/02 20:18:32 millert Exp $"
 #endif /* SYSLIBC_SCCS */
 
 LEAF(setlogin)

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipx_error.h,v 1.1 1996/08/16 09:15:59 mickey Exp $	*/
+/*	$OpenBSD: ipx_error.h,v 1.2 1996/10/26 09:34:50 mickey Exp $	*/
 
 /*-
  *

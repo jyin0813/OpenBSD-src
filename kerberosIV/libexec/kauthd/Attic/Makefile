@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2002/05/11 00:20:18 espie Exp $
+# $OpenBSD: Makefile,v 1.10 2002/06/10 18:40:33 hin Exp $
 
 PROG	= kauthd
 

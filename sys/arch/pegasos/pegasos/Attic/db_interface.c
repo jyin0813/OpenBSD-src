@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_interface.c,v 1.7 2003/10/15 17:50:16 drahn Exp $	*/
+/*	$OpenBSD: db_interface.c,v 1.1 2003/10/31 03:54:33 drahn Exp $	*/
 /*      $NetBSD: db_interface.c,v 1.12 2001/07/22 11:29:46 wiz Exp $ */
 
 #include <sys/param.h>

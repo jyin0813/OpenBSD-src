@@ -1,4 +1,4 @@
-/*	$OpenBSD: gentcfskey.c,v 1.3 2000/06/19 23:06:24 aaron Exp $	*/
+/*	$OpenBSD: gentcfskey.c,v 1.4 2000/06/20 07:58:56 fgsch Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

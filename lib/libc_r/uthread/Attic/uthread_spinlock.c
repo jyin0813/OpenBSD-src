@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_spinlock.c,v 1.11 2001/09/04 22:17:45 fgsch Exp $	*/
+/*	$OpenBSD: uthread_spinlock.c,v 1.12 2002/09/12 23:21:42 marc Exp $	*/
 /*
  * Copyright (c) 1997 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_machdep.h,v 1.4 1997/01/16 04:04:06 kstailey Exp $	*/
+/*	$OpenBSD: db_machdep.h,v 1.5 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: db_machdep.h,v 1.7 1995/02/07 04:34:45 gwr Exp $	*/
 
 #include <m68k/db_machdep.h>

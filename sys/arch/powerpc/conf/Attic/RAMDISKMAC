@@ -1,4 +1,4 @@
-#	$OpenBSD: RAMDISKMAC,v 1.3 2000/01/14 05:35:31 rahnds Exp $
+#	$OpenBSD: RAMDISKMAC,v 1.4 2000/01/23 04:28:39 rahnds Exp $
 #
 # PPC GENERIC config file
 #
@@ -31,8 +31,8 @@ option		KERNFS		# /kern
 option		INET		# IP + ICMP + TCP + UDP
 pseudo-device	loop	2	# network loopback
 pseudo-device	pty	64	# pseudo-terminals
-pseudo-device	ccd	4	# concatenated disk devices
-pseudo-device	ksyms	1	# kernel symbols device
+#pseudo-device	ccd	4	# concatenated disk devices
+#pseudo-device	ksyms	1	# kernel symbols device
 
 config		bsd	root on rd0a swap on rd0b
 
@@ -80,6 +80,8 @@ obio0   at pci? dev ? function ?
 
 #nsphy*  at mii? phy ?                   # NS83840 PHYs   
 
+macintr0 at obio?                        # old interrupt controller
+openpic0 at obio?                        # openpic interrupt controller
 bm*     at obio?                        # bmac ethernet
 #mc*     at obio?                        # MACE ethernet
 #esp*    at obio? flags 0x00ff           # 53c9x SCSI
@@ -141,9 +143,9 @@ scsibus* at atapiscsi?
 sd*		at scsibus? target ? lun ?
 st*		at scsibus? target ? lun ?            
 cd*		at scsibus? target ? lun ?
-ch*		at scsibus? target ? lun ?
-ss*		at scsibus? target ? lun ?
-uk*		at scsibus? target ? lun ?
+#ch*		at scsibus? target ? lun ?
+#ss*		at scsibus? target ? lun ?
+#uk*		at scsibus? target ? lun ?
 
 #### openfirmware devices
 # mostly unused currently 

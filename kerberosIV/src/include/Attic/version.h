@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: version.h,v 1.3 2001/05/03 19:21:51 hin Exp $	*/
 
 #include <config.h>
 

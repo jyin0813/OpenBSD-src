@@ -1,4 +1,4 @@
-/*	$OpenBSD: screen.pro,v 1.1.1.1 1996/09/07 21:40:29 downsj Exp $	*/
+/*	$OpenBSD: screen.pro,v 1.2 1996/09/21 06:23:54 downsj Exp $	*/
 /* screen.c */
 void updateline __PARMS((void));
 void update_curbuf __PARMS((int type));

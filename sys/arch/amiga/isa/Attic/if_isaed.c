@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_isaed.c,v 1.15 1997/02/21 10:52:11 niklas Exp $	*/
+/*	$OpenBSD: if_isaed.c,v 1.16 1997/03/20 23:59:59 niklas Exp $	*/
 
 /*
  *	Derived from sys/dev/isa/if_ed.c:

@@ -1,4 +1,4 @@
-/*	$OpenBSD: getmntopts.c,v 1.2 2003/06/02 20:06:15 millert Exp $	*/
+/*	$OpenBSD: getmntopts.c,v 1.3 2003/06/11 06:22:14 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1994

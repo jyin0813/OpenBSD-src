@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: inet_addr.c,v 1.1 1997/03/12 10:42:05 downsj Exp $	*/
 
 /*
  * ++Copyright++ 1983, 1990, 1993
@@ -60,7 +60,7 @@
 static char sccsid[] = "@(#)inet_addr.c	8.1 (Berkeley) 6/17/93";
 static char rcsid[] = "$From: inet_addr.c,v 8.5 1996/08/05 08:31:35 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: inet_addr.c,v 1.1 1997/03/12 10:42:05 downsj Exp $";
 #endif
 #endif /* LIBC_SCCS and not lint */
 

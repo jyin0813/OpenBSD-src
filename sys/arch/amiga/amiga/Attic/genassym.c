@@ -1,4 +1,4 @@
-/*	$OpenBSD: genassym.c,v 1.7 1997/01/16 09:23:20 niklas Exp $	*/
+/*	$OpenBSD: genassym.c,v 1.8 1997/02/21 08:59:01 niklas Exp $	*/
 /*	$NetBSD: genassym.c,v 1.29 1996/12/17 07:32:55 is Exp $	*/
 
 /*

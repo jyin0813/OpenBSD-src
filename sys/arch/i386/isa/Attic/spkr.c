@@ -1,4 +1,4 @@
-/*	$OpenBSD: spkr.c,v 1.11 1996/10/18 15:48:10 mickey Exp $ */
+/*	$OpenBSD: spkr.c,v 1.12 1997/10/24 00:00:01 mickey Exp $ */
 /*	$NetBSD: spkr.c,v 1.23.4.1 1996/07/15 22:15:11 fvdl Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cmd.c,v 1.32 1997/09/17 19:55:34 mickey Exp $	*/
+/*	$OpenBSD: cmd.c,v 1.33 1997/09/20 22:40:37 flipk Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

@@ -23,25 +23,25 @@
 ######################################################################
 ######################################################################
 
-#####  $Id: cfhead.m4,v 8.74 2000/02/26 01:00:32 gshapiro Exp $  #####
-#####  $Id: cf.m4,v 8.32 1999/02/07 07:26:14 gshapiro Exp $  #####
-#####  $Id: generic-linux.mc,v 8.1 1999/09/24 22:48:05 gshapiro Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
-#####  $Id: linux.m4,v 8.11 1999/03/12 22:21:25 ca Exp $  #####
-
-
-#####  $Id: local_procmail.m4,v 8.21 1999/11/18 05:06:23 ca Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
 
-#####  $Id: generic.m4,v 8.15 1999/04/04 00:51:09 ca Exp $  #####
-
-#####  $Id: redirect.m4,v 8.15 1999/08/06 01:47:36 gshapiro Exp $  #####
-
-#####  $Id: use_cw_file.m4,v 8.9 1999/02/07 07:26:13 gshapiro Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
 
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
-#####  $Id: proto.m4,v 8.434 2000/02/22 22:55:17 ca Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
+
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
+
+
+
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
 
 # level 9 config file format
@@ -1044,7 +1044,7 @@ SLocal_trust_auth
 ###   Local and Program Mailer specification   ###
 ##################################################
 
-#####  $Id: local.m4,v 8.50 1999/11/21 19:02:08 ca Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
 #
 #  Envelope sender rewriting
@@ -1093,7 +1093,7 @@ Mprog,		P=/bin/sh, F=lsDFMoqeu9, S=EnvFromL/HdrFromL, R=EnvToL/HdrToL, D=$z:/,
 ###   SMTP Mailer specification   ###
 #####################################
 
-#####  $Id: smtp.m4,v 8.55 1999/09/21 20:26:18 ca Exp $  #####
+#####  $Id: generic-linux.cf,v 1.1 2000/04/02 19:05:50 millert Exp $  #####
 
 #
 #  common sender and masquerading recipient rewriting

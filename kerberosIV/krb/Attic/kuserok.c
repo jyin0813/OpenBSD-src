@@ -1,4 +1,4 @@
-/*	$OpenBSD: kuserok.c,v 1.5 1997/12/09 09:07:08 art Exp $	*/
+/*	$OpenBSD: kuserok.c,v 1.6 1997/12/12 05:30:26 art Exp $	*/
 /* $KTH: kuserok.c,v 1.21 1997/04/01 08:18:35 joda Exp $ */
 
 /*

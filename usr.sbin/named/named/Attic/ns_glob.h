@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_glob.h,v 1.3 1998/05/22 00:47:39 millert Exp $	*/
+/*	$OpenBSD: ns_glob.h,v 1.4 1998/05/23 19:24:50 millert Exp $	*/
 
 /*
  *	from ns.h	4.33 (Berkeley) 8/23/90

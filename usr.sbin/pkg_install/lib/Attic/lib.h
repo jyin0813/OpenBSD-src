@@ -1,4 +1,4 @@
-/* $OpenBSD: lib.h,v 1.13 2003/08/01 08:56:01 espie Exp $ */
+/* $OpenBSD: lib.h,v 1.14 2003/08/21 20:24:57 espie Exp $ */
 
 /*
  * FreeBSD install - a package for the installation and maintainance

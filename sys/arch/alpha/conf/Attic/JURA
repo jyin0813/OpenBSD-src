@@ -1,4 +1,4 @@
-#	$OpenBSD: JURA,v 1.9 1997/07/08 21:26:29 deraadt Exp $
+#	$OpenBSD: JURA,v 1.10 1999/01/08 03:16:16 niklas Exp $
 #	$NetBSD: JURA,v 1.11 1996/11/25 04:16:18 cgd Exp $
 #
 # Kernel for jura.pdl.cs.cmu.edu.

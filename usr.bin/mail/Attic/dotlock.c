@@ -1,4 +1,4 @@
-/*	$OpenBSD: dotlock.c,v 1.2 1997/07/13 21:21:11 millert Exp $	*/
+/*	$OpenBSD: dotlock.c,v 1.3 1997/07/13 23:53:59 millert Exp $	*/
 /*	$NetBSD: dotlock.c,v 1.1 1996/06/08 19:48:19 christos Exp $	*/
 
 /*
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: dotlock.c,v 1.2 1997/07/13 21:21:11 millert Exp $";
+static char rcsid[] = "$OpenBSD: dotlock.c,v 1.3 1997/07/13 23:53:59 millert Exp $";
 #endif
 
 #include <sys/types.h>

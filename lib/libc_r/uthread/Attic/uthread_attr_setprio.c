@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_attr_setprio.c,v 1.4 2001/08/10 14:37:20 fgsch Exp $	*/
+/*	$OpenBSD: uthread_attr_setprio.c,v 1.5 2002/11/07 02:56:20 marc Exp $	*/
 /*
  * Copyright (c) 1996 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_param.h,v 1.24 2001/08/06 14:03:05 art Exp $	*/
+/*	$OpenBSD: vm_param.h,v 1.25 2001/08/11 10:57:22 art Exp $	*/
 /*	$NetBSD: vm_param.h,v 1.25 2000/03/26 20:42:45 kleink Exp $	*/
 
 /* 

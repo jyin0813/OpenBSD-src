@@ -1,4 +1,4 @@
-/*	$OpenBSD: raw_ipv6.c,v 1.26 2000/07/27 04:05:27 itojun Exp $	*/
+/*	$OpenBSD: raw_ipv6.c,v 1.27 2000/07/27 06:29:10 itojun Exp $	*/
 
 /*
 %%% copyright-nrl-95
@@ -44,7 +44,7 @@ didn't get a copy, you may request one from <license@ipv6.nrl.navy.mil>.
  * SUCH DAMAGE.
  *
  *	@(#)raw_ip.c	8.7 (Berkeley) 5/15/95
- *	$Id: raw_ipv6.c,v 1.26 2000/07/27 04:05:27 itojun Exp $
+ *	$Id: raw_ipv6.c,v 1.27 2000/07/27 06:29:10 itojun Exp $
  */
 
 #include <sys/param.h>

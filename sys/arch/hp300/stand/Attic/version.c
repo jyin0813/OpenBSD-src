@@ -1,4 +1,4 @@
-/*	$OpenBSD: version.c,v 1.1 1997/04/16 12:38:23 downsj Exp $	*/
+/*	$OpenBSD: version.c,v 1.2 1997/07/13 07:21:54 downsj Exp $	*/
 
 /*
  * Record major changes in the boot code here, and increment the version

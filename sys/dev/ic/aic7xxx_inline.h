@@ -28,7 +28,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: aic7xxx_inline.h,v 1.1 2002/02/16 04:36:33 smurph Exp $
+ * $Id: //depot/src/aic7xxx/aic7xxx_inline.h#27 $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aic7xxx_inline.h,v 1.17 2001/07/18 21:39:47 gibbs Exp $
  */

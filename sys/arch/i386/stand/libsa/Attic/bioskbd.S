@@ -1,4 +1,4 @@
-/*	$OpenBSD: bioskbd.S,v 1.9 1997/08/07 11:38:39 niklas Exp $	*/
+/*	$OpenBSD: bioskbd.S,v 1.10 1997/08/08 00:27:54 niklas Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

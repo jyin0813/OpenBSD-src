@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: sleep.h,v 1.51.4.1 1996/10/01 17:37:32 proven Exp $
+ * $Id: sleep.h,v 1.1 1998/07/21 13:19:12 peter Exp $
  *
  * Description : sleep header.
  *

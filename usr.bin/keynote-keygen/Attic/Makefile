@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1 1999/05/23 22:48:56 angelos Exp $
 
 PROG=	keynote-keygen
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: start.S,v 1.1 1997/05/11 16:17:54 pefo Exp $ */
+/*	$OpenBSD: start.S,v 1.2 1997/07/21 06:58:13 pefo Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1.1.1 1995/10/18 08:40:14 deraadt Exp $
+# $Id: Makefile,v 1.2 1996/07/17 05:42:26 michaels Exp $
 
 LIB=		readline
 NOPROFILE=

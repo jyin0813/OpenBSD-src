@@ -1,4 +1,4 @@
-/*	$OpenBSD: drcomvar.h,v 1.1 1996/11/30 00:43:04 is Exp $	*/
+/*	$OpenBSD: drcomvar.h,v 1.1 1997/01/16 09:23:56 niklas Exp $	*/
 /*	$NetBSD: drcomvar.h,v 1.1 1996/11/30 00:43:04 is Exp $	*/
 
 /*

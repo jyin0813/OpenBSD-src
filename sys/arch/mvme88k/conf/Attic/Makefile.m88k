@@ -1,5 +1,5 @@
 #	@(#)Makefile.hp300	7.10 (Berkeley) 6/27/91
-#	$Id: Makefile.m88k,v 1.2 1996/03/26 15:09:49 mickey Exp $
+#	$Id: Makefile.m88k,v 1.3 1996/04/24 12:05:20 mickey Exp $
 #
 # Makefile for NetBSD
 #

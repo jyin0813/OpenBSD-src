@@ -19,7 +19,7 @@
   file named COPYING.  Among other things, the copyright notice
   and this notice must be preserved on all copies.
 
-	$Id: gnuchess.h,v 1.1.1.1 1995/10/18 08:41:11 deraadt Exp $
+	$Id: gnuchess.h,v 1.2 1996/06/02 19:51:41 tholo Exp deraadt $
 */
 
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: siop.c,v 1.7 2000/01/06 03:21:42 smurph Exp $ */
+/*	$OpenBSD: siop.c,v 1.8 2000/01/24 05:20:54 smurph Exp $ */
 
 /*
  * Copyright (c) 1994 Michael L. Hitch

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: qop_wfq.h,v 1.1 2001/06/27 18:23:36 kjc Exp $	*/
 /*	$KAME: qop_wfq.h,v 1.2 2000/10/18 09:15:21 kjc Exp $	*/
 /*
  * Copyright (C) 1999-2000

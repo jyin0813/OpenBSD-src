@@ -3,7 +3,7 @@
 #
 # Dug Song <dugsong@monkey.org>
 #
-# $Id: Makefile.in,v 1.1.1.1 2002/04/09 15:14:08 nprovos Exp $
+# $Id: Makefile.in,v 1.1 2002/06/15 18:01:39 provos Exp $
 
 srcdir          = @srcdir@
 VPATH           = @srcdir@

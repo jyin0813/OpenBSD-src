@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1 1999/05/23 22:47:47 angelos Exp $
 
 PROG=	keynote-sigver
 

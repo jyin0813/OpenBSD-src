@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 1997/07/18 22:59:06 provos Exp $
+#	$OpenBSD: Makefile,v 1.5 1998/05/24 13:53:21 provos Exp $
 
 SUBDIR=	ipsecadm photurisd startkey
 

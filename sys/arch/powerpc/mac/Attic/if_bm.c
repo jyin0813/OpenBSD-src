@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_bm.c,v 1.8 2001/07/09 03:30:20 mickey Exp $	*/
+/*	$OpenBSD: if_bm.c,v 1.9 2001/07/10 02:16:11 fgsch Exp $	*/
 /*	$NetBSD: if_bm.c,v 1.1 1999/01/01 01:27:52 tsubai Exp $	*/
 
 /*-

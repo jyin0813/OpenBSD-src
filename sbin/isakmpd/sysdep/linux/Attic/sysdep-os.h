@@ -1,7 +1,7 @@
-/*	$Id: sysdep-os.h,v 1.1 1999/02/26 04:00:21 niklas Exp $	*/
+/*	$Id: sysdep-os.h,v 1.5 1999/08/12 23:10:36 niklas Exp $	*/
 
 /*
- * Copyright (c) 1998 Niklas Hallqvist.  All rights reserved.
+ * Copyright (c) 1998, 1999 Niklas Hallqvist.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -38,5 +38,14 @@
 
 typedef u_int16_t in_port_t;
 typedef u_int32_t in_addr_t;
+
+#if 0
+/*
+ * Why -D__USE_GNU does not work in order to get this from stdio.h beats me.
+ */
+extern int asprintf __P((char **, const char *, ...));
+#endif
+
+#define DL_LAZY RTLD_LAZY
 
 #endif /* _SYSDEP_OS_H_ */

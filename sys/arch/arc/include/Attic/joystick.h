@@ -1,4 +1,4 @@
-/*	$OpenBSD: joystick.h,v 1.4 1997/09/16 07:52:33 deraadt Exp $ */
+/*	$OpenBSD: joystick.h,v 1.1 1998/05/05 05:44:43 imp Exp $ */
 /*	$NetBSD: joystick.h,v 1.1 1996/03/27 19:18:56 perry Exp $	*/
 
 #ifndef _JOY_IOCTL_H_

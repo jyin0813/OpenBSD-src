@@ -1,4 +1,4 @@
-/*	$OpenBSD: eval.c,v 1.2 1996/08/19 20:08:49 downsj Exp $	*/
+/*	$OpenBSD: eval.c,v 1.4 1997/06/19 13:58:40 kstailey Exp $	*/
 
 /*
  * Expansion - quoting, separation, substitution, globbing

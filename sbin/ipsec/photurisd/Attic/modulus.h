@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: modulus.h,v 1.3 1997/06/12 17:09:20 provos Exp provos $ */
+/* $Id: modulus.h,v 1.1 1997/07/18 22:48:49 provos Exp $ */
 /* 
  * modulus.h: 
  * modulus handling functions

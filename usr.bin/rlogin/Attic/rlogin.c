@@ -1,4 +1,4 @@
-/*	$OpenBSD: rlogin.c,v 1.29 2002/02/17 19:42:31 millert Exp $	*/
+/*	$OpenBSD: rlogin.c,v 1.30 2002/02/19 19:39:39 millert Exp $	*/
 /*	$NetBSD: rlogin.c,v 1.8 1995/10/05 09:07:22 mycroft Exp $	*/
 
 /*
@@ -44,7 +44,7 @@ static char copyright[] =
 #if 0
 static char sccsid[] = "@(#)rlogin.c	8.1 (Berkeley) 6/6/93";
 #else
-static char rcsid[] = "$OpenBSD: rlogin.c,v 1.29 2002/02/17 19:42:31 millert Exp $";
+static char rcsid[] = "$OpenBSD: rlogin.c,v 1.30 2002/02/19 19:39:39 millert Exp $";
 #endif
 #endif /* not lint */
 

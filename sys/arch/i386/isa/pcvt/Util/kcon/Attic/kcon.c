@@ -1,4 +1,4 @@
-/*	$OpenBSD: kcon.c,v 1.6 1999/01/13 07:26:05 niklas Exp $	*/
+/*	$OpenBSD: kcon.c,v 1.7 2000/12/07 18:19:11 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis

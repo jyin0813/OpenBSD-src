@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: TODO,v 1.1 1997/09/15 06:01:52 downsj Exp $
 #	$From: TODO,v 1.2 1997/02/23 15:46:38 eric Rel $	
 	1) Allow multiple input paths to be concatenated together.
 	This is a little tricky, because the directory entries need to be

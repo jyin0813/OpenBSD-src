@@ -1,4 +1,4 @@
-/*	$OpenBSD: pfctl_radix.h,v 1.01 2002/12/22 14:19:29 dhartmei Exp $ */
+/*	$OpenBSD: pfctl_radix.h,v 1.1 2003/01/03 21:37:44 cedric Exp $ */
 
 /*
  * Copyright (c) 2002 Cedric Berger

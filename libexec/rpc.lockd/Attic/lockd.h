@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: lockd.h,v 1.2 1997/08/10 21:06:40 millert Exp $	*/
 
 /*
  * Copyright (c) 1995

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: dbdma.h,v 1.1 1999/11/08 23:46:00 rahnds Exp $	*/
 /*	$NetBSD: dbdma.h,v 1.2 1998/08/21 16:13:28 tsubai Exp $	*/
 
 /*

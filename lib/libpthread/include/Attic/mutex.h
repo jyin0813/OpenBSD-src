@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: mutex.h,v 1.3 1994/02/07 22:02:31 proven Exp $ $provenid: mutex.h,v 1.17 1994/02/07 03:31:59 proven Exp $
+ * $Id: mutex.h,v 1.1 1995/10/18 08:43:04 deraadt Exp $ $provenid: mutex.h,v 1.17 1994/02/07 03:31:59 proven Exp $
  *
  * Description : mutex header.
  *

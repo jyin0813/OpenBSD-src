@@ -1,4 +1,4 @@
-/*	$OpenBSD: boot.c,v 1.15 1997/08/22 00:41:27 mickey Exp $	*/
+/*	$OpenBSD: boot.c,v 1.16 1997/09/02 21:37:38 mickey Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

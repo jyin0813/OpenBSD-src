@@ -1,4 +1,4 @@
-/*	$OpenBSD: conf.c,v 1.18 2000/08/19 18:43:30 maja Exp $	*/
+/*	$OpenBSD: conf.c,v 1.19 2000/09/26 14:03:54 art Exp $	*/
 /*	$NetBSD: conf.c,v 1.23 1996/09/07 12:40:38 mycroft Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-#	$OpenBSD: GENERICSBC,v 1.19 2004/11/25 18:32:06 miod Exp $
+#	$OpenBSD: GENERICSBC,v 1.20 2004/12/02 20:17:49 miod Exp $
 #	$NetBSD: GENERIC,v 1.52 1997/01/13 23:34:07 scottr Exp $
 #
 # GENERICSBC --- our generic kernel using the SBC SCSI driver

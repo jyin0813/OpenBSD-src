@@ -1,4 +1,4 @@
-/* @(#) $Header: /cvs/src/usr.sbin/tcpdump/lbl/gnuc.h,v 1.1 1996/12/12 16:08:22 bitblt Exp $ (LBL) */
+/* @(#) $Header: /cvs/src/usr.sbin/tcpdump/lbl/gnuc.h,v 1.2 1997/07/25 20:12:19 mickey Exp $ (LBL) */
 
 /* Define __P() macro, if necessary */
 #ifndef __P

@@ -19,7 +19,7 @@ License along with libiberty; see the file COPYING.LIB.  If
 not, write to the Free Software Foundation, Inc., 675 Mass Ave,
 Cambridge, MA 02139, USA.
 
-	$Id: cplus-dem.c,v 1.1 1994/01/28 12:43:00 pk Exp $
+	$Id: cplus-dem.c,v 1.1 1995/10/18 08:40:12 deraadt Exp $
 */
 
 /* This file exports two functions; cplus_mangle_opname and cplus_demangle.

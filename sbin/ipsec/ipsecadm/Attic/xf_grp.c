@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_grp.c,v 1.8 1997/09/14 10:37:47 deraadt Exp $ */
+/* $OpenBSD: xf_grp.c,v 1.9 1998/05/24 13:29:10 provos Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

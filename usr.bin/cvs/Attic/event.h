@@ -1,4 +1,4 @@
-/*	$OpenBSD: event.h,v 1.2 2004/07/25 03:32:05 jfb Exp $	*/
+/*	$OpenBSD: event.h,v 1.3 2004/12/07 17:10:56 tedu Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

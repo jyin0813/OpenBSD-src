@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.2 2000/06/20 21:29:34 miod Exp $
+#	$OpenBSD: Makefile.inc,v 1.3 2001/09/04 22:25:02 deraadt Exp $
 
 IMAGESIZE?=		3000 # 1.5MB & change in 512 byte blocks
 GZIP?=			gzip

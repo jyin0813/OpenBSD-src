@@ -1,4 +1,4 @@
-# $Id: Makefile.inc,v 1.4 1995/04/16 03:09:24 gwr Exp $
+# $Id: Makefile.inc,v 1.1 1995/10/18 08:39:54 deraadt Exp $
 
 SRCS+=		netbsdm68k.c netbsdm68k4k.c cpu-m68k.c trad-core.c
 

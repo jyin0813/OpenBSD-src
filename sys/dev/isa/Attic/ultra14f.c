@@ -1,4 +1,4 @@
-/*	$OpenBSD: ultra14f.c,v 1.14 1996/05/07 07:37:54 deraadt Exp $	*/
+/*	$OpenBSD: ultra14f.c,v 1.16 1996/11/23 21:46:47 kstailey Exp $	*/
 /*	$NetBSD: ultra14f.c,v 1.66 1996/05/12 23:53:54 mycroft Exp $	*/
 
 /*

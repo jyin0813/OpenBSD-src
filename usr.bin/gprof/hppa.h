@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hppa.h,v 1.1 2001/03/22 05:18:30 mickey Exp $	*/
 
     /*
      *	offset (in bytes) of the code from the entry address of a routine.

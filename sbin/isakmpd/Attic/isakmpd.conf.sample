@@ -1,4 +1,4 @@
-#	$OpenBSD: isakmpd.conf.sample,v 1.6 1998/12/21 01:02:25 niklas Exp $
+#	$OpenBSD: isakmpd.conf.sample,v 1.7 1999/02/26 03:45:30 niklas Exp $
 #	$EOM: isakmpd.conf.sample,v 1.26 1999/02/24 15:48:51 niklas Exp $
 
 # A configuration sample for the isakmpd ISAKMP/Oakley (aka IKE) daemon.

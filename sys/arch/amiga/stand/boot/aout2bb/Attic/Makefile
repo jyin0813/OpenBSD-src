@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 1997/01/16 09:26:47 niklas Exp $
 
 PROG=aout2bb
 SRCS=aout2bb.c chksum.c

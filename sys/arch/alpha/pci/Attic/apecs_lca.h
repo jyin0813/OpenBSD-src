@@ -1,4 +1,4 @@
-/*	$OpenBSD: apecs_lca.h,v 1.2 1996/09/15 17:15:28 cgd Exp $ */
+/*	$OpenBSD: apecs_lca.h,v 1.1 1996/10/30 22:39:47 niklas Exp $ */
 
 /*
  * Copyright (c) 1996 Niklas Hallqvist

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tc_bus_io.c,v 1.3 1996/10/30 22:41:20 niklas Exp $	*/
+/*	$OpenBSD: tc_bus_io.c,v 1.4 1996/11/12 20:29:44 niklas Exp $	*/
 /*	$NetBSD: tc_bus_io.c,v 1.3 1996/07/09 00:55:31 cgd Exp $	*/
 
 /*

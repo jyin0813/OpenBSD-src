@@ -1,5 +1,5 @@
 /* Return text for a given pair of sw1/sw2 status bytes */
-static char *rcsid = "$Id: $";
+static char *rcsid = "$Id: r1r2.c,v 1.1 2001/05/22 15:35:58 rees Exp $";
 
 #ifdef __palmos__
 #define NULL 0

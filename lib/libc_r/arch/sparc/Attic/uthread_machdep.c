@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_machdep.c,v 1.1 2000/09/25 01:16:40 d Exp $	*/
 
 /*
  * Machine-dependent thread state functions for OpenBSD/sparc.

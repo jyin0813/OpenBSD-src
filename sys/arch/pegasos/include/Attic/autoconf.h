@@ -1,4 +1,4 @@
-/*	$OpenBSD: autoconf.h,v 1.1 2003/10/31 03:54:33 drahn Exp $ */
+/*	$OpenBSD: autoconf.h,v 1.2 2004/01/22 21:28:33 miod Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

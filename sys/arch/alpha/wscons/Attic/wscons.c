@@ -1,4 +1,4 @@
-/*	$OpenBSD: wscons.c,v 1.4 1997/01/24 19:58:30 niklas Exp $	*/
+/*	$OpenBSD: wscons.c,v 1.5 1997/08/22 22:25:11 deraadt Exp $	*/
 /*	$NetBSD: wscons.c,v 1.10 1996/12/05 01:39:47 cgd Exp $	*/
 
 /*

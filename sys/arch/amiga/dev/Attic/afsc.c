@@ -1,4 +1,4 @@
-/*	$OpenBSD: afsc.c,v 1.8 1997/01/18 12:26:21 niklas Exp $	*/
+/*	$OpenBSD: afsc.c,v 1.9 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: afsc.c,v 1.20 1996/12/23 09:09:49 veego Exp $	*/
 
 /*

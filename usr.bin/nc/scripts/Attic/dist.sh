@@ -1,5 +1,5 @@
 #! /bin/sh
-#	$OpenBSD$
+#	$OpenBSD: dist.sh,v 1.2 2001/01/29 01:58:12 niklas Exp $
 
 ## This is a quick example listen-exec server, which was used for a while to
 ## distribute netcat prereleases.  It illustrates use of netcat both as a

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ftp.tab.h,v 1.2 1996/06/26 05:44:42 deraadt Exp $	*/
 
 #define A 257
 #define B 258

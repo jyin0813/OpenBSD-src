@@ -1,4 +1,4 @@
-/*	$OpenBSD: ncrreg.h,v 1.3 1995/11/30 00:58:56 jtc Exp $ */
+/*	$OpenBSD: ncrreg.h,v 1.4 2000/03/03 00:54:54 todd Exp $ */
 /*	$NetBSD: ncrreg.h,v 1.3 1995/11/30 00:58:56 jtc Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: requests.c,v 1.2 1996/09/16 03:13:00 tholo Exp $	*/
+/*	$OpenBSD: requests.c,v 1.1 1996/11/15 09:25:34 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988, 1989 by the Student Information Processing Board

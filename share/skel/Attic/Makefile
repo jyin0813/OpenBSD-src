@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1.1.1 1995/10/18 08:44:47 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.2 2000/03/02 14:46:51 todd Exp $
 #	from: @(#)Makefile	5.3 (Berkeley) 6/8/90
 
 FILES=	dot.cshrc dot.login dot.mailrc dot.profile dot.rhosts

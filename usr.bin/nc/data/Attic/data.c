@@ -1,4 +1,4 @@
-/*	$OpenBSD: data.c,v 1.3 2001/01/29 01:58:11 niklas Exp $	*/
+/*	$OpenBSD: data.c,v 1.4 2001/11/19 19:02:15 mpech Exp $	*/
 
 /* primitive arbitrary-data frontend for netcat.  0.9 960226
    only handles one value per ascii line, but at least parses 0xNN too

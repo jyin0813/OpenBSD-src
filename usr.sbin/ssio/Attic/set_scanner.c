@@ -1,4 +1,4 @@
-static char *rcs_id = "$Id: set_scanner.c,v 1.4 2002/05/29 19:01:48 deraadt Exp $";
+static char *rcs_id = "$Id: set_scanner.c,v 1.5 2002/06/01 20:27:15 deraadt Exp $";
 /*
  * Copyright (c) 1995 Kenneth Stailey
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: get_window_size.c,v 1.1 1998/08/12 23:36:41 art Exp $	*/
 /*	$KTH: get_window_size.c,v 1.6 1998/05/30 21:22:35 joda Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: biosdisk.S,v 1.12 1997/07/29 16:48:40 flipk Exp $	*/
+/*	$OpenBSD: biosdisk.S,v 1.13 1997/07/30 19:40:56 flipk Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

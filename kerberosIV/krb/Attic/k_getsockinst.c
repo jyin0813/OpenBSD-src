@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: k_getsockinst.c,v 1.2 1997/12/09 07:57:22 art Exp $	*/
 /* $KTH: k_getsockinst.c,v 1.10 1997/05/02 14:29:17 assar Exp $ */
 
 /*

@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: alloc.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
+ * $OpenBSD: alloc.s,v 1.1 1997/01/16 09:26:23 niklas Exp $
  * $NetBSD: alloc.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
  *
  * Copyright (c) 1996 Ignatios Souvatzis

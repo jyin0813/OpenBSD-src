@@ -1,4 +1,4 @@
-/*	$OpenBSD: regexp.c,v 1.1.1.1 1996/09/07 21:40:25 downsj Exp $	*/
+/*	$OpenBSD: regexp.c,v 1.2 1996/09/21 06:23:17 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  * NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE
  *
@@ -36,6 +36,9 @@
  * regular-expression syntax might require a total rethink.
  *
  * $Log: regexp.c,v $
+ * Revision 1.2  1996/09/21 06:23:17  downsj
+ * update to vim 4.4beta
+ *
  * Revision 1.1.1.1  1996/09/07 21:40:25  downsj
  * Initial import of vim 4.2.
  *

@@ -17,7 +17,7 @@
  * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
- * $Id: slcompress.c,v 1.2 1997/12/24 09:30:51 brian Exp $
+ * $Id: slcompress.c,v 1.3 1998/06/27 12:06:49 brian Exp $
  *
  *	Van Jacobson (van@helios.ee.lbl.gov), Dec 31, 1989:
  *	- Initial distribution.

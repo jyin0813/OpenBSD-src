@@ -1,4 +1,4 @@
-/*	$OpenBSD: minidebug.c,v 1.3 1996/10/21 05:37:12 imp Exp $	*/
+/*	$OpenBSD: minidebug.c,v 1.1 1997/02/06 16:02:46 pefo Exp $	*/
 /*-
  * Copyright (c) 1991, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)kadb.c	8.1 (Berkeley) 6/10/93
- *      $Id: minidebug.c,v 1.3 1996/10/21 05:37:12 imp Exp $
+ *      $Id: minidebug.c,v 1.1 1997/02/06 16:02:46 pefo Exp $
  */
 
 /*

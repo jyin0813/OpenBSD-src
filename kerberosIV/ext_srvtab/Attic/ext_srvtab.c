@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext_srvtab.c,v 1.4 1997/12/17 09:59:44 art Exp $	*/
+/*	$OpenBSD: ext_srvtab.c,v 1.5 1998/08/12 23:09:05 art Exp $	*/
 /*      $KTH: ext_srvtab.c,v 1.13 1997/05/02 14:27:33 assar Exp $       */
 
 /*-

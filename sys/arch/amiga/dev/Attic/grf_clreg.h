@@ -1,5 +1,5 @@
 /*	$OpenBSD: grf_clreg.h,v 1.2 1996/03/30 22:18:14 niklas Exp $	*/
-/*	$NetBSD: grf_clreg.h,v 1.3 1996/04/21 21:11:13 veego Exp $	*/
+/*	$NetBSD: grf_clreg.h,v 1.4 1996/05/19 21:05:23 veego Exp $	*/
 
 /*
  * Copyright (c) 1995 Ezra Story
@@ -166,6 +166,7 @@ struct grfcltext_mode {
 #define GCT_ID_BLT_MODE		0x30
 #define GCT_ID_BLT_STAT_START	0x31
 #define GCT_ID_BLT_ROP		0x32
+#define GCT_ID_RESERVED		0x33
 #define GCT_ID_TRP_COL_LOW	0x34	/* transparent color */
 #define GCT_ID_TRP_COL_HIGH	0x35
 #define GCT_ID_TRP_MASK_LOW	0x38
@@ -246,6 +247,8 @@ struct grfcltext_mode {
 #define CRT_ID_LACE_END         0x19
 #define CRT_ID_LACE_CNTL        0x1A
 #define CRT_ID_EXT_DISP_CNTL    0x1B
+#define CRT_ID_SYNC_ADJ_GENLOCK 0x1C
+#define CRT_ID_OVERLAY_EXT_CTRL_REG    0x1D
 
 #define CRT_ID_GD_LATCH_RBACK	0x22
 
@@ -297,58 +300,72 @@ struct grfcltext_mode {
  * inline functions.
  */
 static inline void RegWakeup(volatile void *ba) {
-    	extern int cltype;
+	extern int cltype;
+	extern int cl_sd64;
 
-    	switch (cltype) { 
-    	case SPECTRUM: 
-    	    	vgaw(ba, PASS_ADDRESS_W, 0x1f); 
-    	    	break; 
-    	case PICASSO: 
-    	    	vgaw(ba, PASS_ADDRESS_W, 0xff); 
-    	    	break; 
-    	case PICCOLO: 
-    	    	vgaw(ba, PASS_ADDRESS_W, vgar(ba, PASS_ADDRESS) | 0x10); 
-    	    	break; 
-    	} 
-    	delay(200000);
+	switch (cltype) {
+	    case SPECTRUM:
+		vgaw(ba, PASS_ADDRESS_W, 0x1f);
+		break;
+	    case PICASSO:
+		vgaw(ba, PASS_ADDRESS_W, 0xff);
+		break;
+	    case PICCOLO:
+		if (cl_sd64 == 1)
+			vgaw(ba, PASS_ADDRESS_W, 0x1f);
+		else
+			vgaw(ba, PASS_ADDRESS_W, vgar(ba, PASS_ADDRESS) | 0x10);
+		break;
+	}
+	delay(200000);
 }
+
 static inline void RegOnpass(volatile void *ba) {
-    	extern int cltype;
-    	extern unsigned char pass_toggle;
+	extern int cltype;
+	extern int cl_sd64;
+	extern unsigned char pass_toggle;
 
-    	switch (cltype) { 
-    	case SPECTRUM:
-    	    	vgaw(ba, PASS_ADDRESS_W, 0x4f); 
-    	    	break; 
-    	case PICASSO: 
-    	    	vgaw(ba, PASS_ADDRESS_WP, 0x01); 
-    	    	break; 
-    	case PICCOLO: 
-    	    	vgaw(ba, PASS_ADDRESS_W, vgar(ba, PASS_ADDRESS) & 0xdf); 
-    	    	break; 
-    	} 
-    	pass_toggle = 1;
-    	delay(200000);
+	switch (cltype) {
+	    case SPECTRUM:
+		vgaw(ba, PASS_ADDRESS_W, 0x4f);
+		break;
+	    case PICASSO:
+		vgaw(ba, PASS_ADDRESS_WP, 0x01);
+		break;
+	    case PICCOLO:
+		if (cl_sd64 == 1)
+			vgaw(ba, PASS_ADDRESS_W, 0x4f);
+		else
+			vgaw(ba, PASS_ADDRESS_W, vgar(ba, PASS_ADDRESS) & 0xdf);
+		break;
+	}
+	pass_toggle = 1;
+	delay(200000);
 }
-static inline void RegOffpass(volatile void *ba) {
-    	extern int cltype;
-    	extern unsigned char pass_toggle;
 
-    	switch (cltype) { 
-    	case SPECTRUM: 
-    	    	vgaw(ba, PASS_ADDRESS_W, 0x6f); 
-    	    	break; 
-    	case PICASSO: 
-    	    	vgaw(ba, PASS_ADDRESS_W, 0xff); 
-    	    	delay(200000); 
-    	    	vgaw(ba, PASS_ADDRESS_W, 0xff); 
-    	    	break; 
-    	case PICCOLO: 
-    	    	vgaw(ba, PASS_ADDRESS_W, vgar(ba, PASS_ADDRESS) | 0x20); 
-    	    	break; 
-    	} 
-    	pass_toggle = 0;
-    	delay(200000);
+static inline void RegOffpass(volatile void *ba) {
+	extern int cltype;
+	extern int cl_sd64;
+	extern unsigned char pass_toggle;
+
+	switch (cltype) {
+	    case SPECTRUM:
+		vgaw(ba, PASS_ADDRESS_W, 0x6f);
+		break;
+	    case PICASSO:
+		vgaw(ba, PASS_ADDRESS_W, 0xff);
+		delay(200000);
+		vgaw(ba, PASS_ADDRESS_W, 0xff);
+		break;
+	    case PICCOLO:
+		if (cl_sd64 == 1)
+			vgaw(ba, PASS_ADDRESS_W, 0x6f);
+		else
+			vgaw(ba, PASS_ADDRESS_W, vgar(ba, PASS_ADDRESS) | 0x20);
+		break;
+	}
+	pass_toggle = 0;
+	delay(200000);
 }
 
 static inline unsigned char RAttr(volatile void * ba, short idx) {

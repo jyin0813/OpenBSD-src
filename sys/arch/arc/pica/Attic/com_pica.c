@@ -1,4 +1,4 @@
-/*	$OpenBSD: com_pica.c,v 1.1 1996/11/30 13:39:44 niklas Exp $	*/
+/*	$OpenBSD: com_pica.c,v 1.2 1997/03/12 19:17:03 pefo Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994 Charles Hannum.

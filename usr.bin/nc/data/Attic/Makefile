@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 2001/01/29 01:58:11 niklas Exp $
 
 all:	data rservice xor
 

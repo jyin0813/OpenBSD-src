@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: siglist.sh,v 1.2 1996/10/01 02:05:48 downsj Exp $
+#	$OpenBSD: siglist.sh,v 1.4 1997/06/19 13:58:47 kstailey Exp $
 
 #
 # Script to generate a sorted, complete list of signals, suitable

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: facpri.h,v 1.5 2001/01/17 05:00:58 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1999-2000 by Darren Reed.

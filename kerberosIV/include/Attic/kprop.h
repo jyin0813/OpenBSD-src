@@ -1,4 +1,4 @@
-/*	$OpenBSD: kprop.h,v 1.3 1998/02/18 12:54:49 art Exp $	*/
+/*	$OpenBSD: kprop.h,v 1.4 1998/02/25 15:50:37 art Exp $	*/
 /* $KTH: kprop.h,v 1.5 1997/02/07 21:39:52 assar Exp $ */
 
 /*

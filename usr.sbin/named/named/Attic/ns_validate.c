@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_validate.c,v 1.4 2002/02/16 21:28:06 millert Exp $	*/
+/*	$OpenBSD: ns_validate.c,v 1.5 2002/02/17 19:42:37 millert Exp $	*/
 
 /**************************************************************************
  * ns_validate.c (was security.c in original ISI contribution)

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.clnt,v 1.2 1997/09/21 11:44:17 deraadt Exp $
 
 #	This Makefile builds a client used for testing.
 

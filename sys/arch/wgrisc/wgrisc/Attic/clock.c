@@ -1,4 +1,4 @@
-/*	$OpenBSD: clock.c,v 1.3 1996/09/19 00:30:34 imp Exp $	*/
+/*	$OpenBSD: clock.c,v 1.1 1997/02/06 16:02:45 pefo Exp $	*/
 /*
  * Copyright (c) 1988 University of Utah.
  * Copyright (c) 1992, 1993
@@ -39,7 +39,7 @@
  * from: Utah Hdr: clock.c 1.18 91/01/21
  *
  *	from: @(#)clock.c	8.1 (Berkeley) 6/10/93
- *      $Id: clock.c,v 1.3 1996/09/19 00:30:34 imp Exp $
+ *      $Id: clock.c,v 1.1 1997/02/06 16:02:45 pefo Exp $
  */
 
 #include <sys/param.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: startprog.S,v 1.3 1997/03/31 23:06:32 mickey dead $	*/
+/*	$OpenBSD: startprog.S,v 1.4 1997/04/04 17:23:31 weingart Exp $	*/
 
 #include <machine/asm.h>
 

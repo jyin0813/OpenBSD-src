@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: undo.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* undo.c */
 int u_save_cursor __PARMS((void));
 int u_save __PARMS((linenr_t top, linenr_t bot));

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cmdcmds.c,v 1.4 1996/09/24 17:53:49 downsj Exp $	*/
+/*	$OpenBSD: cmdcmds.c,v 1.5 1996/10/14 03:55:07 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  *
  * VIM - Vi IMproved		by Bram Moolenaar

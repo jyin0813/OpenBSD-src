@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 1997/09/21 11:36:26 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.6 2000/05/18 13:49:52 espie Exp $
 
 .if ${MACHINE} == "sun3" || ${MACHINE} == "atari" || ${MACHINE} == "sparc"
 PROG=	edlabel

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rawfs.c,v 1.2 2001/07/04 08:33:57 niklas Exp $	*/
+/*	$OpenBSD: rawfs.c,v 1.3 2002/03/14 01:26:47 millert Exp $	*/
 /*	$NetBSD: rawfs.c,v 1.1 1995/10/17 22:58:27 gwr Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: altqstat.h,v 1.1.1.1 2001/06/27 18:23:19 kjc Exp $	*/
+/*	$OpenBSD: altqstat.h,v 1.2 2001/08/16 12:59:43 kjc Exp $	*/
 /*	$KAME: altqstat.h,v 1.4 2001/08/16 07:43:14 itojun Exp $	*/
 /*
  * Copyright (C) 1999-2000

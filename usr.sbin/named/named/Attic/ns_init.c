@@ -1,11 +1,11 @@
-/*	$OpenBSD: ns_init.c,v 1.9 2002/06/09 01:58:54 kjell Exp $	*/
+/*	$OpenBSD: ns_init.c,v 1.10 2002/06/09 04:42:43 pvalchev Exp $	*/
 
 #if !defined(lint) && !defined(SABER)
 #if 0
 static char sccsid[] = "@(#)ns_init.c	4.38 (Berkeley) 3/21/91";
 static char rcsid[] = "$From: ns_init.c,v 8.26 1998/05/11 04:19:45 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD: ns_init.c,v 1.9 2002/06/09 01:58:54 kjell Exp $";
+static char rcsid[] = "$OpenBSD: ns_init.c,v 1.10 2002/06/09 04:42:43 pvalchev Exp $";
 #endif
 #endif /* not lint */
 

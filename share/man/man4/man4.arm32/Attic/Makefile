@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/04/22 01:27:21 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.2 2001/06/20 16:27:27 mpech Exp $
 #	from: @(#)Makefile	5.1 (Berkeley) 2/12/91
 
 MAN=	intro.4 asc.4 autoconf.4 beep.4 com.4

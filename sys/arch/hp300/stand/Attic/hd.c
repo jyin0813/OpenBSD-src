@@ -1,4 +1,4 @@
-/*	$OpenBSD: hd.c,v 1.1 1997/02/03 07:19:06 downsj Exp $	*/
+/*	$OpenBSD: hd.c,v 1.2 1997/07/13 07:21:47 downsj Exp $	*/
 /*	$NetBSD: rd.c,v 1.11 1996/12/21 21:34:40 thorpej Exp $	*/
 
 /*

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: grabscan,v 1.1 1996/01/14 01:48:50 ken Exp $
+# $Id: grabscan.sh,v 1.1 1997/03/11 03:23:14 kstailey Exp $
 #
 # Copyright (c) 1996 Kenneth Stailey
 # All rights reserved.

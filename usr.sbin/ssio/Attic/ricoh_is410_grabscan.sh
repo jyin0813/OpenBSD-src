@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: ricoh_is410_grabscan,v 1.1 1996/01/14 01:51:59 ken Exp $
+# $Id: ricoh_is410_grabscan.sh,v 1.1 1997/03/11 03:23:16 kstailey Exp $
 #
 # Copyright (c) 1996 Kenneth Stailey
 # All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: lifetime.c,v 1.4 1997/12/09 07:57:26 art Exp $	*/
 /* $KTH: lifetime.c,v 1.9 1997/05/02 14:29:18 assar Exp $ */
 
 /*

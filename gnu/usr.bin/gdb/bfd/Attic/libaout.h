@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: libaout.h,v 1.4 1995/06/05 15:22:38 ragge Exp $
+	$Id: libaout.h,v 1.1 1995/10/18 08:39:53 deraadt Exp $
 */
 
 /* We try to encapsulate the differences in the various a.out file

@@ -1,4 +1,4 @@
-/*	$OpenBSD: event_var.h,v 1.2 1996/09/15 17:15:27 cgd Exp $ */
+/*	$OpenBSD: event_var.h,v 1.3 1996/10/30 22:41:37 niklas Exp $ */
 /*	$NetBSD: event_var.h,v 1.2 1996/09/15 17:15:27 cgd Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hash.c,v 1.1 1997/09/15 06:01:52 downsj Exp $	*/
 /*
  * File hash.c - generate hash tables for iso9660 filesystem.
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pw_check.h,v 1.1 1997/12/15 17:56:14 art Exp $	*/
 /* $KTH: pw_check.h,v 1.6 1997/04/01 08:17:50 joda Exp $ */
 
 /*

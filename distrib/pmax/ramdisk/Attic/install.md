@@ -1,4 +1,4 @@
-#       $OpenBSD: install.md,v 1.6 1999/09/03 18:55:34 deraadt Exp $
+#       $OpenBSD: install.md,v 1.7 2001/06/23 19:44:53 deraadt Exp $
 #
 # Copyright (c) 1996 The NetBSD Foundation, Inc.
 # All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: memset.c,v 1.1 1996/10/15 09:41:55 mickey Exp $	*/
+/*	$OpenBSD: memset.c,v 1.1 1996/11/02 18:25:10 kstailey Exp $	*/
 
 /*-
  * Copyright (c) 1993

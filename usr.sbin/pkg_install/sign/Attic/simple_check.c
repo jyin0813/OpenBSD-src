@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: simple_check.c,v 1.1 1999/09/27 21:40:04 espie Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

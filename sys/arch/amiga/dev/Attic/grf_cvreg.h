@@ -1,4 +1,4 @@
-/*	$OpenBSD: grf_cvreg.h,v 1.7 1997/09/18 13:39:50 niklas Exp $	*/
+/*	$OpenBSD: grf_cvreg.h,v 1.8 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: grf_cvreg.h,v 1.5 1996/05/19 21:05:30 veego Exp $	*/
 
 /*

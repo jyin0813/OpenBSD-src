@@ -1,8 +1,8 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: syscall.S,v 1.1 1997/04/13 17:13:09 briggs Exp $	*/
 
 #ifndef lint
     .text
-    .asciz "$Id$";
+    .asciz "$Id: syscall.S,v 1.1 1997/04/13 17:13:09 briggs Exp $";
 #endif
  
 #include <machine/asm.h>

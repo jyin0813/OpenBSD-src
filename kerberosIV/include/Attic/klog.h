@@ -1,4 +1,4 @@
-/*	$OpenBSD: klog.h,v 1.3 1998/02/18 11:53:35 art Exp $	*/
+/*	$OpenBSD: klog.h,v 1.4 1998/02/25 15:50:36 art Exp $	*/
 /* $KTH: klog.h,v 1.5 1997/05/11 11:05:28 assar Exp $ */
 
 /*

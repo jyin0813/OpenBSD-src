@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_alreg.h,v 1.1 1999/10/28 21:53:55 aaron Exp $ */
+/*	$OpenBSD: if_alreg.h,v 1.2 1999/11/28 16:43:47 aaron Exp $ */
 /*
  * Copyright (c) 1997, 1998, 1999
  *	Bill Paul <wpaul@ctr.columbia.edu>.  All rights reserved.

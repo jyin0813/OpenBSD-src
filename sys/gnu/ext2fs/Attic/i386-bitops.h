@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: i386-bitops.h,v 1.1 1996/06/24 03:34:59 downsj Exp downsj $	*/
 
 /*
  * this is mixture of i386/bitops.h and asm/string.h

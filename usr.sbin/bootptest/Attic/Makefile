@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1997/09/21 11:43:27 deraadt Exp $
 
 PROG=	bootptest
 SRCDIR= ${.CURDIR}/../bootpd

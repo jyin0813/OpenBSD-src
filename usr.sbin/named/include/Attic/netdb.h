@@ -1,4 +1,4 @@
-/*	$OpenBSD: netdb.h,v 1.4 2002/02/16 21:28:05 millert Exp $	*/
+/*	$OpenBSD: netdb.h,v 1.5 2002/06/03 12:04:08 deraadt Exp $	*/
 
 /*
  * ++Copyright++ 1980, 1983, 1988, 1993

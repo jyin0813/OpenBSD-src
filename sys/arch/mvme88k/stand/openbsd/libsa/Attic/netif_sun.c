@@ -1,4 +1,4 @@
-/*	$Id: netif_sun.c,v 1.2 1995/11/07 08:50:49 deraadt Exp $ */
+/*	$Id: netif_sun.c,v 1.1 1997/03/03 19:31:07 rahnds Exp $ */
 
 /*
  * Copyright (c) 1995 Gordon W. Ross

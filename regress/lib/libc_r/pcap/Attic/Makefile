@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2002/05/11 00:20:20 espie Exp $
+# $OpenBSD: Makefile,v 1.8 2002/09/02 20:01:43 avsm Exp $
 
 PROG=	pcap
 

@@ -1,6 +1,6 @@
 /*
- * $Header: /mit/krb5/.cvsroot/src/util/et/error_message.c,v 5.0 1993/04/13 19:56:17 tytso Exp $
- * $Source: /mit/krb5/.cvsroot/src/util/et/error_message.c,v $
+ * $Header: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/et/error_message.c,v 1.1 1997/06/14 07:18:44 downsj Exp $
+ * $Source: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/et/error_message.c,v $
  * $Locker:  $
  *
  * Copyright 1987 by the Student Information Processing Board

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: thread_malloc_lock.c,v 1.4 2002/11/05 22:19:55 marc Exp $ */
 /* Public Domain <marc@snafu.org> */
 
 #include <pthread.h>

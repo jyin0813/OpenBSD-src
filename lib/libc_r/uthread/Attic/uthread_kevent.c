@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_kevent.c,v 1.2 2001/08/21 19:24:53 fgsch Exp $	*/
+/*	$OpenBSD: uthread_kevent.c,v 1.3 2001/12/08 17:08:07 fgsch Exp $	*/
 
 /*-
  * Copyright (c) 2000 Jonathan Lemon <jlemon@flugsvamp.com>

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pci_addr_fixup.h,v 1.1 2000/08/08 19:12:47 mickey Exp $	*/
 /*	$NetBSD: pci_addr_fixup.h,v 1.2 2000/05/31 16:38:55 uch Exp $	*/
 
 /*-

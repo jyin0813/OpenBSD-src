@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: libstubs.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
+ * $OpenBSD: libstubs.s,v 1.1 1997/01/16 09:26:36 niklas Exp $
  * $NetBSD: libstubs.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
  *
  *

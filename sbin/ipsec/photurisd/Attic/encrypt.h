@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: encrypt.h,v 1.1.1.1 1997/07/18 22:48:48 provos Exp $ */
+/* $Id: encrypt.h,v 1.2 1998/03/04 11:43:18 provos Exp $ */
 /*
  * encrypt.h:
  * prototypes for photuris_packet_encrypt.c

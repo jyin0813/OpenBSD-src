@@ -1,4 +1,4 @@
-/*	$OpenBSD: get_ad_tkt.c,v 1.5 1998/03/25 21:50:10 art Exp $	*/
+/*	$OpenBSD: get_ad_tkt.c,v 1.6 1998/05/18 00:53:38 art Exp $	*/
 /*	$KTH: get_ad_tkt.c,v 1.18 1998/02/19 19:13:29 joda Exp $	*/
 
 /*

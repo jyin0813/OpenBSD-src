@@ -1,4 +1,4 @@
-/*	$OpenBSD: site.h,v 1.4 1997/12/15 17:56:16 art Exp $	*/
+/*	$OpenBSD: site.h,v 1.5 1999/08/20 11:00:32 art Exp $	*/
 
 /* 
  * Site-specific definitions.

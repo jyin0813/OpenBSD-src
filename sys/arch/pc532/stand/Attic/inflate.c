@@ -1,4 +1,4 @@
-/*	$OpenBSD: inflate.c,v 1.2 1999/01/11 05:11:48 millert Exp $	*/
+/*	$OpenBSD: inflate.c,v 1.3 2000/03/03 00:54:55 todd Exp $	*/
 /*
  * Copyright (c) 1995 Matthias Pfaller.
  *

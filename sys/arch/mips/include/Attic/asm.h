@@ -1,4 +1,4 @@
-/*      $OpenBSD: asm.h,v 1.2 1998/03/16 09:03:02 pefo Exp $	*/
+/*      $OpenBSD: asm.h,v 1.3 1999/06/01 17:54:32 pefo Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

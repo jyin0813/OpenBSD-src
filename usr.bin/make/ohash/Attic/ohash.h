@@ -1,6 +1,6 @@
 #ifndef OHASH_H
 #define OHASH_H
-/* $OpenBSD: ohash.h,v 1.1 2000/06/23 16:24:51 espie Exp $ */
+/* $OpenBSD: ohash.h,v 1.2 2000/06/28 10:12:49 espie Exp $ */
 /* ex:ts=8 sw=4: 
  */
 

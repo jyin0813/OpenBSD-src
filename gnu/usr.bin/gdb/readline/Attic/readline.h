@@ -1,5 +1,5 @@
 /* Readline.h -- the names of functions callable from within readline. */
-/* $Id: readline.h,v 1.3 1994/01/28 12:43:32 pk Exp $ */
+/* $Id: readline.h,v 1.1 1995/10/18 08:40:15 deraadt Exp $ */
 
 #if !defined (_READLINE_H_)
 #define _READLINE_H_

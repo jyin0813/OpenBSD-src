@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_mvcur.c,v 1.11 1998/09/17 04:14:31 millert Exp $	*/
+/*	$OpenBSD: lib_mvcur.c,v 1.12 1998/10/31 06:30:30 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

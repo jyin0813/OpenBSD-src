@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: parse.c,v 1.1 2001/09/02 17:50:40 pvalchev Exp $	*/
 /*	$NetBSD: parse.c,v 1.11 2000/09/24 02:19:54 augustss Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.5 2001/07/04 08:38:47 niklas Exp $
 
 NOPROG=	noprog
 NOMAN=	noman

@@ -1,4 +1,4 @@
-/*	$OpenBSD: crossvar.h,v 1.7 2001/06/27 03:54:14 art Exp $	*/
+/*	$OpenBSD: crossvar.h,v 1.8 2002/03/14 01:26:29 millert Exp $	*/
 
 /*
  * Copyright (c) 1994, 1996 Niklas Hallqvist

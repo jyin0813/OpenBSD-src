@@ -15,7 +15,7 @@ You should have received a copy of the GNU Library General Public
 License along with this library; if not, write to the Free Software
 Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: values.h,v 1.4 1995/12/16 01:03:33 thorpej Exp $
+	$Id: values.h,v 1.2 1995/12/17 13:30:58 deraadt Exp etheisen $
 */
 
 #ifndef _values_h

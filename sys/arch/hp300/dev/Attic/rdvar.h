@@ -1,4 +1,4 @@
-/*	$OpenBSD: rdvar.h,v 1.5 1997/01/12 15:13:00 downsj Exp $	*/
+/*	$OpenBSD: rdvar.h,v 1.6 1997/02/03 04:47:43 downsj Exp $	*/
 /*	$NetBSD: rdvar.h,v 1.6 1997/01/30 09:14:19 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$Id: move.h,v 1.2 1993/08/02 17:21:21 mycroft Exp $ */
+/*	$Id: move.h,v 1.1 1995/10/18 08:41:11 deraadt Exp deraadt $ */
 
 /* header file for move generator hes 890318
    Modified: 890510 minor bug fixed in Newataks

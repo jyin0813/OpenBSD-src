@@ -1,4 +1,4 @@
-/*	$OpenBSD: ffs.S,v 1.1.1.1 1998/06/23 18:56:53 mickey Exp $	*/
+/*	$OpenBSD: ffs.S,v 1.2 1999/05/09 18:49:10 mickey Exp $	*/
 
 /* 
  * Copyright (c) 1990, 1991, 1992, 1994, The University of Utah and

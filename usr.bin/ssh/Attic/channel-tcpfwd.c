@@ -34,7 +34,7 @@
  */
 
 #include "includes.h"
-RCSID("$OpenBSD: channel-tcpfwd.c,v 1.1 2001/05/30 12:55:08 markus Exp $");
+RCSID("$OpenBSD: channel-tcpfwd.c,v 1.2 2001/05/30 16:22:46 markus Exp $");
 
 #include "ssh.h"
 #include "ssh1.h"

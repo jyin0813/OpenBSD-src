@@ -24,7 +24,7 @@ You should have received a copy of the GNU General Public License
 along with this program; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: libgcc1.c,v 1.3 1993/08/23 09:24:02 cgd Exp $
+	$Id: libgcc1.c,v 1.1 1995/10/18 08:39:48 deraadt Exp niklas $
 */
 
 /* As a special exception, if you link this library with files

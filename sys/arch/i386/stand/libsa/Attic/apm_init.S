@@ -1,4 +1,4 @@
-/*	$OpenBSD: apm_init.S,v 1.3 1997/07/29 16:48:39 flipk Exp $	*/
+/*	$OpenBSD: apm_init.S,v 1.4 1997/07/30 19:40:53 flipk Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

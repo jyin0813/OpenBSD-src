@@ -1,4 +1,4 @@
-/*	$OpenBSD: compress.c,v 1.4 2002/03/12 00:25:57 millert Exp $	*/
+/*	$OpenBSD: compress.c,v 1.1 2003/12/16 22:40:58 henning Exp $	*/
 /* compress.c -- compress a memory buffer
  * Copyright (C) 1995-2002 Jean-loup Gailly.
  * For conditions of distribution and use, see copyright notice in zlib.h

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.9 2000/05/25 21:54:50 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.10 2000/05/26 11:50:45 deraadt Exp $
 
 MAN3	=	keycap.3
 MAN5	=	keycap.5

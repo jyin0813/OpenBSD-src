@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rdb.h,v 1.1 2003/11/13 23:00:54 drahn Exp $	*/
 /*	$NetBSD: disklabel.h,v 1.6 1996/04/21 21:13:19 veego Exp $	*/
 
 /*

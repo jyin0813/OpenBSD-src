@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)fvwrite.h	5.1 (Berkeley) 1/20/91
- *	$Id: fvwrite.h,v 1.1 1994/02/07 22:06:04 proven Exp $
+ *	$Id: fvwrite.h,v 1.1 1995/10/18 08:43:07 deraadt Exp $
  */
 
 /*

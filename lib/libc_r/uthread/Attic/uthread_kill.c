@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_kill.c,v 1.7 1999/11/25 07:01:37 d Exp $	*/
+/*	$OpenBSD: uthread_kill.c,v 1.8 2002/10/30 19:11:56 marc Exp $	*/
 /*
  * Copyright (c) 1997 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

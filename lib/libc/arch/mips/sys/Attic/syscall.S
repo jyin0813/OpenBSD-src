@@ -34,7 +34,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: syscall.S,v 1.4 1996/08/19 08:16:29 tholo Exp $"
+	.asciz "$OpenBSD: syscall.S,v 1.5 2003/06/02 20:18:32 millert Exp $"
 #endif /* SYSLIBC_SCCS */
 
 #define SYS_syscall	0

@@ -1,8 +1,30 @@
-#	$OpenBSD: Makefile,v 1.3 1996/07/30 06:54:11 niklas Exp niklas $
-#	$NetBSD: Makefile,v 1.1 1996/02/21 02:45:40 jtk Exp $
+# $FreeBSD: src/lib/libio/Makefile,v 1.2 1999/08/28 00:04:42 peter Exp $
+# $OpenBSD$
 
-#.PATH: ${LIBC}/i386
+NOPIC=
+SRCS=		io.c bwx.c
 
-SRCS+=	alpha_mmclock_gettime.c alpha_mmclock_init.c gettimeofday.c
+CFLAGS+= 	-Wall -Wno-uninitialized -Wa,-mev56
+
+MAN=		libalpha.2
+
+MLINKS+=	libalpha.2 dense_base.2 \
+		libalpha.2 inb.2 \
+		libalpha.2 inl.2 \
+		libalpha.2 inw.2 \
+		libalpha.2 ioperm.2 \
+		libalpha.2 map_memory.2 \
+		libalpha.2 outb.2 \
+		libalpha.2 outl.2 \
+		libalpha.2 outw.2 \
+		libalpha.2 readb.2 \
+		libalpha.2 readl.2 \
+		libalpha.2 readw.2 \
+		libalpha.2 unmap_memory.2 \
+		libalpha.2 writeb.2 \
+		libalpha.2 writel.2 \
+		libalpha.2 writew.2
+
+MANSUBDIR=alpha
 
 .include <bsd.lib.mk>

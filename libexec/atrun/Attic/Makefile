@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2001/01/28 19:34:27 niklas Exp $
+#	$OpenBSD: Makefile,v 1.3 2001/07/20 21:12:27 mickey Exp $
 
 PROG=	atrun
 CFLAGS+= -I${.CURDIR}/../../usr.bin/at

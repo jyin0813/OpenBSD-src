@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kbdvar.h,v 1.1 1997/04/16 11:56:39 downsj Exp $	*/
 /*	$NetBSD: kbdvar.h,v 1.1 1997/04/14 19:00:13 thorpej Exp $	*/
 
 /*-

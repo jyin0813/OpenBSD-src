@@ -1,4 +1,4 @@
-/*	$OpenBSD: server.c,v 1.12 2002/03/29 20:35:55 deraadt Exp $	*/
+/*	$OpenBSD: server.c,v 1.13 2002/06/09 08:13:09 todd Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -37,7 +37,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: server.c,v 1.12 2002/03/29 20:35:55 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: server.c,v 1.13 2002/06/09 08:13:09 todd Exp $";
 #endif
 
 #define _SERVER_C_

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ftp.y,v 1.1.1.2 1996/04/17 15:40:57 niklas Exp $	*/
+/*	$OpenBSD: ftp.y,v 1.2 1996/04/21 23:45:35 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1985, 1988 Regents of the University of California.
@@ -28,7 +28,7 @@
 
 #ifndef lint
 /*static char sccsid[] = "from: @(#)ftpcmd.y	5.20.1.1 (Berkeley) 3/2/89";*/
-static char rcsid[] = "$Id: ftp.y,v 1.1.1.1 1995/10/18 08:47:07 deraadt Exp $";
+static char rcsid[] = "$Id: ftp.y,v 1.2 1996/04/21 23:45:35 deraadt Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

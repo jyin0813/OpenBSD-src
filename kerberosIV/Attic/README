@@ -1,4 +1,4 @@
-$OpenBSD: README,v 1.4 2001/05/03 19:21:51 hin Exp $
+$OpenBSD: README,v 1.5 2002/06/09 19:06:10 hin Exp $
 
 This version is based on version 1.1.1 of the Kerberos IV distribution
 from KTH, which is available from ftp://ftp.pdc.kth.se/pub/krb4/src/.

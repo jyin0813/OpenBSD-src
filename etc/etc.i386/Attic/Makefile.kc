@@ -1,4 +1,4 @@
-#	$Id: Makefile.kc,v 1.2 1996/06/11 09:04:53 deraadt Exp $
+#	$Id: Makefile.kc,v 1.3 1996/06/11 10:20:26 deraadt Exp $
 
 .ifndef MOUNT_POINT
 MOUNT_POINT=	/mnt

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: debug.c,v 1.2 1997/03/12 10:42:46 downsj Exp $	*/
 
 /*
  * ++Copyright++ 1985, 1989
@@ -60,7 +60,7 @@
 static char sccsid[] = "@(#)debug.c	5.26 (Berkeley) 3/21/91";
 static char rcsid[] = "$From: debug.c,v 8.10 1996/12/18 04:09:50 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: debug.c,v 1.2 1997/03/12 10:42:46 downsj Exp $";
 #endif
 #endif /* not lint */
 

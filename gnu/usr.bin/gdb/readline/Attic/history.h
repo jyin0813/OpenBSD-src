@@ -1,5 +1,5 @@
 /* History.h -- the names of functions that you can call in history. */
-/* $Id: history.h,v 1.3 1994/01/28 12:43:18 pk Exp $ */
+/* $Id: history.h,v 1.1 1995/10/18 08:40:15 deraadt Exp $ */
 
 /* The structure used to store a history entry. */
 typedef struct _hist_entry {

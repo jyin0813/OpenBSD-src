@@ -27,5 +27,5 @@ end		return END;
 .		{ return (*yytext); }
 %%
 #ifndef lint
-static char rcsid_et_lex_lex_l[] = "$Id$";
+static char rcsid_et_lex_lex_l[] = "$Id: et_lex.lex.l,v 1.1 1995/12/14 06:52:49 tholo Exp $";
 #endif

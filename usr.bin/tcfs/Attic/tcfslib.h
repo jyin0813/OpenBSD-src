@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfslib.h,v 1.8 2000/06/20 07:40:17 fgsch Exp $	*/
+/*	$OpenBSD: tcfslib.h,v 1.9 2002/02/16 21:27:54 millert Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

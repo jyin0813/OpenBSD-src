@@ -1,4 +1,4 @@
-/*	$OpenBSD: encap.c,v 1.25 1999/01/07 06:05:02 deraadt Exp $	*/
+/*	$OpenBSD: encap.c,v 1.26 1999/01/11 22:52:49 angelos Exp $	*/
 
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),

@@ -1,4 +1,4 @@
-/* $OpenBSD$
+/* $OpenBSD: sysdep-openbsd.h,v 1.1 1998/05/17 19:43:25 marc Exp $
 
 /* System defines for OpenBSD.
    If you think you need to change this file, then you are wrong.  In order to

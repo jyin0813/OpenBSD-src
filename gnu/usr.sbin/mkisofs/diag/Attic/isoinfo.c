@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: isoinfo.c,v 1.1 1997/09/15 06:01:53 downsj Exp $	*/
 /*
  * File isodump.c - dump iso9660 directory information.
  *

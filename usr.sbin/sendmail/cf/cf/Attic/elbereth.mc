@@ -30,7 +30,7 @@ divert(-1)
 #
 
 include(`../m4/cf.m4')dnl
-VERSIONID(`$OpenBSD: elbereth.mc,v 1.4 1998/08/15 18:17:13 millert Exp $')dnl
+VERSIONID(`$OpenBSD: elbereth.mc,v 1.5 1999/08/19 17:58:22 kstailey Exp $')dnl
 OSTYPE(openbsd)dnl
 MASQUERADE_AS(primark.com)dnl
 FEATURE(masquerade_envelope)dnl

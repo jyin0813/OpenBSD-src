@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)machAsmDefs.h	8.1 (Berkeley) 6/10/93
- *      $Id: machAsmDefs.h,v 1.3 1994/05/27 09:01:19 glass Exp $
+ *      $Id: machAsmDefs.h,v 1.1 1995/10/18 10:39:12 deraadt Exp deraadt $
  */
 
 /*
@@ -52,7 +52,7 @@
  *
  * from: Header: /sprite/src/kernel/mach/ds3100.md/RCS/machAsmDefs.h,
  *	v 1.2 89/08/15 18:28:24 rab Exp  SPRITE (DECWRL)
- * $Id: machAsmDefs.h,v 1.3 1994/05/27 09:01:19 glass Exp $
+ * $Id: machAsmDefs.h,v 1.1 1995/10/18 10:39:12 deraadt Exp deraadt $
  */
 
 #ifndef _MACHASMDEFS

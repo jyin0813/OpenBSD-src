@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD$	*/
+/*	$OpenBSD: lang.l,v 1.2 1997/01/12 07:43:33 downsj Exp $	*/
 /*	$NetBSD: lang.l,v 1.13 1996/06/10 02:32:23 thorpej Exp $	*/
 
 /*-

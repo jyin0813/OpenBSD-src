@@ -34,7 +34,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: photuris_cookie_response.c,v 1.2 1997/07/22 11:18:23 provos Exp $";
+static char rcsid[] = "$Id: photuris_cookie_response.c,v 1.3 1997/07/24 23:47:17 provos Exp $";
 #endif
 
 #include <stdio.h>

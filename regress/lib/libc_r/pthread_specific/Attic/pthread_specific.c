@@ -1,4 +1,4 @@
-/*	$OpenBSD: pthread_specific.c,v 1.1 2002/05/03 10:08:55 wcobb Exp $	*/
+/*	$OpenBSD: pthread_specific.c,v 1.2 2002/06/16 23:05:14 marc Exp $	*/
 
 /*
  * Copyright (c) 2002 CubeSoft Communications, Inc.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: raddauth.c,v 1.9 2002/06/28 01:14:37 deraadt Exp $	*/
+/*	$OpenBSD: raddauth.c,v 1.10 2002/09/06 18:45:06 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1996, 1997 Berkeley Software Design, Inc. All rights reserved.

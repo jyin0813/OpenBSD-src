@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: getenv.c,v 1.2 1997/05/11 16:17:55 pefo Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

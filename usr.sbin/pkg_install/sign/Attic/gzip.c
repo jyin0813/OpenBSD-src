@@ -1,4 +1,4 @@
-/* $OpenBSD: gzip.c,v 1.3 1999/10/04 21:46:28 espie Exp $ */
+/* $OpenBSD: gzip.c,v 1.4 2003/06/04 04:29:03 deraadt Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: crtbegin.c,v 1.1 1996/11/13 21:28:03 niklas Exp $	*/
+/*	$OpenBSD: crtbegin.c,v 1.10 2004/10/10 18:29:15 kettenis Exp $	*/
 /*	$NetBSD: crtbegin.c,v 1.1 1996/09/12 16:59:03 cgd Exp $	*/
 
 /*
@@ -31,12 +31,6 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef ECOFF_COMPAT
-
-/*
- * XXX EVENTUALLY SHOULD BE MERGED BACK WITH c++rt0.c
- */
-
 /*
  * Run-time module for GNU C++ compiled shared libraries.
  *
@@ -47,19 +41,26 @@
  */
 #include <stdlib.h>
 
-static void (*__CTOR_LIST__[1]) __P((void))
+#include "md_init.h"
+#include "os-note-elf.h"
+#include "extern.h"
+
+static const char __EH_FRAME_BEGIN__[]
+    __attribute__((section(".eh_frame"), aligned(4))) = { };
+
+static const init_f __CTOR_LIST__[1]
     __attribute__((section(".ctors"))) = { (void *)-1 };	/* XXX */
-static void (*__DTOR_LIST__[1]) __P((void))
+static const init_f __DTOR_LIST__[1]
     __attribute__((section(".dtors"))) = { (void *)-1 };	/* XXX */
 
-static void	__dtors __P((void));
-static void	__ctors __P((void));
+static void	__dtors(void);
+static void	__ctors(void);
 
 static void
 __dtors()
 {
 	unsigned long i = (unsigned long) __DTOR_LIST__[0];
-	void (**p)(void);
+	const init_f *p;
 
 	if (i == -1)  {
 		for (i = 1; __DTOR_LIST__[i] != NULL; i++)
@@ -74,16 +75,27 @@ __dtors()
 static void
 __ctors()
 {
-	void (**p)(void) = __CTOR_LIST__ + 1;
+	const init_f *p = __CTOR_LIST__ + 1;
 
 	while (*p)
 		(**p++)();
 }
 
-extern void __init(void) __attribute__((section(".init")));
+void __init(void);
+void __fini(void);
+static void __do_init(void);
+static void __do_fini(void);
+
+MD_SECTION_PROLOGUE(".init", __init);
+
+MD_SECTION_PROLOGUE(".fini", __fini);
+
+MD_SECT_CALL_FUNC(".init", __do_init);
+MD_SECT_CALL_FUNC(".fini", __do_fini);
+
 
 void
-__init()
+__do_init()
 {
 	static int initialized = 0;
 
@@ -93,20 +105,23 @@ __init()
 	 */
 	if (!initialized) {
 		initialized = 1;
-		__ctors();
+
+		(__ctors)();
+
+		atexit(__fini);
 	}
-
 }
-
-extern void __fini(void) __attribute__((section(".fini")));
 
 void
-__fini()
+__do_fini()
 {
-	/*
-	 * Call global destructors.
-	 */
-	__dtors();
-}
+	static int finalized = 0;
 
-#endif /* !ECOFF_COMPAT */
+	if (!finalized) {
+		finalized = 1;
+		/*
+		 * Call global destructors.
+		 */
+		(__dtors)();
+	}
+}

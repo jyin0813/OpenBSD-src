@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: getnetbyaddr.c,v 1.1 1997/03/12 10:42:02 downsj Exp $	*/
 
 /*
  * Copyright (c) 1983 Regents of the University of California.
@@ -38,7 +38,7 @@
 static char sccsid[] = "@(#)getnetbyaddr.c	1.1 (Coimbra) 93/06/02";
 static char rcsid[] = "$From: getnetbyaddr.c,v 8.2 1996/05/09 05:59:13 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: getnetbyaddr.c,v 1.1 1997/03/12 10:42:02 downsj Exp $";
 #endif
 #endif /* LIBC_SCCS and not lint */
 

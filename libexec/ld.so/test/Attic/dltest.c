@@ -1,4 +1,4 @@
-/*	$OpenBSD: dltest.c,v 1.4 2001/09/25 21:51:16 drahn Exp $	*/
+/*	$OpenBSD: dltest.c,v 1.5 2001/10/24 13:06:35 mpech Exp $	*/
 
 #include <stdio.h>
 #include <stdlib.h>

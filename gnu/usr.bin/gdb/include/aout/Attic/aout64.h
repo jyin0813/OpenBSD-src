@@ -1,4 +1,4 @@
-/*	$Id: aout64.h,v 1.1 1994/01/28 12:42:31 pk Exp $ */
+/*	$Id: aout64.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $ */
 /* `a.out' object-file definitions, including extensions to 64-bit fields */
 
 #ifndef __A_OUT_64_H__

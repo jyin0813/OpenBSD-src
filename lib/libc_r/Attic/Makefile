@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.11 2001/02/21 00:03:46 brad Exp $
+#	$OpenBSD: Makefile,v 1.12 2002/01/15 22:37:02 fgsch Exp $
 
 # libc_r will be depreceated and replaced by libpthread
 # when all supported architectures support weak symbols.

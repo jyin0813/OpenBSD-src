@@ -1,4 +1,4 @@
-/*	$OpenBSD: hpux_sig.c,v 1.6 1997/09/15 06:05:52 millert Exp $	*/
+/*	$OpenBSD: hpux_sig.c,v 1.7 2003/06/02 23:28:00 millert Exp $	*/
 /*	$NetBSD: hpux_sig.c,v 1.16 1997/04/01 19:59:02 scottr Exp $	*/
 
 /*

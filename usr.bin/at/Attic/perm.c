@@ -1,4 +1,4 @@
-/*	$OpenBSD: perm.c,v 1.3 2002/05/11 23:16:44 millert Exp $	*/
+/*	$OpenBSD: perm.c,v 1.4 2002/05/14 18:05:39 millert Exp $	*/
 
 /* 
  * perm.c - check user permission for at(1)
@@ -40,7 +40,7 @@
 #include "privs.h"
 
 #ifndef lint
-static const char rcsid[] = "$OpenBSD: perm.c,v 1.3 2002/05/11 23:16:44 millert Exp $";
+static const char rcsid[] = "$OpenBSD: perm.c,v 1.4 2002/05/14 18:05:39 millert Exp $";
 #endif
 
 static int check_for_user(FILE *, const char *);

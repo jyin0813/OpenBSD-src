@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbd_tables.h,v 1.2 1996/04/18 23:48:17 niklas Exp $	*/
+/*	$OpenBSD: kbd_tables.h,v 1.1 1997/08/19 11:48:06 kstailey Exp $	*/
 /*	$NetBSD: kbd_tables.h,v 1.3 1996/02/29 19:37:53 gwr Exp $	*/
 
 /*

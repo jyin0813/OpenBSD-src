@@ -1,4 +1,4 @@
-/*	$OpenBSD: sfasvar.h,v 1.4 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: sfasvar.h,v 1.5 2002/03/15 01:20:04 millert Exp $	*/
 /*	$NetBSD: sfasvar.h,v 1.4 1996/04/21 21:12:33 veego Exp $	*/
 
 /*

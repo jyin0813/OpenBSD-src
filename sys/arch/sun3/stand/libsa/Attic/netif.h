@@ -1,4 +1,4 @@
-/*	$OpenBSD: netif.h,v 1.3 2001/07/04 08:33:50 niklas Exp $	*/
+/*	$OpenBSD: netif.h,v 1.4 2002/03/14 01:26:47 millert Exp $	*/
 
 
 #include "iodesc.h"

@@ -1,4 +1,4 @@
-/*	$OpenBSD: strlcpy.S,v 1.4 2001/06/04 23:14:03 mickey Exp $	*/
+/*	$OpenBSD: strlcpy.S,v 1.5 2001/06/04 23:20:04 mickey Exp $	*/
 
 /*
  * Copyright (c) 1999-2001 Michael Shalayeff
@@ -34,7 +34,7 @@
 
 #if defined(LIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: strlcpy.S,v 1.4 2001/06/04 23:14:03 mickey Exp $"
+	.asciz "$OpenBSD: strlcpy.S,v 1.5 2001/06/04 23:20:04 mickey Exp $"
 	.align	4
 #endif
 

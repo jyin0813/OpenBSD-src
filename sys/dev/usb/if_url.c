@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_url.c,v 1.1 2002/05/07 18:08:04 nate Exp $ */
+/*	$OpenBSD$ */
 /*	$NetBSD: if_url.c,v 1.2 2002/03/28 21:49:19 ichiro Exp $	*/
 /*
  * Copyright (c) 2001, 2002
@@ -46,16 +46,22 @@
  *	powerhook() support?
  */
 
+#if defined(__NetBSD__)
 #include "opt_inet.h"
 #include "opt_ns.h"
-#include "bpfilter.h"
 #include "rnd.h"
+#endif
+
+#include "bpfilter.h"
 
 #include <sys/param.h>
 #include <sys/systm.h>
 #include <sys/lock.h>
 #include <sys/mbuf.h>
 #include <sys/kernel.h>
+#if defined(__OpenBSD__)
+#include <sys/proc.h>
+#endif
 #include <sys/socket.h>
 
 #include <sys/device.h>
@@ -73,11 +79,24 @@
 #endif
 #define	BPF_MTAP(ifp, m)	bpf_mtap((ifp)->if_bpf, (m))
 
+#if defined(__NetBSD__)
 #include <net/if_ether.h>
 #ifdef INET
-#include <netinet/in.h>
+#include <netinet/in.h> 
 #include <netinet/if_inarp.h>
 #endif
+#endif /* defined(__NetBSD__) */
+
+#if defined(__OpenBSD__)
+#ifdef INET
+#include <netinet/in.h>
+#include <netinet/in_systm.h>
+#include <netinet/in_var.h>
+#include <netinet/ip.h>
+#include <netinet/if_ether.h>
+#endif
+#endif /* defined(__OpenBSD__) */
+
 #ifdef NS
 #include <netns/ns.h>
 #include <netns/ns_if.h>
@@ -272,8 +291,6 @@ USB_ATTACH(url)
 	ifp->if_start = url_start;
 	ifp->if_ioctl = url_ioctl;
 	ifp->if_watchdog = url_watchdog;
-	ifp->if_init = url_init;
-	ifp->if_stop = url_stop;
 
 	IFQ_SET_READY(&ifp->if_snd);
 
@@ -518,7 +535,11 @@ url_init(struct ifnet *ifp)
 	/* Cancel pending I/O and free all TX/RX buffers */
 	url_stop(ifp, 1);
 
+#if defined(__OpenBSD__)
+	eaddr = sc->sc_ac.ac_enaddr;
+#elif defined(__NetBSD__)
 	eaddr = LLADDR(ifp->if_sadl);
+#endif /* defined(__NetBSD__) */
 	for (i = 0; i < ETHER_ADDR_LEN; i++)
 		url_csr_write_1(sc, URL_IDR0 + i, eaddr[i]);
 
@@ -616,7 +637,7 @@ url_activate(device_ptr_t self, enum devact act)
 		break;
 
 	case DVACT_DEACTIVATE:
-		if_deactivate(&sc->sc_ec.ec_if);
+		if_deactivate(&sc->sc_ac.ec_if);
 		sc->sc_dying = 1;
 		break;
 	}
@@ -660,7 +681,7 @@ url_setmulti(struct url_softc *sc)
 	url_csr_write_4(sc, URL_MAR4, 0);
 
 	/* now program new ones */
-	ETHER_FIRST_MULTI(step, &sc->sc_ec, enm);
+	ETHER_FIRST_MULTI(step, &sc->sc_ac, enm);
 	while (enm != NULL) {
 		if (memcmp(enm->enm_addrlo, enm->enm_addrhi,
 			   ETHER_ADDR_LEN) != 0)
@@ -1109,7 +1130,7 @@ url_ioctl(struct ifnet *ifp, u_long cmd, caddr_t data)
 		break;
 
 	default:
-		error = ether_ioctl(ifp, cmd, data);
+		error = ether_ioctl(ifp, &sc->sc_ac, cmd, data);
 		if (error == ENETRESET) {
 			url_setmulti(sc);
 			error = 0;
@@ -1353,7 +1374,7 @@ url_lock_mii(struct url_softc *sc)
 			__FUNCTION__));
 
 	sc->sc_refcnt++;
-	lockmgr(&sc->sc_mii_lock, LK_EXCLUSIVE, NULL);
+	usb_lockmgr(&sc->sc_mii_lock, LK_EXCLUSIVE, NULL, curproc);
 }
 
 Static void
@@ -1362,7 +1383,7 @@ url_unlock_mii(struct url_softc *sc)
 	DPRINTFN(0xff, ("%s: %s: enter\n", USBDEVNAME(sc->sc_dev),
 		       __FUNCTION__));
 
-	lockmgr(&sc->sc_mii_lock, LK_RELEASE, NULL);
+	usb_lockmgr(&sc->sc_mii_lock, LK_RELEASE, NULL, curproc);
 	if (--sc->sc_refcnt < 0)
 		usb_detach_wakeup(USBDEV(sc->sc_dev));
 }

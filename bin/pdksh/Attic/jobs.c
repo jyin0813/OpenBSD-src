@@ -1,4 +1,4 @@
-/*	$OpenBSD: jobs.c,v 1.4 1996/11/21 07:59:29 downsj Exp $	*/
+/*	$OpenBSD: jobs.c,v 1.6 1997/06/19 13:58:43 kstailey Exp $	*/
 
 /*
  * Process and job control

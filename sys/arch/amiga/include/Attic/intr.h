@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: intr.h,v 1.1 1996/04/27 18:38:53 niklas Exp $	*/
 
 /*
  * Copyright (c) 1996 Niklas Hallqvist

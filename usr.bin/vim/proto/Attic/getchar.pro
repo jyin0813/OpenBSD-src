@@ -1,4 +1,4 @@
-/*	$OpenBSD: getchar.pro,v 1.1.1.1 1996/09/07 21:40:29 downsj Exp $	*/
+/*	$OpenBSD: getchar.pro,v 1.2 1996/09/21 06:23:51 downsj Exp $	*/
 /* getchar.c */
 char_u *get_recorded __PARMS((void));
 char_u *get_inserted __PARMS((void));

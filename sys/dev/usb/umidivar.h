@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: umidivar.h,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
 /*	$NetBSD: umidivar.h,v 1.3 2001/02/03 18:50:32 tshiozak Exp $	*/
 /*
  * Copyright (c) 2001 The NetBSD Foundation, Inc.

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.7 2000/09/01 05:46:02 aaron Exp $
+#	$OpenBSD: Makefile,v 1.8 2001/01/31 09:58:28 deraadt Exp $
 
 #SUBDIR=	keycap cursor fontedit kcon loadfont scon \
 #	userkeys vttest ispcvt pcvtdoc fed

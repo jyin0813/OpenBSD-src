@@ -1,4 +1,4 @@
-/*	$OpenBSD: locore.S,v 1.19 1998/10/15 21:29:59 imp Exp $	*/
+/*	$OpenBSD: locore.S,v 1.20 1999/08/15 20:35:06 niklas Exp $	*/
 /*
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -50,7 +50,7 @@
  *	v 1.1 89/07/10 14:27:41 nelson Exp  SPRITE (DECWRL)
  *
  *	from: @(#)locore.s	8.5 (Berkeley) 1/4/94
- *	$Id: locore.S,v 1.19 1998/10/15 21:29:59 imp Exp $
+ *	$Id: locore.S,v 1.20 1999/08/15 20:35:06 niklas Exp $
  */
 
 /*

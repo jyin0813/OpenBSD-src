@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)ns.h	4.33 (Berkeley) 8/23/90
- *	$Id: ns.h,v 1.3 1995/08/24 17:04:40 ragge Exp $
+ *	$Id: ns.h,v 1.1 1995/10/18 08:47:50 deraadt Exp dm $
  */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mainbus.c,v 1.1 2003/10/31 03:54:33 drahn Exp $	*/
+/*	$OpenBSD: mainbus.c,v 1.2 2004/02/04 20:07:18 drahn Exp $	*/
 
 /*
  * Copyright (c) 1994, 1995 Carnegie-Mellon University.

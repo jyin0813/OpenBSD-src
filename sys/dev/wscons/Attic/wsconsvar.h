@@ -1,4 +1,4 @@
-/*	$OpenBSD: wsconsvar.h,v 1.4 1997/01/24 19:58:33 niklas Exp $	*/
+/*	$OpenBSD: wsconsvar.h,v 1.5 1997/07/31 13:40:06 kstailey Exp $	*/
 /*	$NetBSD: wsconsvar.h,v 1.4 1996/11/19 05:17:00 cgd Exp $	*/
 
 /*

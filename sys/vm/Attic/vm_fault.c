@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_fault.c,v 1.18 2001/05/09 15:31:23 art Exp $	*/
+/*	$OpenBSD: vm_fault.c,v 1.19 2001/06/08 08:09:43 art Exp $	*/
 /*	$NetBSD: vm_fault.c,v 1.21 1998/01/31 04:02:39 ross Exp $	*/
 
 /* 

@@ -1,4 +1,4 @@
-/*	$Id: osfcn.h,v 1.2 1993/08/02 17:23:45 mycroft Exp $ */
+/*	$Id: osfcn.h,v 1.1 1995/10/18 08:38:19 deraadt Exp etheisen $ */
 
 #ifndef OSFCN_H
 #define OSFCN_H 1

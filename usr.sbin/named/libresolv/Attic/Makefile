@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 1997/03/12 10:42:01 downsj Exp $
 
 LIB=	resolv
 SRCS=	base64.c gethnamaddr.c getnetbyaddr.c getnetbyname.c getnetent.c \

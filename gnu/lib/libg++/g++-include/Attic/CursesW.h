@@ -15,7 +15,7 @@ You should have received a copy of the GNU Library General Public
 License along with this library; if not, write to the Free Software
 Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: CursesW.h,v 1.3 1993/11/12 00:27:26 cgd Exp $
+	$Id: CursesW.h,v 1.1 1995/10/18 08:38:15 deraadt Exp etheisen $
 */
 
 #ifndef _CursesWindow_h

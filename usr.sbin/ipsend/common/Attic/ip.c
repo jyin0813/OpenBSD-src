@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ip.c,v 1.6 2001/01/17 06:01:24 fgsch Exp $	*/
 
 /*
  * ip.c (C) 1995-1998 Darren Reed

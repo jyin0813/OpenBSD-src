@@ -1,4 +1,4 @@
-/* $OpenBSD: create.h,v 1.3 1998/10/13 23:09:50 marc Exp $ */
+/* $OpenBSD: create.h,v 1.4 2003/08/15 00:03:22 espie Exp $ */
 
 /*
  * FreeBSD install - a package for the installation and maintainance

@@ -1,4 +1,4 @@
-/*	$OpenBSD: aeonreg.h,v 1.5 2000/03/10 08:45:00 mickey Exp $	*/
+/*	$OpenBSD: aeonreg.h,v 1.6 2000/03/15 14:55:52 jason Exp $	*/
 
 /*
  * Invertex AEON driver

@@ -1,4 +1,4 @@
-/*	$OpenBSD: getterm.c,v 1.15 1998/01/17 16:20:29 millert Exp $	*/
+/*	$OpenBSD: getterm.c,v 1.16 1998/01/17 16:35:06 millert Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: getterm.c,v 1.15 1998/01/17 16:20:29 millert Exp $";
+static char rcsid[] = "$OpenBSD: getterm.c,v 1.16 1998/01/17 16:35:06 millert Exp $";
 #endif
 
 #include <err.h>

@@ -1,4 +1,4 @@
-/* *	$OpenBSD: malloc.c,v 1.2 1996/06/10 11:21:29 niklas Exp $*/
+/* *	$OpenBSD: malloc.c,v 1.3 2001/11/19 19:02:15 mpech Exp $*/
 /*
  *	from: @(#)nmalloc.c 1 (Caltech) 2/21/82
  *

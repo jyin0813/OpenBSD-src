@@ -8,7 +8,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: engine-sparc-sunos-5.3.c,v 1.10.2.1 1995/12/13 05:42:35 proven Exp $";
+static const char rcsid[] = "$Id: engine-sparc-sunos-5.3.c,v 1.1 1998/07/21 13:19:15 peter Exp $";
 #endif
  
 #include <pthread.h>

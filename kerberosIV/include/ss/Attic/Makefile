@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.2 1996/06/02 07:21:31 tholo Exp $
+#	$Id: Makefile,v 1.3 1996/07/31 18:27:35 deraadt Exp $
 
 FILES=	ss.h
 NOOBJ=	noobj

@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: ns32k-nat.c,v 1.4 1995/09/26 20:23:38 phil Exp $
+	$Id: ns32k-nat.c,v 1.1 1995/10/18 08:40:07 deraadt Exp $
 */
 
 #include <sys/types.h>

@@ -1,4 +1,4 @@
-/*	$Id: sysdep.h,v 1.2 1994/02/23 04:48:33 chopps Exp $ */
+/*	$Id: sysdep.h,v 1.1 1995/10/18 08:39:55 deraadt Exp $ */
 #include <fcntl.h>
 #include <errno.h>
 #include <stdio.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_mattr_init.c,v 1.4 1999/11/25 07:01:38 d Exp $	*/
 /*
  * Copyright (c) 1996 Jeffrey Hsu <hsu@freebsd.org>.
  * All rights reserved.

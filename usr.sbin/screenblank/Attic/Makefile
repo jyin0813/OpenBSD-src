@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 2001/12/01 23:43:48 miod Exp $
+#	$OpenBSD: Makefile,v 1.6 2002/08/12 10:47:33 miod Exp $
 
 .if ${MACHINE} == "sun3"
 PROG=	screenblank

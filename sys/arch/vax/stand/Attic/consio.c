@@ -1,4 +1,4 @@
-/*	$OpenBSD: consio.c,v 1.3 1997/05/29 00:04:19 niklas Exp $ */
+/*	$OpenBSD: consio.c,v 1.4 1998/02/03 11:48:26 maja Exp $ */
 /*	$NetBSD: consio.c,v 1.8 1997/06/08 17:49:18 ragge Exp $ */
 /*
  * Copyright (c) 1994 Ludd, University of Lule}, Sweden.

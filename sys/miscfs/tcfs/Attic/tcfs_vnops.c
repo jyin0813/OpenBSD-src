@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_vnops.c,v 1.4 2001/12/04 22:44:32 art Exp $	*/
+/*	$OpenBSD: tcfs_vnops.c,v 1.5 2002/03/14 01:27:08 millert Exp $	*/
 /*
  * Copyright 2000 The TCFS Project at http://tcfs.dia.unisa.it/
  * All rights reserved.

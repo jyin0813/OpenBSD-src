@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfserrors.c,v 1.5 2000/06/19 22:42:28 aaron Exp $	*/
+/*	$OpenBSD: tcfserrors.c,v 1.6 2000/06/20 06:45:16 fgsch Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

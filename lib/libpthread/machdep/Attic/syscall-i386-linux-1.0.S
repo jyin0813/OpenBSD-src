@@ -16,7 +16,7 @@
 
 #ifndef lint
 	.text
-	.asciz "$Id: syscall-i386-linux-1.0.S,v 1.57.2.1 1996/10/22 04:17:32 proven Exp $";
+	.asciz "$Id: syscall-i386-linux-1.0.S,v 1.1 1998/07/21 13:19:16 peter Exp $";
 #endif
 
 #include <sys/syscall.h>

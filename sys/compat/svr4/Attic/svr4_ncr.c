@@ -1,4 +1,4 @@
-/*	$OpenBSD: svr4_ncr.c,v 1.2 1996/10/17 19:15:50 niklas Exp $	 */
+/*	$OpenBSD: svr4_ncr.c,v 1.3 1998/02/22 01:06:10 niklas Exp $	 */
 
 /*
  * Copyright (c) 1995, 1996 Niklas Hallqvist

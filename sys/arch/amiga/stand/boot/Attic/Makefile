@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.6 2000/02/12 15:29:06 espie Exp $
+#	$OpenBSD: Makefile,v 1.7 2002/12/02 09:00:22 miod Exp $
 
 NOPROG=	installboot
 MAN=installboot.8

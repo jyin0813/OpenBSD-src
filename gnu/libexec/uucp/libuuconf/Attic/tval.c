@@ -26,7 +26,7 @@
 #include "uucnfi.h"
 
 #if USE_RCS_ID
-const char _uuconf_tval_rcsid[] = "$Id: tval.c,v 1.3 1995/08/24 05:22:19 jtc Exp $";
+const char _uuconf_tval_rcsid[] = "$Id: tval.c,v 1.1 1995/10/18 08:38:37 deraadt Exp $";
 #endif
 
 /* Validate a login name for a system using Taylor UUCP configuration

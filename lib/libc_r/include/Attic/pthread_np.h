@@ -1,4 +1,4 @@
-/*	$OpenBSD: pthread_np.h,v 1.4 2001/08/17 22:44:15 pvalchev Exp $	*/
+/*	$OpenBSD: pthread_np.h,v 1.5 2002/02/16 21:27:25 millert Exp $	*/
 /*
  * Copyright (c) 1996-98 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

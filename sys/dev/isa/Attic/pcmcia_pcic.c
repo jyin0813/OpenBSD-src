@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcmcia_pcic.c,v 1.14 1997/03/01 22:42:58 niklas Exp $	*/
+/*	$OpenBSD: pcmcia_pcic.c,v 1.15 1997/04/16 23:29:28 niklas Exp $	*/
 
 /*
  *  Copyright (c) 1995, 1996 John T. Kohl

@@ -12,7 +12,7 @@
    the application unable to be configured for both "same" and "binary"
    variant systems.
 
-	$Id: fopen-same.h,v 1.1 1994/01/28 12:42:24 pk Exp $
+	$Id: fopen-same.h,v 1.1 1995/10/18 08:40:09 deraadt Exp $
 */
 
 #define FOPEN_RB	"r"

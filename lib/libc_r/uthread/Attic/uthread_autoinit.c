@@ -1,7 +1,7 @@
 /*
  * David Leonard, 1998. Public Domain. <david.leonard@csee.uq.edu.au>
  *
- * $OpenBSD: uthread_autoinit.c,v 1.9 2002/01/24 18:39:46 pefo Exp $
+ * $OpenBSD: uthread_autoinit.c,v 1.10 2002/02/16 21:27:25 millert Exp $
  */
 
 #include <stdio.h>

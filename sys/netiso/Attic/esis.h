@@ -1,4 +1,4 @@
-/*	$OpenBSD: esis.h,v 1.3 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: esis.h,v 1.4 2003/06/02 23:28:17 millert Exp $	*/
 /*	$NetBSD: esis.h,v 1.9 1996/02/13 22:09:29 christos Exp $	*/
 
 /*-

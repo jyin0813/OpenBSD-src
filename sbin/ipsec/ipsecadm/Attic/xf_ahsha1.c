@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_ahsha1.c,v 1.2 1997/07/01 22:18:04 provos Exp $ */
+/* $OpenBSD: xf_ahsha1.c,v 1.3 1997/07/11 23:50:22 provos Exp $ */
 /*
  * The author of this code is John Ioannidis, ji@tla.org,
  * 	(except when noted otherwise).

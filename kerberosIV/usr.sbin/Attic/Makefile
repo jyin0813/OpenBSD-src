@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2001/06/25 16:31:50 hin Exp $
+# $OpenBSD: Makefile,v 1.3 2001/06/25 17:54:26 hin Exp $
 
 .include <bsd.own.mk> # for KERBEROS5
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: boot.c,v 1.2 1997/07/21 06:58:12 pefo Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_ah_new.c,v 1.2 1997/09/23 21:41:00 angelos Exp $ */
+/* $OpenBSD: xf_ah_new.c,v 1.3 1998/05/24 13:29:03 provos Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

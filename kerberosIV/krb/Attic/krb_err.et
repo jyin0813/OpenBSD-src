@@ -27,7 +27,7 @@
 #
 # 
 #	$KTH: krb_err.et,v 1.4 1996/10/27 13:30:28 bg Exp $
-#	$OpenBSD: krb_err.et,v 1.4 1998/02/25 15:51:22 art Exp $
+#	$OpenBSD: krb_err.et,v 1.5 1998/07/07 19:06:55 art Exp $
 #
 error_table	krb
 

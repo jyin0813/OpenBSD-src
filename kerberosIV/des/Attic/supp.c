@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id$
+ * $Id: supp.c,v 1.1 1996/02/10 21:04:39 tholo Exp $
  */
 
 #include <stdio.h>

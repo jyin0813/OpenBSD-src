@@ -1,4 +1,4 @@
-/*	$OpenBSD: pci_compat.c,v 1.4 1996/10/21 22:28:54 thorpej Exp $	*/
+/*	$OpenBSD: pci_compat.c,v 1.2 1996/11/28 23:37:42 niklas Exp $	*/
 /*	$NetBSD: pci_compat.c,v 1.4 1996/10/21 22:28:54 thorpej Exp $	*/
 
 /*

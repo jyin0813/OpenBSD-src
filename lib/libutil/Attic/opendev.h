@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: opendev.h,v 1.1 1996/06/17 06:35:34 downsj Exp downsj $	*/
 
 /*
  * Copyright (c) 1996, Jason Downs.  All rights reserved.

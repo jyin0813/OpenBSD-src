@@ -1,5 +1,5 @@
 #	from: @(#)Makefile	8.1 (Berkeley) 6/10/93
-#	     $Id: Makefile,v 1.2 1995/10/23 03:38:29 deraadt Exp $
+#	     $Id: Makefile,v 1.1 1997/03/03 19:31:03 rahnds Exp $
 
 RELOC=0x3F0000 
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tries.c,v 1.3 1998/07/23 21:20:07 millert Exp $	*/
+/*	$OpenBSD: tries.c,v 1.4 1998/11/17 03:16:22 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_inode_cnv.c,v 1.1 1996/06/24 03:34:56 downsj Exp $	*/
+/*	$OpenBSD: ext2_inode_cnv.c,v 1.2 1996/11/01 08:31:57 downsj Exp $	*/
 
 /*
  * Copyright (c) 1995 The University of Utah and

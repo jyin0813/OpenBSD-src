@@ -28,7 +28,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- *     $OpenBSD: protolib.h,v 1.1 1996/03/25 23:31:19 tholo Exp $
+ *     $OpenBSD: protolib.h,v 1.2 1996/09/15 10:09:08 tholo Exp $
  */
 
 #include <float.h>

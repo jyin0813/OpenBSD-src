@@ -1,4 +1,4 @@
-/*	$OpenBSD: tree.h,v 1.4 2002/02/16 21:28:06 millert Exp $	*/
+/*	$OpenBSD: tree.h,v 1.5 2002/02/17 19:42:37 millert Exp $	*/
 
 /* tree.h - declare structures used by tree library
  *

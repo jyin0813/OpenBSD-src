@@ -36,7 +36,7 @@
  */
 
 #include "includes.h"
-RCSID("$OpenBSD: log-server.c,v 1.19 2001/01/18 16:20:21 markus Exp $");
+RCSID("$OpenBSD: log-server.c,v 1.20 2001/01/21 19:05:50 markus Exp $");
 
 #include <syslog.h>
 #include "packet.h"

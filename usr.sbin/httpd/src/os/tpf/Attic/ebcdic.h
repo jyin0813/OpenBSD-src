@@ -1,5 +1,5 @@
 #ifndef EBCDIC_H
-#define EBCDIC_H  "$Id: ebcdic.h,v 1.3 2001/03/09 10:10:50 martin Exp $"
+#define EBCDIC_H  "$Id: ebcdic.h,v 1.3 2002/03/29 02:08:07 beck Exp $"
 
 #include <ap_ebcdic.h>
 

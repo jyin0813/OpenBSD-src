@@ -1,4 +1,4 @@
-/*	$OpenBSD: altq_fifoq.h,v 1.2 2002/06/14 21:34:58 todd Exp $	*/
+/*	$OpenBSD: altq_fifoq.h,v 1.3 2002/11/26 01:03:34 henning Exp $	*/
 /*	$KAME: altq_fifoq.h,v 1.6 2000/12/14 08:12:45 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: readlabel.c,v 1.1 1996/11/12 08:46:13 downsj Exp $	*/
 
 /*
  * Copyright (c) 1996, Jason Downs.  All rights reserved.

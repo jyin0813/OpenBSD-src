@@ -1,4 +1,4 @@
-/*	$OpenBSD: rdate.c,v 1.12 2001/08/15 19:39:09 stevesk Exp $	*/
+/*	$OpenBSD: rdate.c,v 1.1 2002/05/15 08:26:30 jakob Exp $	*/
 /*	$NetBSD: rdate.c,v 1.4 1996/03/16 12:37:45 pk Exp $	*/
 
 /*
@@ -42,7 +42,7 @@
 #if 0
 from: static char rcsid[] = "$NetBSD: rdate.c,v 1.3 1996/02/22 06:59:18 thorpej Exp $";
 #else
-static char rcsid[] = "$OpenBSD: rdate.c,v 1.12 2001/08/15 19:39:09 stevesk Exp $";
+static const char rcsid[] = "$OpenBSD: rdate.c,v 1.1 2002/05/15 08:26:30 jakob Exp $";
 #endif
 #endif				/* lint */
 
@@ -53,45 +53,38 @@ static char rcsid[] = "$OpenBSD: rdate.c,v 1.12 2001/08/15 19:39:09 stevesk Exp 
 #include <err.h>
 #include <string.h>
 #include <sys/time.h>
-#include <sys/socket.h>
-#include <netdb.h>
-#include <netinet/in.h>
 #include <unistd.h>
 #include <util.h>
 #include <time.h>
 
-/* seconds from midnight Jan 1900 - 1970 */
-#define DIFFERENCE 2208988800UL
+void rfc868time_client (const char *, struct timeval *, struct timeval *);
+void ntp_client (const char *, struct timeval *, struct timeval *);
+
 
 extern char    *__progname;
 
-static void
+void
 usage()
 {
-	(void) fprintf(stderr, "Usage: %s [-psa] host\n", __progname);
+	(void) fprintf(stderr, "Usage: %s [-npsa] host\n", __progname);
+	(void) fprintf(stderr, "  -n: use SNTP instead of RFC868 time protocol\n");
 	(void) fprintf(stderr, "  -p: just print, don't set\n");
 	(void) fprintf(stderr, "  -s: just set, don't print\n");
 	(void) fprintf(stderr, "  -a: use adjtime instead of instant change\n");
 }
 
 int
-main(argc, argv)
-	int             argc;
-	char           *argv[];
+main(int argc, char **argv)
 {
-	int             pr = 0, silent = 0, s;
+	int             pr = 0, silent = 0, ntp = 0;
 	int		slidetime = 0;
-	int		adjustment;
-	time_t          tim;
 	char           *hname;
-	struct hostent *hp;
-	struct protoent *pp, ppp;
-	struct servent *sp, ssp;
-	struct sockaddr_in sa;
 	extern int      optind;
 	int             c;
 
-	while ((c = getopt(argc, argv, "psa")) != -1)
+	struct timeval new, adjust;
+
+	while ((c = getopt(argc, argv, "psan")) != -1)
 		switch (c) {
 		case 'p':
 			pr++;
@@ -105,6 +98,10 @@ main(argc, argv)
 			slidetime++;
 			break;
 
+		case 'n':
+			ntp++;
+			break;
+
 		default:
 			usage();
 			return 1;
@@ -116,58 +113,19 @@ main(argc, argv)
 	}
 	hname = argv[optind];
 
-	if ((hp = gethostbyname(hname)) == NULL) {
-		warnx("%s: %s", hname, hstrerror(h_errno));
-		return 1;
-	}
-
-	if ((sp = getservbyname("time", "tcp")) == NULL) {
-		sp = &ssp;
-		sp->s_port = 37;
-		sp->s_proto = "tcp";
-	}
-	if ((pp = getprotobyname(sp->s_proto)) == NULL) {
-		pp = &ppp;
-		pp->p_proto = 6;
-	}
-	if ((s = socket(AF_INET, SOCK_STREAM, pp->p_proto)) == -1)
-		err(1, "Could not create socket");
-
-	bzero(&sa, sizeof sa);
-	sa.sin_family = AF_INET;
-	sa.sin_port = sp->s_port;
-
-	(void) memcpy(&(sa.sin_addr.s_addr), hp->h_addr, hp->h_length);
-
-	if (connect(s, (struct sockaddr *) & sa, sizeof(sa)) == -1)
-		err(1, "Could not connect socket");
-
-	if (read(s, &tim, sizeof(time_t)) != sizeof(time_t))
-		err(1, "Could not read data");
-
-	(void) close(s);
-	tim = ntohl(tim) - DIFFERENCE;
-
-	if (slidetime) {
-		struct timeval tv_current;
-		if (gettimeofday(&tv_current, NULL) == -1)
-			err(1, "Could not get local time of day");
-		adjustment = tim - tv_current.tv_sec;
-	}
+	if (ntp)
+		ntp_client(hname, &new, &adjust);
+	else
+		rfc868time_client(hname, &new, &adjust);
 
 	if (!pr) {
-		struct timeval  tv;
 		if (!slidetime) {
 			logwtmp("|", "date", "");
-			tv.tv_sec = tim;
-			tv.tv_usec = 0;
-			if (settimeofday(&tv, NULL) == -1)
+			if (settimeofday(&new, NULL) == -1)
 				err(1, "Could not set time of day");
 			logwtmp("{", "date", "");
 		} else {
-			tv.tv_sec = adjustment;
-			tv.tv_usec = 0;
-			if (adjtime(&tv, NULL) == -1)
+			if (adjtime(&adjust, NULL) == -1)
 				err(1, "Could not adjust time of day");
 		}
 	}
@@ -175,15 +133,27 @@ main(argc, argv)
 	if (!silent) {
 		struct tm      *ltm;
 		char		buf[80];
+		time_t		tim = new.tv_sec;
+		double		adjsec;
 
 		ltm = localtime(&tim);
 		(void) strftime(buf, sizeof buf, "%a %b %e %H:%M:%S %Z %Y\n", ltm);
 		(void) fputs(buf, stdout);
 
-		if (slidetime)
-			(void) fprintf(stdout, 
-			   "%s: adjust local clock by %d seconds\n",
-			   __progname, adjustment);
+
+		adjsec  = adjust.tv_sec + adjust.tv_usec / 1.0e6;
+
+		if (slidetime) {
+			if (ntp)
+				(void) fprintf(stdout, 
+				   "%s: adjust local clock by %.6f seconds\n",
+				   __progname, adjsec);
+			else
+				(void) fprintf(stdout, 
+				   "%s: adjust local clock by %ld seconds\n",
+				   __progname, adjust.tv_sec);
+		}
 	}
+
 	return 0;
 }

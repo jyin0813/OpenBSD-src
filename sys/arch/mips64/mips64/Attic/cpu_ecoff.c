@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu_ecoff.c,v 1.2 1998/09/15 10:50:12 pefo Exp $	*/
+/*	$OpenBSD: cpu_ecoff.c,v 1.1 2004/08/06 20:56:03 pefo Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

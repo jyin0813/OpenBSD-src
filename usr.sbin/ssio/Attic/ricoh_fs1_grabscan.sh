@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: ricoh_fs1_grabscan.sh,v 1.1 1997/03/11 03:23:15 kstailey Exp $
+# $Id: ricoh_fs1_grabscan.sh,v 1.2 2002/06/03 09:05:59 deraadt Exp $
 #
 # Copyright (c) 1996 Kenneth Stailey
 # All rights reserved.

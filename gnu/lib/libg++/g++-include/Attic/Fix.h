@@ -1,7 +1,7 @@
 //
 // Fix.h : variable length fixed point data type 
 //
-//	$Id: Fix.h,v 1.1.1.1 1995/10/18 08:38:15 deraadt Exp $
+//	$Id: Fix.h,v 1.2 1995/12/21 11:09:10 niklas Exp etheisen $
 //
 
 #ifndef _Fix_h

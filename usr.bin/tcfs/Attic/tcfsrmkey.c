@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfsrmkey.c,v 1.7 2000/06/20 18:15:57 aaron Exp $	*/
+/*	$OpenBSD: tcfsrmkey.c,v 1.8 2001/01/23 18:18:46 deraadt Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 2000/12/15 22:31:48 millert Exp $
+#	$OpenBSD: Makefile,v 1.1 2000/12/21 13:44:25 naddy Exp $
 
 INFO = uucp.info uucp.info-1 uucp.info-2 uucp.info-3 uucp.info-4 \
        uucp.info-5 uucp.info-6 uucp.info-7 uucp.info-8

@@ -29,7 +29,7 @@
 
 #if defined(LIBC_SCCS)
 	.text
-	.asciz "$OpenBSD$"
+	.asciz "$OpenBSD: div.S,v 1.3 1996/08/19 08:11:31 tholo Exp $"
 #endif
 
 ip	.req	r12

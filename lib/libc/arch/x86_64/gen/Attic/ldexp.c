@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ldexp.c,v 1.1 2004/01/28 01:44:45 mickey Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
@@ -33,7 +33,7 @@
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
-static char rcsid[] = "$OpenBSD: ldexp.c,v 1.4 2003/06/02 20:18:30 millert Exp $";
+static char rcsid[] = "$OpenBSD: ldexp.c,v 1.1 2004/01/28 01:44:45 mickey Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 /*

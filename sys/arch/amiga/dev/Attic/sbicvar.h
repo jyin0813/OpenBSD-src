@@ -1,4 +1,4 @@
-/*	$OpenBSD: sbicvar.h,v 1.5 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: sbicvar.h,v 1.6 2002/03/14 03:15:51 millert Exp $	*/
 /*	$NetBSD: sbicvar.h,v 1.11 1996/04/21 21:12:23 veego Exp $	*/
 
 /*

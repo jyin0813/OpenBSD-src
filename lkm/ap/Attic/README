@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: README,v 1.2 1998/02/03 23:33:51 deraadt Exp $
 
 	XFree86 Framebuffer aperture driver for OpenBSD.
 	-----------------------------------------------

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: com_gsc.c,v 1.1 1998/09/29 06:56:45 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

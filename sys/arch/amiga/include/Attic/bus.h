@@ -1,4 +1,4 @@
-/*	$OpenBSD: bus.h,v 1.10 1999/09/09 21:28:14 espie Exp $	*/
+/*	$OpenBSD: bus.h,v 1.11 2001/10/16 16:03:21 jj Exp $	*/
 
 /*
  * Copyright (c) 1996 Niklas Hallqvist.

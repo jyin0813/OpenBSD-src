@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu.c,v 1.11 2001/06/18 21:36:06 drahn Exp $ */
+/*	$OpenBSD: cpu.c,v 1.12 2001/07/09 04:41:28 mickey Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

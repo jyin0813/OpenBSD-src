@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: dz_ds_cons.h,v 1.1 2000/08/19 18:36:19 maja Exp $	*/
 /*	$NetBSD: dc_ds_cons.h,v 1.1 1996/09/25 20:48:55 jonathan Exp $	*/
 
 #ifdef _KERNEL

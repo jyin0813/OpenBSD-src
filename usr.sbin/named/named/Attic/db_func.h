@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_func.h,v 1.5 2002/02/16 21:28:06 millert Exp $	*/
+/*	$OpenBSD: db_func.h,v 1.6 2002/02/17 19:42:37 millert Exp $	*/
 
 /* db_proc.h - prototypes for functions in db_*.c
  *

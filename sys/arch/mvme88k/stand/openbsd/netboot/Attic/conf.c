@@ -1,4 +1,4 @@
-/*	$Id: conf.c,v 1.3 1995/11/07 08:50:58 deraadt Exp $ */
+/*	$Id: conf.c,v 1.1 1997/03/03 19:31:08 rahnds Exp $ */
 
 #include <sys/types.h>
 #include <netinet/in.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: resolv.h,v 1.5 2002/02/17 19:42:37 millert Exp $	*/
+/*	$OpenBSD: resolv.h,v 1.6 2002/06/03 12:04:08 deraadt Exp $	*/
 
 /*
  * ++Copyright++ 1983, 1987, 1989, 1993

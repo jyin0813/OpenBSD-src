@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbdreg.h,v 1.2 1996/07/30 20:24:25 pefo Exp $	*/
+/*	$OpenBSD: kbdreg.h,v 1.3 1996/09/04 21:18:24 pefo Exp $	*/
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

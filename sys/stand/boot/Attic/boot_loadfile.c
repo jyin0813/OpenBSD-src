@@ -1,4 +1,4 @@
-/*	$OpenBSD: boot.c,v 1.23 2000/12/29 19:24:44 mickey Exp $	*/
+/*	$OpenBSD: boot_loadfile.c,v 1.1 2003/04/17 03:53:53 drahn Exp $	*/
 
 /*
  * Copyright (c) 2003 Dale Rahn

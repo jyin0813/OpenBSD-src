@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kvm_sparc.c,v 1.1 1996/03/19 23:15:41 niklas Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

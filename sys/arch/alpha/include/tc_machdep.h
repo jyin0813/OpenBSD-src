@@ -1,4 +1,5 @@
-/*	$NetBSD: tc_machdep.h,v 1.1 1995/12/20 00:09:29 cgd Exp $	*/
+/* $OpenBSD$ */
+/* $NetBSD: tc_machdep.h,v 1.4 2000/06/01 00:04:50 cgd Exp $ */
 
 /*
  * Copyright (c) 1994, 1995 Carnegie-Mellon University.
@@ -60,8 +61,8 @@
 typedef u_int64_t	tc_addr_t;
 typedef int32_t		tc_offset_t;
 
-#define	tc_mb()		wbflush()
-#define	tc_wmb()	wbflush()
+#define	tc_mb()		alpha_mb()
+#define	tc_wmb()	alpha_wmb()
 
 /*
  * A junk address to read from, to make sure writes are complete.  See
@@ -72,7 +73,7 @@ typedef int32_t		tc_offset_t;
     do {								\
 	volatile u_int32_t no_optimize;					\
 	no_optimize =	 						\
-	    *(volatile u_int32_t *)phystok0seg(0x00000001f0080220);	\
+	    *(volatile u_int32_t *)ALPHA_PHYS_TO_K0SEG(0x00000001f0080220); \
     } while (0)
 
 #define	tc_badaddr(tcaddr)						\
@@ -90,3 +91,23 @@ typedef int32_t		tc_offset_t;
 		
 #define	TC_PHYS_TO_UNCACHED(addr)					\
     (addr)
+
+/*
+ * These functions are private, and may not be called by
+ * machine-independent code.
+ */
+bus_space_tag_t tc_bus_mem_init(void *memv);
+void tc_dma_init(void);
+
+/*
+ * Address of scatter/gather SRAM on the 3000/500-series.
+ *
+ * There is room for 32K entries, yielding 256M of sgva space.
+ * The page table is readable in both dense and sparse space.
+ * The page table is writable only in sparse space.
+ *
+ * In sparse space, the 32-bit PTEs are followed by 32-bits
+ * of pad.
+ */
+#define	TC_SGSRAM_DENSE		0x0000001c2800000UL
+#define	TC_SGSRAM_SPARSE	0x0000001d5000000UL

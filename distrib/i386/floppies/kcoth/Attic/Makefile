@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1996/04/25 21:28:24 niklas Exp mickey $
 
 TOP=		${.CURDIR}/..
 

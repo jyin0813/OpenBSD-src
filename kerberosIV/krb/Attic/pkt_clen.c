@@ -1,7 +1,7 @@
 /*
  * This software may now be redistributed outside the US.
  *
- * $Source: /usr/src/kerberosIV/lib/krb/RCS/pkt_clen.c,v $
+ * $Source: /cvs/src/kerberosIV/krb/pkt_clen.c,v $
  *
  * $Locker:  $
  */

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2001/07/09 16:45:29 deraadt Exp $
+# $OpenBSD: Makefile,v 1.6 2002/05/11 00:20:19 espie Exp $
 
 PROG	= kdb_destroy
 

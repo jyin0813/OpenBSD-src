@@ -1,4 +1,4 @@
-/*	$OpenBSD: lpt_pica.c,v 1.1 1996/11/28 23:35:44 niklas Exp $	*/
+/*	$OpenBSD: lpt_pica.c,v 1.2 1996/11/30 00:53:39 niklas Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994 Charles Hannum.

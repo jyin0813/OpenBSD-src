@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_driver.c,v 1.6 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: tp_driver.c,v 1.7 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: tp_driver.c,v 1.8 1996/03/16 23:13:45 christos Exp $	*/
 
 #include "tp_states.h"

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ascreg.h,v 1.1 1997/02/06 16:02:42 pefo Exp $	*/
 /*-
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)ascreg.h	8.1 (Berkeley) 6/10/93
- *      $Id: ascreg.h,v 1.1.1.1 1995/10/18 10:39:08 deraadt Exp $
+ *      $Id: ascreg.h,v 1.1 1997/02/06 16:02:42 pefo Exp $
  */
 
 /* 

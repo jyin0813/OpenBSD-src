@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ioctl_meteor.h,v 1.2 2000/08/05 22:07:31 niklas Exp $	*/
 
 /*
  * Copyright (c) 1995 Mark Tinguely and Jim Lowe

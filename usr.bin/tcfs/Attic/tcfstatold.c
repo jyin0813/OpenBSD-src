@@ -9,11 +9,11 @@
 /*
  *	Base utility set v0.1
  *
- *	  $Source: /usr/src/tcfs-utils_0.1/bin/RCS/tcfsrun.c,v $
+ *	  $Source: /cvs/src/usr.bin/tcfs/tcfstatold.c,v $
  *	   $State: Exp $
  *	$Revision: 1.1 $
- *	  $Author: luicat $
- *	    $Date: 2000/01/14 13:44:04 $
+ *	  $Author: provos $
+ *	    $Date: 2000/06/18 22:07:24 $
  *
  */
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: more.c,v 1.13 2001/09/04 23:35:59 millert Exp $	*/
+/*	$OpenBSD: more.c,v 1.14 2001/09/05 22:32:41 deraadt Exp $	*/
 /*-
  * Copyright (c) 1980 The Regents of the University of California.
  * All rights reserved.

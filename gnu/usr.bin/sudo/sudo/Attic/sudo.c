@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: sudo.c,v 1.14 1999/03/30 06:25:25 millert Exp $	*/
 
 /*
  * CU sudo version 1.5.9 (based on Root Group sudo version 1.1)

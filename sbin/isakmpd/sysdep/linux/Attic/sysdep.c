@@ -1,7 +1,8 @@
-/*	$OpenBSD: sysdep.c,v 1.11 2002/06/09 08:13:07 todd Exp $	*/
+/*	$OpenBSD$	*/
 
 /*
  * Copyright (c) 1998, 1999 Niklas Hallqvist.  All rights reserved.
+ * Copyright (c) 2003 Thomas Walpuski.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -11,10 +12,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 3. All advertising materials mentioning features or use of this software
- *    must display the following acknowledgement:
- *	This product includes software developed by Ericsson Radio Systems.
- * 4. The name of the author may not be used to endorse or promote products
+ * 3. The name of the author may not be used to endorse or promote products
  *    derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
@@ -29,65 +27,43 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/*
- * This code was written under funding by Ericsson Radio Systems.
- */
-
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <sys/time.h>
 #include <netinet/in.h>
+#include <arpa/inet.h>
 #include <stdlib.h>
 #include <string.h>
-#include <fcntl.h>
-#include <md5.h>
-#include <unistd.h>
 
 #include "sysdep.h"
+
+#include "util.h"
 
 #ifdef NEED_SYSDEP_APP
 #include "app.h"
 #include "conf.h"
 #include "ipsec.h"
-#include "klips.h"
+
+#ifdef USE_PF_KEY_V2
+#include "pf_key_v2.h"
+#define KEY_API(x) pf_key_v2_##x
+#endif
+
 #endif /* NEED_SYSDEP_APP */
 #include "log.h"
-#include "sysdep.h"
 
 extern char *__progname;
 
+/*
+ * An as strong as possible random number generator, reverting to a
+ * deterministic pseudo-random one if regrand is set.
+ */
 u_int32_t
 sysdep_random ()
 {
-  u_int32_t rndval;
-  u_char sig[16];
-  MD5_CTX ctx;
-  int fd, i;
-  struct {
-    struct timeval tv;
-    u_int rnd[(128 - sizeof (struct timeval)) / sizeof (u_int)];
-  } rdat;
-
-  fd = open ("/dev/urandom", O_RDONLY);
-  if (fd != -1)
-    {
-      read (fd, rdat.rnd, sizeof(rdat.rnd));
-      close (fd);
-    }
-  MD5Init (&ctx);
-  MD5Update (&ctx, (char *)&rdat, sizeof(rdat));
-  MD5Final (sig, &ctx);
-
-  rndval = 0;	
-  for (i = 0; i < 4; i++)
-    {
-      u_int32_t *tmp = (u_int32_t *)&sig[i * 4];
-      rndval ^= *tmp;
-    }
-		
-  return rndval;
+  return arc4random();
 }
 
+/* Return the basename of the command used to invoke us.  */
 char *
 sysdep_progname ()
 {
@@ -104,29 +80,39 @@ sysdep_sa_len (struct sockaddr *sa)
       return sizeof (struct sockaddr_in);
     case AF_INET6:
       return sizeof (struct sockaddr_in6);
-    }
-  log_print ("sysdep_sa_len: unknown sa family %d", sa->sa_family);
+    default:
+      log_print ("sysdep_sa_len: unknown sa family %d", sa->sa_family);
+    } 
   return sizeof (struct sockaddr_in);
 }
 
 /* As regress/ use this file I protect the sysdep_app_* stuff like this.  */
 #ifdef NEED_SYSDEP_APP
+/*
+ * Prepare the application we negotiate SAs for (i.e. the IPsec stack)
+ * for communication.  We return a file descriptor useable to select(2) on.
+ */
 int
 sysdep_app_open ()
 {
-  return klips_open ();
+  return KEY_API(open) ();
 }
 
+/*
+ * When select(2) has noticed our application needs attendance, this is what
+ * gets called.  FD is the file descriptor causing the alarm.
+ */
 void
 sysdep_app_handler (int fd)
 {
+  KEY_API (handler) (fd);
 }
 
 /* Check that the connection named NAME is active, or else make it active.  */
 void
 sysdep_connection_check (char *name)
 {
-  klips_connection_check (name);
+  KEY_API (connection_check) (name);
 }
 
 /*
@@ -143,39 +129,70 @@ sysdep_ipsec_get_spi (size_t *sz, u_int8_t proto, struct sockaddr *src,
       /* XXX should be random instead I think.  */
       return strdup ("\x12\x34\x56\x78");
     }
-
-  return klips_get_spi (sz, proto, src, dst, seq);
+  return KEY_API (get_spi) (sz, proto, src, dst, seq);
 }
 
+/* Force communication on socket FD to go in the clear.  */
 int
 sysdep_cleartext (int fd, int af)
 {
+  if (app_none)
+    return 0;
+
+  if (!(af == AF_INET || af == AF_INET6)) 
+    {
+      log_print ("sysdep_cleartext: unsupported protocol family %d", af);
+      return -1;
+    }
+
+  if (setsockopt(fd, af == AF_INET ? IPPROTO_IP : IPPROTO_IPV6,
+		 af == AF_INET ? IP_IPSEC_POLICY : IPV6_IPSEC_POLICY,
+		 "\x2\x0\x12\x0\x4\x0\x1\x0"
+		 "\x0\x0\x0\x0\x0\x0\x0\x0", 16) < 0 ||
+      setsockopt(fd, af == AF_INET ? IPPROTO_IP : IPPROTO_IPV6,
+      		 af == AF_INET ? IP_IPSEC_POLICY : IPV6_IPSEC_POLICY,
+		 "\x2\x0\x12\x0\x4\x0\x2\x0"
+		 "\x0\x0\x0\x0\00\x0\x0\x0", 16) < 0)
+    {
+      log_error ("sysdep_cleartext: "
+		 "setsockopt (%d, IPPROTO_IP, IP_IPSEC_POLICY, ...) "
+		 "failed", fd);
+       return -1;
+    } 
   return 0;
 }
 
 int
 sysdep_ipsec_delete_spi (struct sa *sa, struct proto *proto, int incoming)
 {
-  return klips_delete_spi (sa, proto, incoming);
+  if (app_none)
+    return 0;
+  return KEY_API (delete_spi) (sa, proto, incoming);
 }
 
 int
 sysdep_ipsec_enable_sa (struct sa *sa, struct sa *isakmp_sa)
 {
-  return klips_enable_sa (sa, isakmp_sa);
+  if (app_none)
+    return 0;
+  return KEY_API (enable_sa) (sa, isakmp_sa);
 }
 
 int
 sysdep_ipsec_group_spis (struct sa *sa, struct proto *proto1,
 			 struct proto *proto2, int incoming)
 {
-  return klips_group_spis (sa, proto1, proto2, incoming);
+  if (app_none)
+    return 0;
+  return KEY_API (group_spis) (sa, proto1, proto2, incoming);
 }
 
 int
 sysdep_ipsec_set_spi (struct sa *sa, struct proto *proto, int incoming,
 		      struct sa *isakmp_sa)
 {
-  return klips_set_spi (sa, proto, incoming, isakmp_sa);
+  if (app_none)
+    return 0;
+  return KEY_API (set_spi) (sa, proto, incoming, isakmp_sa);
 }
 #endif

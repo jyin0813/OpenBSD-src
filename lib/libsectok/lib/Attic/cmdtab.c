@@ -1,4 +1,4 @@
-static char *rcsid = "$Id: $";
+static char *rcsid = "$Id: cmdtab.c,v 1.1 2001/05/22 15:35:58 rees Exp $";
 
 #ifdef __palmos__
 #include <Common.h>

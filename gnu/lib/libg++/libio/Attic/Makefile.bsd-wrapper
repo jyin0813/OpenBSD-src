@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.bsd-wrapper,v 1.6 1998/03/08 21:09:24 millert Exp $
+#	$OpenBSD: Makefile.bsd-wrapper,v 1.7 1998/03/19 17:13:20 niklas Exp $
 
 LIBIO=		io
 LIBIOSTREAM=	iostream

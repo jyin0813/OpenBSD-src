@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)glue.h	5.1 (Berkeley) 1/20/91
- *	$Id: glue.h,v 1.1 1994/02/07 22:06:16 proven Exp $
+ *	$Id: glue.h,v 1.1 1995/10/18 08:43:07 deraadt Exp $
  */
 
 /*

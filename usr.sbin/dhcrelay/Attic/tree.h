@@ -1,4 +1,4 @@
-/*	$OpenBSD: tree.h,v 1.4 2004/02/23 20:09:02 deraadt Exp $	*/
+/*	$OpenBSD: tree.h,v 1.1 2004/04/12 21:10:28 henning Exp $	*/
 
 /* Definitions for address trees... */
 

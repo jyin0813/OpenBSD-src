@@ -44,7 +44,7 @@
 #endif
 #include <errno.h>
 
-RCSID("$Id: mkstemp.c,v 1.2 2000/08/16 01:23:41 lha Exp $");
+RCSID("$Id: mkstemp.c,v 1.2 2000/09/11 14:41:02 art Exp $");
 
 #ifndef HAVE_MKSTEMP
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: x86_64_get_ioperm.c,v 1.4 1998/02/03 04:42:20 tholo Exp $	*/
+/*	$OpenBSD: x86_64_get_ioperm.c,v 1.1 2004/02/26 00:10:54 deraadt Exp $	*/
 /*	$NetBSD: x86_64_get_ioperm.c,v 1.2 1996/02/27 22:57:22 jtc Exp $	*/
 
 /*-

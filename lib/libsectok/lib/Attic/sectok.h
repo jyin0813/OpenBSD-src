@@ -1,5 +1,5 @@
 /*
- * $Id: $
+ * $Id: sectok.h,v 1.1 2001/05/22 15:35:58 rees Exp $
  */
 
 /* SCPERF - performance evaluation */

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: vos_createvolume.c,v 1.1 1999/04/30 01:59:05 art Exp $	*/
 /*
  * Copyright (c) 1999 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).

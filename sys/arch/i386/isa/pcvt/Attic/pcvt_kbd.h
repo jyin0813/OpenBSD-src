@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcvt_kbd.h,v 1.6 2000/10/11 21:24:28 aaron Exp $	*/
+/*	$OpenBSD: pcvt_kbd.h,v 1.7 2000/12/10 18:34:26 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch.

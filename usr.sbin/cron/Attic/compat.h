@@ -16,7 +16,7 @@
  */
 
 /*
- * $Id: compat.h,v 1.1.1.3 1994/01/20 02:47:05 jtc Exp $
+ * $Id: compat.h,v 1.1 1995/10/18 08:47:30 deraadt Exp $
  */
 
 #ifndef __P

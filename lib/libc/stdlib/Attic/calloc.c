@@ -48,6 +48,6 @@ calloc(num, size)
 	size *= num;
 	p = malloc(size);
 	if (p)
-		memset(p, '\0', size);
+		memset(p, 0, size);
 	return(p);
 }

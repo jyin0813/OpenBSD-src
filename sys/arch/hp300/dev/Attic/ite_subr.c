@@ -1,4 +1,4 @@
-/*	$OpenBSD: ite_subr.c,v 1.4 1997/04/16 11:56:11 downsj Exp $	*/
+/*	$OpenBSD: ite_subr.c,v 1.5 2003/06/02 23:27:45 millert Exp $	*/
 /*	$NetBSD: ite_subr.c,v 1.8 1997/03/31 07:37:26 scottr Exp $	*/
 
 /*

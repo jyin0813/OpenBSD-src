@@ -1,4 +1,4 @@
-/*	$Id: filesystem.c,v 1.2 1995/11/07 08:50:37 deraadt Exp $ */
+/*	$Id: filesystem.c,v 1.1 1997/03/03 19:31:02 rahnds Exp $ */
 
 /*
  * Copyright (c) 1993 Philip A. Nelson.

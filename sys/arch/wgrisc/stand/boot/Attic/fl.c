@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: fl.c,v 1.2 2001/01/25 03:50:49 todd Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

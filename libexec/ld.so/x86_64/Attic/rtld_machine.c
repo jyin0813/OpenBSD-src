@@ -1,4 +1,4 @@
-/*	$OpenBSD: rtld_machine.c,v 1.4 2004/02/10 16:14:11 drahn Exp $ */
+/*	$OpenBSD: rtld_machine.c,v 1.5 2004/02/23 20:52:04 deraadt Exp $ */
 
 /*
  * Copyright (c) 2002,2004 Dale Rahn

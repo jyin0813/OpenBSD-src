@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: scheme.h,v 1.1 1997/05/22 17:19:20 provos Exp $ */
+/* $Id: scheme.h,v 1.1 1997/07/18 22:48:50 provos Exp $ */
 /*
  * scheme.h: 
  * security paramter index creation.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fwscsi.c,v 1.14 2004/01/14 02:00:41 krw Exp $	*/
+/*	$OpenBSD: fwscsi.c,v 1.15 2004/04/19 05:48:53 brad Exp $	*/
 
 /*
  * Copyright (c) 2002 Thierry Deval.  All rights reserved.

@@ -1,7 +1,7 @@
 /* ==== machdep.h ============================================================
  * Copyright (c) 1993 Chris Provenzano, proven@athena.mit.edu
  *
- * $Id: engine-i386-netbsd-1.3.h,v 1.1 1998/02/28 04:53:15 cjs Exp $
+ * $Id: engine-i386-netbsd-1.3.h,v 1.1 1998/07/21 13:19:19 peter Exp $
  *
  */
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: name.c,v 1.1.1.1 1997/09/15 06:01:53 downsj Exp $	*/
+/*	$OpenBSD: name.c,v 1.2 1998/04/05 00:39:39 deraadt Exp $	*/
 /*
  * File name.c - map full Unix file names to unique 8.3 names that
  * would be valid on DOS.

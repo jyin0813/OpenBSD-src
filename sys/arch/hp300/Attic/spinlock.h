@@ -1,3 +1,3 @@
-/*	$OpenBSD: trap.h,v 1.2 1997/01/12 15:13:44 downsj Exp $	*/
+/*	$OpenBSD: spinlock.h,v 1.1 1999/01/21 02:52:37 millert Exp $	*/
 
 #include <m68k/spinlock.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: get_krbrlm.c,v 1.14 1998/02/25 15:51:10 art Exp $	*/
+/*	$OpenBSD: get_krbrlm.c,v 1.15 1998/05/18 00:53:41 art Exp $	*/
 /*	$KTH: get_krbrlm.c,v 1.20 1998/03/18 13:46:51 bg Exp $		*/
 
 /*

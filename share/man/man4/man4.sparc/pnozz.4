@@ -1,4 +1,4 @@
-.\"     $OpenBSD: pnozz.4,v 1.5 2002/02/20 17:18:33 jason Exp $
+.\"     $OpenBSD: pnozz.4,v 1.6 2002/06/30 21:45:25 deraadt Exp $
 .\"
 .\" Copyright (c) 1999 Jason L. Wright (jason@thought.net)
 .\" All rights reserved.
@@ -37,10 +37,13 @@
 .Nd Tadpole Weitek p9100 frame buffer
 .Sh SYNOPSIS
 .Cd "pnozz0 at sbus0 slot ? offset ?"
+.Cd "wsdisplay* at pnozz?"
 .Sh DESCRIPTION
 The
 .Nm
-is a memory based color frame buffer found on
+is a memory based color frame buffer for the
+.Xr wscons 4
+console framework, and found on
 .Tn "Tadpole SPARCbook 3GS and 3GX"
 laptops.
 It is based on the
@@ -48,16 +51,10 @@ It is based on the
 and an
 .Tn "IBM RGB528"
 RAMDAC.
-.Pp
-The
-.Nm pnozz
-is configured to emulate a
-.Xr cgthree 4
-with a resolution of 800x600 with 256 colors.
-It supports the minimal
-.Xr ioctl 2 Ns s
-needed to run
-.Xr X 7 .
+It does not provide direct device driver entry points
+but makes its functions available via the internal
+.Xr wsdisplay 4
+interface.
 .Pp
 If the
 .Xr tctrl 4
@@ -72,10 +69,13 @@ is closed or the screen is blanked.
 .Xr cgfourteen 4 ,
 .Xr cgsix 4 ,
 .Xr cgthree 4 ,
+.Xr cgtwelve 4 ,
 .Xr cgtwo 4 ,
 .Xr sbus 4 ,
 .Xr tctrl 4 ,
-.Xr tcx 4
+.Xr tcx 4 ,
+.Xr wscons 4 ,
+.Xr wsdisplay 4
 .Sh BUGS
 There is currently no way to switch back and forth from
 the onboard display to the external connector.

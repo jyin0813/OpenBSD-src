@@ -1,4 +1,4 @@
-/*	$OpenBSD: fileio.c,v 1.2 1996/09/21 06:22:58 downsj Exp $	*/
+/*	$OpenBSD: fileio.c,v 1.3 1996/10/14 03:55:11 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  *
  * VIM - Vi IMproved		by Bram Moolenaar

@@ -29,7 +29,7 @@ Report problems and direct all questions to:
 #include "partime.h"
 #include "maketime.h"
 
-libId(rcstimeId, "$Id: rcstime.c,v 1.1 1995/02/24 02:25:15 mycroft Exp $")
+libId(rcstimeId, "$Id: rcstime.c,v 1.1 1995/10/18 08:41:02 deraadt Exp millert $")
 
 #if has_printf_dot
 	char const dateform[] = "%.2d.%.2d.%.2d.%.2d.%.2d.%.2d";

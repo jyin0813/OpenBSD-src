@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: upgrade.sh,v 1.3 1996/06/29 05:54:25 tholo Exp $
+#	$OpenBSD: upgrade.sh,v 1.4 1997/05/11 22:47:34 grr Exp $
 #
 # Copyright (c) 1994 Christopher G. Demetriou
 # All rights reserved.

@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with GNU Tar; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: tar.h,v 1.5 1993/08/07 07:42:55 cgd Exp $
+	$Id: tar.h,v 1.1 1995/10/18 08:41:10 deraadt Exp tholo $
 */
 
 /* major() and minor() macros (among other things) defined here for hpux */

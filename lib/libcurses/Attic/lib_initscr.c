@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_initscr.c,v 1.5 1998/09/13 19:16:27 millert Exp $	*/
+/*	$OpenBSD: lib_initscr.c,v 1.6 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

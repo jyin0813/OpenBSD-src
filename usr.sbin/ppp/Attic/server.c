@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: server.c,v 1.6 1998/01/21 02:13:40 brian Exp $
+ *	$Id: server.c,v 1.7 1998/02/18 20:33:30 brian Exp $
  */
 
 #include <sys/param.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kentry.c,v 1.1 1997/07/18 01:09:53 mickey Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

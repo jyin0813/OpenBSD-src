@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfvar.h,v 1.8 2002/03/14 03:15:52 millert Exp $	*/
+/*	$OpenBSD: grfvar.h,v 1.9 2003/06/02 23:27:44 millert Exp $	*/
 /*	$NetBSD: grfvar.h,v 1.10 1997/03/31 07:34:19 scottr Exp $	*/
 
 /*

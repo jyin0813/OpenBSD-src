@@ -1,4 +1,4 @@
-/*	$OpenBSD: main.c,v 1.8 1997/09/01 18:30:09 deraadt Exp $	*/
+/*	$OpenBSD: main.c,v 1.9 1997/09/12 00:32:53 deraadt Exp $	*/
 
 /*
  * startup, main loop, enviroments and error handling

@@ -1,4 +1,4 @@
-/*	$OpenBSD: powerpc.h,v 1.4 2003/06/03 02:56:08 millert Exp $	*/
+/*	$OpenBSD: x86_64.h,v 1.1 2004/01/28 01:54:29 mickey Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD: parser.c,v 1.6 2002/02/15 03:31:15 deraadt Exp $	*/
+/*	$OpenBSD: parser.c,v 1.7 2002/02/20 10:52:23 kjc Exp $	*/
 /*	$KAME: parser.c,v 1.13 2002/02/12 10:14:01 kjc Exp $	*/
 /*
  * Copyright (C) 1999-2002

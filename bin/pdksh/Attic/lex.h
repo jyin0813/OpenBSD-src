@@ -1,4 +1,4 @@
-/*	$OpenBSD: lex.h,v 1.2 1996/10/01 02:05:43 downsj Exp $	*/
+/*	$OpenBSD: lex.h,v 1.3 1996/10/13 21:32:20 downsj Exp $	*/
 
 /*
  * Source input, lexer and parser

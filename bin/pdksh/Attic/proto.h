@@ -1,4 +1,4 @@
-/*	$OpenBSD: proto.h,v 1.2 1996/08/19 20:08:57 downsj Exp $	*/
+/*	$OpenBSD: proto.h,v 1.3 1996/11/21 07:59:34 downsj Exp $	*/
 
 /*
  * prototypes for PD-KSH

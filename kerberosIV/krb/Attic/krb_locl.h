@@ -1,4 +1,4 @@
-/*	$OpenBSD: krb_locl.h,v 1.6 1998/05/18 00:53:49 art Exp $	*/
+/*	$OpenBSD: krb_locl.h,v 1.7 1998/11/28 23:41:02 art Exp $	*/
 /*	$KTH: krb_locl.h,v 1.48 1998/04/04 17:56:49 assar Exp $		*/
 
 /*

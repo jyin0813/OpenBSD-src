@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipfs.c,v 1.2 2001/01/17 07:26:58 fgsch Exp $	*/
+/*	$OpenBSD: ipfs.c,v 1.3 2001/01/30 04:29:08 kjell Exp $	*/
 
 /*
  * Copyright (C) 1999 by Darren Reed.

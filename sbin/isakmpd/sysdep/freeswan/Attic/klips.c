@@ -1,4 +1,4 @@
-/*	$OpenBSD: klips.c,v 1.2 2003/06/03 14:53:11 ho Exp $	*/
+/*	$OpenBSD: klips.c,v 1.3 2003/09/26 15:59:34 aaron Exp $	*/
 
 /*
  * Copyright (c) 1999 Niklas Hallqvist.  All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: infcodes.c,v 1.6 2002/03/12 00:26:30 millert Exp $	*/
+/*	$OpenBSD: infcodes.c,v 1.7 2003/12/16 03:26:54 deraadt Exp $	*/
 /* infcodes.c -- process literals and length/distance pairs
  * Copyright (C) 1995-2002 Mark Adler
  * For conditions of distribution and use, see copyright notice in zlib.h 

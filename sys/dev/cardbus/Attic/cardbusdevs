@@ -1,4 +1,4 @@
-$OpenBSD: cardbusdevs,v 1.16 2004/07/06 09:22:31 brad Exp $
+$OpenBSD: cardbusdevs,v 1.17 2004/09/17 23:37:26 brad Exp $
 /*	$NetBSD: cardbusdevs,v 1.7 1999/12/11 22:22:34 explorer Exp $	*/
 
 /*

@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD$	*/
+/*	$OpenBSD: commands.l,v 1.2 1997/03/12 10:42:46 downsj Exp $	*/
 
 /*
  * ++Copyright++ 1985

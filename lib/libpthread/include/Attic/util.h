@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: util.h,v 1.3 1994/02/07 22:02:38 proven Exp $ $provenid: util.h,v 1.15 1994/02/07 03:32:07 proven Exp $
+ * $Id: util.h,v 1.1 1995/10/18 08:43:04 deraadt Exp $ $provenid: util.h,v 1.15 1994/02/07 03:32:07 proven Exp $
  *
  * Description : Header file for generic utility functions.
  *

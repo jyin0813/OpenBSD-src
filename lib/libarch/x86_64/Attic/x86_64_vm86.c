@@ -1,4 +1,4 @@
-/*	$OpenBSD: i386_vm86.c,v 1.3 1998/02/03 04:42:23 tholo Exp $	*/
+/*	$OpenBSD: x86_64_vm86.c,v 1.1 2004/02/26 00:10:54 deraadt Exp $	*/
 /*	$NetBSD: i386_vm86.c,v 1.1 1996/02/21 00:21:56 jtk Exp $	*/
 
 /*-

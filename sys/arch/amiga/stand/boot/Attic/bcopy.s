@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: bcopy.s,v 1.1 1997/01/16 09:26:29 niklas Exp $	*/
 
 /*
  * Copyright (c) 1996 Ignatios Souvatzis

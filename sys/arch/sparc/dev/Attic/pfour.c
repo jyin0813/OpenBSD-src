@@ -1,4 +1,4 @@
-/*	$OpenBSD: pfour.c,v 1.7 2001/11/06 19:53:16 miod Exp $ */
+/*	$OpenBSD: pfour.c,v 1.8 2002/03/14 01:26:43 millert Exp $ */
 
 /*
  * Copyright (c) 1995 Theo de Raadt

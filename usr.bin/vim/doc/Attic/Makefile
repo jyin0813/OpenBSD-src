@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 1996/09/07 21:40:32 downsj Exp $
 
 DOCS = vim_ami.txt vim_arch.txt vim_diff.txt vim_digr.txt vim_dos.txt \
 	vim_help.txt vim_idx.txt vim_mac.txt vim_w32.txt vim_ref.txt \

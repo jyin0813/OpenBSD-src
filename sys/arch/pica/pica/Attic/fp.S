@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)fp.s	8.1 (Berkeley) 6/10/93
- *      $Id: fp.S,v 1.1.1.1 1995/10/18 10:39:18 deraadt Exp $
+ *      $Id: fp.S,v 1.2 1996/06/06 23:07:32 deraadt Exp pefo $
  */
 
 /*

@@ -1,4 +1,4 @@
-/* $OpenBSD: sign.c,v 1.4 2003/04/25 09:08:18 henning Exp $ */
+/* $OpenBSD: sign.c,v 1.5 2003/06/04 04:29:03 deraadt Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

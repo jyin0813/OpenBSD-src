@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-#	$OpenBSD$
+#	$OpenBSD: mkcaps.sh,v 1.1 1996/05/31 05:40:02 tholo Exp $
 #
 # Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
 # All rights reserved.

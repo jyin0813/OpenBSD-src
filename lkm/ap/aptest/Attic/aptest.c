@@ -1,4 +1,4 @@
-/*	$OpenBSD: aptest.c,v 1.1 1996/03/05 11:25:46 mickey Exp $	*/
+/*	$OpenBSD: aptest.c,v 1.2 1996/12/21 22:23:39 millert Exp $	*/
 /* 
  * Copyright 1994  	Doug Anson, danson@lgc.com & David Holland, davidh@use.com
  *

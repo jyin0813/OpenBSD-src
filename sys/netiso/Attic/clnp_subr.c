@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp_subr.c,v 1.5 2003/06/02 23:28:17 millert Exp $	*/
+/*	$OpenBSD: clnp_subr.c,v 1.6 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: clnp_subr.c,v 1.8 1996/04/13 01:34:35 cgd Exp $	*/
 
 /*-

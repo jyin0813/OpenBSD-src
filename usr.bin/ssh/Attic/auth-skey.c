@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2001 Markus Friedl. All rights reserved.
+ * Copyright (c) 2001 Markus Friedl.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -21,41 +21,77 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
 #include "includes.h"
-RCSID("$OpenBSD: auth-skey.c,v 1.10 2001/01/18 16:59:59 markus Exp $");
-
-#include "ssh.h"
-#include "auth.h"
+RCSID("$OpenBSD: auth2-chall.c,v 1.4 2001/03/28 22:43:31 markus Exp $");
 
 #ifdef SKEY
-char *
-get_challenge(Authctxt *authctxt, char *devs)
+
+#include <skey.h>
+
+#include "xmalloc.h"
+#include "auth.h"
+
+static void *
+skey_init_ctx(Authctxt *authctxt)
 {
-	static char challenge[1024];
-        struct skey skey;
+	return authctxt;
+}
+
+#define PROMPT "\nS/Key Password: "
+
+static int
+skey_query(void *ctx, char **name, char **infotxt, 
+    u_int* numprompts, char ***prompts, u_int **echo_on)
+{
+	Authctxt *authctxt = ctx;
+	char challenge[1024], *p;
+	int len;
+	struct skey skey;
+
 	if (skeychallenge(&skey, authctxt->user, challenge) == -1)
-		return NULL;
-	strlcat(challenge, "\nS/Key Password: ", sizeof challenge);
-	return challenge;
-}
-int
-verify_response(Authctxt *authctxt, char *response)
-{
-	return (authctxt->valid &&
-	    skey_haskey(authctxt->pw->pw_name) == 0 &&
-	    skey_passcheck(authctxt->pw->pw_name, response) != -1);
-}
-#else
-/* not available */
-char *
-get_challenge(Authctxt *authctxt, char *devs)
-{
-	return NULL;
-}
-int
-verify_response(Authctxt *authctxt, char *response)
-{
+		return -1;
+
+	*name       = xstrdup("");
+	*infotxt    = xstrdup("");
+	*numprompts = 1;
+	*prompts = xmalloc(*numprompts * sizeof(char*));
+	*echo_on = xmalloc(*numprompts * sizeof(u_int));
+	(*echo_on)[0] = 0;
+
+	len = strlen(challenge) + strlen(PROMPT) + 1;
+	p = xmalloc(len);
+	p[0] = '\0';
+	strlcat(p, challenge, len);
+	strlcat(p, PROMPT, len);
+	(*prompts)[0] = p;
+
 	return 0;
 }
-#endif
+
+static int
+skey_respond(void *ctx, u_int numresponses, char **responses)
+{
+	Authctxt *authctxt = ctx;
+ 
+	if (authctxt->valid &&
+	    numresponses == 1 && 
+	    skey_haskey(authctxt->pw->pw_name) == 0 &&
+	    skey_passcheck(authctxt->pw->pw_name, responses[0]) != -1)
+	    return 0;
+	return -1;
+}
+
+static void
+skey_free_ctx(void *ctx)
+{
+	/* we don't have a special context */
+}
+
+KbdintDevice skey_device = {
+	"skey",
+	skey_init_ctx,
+	skey_query,
+	skey_respond,
+	skey_free_ctx
+};
+#endif /* SKEY */

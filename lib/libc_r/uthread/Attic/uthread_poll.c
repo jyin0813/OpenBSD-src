@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_poll.c,v 1.6 2001/08/21 19:24:53 fgsch Exp $	*/
+/*	$OpenBSD: uthread_poll.c,v 1.7 2002/01/10 00:38:39 fgsch Exp $	*/
 /*
  * Copyright (c) 1999 Daniel Eischen <eischen@vigrid.com>
  * All rights reserved.

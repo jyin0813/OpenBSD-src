@@ -1,4 +1,4 @@
-/*	$OpenBSD: twiddle.c,v 1.1 1997/01/16 09:26:44 niklas Exp $	*/
+/*	$OpenBSD: twiddle.c,v 1.2 1997/02/21 10:21:49 niklas Exp $	*/
 /*	$NetBSD: twiddle.c,v 1.1.1.1 1996/11/29 23:36:29 is Exp $	*/
 
 /*-

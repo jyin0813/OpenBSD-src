@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_find_thread.c,v 1.4 1999/11/25 07:01:35 d Exp $	*/
+/*	$OpenBSD: uthread_find_thread.c,v 1.5 2001/12/11 00:19:47 fgsch Exp $	*/
 /*
  * Copyright (c) 1998 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

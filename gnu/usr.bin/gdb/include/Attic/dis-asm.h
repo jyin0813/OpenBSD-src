@@ -6,7 +6,7 @@
    interface, for making instruction-processing programs more independent
    of the instruction set being processed.
 
-	$Id: dis-asm.h,v 1.1 1994/01/28 12:42:23 pk Exp $
+	$Id: dis-asm.h,v 1.1 1995/10/18 08:40:09 deraadt Exp $
 */
 
 #include <stdio.h>

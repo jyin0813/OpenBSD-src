@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kadm_server.c,v 1.2 1997/12/15 17:56:22 art Exp $	*/
 /* $KTH: kadm_server.c,v 1.9 1997/05/02 10:29:08 joda Exp $ */
 
 /* 

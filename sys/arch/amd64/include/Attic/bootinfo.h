@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: bootinfo.h,v 1.1 2004/01/28 01:39:39 mickey Exp $	*/
 /*	$NetBSD: bootinfo.h,v 1.2 2003/04/16 19:16:42 dsl Exp $	*/
 
 /*

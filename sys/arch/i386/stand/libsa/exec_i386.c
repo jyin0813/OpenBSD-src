@@ -1,5 +1,5 @@
 
-/* $OpenBSD: exec_i386.c,v 1.1 1997/03/31 03:12:13 weingart Exp $ */
+/* $OpenBSD: exec_i386.c,v 1.2 1997/03/31 05:52:25 weingart Exp $ */
 
 #include <sys/param.h>
 #include <sys/exec.h>

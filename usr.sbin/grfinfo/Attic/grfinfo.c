@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfinfo.c,v 1.5 2002/09/06 22:08:36 miod Exp $	*/
+/*	$OpenBSD: grfinfo.c,v 1.6 2002/09/06 22:12:18 deraadt Exp $	*/
 
 /* 
  * Copyright (c) 1987-1993, The University of Utah and

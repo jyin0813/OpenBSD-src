@@ -28,7 +28,7 @@
  */
 
 #ifndef LINT
-static char rcsid[] = "$Id: makedbm.c,v 1.6 1994/07/30 21:20:18 moj Exp $";
+static char rcsid[] = "$Id: makedbm.c,v 1.1 1995/10/23 07:46:14 deraadt Exp deraadt $";
 #endif
 
 #include <stdio.h>

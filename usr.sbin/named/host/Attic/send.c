@@ -1,4 +1,4 @@
-/*	$OpenBSD: send.c,v 1.3 2000/02/01 03:24:03 deraadt Exp $	*/
+/*	$OpenBSD: send.c,v 1.4 2002/09/06 22:00:03 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1985, 1989 Regents of the University of California.

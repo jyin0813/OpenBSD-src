@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_set_term.c,v 1.8 1998/10/31 06:30:30 millert Exp $	*/
+/*	$OpenBSD: lib_set_term.c,v 1.9 1998/11/17 03:16:21 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

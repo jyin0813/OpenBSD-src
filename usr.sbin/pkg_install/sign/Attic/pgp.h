@@ -1,4 +1,4 @@
-/* $OpenBSD: pgp.h,v 1.3 2002/02/16 21:28:07 millert Exp $ */
+/* $OpenBSD: pgp.h,v 1.4 2002/02/17 19:42:38 millert Exp $ */
 /* Estimate size of pgp signature */
 #define MAXPGPSIGNSIZE	1024
 

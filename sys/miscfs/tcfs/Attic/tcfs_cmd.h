@@ -1,4 +1,4 @@
-/*	$OpenBSD: mbuf.h,v 1.17 2000/06/12 17:24:26 itojun Exp $	*/
+/*	$OpenBSD: tcfs_cmd.h,v 1.2 2000/06/17 17:32:26 provos Exp $	*/
 /*
  * Copyright 2000 The TCFS Project at http://tcfs.dia.unisa.it/
  * All rights reserved.

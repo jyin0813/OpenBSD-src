@@ -1,7 +1,7 @@
 /*
  * Русский календарь
  *
- * $OpenBSD: calendar.all,v 1.1 1996/05/10 21:36:45 ache Exp $
+ * $OpenBSD: calendar.all,v 1.1 1996/12/05 06:04:58 millert Exp $
  */
 
 #ifndef _ru_SU_KOI8_R_all

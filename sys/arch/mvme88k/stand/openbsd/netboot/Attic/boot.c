@@ -1,4 +1,4 @@
-/*	$Id: boot.c,v 1.3 1995/11/07 08:50:57 deraadt Exp $ */
+/*	$Id: boot.c,v 1.1 1997/03/03 19:31:08 rahnds Exp $ */
 
 /*-
  * Copyright (c) 1995 Theo de Raadt

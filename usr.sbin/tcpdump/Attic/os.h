@@ -1,4 +1,4 @@
-/**//*	$OpenBSD: os.h,v 1.3 1996/05/20 00:41:06 fvdl Exp $	*/
+/**//*	$OpenBSD: os.h,v 1.3 1996/06/10 07:47:26 deraadt Exp mickey $	*/
 /*	$NetBSD: os.h,v 1.3 1996/05/20 00:41:06 fvdl Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: ctm_rmail.c,v 1.7 1999/07/13 23:02:06 deraadt Exp $ */
 /*
  * Accept one (or more) ASCII encoded chunks that together make a compressed
  * CTM delta.  Decode them and reconstruct the deltas.  Any completed

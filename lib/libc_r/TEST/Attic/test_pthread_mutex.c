@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_pthread_mutex.c,v 1.6 2000/01/06 06:58:34 d Exp $	*/
+/*	$OpenBSD: test_pthread_mutex.c,v 1.7 2001/03/13 00:04:38 d Exp $	*/
 /* ==== test_pthread_cond.c =========================================
  * Copyright (c) 1993 by Chris Provenzano, proven@athena.mit.edu
  *

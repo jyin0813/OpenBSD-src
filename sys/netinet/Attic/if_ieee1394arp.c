@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: if_ieee1394arp.c,v 1.1 2002/08/19 02:31:02 itojun Exp $	*/
 /*	$NetBSD: if_ieee1394arp.c,v 1.8 2002/06/09 16:33:37 itojun Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: month_sname.c,v 1.4 1997/12/22 15:02:10 art Exp $	*/
+/*	$OpenBSD: month_sname.c,v 1.5 1998/02/25 15:51:30 art Exp $	*/
 /* $KTH: month_sname.c,v 1.5 1997/03/23 03:53:14 joda Exp $ */
 
 /*

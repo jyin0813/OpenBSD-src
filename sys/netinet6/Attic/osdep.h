@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: osdep.h,v 1.3 1999/12/10 08:53:18 angelos Exp $ */
 /*
 %%% copyright-nrl-97
 This software is Copyright 1997-1998 by Randall Atkinson, Ronald Lee,

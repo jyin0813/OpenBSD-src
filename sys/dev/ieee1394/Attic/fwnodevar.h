@@ -1,4 +1,4 @@
-/*	$OpenBSD: fwnodevar.h,v 1.1 2002/06/25 17:11:49 itojun Exp $	*/
+/*	$OpenBSD: fwnodevar.h,v 1.2 2002/12/13 02:52:04 tdeval Exp $	*/
 /*	$NetBSD: fwnodevar.h,v 1.4 2002/02/27 05:02:25 jmc Exp $	*/
 
 /*

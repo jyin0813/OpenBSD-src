@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: dump.c,v 1.1 1997/09/15 06:01:53 downsj Exp $	*/
 /*
  * File dump.c - dump a file/device both in hex and in ASCII.
 

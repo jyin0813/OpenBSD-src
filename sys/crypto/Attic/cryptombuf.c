@@ -1,4 +1,4 @@
-/*      $OpenBSD: cryptombuf.c,v 1.4 2001/08/12 20:06:08 mickey Exp $	*/
+/*      $OpenBSD: cryptombuf.c,v 1.5 2001/11/06 19:53:18 miod Exp $	*/
 
 /*
  * Copyright (c) 1999 Theo de Raadt

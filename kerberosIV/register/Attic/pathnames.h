@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: pathnames.h,v 1.1 1995/12/14 06:52:33 tholo Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993

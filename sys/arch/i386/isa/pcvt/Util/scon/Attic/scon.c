@@ -1,4 +1,4 @@
-/*	$OpenBSD: scon.c,v 1.18 2000/01/16 12:39:55 maja Exp $	*/
+/*	$OpenBSD: scon.c,v 1.19 2000/12/07 18:19:12 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch

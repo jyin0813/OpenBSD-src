@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: protos.h,v 1.2 2001/07/04 08:44:58 niklas Exp $	*/
 
 /* START: "getdevices.c" */
 struct List * get_drive_list  (void);

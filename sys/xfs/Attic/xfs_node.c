@@ -1,4 +1,4 @@
-/*	$OpenBSD: xfs_node.c,v 1.2 1998/08/31 05:13:16 art Exp $	*/
+/*	$OpenBSD: xfs_node.c,v 1.3 1998/09/06 01:48:58 art Exp $	*/
 /*
  * Copyright (c) 1995, 1996, 1997, 1998 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).

@@ -1,4 +1,4 @@
-/*      $OpenBSD: pte.h,v 1.2 1996/05/02 07:59:40 pefo Exp $	*/
+/*      $OpenBSD: pte.h,v 1.3 1996/06/06 23:07:04 deraadt Exp pefo $	*/
 
 /*
  * Copyright (c) 1988 University of Utah.

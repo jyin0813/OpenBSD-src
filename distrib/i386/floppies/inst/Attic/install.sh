@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: install.sh,v 1.19 1997/09/26 02:37:15 millert Exp $
+#	$OpenBSD: install.sh,v 1.20 1998/11/03 04:17:20 aaron Exp $
 #
 # Copyright (c) 1994 Christopher G. Demetriou
 # All rights reserved.

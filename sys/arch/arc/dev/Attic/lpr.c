@@ -1,4 +1,4 @@
-/*	$OpenBSD: lpr.c,v 1.2 1996/09/14 15:58:21 pefo Exp $ */
+/*	$OpenBSD: lpr.c,v 1.3 1996/11/12 20:29:54 niklas Exp $ */
 
 /*
  * Copyright (c) 1993, 1994 Charles Hannum.

@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.12 1995/10/22 23:02:10 christos Exp $
+#	$Id: Makefile,v 1.2 1995/12/14 03:42:30 deraadt Exp niklas $
 
 LIB=	gcc
 NOPROFILE=

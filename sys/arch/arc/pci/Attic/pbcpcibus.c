@@ -1,4 +1,4 @@
-/*	$OpenBSD: pbcpcibus.c,v 1.6 1998/03/16 09:38:48 pefo Exp $ */
+/*	$OpenBSD: pbcpcibus.c,v 1.7 1998/03/25 11:52:48 pefo Exp $ */
 
 /*
  * Copyright (c) 1997, 1998 Per Fogelstrom, Opsycon AB

@@ -1,4 +1,4 @@
-/*	$OpenBSD: bussw.c,v 1.1 2001/12/13 08:59:38 smurph Exp $ */
+/*	$OpenBSD: busswitch.c,v 1.6 2001/12/16 23:49:46 miod Exp $ */
 
 /*
  * Copyright (c) 1999 Steve Murphree, Jr.
@@ -49,10 +49,10 @@
 #include <mvme88k/dev/busswfunc.h>
 
 struct bussw_softc {
-	struct device   sc_dev;
-	void            *sc_paddr;
-	void            *sc_vaddr;
-	int             sc_len;
+	struct device		sc_dev;
+	void *		sc_paddr;
+	void *		sc_vaddr;
+	int		sc_len;
 	struct intrhand sc_abih;	/* `abort' switch */
 	struct bussw_reg        *sc_bussw;
 };
@@ -63,7 +63,7 @@ int     bussw_match __P((struct device *, void *, void *));
 struct cfattach bussw_ca = { 
 	sizeof(struct bussw_softc), bussw_match, bussw_attach
 }; 
-
+ 
 struct cfdriver bussw_cd = {
 	NULL, "bussw", DV_DULL, 0
 };
@@ -74,27 +74,26 @@ int busswabort __P((void *));
 
 int
 bussw_match(parent, vcf, args)
-struct device *parent;
-void *vcf, *args;
+	struct device *parent;
+	void *vcf, *args;
 {
 	struct confargs *ca = args;
 	struct bussw_reg *bussw;
-	/* Don't match if wrong cpu */
-	if (brdtyp != BRD_197) 
-		return (0);  /* The only one... */
-
+   /* Don't match if wrong cpu */
+	if (cputyp != CPU_197) return (0);
+	
 	bussw = (struct bussw_reg *)(IIOV(ca->ca_paddr));
 	if (badvaddr((vm_offset_t)bussw, 4)) {
-		printf("==> busswitch: failed address check.\n");
-		return (0);
+	    printf("==> busswitch: failed address check.\n");
+	    return (0);
 	}
 	return (1);
 }
 
 void
 bussw_attach(parent, self, args)
-struct device *parent, *self;
-void *args;
+	struct device *parent, *self;
+	void *args;
 {
 	struct confargs *ca = args;
 	struct bussw_softc      *sc = (struct bussw_softc *)self;
@@ -104,9 +103,9 @@ void *args;
 	bs = sc->sc_bussw = (struct bussw_reg *)sc->sc_vaddr;
 	bs->bs_intr2 |= BS_VECBASE;
 	bs->bs_gcsr |= BS_GCSR_XIPL;
-	/* 
+	/*
 	 * pseudo driver, abort interrupt handler
-	 */
+   */
 	sc->sc_abih.ih_fn = busswabort;
 	sc->sc_abih.ih_arg = 0;
 	sc->sc_abih.ih_wantframe = 1;
@@ -120,8 +119,8 @@ void *args;
 
 int
 bussw_print(args, bus)
-void *args;
-const char *bus;
+	void *args;
+	const char *bus;
 {
 	struct confargs *ca = args;
 
@@ -134,8 +133,8 @@ const char *bus;
 
 int
 bussw_scan(parent, child, args)
-struct device *parent;
-void *child, *args;
+	struct device *parent;
+	void *child, *args;
 {
 	struct cfdata *cf = child;
 	struct bussw_softc *sc = (struct bussw_softc *)parent;

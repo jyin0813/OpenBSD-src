@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbdmap.h,v 1.3 1997/01/12 15:12:53 downsj Exp $	*/
+/*	$OpenBSD: kbdmap.h,v 1.4 2003/06/02 23:27:45 millert Exp $	*/
 /*	$NetBSD: kbdmap.h,v 1.7 1996/10/05 05:22:11 thorpej Exp $	*/
 
 /*

@@ -36,7 +36,7 @@
  */
 
 	.text
-    .ascii "$Id: syscall-r2000-ultrix-4.2.S,v 1.51 1994/10/25 22:47:04 proven Exp $";
+    .ascii "$Id: syscall-r2000-ultrix-4.2.S,v 1.1 1998/07/21 13:19:17 peter Exp $";
 
 #include <syscall.h>
 #include <machine/regdef.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: apci.c,v 1.1 1997/07/13 07:21:44 downsj Exp $	*/
 /*	$NetBSD: apci.c,v 1.1 1997/05/12 07:41:55 thorpej Exp $	*/
 
 /*

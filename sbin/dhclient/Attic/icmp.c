@@ -1,4 +1,4 @@
-/*	$OpenBSD: icmp.c,v 1.4 2004/02/07 13:26:35 henning Exp $	*/
+/*	$OpenBSD: icmp.c,v 1.5 2004/02/07 13:59:45 henning Exp $	*/
 
 /*
  * ICMP Protocol engine - for sending out pings and receiving responses.

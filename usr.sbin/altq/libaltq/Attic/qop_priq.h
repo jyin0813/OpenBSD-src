@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: qop_priq.h,v 1.1 2001/06/27 18:23:34 kjc Exp $	*/
 /*	$KAME: qop_priq.h,v 1.1 2000/10/18 09:15:19 kjc Exp $	*/
 /*
  * Copyright (C) 2000

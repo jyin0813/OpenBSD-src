@@ -1,5 +1,5 @@
 # This is the Makefile for the libuucp subdirectory of Taylor UUCP
-# $Id: Makefile,v 1.4 1993/10/28 05:00:23 cgd Exp $
+# $Id: Makefile,v 1.1 1995/10/18 08:38:38 deraadt Exp $
 
 LIB=		uucp
 SRCS=		buffer.c crc.c debug.c escape.c getopt.c getop1.c parse.c \

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.1.2.2 2003/10/11 19:11:38 drahn Exp $
+#	$OpenBSD: Makefile.inc,v 1.1 2003/10/31 03:56:54 drahn Exp $
 #	etc.macppc/Makefile.inc -- macppc-specific etc Makefile targets
 
 .ifdef DESTDIR

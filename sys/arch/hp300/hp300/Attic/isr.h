@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: isr.h,v 1.3 1997/01/12 15:13:18 downsj Exp $	*/
 /*	$NetBSD: isr.h,v 1.7 1996/12/09 03:04:47 thorpej Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: check_password.c,v 1.1 1998/05/15 06:22:17 art Exp $	*/
 /*	$KTH: check_password.c,v 1.1 1998/01/16 23:10:18 joda Exp $	*/
 /*
  * Copyright (c) 1998 Kungliga Tekniska Högskolan

@@ -1,4 +1,4 @@
-/*	$OpenBSD: hardscroll.c,v 1.7 1998/07/23 21:18:18 millert Exp $	*/
+/*	$OpenBSD: hardscroll.c,v 1.8 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

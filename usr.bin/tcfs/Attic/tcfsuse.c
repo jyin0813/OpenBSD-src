@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tcfsuse.c,v 1.4 2000/06/20 08:01:21 fgsch Exp $	*/
 
 /*
  * Copyright 2000 Niels Provos <provos@citi.umich.edu>

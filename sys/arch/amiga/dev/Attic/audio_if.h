@@ -1,4 +1,4 @@
-/*	$OpenBSD: audio_if.h,v 1.21 1997/09/06 01:14:49 augustss Exp $	*/
+/*	$OpenBSD: audio_if.h,v 1.1 1997/10/07 11:04:59 niklas Exp $	*/
 /*	$NetBSD: audio_if.h,v 1.21 1997/09/06 01:14:49 augustss Exp $	*/
 
 /*

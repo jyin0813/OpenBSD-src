@@ -1,4 +1,4 @@
-/*	$OpenBSD: reg.h,v 1.2 1998/01/28 13:46:27 pefo Exp $ */
+/*	$OpenBSD: db_machdep.h,v 1.1 1998/03/16 09:38:44 pefo Exp $ */
 
 /* Use Mips generic include file */
 

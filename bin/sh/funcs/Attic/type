@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: type,v 1.1 1996/09/27 12:11:52 deraadt Exp $
 #
 #	.ashtype - This should be, but is not, a builtin in /bin/ash
 #

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: search.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* search.c */
 regexp *myregcomp __PARMS((char_u *pat, int sub_cmd, int which_pat, int options));
 void set_reg_ic __PARMS((char_u *pat));

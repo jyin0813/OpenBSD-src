@@ -1,17 +1,30 @@
-# $OpenBSD: Makefile,v 1.1 2001/05/25 08:18:54 hin Exp $
+# $OpenBSD: Makefile,v 1.10 2001/07/11 09:26:22 hin Exp $
 
-LIB=	kafs5
+LIB	= kafs
 
 KRBDEPTH=../..
-.include <${.CURDIR}/../../Makefile.inc>
+.include "../../Makefile.inc"
 
-INCLUDE_FILES=	${KRB5SRC}/lib/kafs/kafs.h
+INCLUDE_FILES	= ${KRB5SRC}/lib/kafs/kafs.h
 
-SRCS=	afssys.c afskrb.c afskrb5.c common.c $(AIX_SRC) kafs_locl.h afssysdefs.h
+CFLAGS += -I${KRB5SRC}/lib/kafs
 
-.PATH:	${KRB5SRC}/lib/kafs
+.PATH:	${KRB5SRC}/lib/kafs ${KRB5SRC}/man
 
-CFLAGS+=-I${KRB5SRC}/lib/krb5 -I${KRB5SRC}/lib/asn1 -I../asn1 -I../krb5 \
-	-I${KRB5SRC}/lib/hdb -I../hdb -I. ${LIBROKEN}
+SRCS=	afssys_openbsd.c \
+	afskrb.c \
+	afskrb5.c \
+	common.c \
+	kafs_locl.h \
+	afssysdefs.h
+
+MAN=	kafs.3
+MLINKS=	kafs.3 k_hasafs.3 \
+	kafs.3 k_pioctl.3 \
+	kafs.3 k_unlog.3 \
+	kafs.3 k_setpag.3 \
+	kafs.3 k_afs_cell_of_file.3 \
+	kafs.3 krb_afslog.3 \
+	kafs.3 krb_afslog_uid.3
 
 .include <bsd.lib.mk>

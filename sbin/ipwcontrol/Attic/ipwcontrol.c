@@ -1,4 +1,4 @@
-/*	$Id: ipwcontrol.c,v 1.6 2004/11/03 17:40:49 damien Exp $	*/
+/*	$Id: ipwcontrol.c,v 1.7 2004/11/18 21:02:32 damien Exp $	*/
 
 /*-
  * Copyright (c) 2004
@@ -28,7 +28,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: ipwcontrol.c,v 1.6 2004/11/03 17:40:49 damien Exp $";
+static char rcsid[] = "$Id: ipwcontrol.c,v 1.7 2004/11/18 21:02:32 damien Exp $";
 #endif /* not lint */
 
 #include <sys/types.h>

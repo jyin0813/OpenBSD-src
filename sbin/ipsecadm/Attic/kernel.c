@@ -1,4 +1,4 @@
-/* $OpenBSD: kernel.c,v 1.4 1998/08/01 06:23:48 angelos Exp $ */
+/* $OpenBSD: kernel.c,v 1.1 1998/11/14 23:37:20 deraadt Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

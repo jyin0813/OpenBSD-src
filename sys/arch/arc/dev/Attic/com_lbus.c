@@ -1,4 +1,4 @@
-/*	$OpenBSD: com_lbus.c,v 1.6 1998/03/01 16:19:13 niklas Exp $	*/
+/*	$OpenBSD: com_lbus.c,v 1.7 1998/03/16 09:38:41 pefo Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994 Charles Hannum.

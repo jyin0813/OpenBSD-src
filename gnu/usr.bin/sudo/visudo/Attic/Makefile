@@ -1,4 +1,4 @@
-#       $OpenBSD: Makefile,v 1.2 1998/09/15 02:42:45 millert Exp $
+#       $OpenBSD: Makefile,v 1.3 1999/03/29 20:29:08 millert Exp $
 
 PROG=	visudo
 MAN=	visudo.8

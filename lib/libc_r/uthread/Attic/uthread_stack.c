@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_stack.c,v 1.6 2000/02/26 13:34:51 d Exp $	*/
+/*	$OpenBSD: uthread_stack.c,v 1.7 2000/03/22 02:06:05 d Exp $	*/
 /*
  * Copyright 1999, David Leonard. All rights reserved.
  * <insert BSD-style license&disclaimer>

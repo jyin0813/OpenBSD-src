@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_rl2_pcmcia.c,v 1.5 1999/07/30 13:43:37 d dead $	*/
+/*	$OpenBSD: if_rl2_pcmcia.c,v 1.6 1999/08/08 01:17:23 niklas Exp $	*/
 /*
  * David Leonard <d@openbsd.org>, 1999. Public domain.
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: wdlink.h,v 1.9 1997/12/10 23:11:13 rees Exp $	*/
+/*	$OpenBSD: wdlink.h,v 1.10 1998/08/08 23:01:11 downsj Exp $	*/
 
 /*
  * Copyright (c) 1994, 1995 Charles M. Hannum.  All rights reserved.

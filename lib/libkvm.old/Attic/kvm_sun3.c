@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kvm_sun3.c,v 1.1 1996/03/19 23:15:42 niklas Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD: savecore.c,v 1.1 1996/03/21 00:16:43 niklas Exp $	*/
+/*	$OpenBSD: savecore.c,v 1.2 1996/04/17 22:02:23 dm Exp deraadt $	*/
 /*	$NetBSD: savecore.c,v 1.1.1.1 1996/03/16 10:25:11 leo Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/* $OpenBSD: font_normal.h,v 1.1 1996/01/31 23:20:16 mark Exp $ */
+/* $OpenBSD: font_normal.h,v 1.2 2000/03/03 00:54:48 todd Exp $ */
 /* $NetBSD: font_normal.h,v 1.1 1996/01/31 23:20:16 mark Exp $ */
 
 /*

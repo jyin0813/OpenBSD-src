@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pdcall.c,v 1.1 1998/09/12 02:53:25 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

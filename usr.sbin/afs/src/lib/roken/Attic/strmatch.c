@@ -42,7 +42,7 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-RCSID("$Id: strmatch.c,v 1.1 1999/12/28 09:55:59 assar Exp $");
+RCSID("$Id: strmatch.c,v 1.1 2000/09/11 14:41:04 art Exp $");
 #endif
 
 #include "roken.h"

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: packet.c,v 1.3 1996/04/26 18:23:07 mickey Exp $	*/
 /*	$NetBSD: packet.c,v 1.4 1996/02/02 18:06:21 mycroft Exp $	*/
 
 /*

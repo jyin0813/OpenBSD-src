@@ -1,4 +1,4 @@
-/*	$OpenBSD: bus.h,v 1.9 1997/01/10 23:41:25 pefo Exp $	*/
+/*	$OpenBSD: bus.h,v 1.3 1997/02/20 11:50:46 pefo Exp $	*/
 
 /*
  * Copyright (c) 1996 Niklas Hallqvist.  All rights reserved.

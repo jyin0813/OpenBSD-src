@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uuencode.h,v 1.2 2000/06/20 08:01:21 fgsch Exp $	*/
 
 #ifndef UUENCODE_H
 #define UUENCODE_H

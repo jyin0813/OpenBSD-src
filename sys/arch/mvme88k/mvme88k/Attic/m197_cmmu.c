@@ -1,4 +1,4 @@
-/*	$OpenBSD: m197_cmmu.c,v 1.11 2001/11/27 05:37:02 miod Exp $	*/
+/*	$OpenBSD: m197_cmmu.c,v 1.13 2001/12/16 23:49:46 miod Exp $	*/
 /*
  * Copyright (c) 1998 Steve Murphree, Jr.
  * Copyright (c) 1996 Nivas Madhur

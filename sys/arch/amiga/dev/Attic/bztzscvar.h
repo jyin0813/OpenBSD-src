@@ -1,4 +1,4 @@
-/*	$OpenBSD: bztzscvar.h,v 1.1 1996/12/16 16:17:30 is Exp $	*/
+/*	$OpenBSD: bztzscvar.h,v 1.1 1997/01/16 09:23:51 niklas Exp $	*/
 /*	$NetBSD: bztzscvar.h,v 1.1 1996/12/16 16:17:30 is Exp $	*/
 
 /*

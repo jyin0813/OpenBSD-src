@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2002/01/03 00:43:47 art Exp $
+# $OpenBSD: Makefile,v 1.1 2003/01/19 21:23:46 marc Exp $
 
 PROG=	cancel2
 

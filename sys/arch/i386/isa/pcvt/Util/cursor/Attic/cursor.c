@@ -1,4 +1,4 @@
-/*	$OpenBSD: cursor.c,v 1.6 1999/05/24 15:15:32 aaron Exp $	*/
+/*	$OpenBSD: cursor.c,v 1.7 2000/12/07 18:19:10 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis

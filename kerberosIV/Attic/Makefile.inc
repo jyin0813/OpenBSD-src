@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.6 1996/11/11 05:43:08 tholo Exp $
+#	$OpenBSD: Makefile.inc,v 1.7 1996/11/15 09:21:25 downsj Exp $
 
 CFLAGS+=-I${.CURDIR}/../include
 BINDIR?=/usr/sbin

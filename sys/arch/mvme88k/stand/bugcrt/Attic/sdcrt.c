@@ -1,4 +1,4 @@
-/*	$OpenBSD: sdcrt.c,v 1.1 1998/12/15 06:12:50 smurph Exp $ */
+/*	$OpenBSD: sdcrt.c,v 1.2 2001/01/13 05:19:01 smurph Exp $ */
 
 /* 
  * This is the startup file for the second stage bootstrap. (bootsd) 

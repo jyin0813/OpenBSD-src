@@ -38,7 +38,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: engine-i386-netbsd-1.3.c,v 1.1 1998/01/03 02:22:45 cjs Exp $";
+static const char rcsid[] = "$Id: engine-i386-netbsd-1.3.c,v 1.1 1998/07/21 13:19:19 peter Exp $";
 #endif
 
 #include <pthread.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: real_prot.S,v 1.4 1997/04/05 18:56:28 mickey Exp $	*/
+/*	$OpenBSD: real_prot.S,v 1.5 1997/04/09 08:39:42 mickey Exp $	*/
 
 /*
  * Mach Operating System

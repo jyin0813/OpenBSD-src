@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: vm_conf.h,v 1.1 1996/03/03 17:45:26 niklas Exp $	*/
 /*	$NetBSD: vm_conf.h,v 1.1 1996/02/05 01:53:53 christos Exp $	*/
 
 /*

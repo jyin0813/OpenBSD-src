@@ -37,7 +37,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)time.h	5.12 (Berkeley) 3/9/91
- *	$Id: time.h,v 1.3 1995/02/12 04:31:37 snl Exp $
+ *	$Id: time.h,v 1.1 1998/07/21 13:19:10 peter Exp $
  */
 
 #ifndef _TIME_H_

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_seq.h,v 1.2 1996/03/04 10:36:22 mickey Exp $	*/
+/*	$OpenBSD: tp_seq.h,v 1.3 2003/06/02 23:28:18 millert Exp $	*/
 /*	$NetBSD: tp_seq.h,v 1.6 1996/02/13 22:11:48 christos Exp $	*/
 
 /*-

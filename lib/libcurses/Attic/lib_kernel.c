@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_kernel.c,v 1.5 1998/07/23 21:18:58 millert Exp $	*/
+/*	$OpenBSD: lib_kernel.c,v 1.6 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_keymaint.c,v 1.8 2000/06/19 22:42:28 aaron Exp $	*/
+/*	$OpenBSD: tcfs_keymaint.c,v 1.9 2000/06/19 23:06:25 aaron Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

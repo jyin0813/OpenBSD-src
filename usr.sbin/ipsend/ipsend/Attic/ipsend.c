@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ipsend.c,v 1.7 2001/01/17 06:01:26 fgsch Exp $	*/
 
 /*
  * ipsend.c (C) 1995-1998 Darren Reed

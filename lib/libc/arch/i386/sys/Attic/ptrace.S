@@ -38,7 +38,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: ptrace.S,v 1.1.1.1 1995/10/18 08:41:26 deraadt Exp $"
+	.asciz "$OpenBSD: ptrace.S,v 1.2 1996/08/19 08:13:34 tholo Exp $"
 #endif /* SYSLIBC_SCCS */
 
 ENTRY(ptrace)

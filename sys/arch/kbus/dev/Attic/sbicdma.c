@@ -1,4 +1,4 @@
-/*	$OpenBSD: wdsc.c,v 1.5 1997/01/28 10:54:10 deraadt Exp $ */
+/*	$OpenBSD: sbicdma.c,v 1.1 1997/10/14 07:25:30 gingold Exp $ */
 
 /*
  * Copyright (c) 1996 Steve Woodford

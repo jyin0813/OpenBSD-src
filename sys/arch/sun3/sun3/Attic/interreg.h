@@ -1,4 +1,4 @@
-/*	$OpenBSD: interreg.h,v 1.5 1997/01/16 04:04:22 kstailey Exp $	*/
+/*	$OpenBSD: interreg.h,v 1.6 2002/03/14 01:26:47 millert Exp $	*/
 /*	$NetBSD: interreg.h,v 1.7 1996/11/20 18:57:30 gwr Exp $	*/
 
 /*-

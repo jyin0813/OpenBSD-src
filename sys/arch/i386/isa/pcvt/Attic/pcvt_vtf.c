@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcvt_vtf.c,v 1.17 2000/12/21 16:54:54 aaron Exp $	*/
+/*	$OpenBSD: pcvt_vtf.c,v 1.18 2001/01/22 18:48:44 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch.

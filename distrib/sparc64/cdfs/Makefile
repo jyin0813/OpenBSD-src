@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2001/10/12 16:45:43 jason Exp $
+#	$OpenBSD: Makefile,v 1.3 2001/10/12 18:56:08 jason Exp $
 
 TARGET=cd.fs
 

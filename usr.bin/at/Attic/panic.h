@@ -1,4 +1,4 @@
-/*	$OpenBSD: panic.h,v 1.5 2002/05/11 23:02:33 millert Exp $	*/
+/*	$OpenBSD: panic.h,v 1.6 2002/05/11 23:16:44 millert Exp $	*/
 /*	$NetBSD: panic.h,v 1.2 1995/03/25 18:13:35 glass Exp $	*/
 
 /*

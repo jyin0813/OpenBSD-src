@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1 2001/05/25 08:18:54 hin Exp $
 
 LIB=	kafs5
 

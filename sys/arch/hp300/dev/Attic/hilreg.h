@@ -1,4 +1,4 @@
-/*	$OpenBSD: hilreg.h,v 1.3 1997/02/04 06:21:24 downsj Exp $	*/
+/*	$OpenBSD: hilreg.h,v 1.4 2003/06/02 23:27:44 millert Exp $	*/
 /*	$NetBSD: hilreg.h,v 1.6 1997/02/02 09:39:21 thorpej Exp $	*/
 
 /*

@@ -28,7 +28,7 @@
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
-static char *rcsid = "$OpenBSD: __strerror.c,v 1.12 2004/05/01 10:52:59 espie Exp $";
+static char *rcsid = "$OpenBSD: __strerror.c,v 1.13 2004/05/03 05:07:34 espie Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 #include <limits.h>

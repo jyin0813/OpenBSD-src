@@ -1,4 +1,4 @@
-/*	$OpenBSD: libdl.c,v 1.1.1.2 2000/06/13 03:40:24 rahnds Exp $ */
+/*	$OpenBSD: libdl.c,v 1.2 2002/05/24 03:44:37 deraadt Exp $ */
 
 /*
  * Copyright (c) 1998 Per Fogelstrom, Opsycon AB

@@ -1,4 +1,4 @@
-/*	$OpenBSD: config.c,v 1.3 1998/09/15 05:12:31 pjanzen Exp $	*/
+/*	$OpenBSD: config.c,v 1.4 2000/06/29 07:55:40 pjanzen Exp $	*/
 /*	$NetBSD: config.c,v 1.5 1997/10/18 20:03:08 christos Exp $	 */
 
 /*
@@ -11,7 +11,7 @@
  */
 #include <sys/cdefs.h>
 #ifndef lint
-static char rcsid[] = "$OpenBSD: config.c,v 1.3 1998/09/15 05:12:31 pjanzen Exp $";
+static char rcsid[] = "$OpenBSD: config.c,v 1.4 2000/06/29 07:55:40 pjanzen Exp $";
 #endif /* not lint */
 
 #include "header.h"

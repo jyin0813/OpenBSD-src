@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_proxy.c,v 1.12 2001/01/17 04:47:15 fgsch Exp $	*/
+/*	$OpenBSD: ip_proxy.c,v 1.13 2001/01/30 04:23:56 kjell Exp $	*/
 
 /*
  * Copyright (C) 1997-2000 by Darren Reed.

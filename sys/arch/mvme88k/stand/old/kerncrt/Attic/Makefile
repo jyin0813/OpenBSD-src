@@ -1,4 +1,4 @@
-#    $Id: Makefile,v 1.6 1995/02/03 15:13:39 drahn Exp $
+#    $Id: Makefile,v 1.1 1997/03/03 19:30:46 rahnds Exp $
 
 CFLAGS+=-I${.CURDIR}/../include -I${.CURDIR}/${MACHINE_ARCH}
 

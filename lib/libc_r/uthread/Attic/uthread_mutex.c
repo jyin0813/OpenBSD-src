@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_mutex.c,v 1.14 2002/01/23 23:11:57 fgsch Exp $	*/
+/*	$OpenBSD: uthread_mutex.c,v 1.15 2002/10/30 19:11:56 marc Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

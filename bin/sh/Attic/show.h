@@ -1,4 +1,4 @@
-/*	$OpenBSD: show.h,v 1.2 1996/06/23 14:21:34 deraadt Exp $	*/
+/*	$OpenBSD: show.h,v 1.3 1996/10/20 00:55:07 millert Exp $	*/
 /*	$NetBSD: show.h,v 1.1 1995/05/11 21:30:27 christos Exp $	*/
 
 /*-

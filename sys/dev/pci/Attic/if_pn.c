@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_pn.c,v 1.6 1999/06/29 02:28:22 jason Exp $	*/
+/*	$OpenBSD: if_pn.c,v 1.7 1999/09/15 01:17:49 jason Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998

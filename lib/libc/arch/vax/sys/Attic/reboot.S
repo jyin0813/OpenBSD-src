@@ -35,7 +35,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: reboot.S,v 1.1 1995/04/17 12:24:04 ragge Exp $"
+	.asciz "$OpenBSD: reboot.S,v 1.2 1996/08/19 08:19:03 tholo Exp $"
 #endif /* SYSLIBC_SCCS */
 
 SYSCALL(reboot)

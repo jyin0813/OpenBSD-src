@@ -1,4 +1,4 @@
-/*	$Id: wait.h,v 1.1 1994/01/28 12:42:29 pk Exp $ */
+/*	$Id: wait.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $ */
 /* Define how to access the int that the wait system call stores.
    This has been compatible in all Unix systems since time immemorial,
    but various well-meaning people have defined various different

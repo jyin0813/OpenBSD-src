@@ -1,4 +1,4 @@
-/*	$OpenBSD: rtc.h,v 1.4 2000/01/24 16:02:04 espie Exp $	*/
+/*	$OpenBSD: rtc.h,v 1.5 2002/03/14 01:26:29 millert Exp $	*/
 /*	$NetBSD: rtc.h,v 1.5 1997/07/17 23:29:28 is Exp $	*/
 
 /*

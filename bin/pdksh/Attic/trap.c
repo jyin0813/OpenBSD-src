@@ -1,4 +1,4 @@
-/*	$OpenBSD: trap.c,v 1.5 1997/08/05 22:22:58 deraadt Exp $	*/
+/*	$OpenBSD: trap.c,v 1.6 1997/09/01 18:30:13 deraadt Exp $	*/
 
 /*
  * signal handling

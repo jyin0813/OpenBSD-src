@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.6 2003/06/11 18:50:26 drahn Exp $
+#	$OpenBSD: Makefile,v 1.1 2003/11/08 16:55:37 miod Exp $
 #	from: @(#)Makefile	5.1 (Berkeley) 2/12/91
 
 # TODO mpcpcibr isabr

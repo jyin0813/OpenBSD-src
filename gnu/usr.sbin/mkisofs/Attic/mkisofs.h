@@ -1,4 +1,4 @@
-/*	$OpenBSD: mkisofs.h,v 1.1.1.1 1997/09/15 06:01:53 downsj Exp $	*/
+/*	$OpenBSD: mkisofs.h,v 1.2 1998/04/05 00:39:36 deraadt Exp $	*/
 /*
  * Header file mkisofs.h - assorted structure definitions and typecasts.
 

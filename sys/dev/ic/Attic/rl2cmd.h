@@ -1,4 +1,4 @@
-/*	$OpenBSD: rl2cmd.h,v 1.1 1999/06/21 23:21:46 d Exp $	*/
+/*	$OpenBSD: rl2cmd.h,v 1.2 1999/07/14 03:52:27 d Exp $	*/
 /*
  * David Leonard <d@openbsd.org>, 1999. Public Domain.
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp_timer.c,v 1.3 2003/06/02 23:28:17 millert Exp $	*/
+/*	$OpenBSD: clnp_timer.c,v 1.4 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: clnp_timer.c,v 1.7 1996/02/13 22:08:55 christos Exp $	*/
 
 /*-

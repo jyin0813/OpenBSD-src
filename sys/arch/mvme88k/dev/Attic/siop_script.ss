@@ -1,4 +1,4 @@
-;	$OpenBSD: siop_script.ss,v 1.3 1996/04/28 11:03:31 deraadt Exp $
+;	$OpenBSD: siop_script.ss,v 1.2 1998/12/15 05:52:31 smurph Exp $
 
 ;
 ; Copyright (c) 1995 Michael L. Hitch

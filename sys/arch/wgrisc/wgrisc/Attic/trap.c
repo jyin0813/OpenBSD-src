@@ -1,4 +1,4 @@
-/*	$OpenBSD: trap.c,v 1.4 1999/05/24 23:09:10 jason Exp $	*/
+/*	$OpenBSD: trap.c,v 1.5 2000/11/10 18:15:44 art Exp $	*/
 /*
  * Copyright (c) 1988 University of Utah.
  * Copyright (c) 1992, 1993
@@ -39,7 +39,7 @@
  * from: Utah Hdr: trap.c 1.32 91/04/06
  *
  *	from: @(#)trap.c	8.5 (Berkeley) 1/11/94
- *      $Id: trap.c,v 1.4 1999/05/24 23:09:10 jason Exp $
+ *      $Id: trap.c,v 1.5 2000/11/10 18:15:44 art Exp $
  */
 
 #include <sys/param.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cancel.c,v 1.4 2002/02/17 04:33:33 marc Exp $	*/
+/*	$OpenBSD: cancel.c,v 1.5 2002/02/17 05:44:38 marc Exp $	*/
 /* David Leonard <d@openbsd.org>, 1999. Public Domain. */
 
 #include <pthread.h>

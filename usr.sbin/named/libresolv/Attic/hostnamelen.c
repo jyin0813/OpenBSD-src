@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hostnamelen.c,v 1.1 1997/03/12 10:42:04 downsj Exp $	*/
 
 /*
  * ++Copyright++ 1995
@@ -59,7 +59,7 @@
 #if 0
 static char rcsid[] = "$From: hostnamelen.c,v 8.2 1995/08/22 05:01:47 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: hostnamelen.c,v 1.1 1997/03/12 10:42:04 downsj Exp $";
 #endif
 #endif /* LIBC_SCCS and not lint */
 

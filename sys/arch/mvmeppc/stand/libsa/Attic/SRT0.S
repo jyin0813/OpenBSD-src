@@ -1,4 +1,4 @@
-;	$OpenBSD: SRT0.S,v 1.1 2001/06/26 21:58:07 smurph Exp $
+;	$OpenBSD: SRT0.S,v 1.2 2003/06/02 18:47:58 deraadt Exp $
 
 ; Copyright (c) 1996 Nivas Madhur
 ; Copyright (c) 1995 Theo de Raadt

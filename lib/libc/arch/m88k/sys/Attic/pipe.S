@@ -38,7 +38,7 @@
 #if defined(LIBC_SCCS) && !defined(lint)
 	.data
 	/*.asciz "from: @(#)pipe.s	5.1 (Berkeley) 5/12/90"*/
-	.asciz "$Id: pipe.S,v 1.1 1997/03/25 17:07:20 rahnds Exp $"
+	.asciz "$Id: pipe.S,v 1.1 1998/12/15 07:10:33 smurph Exp $"
 	.text
 #endif /* LIBC_SCCS and not lint */
 

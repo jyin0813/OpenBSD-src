@@ -1,4 +1,4 @@
-/*	$OpenBSD: kadm_stream.c,v 1.4 1997/12/12 10:02:47 art Exp $	*/
+/*	$OpenBSD: kadm_stream.c,v 1.5 1998/08/16 02:42:06 art Exp $	*/
 /*	$KTH: kadm_stream.c,v 1.11 1997/05/02 10:28:05 joda Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: cvt.c,v 1.2 1996/06/26 05:39:39 deraadt Exp $	*/
 
 /*
  * Quick hack to convert old binary sup when.collection files into 

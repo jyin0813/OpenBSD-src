@@ -1,4 +1,4 @@
-/*	$OpenBSD: in6_prefix.h,v 1.4 2001/02/16 16:00:57 itojun Exp $	*/
+/*	$OpenBSD: in6_prefix.h,v 1.5 2002/03/14 01:27:12 millert Exp $	*/
 /*	$KAME: in6_prefix.h,v 1.10 2001/02/08 16:30:30 itojun Exp $	*/
 
 /*

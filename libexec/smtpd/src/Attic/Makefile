@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2001/01/28 19:34:33 niklas Exp $
+#	$OpenBSD: Makefile,v 1.5 2001/08/23 14:17:08 aaron Exp $
 
 ##########################################################
 ## Where do I get installed? #############################

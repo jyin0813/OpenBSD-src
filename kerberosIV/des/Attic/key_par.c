@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: key_par.c,v 1.1 1995/12/14 06:52:44 tholo Exp tholo $	*/
 
 #include "des_locl.h"
 

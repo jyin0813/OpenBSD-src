@@ -1,4 +1,4 @@
-/*	$OpenBSD: macinfo.h,v 1.2 1996/10/28 15:00:49 briggs Exp $	*/
+/*	$OpenBSD: macinfo.h,v 1.3 1997/11/30 06:12:30 gene Exp $	*/
 /*	$NetBSD: scsi96reg.h,v 1.5 1996/05/05 06:18:02 briggs Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fils.c,v 1.23 2001/01/17 05:01:00 fgsch Exp $	*/
+/*	$OpenBSD: fils.c,v 1.24 2001/01/30 04:27:58 kjell Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

@@ -1,7 +1,7 @@
 /* ==== machdep.h ============================================================
  * Copyright (c) 1993 Chris Provenzano, proven@athena.mit.edu
  *
- * $Id: engine-m68000-netbsd.h,v 1.51 1994/11/08 15:39:15 proven Exp $
+ * $Id: engine-m68000-netbsd.h,v 1.1 1998/07/21 13:19:14 peter Exp $
  *
  */
 

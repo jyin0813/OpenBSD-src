@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD$	*/
+/*	$OpenBSD: scanner.l,v 1.1 1996/03/25 15:55:56 niklas Exp $	*/
 /*	$NetBSD: scanner.l,v 1.1 1996/03/15 03:09:15 paulus Exp $	*/
 
 /*
@@ -28,7 +28,7 @@
 from: static char rcsid[] =
     "@(#) Header: scanner.l,v 1.40 94/06/10 17:21:44 mccanne Exp (LBL)";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: scanner.l,v 1.1 1996/03/25 15:55:56 niklas Exp $";
 #endif
 #endif
 

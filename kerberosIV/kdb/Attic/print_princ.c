@@ -1,4 +1,4 @@
-/*	$OpenBSD: print_princ.c,v 1.3 1997/12/12 11:29:26 art Exp $	*/
+/*	$OpenBSD: print_princ.c,v 1.4 1998/05/15 06:10:52 art Exp $	*/
 /*	$KTH: print_princ.c,v 1.5 1997/05/07 01:37:13 assar Exp $	*/
 
 /*

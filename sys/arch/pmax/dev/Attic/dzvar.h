@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: dzvar.h,v 1.1 2000/08/19 18:36:19 maja Exp $	*/
 /*	$NetBSD: dcvar.h,v 1.4 1997/05/28 14:21:39 jonathan Exp $	*/
 
 /*

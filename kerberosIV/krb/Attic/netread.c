@@ -1,4 +1,4 @@
-/*	$OpenBSD: netread.c,v 1.4 1997/12/22 15:02:10 art Exp $	*/
+/*	$OpenBSD: netread.c,v 1.5 1998/02/25 15:51:32 art Exp $	*/
 /* $KTH: netread.c,v 1.7 1997/06/19 23:56:44 assar Exp $ */
 
 /*

@@ -19,7 +19,7 @@
    along with this program; if not, write to the Free Software
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: emacs_keymap.c,v 1.4 1994/01/28 12:43:13 pk Exp $
+	$Id: emacs_keymap.c,v 1.1 1995/10/18 08:40:14 deraadt Exp $
 */
 
 /* An array of function pointers, one for each possible key.

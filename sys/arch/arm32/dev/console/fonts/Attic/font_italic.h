@@ -1,4 +1,4 @@
-/* $OpenBSD: font_italic.h,v 1.1 1996/01/31 23:20:13 mark Exp $ */
+/* $OpenBSD: font_italic.h,v 1.2 2000/03/03 00:54:47 todd Exp $ */
 /* $NetBSD: font_italic.h,v 1.1 1996/01/31 23:20:13 mark Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$Id: dev_disk.c,v 1.2 1995/11/07 08:50:46 deraadt Exp $ */
+/*	$Id: dev_disk.c,v 1.1 1997/03/03 19:31:06 rahnds Exp $ */
 
 /*
  * Copyright (c) 1993 Paul Kranenburg

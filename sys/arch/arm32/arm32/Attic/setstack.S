@@ -1,4 +1,4 @@
-/* $OpenBSD: setstack.S,v 1.1 1996/01/31 23:16:59 mark Exp $ */
+/* $OpenBSD: setstack.S,v 1.2 2000/03/03 00:54:46 todd Exp $ */
 /* $NetBSD: setstack.S,v 1.1 1996/01/31 23:16:59 mark Exp $ */
 
 /*

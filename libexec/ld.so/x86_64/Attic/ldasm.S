@@ -1,4 +1,4 @@
-/*	$OpenBSD: ldasm.S,v 1.2 2004/02/10 16:59:08 drahn Exp $	*/
+/*	$OpenBSD: ldasm.S,v 1.3 2004/02/23 20:52:04 deraadt Exp $	*/
 
 /*
  * Copyright (c) 2002,2004 Dale Rahn

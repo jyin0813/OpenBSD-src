@@ -29,6 +29,9 @@
 /*
  * HISTORY
  * $Log: continuation.s,v $
+ * Revision 1.1  1995/10/18 12:32:20  deraadt
+ * moved from m88k directory
+ *
  * Revision 1.1.1.1  1995/10/18 10:54:27  deraadt
  * initial 88k import; code by nivas and based on mach luna88k
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: altq_afmap.h,v 1.1 2001/06/27 05:28:34 kjc Exp $	*/
+/*	$OpenBSD: altq_afmap.h,v 1.2 2002/03/14 01:26:26 millert Exp $	*/
 /*	$KAME: altq_afmap.h,v 1.5 2000/12/14 08:12:45 thorpej Exp $	*/
 
 /*

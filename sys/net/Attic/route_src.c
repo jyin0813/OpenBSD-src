@@ -1,4 +1,4 @@
-/*      $OpenBSD: route_src.c $ */
+/*      $OpenBSD: route_src.c,v 1.1 2004/06/06 16:49:09 cedric Exp $ */
 
 /*
  * Copyright (c) 2004 Cedric Berger <cedric@berger.to>

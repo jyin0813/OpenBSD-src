@@ -31,11 +31,11 @@
  */
 
 /*
- * $OpenBSD: errlog.c,v 1.2 2000/06/29 00:02:28 deraadt Exp $
+ * $OpenBSD: errlog.c,v 1.3 2000/07/05 23:41:46 deraadt Exp $
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: errlog.c,v 1.2 2000/06/29 00:02:28 deraadt Exp $";
+static char rcsid[] = "$Id: errlog.c,v 1.3 2000/07/05 23:41:46 deraadt Exp $";
 #endif
 
 #define _ERRLOG_C_

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: _vidputs.c,v 1.1 1996/09/21 19:22:27 tholo Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: _vidputs.c,v 1.1 1996/09/21 19:22:27 tholo Exp $";
 #endif
 
 #include <stdlib.h>

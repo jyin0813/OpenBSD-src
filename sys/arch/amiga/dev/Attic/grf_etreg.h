@@ -1,4 +1,4 @@
-/*	$OpenBSD: grf_etreg.h,v 1.4 1997/09/18 13:39:51 niklas Exp $	*/
+/*	$OpenBSD: grf_etreg.h,v 1.5 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: grf_etreg.h,v 1.4 1997/07/29 17:42:06 veego Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: types.h,v 1.1 2004/01/28 01:39:39 mickey Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
@@ -70,7 +70,6 @@ typedef long			register_t;
 /* The amd64 does not have strict alignment requirements. */
 #define	__NO_STRICT_ALIGNMENT
 
-#define	__HAVE_DEVICE_REGISTER
 #define	__HAVE_NWSCONS
 #define	__HAVE_CPU_COUNTER
 #define	__HAVE_SYSCALL_INTERN

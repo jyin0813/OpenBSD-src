@@ -1,4 +1,4 @@
-#	$OpenBSD: GENERIC_KGDB,v 1.6 2000/04/30 15:27:57 miod Exp $
+#	$OpenBSD: GENERIC_KGDB,v 1.7 2000/05/26 00:07:27 miod Exp $
 #	$NetBSD: GENERIC_KGDB,v 1.1.2.1 1996/08/19 23:35:07 gwr Exp $
 
 #

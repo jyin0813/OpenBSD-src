@@ -1,4 +1,4 @@
-/*	$OpenBSD: exception_vectors.h,v 1.8 2001/08/12 12:03:02 heko Exp $ */
+/*	$OpenBSD: exception_vectors.h,v 1.9 2001/08/26 14:31:07 miod Exp $ */
 /*
  * Mach Operating System
  * Copyright (c) 1991, 1992 Carnegie Mellon University

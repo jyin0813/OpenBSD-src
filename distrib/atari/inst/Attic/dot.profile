@@ -1,5 +1,5 @@
 #
-#	$OpenBSD: dot.profile,v 1.3 2000/03/01 22:10:01 todd Exp $
+#	$OpenBSD: dot.profile,v 1.4 2000/10/25 16:38:12 millert Exp $
 #	$NetBSD: dot.profile,v 1.2 1995/05/10 13:39:28 leo Exp $
 #
 # Copyright (c) 1994 Christopher G. Demetriou

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: files.c,v 1.1 1997/09/15 06:01:52 downsj Exp $	*/
 /*
  * File files.c - Handle ADD_FILES related stuff.
 

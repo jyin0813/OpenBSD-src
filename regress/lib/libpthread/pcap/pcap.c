@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: pcap.c,v 1.1 2001/11/10 02:44:48 marc Exp $ */
 /*
  *	Copyright (c) 2001 Marco S. Hyman
  *

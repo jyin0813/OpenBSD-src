@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: dvdio.h,v 1.1 1999/11/03 01:47:47 angelos Exp $ */
 
 #include <sys/types.h>
 #include <sys/ioccom.h>

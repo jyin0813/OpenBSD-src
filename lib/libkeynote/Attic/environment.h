@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: environment.h,v 1.1 1999/05/23 22:11:04 angelos Exp $ */
 
 /*
  * The author of this code is Angelos D. Keromytis (angelos@dsl.cis.upenn.edu)

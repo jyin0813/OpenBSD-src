@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: umass_scsi.h,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
 /*
  * Copyright (c) 2001 Nathan L. Binkert
  * All rights reserved.

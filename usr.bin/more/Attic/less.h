@@ -32,7 +32,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)less.h	5.9 (Berkeley) 6/1/90
- *	$Id: less.h,v 1.2 1993/11/09 05:09:24 cgd Exp $
+ *	$Id: less.h,v 1.1 1995/10/18 08:45:48 deraadt Exp deraadt $
  */
 
 #undef	RECOMP

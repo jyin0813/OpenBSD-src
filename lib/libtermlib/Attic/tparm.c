@@ -1,4 +1,4 @@
-/*	$OpenBSD: tparm.c,v 1.5 1997/07/25 20:30:26 mickey Exp $	*/
+/*	$OpenBSD: tparm.c,v 1.6 1997/12/16 03:10:05 millert Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: tparm.c,v 1.5 1997/07/25 20:30:26 mickey Exp $";
+static char rcsid[] = "$OpenBSD: tparm.c,v 1.6 1997/12/16 03:10:05 millert Exp $";
 #endif
 
 #include <stdio.h>

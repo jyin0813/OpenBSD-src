@@ -1,4 +1,4 @@
-/*	$OpenBSD: consdefs.h,v 1.2 1997/01/17 08:32:41 downsj Exp $	*/
+/*	$OpenBSD: consdefs.h,v 1.3 1997/07/13 07:21:46 downsj Exp $	*/
 /*	$NetBSD: consdefs.h,v 1.2 1997/05/12 07:45:41 thorpej Exp $	*/
 
 /*

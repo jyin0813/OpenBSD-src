@@ -33,7 +33,7 @@
 # SUCH DAMAGE.
 #
 #	from: @(#)newvers.sh	8.1 (Berkeley) 6/6/93
-#	$Id: newvers.sh,v 1.3 1997/02/23 03:41:56 deraadt Exp $
+#	$Id: newvers.sh,v 1.4 2003/06/12 01:15:08 deraadt Exp $
 #
 PATH=/usr/ucb:/bin:/usr/bin:$PATH
 if [ $# -ne 3 ]; then echo "Usage: newvers program arch os" >&2; exit 1; fi

@@ -1,4 +1,4 @@
-/*	$OpenBSD: umct.c,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
+/*	$OpenBSD$	*/
 /*	$NetBSD: umct.c,v 1.7 2001/12/17 14:19:39 ichiro Exp $	*/
 /*
  * Copyright (c) 2001 The NetBSD Foundation, Inc.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: var.c,v 1.5 1997/06/19 13:58:49 kstailey Exp $	*/
+/*	$OpenBSD: var.c,v 1.6 1997/09/01 18:30:16 deraadt Exp $	*/
 
 #include "sh.h"
 #include "ksh_time.h"

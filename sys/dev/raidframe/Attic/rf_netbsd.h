@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_netbsd.h,v 1.5 2000/08/08 16:07:42 peter Exp $	*/
+/*	$OpenBSD: rf_netbsd.h,v 1.6 2002/12/16 07:01:04 tdeval Exp $	*/
 /*	$NetBSD: rf_netbsd.h,v 1.12 2000/05/28 22:53:49 oster Exp $	*/
 
 /*

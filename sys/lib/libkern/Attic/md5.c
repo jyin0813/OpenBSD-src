@@ -1,4 +1,4 @@
-/*	$OpenBSD: md5.c,v 1.10 2003/11/24 05:22:26 mickey Exp $	*/
+/*	$OpenBSD: md5.c,v 1.11 2003/12/02 23:25:03 markus Exp $	*/
 
 /*
  * The rest of the code is derived from MD5C.C by RSADSI. Minor cosmetic

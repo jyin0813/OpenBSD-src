@@ -1,4 +1,3 @@
-/*	$OpenBSD: nfsv2.h,v 1.1 1996/04/19 16:09:52 niklas Exp mickey $	*/
 /*	$NetBSD: nfsv2.h,v 1.2 1996/02/26 23:05:23 gwr Exp $	*/
 
 /*

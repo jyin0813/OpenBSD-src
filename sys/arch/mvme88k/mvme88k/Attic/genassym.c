@@ -1,4 +1,4 @@
-/*	$OpenBSD: genassym.c,v 1.7 2001/02/01 03:38:20 smurph Exp $	*/
+/*	$OpenBSD: genassym.c,v 1.8 2001/04/10 01:12:39 miod Exp $	*/
 /*
  * Copyright (c) 1982, 1990 The Regents of the University of California.
  * All rights reserved.
@@ -32,7 +32,7 @@
  * SUCH DAMAGE.
  *
  *	@(#)genassym.c	7.8 (Berkeley) 5/7/91
- *	$Id: genassym.c,v 1.7 2001/02/01 03:38:20 smurph Exp $
+ *	$Id: genassym.c,v 1.8 2001/04/10 01:12:39 miod Exp $
  */
 
 #include <sys/param.h>

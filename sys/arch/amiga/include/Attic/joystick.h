@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: joystick.h,v 1.1 2000/09/02 13:45:40 espie Exp $ */
 #ifndef _AMIGA_JOYSTICK_H
 #define _AMIGA_JOYSTICK_H
 

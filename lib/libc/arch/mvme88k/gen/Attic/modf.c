@@ -39,7 +39,7 @@ static char rcsid[] = "$NetBSD: s_modf.c,v 1.8 1995/05/10 20:47:55 jtc Exp $";
 
 /*
  * from: @(#)fdlibm.h 5.1 93/09/24
- * $Id: modf.c,v 1.1 1997/03/25 17:07:05 rahnds Exp $
+ * $Id: modf.c,v 1.2 1997/07/23 20:55:26 kstailey Exp $
  */
 
 #ifndef _MATH_PRIVATE_H_

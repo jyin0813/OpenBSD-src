@@ -1,4 +1,4 @@
-/*	$OpenBSD: kntoln.c,v 1.6 1998/02/25 15:51:19 art Exp $	*/
+/*	$OpenBSD: kntoln.c,v 1.7 1998/05/17 13:53:48 art Exp $	*/
 /*	$KTH: kntoln.c,v 1.8 1997/12/11 15:00:11 bg Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: hilvar.h,v 1.5 2002/03/14 01:26:30 millert Exp $	*/
+/*	$OpenBSD: hilvar.h,v 1.6 2003/06/02 23:27:44 millert Exp $	*/
 /*	$NetBSD: hilvar.h,v 1.14 1997/04/01 19:29:10 scottr Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: port.h,v 1.2 1997/03/12 10:41:56 downsj Exp $	*/
 
 /*
 ** Various portability definitions.

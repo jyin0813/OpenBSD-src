@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.6 1999/10/06 14:55:29 espie Exp $
+#	$OpenBSD: Makefile.inc,v 1.7 2000/03/28 23:07:25 deraadt Exp $
 
 .PATH: ${LIBCSRCDIR}/md
 

@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)unistd.h	5.13 (Berkeley) 6/17/91
- *	$Id: unistd-sparc-sunos-4.1.3.h,v 1.51 1995/02/12 04:38:33 snl Exp $
+ *	$Id: unistd-sparc-sunos-4.1.3.h,v 1.1 1998/07/21 13:19:18 peter Exp $
  */
 
 #ifndef _UNISTD_H_

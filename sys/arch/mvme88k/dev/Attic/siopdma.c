@@ -1,4 +1,4 @@
-/*	$OpenBSD: siopdma.c,v 1.2 1998/12/15 05:52:31 smurph Exp $ */
+/*	$OpenBSD: siopdma.c,v 1.3 2001/01/13 05:18:58 smurph Exp $ */
 
 /*
  * Copyright (c) 1996 Nivas Madhur

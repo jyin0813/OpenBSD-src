@@ -1,4 +1,4 @@
-/*	$OpenBSD: aucc.c,v 1.7 2002/03/14 01:26:28 millert Exp $	*/
+/*	$OpenBSD: aucc.c,v 1.8 2002/03/14 03:15:51 millert Exp $	*/
 /*	$NetBSD: aucc.c,v 1.22 1998/01/12 10:39:10 thorpej Exp $	*/
 
 /*

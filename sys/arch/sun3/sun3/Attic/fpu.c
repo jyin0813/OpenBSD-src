@@ -1,4 +1,4 @@
-/*	$NetBSD: fpu.c,v 1.10 1996/12/17 21:11:23 gwr Exp $	*/
+/*	$NetBSD: fpu.c,v 1.9 1996/11/20 18:57:29 gwr Exp $	*/
 
 /*-
  * Copyright (c) 1996 The NetBSD Foundation, Inc.
@@ -54,9 +54,11 @@
 #include <machine/control.h>
 
 #include "interreg.h"
-#include "machdep.h"
 
-static int fpu_probe __P((void));
+extern int fpu_type;
+extern long *nofault;
+
+int fpu_probe();
 
 static char *fpu_descr[] = {
 #ifdef	FPU_EMULATE
@@ -68,8 +70,7 @@ static char *fpu_descr[] = {
 	"mc68882",			/* 2 */
 	"?" };
 
-void
-initfpu()
+void initfpu()
 {
 	char *descr;
 	int enab_reg;
@@ -95,20 +96,19 @@ initfpu()
 	}
 }
 
-static int
-fpu_probe()
+int fpu_probe()
 {
 	label_t	faultbuf;
-	struct fpframe null_fpf;
+	int null_fpframe[2];
 
-	nofault = &faultbuf;
+	nofault = (long *) &faultbuf;
 	if (setjmp(&faultbuf)) {
 		nofault = NULL;
 		return(0);
 	}
-	bzero(&null_fpf, sizeof(null_fpf));
-	/* This will trap if there is no FPU present. */
-	m68881_restore(&null_fpf);
+	null_fpframe[0] = 0;
+	null_fpframe[1] = 0;
+	m68881_restore(null_fpframe);
 	nofault = NULL;
 	return(1);
 }

@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.3 2000/10/12 01:41:20 brad Exp $
 
 DEBUG =		-ggdb
 CFLAGS +=	-Wall

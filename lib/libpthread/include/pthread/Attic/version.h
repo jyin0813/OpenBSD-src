@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: version.h,v 1.1 1994/09/04 03:32:31 proven Exp $
+ * $Id: version.h,v 1.1 1998/07/21 13:19:12 peter Exp $
  *
  * Description : Header file for programs that what to KNOW the version.
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ncr53c7xx_gsc.c,v 1.1 1998/10/01 05:07:32 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

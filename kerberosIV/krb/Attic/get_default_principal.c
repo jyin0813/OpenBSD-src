@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: get_default_principal.c,v 1.2 1997/12/09 07:57:16 art Exp $	*/
 /* $KTH: get_default_principal.c,v 1.10 1997/04/01 08:18:28 joda Exp $ */
 
 /*

@@ -100,7 +100,7 @@ extern struct tm	*localtime();
 
 #if	!defined(lint) && !defined(SABER)
 static char RCS[] =
-	"$Header: /cvs/src/usr.sbin/eeprom/getdate.y,v 1.1.1.1 1995/10/18 08:47:33 deraadt Exp $";
+	"$Header: /cvs/src/usr.sbin/eeprom/getdate.y,v 1.2 1996/08/22 00:34:05 deraadt Exp $";
 #endif	/* !defined(lint) && !defined(SABER) */
 
 

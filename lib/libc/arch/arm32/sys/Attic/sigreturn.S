@@ -35,7 +35,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD$"
+	.asciz "$OpenBSD: sigreturn.S,v 1.3 1996/08/19 08:12:05 tholo Exp $"
 #endif /* SYSLIB_SCCS */
 
 /*

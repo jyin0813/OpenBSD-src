@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_vnops.c,v 1.5 1996/10/18 16:02:09 mickey Exp $	*/
+/*	$OpenBSD: ext2_vnops.c,v 1.6 1996/11/01 08:31:59 downsj Exp $	*/
 
 /*
  *  modified for EXT2FS support in Lites 1.1

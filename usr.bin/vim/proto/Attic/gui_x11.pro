@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: gui_x11.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* gui_x11.c */
 void gui_x11_timer_cb __PARMS((XtPointer timed_out, XtIntervalId *interval_id));
 void gui_x11_visibility_cb __PARMS((Widget w, XtPointer dud, XEvent *event, Boolean *bool));

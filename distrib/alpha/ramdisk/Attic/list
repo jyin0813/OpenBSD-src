@@ -1,4 +1,4 @@
-#	$OpenBSD: list,v 1.7 1998/09/21 23:22:57 deraadt Exp $
+#	$OpenBSD: list,v 1.8 2001/01/23 20:54:41 art Exp $
 
 # we strip comments from files since we need the space...
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu_exec.c,v 1.3 1997/03/23 11:34:28 pefo Exp $	*/
+/*	$OpenBSD: cpu_exec.c,v 1.4 1997/04/19 17:19:41 pefo Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

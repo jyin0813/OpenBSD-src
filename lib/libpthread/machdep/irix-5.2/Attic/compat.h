@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: compat.h,v 1.1 1995/08/30 22:25:52 proven Exp $
+ * $Id: compat.h,v 1.1 1998/07/21 13:19:26 peter Exp $
  *
  * Description : 
  *

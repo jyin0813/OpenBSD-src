@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 1998/05/22 04:51:31 millert Exp $
 
 DIR=    smm/10.named
 MACROS= -me

@@ -1,5 +1,5 @@
 /*	$NetBSD: ctl.c,v 1.2 1997/10/10 16:32:54 lukem Exp $	*/
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ctl.c,v 1.2 1999/01/21 05:47:40 d Exp $	*/
 /*
  * Copyright (c) 1983 Regents of the University of California.
  * All rights reserved.  The Berkeley software License Agreement

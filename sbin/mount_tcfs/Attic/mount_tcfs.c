@@ -1,4 +1,4 @@
-/*	$OpenBSD: mount_tcfs.c,v 1.5 2002/02/16 21:27:36 millert Exp $	*/
+/*	$OpenBSD: mount_tcfs.c,v 1.6 2002/03/14 06:51:41 mpech Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993, 1994

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_mouse.c,v 1.7 1998/09/17 04:14:30 millert Exp $	*/
+/*	$OpenBSD: lib_mouse.c,v 1.8 1998/10/31 06:30:30 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_redrawln.c,v 1.2 1998/07/23 21:19:15 millert Exp $	*/
+/*	$OpenBSD: lib_redrawln.c,v 1.3 1998/10/31 06:30:30 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

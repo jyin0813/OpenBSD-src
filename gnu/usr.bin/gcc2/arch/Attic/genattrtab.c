@@ -94,7 +94,7 @@ the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
       EQ_ATTR rtx is true if !volatil and false if volatil.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: genattrtab.c,v 1.1 1993/08/23 09:20:34 cgd Exp $";
+static char rcsid[] = "$Id: genattrtab.c,v 1.1 1995/10/18 08:39:15 deraadt Exp niklas $";
 #endif /* not lint */
 
 #include "gvarargs.h"

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_rln_pcmcia.c,v 1.4 1999/07/14 07:22:14 d Exp $	*/
+/*	$OpenBSD: if_rln_pcmcia.c,v 1.1 1999/07/30 13:43:37 d Exp $	*/
 /*
  * David Leonard <d@openbsd.org>, 1999. Public domain.
  *
@@ -38,19 +38,22 @@ struct rln_pcmcia_softc {
 	void *sc_ih;				/* our interrupt handle */
 };
 
-static int  rln_pcmcia_match __P((struct device *, void *, void *));
-static struct rln_pcmcia_product * rln_pcmcia_product_lookup __P((
-		struct pcmcia_attach_args *));
-static void rln_pcmcia_attach __P((struct device *, struct device *, void *));
-static int rlnintr_pcmcia __P((void *arg));
+int	rln_pcmcia_match __P((struct device *, void *, void *));
+struct	rln_pcmcia_product * rln_pcmcia_product_lookup
+     __P((struct pcmcia_attach_args *));
+void	rln_pcmcia_attach __P((struct device *, struct device *, void *));
+int	rln_pcmcia_detach __P((struct device *, int));
+int	rln_pcmcia_activate __P((struct device *, enum devact));
+int	rlnintr_pcmcia __P((void *arg));
 
 #ifdef notyet
-static int  rln_pcmcia_enable __P((struct rln_softc *));
-static void rln_pcmcia_disable __P((struct rln_softc *));
+int  rln_pcmcia_enable __P((struct rln_softc *));
+void rln_pcmcia_disable __P((struct rln_softc *));
 #endif
 
 struct cfattach rln_pcmcia_ca = {
-	sizeof(struct rln_pcmcia_softc), rln_pcmcia_match, rln_pcmcia_attach
+	sizeof(struct rln_pcmcia_softc), rln_pcmcia_match, rln_pcmcia_attach,
+	rln_pcmcia_detach, rln_pcmcia_activate
 };
 
 #define PCMCIA_CIS_RANGELAN2_7200 { "PROXIM", "LAN CARD",    "RANGELAN2", NULL }
@@ -78,7 +81,7 @@ static struct rln_pcmcia_product {
 };
 
 /* Match the product and manufacturer codes with known card types */
-static struct rln_pcmcia_product *
+struct rln_pcmcia_product *
 rln_pcmcia_product_lookup(pa)
 	struct pcmcia_attach_args *pa;
 {
@@ -93,7 +96,7 @@ rln_pcmcia_product_lookup(pa)
 }
 
 /* Match card CIS info string with RangeLAN2 cards */
-static int
+int
 rln_pcmcia_match(parent, match, aux)
 	struct device *parent;
 	void *match, *aux;
@@ -118,7 +121,7 @@ rln_pcmcia_match(parent, match, aux)
 }
 
 /* Attach and configure */
-static void
+void
 rln_pcmcia_attach(parent, self, aux)
 	struct device *parent, *self;
 	void *aux;
@@ -248,8 +251,52 @@ rln_pcmcia_attach(parent, self, aux)
 	printf("\n");
 }
 
+int
+rln_pcmcia_detach(dev, flags)
+	struct device *dev;
+	int flags;
+{
+	struct rln_pcmcia_softc *psc = (struct rln_pcmcia_softc *)dev;
+	struct ifnet *ifp = &sc->sc_arpcom.ac_if;
+	int rv = 0;
+
+	pcmcia_io_unmap(psc->sc_pf, psc->sc_io_window);
+	pcmcia_io_free(psc->sc_pf, &psc->sc_pcioh);
+
+	ether_ifdetach(ifp);
+	if_detach(ifp);
+
+	return (rv);
+}
+
+int
+rln_pcmcia_activate(dev, act)
+	struct device *dev;
+	enum devact act;
+{
+	struct rln_pcmcia_softc *sc = (struct rln_pcmcia_softc *)dev;
+	int s;
+
+	s = splnet();
+	switch (act) {
+	case DVACT_ACTIVATE:
+		pcmcia_function_enable(sc->sc_pf);
+		sc->sc_rln.sc_ih =
+		    pcmcia_intr_establish(sc->sc_pf, IPL_NET, rlnintr_pcmcia,
+		        sc);
+		break;
+
+	case DVACT_DEACTIVATE:
+		pcmcia_function_disable(sc->sc_pf);
+		pcmcia_intr_disestablish(sc->sc_pf, sc->sc_rln.sc_ih);
+		break;
+	}
+	splx(s);
+	return (0);
+}
+
 /* Interrupt handler */
-static int
+int
 rlnintr_pcmcia(arg)
 	void *arg;
 {
@@ -269,7 +316,7 @@ rlnintr_pcmcia(arg)
 }
 
 #ifdef notyet
-static int
+int
 rln_pcmcia_enable(sc)
 	struct rln_softc *sc;
 {
@@ -288,7 +335,7 @@ rln_pcmcia_enable(sc)
 	return (pcmcia_function_enable(pf));
 }
 
-static void
+void
 rln_pcmcia_disable(sc)
 	struct rln_softc *sc;
 {

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tag.pro,v 1.1.1.1 1996/09/07 21:40:29 downsj Exp $	*/
+/*	$OpenBSD: tag.pro,v 1.2 1996/09/21 06:23:55 downsj Exp $	*/
 /* tag.c */
 void do_tag __PARMS((char_u *tag, int type, int count, int forceit));
 void do_tags __PARMS((void));

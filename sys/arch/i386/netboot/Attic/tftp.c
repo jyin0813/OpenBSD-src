@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tftp.c,v 1.3 1996/04/26 18:23:16 mickey Exp $	*/
 /*	$NetBSD: tftp.c,v 1.4 1996/02/02 18:06:23 mycroft Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.1 1998/08/25 12:35:16 jb Exp $
+#	$Id: Makefile,v 1.1 1998/11/09 03:13:18 d Exp $
 
 PROG=		sigwait
 SRCS=		sigwait.c

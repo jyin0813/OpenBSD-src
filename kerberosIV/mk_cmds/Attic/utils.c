@@ -1,4 +1,4 @@
-/*	$Id: utils.c,v 1.1.1.1 1995/12/14 06:52:48 tholo Exp $	*/
+/*	$Id: utils.c,v 1.2 1996/09/16 18:49:05 millert Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by MIT Student Information Processing Board

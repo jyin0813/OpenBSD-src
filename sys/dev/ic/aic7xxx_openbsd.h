@@ -30,10 +30,10 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: aic7xxx_openbsd.h,v 1.2 2002/03/14 00:04:09 krw Exp $
+ * $Id: aic7xxx_openbsd.h,v 1.3 2002/03/14 01:26:54 millert Exp $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aic7xxx_freebsd.h,v 1.12 2001/07/18 21:39:47 gibbs Exp $
- * $OpenBSD: aic7xxx_openbsd.h,v 1.2 2002/03/14 00:04:09 krw Exp $
+ * $OpenBSD: aic7xxx_openbsd.h,v 1.3 2002/03/14 01:26:54 millert Exp $
  */
 
 #ifndef _AIC7XXX_OPENBSD_H_

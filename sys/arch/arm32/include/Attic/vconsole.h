@@ -1,4 +1,4 @@
-/* $OpenBSD: vconsole.h,v 1.1 1996/01/31 23:23:29 mark Exp $ */
+/* $OpenBSD: vconsole.h,v 1.2 2000/03/03 00:54:48 todd Exp $ */
 /* $NetBSD: vconsole.h,v 1.1 1996/01/31 23:23:29 mark Exp $ */
 
 /*

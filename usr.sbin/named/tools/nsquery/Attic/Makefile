@@ -1,5 +1,5 @@
 #	from: @(#)Makefile	5.1 (Berkeley) 5/28/90
-#	$Id: Makefile,v 1.2 1993/07/30 21:41:41 mycroft Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:47:56 deraadt Exp dm $
 
 PROG=	nsquery
 NOMAN=	noman

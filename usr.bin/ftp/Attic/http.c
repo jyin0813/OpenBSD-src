@@ -1,4 +1,4 @@
-/*	$OpenBSD: http.c,v 1.1 1996/09/03 18:00:06 deraadt Exp $	*/
+/*	$OpenBSD: http.c,v 1.2 1997/01/29 22:21:32 millert Exp $	*/
 
 /*
  * Copyright (c) 1996 Theo de Raadt

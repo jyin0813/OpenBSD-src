@@ -9,7 +9,7 @@
 .\"
 .\" Created: Sat Apr 22 21:55:14 1995 ylo
 .\"
-.\" $Id: ssh.1.in,v 1.6 1999/06/08 07:52:59 bg Exp $
+.\" $Id: ssh.1.in,v 1.1 1999/09/26 20:53:37 deraadt Exp $
 .\"
 .TH SSH 1 "November 8, 1995" "SSH" "SSH"
 

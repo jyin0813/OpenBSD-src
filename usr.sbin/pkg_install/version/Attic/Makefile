@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 2001/05/21 16:47:51 brian Exp $
 
 NOPROG=
 MAN=	pkg_version.1

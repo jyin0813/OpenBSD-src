@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2001/09/02 17:50:40 pvalchev Exp $
+#	$OpenBSD: Makefile,v 1.2 2001/09/03 11:29:47 deraadt Exp $
 #	$NetBSD: Makefile,v 1.5 1999/07/23 09:44:38 mrg Exp $
 
 LIB=	usb

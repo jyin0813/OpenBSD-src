@@ -1,4 +1,4 @@
-/*	$OpenBSD: zs_cons.h,v 1.1 1997/01/16 04:04:01 kstailey Exp $	*/
+/*	$OpenBSD: zs_cons.h,v 1.1 1997/10/14 07:25:30 gingold Exp $	*/
 
 extern void *zs_conschan;
 

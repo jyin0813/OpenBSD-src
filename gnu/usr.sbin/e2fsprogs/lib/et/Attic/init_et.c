@@ -1,6 +1,6 @@
 /*
- * $Header: /mit/krb5/.cvsroot/src/util/et/init_et.c,v 5.0 1993/04/13 19:56:25 tytso Exp $
- * $Source: /mit/krb5/.cvsroot/src/util/et/init_et.c,v $
+ * $Header: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/et/init_et.c,v 1.1 1997/06/14 07:18:44 downsj Exp $
+ * $Source: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/et/init_et.c,v $
  * $Locker:  $
  *
  * Copyright 1986, 1987, 1988 by MIT Information Systems and

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: xf_pfr.c,v 1.1 1997/03/01 15:08:29 provos Exp $ */
 /*
  * The author of this code is John Ioannidis, ji@tla.org,
  * 	(except when noted otherwise).

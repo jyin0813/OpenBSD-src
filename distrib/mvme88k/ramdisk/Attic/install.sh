@@ -1,5 +1,5 @@
 #
-#	$OpenBSD: install.sh,v 1.2 2000/01/24 04:51:55 smurph Exp $
+#	$OpenBSD: install.sh,v 1.3 2001/06/23 19:44:49 deraadt Exp $
 #
 # Copyright (c) 1996 The NetBSD Foundation, Inc.
 # All rights reserved.

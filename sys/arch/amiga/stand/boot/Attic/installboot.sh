@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: installboot.sh,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
+#	$OpenBSD: installboot.sh,v 1.1 1997/01/16 09:26:34 niklas Exp $
 #	$NetBSD: installboot.sh,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
 
 # compatibility with old installboot program

@@ -1,4 +1,4 @@
-/*	$Id: gets.c,v 1.2 1995/11/07 08:50:48 deraadt Exp $ */
+/*	$Id: gets.c,v 1.1 1997/03/03 19:30:35 rahnds Exp $ */
 
 /*-
  * Copyright (c) 1995 Theo de Raadt

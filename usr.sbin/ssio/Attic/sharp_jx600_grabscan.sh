@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: sharp_jx600_grabscan,v 1.1 1996/01/14 01:53:58 ken Exp $
+# $Id: sharp_jx600_grabscan.sh,v 1.1 1997/03/11 03:23:17 kstailey Exp $
 #
 # Copyright (c) 1996 Kenneth Stailey
 # All rights reserved.

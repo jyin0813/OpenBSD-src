@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: find_path.c,v 1.10 1999/03/29 20:29:02 millert Exp $	*/
 
 /*
  *  CU sudo version 1.5.9

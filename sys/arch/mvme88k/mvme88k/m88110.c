@@ -1,4 +1,4 @@
-/*	$OpenBSD: m88110.c,v 1.1 2001/12/13 08:55:52 smurph Exp $	*/
+/*	$OpenBSD: m88110.c,v 1.2 2001/12/14 04:30:12 smurph Exp $	*/
 /*
  * Copyright (c) 1998 Steve Murphree, Jr.
  * All rights reserved.

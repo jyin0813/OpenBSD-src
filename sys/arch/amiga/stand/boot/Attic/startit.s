@@ -1,4 +1,4 @@
-/*	$OpenBSD: startit.s,v 1.1 1997/01/16 09:26:41 niklas Exp $	*/
+/*	$OpenBSD: startit.s,v 1.2 1997/03/25 17:05:55 niklas Exp $	*/
 /*	$NetBSD: startit.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: in6_prefix.c,v 1.12 2001/08/24 16:57:33 brian Exp $	*/
+/*	$OpenBSD: in6_prefix.c,v 1.13 2002/03/14 01:27:12 millert Exp $	*/
 /*	$KAME: in6_prefix.c,v 1.47 2001/03/25 08:41:39 itojun Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: cpuregs.h,v 1.4 1998/05/18 00:28:12 millert Exp $	*/
 /*	$NetBSD: cpuregs.h,v 1.14 1998/04/23 10:32:08 jonathan Exp $	*/
 
 /*

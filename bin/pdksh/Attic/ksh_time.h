@@ -1,4 +1,4 @@
-/*	$OpenBSD: ksh_time.h,v 1.1.1.1 1996/08/14 06:19:11 downsj Exp $	*/
+/*	$OpenBSD: ksh_time.h,v 1.2 1996/10/01 02:05:40 downsj Exp $	*/
 
 #ifndef KSH_TIME_H
 # define KSH_TIME_H

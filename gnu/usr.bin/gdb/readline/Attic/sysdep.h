@@ -6,7 +6,7 @@
    place in configure.in, and viola, you are done.  sysdep-sunos4.h is a good
    example of how to do this. */
 
-/* $Id: sysdep.h,v 1.1 1994/01/28 12:43:34 pk Exp $ */
+/* $Id: sysdep.h,v 1.1 1995/10/18 08:40:15 deraadt Exp $ */
 
 #ifdef __GNUC__
 #define alloca __builtin_alloca

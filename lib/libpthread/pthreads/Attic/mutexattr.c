@@ -36,7 +36,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: mutexattr.c,v 1.3 1994/12/13 07:27:57 proven Exp $";
+static const char rcsid[] = "$Id: mutexattr.c,v 1.1 1998/07/21 13:20:09 peter Exp $";
 #endif
 
 #include <pthread.h>

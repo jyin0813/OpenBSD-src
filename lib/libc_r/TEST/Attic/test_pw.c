@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_pw.c,v 1.4 2000/01/06 06:58:34 d Exp $	*/
+/*	$OpenBSD: test_pw.c,v 1.5 2000/03/23 05:18:33 d Exp $	*/
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>

@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: spi.h,v 1.2 1997/07/19 12:07:58 provos Exp $ */
+/* $Id: spi.h,v 1.3 1997/07/23 12:28:55 provos Exp $ */
 /*
  * spi.h: 
  * security paramter index creation.

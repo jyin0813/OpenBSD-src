@@ -1,4 +1,4 @@
-/*	$OpenBSD: hpux_sig.c,v 1.2 2004/07/11 00:20:46 mickey Exp $	*/
+/*	$OpenBSD: hpux_sig.c,v 1.3 2004/07/11 00:29:30 mickey Exp $	*/
 
 /*
  * Copyright (c) 2004 Michael Shalayeff.  All rights reserved.

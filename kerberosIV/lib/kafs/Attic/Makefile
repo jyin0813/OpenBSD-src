@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2001/06/22 16:05:27 hin Exp $
+# $OpenBSD: Makefile,v 1.10 2001/07/11 09:26:22 hin Exp $
 
 LIB	= kafs
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: install.sh,v 1.1 1997/01/31 05:11:05 rahnds Exp $
+#	$OpenBSD: install.sh,v 1.2 1997/02/21 17:42:09 rahnds Exp $
 #	$NetBSD: install.sh,v 1.5.2.8 1996/08/27 18:15:05 gwr Exp $
 #
 # Copyright (c) 1996 The NetBSD Foundation, Inc.

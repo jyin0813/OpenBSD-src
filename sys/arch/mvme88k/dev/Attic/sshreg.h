@@ -1,4 +1,4 @@
-/*	$OpenBSD: sshreg.h,v 1.3 2003/02/11 19:20:26 mickey Exp $	*/
+/*	$OpenBSD: sshreg.h,v 1.4 2003/06/02 23:27:52 millert Exp $	*/
 
 /*
  * Copyright (c) 1990 The Regents of the University of California.

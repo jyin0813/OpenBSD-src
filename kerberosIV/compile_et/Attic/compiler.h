@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: compiler.h,v 1.1 1995/12/14 06:52:49 tholo Exp $	*/
 
 /*
  * definitions common to the source files of the error table compiler

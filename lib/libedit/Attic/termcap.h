@@ -1,4 +1,4 @@
-/*	$OpenBSD: termcap.h,v 1.5 2002/02/17 19:42:25 millert Exp $	*/
+/*	$OpenBSD: termcap.h,v 1.6 2003/06/02 20:18:40 millert Exp $	*/
 /*	$NetBSD: termcap.h,v 1.2 1997/01/11 06:48:14 lukem Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/* $OpenBSD: smtpfwdd.c,v 1.8 2001/12/30 00:27:14 deraadt Exp $*/
+/* $OpenBSD: smtpfwdd.c,v 1.9 2002/06/09 01:24:59 deraadt Exp $*/
 
 /*
  * smtpfwdd, Obtuse SMTP forward daemon, master process watches spool
@@ -42,7 +42,7 @@
  */
 char *obtuse_copyright =
 "Copyright 1996 - Obtuse Systems Corporation - All rights reserved.";
-char *obtuse_rcsid = "$OpenBSD: smtpfwdd.c,v 1.8 2001/12/30 00:27:14 deraadt Exp $";
+char *obtuse_rcsid = "$OpenBSD: smtpfwdd.c,v 1.9 2002/06/09 01:24:59 deraadt Exp $";
 
 #include <stdio.h>
 #include <signal.h>

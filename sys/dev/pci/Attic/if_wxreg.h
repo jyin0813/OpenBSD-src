@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_wxreg.h,v 1.5 2001/10/06 22:42:53 mjacob Exp $	*/
+/*	$OpenBSD: if_wxreg.h,v 1.6 2001/10/24 18:25:55 mjacob Exp $	*/
 /*
  * Principal Author: Matthew Jacob
  * Copyright (c) 1999, 2001 by Traakan Software

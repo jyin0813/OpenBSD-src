@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: arp.c,v 1.3 1996/04/26 18:22:58 mickey Exp $	*/
 /*	$NetBSD: arp.c,v 1.5 1996/02/02 18:06:14 mycroft Exp $	*/
 
 /*

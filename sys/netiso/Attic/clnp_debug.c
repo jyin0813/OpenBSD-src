@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp_debug.c,v 1.4 2003/06/02 23:28:16 millert Exp $	*/
+/*	$OpenBSD: clnp_debug.c,v 1.5 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: clnp_debug.c,v 1.6 1996/02/13 22:08:13 christos Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kbd_tables.h,v 1.3 1997/08/08 08:17:17 downsj Exp $	*/
 /*	$NetBSD: kbd_tables.h,v 1.4 1996/12/17 20:46:14 gwr Exp $	*/
 
 /*

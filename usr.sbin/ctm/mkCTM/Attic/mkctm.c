@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: mkctm.c,v 1.3 1999/07/13 23:02:07 deraadt Exp $ */
 /* Still missing:
  *
  * mkctm 

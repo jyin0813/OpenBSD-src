@@ -1,4 +1,4 @@
-/*	$OpenBSD: pkcstest.c,v 1.6 1999/03/24 14:57:54 niklas Exp $	*/
+/*	$OpenBSD: pkcstest.c,v 1.7 1999/04/19 21:00:46 niklas Exp $	*/
 /*	$EOM: pkcstest.c,v 1.7 1999/04/05 18:27:37 niklas Exp $	*/
 
 /*

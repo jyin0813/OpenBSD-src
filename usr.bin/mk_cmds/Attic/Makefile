@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $
+#	$OpenBSD: Makefile,v 1.1 1996/11/15 09:26:03 downsj Exp $
 
 PROG=	mk_cmds
 SRCS=	mk_cmds.c options.c utils.c ct.c cmd_tbl.c

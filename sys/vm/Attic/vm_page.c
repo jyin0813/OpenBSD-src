@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_page.c,v 1.17 1999/09/03 18:02:28 art Exp $	*/
+/*	$OpenBSD: vm_page.c,v 1.18 2000/05/27 18:31:35 art Exp $	*/
 /*	$NetBSD: vm_page.c,v 1.41 1998/02/08 18:24:52 thorpej Exp $	*/
 
 #define	VM_PAGE_ALLOC_MEMORY_STATS

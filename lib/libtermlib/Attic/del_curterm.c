@@ -1,4 +1,4 @@
-/*	$OpenBSD: del_curterm.c,v 1.1.1.1 1996/05/31 05:40:02 tholo Exp $	*/
+/*	$OpenBSD: del_curterm.c,v 1.2 1996/08/31 02:40:30 tholo Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: del_curterm.c,v 1.1.1.1 1996/05/31 05:40:02 tholo Exp $";
+static char rcsid[] = "$OpenBSD: del_curterm.c,v 1.2 1996/08/31 02:40:30 tholo Exp $";
 #endif
 
 #include <stdlib.h>

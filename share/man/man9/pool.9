@@ -1,5 +1,5 @@
-.\"	$OpenBSD: pool.9,v 1.1 1999/09/22 03:16:47 csapuntz Exp $
-.\"	$NetBSD: pool.9,v 1.14 1999/08/05 04:00:04 sommerfeld Exp $
+.\"	$OpenBSD$
+.\"	$NetBSD: pool.9,v 1.13 1999/04/03 14:50:21 msaitoh Exp $
 .\"
 .\" Copyright (c) 1997, 1998 The NetBSD Foundation, Inc.
 .\" All rights reserved.
@@ -46,7 +46,6 @@
 .Nm pool_prime ,
 .Nm pool_sethiwat ,
 .Nm pool_setlowat
-.\".Nm POOL_STORAGE_SIZE
 .Nd resource-pool manager
 .Sh SYNOPSIS
 .Fd #include <sys/pool.h>
@@ -73,7 +72,7 @@
 .Fn pool_sethiwat "struct pool *pp" "int n"
 .Ft void
 .Fn pool_setlowat "struct pool *pp" "int n"
-.Fn POOL_STORAGE_SIZE "size" "nitems"
+.\" .Fn POOL_STORAGE_SIZE "size" "nitems"
 .Sh DESCRIPTION
 These utility routines provide management of pools of fixed-sized
 areas of memory.
@@ -326,18 +325,18 @@ code to be reentered.
 .Ss DIAGNOSTICS
 Pool usage logs can be enabled by defining the compile-time option
 .Dv POOL_DIAGNOSTIC .
-.\" .Sh RETURN VALUES
-.\" .Sh EXAMPLES
 .Sh CODE REFERENCES
 The pool manager is implemented in the file
 .Pa sys/kern/subr_pool.c .
-.\" .Sh AUTHOR
 .Sh SEE ALSO
 .Xr malloc 9 ,
-.Xr free 9 ,
-.Xr uvm 9
+.Xr free 9
+.\" .Xr uvm 9
+.Sh BUGS
+Pool will not work with old VM and is only used by UVM.
 .Sh HISTORY
-The
-.Nx
-pool manager appeared in
-.Nx 1.4 .
+The pool manager first appeared in
+.Nx 1.4
+and was ported to
+.Ox
+by Artur Grabowski <art@openbsd.org>.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mk_cmds_defs.h,v 1.1.1.1 1995/12/14 06:52:48 tholo Exp $	*/
+/*	$OpenBSD: mk_cmds_defs.h,v 1.1 1996/11/15 09:26:08 downsj Exp $	*/
 
 #include <stdio.h>
 #include <string.h>

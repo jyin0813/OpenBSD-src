@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: keycap.c,v 1.3 1999/01/13 07:26:05 niklas Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993 The Regents of the University of California.

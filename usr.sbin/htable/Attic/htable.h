@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)htable.h	5.5 (Berkeley) 2/6/91
- *	$Id: htable.h,v 1.2 1993/08/01 17:59:37 mycroft Exp $
+ *	$Id: htable.h,v 1.1 1995/10/18 08:47:36 deraadt Exp downsj $
  */
 
 #include <sys/types.h>

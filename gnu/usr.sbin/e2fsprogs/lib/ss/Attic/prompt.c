@@ -1,7 +1,7 @@
 /*
  * prompt.c: Routines for retrieving and setting a prompt.
  *
- * $Header: /mit/krb5/.cvsroot/src/util/ss/prompt.c,v 1.1 1993/06/03 12:31:15 tytso Exp $
+ * $Header: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/ss/prompt.c,v 1.1 1997/06/14 07:18:45 downsj Exp $
  * $Locker:  $
  *
  * Copyright 1987, 1988 by MIT Student Information Processing Board

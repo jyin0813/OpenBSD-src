@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: elf_machdep.h,v 1.3 2001/01/27 01:21:15 miod Exp $	*/
 /*	$NetBSD: elf_machdep.h,v 1.2 1996/12/17 03:45:05 jonathan Exp $	*/
 
 #define	ELF32_MACHDEP_ID_CASES						\

@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)stdlib.h	5.13 (Berkeley) 6/4/91
- *	$Id: __unistd.h,v 1.1.1.1 1998/07/21 13:19:41 peter Exp $
+ *	$Id: __unistd.h,v 1.1 1998/07/21 16:28:08 peter Exp $
  */
 
 #ifndef _SYS___UNISTD_H_

@@ -1,4 +1,4 @@
-/* $OpenBSD: socket3.c,v 1.1 2002/10/10 00:45:20 marc Exp $ */
+/* $OpenBSD: socket3.c,v 1.2 2002/10/12 19:02:51 marc Exp $ */
 /* PUBLIC DOMAIN Oct 2002 <marc@snafu.org> */
 
 /* Test blocking/non-blocking mode inheritance on accept */

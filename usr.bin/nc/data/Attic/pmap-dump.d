@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: pmap-dump.d,v 1.2 2001/01/29 01:58:11 niklas Exp $
 
 # portmap dump request: like "rpcinfo -p" but via UDP instead
 # send to UDP 111 and hope it's not a logging portmapper!

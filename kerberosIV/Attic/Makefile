@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.25 1998/09/07 00:47:12 niklas Exp $
+#	$OpenBSD: Makefile,v 1.26 1999/03/09 00:01:42 niklas Exp $
 #	from @(#)Makefile	5.1 (Berkeley) 6/25/90
 
 SUBDIR=

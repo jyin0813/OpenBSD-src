@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: dlfcn.h,v 1.1 2004/08/06 20:56:01 pefo Exp $ */
 
 /*
  * Copyright (c) 1998 Per Fogelstrom, Opsycon AB

@@ -1,11 +1,11 @@
-/*	$OpenBSD: db_reload.c,v 1.3 1998/05/23 19:24:49 millert Exp $	*/
+/*	$OpenBSD: db_reload.c,v 1.4 2002/06/09 01:58:54 kjell Exp $	*/
 
 #if !defined(lint) && !defined(SABER)
 #if 0
 static char sccsid[] = "@(#)db_reload.c	4.22 (Berkeley) 3/21/91";
 static char rcsid[] = "$From: db_reload.c,v 8.3 1996/08/27 08:33:23 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD: db_reload.c,v 1.3 1998/05/23 19:24:49 millert Exp $";
+static char rcsid[] = "$OpenBSD: db_reload.c,v 1.4 2002/06/09 01:58:54 kjell Exp $";
 #endif
 #endif /* not lint */
 

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2000/09/11 14:40:27 art Exp $
+#	$OpenBSD: Makefile,v 1.5 2001/01/31 06:53:42 art Exp $
 LIB	= roken
 # roken stuff
 SRCS	= copy_basename.c base64.c emalloc.c eefile.c efile.c estrdup.c \

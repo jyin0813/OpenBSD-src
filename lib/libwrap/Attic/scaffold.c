@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: scaffold.c,v 1.1 1997/02/26 03:06:56 downsj Exp $	*/
 
  /*
   * Routines for testing only. Not really industrial strength.
@@ -10,7 +10,7 @@
 #if 0
 static char sccs_id[] = "@(#) scaffold.c 1.5 95/01/03 09:13:48";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: scaffold.c,v 1.1 1997/02/26 03:06:56 downsj Exp $";
 #endif
 #endif
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: alloc.pro,v 1.1 1996/09/07 21:40:30 downsj Exp $	*/
 /* alloc.c */
 char_u *alloc __PARMS((unsigned size));
 char_u *alloc_check __PARMS((unsigned size));

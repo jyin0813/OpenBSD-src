@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: promcons.c,v 1.2 2001/07/04 08:33:51 niklas Exp $	*/
 
 
 #include <stdarg.h>

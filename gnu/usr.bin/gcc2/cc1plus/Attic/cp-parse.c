@@ -2,7 +2,7 @@
 /*  A Bison parser, made from cp-parse.y  */
 
 #ifndef lint
-static char rcsid[] = "$Id: cp-parse.c,v 1.2 1993/08/02 17:32:01 mycroft Exp $";
+static char rcsid[] = "$Id: cp-parse.c,v 1.1 1995/10/18 08:39:32 deraadt Exp niklas $";
 #endif /* not lint */
 
 #define YYBISON 1  /* Identify Bison output.  */

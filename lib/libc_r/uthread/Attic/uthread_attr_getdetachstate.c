@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_attr_getdetachstate.c,v 1.3 1999/11/25 07:01:30 d Exp $	*/
+/*	$OpenBSD: uthread_attr_getdetachstate.c,v 1.4 2002/01/10 00:45:30 fgsch Exp $	*/
 /*
  * Copyright (c) 1997 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

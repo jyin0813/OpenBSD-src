@@ -1,4 +1,4 @@
-/*	$OpenBSD: reg.h,v 1.6 1995/12/20 02:00:27 jonathan Exp $	*/
+/*	$OpenBSD: reg.h,v 1.3 1996/06/06 23:07:07 deraadt Exp pefo $	*/
 /*	$NetBSD: reg.h,v 1.6 1995/12/20 02:00:27 jonathan Exp $	*/
 
 /*

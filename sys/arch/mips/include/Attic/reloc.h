@@ -1,4 +1,4 @@
-/*      $OpenBSD: reloc.h,v 1.2 1996/07/30 20:24:28 pefo Exp $	*/
+/*      $OpenBSD: reloc.h,v 1.1 1998/01/28 11:14:55 pefo Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kbd_ms_ttyvar.h,v 1.1 2001/08/19 05:38:27 jason Exp $	*/
 /*	$NetBSD: kbd_ms_ttyvar.h,v 1.1 2000/09/21 22:25:08 eeh Exp $	*/
 
 /*

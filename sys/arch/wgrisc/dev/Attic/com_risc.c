@@ -1,4 +1,4 @@
-/*	$OpenBSD: com_risc.c,v 1.2 1997/07/07 17:09:07 niklas Exp $	*/
+/*	$OpenBSD: com_risc.c,v 1.3 1999/02/01 16:39:50 pefo Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994 Charles Hannum.

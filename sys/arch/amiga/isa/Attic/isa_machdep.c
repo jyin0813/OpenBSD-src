@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: isa_machdep.c,v 1.4 1999/03/05 19:17:44 niklas Exp $	*/
 
 /*
  * Copyright (c) 1999 Niklas Hallqvist

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uvm_vnode.h,v 1.8 2001/08/06 14:03:05 art Exp $	*/
+/*	$OpenBSD: uvm_vnode.h,v 1.9 2001/11/27 05:27:12 art Exp $	*/
 /*	$NetBSD: uvm_vnode.h,v 1.9 2000/03/26 20:54:48 kleink Exp $	*/
 
 /*

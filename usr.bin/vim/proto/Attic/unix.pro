@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: unix.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* unix.c */
 void mch_write __PARMS((char_u *s, int len));
 int mch_inchar __PARMS((char_u *buf, int maxlen, long wtime));

@@ -17,7 +17,7 @@
 #  WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
 #  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 #
-# @(#) $Header: Makefile.in,v 1.198 96/12/05 22:12:11 leres Exp $ (LBL)
+# @(#) $Header: /cvs/src/usr.sbin/tcpdump/Makefile.in,v 1.1 1996/12/12 16:23:02 bitblt Exp $ (LBL)
 
 #
 # Various configurable paths (remember to edit Makefile.in, not Makefile)

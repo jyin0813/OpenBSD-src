@@ -18,7 +18,7 @@
  * WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
- * @(#) $Header: /cvs/src/usr.sbin/tcpdump/lbl/os-sunos4.h,v 1.1 1996/12/12 16:08:23 bitblt Exp $ (LBL)
+ * @(#) $Header: /cvs/src/usr.sbin/tcpdump/os-sunos4.h,v 1.1 1996/12/12 16:22:46 bitblt Exp $ (LBL)
  */
 
 /* Prototypes missing in SunOS 4 */

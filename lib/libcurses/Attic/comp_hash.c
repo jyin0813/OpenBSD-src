@@ -1,4 +1,4 @@
-/*	$OpenBSD: comp_hash.c,v 1.1 1998/07/23 21:17:25 millert Exp $	*/
+/*	$OpenBSD: comp_hash.c,v 1.2 1998/09/13 19:16:15 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

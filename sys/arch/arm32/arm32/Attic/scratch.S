@@ -1,4 +1,4 @@
-/* $OpenBSD: scratch.S,v 1.2 1996/02/02 02:35:49 mycroft Exp $ */
+/* $OpenBSD: scratch.S,v 1.2 2000/03/03 00:54:46 todd Exp $ */
 /* $NetBSD: scratch.S,v 1.2 1996/02/02 02:35:49 mycroft Exp $ */
 
 /*

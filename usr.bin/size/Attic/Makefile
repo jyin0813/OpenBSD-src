@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 1998/05/11 07:40:30 niklas Exp $
+#	$OpenBSD: Makefile,v 1.5 1999/05/10 16:14:07 espie Exp $
 
 TARGET_MACHINE_ARCH?=	${MACHINE_ARCH}
 

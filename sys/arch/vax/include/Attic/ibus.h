@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ibus.h,v 1.1 2001/01/28 01:19:57 hugh Exp $	*/
 
 /*
  *  Copyright (c) 2001 Hugh Graham

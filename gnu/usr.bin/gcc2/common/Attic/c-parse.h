@@ -1,4 +1,4 @@
-/*	$Id: c-parse.h,v 1.2 1993/08/02 17:33:32 mycroft Exp $ */
+/*	$Id: c-parse.h,v 1.1 1995/10/18 08:39:35 deraadt Exp niklas $ */
 
 typedef union {long itype; tree ttype; enum tree_code code;
 	char *filename; int lineno; } YYSTYPE;

@@ -1,4 +1,4 @@
-/*	$OpenBSD: memerr.c,v 1.8 1997/01/16 04:03:50 kstailey Exp $	*/
+/*	$OpenBSD: memerr.c,v 1.9 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: memerr.c,v 1.6 1996/11/13 07:05:14 thorpej Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.4 1994/12/22 21:58:16 jtc Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:39:35 deraadt Exp niklas $
 
 LIB=	cc1
 

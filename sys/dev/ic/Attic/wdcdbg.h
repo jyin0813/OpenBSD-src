@@ -1,4 +1,4 @@
-/*      $OpenBSD: ata.c,v 1.6 2000/07/20 07:40:32 csapuntz Exp $      */
+/*      $OpenBSD: wdcdbg.h,v 1.1 2000/10/28 18:08:46 csapuntz Exp $      */
 
 #define WDCDEBUG_PROBE
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_newterm.c,v 1.5 1998/07/23 21:19:06 millert Exp $	*/
+/*	$OpenBSD: lib_newterm.c,v 1.6 1998/10/31 06:30:30 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

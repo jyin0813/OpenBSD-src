@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_dbmaint.c,v 1.10 2000/06/20 07:33:51 fgsch Exp $	*/
+/*	$OpenBSD: tcfs_dbmaint.c,v 1.11 2000/06/20 07:58:57 fgsch Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

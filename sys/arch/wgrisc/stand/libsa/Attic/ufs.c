@@ -1,4 +1,4 @@
-/*	$OpenBSD: ufs.c,v 1.11 1997/04/02 05:28:30 mickey Exp $	*/
+/*	$OpenBSD: ufs.c,v 1.1 1997/07/21 06:58:15 pefo Exp $	*/
 /*	$NetBSD: ufs.c,v 1.16 1996/09/30 16:01:22 ws Exp $	*/
 
 /*-

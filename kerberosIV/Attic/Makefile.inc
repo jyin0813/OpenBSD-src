@@ -1,16 +1,19 @@
-#	$OpenBSD: Makefile.inc,v 1.7 1996/11/15 09:21:25 downsj Exp $
+# $OpenBSD$
 
-CFLAGS+=-I${.CURDIR}/../include
-BINDIR?=/usr/sbin
+KRBVERSION = "krb4-1.0"
 
-.if defined(OBJMACHINE)
-__objdir=	obj.${MACHINE}
-.else
-__objdir=	obj
-.endif
+KRBDIR	= ${.CURDIR}/${KRBDEPTH}
+KRBSRC	= ${.CURDIR}/${KRBDEPTH}/src
 
-.if (${MACHINE_ARCH} != "mips")
-COM_ERR=	-lcom_err_pic
-.else
-COM_ERR=	-lcom_err
-.endif
+CFLAGS	+= -DHAVE_CONFIG_H -DBINDIR=\"/usr/bin\" \
+	   -I${DESTDIR}/usr/include/kerberosIV \
+	   -I${KRBSRC}/include -I${KRBSRC}/lib/roken \
+	   -I${KRBDIR}/lib/roken -I${KRBSRC}/lib/sl 
+
+LIBROKEN= -L${KRBDEPTH}/lib/roken -lroken
+LIBSL	= -L${KRBDEPTH}/lib/sl -lsl
+
+.PATH:	${KRBSRC}/man
+
+COMPILE_ET	= /usr/bin/compile_et
+

@@ -1,4 +1,4 @@
-/*	$OpenBSD: sclock.c,v 1.15 2003/10/05 20:25:08 miod Exp $ */
+/*	$OpenBSD: sclock.c,v 1.16 2003/10/08 22:36:11 miod Exp $ */
 /*
  * Copyright (c) 1999 Steve Murphree, Jr.
  *

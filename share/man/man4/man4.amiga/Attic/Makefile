@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2000/03/02 14:46:43 todd Exp $
+#	$OpenBSD: Makefile,v 1.3 2000/09/03 14:46:46 espie Exp $
 #	from: @(#)Makefile	8.2 (Berkeley) 2/16/94
 
 MAN=	ae.4 afsc.4 ahsc.4 atzsc.4 autoconf.4 console.4 bah.4 ed.4 es.4 gtsc.4 \

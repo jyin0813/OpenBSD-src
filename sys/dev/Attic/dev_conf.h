@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: dev_conf.h,v 1.1 1996/04/18 23:47:02 niklas Exp deraadt $	*/
 /*	$NetBSD: dev_conf.h,v 1.1 1996/03/07 15:00:13 christos Exp $	*/
 
 /*

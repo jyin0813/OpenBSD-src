@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.8 2001/09/25 21:51:16 drahn Exp $
+#	$OpenBSD: Makefile,v 1.9 2002/02/11 13:58:49 art Exp $
 
 DIR=/usr/src/libexec/ld.so/obj/ld.so
 #necessary to build the shared objects. not necessary for dltest but

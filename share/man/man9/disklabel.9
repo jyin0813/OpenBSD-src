@@ -1,5 +1,4 @@
-.\"	$OpenBSD: disklabel.9,v 1.1 1999/09/22 03:16:47 csapuntz Exp $
-.\"	$NetBSD: disklabel.9,v 1.8 1999/03/16 00:40:47 garbled Exp $
+.\"	$NetBSD: disklabel.9,v 1.7 1999/03/06 22:09:29 mycroft Exp $
 .\"
 .\" Copyright (c) 1996 The NetBSD Foundation, Inc.
 .\" All rights reserved.
@@ -47,13 +46,13 @@
 .Nd disk label management routines
 .Sh SYNOPSIS
 .Ft char *
-.Fn readdisklabel "dev_t dev" "void (*strat)(struct buf *)" "struct disklabel *lp" "struct cpu_disklabel *clp"
+.Fn readdisklabel "dev_t dev" "void (*strat)(struct buf *)" "struct disklabel *lp" "struct cpu_disklabel *osdep" "int spoofonly"
 .Ft int
-.Fn writedisklabel "dev_t dev" "void (*strat)(struct buf *)" "struct disklabel *lp" "struct cpu_disklabel *clp"
+.Fn writedisklabel "dev_t dev" "void (*strat)(struct buf *)" "struct disklabel *lp" "struct cpu_disklabel *osdep"
 .Ft int
-.Fn setdisklabel "struct disklabel *olp" "struct disklabel *nlp" "u_long openmask" "struct cpu_disklabel *clp"
+.Fn setdisklabel "struct disklabel *olp" "struct disklabel *nlp" "u_long openmask" "struct cpu_disklabel *osdep"
 .Ft int
-.Fn bounds_check_with_label "struct buf *bp" "struct disklabel *lp" "int wlabel"
+.Fn bounds_check_with_label "struct buf *bp" "struct disklabel *lp" "struct cpu_disklabel *osdep" "int wlabel"
 .Sh DESCRIPTION
 This collection of routines provides a disklabel management interface to
 kernel device drivers.
@@ -83,11 +82,14 @@ to get an appropriately sized buffer to pass to the device strategy routine.
 Unspecified fields in
 .Fa lp
 should be set to zero.
-If the medium does not contain a native disklabel that can be read in directly,
+If the medium does not contain a native disklabel that can be read in directly
+or
+.Fa spoofonly
+argument is a true value,
 .Fn readdisklabel
 may resort to constructing a label from other machine-dependent information
 using the provided buffer passed in the
-.Fa clp
+.Fa osdep
 argument.
 If a disk label can not be found or constructed, a string containing
 an approximated description of the failure mode is returned.
@@ -109,7 +111,7 @@ may elect to do a machine-dependent conversion of the native disk label
 structure
 .Po
 using the buffer pointed at by
-.Fa clp
+.Fa osdep
 .Pc ,
 to store the disk label onto the medium in a format complying with
 architectural contraints.
@@ -156,12 +158,11 @@ If this check fails,
 sets the buffer's
 .Dq Va b_error
 field to
-.Dv EINVAL ,
-sets the
+.Dv EINVAL
+and sets the
 .Dv B_ERROR
 flag in
-.Dq Va b_flags ,
-and returns -1.
+.Dq Va b_flags .
 If the argument
 .Fa wlabel
 is zero, and the transfer is a write operation, a check is done if the transfer
@@ -171,12 +172,11 @@ the disklabel area on the medium.
 If that is the case,
 .Dv EROFS
 is set in
-.Dq Va b_error ,
-the
+.Dq Va b_error
+and the
 .Dv B_ERROR
 flag is set in
-.Dq Va b_flags ,
-and -1 is returned.
+.Dq Va b_flags .
 Note that
 .Fa wlabel
 should be set to a non-zero value if the intended operation is expected to
@@ -185,7 +185,11 @@ Programs that intend to do so using the raw device interface should notify
 the driver by using a
 .Dv DIOCWLABEL
 ioctl function.
+Zero value is returned if any of the bound checks failed or
+transfer was attempted exactly at the end of disk partition.
+Otherwise the value of 1 is returned.
 .Pp
 .Sh SEE ALSO
 .Xr disklabel 5 ,
-.Xr disklabel 8
+.Xr disklabel 8 ,
+.Xr fdisk 8

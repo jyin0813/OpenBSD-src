@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.inc,v 1.2 1997/09/21 11:50:19 deraadt Exp $
 #	etc.arm32/Makefile.inc -- arm32-specific etc Makefile targets
 
 .ifdef DESTDIR

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: photuris.startup,v 1.4 2002/06/09 06:15:15 todd Exp $
 
 # Initial exchanges which might be needed by NIS or NFS servers
 # accepted keywords are

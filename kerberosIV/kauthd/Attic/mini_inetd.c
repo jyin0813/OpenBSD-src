@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: mini_inetd.c,v 1.1 1998/02/18 07:10:25 art Exp $	*/
 /* $KTH : mini_inetd.c,v 1.12 1997/11/02 04:14:12 assar Exp $ */
 
 /*

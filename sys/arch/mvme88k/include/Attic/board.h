@@ -1,4 +1,4 @@
-/*	$OpenBSD: board.h,v 1.19 2003/11/09 00:32:00 miod Exp $ */
+/*	$OpenBSD: board.h,v 1.20 2004/01/19 17:21:23 miod Exp $ */
 /*
  * Copyright (c) 1996 Nivas Madhur
  * All rights reserved.

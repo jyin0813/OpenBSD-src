@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: init_et.c,v 1.1 1996/11/11 04:55:05 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -28,7 +28,7 @@
 
 #ifndef	lint
 static const char rcsid_init_et_c[] =
-    "$Id: init_et.c,v 1.1.1.1 1995/12/14 06:52:32 tholo Exp $";
+    "$Id: init_et.c,v 1.1 1996/11/11 04:55:05 downsj Exp $";
 #endif
 
 struct foobar {

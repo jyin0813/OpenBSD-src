@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_keytab.h,v 1.6 2002/03/14 01:27:08 millert Exp $	*/
+/*	$OpenBSD: tcfs_keytab.h,v 1.7 2002/03/14 03:16:10 millert Exp $	*/
 /*
  * Copyright 2000 The TCFS Project at http://tcfs.dia.unisa.it/
  * All rights reserved.

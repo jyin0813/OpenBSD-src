@@ -20,7 +20,7 @@
 ;* 5900 E. Ben White Blvd.
 ;* Austin, TX 78741
 ;*****************************************************************************
-;*       $Id: udidos.ah,v 1.1.2.1 1996/11/19 15:03:41 niklas Exp $
+;*       $Id: udidos.ah,v 1.2 1996/11/23 04:11:22 niklas Exp $
 ;*/
 ;
 ; The following structure is filled in by a small assembly

@@ -39,7 +39,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: select.c,v 1.64.4.2 1996/07/07 03:58:55 proven Exp $";
+static const char rcsid[] = "$Id: select.c,v 1.1 1998/07/21 13:20:22 peter Exp $";
 #endif
 
 #include <string.h>

@@ -1,5 +1,5 @@
 /*
-**	$Id: config.c,v 1.1.1.1 1995/10/18 08:43:17 deraadt Exp $
+**	$Id: config.c,v 1.2 1997/07/23 20:36:26 kstailey Exp $
 **
 ** config.c			    This file handles the config file
 **

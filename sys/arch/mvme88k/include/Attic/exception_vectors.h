@@ -156,8 +156,8 @@
 /* vector 0x7d (#125) */  word   UNDEFINED
 /* vector 0x7e (#126) */  word   unimplemented_handler
 /* vector 0x7f (#127) */  word   UNDEFINED
-/* vector 0x80 (#128) */  word   syscall_handler
-/* vector 0x81 (#129) */  word   syscall_handler
+/* vector 0x80 (#128) */  word   _syscall_handler
+/* vector 0x81 (#129) */  word   _syscall_handler
 /* vector 0x82 (#130) */  word   break
 /* vector 0x83 (#131) */  word   trace
 /* vector 0x84 (#132) */  word   entry

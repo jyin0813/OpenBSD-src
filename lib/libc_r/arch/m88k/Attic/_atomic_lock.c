@@ -1,4 +1,4 @@
-/*	$OpenBSD: _atomic_lock.c,v 1.1 1999/03/03 06:00:10 smurph Exp $	*/
+/*	$OpenBSD: _atomic_lock.c,v 1.2 2002/10/11 19:08:41 marc Exp $	*/
 /*
  * Atomic lock for m68k
  */

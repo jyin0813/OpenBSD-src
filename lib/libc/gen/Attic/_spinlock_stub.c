@@ -29,8 +29,8 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: _spinlock_stub.c,v 1.3 1998/06/09 08:32:22 jb Exp $
- * $OpenBSD$
+ * $Id: _spinlock_stub.c,v 1.1 1998/11/20 11:18:37 d Exp $
+ * $OpenBSD: _spinlock_stub.c,v 1.1 1998/11/20 11:18:37 d Exp $
  *
  */
 

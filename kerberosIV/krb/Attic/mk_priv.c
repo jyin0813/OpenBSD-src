@@ -1,4 +1,4 @@
-/*	$OpenBSD: mk_priv.c,v 1.5 1997/12/12 05:30:27 art Exp $	*/
+/*	$OpenBSD: mk_priv.c,v 1.6 1998/05/18 00:53:51 art Exp $	*/
 /*	$KTH: mk_priv.c,v 1.20 1998/02/19 19:13:40 joda Exp $	*/
 
 /*

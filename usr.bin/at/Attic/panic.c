@@ -1,4 +1,4 @@
-/*	$OpenBSD: panic.c,v 1.9 2002/05/13 16:12:07 millert Exp $	*/
+/*	$OpenBSD: panic.c,v 1.10 2002/05/14 18:05:39 millert Exp $	*/
 /*	$NetBSD: panic.c,v 1.2 1995/03/25 18:13:33 glass Exp $	*/
 
 /*
@@ -36,7 +36,7 @@
 #include "privs.h"
 
 #ifndef lint
-static const char rcsid[] = "$OpenBSD: panic.c,v 1.9 2002/05/13 16:12:07 millert Exp $";
+static const char rcsid[] = "$OpenBSD: panic.c,v 1.10 2002/05/14 18:05:39 millert Exp $";
 #endif
 
 /*

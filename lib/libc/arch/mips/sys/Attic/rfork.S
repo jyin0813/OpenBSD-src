@@ -34,7 +34,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: rfork.S,v 1.1 2002/02/17 23:40:57 deraadt Exp $"
+	.asciz "$OpenBSD: rfork.S,v 1.2 2003/06/02 20:18:32 millert Exp $"
 #endif /* SYSLIBC_SCCS */
 
 SYSLEAF(rfork)

@@ -6,7 +6,7 @@
  * this stuff is worth it, you can buy me a beer in return.   Joseph Koshy
  * ----------------------------------------------------------------------------
  *
- * $Id: ctm_passb.c,v 1.4 1997/09/17 06:24:46 charnier Exp $
+ * $Id: ctm_passb.c,v 1.1 1999/07/13 23:02:05 deraadt Exp $
  *
  */
 

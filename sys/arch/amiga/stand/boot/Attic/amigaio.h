@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: amigaio.h,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
+ * $OpenBSD: amigaio.h,v 1.1 1997/01/16 09:26:25 niklas Exp $
  * $NetBSD: amigaio.h,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
  *
  *

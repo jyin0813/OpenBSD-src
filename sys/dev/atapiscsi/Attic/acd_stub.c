@@ -1,4 +1,4 @@
-/*	$OpenBSD: acd.c,v 1.35 1999/03/12 04:09:07 provos Exp $	*/
+/*	$OpenBSD: acd_stub.c,v 1.1 1999/07/18 23:21:54 csapuntz Exp $	*/
 
 #include <sys/types.h>
 #include <sys/param.h>

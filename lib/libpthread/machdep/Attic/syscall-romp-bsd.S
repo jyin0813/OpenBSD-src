@@ -6,7 +6,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: syscall-romp-bsd.S,v 1.50 1994/08/08 03:43:26 proven Exp $";
+static const char rcsid[] = "$Id: syscall-romp-bsd.S,v 1.1 1998/07/21 13:19:17 peter Exp $";
 #endif
  
 /* DO NOT USE COLONS IN THIS FILE, GCC CAN'T HANDLE THEM */

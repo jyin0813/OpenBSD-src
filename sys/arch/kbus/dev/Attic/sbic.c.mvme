@@ -1,4 +1,4 @@
-/*	$OpenBSD: sbic.c,v 1.4 1996/05/10 12:42:02 deraadt Exp $ */
+/*	$OpenBSD: sbic.c.mvme,v 1.1 1997/10/14 07:25:29 gingold Exp $ */
 /*	$NetBSD: sbic.c,v 1.2 1996/04/23 16:32:54 chuck Exp $	*/
 /*
  * Changes Copyright (c) 1996 Steve Woodford

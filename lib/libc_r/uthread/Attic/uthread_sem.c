@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_sem.c,v 1.1 2002/01/18 22:07:27 fgsch Exp $	*/
 /*
  * Copyright (C) 2000 Jason Evans <jasone@freebsd.org>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tables.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* tables.c */
 int name_to_mod_mask __PARMS((int c));
 int check_shifted_spec_key __PARMS((int c));

@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)pmap.c	8.4 (Berkeley) 1/26/94
- *      $Id: pmap.c,v 1.3 1996/05/02 07:59:43 pefo Exp $
+ *      $Id: pmap.c,v 1.4 1996/06/06 23:07:44 deraadt Exp pefo $
  */
 
 /*

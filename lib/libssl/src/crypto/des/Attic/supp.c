@@ -1,4 +1,4 @@
-/*	$OpenBSD: supp.c,v 1.2 1999/09/29 04:36:01 beck Exp $	*/
+/*	$OpenBSD: supp.c,v 1.3 2000/03/02 00:29:51 todd Exp $	*/
 /* crypto/des/supp.c */
 /* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
  * All rights reserved.

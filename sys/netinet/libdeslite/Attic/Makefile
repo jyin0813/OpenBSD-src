@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1997/02/24 14:06:50 niklas Exp $
 
 #
 # This is the "lite" portion of libdes -- just the routines needed

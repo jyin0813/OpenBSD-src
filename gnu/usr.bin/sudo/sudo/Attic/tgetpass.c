@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tgetpass.c,v 1.14 1999/03/29 20:29:07 millert Exp $	*/
 
 /*
  *  CU sudo version 1.5.9

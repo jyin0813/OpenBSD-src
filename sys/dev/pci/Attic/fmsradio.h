@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fmsradio.h,v 1.1 2002/05/06 16:37:43 mickey Exp $	*/
 
 /*
  * Copyright (c) 2002 Vladimir Popov <jumbo@narod.ru>

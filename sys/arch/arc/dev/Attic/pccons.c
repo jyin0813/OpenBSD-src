@@ -1,4 +1,4 @@
-/*	$OpenBSD: pccons.c,v 1.23 2000/03/26 23:31:56 deraadt Exp $	*/
+/*	$OpenBSD: pccons.c,v 1.24 2000/07/19 13:45:09 art Exp $	*/
 /*	$NetBSD: pccons.c,v 1.89 1995/05/04 19:35:20 cgd Exp $	*/
 
 /*-

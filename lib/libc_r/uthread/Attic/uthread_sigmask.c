@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_sigmask.c,v 1.4 2001/08/21 19:24:53 fgsch Exp $	*/
+/*	$OpenBSD: uthread_sigmask.c,v 1.5 2002/02/21 20:57:41 fgsch Exp $	*/
 /*
  * Copyright (c) 1997 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

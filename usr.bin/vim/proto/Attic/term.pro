@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: term.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* term.c */
 int set_termname __PARMS((char_u *term));
 void getlinecol __PARMS((void));

@@ -1,4 +1,4 @@
-#	$OpenBSD: kadm_err.et,v 1.4 1998/02/18 11:53:44 art Exp $
+#	$OpenBSD: kadm_err.et,v 1.5 1998/05/15 06:22:17 art Exp $
 #	$KTH: kadm_err.et,v 1.5 1998/01/16 23:11:27 joda Exp $
 
 #-
@@ -24,7 +24,7 @@
 
 # KADM_SUCCESS, as all success codes should be, is zero
 
-ec KADM_RCSID,		"$OpenBSD$"
+ec KADM_RCSID,		"$OpenBSD: kadm_err.et,v 1.5 1998/05/15 06:22:17 art Exp $"
 # /* Building and unbuilding the packet errors */
 ec KADM_NO_REALM,	"Cannot fetch local realm"
 ec KADM_NO_CRED,	"Unable to fetch credentials"

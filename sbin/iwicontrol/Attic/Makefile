@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 2004/10/20 12:50:48 deraadt Exp $
+# $Id: Makefile,v 1.2 2004/10/22 16:20:51 deraadt Exp $
 
 .if (${MACHINE} == "i386") || (${MACHINE} == "amd64") || \
     (${MACHINE} == "alpha") || (${MACHINE} == "sgi") || \

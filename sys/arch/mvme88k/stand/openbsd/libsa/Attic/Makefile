@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.7 1995/12/26 17:46:28 deraadt Exp $
+#	$Id: Makefile,v 1.1 1997/03/03 19:31:06 rahnds Exp $
 
 LIB=sa
 

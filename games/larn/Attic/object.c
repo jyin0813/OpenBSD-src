@@ -1,11 +1,11 @@
-/*	$OpenBSD: object.c,v 1.3 1998/09/15 05:12:32 pjanzen Exp $	*/
+/*	$OpenBSD: object.c,v 1.4 1999/05/30 02:23:17 pjanzen Exp $	*/
 /*	$NetBSD: object.c,v 1.8 1997/10/18 20:03:38 christos Exp $	*/
 
 /* object.c		Larn is copyrighted 1986 by Noah Morgan. */
 
 #include <sys/cdefs.h>
 #ifndef lint
-static char rcsid[] = "$OpenBSD: object.c,v 1.3 1998/09/15 05:12:32 pjanzen Exp $";
+static char rcsid[] = "$OpenBSD: object.c,v 1.4 1999/05/30 02:23:17 pjanzen Exp $";
 #endif				/* not lint */
 #include "header.h"
 #include "extern.h"

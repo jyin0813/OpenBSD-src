@@ -1,4 +1,4 @@
-/*	$OpenBSD: name_match.c,v 1.1 1998/07/23 21:19:53 millert Exp $	*/
+/*	$OpenBSD: name_match.c,v 1.2 1998/10/31 06:30:31 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

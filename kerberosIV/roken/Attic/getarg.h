@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: getarg.h,v 1.1 1998/05/18 01:43:07 art Exp $	*/
 /*	$KTH: getarg.h,v 1.4 1997/08/08 22:40:12 joda Exp $	*/
 /*
  * Copyright (c) 1997 Kungliga Tekniska Högskolan

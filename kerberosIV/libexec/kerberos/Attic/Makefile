@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2001/07/28 01:25:02 hugh Exp $
+# $OpenBSD: Makefile,v 1.9 2002/05/11 00:20:18 espie Exp $
 
 PROG	= kerberos
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: time.h,v 1.1.1.1 2002/06/15 18:01:48 provos Exp $	*/
+/*	$OpenBSD: time.h,v 1.2 2003/06/02 20:18:40 millert Exp $	*/
 /*	$NetBSD: time.h,v 1.18 1996/04/23 10:29:33 mycroft Exp $	*/
 
 /*

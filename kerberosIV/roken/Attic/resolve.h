@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: resolve.h,v 1.1 1998/08/12 23:45:14 art Exp $	*/
 /*	$KTH: resolve.h,v 1.6 1998/03/04 17:37:11 joda Exp $	*/
 /*
  * Copyright (c) 1995, 1996, 1997, 1998 Kungliga Tekniska Högskolan

@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_cancel.c,v 1.3 1999/05/26 00:08:02 d Exp $	*/
+/*	$OpenBSD: test_cancel.c,v 1.4 2001/01/16 21:47:12 brad Exp $	*/
 /* David Leonard <d@openbsd.org>, 1999. Public Domain. */
 
 #include <pthread.h>

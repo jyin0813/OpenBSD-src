@@ -1,4 +1,4 @@
-/*	$OpenBSD: kgdb_stub.c,v 1.2 1997/01/12 15:13:20 downsj Exp $	*/
+/*	$OpenBSD: kgdb_stub.c,v 1.3 1997/04/16 11:56:26 downsj Exp $	*/
 /*	$NetBSD: kgdb_stub.c,v 1.7 1997/04/01 03:12:20 scottr Exp $	*/
 
 /*

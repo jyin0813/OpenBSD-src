@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: amiga.pro,v 1.1 1996/09/07 21:40:28 downsj Exp $	*/
 /* amiga.c */
 void win_resize_on __PARMS((void));
 void win_resize_off __PARMS((void));

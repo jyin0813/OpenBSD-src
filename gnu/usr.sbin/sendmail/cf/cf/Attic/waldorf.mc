@@ -1,5 +1,5 @@
 divert(-1)
-#	$OpenBSD: waldorf.mc,v 1.1 2000/04/02 19:48:14 millert Exp $
+#	$OpenBSD: waldorf.mc,v 1.2 2001/09/11 19:02:48 millert Exp $
 #
 # Copyright (c) 1996 Niklas Hallqvist
 # All rights reserved.
@@ -32,7 +32,7 @@ divert(-1)
 # SUCH DAMAGE.
 #
 
-VERSIONID(`$OpenBSD: waldorf.mc,v 1.1 2000/04/02 19:48:14 millert Exp $')
+VERSIONID(`$OpenBSD: waldorf.mc,v 1.2 2001/09/11 19:02:48 millert Exp $')
 OSTYPE(openbsd)dnl
 
 MASQUERADE_AS(appli.se)

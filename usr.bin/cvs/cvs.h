@@ -40,10 +40,6 @@
 #define CVS_HIST_NBFLD     6
 
 
-#define CVS_REQ_TIMEOUT    300
-
-
-
 #define CVS_CKSUM_LEN      33     /* length of a CVS checksum string */
 
 
@@ -51,10 +47,19 @@
 #define CVS_OP_ANY          0     /* all operations */
 #define CVS_OP_ADD          1
 #define CVS_OP_ANNOTATE     2
-#define CVS_OP_COMMIT       3
-#define CVS_OP_DIFF         4
-#define CVS_OP_TAG          5
-#define CVS_OP_UPDATE       6
+#define CVS_OP_CHECKOUT     3
+#define CVS_OP_COMMIT       4
+#define CVS_OP_DIFF         5
+#define CVS_OP_HISTORY      6
+#define CVS_OP_IMPORT       7
+#define CVS_OP_INIT         8
+#define CVS_OP_LOG          9
+#define CVS_OP_REMOVE      10
+#define CVS_OP_SERVER      11
+#define CVS_OP_STATUS      12
+#define CVS_OP_TAG         13
+#define CVS_OP_UPDATE      14
+#define CVS_OP_VERSION     15
 
 
 
@@ -68,117 +73,6 @@
 #define CVS_METHOD_GSERVER    5    /* gssapi server */
 #define CVS_METHOD_EXT        6
 #define CVS_METHOD_FORK       7    /* local but fork */
-
-/* client/server protocol requests */
-#define CVS_REQ_NONE          0
-#define CVS_REQ_ROOT          1
-#define CVS_REQ_VALIDREQ      2
-#define CVS_REQ_VALIDRESP     3
-#define CVS_REQ_DIRECTORY     4
-#define CVS_REQ_MAXDOTDOT     5
-#define CVS_REQ_STATICDIR     6
-#define CVS_REQ_STICKY        7
-#define CVS_REQ_ENTRY         8
-#define CVS_REQ_ENTRYEXTRA    9
-#define CVS_REQ_CHECKINTIME  10
-#define CVS_REQ_MODIFIED     11
-#define CVS_REQ_ISMODIFIED   12
-#define CVS_REQ_UNCHANGED    13
-#define CVS_REQ_USEUNCHANGED 14
-#define CVS_REQ_NOTIFY       15
-#define CVS_REQ_NOTIFYUSER   16
-#define CVS_REQ_QUESTIONABLE 17
-#define CVS_REQ_CASE         18
-#define CVS_REQ_UTF8         19
-#define CVS_REQ_ARGUMENT     20
-#define CVS_REQ_ARGUMENTX    21
-#define CVS_REQ_GLOBALOPT    22
-#define CVS_REQ_GZIPSTREAM   23
-#define CVS_REQ_KERBENCRYPT  24
-#define CVS_REQ_GSSENCRYPT   25
-#define CVS_REQ_PROTOENCRYPT 26
-#define CVS_REQ_GSSAUTH      27
-#define CVS_REQ_PROTOAUTH    28
-#define CVS_REQ_READCVSRC2   29
-#define CVS_REQ_READWRAP     30
-#define CVS_REQ_ERRIFREADER  31
-#define CVS_REQ_VALIDRCSOPT  32
-#define CVS_REQ_READIGNORE   33
-#define CVS_REQ_SET          34
-#define CVS_REQ_XPANDMOD     35
-#define CVS_REQ_CI           36
-#define CVS_REQ_CHOWN        37
-#define CVS_REQ_SETOWN       38
-#define CVS_REQ_SETPERM      39
-#define CVS_REQ_CHACL        40
-#define CVS_REQ_LISTPERM     41
-#define CVS_REQ_LISTACL      42
-#define CVS_REQ_SETPASS      43
-#define CVS_REQ_PASSWD       44
-#define CVS_REQ_DIFF         45
-#define CVS_REQ_STATUS       46
-#define CVS_REQ_LS           47
-#define CVS_REQ_TAG          48
-#define CVS_REQ_IMPORT       49
-#define CVS_REQ_ADMIN        50
-#define CVS_REQ_HISTORY      51
-#define CVS_REQ_WATCHERS     52
-#define CVS_REQ_EDITORS      53
-#define CVS_REQ_ANNOTATE     54
-#define CVS_REQ_LOG          55
-#define CVS_REQ_CO           56
-#define CVS_REQ_EXPORT       57
-#define CVS_REQ_RANNOTATE    58
-#define CVS_REQ_INIT         59
-#define CVS_REQ_UPDATE       60
-#define CVS_REQ_ADD          62
-#define CVS_REQ_REMOVE       63
-#define CVS_REQ_NOOP         64
-#define CVS_REQ_RTAG         65
-#define CVS_REQ_RELEASE      66
-#define CVS_REQ_RLOG         67
-#define CVS_REQ_RDIFF        68
-#define CVS_REQ_VERSION      69
-
-#define CVS_REQ_MAX          69
-
-
-/* responses */
-#define CVS_RESP_OK           1
-#define CVS_RESP_ERROR        2
-#define CVS_RESP_VALIDREQ     3
-#define CVS_RESP_CHECKEDIN    4
-#define CVS_RESP_NEWENTRY     5
-#define CVS_RESP_CKSUM        6
-#define CVS_RESP_COPYFILE     7
-#define CVS_RESP_UPDATED      8
-#define CVS_RESP_CREATED      9
-#define CVS_RESP_UPDEXIST    10
-#define CVS_RESP_MERGED      11
-#define CVS_RESP_PATCHED     12
-#define CVS_RESP_RCSDIFF     13
-#define CVS_RESP_MODE        14
-#define CVS_RESP_MODTIME     15
-#define CVS_RESP_REMOVED     16
-#define CVS_RESP_RMENTRY     17
-#define CVS_RESP_SETSTATDIR  18
-#define CVS_RESP_CLRSTATDIR  19
-#define CVS_RESP_SETSTICKY   20
-#define CVS_RESP_CLRSTICKY   21
-#define CVS_RESP_TEMPLATE    22
-#define CVS_RESP_SETCIPROG   23
-#define CVS_RESP_SETUPDPROG  24
-#define CVS_RESP_NOTIFIED    25
-#define CVS_RESP_MODXPAND    26
-#define CVS_RESP_WRAPRCSOPT  27
-#define CVS_RESP_M           28
-#define CVS_RESP_MBINARY     29
-#define CVS_RESP_E           30
-#define CVS_RESP_F           31
-#define CVS_RESP_MT          32
-
-
-
 
 #define CVS_CMD_MAXNAMELEN   16
 #define CVS_CMD_MAXALIAS      2
@@ -382,22 +276,6 @@ int  cvs_server   (int, char **);
 int  cvs_status   (int, char **);
 int  cvs_update   (int, char **);
 int  cvs_version  (int, char **);
-
-
-/* proto.c */
-int         cvs_req_handle     (char *);
-const char* cvs_req_getbyid    (int);
-int         cvs_req_getbyname  (const char *);
-char*       cvs_req_getvalid   (void);
-
-
-int         cvs_resp_handle    (char *);
-const char* cvs_resp_getbyid   (int);
-int         cvs_resp_getbyname (const char *);
-char*       cvs_resp_getvalid  (void);
-
-int         cvs_sendfile       (const char *);
-int         cvs_recvfile       (const char *);
 
 
 /* from client.c */

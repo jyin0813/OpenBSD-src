@@ -1,4 +1,4 @@
-/*	$OpenBSD: m88110.h,v 1.4 2001/03/09 05:44:40 smurph Exp $ */
+/*	$OpenBSD: m88410.h,v 1.1 2001/12/13 08:55:51 smurph Exp $ */
 
 #ifndef	__MACHINE_M88410_H__
 #define	__MACHINE_M88410_H__

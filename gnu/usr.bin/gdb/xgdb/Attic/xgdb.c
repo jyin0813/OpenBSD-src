@@ -8,7 +8,7 @@
 
 #ifndef lint
 /*static char sccsid[] = "from: @(#)xgdb.c	6.3 (Berkeley) 5/8/91";*/
-static char rcsid[] = "$Id: xgdb.c,v 1.2 1993/08/01 18:47:59 mycroft Exp $";
+static char rcsid[] = "$Id: xgdb.c,v 1.1 1995/10/18 08:40:16 deraadt Exp $";
 #endif /* not lint */
 
 /*

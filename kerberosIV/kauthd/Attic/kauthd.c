@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kauthd.c,v 1.1 1998/02/18 07:10:24 art Exp $	*/
 /* $KTH: kauthd.c,v 1.22 1997/05/18 20:37:55 assar Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_frag.h,v 1.14 2001/04/07 01:06:28 fgsch Exp $	*/
+/*	$OpenBSD: ip_frag.h,v 1.15 2001/04/08 20:30:05 smart Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

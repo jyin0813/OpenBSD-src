@@ -1,5 +1,5 @@
 #
-# $Id: taginfo,v 1.1 1995/09/27 05:47:49 del Exp $
+# $Id: taginfo,v 1.1 1995/12/19 09:21:43 deraadt Exp tholo $
 #
 # The "taginfo" file is used to control pre-tag checks.
 # The filter on the right is invoked with the following arguments:

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: asnprintf.c,v 1.1 1999/08/07 17:35:58 millert Exp $	*/
 
 /*
  * Copyright (c) 1997 Todd C. Miller <Todd.Miller@courtesan.com>
@@ -28,7 +28,7 @@
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
-static char rcsid[] = "$OpenBSD: asprintf.c,v 1.1 1997/11/29 19:54:48 millert Exp $";
+static char rcsid[] = "$OpenBSD: asnprintf.c,v 1.1 1999/08/07 17:35:58 millert Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 #include <errno.h>

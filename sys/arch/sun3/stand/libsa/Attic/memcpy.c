@@ -1,4 +1,4 @@
-/*	$OpenBSD: memcpy.c,v 1.3 1996/10/16 11:32:07 mickey Exp $	*/
+/*	$OpenBSD: memcpy.c,v 1.1 1996/11/02 18:25:10 kstailey Exp $	*/
 /*	$NetBSD: bcopy.c,v 1.5 1995/04/22 13:46:50 cgd Exp $	*/
 
 /*-

@@ -1,6 +1,6 @@
 #ifndef lint
 /*static char yysccsid[] = "from: @(#)yaccpar	1.9 (Berkeley) 02/21/93";*/
-static char yyrcsid[] = "$OpenBSD: skeleton.c,v 1.3 1996/03/27 19:33:21 niklas Exp $";
+static char yyrcsid[] = "$OpenBSD: error.tab.c,v 1.2 1996/04/21 23:45:31 deraadt Exp $";
 #endif
 #include <stdlib.h>
 #define YYBYACC 1

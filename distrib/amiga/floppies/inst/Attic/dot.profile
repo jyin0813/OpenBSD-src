@@ -27,7 +27,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#       $OpenBSD: dot.profile,v 1.1.1.1 1995/10/18 08:37:28 deraadt Exp $
+#       $OpenBSD: dot.profile,v 1.3 1996/10/13 17:33:07 niklas Exp $
 
 PATH=/sbin:/bin:/usr/bin:/usr/sbin:/
 export PATH

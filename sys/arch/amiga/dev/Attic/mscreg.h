@@ -1,4 +1,4 @@
-/*	$OpenBSD: mscreg.h,v 1.5 1996/12/09 17:24:58 is Exp $ */
+/*	$OpenBSD: mscreg.h,v 1.2 1997/01/16 09:25:07 niklas Exp $ */
 /*	$NetBSD: mscreg.h,v 1.5 1996/12/09 17:24:58 is Exp $ */
 
 /*

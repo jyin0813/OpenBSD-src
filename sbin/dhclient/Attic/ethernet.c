@@ -1,4 +1,4 @@
-/*	$OpenBSD: ethernet.c,v 1.3 2004/02/04 12:16:56 henning Exp $	*/
+/*	$OpenBSD: ethernet.c,v 1.4 2004/02/07 13:26:35 henning Exp $	*/
 
 /* Packet assembly code, originally contributed by Archie Cobbs. */
 

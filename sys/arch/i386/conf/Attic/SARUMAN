@@ -1,7 +1,7 @@
 #
 #	SARUMAN -- i486DX/50 EISA bus
 #
-#	$OpenBSD: SARUMAN,v 1.8 1999/01/02 00:32:54 niklas Exp $
+#	$OpenBSD: SARUMAN,v 1.9 1999/10/03 21:08:15 niklas Exp $
 #
 
 machine		i386		# architecture, used by config; REQUIRED

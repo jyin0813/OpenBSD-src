@@ -13,9 +13,9 @@
    THIS SOFTWARE INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
    MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
-   $Revision: 1.1.2.1 $
+   $Revision: 1.2 $
      $Author: niklas $
-       $Date: 1996/11/19 14:42:12 $
+       $Date: 1996/11/23 03:55:12 $
 */
 
 #if 0

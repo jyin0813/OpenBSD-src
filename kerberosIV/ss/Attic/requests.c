@@ -1,4 +1,4 @@
-/*	$Id: requests.c,v 1.1.1.1 1995/12/14 06:52:46 tholo Exp $	*/
+/*	$Id: requests.c,v 1.2 1996/09/16 03:13:00 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988, 1989 by the Student Information Processing Board

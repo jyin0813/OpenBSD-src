@@ -22,7 +22,7 @@ log
 @Initial revision
 @
 text
-@#	$Id: Makefile,v 1.7 1995/12/26 17:46:28 deraadt Exp $
+@#	$Id: Makefile,v,v 1.1 1997/03/03 19:30:37 rahnds Exp $
 
 LIB=sa
 

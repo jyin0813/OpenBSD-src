@@ -1,4 +1,4 @@
-/*	$OpenBSD: arctype.h,v 1.4 1997/03/12 19:16:37 pefo Exp $	*/
+/*	$OpenBSD: archtype.h,v 1.1 1998/01/28 11:14:36 pefo Exp $	*/
 /*
  * Copyright (c) 1997 Per Fogelstrom
  * 
@@ -36,15 +36,21 @@
 /*
  * Define architectural identitys for the different Mips machines.
  */
-#define	ACER_PICA_61		0x1	/* Acer Labs Pica 61 */
-#define	MAGNUM			0x2	/* Mips MAGNUM R4000 */
-#define	DESKSTATION_RPC44	0x3	/* Deskstation xxx */
-#define	DESKSTATION_TYNE	0x4	/* Deskstation xxx */
-#define	NKK_AQUARIUS		0x5	/* NKK R4{67}00 PC */
-#define	ALGOR_P4032		0x6	/* ALGORITHMICS P-4032 VR4300 */
-#define	SNI_RM200		0x7	/* Siemens Nixdorf RM200 */
+#define	ARC_CLASS		0x00	/* Arch class ARC */
+#define	ACER_PICA_61		0x01	/* Acer Labs Pica 61 */
+#define	MAGNUM			0x02	/* Mips MAGNUM R4000 */
+#define	DESKSTATION_RPC44	0x03	/* Deskstation xxx */
+#define	DESKSTATION_TYNE	0x04	/* Deskstation xxx */
+#define	NKK_AQUARIUS		0x05	/* NKK R4{67}00 PC */
+#define NEC_R94			0x06	/* NEC Magnum class */
+#define	SNI_RM200		0x07	/* Siemens Nixdorf RM200 */
 
-#define	SGI_INDY		0x10	/* Silicon Graphics Indy */
+#define	SGI_CLASS		0x10	/* Silicon Graphics Class */
+#define	SGI_INDY		0x11	/* Silicon Graphics Indy */
+
+#define	ALGOR_CLASS		0x20	/* Algorithmics Class */
+#define	ALGOR_P4032		0x21	/* ALGORITHMICS P-4032 */
+#define	ALGOR_P5064		0x22	/* ALGORITHMICS P-5064 */
 
 extern int system_type;		/* Global system type indicator */
 

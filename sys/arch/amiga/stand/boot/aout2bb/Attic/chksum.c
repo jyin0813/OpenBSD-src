@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: chksum.c,v 1.1.1.1 1996/11/29 23:36:30 is Exp $
+ * $OpenBSD: chksum.c,v 1.1 1997/01/16 09:26:50 niklas Exp $
  * $NetBSD: chksum.c,v 1.1.1.1 1996/11/29 23:36:30 is Exp $
  *
  * Copyright (c) 1996 Ignatios Souvatzis

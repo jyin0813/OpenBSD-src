@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: main.c,v 1.5 1995/01/24 23:03:51 cgd Exp $
+	$Id: main.c,v 1.1 1995/10/18 08:40:01 deraadt Exp $
 */
 
 #include "defs.h"

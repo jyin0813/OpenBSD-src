@@ -1,4 +1,4 @@
-/*	$OpenBSD: socket.c,v 1.5 2004/02/07 13:59:45 henning Exp $	*/
+/*	$OpenBSD: socket.c,v 1.6 2004/02/07 17:59:22 henning Exp $	*/
 
 /* BSD socket interface code... */
 

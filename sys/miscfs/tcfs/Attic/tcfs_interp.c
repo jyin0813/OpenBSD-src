@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_interp.c,v 1.2 2000/06/17 17:32:27 provos Exp $	*/
+/*	$OpenBSD: tcfs_interp.c,v 1.3 2000/06/17 20:25:54 provos Exp $	*/
 /*
  * Copyright 2000 The TCFS Project at http://tcfs.dia.unisa.it/
  * All rights reserved.

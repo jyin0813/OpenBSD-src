@@ -1,4 +1,4 @@
-# $OpenBSD: ipnat.rules,v 1.1 1998/02/18 22:46:25 deraadt Exp $
+# $OpenBSD: ipnat.rules,v 1.2 1999/05/08 16:33:10 jason Exp $
 #
 # See /usr/share/ipf/nat.1 for examples.
 # edit the ipnat= line in /etc/rc.conf to enable Network Address Translation

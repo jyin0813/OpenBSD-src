@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: named.h,v 1.2 1997/03/12 10:42:27 downsj Exp $	*/
 
 /* named.h - include the local definitions in the right order
  * vix 28aug93 [original]

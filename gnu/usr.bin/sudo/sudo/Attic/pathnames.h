@@ -1,4 +1,4 @@
-/*	$OpenBSD: pathnames.h,v 1.8 1999/02/19 04:32:51 millert Exp $	*/
+/*	$OpenBSD: pathnames.h,v 1.9 1999/03/29 20:29:05 millert Exp $	*/
 
 /* pathnames.h.  Generated automatically by configure.  */
 /*

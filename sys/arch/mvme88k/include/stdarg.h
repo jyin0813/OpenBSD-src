@@ -26,7 +26,7 @@ Thu Sep  9 09:06:29 CDT 1993 Dale Rahn (drahn@pacific)
 #include <va-clipper.h>
 #else
 #ifdef __m88k__
-#include <va-m88k.h>
+#include <machine/va-m88k.h>
 #else
 #ifdef __i860__
 #include <va-i860.h>
@@ -114,9 +114,10 @@ void va_end (__gnuc_va_list);		/* Defined in libgcc.a */
 #undef _VA_LIST
 #endif
 
-#ifdef _BSD_VA_LIST
-#undef _BSD_VA_LIST
-#endif
+#ifdef _BSD_VA_LIST_
+#undef _BSD_VA_LIST_
+#define _BSD_VA_LIST_	__gnuc_va_list
+#endif /* _BSD_VA_LIST_ */
 
 #ifdef __svr4__
 /* SVR4.2 uses _VA_LIST for an internal alias for va_list,

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2000/05/25 21:54:56 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.5 2000/05/27 05:52:12 deraadt Exp $
 
 .if ${MACHINE} == "i386"
 PROG=		vttest

@@ -1,4 +1,4 @@
-/*	$OpenBSD: yppush_xdr.c,v 1.2 1996/05/30 09:53:22 deraadt Exp $ */
+/*	$OpenBSD: yppush_xdr.c,v 1.3 2000/10/12 09:47:28 deraadt Exp $ */
 
 /*
  * Copyright (c) 1996 Mats O Jansson <moj@stacken.kth.se>
@@ -32,7 +32,7 @@
  */
 
 #ifndef LINT
-static char rcsid[] = "$OpenBSD: yppush_xdr.c,v 1.2 1996/05/30 09:53:22 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: yppush_xdr.c,v 1.3 2000/10/12 09:47:28 deraadt Exp $";
 #endif
 
 #include <rpc/rpc.h>

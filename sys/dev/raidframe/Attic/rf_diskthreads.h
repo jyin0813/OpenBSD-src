@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_diskthreads.h,v 1.1 1999/01/11 14:29:18 niklas Exp $	*/
+/*	$OpenBSD: rf_diskthreads.h,v 1.2 1999/02/16 00:02:40 niklas Exp $	*/
 /*	$NetBSD: rf_diskthreads.h,v 1.3 1999/02/05 00:06:10 oster Exp $	*/
 /*
  * rf_diskthreads.h

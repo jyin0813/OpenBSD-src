@@ -6,7 +6,7 @@
    release; it is not considered part of GAS, GDB, or other GNU
    programs.
 
-	$Id: sym.h,v 1.1 1994/01/28 12:42:41 pk Exp $
+	$Id: sym.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $
 */
 
 /*

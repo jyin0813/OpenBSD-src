@@ -1,6 +1,6 @@
 /* instbin.c - generated from instbin.conf by crunchgen 0.2 */
 #define EXECNAME "instbin"
-/*	$OpenBSD: crunched_main.c,v 1.2 2000/03/01 22:10:03 todd Exp $	*/
+/*	$OpenBSD: instbin.c,v 1.1 2001/06/26 22:23:26 smurph Exp $	*/
 
 /*
  * Copyright (c) 1994 University of Maryland

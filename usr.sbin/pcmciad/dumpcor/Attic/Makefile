@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.1 1996/03/29 02:51:07 jtk Exp $
+# $Id: Makefile,v 1.1 1996/04/29 13:09:02 hvozda Exp hvozda $
 
 SRCS	= dumpcor.c
 

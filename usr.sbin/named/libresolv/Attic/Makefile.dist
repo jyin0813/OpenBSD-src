@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.dist,v 1.1 1997/03/12 10:42:01 downsj Exp $
 #
 #	from @(#)Makefile	5.16 (Berkeley) 3/14/88
 #	$From: Makefile,v 8.13 1996/08/08 22:49:48 vixie Exp $

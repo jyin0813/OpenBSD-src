@@ -1,5 +1,5 @@
 # Makefile for Texinfo distribution.
-# $Id: Makefile.in,v 1.1 1998/03/03 20:25:07 millert Exp $
+# $Id: Makefile.in,v 1.4 1997/10/31 16:38:44 law Exp $
 # 
 # Copyright (C) 1993, 96 Free Software Foundation, Inc.
 

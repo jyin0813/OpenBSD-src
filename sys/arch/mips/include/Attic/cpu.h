@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu.h,v 1.5 1998/10/15 21:30:14 imp Exp $	*/
+/*	$OpenBSD: cpu.h,v 1.6 1999/01/27 04:46:04 imp Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

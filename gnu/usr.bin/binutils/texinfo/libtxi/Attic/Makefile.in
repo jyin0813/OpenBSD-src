@@ -1,5 +1,5 @@
 # Makefile for GNU texinfo/libtxi.  -*- Indented-Text -*-
-# $Id: Makefile.in,v 1.1.2.1 1996/11/19 14:52:47 niklas Exp $
+# $Id: Makefile.in,v 1.2 1996/11/23 04:03:13 niklas Exp $
 
 # Copyright (C) 1993, 96 Free Software Foundation, Inc.
 

@@ -13,7 +13,7 @@ index (arbitrarily chosen to be the concept index).
 @paragraphindent 2
 @finalout
 @comment %**end of header
-@comment $Id: texinfo.texi,v 1.1.2.1 1996/11/19 14:51:34 niklas Exp $
+@comment $Id: texinfo.texi,v 1.2 1996/11/23 04:02:13 niklas Exp $
 
 @c Before release, run C-u C-c C-u C-a (texinfo-all-menus-update with a
 @c prefix arg).  This updates the node pointers, which texinfmt.el needs.

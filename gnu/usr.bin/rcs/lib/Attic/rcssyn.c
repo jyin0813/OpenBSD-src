@@ -36,6 +36,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcssyn.c,v $
+ * Revision 1.1  1995/10/18 08:41:02  deraadt
+ * Initial revision
+ *
  * Revision 1.3  1995/02/24 02:25:14  mycroft
  * RCS 5.6.7.4
  *
@@ -149,7 +152,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(synId, "$Id: rcssyn.c,v 1.3 1995/02/24 02:25:14 mycroft Exp $")
+libId(synId, "$Id: rcssyn.c,v 1.1 1995/10/18 08:41:02 deraadt Exp millert $")
 
 static char const *getkeyval P((char const*,enum tokens,int));
 static int getdelta P((void));

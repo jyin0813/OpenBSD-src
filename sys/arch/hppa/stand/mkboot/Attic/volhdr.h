@@ -1,4 +1,4 @@
-/*	$OpenBSD: volhdr.h,v 1.1 1997/07/14 08:14:40 downsj Exp $	*/
+/*	$OpenBSD: volhdr.h,v 1.1 1998/06/23 18:46:43 mickey Exp $	*/
 /*	$NetBSD: volhdr.h,v 1.4 1994/10/26 07:28:08 cgd Exp $	*/
 
 /*

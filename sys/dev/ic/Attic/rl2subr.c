@@ -1,4 +1,4 @@
-/*	$OpenBSD: rl2subr.c,v 1.2 1999/06/23 04:48:49 d Exp $	*/
+/*	$OpenBSD: rl2subr.c,v 1.3 1999/07/14 03:53:23 d Exp $	*/
 /*
  * David Leonard <d@openbsd.org>, 1999. Public Domain.
  *

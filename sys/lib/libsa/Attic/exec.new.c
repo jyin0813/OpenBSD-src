@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec.new.c,v 1.4 1998/08/27 20:36:00 mickey Exp $	*/
+/*	$OpenBSD: exec.new.c,v 1.5 2000/05/30 21:59:30 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

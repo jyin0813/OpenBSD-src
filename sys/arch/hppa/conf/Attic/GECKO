@@ -1,0 +1,61 @@
+#	$OpenBSD: GEKKO,v 1.5 1998/12/01 03:04:20 mickey Exp $
+#
+# HP 9000/712/{60,80,80i,100} boxens
+#
+# neverseen devices: telephony, X.21 m-proto adapter, TR/9000
+
+machine hppa
+
+include	"../../../conf/GENERIC"
+
+# Need to set locally
+maxusers	16
+
+# Support for various CPU types
+option		HP7100LC
+
+#option		FPEMUL
+
+#option		NS		# XNS
+#option		NSIP		# XNS tunneling over IP
+#option		IPX		# IPX+SPX
+#option		IPXIP		# IPX tunneling over IP
+#option		ISO,TPIP	# OSI
+#option		EON		# OSI tunneling over IP
+#option		CCITT,LLC,HDLC	# X.25
+
+#option	 	COMPAT_HPUX	# HP-UX binary compatibility
+
+config	bsd swap generic
+
+mainbus0	at root	# root "bus"
+
+mem0	at mainbus0
+cpu0	at mainbus0
+pdc0	at mainbus0
+
+sti*	at mainbus0	# STI graphics
+
+lasi*	at mainbus0	# LASI host adapter (LSI ???)
+gsc*	at lasi?	# internal i/o space
+
+siop*	at gsc?		# NCR 53C710
+scsibus* at siop?
+
+sd*	at scsibus? target ? lun ?
+st*	at scsibus? target ? lun ?
+cd*	at scsibus? target ? lun ?
+ch*	at scsibus? target ? lun ?
+ss*	at scsibus? target ? lun ?
+uk*	at scsibus? target ? lun ?
+
+ie*	at gsc?		# 82C596 ether
+com*	at gsc?		# serial ports
+lpt*	at gsc?		# LPT centronics iface
+#atwo*	at gsc?		# Audio Type 2 (CS4216)
+#pckbd*	at gsc?		# PC keyboard
+#pms*	at gsc?		# PC mouse
+fdc0	at gsc?		# PC floppy controller (WD37C65C)
+option	FD_DEBUG
+fd0	at fdc0	drive 0	# floppy drives
+

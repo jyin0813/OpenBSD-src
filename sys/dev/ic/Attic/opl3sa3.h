@@ -1,4 +1,4 @@
-/* $OpenBSD: $ */
+/* $OpenBSD: opl3sa3.h,v 1.1 1998/05/08 18:37:26 csapuntz Exp $ */
 
 /*
  * Copyright (c) 1998 Constantine Sapuntzakis. All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_ax.c,v 1.7 1999/11/26 16:45:27 art Exp $ */
+/*	$OpenBSD: if_ax.c,v 1.8 2000/02/15 02:28:14 jason Exp $ */
 
 /*
  * Copyright (c) 1997, 1998, 1999

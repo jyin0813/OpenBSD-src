@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $OpenBSD: dhclient-script,v 1.16 2004/01/09 07:49:07 deraadt Exp $
+# $OpenBSD: dhclient-script,v 1.17 2004/01/11 03:24:40 deraadt Exp $
 #
 # Copyright (c) 2003 Kenneth R Westerback <krw@openbsd.org>
 #

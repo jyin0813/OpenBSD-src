@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 2000/01/19 16:32:59 espie Exp $
+#	$OpenBSD: Makefile,v 1.4 2000/02/12 15:26:40 espie Exp $
 
 .if ${MACHINE} == "amiga"
 PROG=iteconfig

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kadm_ser_wrap.c,v 1.5 1997/12/15 17:56:22 art Exp $	*/
 /* $KTH: kadm_ser_wrap.c,v 1.21 1997/12/05 01:27:29 assar Exp $ */
 
 /* 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_machdep.h,v 1.14 2001/08/19 19:06:46 miod Exp $	*/
+/*	$OpenBSD: db_machdep.h,v 1.4 2002/05/18 09:49:17 art Exp $	*/
 /*	$NetBSD: db_machdep.h,v 1.13 1996/04/29 20:50:08 leo Exp $	*/
 
 /*
@@ -34,7 +34,7 @@
 #define	_PPC_DB_MACHDEP_H_
 
 #include <sys/types.h>
-#include <vm/vm_param.h>
+#include <uvm/uvm_param.h>
 #include <machine/trap.h>
 
 /*
@@ -92,11 +92,11 @@ db_regs_t	ddb_regs;		/* register state */
 
 #ifdef _KERNEL
 
-void	kdb_kintr __P((void *));
-int	kdb_trap __P((int, void *));
+void	kdb_kintr(void *);
+int	kdb_trap(int, void *);
 void	db_save_regs(struct trapframe *frame);
-void	ddb_trap __P((void));
-db_expr_t db_dumpframe __P((u_int32_t pframe));
+void	ddb_trap(void);
+db_expr_t db_dumpframe(u_int32_t pframe, int (*pr)(const char *, ...));
 
 #endif /* _KERNEL */
 

@@ -35,7 +35,7 @@
 #endif
 #include "roken.h"
 
-RCSID("$Id: strftime.c,v 1.2 2000/08/16 01:23:47 lha Exp $");
+RCSID("$Id: strftime.c,v 1.2 2000/09/11 14:41:04 art Exp $");
 
 static const char *abb_weekdays[] = {
     "Sun",

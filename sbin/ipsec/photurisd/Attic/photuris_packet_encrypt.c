@@ -33,7 +33,7 @@
  */
 
 #ifndef lint 
-static char rcsid[] = "$Id: photuris_packet_encrypt.c,v 1.1.1.1 1997/07/18 22:48:49 provos Exp $";
+static char rcsid[] = "$Id: photuris_packet_encrypt.c,v 1.2 1998/03/04 11:43:41 provos Exp $";
 #endif 
 
 #define _ENCRYPT_C_

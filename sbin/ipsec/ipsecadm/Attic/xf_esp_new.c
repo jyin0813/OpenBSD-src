@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_esp_new.c,v 1.6 1998/04/04 22:48:30 provos Exp $ */
+/* $OpenBSD: xf_esp_new.c,v 1.7 1998/05/24 13:29:07 provos Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: link.h,v 1.2 2000/06/13 03:42:46 rahnds Exp $ */
+/*	$OpenBSD: link.h,v 1.1 2002/04/08 04:51:48 fgsch Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

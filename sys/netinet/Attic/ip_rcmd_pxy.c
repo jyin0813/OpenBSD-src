@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ip_rcmd_pxy.c,v 1.5 2001/01/17 04:47:16 fgsch Exp $	*/
 
 /*
  * $IPFilter: ip_rcmd_pxy.c,v 1.4.2.4 2000/11/01 14:34:20 darrenr Exp $

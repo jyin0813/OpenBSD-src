@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: _setjmp.S,v 1.1 2004/01/28 01:44:45 mickey Exp $	*/
 /*	$NetBSD: _setjmp.S,v 1.1 2001/06/19 00:25:02 fvdl Exp $	*/
 
 /*

@@ -1,14 +1,15 @@
 /*
  * This file is te-obsd532.h
  *
- * Written by Ian Dall <idall@eleceng.adelaide.edu.au> originally
- * for te-nbsd532.h
+ * Written by Ian Dall <idall@eleceng.adelaide.edu.au>
  * 
  * 19-Jun-94
  * 
  */
 
-#define TARGET_FORMAT		"a.out-ns32k-openbsd"
+#define TARGET_FORMAT		"a.out-ns32k-netbsd"
+
+#define LOCAL_LABELS_FB	1
 
 #include "obj-format.h"
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: crtend.c,v 1.1 1996/09/12 16:59:04 cgd Exp $	*/
+/*	$OpenBSD: crtend.c,v 1.1 1996/11/13 21:28:04 niklas Exp $	*/
 /*	$NetBSD: crtend.c,v 1.1 1996/09/12 16:59:04 cgd Exp $	*/
 
 #ifndef ECOFF_COMPAT

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kdc.h,v 1.3 1998/02/18 11:53:35 art Exp $	*/
+/*	$OpenBSD: kdc.h,v 1.4 1998/02/25 15:50:34 art Exp $	*/
 
 /*
  * This source code is no longer held under any constraint of USA

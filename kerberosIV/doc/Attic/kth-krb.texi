@@ -1,6 +1,6 @@
 \input texinfo @c -*- texinfo -*-
 @c %**start of header
-@c $Id: kth-krb.texi,v 1.74 1997/12/08 21:57:42 joda Exp $
+@c $Id: kth-krb.texi,v 1.1 1998/01/20 23:40:29 art Exp $
 @setfilename kth-krb.info
 @settitle KTH-KRB
 @iftex
@@ -29,7 +29,7 @@
 @subtitle 1997
 @author Johan Danielsson
 @author Assar Westerlund
-@author last updated $Date: 1997/12/08 21:57:42 $
+@author last updated $Date: 1998/01/20 23:40:29 $
 
 @def@copynext{@vskip 20pt plus 1fil@penalty-1000}
 @def@copyrightstart{}

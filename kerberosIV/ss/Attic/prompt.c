@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: prompt.c,v 1.1 1995/12/14 06:52:47 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -25,7 +25,7 @@
 #include "ss_internal.h"
 
 static const char rcsid[] =
-    "$Id$";
+    "$Id: prompt.c,v 1.1 1995/12/14 06:52:47 tholo Exp $";
 
 int
 ss_set_prompt(sci_idx, new_prompt)

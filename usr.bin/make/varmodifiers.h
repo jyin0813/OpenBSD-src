@@ -1,3 +1,4 @@
+/* $OpenPackages$ */
 /* $OpenBSD$ */
 
 /*
@@ -28,8 +29,9 @@
  */
 #ifndef VARMODIFIERS_H
 #define VARMODIFIERS_H
-extern char *VarModifiers_Apply __P((char *, SymTable *, Boolean, 
-	Boolean *, char *, char, size_t *));
-extern char *Var_GetTail __P((char *));
-extern char *Var_GetHead __P((char *));
+extern char *VarModifiers_Apply(char *, const struct Name *, SymTable *, 
+	Boolean, Boolean *, const char *, int, size_t *);
+extern char *Var_GetTail(char *);
+extern char *Var_GetHead(char *);
+extern void VarModifiers_Init(void);
 #endif

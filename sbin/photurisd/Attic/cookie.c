@@ -1,4 +1,4 @@
-/*	$OpenBSD: cookie.c,v 1.3 2001/01/28 22:45:07 niklas Exp $	*/
+/*	$OpenBSD: cookie.c,v 1.4 2002/06/09 08:13:08 todd Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -35,7 +35,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: cookie.c,v 1.3 2001/01/28 22:45:07 niklas Exp $";
+static char rcsid[] = "$OpenBSD: cookie.c,v 1.4 2002/06/09 08:13:08 todd Exp $";
 #endif
 
 #define _COOKIE_C_

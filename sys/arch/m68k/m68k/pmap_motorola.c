@@ -1,4 +1,4 @@
-/*	$OpenBSD: pmap_motorola.c,v 1.12 2001/12/16 21:48:48 miod Exp $ */
+/*	$OpenBSD: pmap_motorola.c,v 1.13 2001/12/16 23:06:04 miod Exp $ */
 
 /*
  * Copyright (c) 1999 The NetBSD Foundation, Inc.

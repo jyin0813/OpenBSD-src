@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: if_url.c,v 1.1 2002/05/07 18:08:04 nate Exp $ */
 /*	$NetBSD: if_url.c,v 1.2 2002/03/28 21:49:19 ichiro Exp $	*/
 /*
  * Copyright (c) 2001, 2002

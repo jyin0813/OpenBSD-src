@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_sigpending.c,v 1.2 1999/11/25 07:01:45 d Exp $	*/
+/*	$OpenBSD: uthread_sigpending.c,v 1.3 2001/08/21 19:24:53 fgsch Exp $	*/
 /*
  * Copyright (c) 1999 Daniel Eischen <eischen@vigrid.com>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kvm_mips.c,v 1.2 1996/06/07 06:50:41 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1992, 1993

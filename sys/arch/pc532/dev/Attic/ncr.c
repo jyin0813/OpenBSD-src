@@ -1,4 +1,4 @@
-/*	$OpenBSD: ncr.c,v 1.21 1995/11/30 00:58:47 jtc Exp $ */
+/*	$OpenBSD: ncr.c,v 1.4 2000/03/03 00:54:54 todd Exp $ */
 /*	$NetBSD: ncr.c,v 1.21 1995/11/30 00:58:47 jtc Exp $ */
 
 /*

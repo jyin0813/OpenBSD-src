@@ -1,4 +1,4 @@
-/*	$OpenBSD: message.c,v 1.4 1996/06/26 05:38:23 deraadt Exp $	*/
+/*	$OpenBSD: message.c,v 1.5 1996/07/29 17:30:55 millert Exp millert $	*/
 
 /*
  * Copyright (c) 1983 Regents of the University of California.
@@ -35,7 +35,7 @@
 
 #ifndef lint
 static char RCSid[] = 
-"$OpenBSD: message.c,v 1.4 1996/06/26 05:38:23 deraadt Exp $";
+"$OpenBSD: message.c,v 1.5 1996/07/29 17:30:55 millert Exp millert $";
 
 static char sccsid[] = "@(#)common.c";
 

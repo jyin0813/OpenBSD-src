@@ -1,4 +1,4 @@
-/*	$OpenBSD: adwmcode.h,v 1.4 2000/06/29 00:04:32 krw Exp $ */
+/*	$OpenBSD: adwmcode.h,v 1.5 2001/02/22 17:17:32 krw Exp $ */
 /*      $NetBSD: adwmcode.h,v 1.5 2000/05/27 18:24:51 dante Exp $        */
 
 /*

@@ -60,7 +60,7 @@
 #endif
 
 #ifdef RCSID
-static char rcsid[] = "$Id: bits.c,v 1.2 1993/10/15 23:05:26 jtc Exp $";
+static char rcsid[] = "$Id: bits.c,v 1.1 1995/10/18 08:40:52 deraadt Exp $";
 #endif
 
 /* ===========================================================================

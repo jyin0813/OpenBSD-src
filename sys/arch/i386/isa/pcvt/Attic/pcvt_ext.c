@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcvt_ext.c,v 1.30 2001/05/16 05:07:48 millert Exp $	*/
+/*	$OpenBSD: pcvt_ext.c,v 1.31 2001/05/16 12:49:45 ho Exp $	*/
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch.
  *

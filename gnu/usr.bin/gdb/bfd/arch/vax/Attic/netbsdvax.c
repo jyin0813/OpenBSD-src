@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: netbsdvax.c,v 1.1 1995/06/05 15:22:53 ragge Exp $
+	$Id: netbsdvax.c,v 1.1 1995/10/18 08:39:55 deraadt Exp $
 */
 
 #define	BYTES_IN_WORD	4

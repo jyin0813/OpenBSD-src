@@ -6,8 +6,8 @@
 */
 /*
 ** NAME:    $Source: /cvs/src/lib/libpthread/stdio/xprintf.c,v $
-** VERSION: $Revision: 1.1.1.1 $
-** DATE:    $Date: 1998/07/21 13:22:19 $
+** VERSION: $Revision: 1.2 $
+** DATE:    $Date: 1998/07/21 19:48:06 $
 **
 ** ONELINER:   A replacement for formatted printing programs.
 **

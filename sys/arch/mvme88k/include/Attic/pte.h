@@ -1,4 +1,4 @@
-/*	$OpenBSD: pte.h,v 1.1 1998/12/15 04:45:50 smurph Exp $ */
+/*	$OpenBSD: pte.h,v 1.2 1999/02/09 06:36:27 smurph Exp $ */
 
 /*
  * Copyright (c) 1988 University of Utah.

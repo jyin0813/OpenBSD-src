@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: mkioconf.c,v 1.2 1997/01/12 07:43:35 downsj Exp $	*/
 /*	$NetBSD: mkioconf.c,v 1.38 1996/06/10 02:32:25 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: es-kbdmap.c,v 1.1 1999/04/18 23:26:30 espie Exp $ */
 /*	$NetBSD: es-kbdmap.c,v 1.1 1998/03/13 19:28:11 is Exp $	*/
 
 #include "../../../dev/kbdmap.h"

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cs4231reg.h,v 1.2 2001/09/30 20:58:16 jason Exp $	*/
+/*	$OpenBSD: cs4231reg.h,v 1.3 2001/10/01 02:35:04 jason Exp $	*/
 
 /*
  * Copyright (c) 1999 Jason L. Wright (jason@thought.net)

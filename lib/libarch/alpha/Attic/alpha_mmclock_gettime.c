@@ -1,3 +1,4 @@
+/*	$OpenBSD: alpha_mmclock_gettime.c,v 1.1 1995/12/20 12:54:24 cgd Exp $	*/
 /*	$NetBSD: alpha_mmclock_gettime.c,v 1.1 1995/12/20 12:54:24 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: get_host.c,v 1.8 1998/05/18 00:53:39 art Exp $	*/
+/*	$OpenBSD: get_host.c,v 1.9 1998/07/07 19:06:47 art Exp $	*/
 /*	$KTH: get_host.c,v 1.37 1998/01/17 00:05:47 joda Exp $		*/
 
 /*

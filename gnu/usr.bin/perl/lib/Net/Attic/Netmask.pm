@@ -1,6 +1,6 @@
 require 5.004;
 
-# $OpenBSD$
+# $OpenBSD: Netmask.pm,v 1.1 2003/03/02 19:17:53 beck Exp $
 
 # From version 1.9002, CPAN, Feb 2003.
 # Copyright (C) 1998, 2001 David Muir Sharnoff. License hereby granted

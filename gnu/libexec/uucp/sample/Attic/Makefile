@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/12/08 22:39:32 tholo Exp $
+#	$OpenBSD: Makefile,v 1.2 1997/04/27 20:55:52 millert Exp $
 
 FILES=	call config dial dialcode passwd port sys
 NOOBJ=	noobj

@@ -1,4 +1,4 @@
-dnl $OpenBSD$
+dnl $OpenBSD: configure.in,v 1.5 2000/10/03 01:41:24 angelos Exp $
 dnl Process this file with autoconf to produce a configure script.
 AC_INIT(assertion.h)
 

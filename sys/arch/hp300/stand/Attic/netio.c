@@ -1,4 +1,4 @@
-/*	$OpenBSD: netio.c,v 1.3 1997/02/03 04:48:06 downsj Exp $	*/
+/*	$OpenBSD: netio.c,v 1.4 1997/07/13 07:21:51 downsj Exp $	*/
 /*	$NetBSD: netio.c,v 1.5 1997/01/30 10:32:56 thorpej Exp $	*/
 
 /*

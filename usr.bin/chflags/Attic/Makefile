@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 1996/06/26 05:31:51 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.3 1997/09/21 11:48:36 deraadt Exp $
 
 PROG=	chflags
 SRCS=	chflags.c stat_flags.c

@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: procmap.h,v 1.1 2004/02/16 08:54:34 tedu Exp $ */
 /*	$NetBSD: pmap.h,v 1.1 2003/01/08 20:25:13 atatat Exp $ */
 
 /*

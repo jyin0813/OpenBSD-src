@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipl.h,v 1.14 2001/01/17 07:25:19 fgsch Exp $	*/
+/*	$OpenBSD: ipl.h,v 1.15 2001/05/08 19:58:02 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1993-2001 by Darren Reed.

@@ -1,4 +1,4 @@
-/*	$OpenBSD:$	*/
+/*	$OpenBSD: db_disasm.c,v 1.1 1998/03/16 09:03:24 pefo Exp $	*/
 /*-
  * Copyright (c) 1991, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)kadb.c	8.1 (Berkeley) 6/10/93
- *      $Id: $
+ *      $Id: db_disasm.c,v 1.1 1998/03/16 09:03:24 pefo Exp $
  */
 
 #include <sys/param.h>

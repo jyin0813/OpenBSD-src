@@ -6,7 +6,7 @@
  * this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
  * ----------------------------------------------------------------------------
  *
- * $Id: ctm_pass3.c,v 1.2 1998/11/22 22:50:35 deraadt Exp $
+ * $Id: ctm_pass3.c,v 1.3 1999/07/13 23:02:05 deraadt Exp $
  *
  */
 

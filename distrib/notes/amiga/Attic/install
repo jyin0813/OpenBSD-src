@@ -1,4 +1,4 @@
-dnl	$OpenBSD: install,v 1.22 2002/03/30 22:52:57 miod Exp $
+dnl	$OpenBSD: install,v 1.23 2002/04/09 01:22:22 miod Exp $
 OpenBSDInstallPrelude
 
 OpenBSDInstallPart2

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.7 1997/04/27 20:56:17 millert Exp $
+#	$OpenBSD: Makefile,v 1.8 1997/11/29 01:22:49 millert Exp $
 #
 # Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
 # All rights reserved.

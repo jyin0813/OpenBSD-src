@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: edit.c,v 1.2 1999/01/13 07:26:03 niklas Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993, 1994 by Hellmuth Michaelis

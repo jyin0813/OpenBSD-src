@@ -1,4 +1,4 @@
-/* $OpenBSD: regs.h,v 1.1 1996/01/31 23:18:21 mark Exp $ */
+/* $OpenBSD: regs.h,v 1.2 2000/03/03 00:54:47 todd Exp $ */
 /* $NetBSD: regs.h,v 1.1 1996/01/31 23:18:21 mark Exp $ */
 
 /* Copyright (c) 1994,1995 Mark Brinicombe.

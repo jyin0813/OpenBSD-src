@@ -2,7 +2,7 @@
 #
 # MKlib_gen.sh -- generate sources from curses.h macro definitions
 #
-# $OpenBSD$
+# $OpenBSD: MKlib_gen.sh,v 1.4 1998/07/23 21:17:22 millert Exp $
 # ($From: MKlib_gen.sh,v 1.11 1998/01/17 14:16:52 Juan.Jose.Garcia.Ripoll Exp $)
 #
 # The XSI Curses standard requires all curses entry points to exist as

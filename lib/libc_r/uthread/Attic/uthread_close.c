@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_close.c,v 1.7 2000/01/06 07:14:28 d Exp $	*/
+/*	$OpenBSD: uthread_close.c,v 1.8 2000/10/04 05:52:34 d Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

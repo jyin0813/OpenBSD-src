@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbd_sparc.c,v 1.6 2002/06/09 08:13:07 todd Exp $ */
+/*	$OpenBSD: kbd_sparc.c,v 1.7 2002/07/03 22:32:33 deraadt Exp $ */
 
 /*
  * Copyright (c) 1999 Mats O Jansson.  All rights reserved.

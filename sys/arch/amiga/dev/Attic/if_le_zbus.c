@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_le_zbus.c,v 1.8 1998/09/16 22:41:16 jason Exp $	*/
+/*	$OpenBSD: if_le_zbus.c,v 1.9 2002/03/14 01:26:29 millert Exp $	*/
 /*	$NetBSD: if_le.c,v 1.22 1996/12/23 09:10:18 veego Exp $	*/
 
 /*-

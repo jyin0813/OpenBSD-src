@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 1996 Nivas Madhur
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
  *
@@ -52,9 +53,10 @@
 	{ 0, 0 }, \
 }
 
-#ifdef KERNEL
+#ifdef _KERNEL
 
 #include <machine/psl.h>
+#include <machine/pcb.h>
 
 /*
  * definitions of cpu-dependent requirements
@@ -67,34 +69,28 @@
 #define	cpu_swapout(p)	/* nothing */
 
 /*
- * See syscall() for an explanation of the following.  Note that the
- * locore bootstrap code follows the syscall stack protocol.  The
- * framep argument is unused.
- */
-#define cpu_set_init_frame(p, fp) \
-	(p)->p_md.md_tf = (struct trapframe *) \
-	    ((caddr_t)(p)->p_addr)
-
-/*
  * Arguments to hardclock and gatherstats encapsulate the previous
- * machine state in an opaque clockframe.
+ * machine state in an opaque clockframe. CLKF_INTR is only valid
+ * if the process is in kernel mode. Clockframe is really trapframe,
+ * so pointer to clockframe can be safely cast into a pointer to
+ * trapframe.
  */
 struct clockframe {
-	int	pc;	/* program counter at time of interrupt */
-	int	sr;	/* status register at time of interrupt */
-	int	ipl;	/* mask level at the time of interrupt  */
+	struct trapframe tf;
 };
 
-#define	CLKF_USERMODE(framep)	(((framep)->sr & 80000000) == 0)
-#define	CLKF_BASEPRI(framep)	((framep)->ipl == 0)
-#define	CLKF_PC(framep)		((framep)->pc & ~3)
-#define	CLKF_INTR(framep)	(0)
+extern intstack;
+
+#define	CLKF_USERMODE(framep)	((((struct trapframe *)(framep))->epsr & 80000000) == 0)
+#define	CLKF_BASEPRI(framep)	(((struct trapframe *)(framep))->mask == 0)
+#define	CLKF_PC(framep)		(((struct trapframe *)(framep))->sxip & ~3)
+#define	CLKF_INTR(framep)	(((struct trapframe *)(framep))->r[31] > intstack)
 
 #define SIR_NET		1
 #define SIR_CLOCK	2
 
-#define setsoftnet()	(ssir |= SIR_NET, want_ast = 1)
-#define setsoftclock()	(ssir |= SIR_CLOCK, want_ast = 1)
+#define setsoftnet()	(ssir |= SIR_NET)
+#define setsoftclock()	(ssir |= SIR_CLOCK)
 
 #define siroff(x)	(ssir &= ~x)
 
@@ -121,5 +117,40 @@ int	want_resched;		/* resched() was called */
  */
 #define	signotify(p)		(want_ast = 1)
 
-#endif /* KERNEL */
+struct intrhand {
+	int	(*ih_fn)();
+	void	*ih_arg;
+	int	ih_ipl;
+	int	ih_wantframe;
+	struct	intrhand *ih_next;
+};
+
+int	intr_establish __P((int vec, struct intrhand *));
+
+/*
+ * return values for intr_establish()
+ */
+
+#define INTR_EST_SUCC 		0
+#define INTR_EST_BADVEC		1
+#define INTR_EST_BADIPL		2
+
+
+/*
+ * There are 256 possible vectors on a MVME1x7 platform (including
+ * onboard and VME vectors. Use intr_establish() to register a
+ * handler for the given vector. vector number is used to index
+ * into the intr_handlers[] table.
+ */
+extern struct intrhand *intr_handlers[256];
+
+/*
+ * switchframe - should be double word aligned.
+ */
+struct switchframe {
+	u_int	sf_pc;			/* pc */
+	void	*sf_proc;		/* proc pointer */
+};
+
+#endif /* _KERNEL */
 #endif /* _CPU_H_ */

@@ -1,5 +1,5 @@
 #
-# GENERIC kernel for the distribition miniroot
+# GENERIC kernel for the distribition simpleroot
 #
 
 machine		pmax			# machine type
@@ -19,6 +19,8 @@ option		"NKMEMCLUSTERS=1024"	# 4k pages in kernel malloc pool
 # timezone stuff
 option		TIMEZONE=0
 option		DST=0			# use daylight savings rules
+# config bsd swap generic support
+option		GENERIC			# required for swap generic
 
 maxusers	64
 
@@ -55,7 +57,7 @@ option		KTRACE			# ktrace(1) support
 #option		UCONSOLE		# users can redirect console (unsafe)
 # other filesystems
 #option		MFS			# memory-based filesystem
-#option		KERNFS			# kernel data-structure filesystem
+option		KERNFS			# kernel data-structure filesystem
 #option		FDESC			# user file descriptor filesystem
 #option		UMAPFS			# uid/gid remapping filesystem
 #option		NULLFS			# null layer filesystem
@@ -76,7 +78,7 @@ option		KTRACE			# ktrace(1) support
 # compat stuff
 #option		COMPAT_ULTRIX		# ultrix compatibility
 
-config		bsd	root on rz0a swap on rz0b dumps on rz0b
+config		bsd swap generic
 
 mainbus0	at root
 cpu*		at mainbus0

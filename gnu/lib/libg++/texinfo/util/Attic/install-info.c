@@ -1,7 +1,7 @@
 /* install-info -- create Info directory entry(ies) for an Info file.
    Copyright (C) 1996 Free Software Foundation, Inc.
 
-$Id: install-info.c,v 1.3 1997/09/18 05:54:18 law Exp $
+$Id: install-info.c,v 1.3 1998/03/03 21:50:24 millert Exp $
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -1,4 +1,4 @@
-/*	$OpenBSD: dyn.h,v 1.1 1999/08/12 22:34:27 niklas Exp $	*/
+/*	$OpenBSD: dyn.h,v 1.1 1999/08/28 11:54:55 niklas Exp $	*/
 /*	$EOM: dyn.h,v 1.1 1999/08/12 22:34:27 niklas Exp $	*/
 
 /*

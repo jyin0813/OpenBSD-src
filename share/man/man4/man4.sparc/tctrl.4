@@ -1,4 +1,4 @@
-.\"     $OpenBSD: tctrl.4,v 1.4 2003/06/17 21:21:31 miod Exp $
+.\"     $OpenBSD: tctrl.4,v 1.5 2003/06/18 17:40:31 miod Exp $
 .\"
 .\" Copyright (c) 1999 Jason L. Wright (jason@thought.net)
 .\" All rights reserved.
@@ -24,7 +24,7 @@
 .\" ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 .\" POSSIBILITY OF SUCH DAMAGE.
 .\"
-.Dd September 8, 1999
+.Dd June 22, 2003
 .Dt TCTRL 4 sparc
 .Os
 .Sh NAME
@@ -34,8 +34,10 @@
 .Cd "tctrl0 at obio0"
 .Sh DESCRIPTION
 The
-.Nm tctrl
-provides control over many functions on the Tadpole SPARCbook 3 series laptops.
+.Nm
+driver provides control over many functions on the
+.Tn Tadpole SPARCbook
+3 series laptops, via their TS102 chip.
 The microcontroller is used to power the TFT display down when the
 laptop lid is closed and when the screen is blanked by the
 .Xr pninek 4
@@ -49,8 +51,12 @@ is also used to power the laptop off when the
 system call is used with the
 .Ar RB_POWERDOWN
 flag is set.
+The PCMCIA part of the controller is managed by the
+.Xr tslot 4
+driver.
 .Sh SEE ALSO
 .Xr reboot 2 ,
 .Xr intro 4 ,
 .Xr pninek 4 ,
-.Xr pnozz 4
+.Xr pnozz 4 ,
+.Xr tslot 4

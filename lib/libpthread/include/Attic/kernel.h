@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: kernel.h,v 1.3 1994/02/07 22:02:30 proven Exp $ $provenid: kernel.h,v 1.17 1994/02/07 03:31:57 proven Exp $
+ * $Id: kernel.h,v 1.1 1995/10/18 08:43:04 deraadt Exp $ $provenid: kernel.h,v 1.17 1994/02/07 03:31:57 proven Exp $
  *
  * Description : mutex header.
  *

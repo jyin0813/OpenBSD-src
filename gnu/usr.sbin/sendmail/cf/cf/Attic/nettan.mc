@@ -34,6 +34,6 @@ divert(-1)
 # SUCH DAMAGE.
 #
 
-VERSIONID(`$OpenBSD: nettan.mc,v 1.2 1996/05/10 16:58:46 niklas Exp $')
+VERSIONID(`$OpenBSD: nettan.mc,v 1.1 2000/04/02 19:48:13 millert Exp $')
 OSTYPE(openbsd)dnl
 FEATURE(nullclient,mail.appli.se)dnl

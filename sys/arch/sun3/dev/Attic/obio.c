@@ -1,4 +1,4 @@
-/*	$OpenBSD: obio.c,v 1.7 1999/01/11 05:12:02 millert Exp $	*/
+/*	$OpenBSD: obio.c,v 1.8 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: obio.c,v 1.23 1996/11/20 18:56:56 gwr Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pccons.h,v 1.2 1996/05/01 18:23:41 pefo Exp $	*/
+/*	$OpenBSD: pccons.h,v 1.3 1996/06/06 23:06:56 deraadt Exp pefo $	*/
 
 /*
  * pccons.h -- pccons ioctl definitions

@@ -1,4 +1,4 @@
-/*	$OpenBSD: endian.h,v 1.2 1996/11/25 13:11:14 niklas Exp $	*/
+/*	$OpenBSD: endian.h,v 1.3 1997/11/09 23:05:01 niklas Exp $	*/
 /*	$NetBSD: endian.h,v 1.7 1994/10/26 02:06:09 cgd Exp $	*/
 
 #ifndef _AMIGA_ENDIAN_H_

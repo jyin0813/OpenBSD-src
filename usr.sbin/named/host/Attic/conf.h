@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: conf.h,v 1.2 1997/03/12 10:41:51 downsj Exp $	*/
 
 /*
 ** Various configuration definitions.

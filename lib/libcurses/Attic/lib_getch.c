@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_getch.c,v 1.6 1998/07/23 21:18:47 millert Exp $	*/
+/*	$OpenBSD: lib_getch.c,v 1.7 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

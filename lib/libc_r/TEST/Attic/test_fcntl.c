@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_fcntl.c,v 1.3 2000/01/06 06:53:52 d Exp $	*/
+/*	$OpenBSD: test_fcntl.c,v 1.4 2001/07/09 07:04:40 deraadt Exp $	*/
 /*
  * Test fcntl() flag inheritance across a fork()
  */

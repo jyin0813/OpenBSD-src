@@ -1,4 +1,4 @@
-/*	$OpenBSD: bioscom.S,v 1.5 1997/07/17 22:48:42 mickey Exp $	*/
+/*	$OpenBSD: bioscom.S,v 1.6 1997/08/07 22:11:17 niklas Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

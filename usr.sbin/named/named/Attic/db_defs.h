@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_defs.h,v 1.3 1998/05/22 00:47:31 millert Exp $	*/
+/*	$OpenBSD: db_defs.h,v 1.4 2002/11/14 02:54:22 millert Exp $	*/
 
 /*
  *	from db.h	4.16 (Berkeley) 6/1/90

@@ -1,4 +1,4 @@
-#	$OpenBSD: INSTOTHER,v 1.4 1996/04/21 22:16:14 deraadt Exp $
+#	$OpenBSD: INSTOTHER,v 1.7 1996/05/10 12:44:26 deraadt Exp deraadt $
 #	$NetBSD: INSTOTHER,v 1.14 1996/05/07 01:00:21 thorpej Exp $
 #
 #	INSTOTHER -- like GENERICOTHER.  This supports only non-Adaptec SCSI

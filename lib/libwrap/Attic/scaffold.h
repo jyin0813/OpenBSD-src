@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: scaffold.h,v 1.1 1997/02/26 03:06:57 downsj Exp $	*/
 
  /*
   * @(#) scaffold.h 1.3 94/12/31 18:19:19

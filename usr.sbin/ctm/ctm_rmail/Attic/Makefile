@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.2 1999/07/13 23:02:05 deraadt Exp $
 
 PROG=           ctm_rmail
 SRCS=           ctm_rmail.c error.c

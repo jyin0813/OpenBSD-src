@@ -1,4 +1,4 @@
-/*	$OpenBSD: zsvar.h,v 1.10 1997/08/08 08:25:44 downsj Exp $	*/
+/*	$OpenBSD: zsvar.h,v 1.11 1998/07/21 22:33:44 marc Exp $	*/
 /*	$NetBSD: zsvar.h,v 1.10 1997/04/14 21:26:28 pk Exp $ */
 
 /*

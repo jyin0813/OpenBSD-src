@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# $RCSfile: scan_passwd,v $$Revision: 4.1 $$Date: 92/08/07 17:20:38 $
+# $RCSfile: scan_passwd,v $$Revision: 1.5 $$Date: 2001/05/24 18:35:06 $
 
 # This scans passwd file for security holes.
 

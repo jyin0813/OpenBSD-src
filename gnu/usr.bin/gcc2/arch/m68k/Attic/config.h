@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with GNU CC; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: config.h,v 1.1 1993/11/25 01:25:59 paulus Exp $
+	$Id: config.h,v 1.1 1995/10/18 08:39:19 deraadt Exp niklas $
 */
 
 

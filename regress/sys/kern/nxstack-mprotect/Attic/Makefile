@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2002/07/27 06:52:37 mickey Exp $
+#	$OpenBSD: Makefile,v 1.2 2002/07/27 08:01:31 deraadt Exp $
 
 .if ${MACHINE} == "sparc64" || ${MACHINE} == "sparc" || \
     ${MACHINE} == "alpha" || ${MACHINE} == "macppc" || \

@@ -1,4 +1,4 @@
-/*	$OpenBSD: md5k.h,v 1.5 1999/07/01 20:21:18 deraadt Exp $	*/
+/*	$OpenBSD: md5k.h,v 1.6 2002/03/14 01:27:14 millert Exp $	*/
 
 /*
  * Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. All

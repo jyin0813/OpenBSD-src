@@ -1,4 +1,4 @@
-/*	$OpenBSD: handle_cookie_response.c,v 1.6 2001/01/28 22:45:08 niklas Exp $	*/
+/*	$OpenBSD: handle_cookie_response.c,v 1.7 2002/06/09 08:13:08 todd Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -36,7 +36,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: handle_cookie_response.c,v 1.6 2001/01/28 22:45:08 niklas Exp $";
+static char rcsid[] = "$OpenBSD: handle_cookie_response.c,v 1.7 2002/06/09 08:13:08 todd Exp $";
 #endif
 
 #include <stdio.h>

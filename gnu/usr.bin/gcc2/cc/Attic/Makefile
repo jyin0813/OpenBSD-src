@@ -1,5 +1,5 @@
 #	from: @(#)Makefile    6.2 (Berkeley) 3/25/91
-#	$Id: Makefile,v 1.10 1994/12/22 09:33:47 cgd Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:39:26 deraadt Exp niklas $
 
 PROG=           cc
 SRCS=           gcc.c version.c obstack.c

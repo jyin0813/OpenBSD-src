@@ -1,4 +1,4 @@
-/*	$OpenBSD: binpatch.c,v 1.4 1997/01/17 07:12:27 millert Exp $	*/
+/*	$OpenBSD: binpatch.c,v 1.5 1999/03/02 16:09:39 espie Exp $	*/
 /*	$NetBSD: binpatch.c,v 1.6 1995/08/18 15:28:28 chopps Exp $	*/
 
 /* Author: Markus Wild mw@eunet.ch ???   */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: table.h,v 1.2 1996/08/19 20:09:00 downsj Exp $	*/
+/*	$OpenBSD: table.h,v 1.3 1996/11/21 07:59:35 downsj Exp $	*/
 
 /* $From: table.h,v 1.3 1994/05/31 13:34:34 michael Exp $ */
 

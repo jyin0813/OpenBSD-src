@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_ip4.c,v 1.2 1997/04/14 10:04:34 provos Exp $ */
+/* $OpenBSD: xf_esp_new.c,v 1.4 1997/11/04 09:13:42 provos Exp $ */
 /*
  * The author of this code is John Ioannidis, ji@tla.org,
  * 	(except when noted otherwise).
@@ -6,9 +6,11 @@
  * This code was written for BSD/OS in Athens, Greece, in November 1995.
  *
  * Ported to OpenBSD and NetBSD, with additional transforms, in December 1996,
- * by Angelos D. Keromytis, kermit@forthnet.gr.
- *
- * Copyright (C) 1995, 1996, 1997 by John Ioannidis and Angelos D. Keromytis.
+ * by Angelos D. Keromytis, kermit@forthnet.gr. Additional code written by
+ * Niels Provos in Germany.
+ * 
+ * Copyright (C) 1995, 1996, 1997 by John Ioannidis, Angelos D. Keromytis and
+ * Niels Provos.
  *	
  * Permission to use, copy, and modify this software without fee
  * is hereby granted, provided that this entire notice is included in
@@ -48,37 +50,32 @@
 #include <paths.h>
 #include "net/encap.h"
 #include "netinet/ip_ipsp.h"
-#include "netinet/ip_ip4.h" 
-
+ 
 extern char buf[];
 
 int xf_set __P(( struct encap_msghdr *));
 int x2i __P((char *));
 
 int
-xf_ip4(argc, argv)
-int argc;
-char **argv;
+xf_ip4(src, dst, spi, osrc, odst)
+struct in_addr src, dst;
+u_int32_t spi;
+struct in_addr osrc, odst;
 {
 	struct encap_msghdr *em;
-	struct ip4_xencap *xd;
-	
-	if (argc != 4) {
-	  fprintf(stderr, "usage: %s dst spi ttl\n", argv[0]);
-	  return 0;
-	}
 
 	em = (struct encap_msghdr *)&buf[0];
 	
-	em->em_msglen = EMT_SETSPI_FLEN + sizeof(struct ip4_xencap);
-	em->em_version = 0;
+	em->em_msglen = EMT_SETSPI_FLEN + 1;
+
+	em->em_version = PFENCAP_VERSION_1;
 	em->em_type = EMT_SETSPI;
-	em->em_spi = htonl(strtoul(argv[2], NULL, 16));
-	em->em_if = 1;
-	em->em_dst.s_addr = inet_addr(argv[1]);
+	em->em_spi = spi;
+	em->em_src = src;
+	em->em_dst = dst;
+	em->em_osrc = osrc;
+	em->em_odst = odst;
 	em->em_alg = XF_IP4;
-	xd = (struct ip4_xencap *)em->em_dat;
-	xd->ip4_ttl = atoi(argv[3]);
 
 	return xf_set(em);
 }

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/07/22 04:46:01 tholo Exp $
+#	$OpenBSD: Makefile,v 1.2 1997/04/27 20:56:25 millert Exp $
 
 #MAN=	terminfo.5
 

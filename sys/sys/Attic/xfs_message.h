@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: xfs_message.h,v 1.2 1998/08/30 17:35:43 art Exp $	*/
 /*
  * Copyright (c) 1995, 1996, 1997, 1998 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).
@@ -37,7 +37,7 @@
  * SUCH DAMAGE.
  */
 
-/* $Id: xfs_message.h,v 1.21 1998/06/27 11:05:24 assar Exp $ */
+/* $Id: xfs_message.h,v 1.2 1998/08/30 17:35:43 art Exp $ */
 
 #ifndef _xmsg_h
 #define _xmsg_h

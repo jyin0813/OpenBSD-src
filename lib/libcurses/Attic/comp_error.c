@@ -1,4 +1,4 @@
-/*	$OpenBSD: comp_error.c,v 1.1 1998/07/23 21:17:25 millert Exp $	*/
+/*	$OpenBSD: comp_error.c,v 1.2 1998/08/03 17:02:37 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

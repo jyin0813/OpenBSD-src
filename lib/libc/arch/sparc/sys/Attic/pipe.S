@@ -37,7 +37,7 @@
 
 #if defined(SYSLIBC_SCCS) 
 	.text
-	.asciz "$OpenBSD: pipe.S,v 1.2 1996/08/19 08:18:07 tholo Exp $"
+	.asciz "$OpenBSD: pipe.S,v 1.3 1999/01/22 06:07:56 marc Exp $"
 #endif /* SYSLIBC_SCCS */
 
 #include "SYS.h"

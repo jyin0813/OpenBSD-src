@@ -1,4 +1,4 @@
-/*	$OpenBSD: Version.c,v 1.3 1998/05/22 00:47:30 millert Exp $	*/
+/*	$OpenBSD: version.c,v 1.5 2001/01/30 20:56:10 niklas Exp $	*/
 
 /*
  *	@(#)Version.c	4.9 (Berkeley) 7/21/90
@@ -10,7 +10,7 @@
 char sccsid[] = "@(#)named 4.9.8-REL Tue Jan 30 21:50:03 2001 root@localhost:/usr/src/usr.sbin/named/named/obj";
 char rcsid[] = "$From: Version.c,v 8.2 1997/06/01 20:34:34 vixie Exp $";
 #else
-char rcsid[] = "$OpenBSD: Version.c,v 1.3 1998/05/22 00:47:30 millert Exp $";
+char rcsid[] = "$OpenBSD: version.c,v 1.5 2001/01/30 20:56:10 niklas Exp $";
 #endif
 #endif /* not lint */
 

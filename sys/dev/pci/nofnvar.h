@@ -1,4 +1,4 @@
-/*	$OpenBSD: nofnvar.h,v 1.1 2002/01/07 23:16:38 jason Exp $	*/
+/*	$OpenBSD$	*/
 
 /*
  * Copyright (c) 2002 Jason L. Wright (jason@thought.net)
@@ -31,27 +31,50 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-
 struct nofn_softc {
-	struct device sc_dv;		/* us, as a device */
-	void *sc_ih;			/* interrupt vectoring */
-	bus_space_handle_t sc_sh0;	/* group 0 handle */
-	bus_space_tag_t sc_st0;		/* group 0 tag */
-	bus_space_handle_t sc_sh1;	/* group 1 handle */
-	bus_space_tag_t sc_st1;		/* group 1 tag */
-	bus_space_handle_t sc_sh2;	/* gpram handle */
-	bus_space_tag_t sc_st2;		/* gpram tag */
-	pci_chipset_tag_t sc_pci_pc;	/* pci config space */
-	pcitag_t sc_pci_tag;		/* pci config space tag */
-	struct timeout sc_rngto;	/* rng timeout */
-	int sc_rnghz;			/* rng ticks */
+	struct device sc_dev;
+	void *sc_ih;
+	bus_space_handle_t sc_sh;
+	bus_space_tag_t sc_st;
+	bus_space_handle_t sc_pk_h;
+	bus_space_tag_t sc_pk_t;
+	bus_dma_tag_t sc_dmat;
+	int32_t sc_cid;
+	int sc_flags;
+	int sc_rngskip, sc_rngtick;
+	struct timeout sc_rngto;
+	u_int32_t sc_intrmask, sc_revid;
+	SIMPLEQ_HEAD(,nofn_pk_q) sc_pk_queue;
+	struct nofn_pk_q *sc_pk_current;
+	union nofn_pk_reg sc_pk_tmp, sc_pk_zero;
 };
 
-#define	G0_READ_4(sc,reg) \
-    bus_space_read_4((sc)->sc_st0, (sc)->sc_sh0, (reg))
-#define	G0_WRITE_4(sc,reg, val) \
-    bus_space_write_4((sc)->sc_st0, (sc)->sc_sh0, (reg), (val))
-#define	G1_READ_4(sc,reg) \
-    bus_space_read_4((sc)->sc_st1, (sc)->sc_sh1, (reg))
-#define	G1_WRITE_4(sc,reg, val) \
-    bus_space_write_4((sc)->sc_st1, (sc)->sc_sh1, (reg), (val))
+struct nofn_pk_q {
+	SIMPLEQ_ENTRY(nofn_pk_q)	q_next;
+	int (*q_start)(struct nofn_softc *, struct nofn_pk_q *);
+	void (*q_finish)(struct nofn_softc *, struct nofn_pk_q *);
+	struct cryptkop *q_krp;
+};
+
+#define	NOFN_FLAGS_RNG		0x01
+#define	NOFN_FLAGS_PK		0x02
+
+#define	REG_WRITE_4(sc,r,v) \
+	bus_space_write_4((sc)->sc_st, (sc)->sc_sh, (r), (v))
+#define	REG_READ_4(sc,r) \
+	bus_space_read_4((sc)->sc_st, (sc)->sc_sh, (r))
+
+#define	PK_WRITE_4(sc,r,v) \
+	bus_space_write_4((sc)->sc_pk_t, (sc)->sc_pk_h, (r), (v))
+#define	PK_READ_4(sc,r) \
+	bus_space_read_4((sc)->sc_pk_t, (sc)->sc_pk_h, (r))
+
+#ifndef PK_RNC_SCALER
+#define PK_RNC_SCALER		0x00000700
+#endif
+
+/* C = M ^ E mod N */
+#define	NOFN_MODEXP_PAR_M	0
+#define	NOFN_MODEXP_PAR_E	1
+#define	NOFN_MODEXP_PAR_N	2
+#define	NOFN_MODEXP_PAR_C	3

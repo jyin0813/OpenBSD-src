@@ -1,4 +1,4 @@
-/*      $OpenBSD: machAsmDefs.h,v 1.4 1996/10/29 17:02:39 graichen Exp $	*/
+/*      $OpenBSD: machAsmDefs.h,v 1.5 1999/08/20 16:37:56 maja Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

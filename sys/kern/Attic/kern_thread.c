@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_glue.c,v 1.53 1996/02/18 22:53:43 mycroft Exp $	*/
+/*	$OpenBSD: kern_thread.c,v 1.1 1996/03/19 21:10:40 mickey Exp deraadt $	*/
 
 /* 
  * Copyright (c) 1987, 1990 Carnegie-Mellon University.

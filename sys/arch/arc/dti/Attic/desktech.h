@@ -1,4 +1,4 @@
-/*	$OpenBSD: desktech.h,v 1.5 1998/05/03 19:44:40 imp Exp $ */
+/*	$OpenBSD: desktech.h,v 1.6 1999/01/30 22:39:38 imp Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: printf.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
+ * $OpenBSD: printf.s,v 1.1 1997/01/16 09:26:40 niklas Exp $
  * $NetBSD: printf.s,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
  *
  *

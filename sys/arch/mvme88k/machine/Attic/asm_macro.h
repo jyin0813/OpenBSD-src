@@ -26,7 +26,10 @@
  */
 /*
  * HISTORY
- * $Log:	asm_macro.h,v $
+ * $Log: asm_macro.h,v $
+ * Revision 1.1  1997/03/03 19:30:24  rahnds
+ * Initial revision
+ *
  * Revision 2.2  93/01/26  18:07:26  danner
  * 	Created.
  * 	[93/01/24            jfriedl]

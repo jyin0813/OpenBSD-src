@@ -1,4 +1,4 @@
-/*	$OpenBSD: tildexpand.h,v 1.3 2001/06/26 06:33:06 itojun Exp $	*/
+/*	$OpenBSD: tildexpand.h,v 1.4 2001/06/26 17:27:25 markus Exp $	*/
 
 /*
  * Author: Tatu Ylonen <ylo@cs.hut.fi>

@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: gdbcore.h,v 1.3 1995/01/12 10:20:30 pk Exp $
+	$Id: gdbcore.h,v 1.1 1995/10/18 08:40:00 deraadt Exp $
 */
 
 /* Interface routines for core, executable, etc.  */

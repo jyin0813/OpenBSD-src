@@ -1,4 +1,4 @@
-/*	$OpenBSD: kafs.h,v 1.2 2000/02/25 16:12:38 hin Exp $	*/
+/*	$OpenBSD: kafs.h,v 1.3 2002/06/08 21:49:01 hin Exp $	*/
 /*	$KTH: kafs.h,v 1.28 1998/04/26 18:20:09 joda Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfreg.h,v 1.3 2003/06/02 23:27:44 millert Exp $	*/
+/*	$OpenBSD: grfreg.h,v 1.4 2005/01/14 19:11:53 miod Exp $	*/
 /*	$NetBSD: grfreg.h,v 1.2 1994/10/26 07:24:09 cgd Exp $	*/
 
 /*

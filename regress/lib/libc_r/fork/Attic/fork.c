@@ -1,4 +1,4 @@
-/*	$OpenBSD: fork.c,v 1.2 2001/09/20 16:43:15 todd Exp $	*/
+/*	$OpenBSD: fork.c,v 1.3 2002/12/08 04:16:19 marc Exp $	*/
 /*
  * Copyright (c) 1993, 1994, 1995, 1996 by Chris Provenzano and contributors, 
  * proven@mit.edu All rights reserved.

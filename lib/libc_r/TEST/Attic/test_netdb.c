@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: test_netdb.c,v 1.4 2000/01/06 06:54:43 d Exp $	*/
 /*
  * Copyright (c) 1995 by Greg Hudson, ghudson@.mit.edu
  *

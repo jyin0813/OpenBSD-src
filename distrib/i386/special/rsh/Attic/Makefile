@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 1997/04/19 21:26:29 millert Exp $
+#	$OpenBSD: Makefile,v 1.1 1997/09/08 04:35:00 millert Exp $
 
 PROG=	rsh
 SRCS=	rsh.c

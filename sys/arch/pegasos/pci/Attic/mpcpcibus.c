@@ -1,4 +1,4 @@
-/*	$OpenBSD: mpcpcibus.c,v 1.4 2003/12/20 22:40:27 miod Exp $ */
+/*	$OpenBSD: mpcpcibus.c,v 1.5 2004/02/04 20:07:18 drahn Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

@@ -1,4 +1,4 @@
-/*	$OpenBSD: map.c,v 1.3 1997/01/17 07:13:43 millert Exp $	*/
+/*	$OpenBSD: map.c,v 1.4 1997/07/25 22:13:23 mickey Exp $	*/
 /*	$NetBSD: map.c,v 1.4 1994/12/07 05:08:07 jtc Exp $	*/
 
 /*-
@@ -38,7 +38,7 @@
 #if 0
 static char sccsid[] = "@(#)map.c	8.1 (Berkeley) 6/9/93";
 #endif
-static char rcsid[] = "$OpenBSD: map.c,v 1.3 1997/01/17 07:13:43 millert Exp $";
+static char rcsid[] = "$OpenBSD: map.c,v 1.4 1997/07/25 22:13:23 mickey Exp $";
 #endif /* not lint */
 
 #include <sys/types.h>

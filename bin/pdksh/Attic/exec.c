@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec.c,v 1.9 1997/06/19 13:58:41 kstailey Exp $	*/
+/*	$OpenBSD: exec.c,v 1.10 1997/09/12 04:38:05 millert Exp $	*/
 
 /*
  * execute command tree

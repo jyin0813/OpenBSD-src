@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: infptrace.c,v 1.1.1.1 1995/10/18 08:40:00 deraadt Exp $
+	$Id: infptrace.c,v 1.2 1996/07/18 10:03:26 deraadt Exp $
 */
 
 #include "defs.h"

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_fil.h,v 1.23 2001/02/06 17:29:30 fgsch Exp $	*/
+/*	$OpenBSD: ip_fil.h,v 1.24 2001/05/08 19:58:01 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

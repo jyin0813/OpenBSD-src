@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1997/09/10 21:04:22 millert Exp $
+#	$OpenBSD: Makefile,v 1.1 1997/09/11 10:38:39 deraadt Exp $
 
 SUBDIR= ftp
 

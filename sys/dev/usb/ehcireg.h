@@ -1,5 +1,4 @@
-/*	$OpenBSD: ehcireg.h,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
-/*	$NetBSD: ehcireg.h,v 1.13 2001/11/23 01:16:27 augustss Exp $	*/
+/*	$NetBSD: ehcireg.h,v 1.14 2003/10/13 00:05:10 enami Exp $	*/
 
 /*
  * Copyright (c) 2001 The NetBSD Foundation, Inc.
@@ -232,6 +231,7 @@ typedef struct {
 #define EHCI_QTD_GET_TOGGLE(x)	(((x) >> 31) &  0x1)
 #define EHCI_QTD_TOGGLE		0x80000000
 	ehci_physaddr_t	qtd_buffer[EHCI_QTD_NBUFFERS];
+	ehci_physaddr_t qtd_buffer_hi[EHCI_QTD_NBUFFERS];
 } ehci_qtd_t;
 #define EHCI_QTD_ALIGN 32
 

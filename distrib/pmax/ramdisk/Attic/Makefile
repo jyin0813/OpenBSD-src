@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1998/11/09 06:16:07 millert Exp $
+#	$OpenBSD: Makefile,v 1.2 1998/11/16 23:39:15 millert Exp $
 
 TOP=		${.CURDIR}/..
 

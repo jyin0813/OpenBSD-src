@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.3 1994/12/22 09:45:36 cgd Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:41:04 deraadt Exp millert $
 
 MAN=	rcsfreeze.1
 

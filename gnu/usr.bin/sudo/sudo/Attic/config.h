@@ -1,4 +1,4 @@
-/*	$OpenBSD: config.h,v 1.6 1998/11/21 01:34:51 millert Exp $	*/
+/*	$OpenBSD: config.h,v 1.9 1999/03/29 20:29:02 millert Exp $	*/
 
 /* config.h.  Generated automatically by configure.  */
 /*

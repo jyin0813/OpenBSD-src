@@ -1,4 +1,4 @@
-/*	$OpenBSD: math_emulate.c,v 1.5 2002/03/14 03:15:53 millert Exp $	*/
+/*	$OpenBSD: math_emulate.c,v 1.6 2003/01/09 22:27:09 miod Exp $	*/
 /*	$NetBSD: math_emulate.c,v 1.17 1996/05/03 19:42:17 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: grf_machdep.c,v 1.4 1997/01/12 15:12:36 downsj Exp $	*/
 /*	$NetBSD: grf_machdep.c,v 1.7 1996/12/17 08:41:09 thorpej Exp $	*/
 
 /*

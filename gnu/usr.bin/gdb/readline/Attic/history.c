@@ -19,7 +19,7 @@
    along with this program; if not, write to the Free Software
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: history.c,v 1.3 1994/01/28 12:43:16 pk Exp $
+	$Id: history.c,v 1.1 1995/10/18 08:40:15 deraadt Exp $
 */
 
 /* The goal is to make the implementation transparent, so that you

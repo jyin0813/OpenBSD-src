@@ -24,7 +24,7 @@
  * the rights to redistribute these changes.
  *
  *	from: Mach, Revision 2.2  92/04/04  11:34:13  rpd
- *	$Id: real_prot.S,v 1.1.1.1 1996/03/29 03:48:09 jtk Exp $
+ *	$Id: real_prot.S,v 1.1 1996/04/29 14:15:43 hvozda Exp $
  */
 
 

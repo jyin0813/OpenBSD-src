@@ -6,7 +6,7 @@
 
 #ifndef lint
 	.text
-	.asciz "$Id: syscall-sparc-sunos4.S,v 1.1 1995/09/03 00:01:15 snl Exp $";
+	.asciz "$Id: syscall-sparc-sunos4.S,v 1.1 1998/07/21 13:19:17 peter Exp $";
 #endif
  
 #include <sys/syscall.h>

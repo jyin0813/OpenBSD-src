@@ -1,5 +1,4 @@
-/*	$Id: kdb_locl.h,v 1.1.1.1 1995/12/14 06:52:37 tholo Exp $	*/
-/*      $KTH: kdb_locl.h,v 1.9 1997/05/02 14:29:08 assar Exp $          */
+/* $KTH: kdb_locl.h,v 1.9 1997/05/02 14:29:08 assar Exp $ */
 
 /*
  * Copyright (c) 1995, 1996, 1997 Kungliga Tekniska Högskolan
@@ -42,7 +41,7 @@
 #ifndef __kdb_locl_h
 #define __kdb_locl_h
 
-#include "kerberosIV/site.h"
+#include <kerberosIV/site.h>
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -73,20 +72,10 @@
 int kerb_db_set_lockmode __P((int));
 void kerb_db_fini __P((void));
 int kerb_db_init __P((void));
-int kerb_db_set_name __P((char *name));
-time_t kerb_get_db_age __P((void));
-int kerb_db_create __P((char *db_name));
-int kerb_db_rename __P((char *from, char *to));
-
 int kerb_db_get_principal __P((char *name, char *, Principal *, unsigned int, int *));
-int kerb_db_put_principal __P((Principal *, unsigned int));
 int kerb_db_get_dba __P((char *, char *, Dba *, unsigned int, int *));
 
-void kerb_db_get_stat __P((DB_stat *));
-void kerb_db_put_stat __P((DB_stat *));
 void delta_stat __P((DB_stat *, DB_stat *, DB_stat *));
-
-int kerb_db_iterate __P((int (*func) (/* ??? */), char *arg));
 
 int kerb_cache_init __P((void));
 int kerb_cache_get_principal __P((char *name, char *, Principal *, unsigned int));

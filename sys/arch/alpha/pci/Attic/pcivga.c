@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcivga.c,v 1.8 1996/11/23 21:44:55 kstailey Exp $	*/
+/*	$OpenBSD: pcivga.c,v 1.9 1996/12/08 00:20:44 niklas Exp $	*/
 /*	$NetBSD: pcivga.c,v 1.12 1996/10/23 04:12:29 cgd Exp $	*/
 
 /*

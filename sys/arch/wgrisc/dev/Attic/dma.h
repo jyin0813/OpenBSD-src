@@ -1,4 +1,4 @@
-/*	$OpenBSD: dma.h,v 1.3 1997/02/17 19:08:28 pefo Exp $ */
+/*	$OpenBSD: dma.h,v 1.4 1997/07/21 11:26:10 pefo Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

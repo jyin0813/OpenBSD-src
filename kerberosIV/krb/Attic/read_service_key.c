@@ -1,4 +1,4 @@
-/*	$OpenBSD: read_service_key.c,v 1.5 1997/12/22 15:02:12 art Exp $	*/
+/*	$OpenBSD: read_service_key.c,v 1.6 1998/02/25 15:51:35 art Exp $	*/
 /* $KTH: read_service_key.c,v 1.8 1997/03/23 03:53:16 joda Exp $ */
 
 /*

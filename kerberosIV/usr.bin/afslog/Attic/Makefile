@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2002/06/10 18:30:05 hin Exp $
+# $OpenBSD: Makefile,v 1.7 2002/06/10 18:41:04 hin Exp $
 
 PROG	= afslog
 

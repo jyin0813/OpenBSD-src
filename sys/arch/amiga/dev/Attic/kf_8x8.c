@@ -1,4 +1,4 @@
-/*	$OpenBSD: kf_8x8.c,v 1.2 1997/01/16 09:24:59 niklas Exp $	*/
+/*	$OpenBSD: kf_8x8.c,v 1.3 1999/03/01 01:19:13 espie Exp $	*/
 /*	$NetBSD: kf_8x8.c,v 1.3 1994/10/26 02:04:18 cgd Exp $	*/
 
 /*

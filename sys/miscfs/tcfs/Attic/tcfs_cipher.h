@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_cipher.h,v 1.3 2000/06/17 20:25:54 provos Exp $	*/
+/*	$OpenBSD: tcfs_cipher.h,v 1.4 2000/06/18 16:23:08 provos Exp $	*/
 /*
  * Copyright 2000 The TCFS Project at http://tcfs.dia.unisa.it/
  * All rights reserved.

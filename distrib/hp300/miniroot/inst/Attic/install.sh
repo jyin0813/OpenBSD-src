@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$NetBSD: install.sh,v 1.1.2.3 1995/11/07 10:33:25 thorpej Exp $
+#	$NetBSD: install.sh,v 1.1.2.7 1995/11/16 07:30:54 thorpej Exp $
 #
 # Copyright (c) 1995 Jason R. Thorpe.
 # All rights reserved.
@@ -36,6 +36,7 @@
 #	user interface.
 
 VERSION=1.1
+export VERSION				# XXX needed in subshell
 ROOTDISK=""				# filled in below
 FILESYSTEMS="/tmp/filesystems"		# used thoughout
 FQDN=""					# domain name
@@ -57,6 +58,27 @@ isin() {
 		shift
 	done
 	return 1
+}
+
+rmel() {
+# remove first argument from list formed by the remaining arguments
+	_a=$1; shift
+	while [ $# != 0 ]; do
+		if [ "$_a" != "$1" ]; then
+			echo "$1";
+		fi
+		shift
+	done
+}
+
+twiddle() {
+# spin the propeller so we don't get bored
+	while : ; do  
+		sleep 1; echo -n "/";
+		sleep 1; echo -n "-";
+		sleep 1; echo -n "\\";
+		sleep 1; echo -n "|";
+	done > /dev/tty & echo $!
 }
 
 #
@@ -87,11 +109,350 @@ md_installboot() {
 	echo "done."
 }
 
+md_checkfordisklabel() {
+	# $1 is the disk to check
+
+	disklabel -r $1 > /dev/null 2> /tmp/checkfordisklabel
+	if grep "no disk label" /tmp/checkfordisklabel; then
+		rval="1"
+	elif grep "disk label corrupted" /tmp/checkfordisklabel; then
+		rval="2"
+	else
+		rval="0"
+	fi
+
+	rm -f /tmp/checkfordisklabel
+}
+
+hp300_init_label_scsi_disk() {
+	# $1 is the disk to label
+
+	# Name the disks we install in the temporary fstab.
+	if [ "X${_disk_instance}" = "X" ]; then
+		_disk_instance="0"
+	else
+		_disk_instance=`expr $_disk_instance + 1`
+	fi
+	_cur_disk_name="install-disk-${_disk_instance}"
+
+	# Get geometry information from the user.
+	more << \__scsi_label_1
+
+You will need to provide some information about your disk's geometry.
+Geometry info for SCSI disks was printed at boot time.  If that information
+is not available, use the information provided in your disk's manual.
+Please note that the geometry printed at boot time is preferred.
+
+IMPORTANT NOTE: due to a limitation in the disklabel(8) program, the
+number of cylinders on the disk will be increased by 1 so that the initial
+label can be placed on disk for editing.  When the disklabel editor appears,
+make absolutely certain you subtract 1 from the total number of cylinders,
+and adjust the size of partition 'c' such that:
+
+	size = (sectors per track) * (tracks per cyl) * (total cylinders)
+
+Note that the disklabel editor will be run twice; once to set the size of
+partition 'c' and correct the geometry, and again so that you may correctly
+edit the partition map.  This is to work around the afore mentioned
+limitation in disklabel(8).  Apologies offered in advance.
+
+__scsi_label_1
+
+	# Give the opportunity to review the boot messages.
+	echo -n	"Review boot messages now? [y] "
+	getresp "y"
+	case "$resp" in
+		y*|Y*)
+			(echo ""; dmesg; echo "") | more
+			;;
+
+		*)
+			;;
+	esac
+
+	echo	""
+	echo -n	"Number of bytes per disk sector? [512] "
+	getresp "512"
+	_secsize="$resp"
+
+	resp=""		# force one iteration
+	while [ "X${resp}" = "X" ]; do
+		echo -n	"Number of cylinders? "
+		getresp ""
+	done
+	_cylinders="$resp"
+	_fudge_cyl=`expr $_cylinders + 1`
+
+	resp=""		# force one iteration
+	while [ "X${resp}" = "X" ]; do
+		echo -n	"Number of tracks (heads)? "
+		getresp ""
+	done
+	_tracks_per_cyl="$resp"
+
+	resp=""		# force one iteration
+	while [ "X${resp}" = "X" ]; do
+		echo -n	"Number of disk sectors (blocks)? "
+		getresp ""
+	done
+	_nsectors="$resp"
+
+	# Calculate some values we need.
+	_sec_per_cyl=`expr $_nsectors / $_cylinders`
+	_sec_per_track=`expr $_sec_per_cyl / $_tracks_per_cyl`
+	_new_c_size=`expr $_sec_per_track \* $_tracks_per_cyl \* $_cylinders`
+
+	# Emit a disktab entry, suitable for getting started.
+	# What we have is a `c' partition with the total number of
+	# blocks, and an `a' partition with 1 sector; just large enough
+	# to open.  Don't ask.
+	echo	"" >> /etc/disktab
+	echo	"# Created by install" >> /etc/disktab
+	echo	"${_cur_disk_name}:\\" >> /etc/disktab
+	echo -n	"	:ty=winchester:ns#${_sec_per_track}:" >> /etc/disktab
+	echo	"nt#${_tracks_per_cyl}:nc#${_fudge_cyl}:\\" >> /etc/disktab
+	echo	"	:pa#1:\\" >> /etc/disktab
+	echo	"	:pc#${_nsectors}:" >> /etc/disktab
+
+	# Ok, here's what we need to do.  First of all, we install
+	# this initial label by opening the `c' partition of the disk
+	# and using the `-r' flag for disklabel(8).  However, because
+	# of limitations in disklabel(8), we've had to fudge the number
+	# of cylinders up 1 so that disklabel(8) doesn't complain about
+	# `c' running past the end of the disk, which can be quite
+	# common even with OEM HP drives!  So, we've given ourselves
+	# an `a' partition, which is the minimum needed to open the disk
+	# so that we can perform the DIOCWDLABEL ioctl.  So, once the
+	# initial label is installed, we open the `a' partition so that
+	# we can fix up the number of cylinders and make the size of
+	# `c' come out to (ncyl * ntracks_per_cyl * nsec_per_track).
+	# After that's done, we re-open `c' and let the user actually
+	# edit the partition table.  It's horrible, I know.  Bleh.
+
+	disklabel -W ${1}
+	if ! disklabel -w -r ${1} ${_cur_disk_name}; then
+		echo ""
+		echo "ERROR: can't bootstrap disklabel!"
+		rval="1"
+		return
+	fi
+
+	echo ""
+	echo "The disklabel editor will now start.  During this phase, you"
+	echo "must reset the 'cylinders' value to ${_cylinders}, and adjust"
+	echo "the size of partition 'c' to ${_new_c_size}.  Do not modify"
+	echo "the partition map at this time.  You will have the opportunity"
+	echo "to do so in a moment."
+	echo ""
+	echo -n	"Press <return> to continue. "
+	getresp ""
+
+	disklabel -W ${1}
+	if ! disklabel -e /dev/r${1}a; then
+		echo ""
+		echo "ERROR: can't fixup geometry!"
+		rval="1"
+		return
+	fi
+
+	cat << \__explain_motives_2
+
+Now that you have corrected the geometry of your disk, you may edit the
+partition map.  Don't forget to fill in the fsize (frag size), bsize
+(filesystem block size), and cpg (cylinders per group) values.  If you
+are unsure what these should be, use:
+
+	fsize: 1024
+	bsize: 4096
+	cpg: 16
+
+__explain_motives_2
+	echo -n	"Press <return> to continue. "
+	getresp ""
+
+	rval="0"
+	return
+}
+
+hp300_init_label_hpib_disk() {
+	# $1 is the disk to label
+
+	# We look though the boot messages attempting to find
+	# the model number for the provided disk.
+	_hpib_disktype=""
+	if dmesg | grep "${1}: " > /dev/null 2>&1; then
+		_hpib_disktype=HP`dmesg | grep "${1}: " | sort -u | \
+		    awk '{print $2}'`
+	fi
+	if [ "X${_hpib_disktype}" = "X" ]; then
+		echo ""
+		echo "ERROR: $1 doesn't appear to exist?!"
+		rval="1"
+		return
+	fi
+
+	# Peer through /etc/disktab to see if the disk has a "default"
+	# layout.  If it doesn't, we have to treat it like a SCSI disk;
+	# i.e. prompt for geometry, and create a default to place
+	# on the disk.
+	if ! grep "${_hpib_disktype}[:|]" /etc/disktab > /dev/null \
+	    2>&1; then
+		echo ""
+		echo "WARNING: can't find defaults for $1 ($_hpib_disktype)"
+		echo ""
+		hp300_init_label_scsi_disk $1
+		return
+	fi
+
+	# We've found the defaults.  Now use them to place an initial
+	# disklabel on the disk.
+	# XXX What kind of ugliness to we have to deal with to get around
+	# XXX stupidity on the part of disklabel semantics?
+	disklabel -W ${1}
+	if ! disklabel -r -w ${1} $_hpib_disktype; then
+		# Error message displayed by disklabel(8)
+		echo ""
+		echo "ERROR: can't install default label!"
+		echo ""
+		echo -n	"Try a different method? [y] "
+		getresp "y"
+		case "$resp" in
+			y*|Y*)
+				hp300_init_label_scsi_disk $1
+				return
+				;;
+
+			*)
+				rval="1"
+				return
+				;;
+		esac
+	fi
+
+	rval="0"
+	return
+}
+
+md_labeldisk() {
+	# $1 is the disk to label
+
+	# Check to see if there is a disklabel present on the device.
+	# If so, we can just edit it.  If not, we must first install
+	# a default label.
+	md_checkfordisklabel $1
+	case "$rval" in
+		0)
+			# Go ahead and just edit the disklabel.
+			disklabel -W $1
+			disklabel -e $1
+			;;
+
+		*)
+		echo -n "No disklabel present, installing a default for type: "
+			case "$1" in
+				rd*)
+					echo "HP-IB"
+					hp300_init_label_hpib_disk $1
+					;;
+
+				sd*)
+					echo "SCSI"
+					hp300_init_label_scsi_disk $1
+					;;
+
+				*)
+					# Shouldn't happen, but...
+					echo "unknown?!  Giving up."
+					return;
+					;;
+			esac
+
+			# Check to see if installing the default was
+			# successful.  If so, go ahead and pop into the
+			# disklabel editor.
+			if [ "X${rval}" != X"0" ]; then
+				echo "Sorry, can't label this disk."
+				echo ""
+				return;
+			fi
+
+			# We have some defaults installed.  Pop into
+			# the disklabel editor.
+			disklabel -W $1
+			if ! disklabel -e $1; then
+				echo ""
+				echo "ERROR: couldn't set partition map for $1"
+				echo ""
+			fi
+	esac
+}
+
+	# Note, while they might not seem machine-dependent, the
+	# welcome banner and the punt message may contain information
+	# and/or instructions specific to the type of machine.
+
+md_welcome_banner() {
+(
+	echo	""
+	echo	"Welcome to the NetBSD/hp300 ${VERSION} installation program."
+	cat << \__welcome_banner_1
+
+This program is designed to help you install NetBSD on your system in a
+simple and rational way.  You'll be asked several questions, and it would
+probably be useful to have your disk's hardware manual, the installation
+notes, and a calculator handy.
+
+In particular, you will need to know some reasonably detailed
+information about your disk's geometry.  This program can determine
+some limited information about certain specific types of HP-IB disks.
+If you have SCSI disks, however, prior knowledge of disk geometry
+is absolutely essential.  The kernel will attempt to display geometry
+information for SCSI disks during boot, if possible.  If you did not
+make it note of it before, you may wish to reboot and jot down your
+disk's geometry before proceeding.
+
+As with anything which modifies your hard disk's contents, this
+program can cause SIGNIFICANT data loss, and you are advised
+to make sure your hard drive is backed up before beginning the
+installation process.
+
+Default answers are displyed in brackets after the questions.
+You can hit Control-C at any time to quit, but if you do so at a
+prompt, you may have to hit return.  Also, quitting in the middle of
+installation may leave your system in an inconsistent state.
+
+__welcome_banner_1
+) | more
+}
+
+md_not_going_to_install() {
+		cat << \__not_going_to_install_1
+
+OK, then.  Enter 'halt' at the prompt to halt the machine.  Once the
+machine has halted, power-cycle the system to load new boot code.
+
+__not_going_to_install_1
+}
+
+md_congrats() {
+	cat << \__congratulations_1
+
+CONGRATULATIONS!  You have successfully installed NetBSD!  To boot the
+installed system, enter halt at the command prompt.  Once the system has
+halted, power-cycle the machine in order to load new boot code.  Make sure
+you boot from the root disk.
+
+__congratulations_1
+}
+
 # end of machine dependent section
 
 do_mfs_mount() {
+	# $1 is the mount point
+	# $2 is the size in DEV_BIZE blocks
+
 	umount $1 > /dev/null 2>&1
-	if ! mount_mfs -s 2048 swap $1 ; then
+	if ! mount_mfs -s $2 swap $1 ; then
 		cat << \__mfs_failed_1
 
 FATAL ERROR: Can't mount the memory filesystem.
@@ -129,26 +490,13 @@ __getrootdisk_1
 	fi
 }
 
-checkfordisklabel() {
-	disklabel -r $1 > /dev/null 2> /tmp/checkfordisklabel
-	if grep "no disk label" /tmp/checkfordisklabel; then
-		rval="1"
-	elif grep "disk label corrupted" /tmp/checkfordisklabel; then
-		rval="2"
-	else
-		rval="0"
-	fi
-
-	rm -f /tmp/checkfordisklabel
-}
-
 labelmoredisks() {
 	cat << \__labelmoredisks_1
 
 You may label the following disks:
 
 __labelmoredisks_1
-	echo "$_DKDEVS" | grep -v "${ROOTDISK}"
+	echo "$_DKDEVS"
 	echo	""
 	echo -n	"Label which disk? [done] "
 	getresp "done"
@@ -157,10 +505,8 @@ __labelmoredisks_1
 			;;
 
 		*)
-			if echo "$_DKDEVS" | grep -v "${ROOTDISK}" | \
-			    grep "^$resp" > /dev/null ; then
-				# XXX CODE ME
-				echo "Yup, it exists."
+			if echo "$_DKDEVS" | grep "^$resp" > /dev/null ; then
+				md_labeldisk $resp
 			else
 				echo ""
 				echo "The disk $resp does not exist."
@@ -220,6 +566,9 @@ __configurenetwork_1
 			if isin $resp $_IFS ; then
 				_interface_name=$resp
 
+				# Keep in the list in case it's misconfigured
+				# and the user want's to re-do it.
+
 				# Get IP address
 				resp=""		# force one iteration
 				while [ "X${resp}" = X"" ]; do
@@ -231,7 +580,7 @@ __configurenetwork_1
 				# Get symbolic name
 				resp=""		# force one iteration
 				while [ "X${resp}" = X"" ]; do
-					echo -n "Symbolic name? "
+					echo -n "Symbolic (host) name? "
 					getresp ""
 					_interface_symname=$resp
 				done
@@ -333,7 +682,7 @@ __install_ftp_2
 		fi
 
 		_ftp_file=`echo ${resp} | awk '{print $1}'`
-		echo "get ${_ftp_file} |\"tar -zxvpf -\"" >> \
+		echo "get ${_ftp_file} |\"tar --unlink -zxvpf -\"" >> \
 		    /tmp/ftp-script.sh
 	done
 
@@ -364,7 +713,7 @@ install_common_nfs_cdrom() {
 	fi
 
 	# Extract file
-	cat $_common_filename | (cd /mnt; tar -zxvpf -)
+	cat $_common_filename | (cd /mnt; tar --unlink -zxvpf -)
 	echo "Extraction complete."
 }
 
@@ -584,14 +933,14 @@ __install_tape_2
 			1)
 				(
 					cd /mnt
-					dd if=$TAPE | tar -zxvpf -
+					dd if=$TAPE | tar --unlink -zxvpf -
 				)
 				;;
 
 			2)
 				(
 					cd /mnt
-					dd if=$TAPE | tar -xvpf -
+					dd if=$TAPE | tar --unlink -xvpf -
 				)
 				;;
 
@@ -629,32 +978,8 @@ __get_timezone_1
 	export TZ
 }
 
-echo	""
-echo	"Welcome to the NetBSD ${VERSION} installation program."
-cat << \__welcome_banner_1
-
-This program is designed to help you put NetBSD on your hard disk,
-in a simple and rational way.  You'll be asked several questions,
-and it would probably be useful to have your disk's hardware
-manual, the installation notes, and a calculator handy.
-
-In particular, you will need to know some reasonably detailed
-information about your disk's geometry.  This program can determine
-some limited information about certain specific types of HP-IB disks.
-If you have SCSI disks, however, prior knowledge of disk geometry
-is absolutely essential.
-
-As with anything which modifies your hard disk's contents, this
-program can cause SIGNIFICANT data loss, and you are advised
-to make sure your hard drive is backed up before beginning the
-installation process.
-
-Default answers are displyed in brackets after the questions.
-You can hit Control-C at any time to quit, but if you do so at a
-prompt, you may have to hit return.  Also, quitting in the middle of
-installation may leave your system in an inconsistent state.
-
-__welcome_banner_1
+# Good {morning,afternoon,evening,night}.
+md_welcome_banner
 echo -n "Proceed with installation? [n] "
 getresp "n"
 case "$resp" in
@@ -662,18 +987,16 @@ case "$resp" in
 		echo	"Cool!  Let's get to it..."
 		;;
 	*)
-		cat << \__welcome_banner_2
-
-OK, then.  Enter 'halt' at the prompt to halt the machine.  Once the
-machine has halted, power-cycle the system to load new boot code.
-
-__welcome_banner_2
+		md_not_going_to_install
 		exit
 		;;
 esac
 
+# XXX Work around vnode aliasing bug (thanks for the tip, Chris...)
+ls -l /dev > /dev/null 2>&1
+
 # We don't like it, but it sure makes a few things a lot easier.
-do_mfs_mount "/tmp"
+do_mfs_mount "/tmp" "2048"
 
 # Install the shadowed disktab file; lets us write to it for temporary
 # purposes without mounting the miniroot read-write.
@@ -685,8 +1008,8 @@ done
 
 # Make sure there's a disklabel there.  If there isn't, puke after
 # disklabel prints the error message.
-checkfordisklabel ${ROOTDISK}
-case $rval in
+md_checkfordisklabel ${ROOTDISK}
+case "$resp" in
 	1)
 		cat << \__disklabel_not_present_1
 
@@ -739,6 +1062,7 @@ You will now be given the opportunity to place disklabels on any additional
 disks on your system.
 __disklabel_notice_2
 
+_DKDEVS=`rmel ${ROOTDISK} ${_DKDEVS}`
 resp="X"	# force at least one iteration
 while [ "X$resp" != X"done" ]; do
 	labelmoredisks
@@ -867,6 +1191,26 @@ case "$resp" in
 			if route add default $resp > /dev/null ; then
 				echo $resp > /tmp/mygate
 			fi
+		fi
+
+		echo -n	"Enter IP address of primary nameserver: [none] "
+		getresp "none"
+		if [ "X${resp}" != X"none" ]; then
+			echo "domain $FQDN" > /tmp/resolv.conf
+			echo "nameserver $resp" >> /tmp/resolv.conf
+			echo "search $FQDN" >> /tmp/resolv.conf
+
+			echo -n "Would you like to use the nameserver now? [y] "
+			getresp "y"
+			case "$resp" in
+				y*|Y*)
+					cp /tmp/resolv.conf \
+					    /tmp/resolv.conf.shadow
+					;;
+
+				*)
+					;;
+			esac
 		fi
 
 		echo ""
@@ -1015,7 +1359,7 @@ if [ -f /base.tar.gz ]; then
 				getresp "y"
 				case "$resp" in
 				y*|Y*)
-					cat $_f | (cd /mnt; tar -zxvpf -)
+				     cat $_f | (cd /mnt; tar --unlink -zxvpf -)
 					_yup="TRUE"
 					;;
 				*)
@@ -1088,7 +1432,7 @@ get_timezone
 # Copy in configuration information and make devices in target root.
 (
 	cd /tmp
-	for file in fstab hostname.* hosts myname mygate; do
+	for file in fstab hostname.* hosts myname mygate resolv.conf; do
 		if [ -f $file ]; then
 			echo -n "Copying $file..."
 			cp $file /mnt/etc/$file
@@ -1102,8 +1446,10 @@ get_timezone
 	echo "done."
 
 	echo -n "Making devices..."
+	pid=`twiddle`
 	cd /mnt/dev
 	sh MAKEDEV all
+	kill $pid
 	echo "done."
 
 	echo -n "Copying kernel..."
@@ -1114,19 +1460,20 @@ get_timezone
 )
 
 # Unmount all filesystems and check their integrity.
-sync; sleep 2
-umount -a
+echo -n	"Syncing disks..."
+pid=`twiddle`
+sync; sleep 4; sync; sleep 2; sync; sleep 2
+kill $pid
+echo	"done."
+
+echo "Unmounting filesystems..."
+umount -va
+
 echo "Checking filesystem integrity..."
 fsck -pf
 
-cat << \__congratulations_1
-
-CONGRATULATIONS!  You have successfully installed NetBSD on your hard disk!
-To boot the installed system, enter halt at the command prompt.  Once the
-system has halted, power-cycle the machine in order to load new boot code.
-Make sure you boot from the disk.
-
-__congratulations_1
+# Pat on the back.
+md_congrats
 
 # ALL DONE!
-exit
+exit 0

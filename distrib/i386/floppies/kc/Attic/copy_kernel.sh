@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: copy_kernel.sh,v 1.1 1996/05/31 23:00:25 mickey Exp $
 #
 #	Kernel copy script
 

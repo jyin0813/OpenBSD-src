@@ -1,5 +1,5 @@
 /* config.h.  Generated automatically by configure.  */
-/* $OpenBSD$ */
+/* $OpenBSD: config.h,v 1.2 2000/10/03 01:33:55 angelos Exp $ */
 /* config.hin.  Generated automatically from configure.in by autoheader.  */
 
 /* Define to empty if the keyword does not work.  */

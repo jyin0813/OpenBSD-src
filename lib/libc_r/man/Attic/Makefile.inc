@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.14 2002/01/28 22:53:54 pvalchev Exp $
+# $OpenBSD: Makefile.inc,v 1.15 2002/02/20 05:16:20 fgsch Exp $
 # $FreeBSD: Makefile.inc,v 1.6 1999/08/28 00:03:02 peter Exp $
 
 # POSIX thread man files

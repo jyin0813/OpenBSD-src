@@ -1,4 +1,4 @@
-/*	$OpenBSD: conf.c,v 1.7 1996/07/15 14:57:06 mickey Exp $ */
+/*	$OpenBSD: conf.c,v 1.8 1996/08/29 09:26:23 deraadt Exp deraadt $ */
 
 /*
  * Copyright (c) 1992, 1993
@@ -36,7 +36,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)conf.c	8.2 (Berkeley) 11/14/93
- *      $Id: conf.c,v 1.7 1996/07/15 14:57:06 mickey Exp $
+ *      $Id: conf.c,v 1.8 1996/08/29 09:26:23 deraadt Exp deraadt $
  */
 
 #include <sys/param.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: stdarg.c,v 1.3 2001/09/20 16:43:16 todd Exp $	*/
+/*	$OpenBSD: stdarg.c,v 1.4 2001/12/12 21:18:34 fgsch Exp $	*/
 /* David Leonard <d@openbsd.org>, 2001. Public Domain. */
 
 /*

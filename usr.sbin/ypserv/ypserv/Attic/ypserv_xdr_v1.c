@@ -6,7 +6,7 @@
 #include <rpcsvc/yp.h>
 #include "ypv1.h"
 #ifndef lint
-static const char rcsid[] = "$OpenBSD: ypserv_xdr_v1.c,v 1.4 2003/02/13 05:54:39 maja Exp $";
+static const char rcsid[] = "$OpenBSD: ypserv_xdr_v1.c,v 1.5 2003/05/05 08:37:05 avsm Exp $";
 #endif /* not lint */
 
 bool_t

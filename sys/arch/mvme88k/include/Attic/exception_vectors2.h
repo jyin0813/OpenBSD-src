@@ -1,4 +1,4 @@
-/*	$OpenBSD: exception_vectors2.h,v 1.5 2001/12/16 23:49:46 miod Exp $ */
+/*	$OpenBSD: exception_vectors2.h,v 1.6 2001/12/22 17:57:11 smurph Exp $ */
 /*
  * Mach Operating System
  * Copyright (c) 1991, 1992 Carnegie Mellon University

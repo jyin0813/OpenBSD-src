@@ -28,7 +28,10 @@
  */
 /*
  * HISTORY
- * $Log:	continuation.s,v $
+ * $Log: continuation.s,v $
+ * Revision 1.1  1995/10/18 10:54:27  deraadt
+ * Initial revision
+ *
  * Revision 2.7  93/01/26  18:00:29  danner
  * 	changed ;comments to C-style for cpp.
  * 	[93/01/25            jfriedl]

@@ -1,4 +1,4 @@
-#	$OpenBSD: INST,v 1.23 1998/06/23 05:59:45 deraadt Exp $
+#	$OpenBSD: INST,v 1.24 1998/09/11 11:35:35 fgsch Exp $
 #	$NetBSD: INSTADP,v 1.17 1996/05/20 03:32:19 thorpej Exp $
 #
 #	Install kernels no longer support X.

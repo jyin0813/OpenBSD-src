@@ -1,4 +1,4 @@
-/*	$OpenBSD: arcbios.c,v 1.2 1998/03/16 09:03:19 pefo Exp $	*/
+/*	$OpenBSD: arcbios.c,v 1.3 1998/06/06 06:33:33 mickey Exp $	*/
 /*-
  * Copyright (c) 1996 M. Warner Losh.  All rights reserved.
  * Copyright (c) 1996, 1997, 1998 Per Fogelstrom.  All rights reserved.

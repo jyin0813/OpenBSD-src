@@ -1,5 +1,5 @@
 #	from: @(#)Makefile	6.11 (Berkeley) 7/1/90
-#	$Id: Makefile,v 1.7 1995/04/20 02:04:51 mycroft Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:44:42 deraadt Exp etheisen $
 
 MELIB=	${BINDIR}/me
 TMLIB=	${BINDIR}/tmac

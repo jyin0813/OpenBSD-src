@@ -1,4 +1,4 @@
-/* $OpenBSD: pwarnx.c,v 1.3 2003/06/02 23:36:54 millert Exp $ */
+/* $OpenBSD: pwarnx.c,v 1.4 2003/08/21 20:24:57 espie Exp $ */
 
 /*-
  * Copyright (c) 1993

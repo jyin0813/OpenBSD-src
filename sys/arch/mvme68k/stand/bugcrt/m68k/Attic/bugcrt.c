@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: bugcrt.c,v 1.4 1996/05/07 03:06:15 rahnds Exp deraadt $ */
 
 #include <sys/types.h>
 #include <machine/prom.h>

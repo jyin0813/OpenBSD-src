@@ -1,4 +1,4 @@
-/*	$OpenBSD: _atomic_lock.c,v 1.1 1998/12/21 22:54:55 mickey Exp $	*/
+/*	$OpenBSD: _atomic_lock.c,v 1.2 2002/10/11 19:08:41 marc Exp $	*/
 /*
  * Atomic lock for hppa
  */

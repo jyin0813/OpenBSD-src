@@ -1,4 +1,4 @@
-/*	$OpenBSD: subr.c,v 1.8 2003/04/05 16:13:12 deraadt Exp $	*/
+/*	$OpenBSD: subr.c,v 1.9 2003/06/03 02:56:07 millert Exp $	*/
 /*	$NetBSD: subr.c,v 1.4 1995/09/10 15:55:15 christos Exp $	*/
 
 /*
@@ -34,7 +34,7 @@
 #if 0
 static char sccsid[] = "@(#)subr.c	8.1 (Berkeley) 6/6/93";
 #endif
-static char rcsid[] = "$OpenBSD: subr.c,v 1.8 2003/04/05 16:13:12 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: subr.c,v 1.9 2003/06/03 02:56:07 millert Exp $";
 #endif /* not lint */
 
 #include <stdio.h>

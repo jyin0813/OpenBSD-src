@@ -1,4 +1,4 @@
-/*	$OpenBSD: nametoaddr.c,v 1.3 1996/08/22 22:52:52 niklas Exp $	*/
+/*	$OpenBSD: nametoaddr.c,v 1.4 1997/06/27 02:16:23 deraadt Exp $	*/
 /*	From NetBSD: nametoaddr.c,v 1.3 1995/04/29 05:42:23 cgd Exp */
 
 /*
@@ -30,7 +30,7 @@
 from: static char rcsid[] =
     "@(#) Header: nametoaddr.c,v 1.21 94/06/20 19:07:54 leres Exp (LBL)";
 #else
-static char rcsid[] = "$OpenBSD: nametoaddr.c,v 1.3 1996/08/22 22:52:52 niklas Exp $";
+static char rcsid[] = "$OpenBSD: nametoaddr.c,v 1.4 1997/06/27 02:16:23 deraadt Exp $";
 #endif
 #endif
 

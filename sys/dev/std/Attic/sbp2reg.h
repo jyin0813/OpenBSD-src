@@ -1,4 +1,4 @@
-/*	$OpenBSD: sbp2reg.h,v 1.1 2002/12/13 02:57:56 tdeval Exp $	*/
+/*	$OpenBSD: sbp2reg.h,v 1.2 2002/12/30 11:48:34 tdeval Exp $	*/
 
 /*
  * Copyright (c) 2002 Thierry Deval.  All rights reserved.

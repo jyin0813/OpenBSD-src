@@ -1,4 +1,4 @@
-#	$OpenBSD: GENERICADP,v 1.7 1996/04/21 22:16:09 deraadt Exp $
+#	$OpenBSD: GENERICADP,v 1.13 1996/05/14 18:38:14 mickey Exp deraadt $
 #	$NetBSD: GENERICADP,v 1.21 1996/05/07 00:59:59 thorpej Exp $
 #
 #	GENERICADP -- everything that's currently supported, except non-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: common.c,v 1.5 1998/08/12 23:49:04 art Exp $	*/
+/*	$OpenBSD: common.c,v 1.6 1999/02/28 14:14:12 art Exp $	*/
 /*	$KTH: common.c,v 1.10 1998/04/04 13:08:31 assar Exp $	*/
 
 /*

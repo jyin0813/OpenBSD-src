@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: xyvar.h,v 1.3 1997/01/16 04:04:00 kstailey Exp $	*/
 /* $NetBSD: xyvar.h,v 1.2 1996/01/07 22:03:22 thorpej Exp $ */
 
 /*

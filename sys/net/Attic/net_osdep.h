@@ -1,4 +1,4 @@
-/*	$OpenBSD: net_osdep.h,v 1.6 2001/02/16 08:48:03 itojun Exp $	*/
+/*	$OpenBSD: net_osdep.h,v 1.7 2001/06/09 06:16:38 angelos Exp $	*/
 /*	$KAME: net_osdep.h,v 1.40 2001/02/14 17:07:50 itojun Exp $	*/
 
 /*

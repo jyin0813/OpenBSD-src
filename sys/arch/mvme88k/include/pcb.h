@@ -1,4 +1,5 @@
 /*
+ * Copyright (c) 1996 Nivas Madhur
  * Mach Operating System
  * Copyright (c) 1993-1992 Carnegie Mellon University
  * All Rights Reserved.
@@ -38,13 +39,21 @@
  * in the saved_state area - this is passed as the exception frame.
  * On a context switch, only registers that need to be saved by the
  * C calling convention and few other regs (pc, psr etc) are saved
- * in the kernel_state part of the PCB.
+ * in the kernel_state part of the PCB. Typically, trap fames are
+ * save on the stack (by low level handlers or by hardware) but,
+ * we just decided to do it in the PCB.
  */
 
-/* This must always be an even number of words long */
+/*
+ * This must always be an even number of words long so that our stack
+ * will always be properly aligned (88k need 8 byte alignmet). Also,
+ * place r14 on double word boundary so that we can use st.d while
+ * saving the regs.
+ */
 
 struct m88100_pcb {
     unsigned pcb_pc;	/* address to return */
+    unsigned pcb_ipl;
     unsigned pcb_r14;
     unsigned pcb_r15;
     unsigned pcb_r16;
@@ -63,7 +72,6 @@ struct m88100_pcb {
     unsigned pcb_r29;
     unsigned pcb_r30;
     unsigned pcb_sp; 	/* kernel stack pointer */
-    unsigned pcb_mask;
 };
 
 
@@ -105,20 +113,23 @@ struct m88100_saved_state {
     unsigned fprh;
     unsigned fprl;
     unsigned fpit;
-    unsigned vector;   /* exception vector number */
-    unsigned mask;	   /* interrupt mask level */
-    unsigned mode;     /* interrupt mode */
-    unsigned scratch1; /* used by locore trap handling code */
-    unsigned pad;      /* to make an even length */
-} ;
+    unsigned vector;	/* exception vector number */
+    unsigned mask;	/* interrupt mask level */
+    unsigned mode;	/* interrupt mode */
+    unsigned scratch1;	/* used by locore trap handling code */
+    unsigned ipfsr;      /* P BUS status - used in inst fault handling */
+    unsigned dpfsr;      /* P BUS status - used in data fault handling */
+    unsigned pad;	/* alignment */
+};
 
 #define trapframe m88100_saved_state
 
 struct pcb
 {
-  struct m88100_saved_state    user_state;
   struct m88100_pcb            kernel_state;
+  struct m88100_saved_state    user_state;
   int	 		       pcb_onfault;	/* for copyin/copyout faults */
+  int	 		       pcb_pad;		/* pad it XXX */
 };
 
 typedef	struct pcb	*pcb_t;		/* exported */

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: qop_cbq.h,v 1.1 2001/06/27 18:23:29 kjc Exp $	*/
 /*	$KAME: qop_cbq.h,v 1.2 2000/10/18 09:15:18 kjc Exp $	*/
 /*
  * Copyright (c) Sun Microsystems, Inc. 1993-1998 All rights reserved.

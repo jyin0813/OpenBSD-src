@@ -1,4 +1,4 @@
-/*	$OpenBSD: arctype.h,v 1.3 1996/09/02 11:33:22 pefo Exp $	*/
+/*	$OpenBSD: arctype.h,v 1.4 1997/03/12 19:16:37 pefo Exp $	*/
 /*
  * Copyright (c) 1997 Per Fogelstrom
  * 

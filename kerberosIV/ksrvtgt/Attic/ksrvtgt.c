@@ -1,4 +1,4 @@
-/*	$OpenBSD: ksrvtgt.c,v 1.4 1998/02/18 11:54:07 art Exp $	*/
+/*	$OpenBSD: ksrvtgt.c,v 1.5 1998/02/25 15:51:50 art Exp $	*/
 
 /*
  * This source code is no longer held under any constraint of USA
@@ -39,7 +39,7 @@
 #include <kerberosIV/krb.h>
 
 const char rcsid[] =
-    "$Id: ksrvtgt.c,v 1.4 1998/02/18 11:54:07 art Exp $";
+    "$Id: ksrvtgt.c,v 1.5 1998/02/25 15:51:50 art Exp $";
 
 main(argc,argv)
     int argc;

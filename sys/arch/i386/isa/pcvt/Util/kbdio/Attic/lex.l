@@ -33,7 +33,7 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ident "$Header: /a/cvsroot/src/sys/arch/i386/isa/pcvt/Util/kbdio/lex.l,v 1.2 1995/10/07 21:45:20 jtc Exp $"
+#ident "$Header: /cvs/src/sys/arch/i386/isa/pcvt/Util/kbdio/lex.l,v 1.1 1995/10/18 08:50:45 deraadt Exp $"
 
 #include <stdio.h>
 #include <stdlib.h>

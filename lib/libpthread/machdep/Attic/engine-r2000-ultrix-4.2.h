@@ -1,7 +1,7 @@
 /* ==== machdep.h ============================================================
  * Copyright (c) 1993 Chris Provenzano, proven@athena.mit.edu
  *
- * $Id: engine-r2000-ultrix-4.2.h,v 1.52.4.1 1995/12/13 05:42:24 proven Exp $
+ * $Id: engine-r2000-ultrix-4.2.h,v 1.1 1998/07/21 13:19:14 peter Exp $
  *
  *  Description : Machine dependent header for decstation with r2000/r3000
  *				  running Ultrix-4.2

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: rip.d,v 1.2 2001/01/29 01:58:11 niklas Exp $
 
 # struct netinfo {
 #	struct	sockaddr rip_dst;	/* destination net/host */

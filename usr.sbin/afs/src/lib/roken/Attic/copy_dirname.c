@@ -42,7 +42,7 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-RCSID("$Id: copy_dirname.c,v 1.1 1999/06/09 07:00:41 assar Exp $");
+RCSID("$Id: copy_dirname.c,v 1.1 2000/09/11 14:40:59 art Exp $");
 #endif
 
 #include <string.h>

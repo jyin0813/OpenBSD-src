@@ -1,4 +1,4 @@
-/*	$OpenBSD: preen.c,v 1.8 2003/04/06 08:51:24 avsm Exp $	*/
+/*	$OpenBSD: preen.c,v 1.9 2003/04/17 06:48:47 tedu Exp $	*/
 /*	$NetBSD: preen.c,v 1.2 1997/09/14 14:27:30 lukem Exp $	*/
 
 /*

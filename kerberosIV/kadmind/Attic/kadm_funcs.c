@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kadm_funcs.c,v 1.3 1997/12/15 17:56:21 art Exp $	*/
 /* $KTH: kadm_funcs.c,v 1.16 1997/05/02 14:28:49 assar Exp $ */
 
 /* 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: version.c,v 1.4 1996/10/13 21:32:21 downsj Exp $	*/
+/*	$OpenBSD: version.c,v 1.5 1996/11/21 07:59:37 downsj Exp $	*/
 
 /*
  * value of $KSH_VERSION (or $SH_VERSION)

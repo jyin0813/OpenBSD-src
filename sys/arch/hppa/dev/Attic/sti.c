@@ -1,4 +1,4 @@
-/*	$OpenBSD: sti.c,v 1.1 1998/12/31 03:20:44 mickey Exp $	*/
+/*	$OpenBSD: sti.c,v 1.2 1999/07/13 21:13:55 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

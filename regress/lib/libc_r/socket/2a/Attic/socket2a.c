@@ -1,4 +1,4 @@
-/*	$OpenBSD: socket2a.c,v 1.2 2001/09/20 16:43:16 todd Exp $	*/
+/*	$OpenBSD: socket2a.c,v 1.3 2002/01/02 16:15:32 fgsch Exp $	*/
 /*
  * Copyright (c) 1993, 1994, 1995, 1996 by Chris Provenzano and contributors, 
  * proven@mit.edu All rights reserved.

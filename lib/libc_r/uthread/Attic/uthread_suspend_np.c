@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_suspend_np.c,v 1.5 2001/08/30 07:40:47 fgsch Exp $	*/
+/*	$OpenBSD: uthread_suspend_np.c,v 1.7 2001/09/04 22:17:45 fgsch Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

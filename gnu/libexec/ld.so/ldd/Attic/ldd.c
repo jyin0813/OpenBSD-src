@@ -1,4 +1,4 @@
-/*	$OpenBSD: ldd.c,v 1.2 1998/01/28 10:52:45 pefo Exp $ */
+/*	$OpenBSD: ldd.c,v 1.3 2000/09/15 07:13:44 deraadt Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

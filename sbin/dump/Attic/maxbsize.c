@@ -1,4 +1,4 @@
-/*	$OpenBSD: tty_subr.c,v 1.6 1996/10/07 19:55:27 deraadt Exp $	*/
+/*	$OpenBSD: maxbsize.c,v 1.1 1997/02/03 11:53:26 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1997 Theo de Raadt

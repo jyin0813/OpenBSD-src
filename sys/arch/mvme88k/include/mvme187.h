@@ -1,4 +1,4 @@
-/*	$OpenBSD: mvme187.h,v 1.1 2001/12/13 08:55:51 smurph Exp $ */
+/*	$OpenBSD: mvme187.h,v 1.2 2001/12/14 04:30:11 smurph Exp $ */
 /*
  * Copyright (c) 1996 Nivas Madhur
  * Copyright (c) 1999 Steve Murphree, Jr.

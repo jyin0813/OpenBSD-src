@@ -1,4 +1,4 @@
-/*	$OpenBSD: bzero.S,v 1.2 1999/05/09 18:49:10 mickey Exp $	*/
+/*	$OpenBSD: bzero.S,v 1.3 1999/09/14 00:50:31 mickey Exp $	*/
 
 /*
  *  (c) Copyright 1988 HEWLETT-PACKARD COMPANY

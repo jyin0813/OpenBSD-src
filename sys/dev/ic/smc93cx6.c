@@ -1,4 +1,4 @@
-/*	$OpenBSD: smc93cx6.c,v 1.9 2002/03/19 02:49:20 millert Exp $	*/
+/*	$OpenBSD: smc93cx6.c,v 1.10 2002/06/28 00:34:54 smurph Exp $	*/
 /* $FreeBSD: sys/dev/aic7xxx/93cx6.c,v 1.5 2000/01/07 23:08:17 gibbs Exp $ */
 /*
  * Interface for the 93C66/56/46/26/06 serial eeprom parts.

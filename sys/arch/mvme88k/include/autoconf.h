@@ -28,7 +28,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Header: /b/source/CVS/src/sys/arch/sun3/include/autoconf.h,v 1.3 1994/02/04 08:19:50 glass Exp $
+ * $Header: /cvs/src/sys/arch/mvme88k/include/autoconf.h,v 1.1 1995/10/18 10:54:22 deraadt Exp $
  */
 
 int always_match __P((struct device *, struct cfdata *, void *));

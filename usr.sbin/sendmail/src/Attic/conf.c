@@ -1947,7 +1947,7 @@ getla()
 
 /* Non Apollo stuff removed by Don Lewis 11/15/93 */
 #ifndef lint
-static char  rcsid[] = "@(#)$Id: conf.c,v 1.11 1999/01/01 20:33:39 millert Exp $";
+static char  rcsid[] = "@(#)$Id: conf.c,v 1.13 1999/02/05 05:59:23 millert Exp $";
 #endif /* !lint */
 
 #ifdef apollo

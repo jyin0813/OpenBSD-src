@@ -1,4 +1,4 @@
-/*	$OpenBSD: iso_pcb.c,v 1.6 2003/06/02 23:28:17 millert Exp $	*/
+/*	$OpenBSD: iso_pcb.c,v 1.7 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: iso_pcb.c,v 1.10 1996/04/13 01:34:56 cgd Exp $	*/
 
 /*-

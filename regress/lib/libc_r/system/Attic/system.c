@@ -1,4 +1,4 @@
-/*	$OpenBSD: system.c,v 1.1 2001/11/09 00:13:32 marc Exp $ */
+/*	$OpenBSD: system.c,v 1.2 2001/11/11 19:57:43 marc Exp $ */
 /*
  *	Placed in the PUBLIC DOMAIN
  */ 

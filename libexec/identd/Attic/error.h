@@ -1,4 +1,4 @@
-/*	$OpenBSD: error.h,v 1.5 2003/12/09 22:41:06 deraadt Exp $*/
+/*	$OpenBSD: error.h,v 1.6 2004/01/04 04:18:11 deraadt Exp $*/
 
 /*
 **

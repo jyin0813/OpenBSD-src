@@ -34,7 +34,7 @@
 
 #ifndef lint
 /* from: static char sccsid[] = "@(#)screen.c	5.8 (Berkeley) 6/28/92"; */
-static char *rcsid = "$Id: screen.c,v 1.6 1995/05/16 22:18:33 jtc Exp $";
+static char *rcsid = "$Id: screen.c,v 1.1 1995/10/18 08:45:49 deraadt Exp deraadt $";
 #endif /* not lint */
 
 /*

@@ -1,25 +1,25 @@
 #	$OpenBSD: Makefile,v 1.8 1997/09/26 02:20:41 millert Exp $
 
-# NOTE! We don't do crunched yet!
+REV=		${OSrev}
 
 TOP=		${.CURDIR}/..
 
-.include "${TOP}/Makefile.inc"
 BSD_RD=		bsd.rd
 IMAGE=		mr.fs
 CBIN?=		instbin
+CRUNCHCONF?=	${CBIN}.conf
+CRUNCHCONFS?=	${.CURDIR}/../common/crunch.conf
 LISTS=		${.CURDIR}/list
 UTILS?=		${.CURDIR}/../../miniroot
 
 MOUNT_POINT=	/mnt
-MTREE=		${.CURDIR}/mtree.conf
+MTREE=		${UTILS}/mtree.conf
 
 VND?=		svnd0
 VND_DEV=	/dev/${VND}a
 VND_RDEV=	/dev/r${VND}a
 VND_CRDEV=	/dev/r${VND}c
 PID!=		echo $$$$
-REALIMAGE!=	echo /var/tmp/image.${PID}
 
 
 DISKTYPE=       rdroot
@@ -36,24 +36,22 @@ all ${IMAGE}:
 all:	${BSD_RD}
 
 ${BSD_RD}: ${CBIN} ${IMAGE} bsd rdsetroot
-	cp bsd ${BSD_RD}.elf
-	${.OBJDIR}/rdsetroot ${BSD_RD}.elf < ${IMAGE}
-	elf2ecoff ${BSD_RD}.elf ${BSD_RD}
-	rm ${IMAGE}
+	cp bsd bsd.rd
+	${.OBJDIR}/rdsetroot ${BSD_RD} < ${IMAGE}
 
 ${IMAGE}: rd_setup do_files rd_teardown
 
 .endif
 
 bsd:
-	cd ${.TOP}/../../sys/arch/arc/conf && config RAMDISK
-	cd ${.TOP}/../../sys/arch/arc/compile/RAMDISK && \
+	cd ${.TOP}/../../sys/arch/sgi/conf && config RAMDISK
+	cd ${.TOP}/../../sys/arch/sgi/compile/RAMDISK && \
 	    make clean && make
-	cp ${.TOP}/../../sys/arch/arc/compile/RAMDISK/bsd bsd
+	cp ${.TOP}/../../sys/arch/sgi/compile/RAMDISK/bsd bsd
 
 rd_setup: 
-	dd if=/dev/zero of=${REALIMAGE} bs=512 count=${NBLKS}
-	vnconfig -v -c ${VND} ${REALIMAGE}
+	dd if=/dev/zero of=${IMAGE} bs=512 count=${NBLKS}
+	vnconfig -v -c ${VND} ${IMAGE}
 	disklabel -w -r ${VND} ${DISKTYPE}
 	newfs ${NEWFSARGS} ${VND_RDEV}
 	fsck ${VND_RDEV}
@@ -63,39 +61,38 @@ rd_teardown:
 	@df -i ${MOUNT_POINT}
 	-umount ${MOUNT_POINT}
 	-vnconfig -u ${VND}
-	cp ${REALIMAGE} ${IMAGE}
-	rm ${REALIMAGE}
 
-rdsetroot:	${TOP}/common/rdsetroot.c
-	${HOSTCC} -DDEBUG -o rdsetroot ${TOP}/common/rdsetroot.c
+rdsetroot:	${TOP}/../common/rdsetroot.c
+	${HOSTCC} -DDEBUG -o rdsetroot ${TOP}/../common/elfrdsetroot.c
 
 unconfig:
 	-umount -f ${MOUNT_POINT}
 	-vnconfig -u ${VND}
-	-/bin/rm -f ${IMAGE}
 
 .PRECIOUS:	${IMAGE}
 
 install:
-	cp ${BSD_RD} ${DESTDIR}/snapshot/${BSD_RD}
+	cp ${BSD_RD} ${DESTDIR}/snapshot/
 
-${CBIN}.conf: ${LISTS}
-	awk -f ${UTILS}/makeconf.awk CBIN=${CBIN} ${LISTS} > ${CBIN}.conf
-
-${CBIN}.mk ${CBIN}.cache ${CBIN}.c: ${CBIN}.conf
-	crunchgen -E -D ${.CURDIR}/../../.. -L ${DESTDIR}/usr/lib ${CBIN}.conf
+${CBIN}.mk ${CBIN}.cache ${CBIN}.c: ${CRUNCHCONF}
+	crunchgen -E -D ${.CURDIR}/../../.. -L ${DESTDIR}/usr/lib ${.ALLSRC}
 
 ${CBIN}: ${CBIN}.mk ${CBIN}.cache ${CBIN}.c
 	make -f ${CBIN}.mk all
 
+${CRUNCHCONF}: ${LISTS}
+	awk -f ${UTILS}/makeconf.awk CBIN=${CBIN} ${LISTS} > ${CBIN}.conf
+
 do_files:
 	mtree -def ${MTREE} -p ${MOUNT_POINT}/ -u
 	TOPDIR=${TOP} CURDIR=${.CURDIR} OBJDIR=${.OBJDIR} \
-	    REV=${REV} TARGDIR=${MOUNT_POINT} sh ${TOP}/runlist.sh ${LISTS}
+	    REV=${REV} TARGDIR=${MOUNT_POINT} UTILS=${UTILS} \
+	    sh ${TOP}/../miniroot/runlist.sh ${LISTS}
+	rm ${MOUNT_POINT}/${CBIN}
 
 clean cleandir:
-	/bin/rm -f core ${IMAGE} ${CBIN} ${CBIN}.conf ${CBIN}.mk ${CBIN}.cache \
-	*.o *.lo *.c bsd ${BSD_RD} ${BSD_RD}.elf rdsetroot
+	/bin/rm -f *.core ${IMAGE} ${CBIN} ${CBIN}.mk ${CBIN}.cache \
+	*.o *.lo *.c bsd ${BSD_RD} rdsetroot
 
 beforeinstall:
 	cp ${BSD.RD} ${DESTDIR}/snapshot

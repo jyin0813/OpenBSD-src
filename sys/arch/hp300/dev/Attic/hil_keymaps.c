@@ -1,4 +1,4 @@
-/*	$OpenBSD: hil_keymaps.c,v 1.4 1997/04/16 11:56:07 downsj Exp $	*/
+/*	$OpenBSD: hil_keymaps.c,v 1.5 2003/06/02 23:27:44 millert Exp $	*/
 /*	$NetBSD: hil_keymaps.c,v 1.7 1997/03/31 07:34:22 scottr Exp $	*/
 
 /*

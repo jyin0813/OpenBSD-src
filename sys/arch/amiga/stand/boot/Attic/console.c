@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: console.c,v 1.1 1997/01/16 09:26:32 niklas Exp $
+ * $OpenBSD: console.c,v 1.2 1997/05/13 16:16:38 niklas Exp $
  * $NetBSD: console.c,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
  *
  * Copyright (c) 1996 Ignatios Souvatzis

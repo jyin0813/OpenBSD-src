@@ -1,4 +1,4 @@
-/* $OpenBSD: siginfo.c,v 1.8 2002/10/27 21:49:45 marc Exp $ */
+/* $OpenBSD: malloc_duel.c,v 1.1 2002/11/12 03:17:16 marc Exp $ */
 /* PUBLIC DOMAIN Nov 2002 <marc@snafu.org> */
 
 /*

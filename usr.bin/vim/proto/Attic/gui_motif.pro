@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: gui_motif.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* gui_motif.c */
 void gui_mch_create_widgets __PARMS((void));
 int gui_mch_get_winsize __PARMS((void));

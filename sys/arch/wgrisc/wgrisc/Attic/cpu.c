@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu.c,v 1.3 1996/09/14 15:58:14 pefo Exp $	*/
+/*	$OpenBSD: cpu.c,v 1.1 1997/02/06 16:02:45 pefo Exp $	*/
 
 /*
  * Copyright (c) 1994, 1995 Carnegie-Mellon University.

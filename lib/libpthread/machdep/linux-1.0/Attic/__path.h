@@ -1,6 +1,6 @@
 /*
  *	from: @(#)time.h	5.12 (Berkeley) 3/9/91
- *	$Id: __path.h,v 1.2 1995/01/03 12:49:48 proven Exp $
+ *	$Id: __path.h,v 1.1 1998/07/21 13:19:27 peter Exp $
  */
 
 #ifndef _SYS__PATH_H_

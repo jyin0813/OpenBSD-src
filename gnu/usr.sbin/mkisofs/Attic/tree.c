@@ -1,4 +1,4 @@
-/*	$OpenBSD: tree.c,v 1.2 1998/04/05 00:39:41 deraadt Exp $	*/
+/*	$OpenBSD: tree.c,v 1.3 1999/11/29 21:53:15 d Exp $	*/
 /*
  * File tree.c - scan directory  tree and build memory structures for iso9660
  * filesystem

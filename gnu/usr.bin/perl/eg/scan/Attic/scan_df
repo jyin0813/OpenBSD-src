@@ -1,6 +1,6 @@
 #!/usr/bin/perl -P
 
-# $RCSfile: scan_df,v $$Revision: 4.1 $$Date: 92/08/07 17:20:33 $
+# $RCSfile: scan_df,v $$Revision: 1.5 $$Date: 2001/05/24 18:35:05 $
 
 # This report points out filesystems that are in danger of overflowing.
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: altq_flowvalve.h,v 1.1 2001/06/27 05:28:35 kjc Exp $	*/
 /*	$KAME: altq_flowvalve.h,v 1.4 2000/12/14 08:12:46 thorpej Exp $	*/
 
 /*

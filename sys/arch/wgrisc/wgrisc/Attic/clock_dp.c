@@ -1,4 +1,4 @@
-/*	$OpenBSD: clock_dp.c,v 1.1.1.1 1997/02/06 16:02:47 pefo Exp $	*/
+/*	$OpenBSD: clock_dp.c,v 1.2 1997/08/24 12:01:14 pefo Exp $	*/
 /*	$NetBSD: clock_mc.c,v 1.2 1995/06/28 04:30:30 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: gen_cvtab.c,v 1.1 1996/02/26 21:08:03 niklas Exp $	*/
 /*	$NetBSD: gen_cvtab.c,v 1.1 1996/02/24 20:13:00 chopps Exp $	*/
 
 /*

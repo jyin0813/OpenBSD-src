@@ -1,4 +1,4 @@
-/*	$OpenBSD: dma.c,v 1.4 1997/04/19 17:19:51 pefo Exp $	*/
+/*	$OpenBSD: dma.c,v 1.5 1998/03/01 16:49:57 niklas Exp $	*/
 /*
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -32,7 +32,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)rz.c	8.1 (Berkeley) 7/29/93
- *      $Id: dma.c,v 1.4 1997/04/19 17:19:51 pefo Exp $
+ *      $Id: dma.c,v 1.5 1998/03/01 16:49:57 niklas Exp $
  */
 
 /*

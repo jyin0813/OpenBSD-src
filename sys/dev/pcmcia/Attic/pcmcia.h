@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pcmcia.h,v 1.2 1997/11/07 08:07:32 niklas Exp $	*/
 
 #ifndef __PCMCIA_H__
 #define __PCMCIA_H__

@@ -1,4 +1,4 @@
-/*	$Id: netbsd_sparc.c,v 1.2 1994/02/10 20:31:11 pk Exp $ */
+/*	$Id: netbsd_sparc.c,v 1.1 1995/10/18 08:39:55 deraadt Exp $ */
 
 #define TARGET_IS_BIG_ENDIAN_P
 #define HOST_BIG_ENDIAN_P

@@ -26,7 +26,7 @@
 #include "uucnfi.h"
 
 #if USE_RCS_ID
-const char _uuconf_tdialc_rcsid[] = "$Id: tdialc.c,v 1.3 1995/08/24 05:22:04 jtc Exp $";
+const char _uuconf_tdialc_rcsid[] = "$Id: tdialc.c,v 1.1 1995/10/18 08:38:36 deraadt Exp $";
 #endif
 
 static int idchat P((pointer pglobal, int argc, char **argv, pointer pvar,

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.4 2001/07/01 21:47:16 deraadt Exp $
+# $OpenBSD: Makefile,v 1.5 2002/05/11 00:20:19 espie Exp $
 
 PROG	= kdb_edit
 

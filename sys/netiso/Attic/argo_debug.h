@@ -1,4 +1,4 @@
-/*	$OpenBSD: argo_debug.h,v 1.4 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: argo_debug.h,v 1.5 2003/06/02 23:28:16 millert Exp $	*/
 /*	$NetBSD: argo_debug.h,v 1.7 1996/02/13 22:07:57 christos Exp $	*/
 
 /*-

@@ -39,7 +39,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: kernel.c,v 1.10 1998/06/01 10:56:10 provos Exp $";
+static char rcsid[] = "$Id: kernel.c,v 1.11 1998/06/30 16:58:31 provos Exp $";
 #endif
 
 #include <time.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_attr_destroy.c,v 1.3 1999/11/25 07:01:30 d Exp $	*/
+/*	$OpenBSD: uthread_attr_destroy.c,v 1.4 2002/11/07 02:56:20 marc Exp $	*/
 /*
  * Copyright (c) 1996 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

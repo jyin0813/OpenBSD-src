@@ -1,4 +1,4 @@
-/*	$OpenBSD: utils.c,v 1.2 1996/09/16 18:49:05 millert Exp $	*/
+/*	$OpenBSD: utils.c,v 1.1 1996/11/15 09:26:10 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by MIT Student Information Processing Board

@@ -46,7 +46,7 @@ int	t_flag = 0;		/* Just test, do not execute	*/
 int	d_flag = 0;		/* Output debugging output?	*/
 int	s_flag = 0;		/* St-ram only			*/
 
-char version[] = "$Revision: 1.9 $";
+char version[] = "$Revision: 1.1 $";
 
 /*
  * Default name of kernel to boot, large enough to patch

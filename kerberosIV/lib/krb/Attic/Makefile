@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2002/05/11 00:20:18 espie Exp $
+# $OpenBSD: Makefile,v 1.9 2002/06/09 19:05:40 hin Exp $
 
 LIB	= krb
 

@@ -205,7 +205,7 @@ typedef union batc_template {
 #define LOG2_PDT_SIZE			(PDT_BITS + 2)
 #define LOG2_PDT_TABLE_GROUP_SIZE	(PAGE_SHIFT - LOG2_PDT_SIZE)
 #define PDT_TABLE_GROUP_SIZE		(1 << LOG2_PDT_TABLE_GROUP_SIZE)
-#define PT_FREE(tbl)		kmem_free(kernel_map, tbl, PAGE_SIZE)
+#define PT_FREE(tbl)		kmem_free(kernel_map, (vm_offset_t)tbl, PAGE_SIZE)
 
 /*
  * Va spaces mapped by tables and PDT table group.
@@ -301,6 +301,12 @@ extern vm_offset_t kmapva;
 	sdt = (sdt_entry_t *)kmapva + SDTIDX(va) + SDT_ENTRIES;		\
 	(pte_template_t *)(sdt->table_addr << PDT_SHIFT) + PDTIDX(va);	\
 })
+
+
+#define DMA_CACHE_SYNC		0x1
+#define DMA_CACHE_SYNC_INVAL	0x2
+#define DMA_CACHE_INV		0x3
+extern void dma_cachectl(vm_offset_t, int, int);
 
 #endif
 /* endif _MACHINE_MMU_ */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: gui.pro,v 1.1.1.1 1996/09/07 21:40:29 downsj Exp $	*/
+/*	$OpenBSD: gui.pro,v 1.2 1996/09/21 06:23:52 downsj Exp $	*/
 /* gui.c */
 void gui_start __PARMS((void));
 void gui_prepare __PARMS((int *argc, char **argv));

@@ -1,4 +1,4 @@
-/* $OpenBSD: ite_blank.c,v 1.2 2001/08/20 19:35:18 miod Exp $ */
+/* $OpenBSD: ite_blank.c,v 1.3 2002/03/14 01:26:29 millert Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

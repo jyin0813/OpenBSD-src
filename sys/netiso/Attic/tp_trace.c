@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_trace.c,v 1.4 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: tp_trace.c,v 1.5 2004/06/24 19:35:26 tholo Exp $	*/
 /*	$NetBSD: tp_trace.c,v 1.6 1996/02/13 22:12:20 christos Exp $	*/
 
 /*-

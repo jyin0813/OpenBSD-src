@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: Locore.c,v 1.4 1997/01/12 15:13:09 downsj Exp $	*/
 /*	$NetBSD: Locore.c,v 1.16 1996/11/06 20:19:29 cgd Exp $	*/
 
 /*

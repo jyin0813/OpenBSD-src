@@ -1,4 +1,4 @@
-#	$OpenBSD: PCMCIA,v 1.9 1996/10/24 23:25:15 downsj Exp $
+#	$OpenBSD: PCMCIA,v 1.10 1997/01/01 20:10:37 graichen Exp $
 #
 
 machine		i386		# architecture, used by config; REQUIRED

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cdefs.h,v 1.3 1995/05/03 06:04:54 mellon Exp $	*/
+/*	$OpenBSD: cdefs.h,v 1.2 1996/06/06 23:06:34 deraadt Exp pefo $	*/
 /*	$NetBSD: cdefs.h,v 1.3 1995/05/03 06:04:54 mellon Exp $	*/
 
 /*

@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- *	$Id: autoconf.c,v 1.1.1.1 1995/10/18 10:54:25 deraadt Exp $
+ *	$Id: autoconf.c,v 1.1 1995/10/18 12:32:17 deraadt Exp $
  */
 #include <sys/param.h>
 #include <sys/systm.h>

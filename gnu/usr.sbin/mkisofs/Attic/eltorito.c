@@ -1,4 +1,4 @@
-/*	$OpenBSD: eltorito.c,v 1.1.1.1 1997/09/15 06:01:52 downsj Exp $	*/
+/*	$OpenBSD: eltorito.c,v 1.2 1998/04/05 00:39:31 deraadt Exp $	*/
 /*
  * Program eltorito.c - Handle El Torito specific extensions to iso9660.
  * 

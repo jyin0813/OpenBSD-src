@@ -1,4 +1,4 @@
-# $Id: Makefile.inc,v 1.3 1994/09/19 23:51:28 deraadt Exp $
+# $Id: Makefile.inc,v 1.1 1995/10/18 08:39:54 deraadt Exp $
 
 SRCS+=		netbsd386.c cpu-i386.c
 

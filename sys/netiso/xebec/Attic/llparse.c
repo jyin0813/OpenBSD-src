@@ -1,4 +1,4 @@
-/*	$OpenBSD: llparse.c,v 1.2 1996/03/04 10:37:03 mickey Exp $	*/
+/*	$OpenBSD: llparse.c,v 1.3 2001/08/12 12:03:03 heko Exp $	*/
 /*	$NetBSD: llparse.c,v 1.4 1994/06/29 06:41:02 cgd Exp $	*/
 
 /*

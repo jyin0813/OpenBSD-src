@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)socket.h	7.13 (Berkeley) 4/20/91
- *	$Id: socket.h,v 1.1 1994/09/15 15:42:53 proven Exp $
+ *	$Id: socket.h,v 1.1 1998/07/21 13:19:23 peter Exp $
  */
 
 #ifndef _SYS_SOCKET_H_

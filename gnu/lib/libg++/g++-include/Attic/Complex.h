@@ -15,7 +15,7 @@ You should have received a copy of the GNU Library General Public
 License along with this library; if not, write to the Free Software
 Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: Complex.h,v 1.2 1993/08/02 17:23:04 mycroft Exp $
+	$Id: Complex.h,v 1.1 1995/10/18 08:38:15 deraadt Exp etheisen $
 */
 
 #ifndef _Complex_h

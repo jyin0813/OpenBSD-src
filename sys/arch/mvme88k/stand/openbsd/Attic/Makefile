@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.2 1995/11/07 08:50:32 deraadt Exp $
+#	$Id: Makefile,v 1.1 1997/03/03 19:31:01 rahnds Exp $
 
 SUBDIR=  netboot sboot bootsd bootst libsa bugcrt libbug wrtvid
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: llscan.c,v 1.2 1996/03/04 10:37:07 mickey Exp $	*/
+/*	$OpenBSD: llscan.c,v 1.3 2001/08/12 12:03:03 heko Exp $	*/
 /*	$NetBSD: llscan.c,v 1.5 1994/06/29 06:41:05 cgd Exp $	*/
 
 /*

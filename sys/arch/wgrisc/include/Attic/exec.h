@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec.h,v 1.1.1.1 1997/02/06 16:02:43 pefo Exp $	*/
+/*	$OpenBSD: exec.h,v 1.2 2001/01/22 14:51:07 art Exp $	*/
 /*	$NetBSD: exec.h,v 1.5 1994/10/26 21:09:39 cgd Exp $	*/
 
 /*-

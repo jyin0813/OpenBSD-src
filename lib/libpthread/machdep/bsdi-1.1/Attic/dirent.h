@@ -1,4 +1,4 @@
-/*	BSDI $Id: dirent.h,v 1.2 1994/09/05 21:31:53 proven Exp $	*/
+/*	BSDI $Id: dirent.h,v 1.1 1998/07/21 13:19:21 peter Exp $	*/
 
 /*-
  * Copyright (c) 1989 The Regents of the University of California.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: dma.c,v 1.4 1999/09/03 18:00:46 art Exp $	*/
+/*	$OpenBSD: dma.c,v 1.5 1999/09/10 17:00:03 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

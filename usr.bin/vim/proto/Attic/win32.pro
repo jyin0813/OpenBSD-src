@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: win32.pro,v 1.1 1996/09/07 21:40:30 downsj Exp $	*/
 /* win32.c */
 void mch_setmouse __PARMS((int on));
 int mch_inchar __PARMS((char_u *buf, int maxlen, long time));

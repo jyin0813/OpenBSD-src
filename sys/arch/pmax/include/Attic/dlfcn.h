@@ -1,3 +1,3 @@
-/*	$OpenBSD: dlfcn.h,v 1.1 1997/01/13 10:31:56 graichen Exp $ */
+/*	$OpenBSD: dlfcn.h,v 1.2 1998/05/08 17:34:32 millert Exp $ */
 
 #include <mips/dlfcn.h>

@@ -37,7 +37,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)machdep.c	8.3 (Berkeley) 1/12/94
- *      $Id: machdep.c,v 1.9 1996/06/06 23:07:37 deraadt Exp $
+ *      $Id: machdep.c,v 1.10 1996/07/27 11:40:49 deraadt Exp pefo $
  */
 
 /* from: Utah Hdr: machdep.c 1.63 91/04/24 */

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: normal.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* normal.c */
 void normal __PARMS((void));
 void do_pending_operator __PARMS((register int c, int nchar, int finish_op, char_u *searchbuff, int *command_busy, int old_col, int gui_yank, int dont_adjust_op_end));

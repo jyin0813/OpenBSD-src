@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_priority_queue.c,v 1.3 2000/01/06 07:20:23 d Exp $	*/
+/*	$OpenBSD: uthread_priority_queue.c,v 1.4 2001/09/04 23:28:31 fgsch Exp $	*/
 /*
  * Copyright (c) 1998 Daniel Eischen <eischen@vigrid.com>.
  * All rights reserved.

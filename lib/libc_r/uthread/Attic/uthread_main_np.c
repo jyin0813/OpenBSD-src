@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_main_np.c,v 1.1 2001/08/17 22:12:31 pvalchev Exp $	*/
 /*
  * Copyright (c) 2001 Alfred Perlstein
  * Author: Alfred Perlstein <alfred@FreeBSD.org>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: wscons_rfont.h,v 1.1 1996/04/12 02:00:52 cgd Exp $ */
+/*	$OpenBSD: wscons_rfont.h,v 1.4 1997/04/08 00:47:21 michaels Exp $ */
 /*	$NetBSD: wscons_rfont.h,v 1.1 1996/04/12 02:00:52 cgd Exp $ */
 
 /*

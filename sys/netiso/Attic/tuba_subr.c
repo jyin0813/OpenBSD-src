@@ -1,4 +1,4 @@
-/*	$OpenBSD: tuba_subr.c,v 1.13 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: tuba_subr.c,v 1.14 2004/01/03 14:08:54 espie Exp $	*/
 /*	$NetBSD: tuba_subr.c,v 1.7 1996/02/13 22:12:32 christos Exp $	*/
 
 /*

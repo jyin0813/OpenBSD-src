@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1.1.1 1995/10/18 08:46:52 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.2 1996/06/26 05:42:55 deraadt Exp $
 
 PROG=	whereis
 

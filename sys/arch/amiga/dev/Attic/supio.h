@@ -1,4 +1,4 @@
-/*	$OpenBSD: supio.h,v 1.1 1997/08/27 19:32:52 is Exp $ */
+/*	$OpenBSD: supio.h,v 1.1 1997/09/18 13:40:00 niklas Exp $ */
 /*	$NetBSD: supio.h,v 1.1 1997/08/27 19:32:52 is Exp $ */
 
 /*

@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD: parse.yacc,v 1.14 1999/03/30 06:25:26 millert Exp $	*/
+/*	$OpenBSD: parse.yacc,v 1.15 1999/03/30 17:26:21 millert Exp $	*/
 
 /*
  *  CU sudo version 1.5.9

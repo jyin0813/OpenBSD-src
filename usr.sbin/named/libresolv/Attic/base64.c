@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: base64.c,v 1.1 1997/03/12 10:42:01 downsj Exp $	*/
 
 /*
  * Copyright (c) 1996 by Internet Software Consortium.

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2002/01/03 00:43:47 art Exp $
+# $OpenBSD: Makefile,v 1.1 2002/02/01 18:51:44 todd Exp $
 
 PROG=	getaddrinfo
 

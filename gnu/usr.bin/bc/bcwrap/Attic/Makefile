@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 1999/07/22 02:35:02 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.6 2000/01/14 17:46:36 millert Exp $
 
 BINDIR?=	/usr/bin
 PROG=	bc

@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: config.h,v 1.3 1997/07/23 12:28:47 provos Exp $ */
+/* $Id: config.h,v 1.4 1998/03/04 11:43:17 provos Exp $ */
 /*
  * config.h: 
  * handling config

@@ -1,4 +1,4 @@
-/*	$OpenBSD: comp_expand.c,v 1.4 1998/09/13 19:16:15 millert Exp $	*/
+/*	$OpenBSD: comp_expand.c,v 1.5 1998/10/31 06:30:28 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: reloc.h,v 1.3 1998/01/28 13:46:30 pefo Exp $ */
+/*	$OpenBSD: reloc.h,v 1.1 2004/08/06 21:12:19 pefo Exp $ */
 
 /* Use Mips generic include file */
 

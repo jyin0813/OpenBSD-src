@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rd_err.c,v 1.3 1997/12/09 07:57:33 art Exp $	*/
 /* $KTH: rd_err.c,v 1.8 1997/04/01 08:18:40 joda Exp $ */
 
 /*

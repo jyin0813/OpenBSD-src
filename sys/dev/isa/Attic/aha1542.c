@@ -1,4 +1,4 @@
-/*	$OpenBSD: aha1542.c,v 1.12 1996/03/19 21:10:02 mickey Exp $	*/
+/*	$OpenBSD: aha1542.c,v 1.13 1996/03/20 01:00:35 mickey Exp deraadt $	*/
 /*	$NetBSD: aha1542.c,v 1.55 1995/12/24 02:31:06 mycroft Exp $	*/
 
 /*

@@ -1,5 +1,5 @@
 /*
- * $OpenBSD: main.c,v 1.5 2002/03/14 01:26:29 millert Exp $
+ * $OpenBSD: main.c,v 1.6 2002/03/14 03:15:52 millert Exp $
  * $NetBSD: main.c,v 1.1.1.1 1996/11/29 23:36:29 is Exp $
  *
  *

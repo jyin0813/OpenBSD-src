@@ -1,4 +1,4 @@
-/*      $OpenBSD: psl.h,v 1.1.1.1 1996/06/24 09:07:18 pefo Exp $	*/
+/*      $OpenBSD: psl.h,v 1.2 1998/01/28 13:46:25 pefo Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

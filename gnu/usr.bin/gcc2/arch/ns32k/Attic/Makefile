@@ -1,3 +1,3 @@
-#	$Id: Makefile,v 1.1 1994/03/10 21:11:39 phil Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:39:21 deraadt Exp niklas $
 
 .include <bsd.prog.mk>

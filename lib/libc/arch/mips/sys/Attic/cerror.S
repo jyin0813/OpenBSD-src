@@ -34,7 +34,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: cerror.S,v 1.4 1996/08/19 08:16:20 tholo Exp $"
+	.asciz "$OpenBSD: cerror.S,v 1.5 2003/06/02 20:18:32 millert Exp $"
 #endif /* SYSLIBC_SCCS */
 
 	.globl	_C_LABEL(errno)

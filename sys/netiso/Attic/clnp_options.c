@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp_options.c,v 1.3 1996/04/21 22:29:15 deraadt Exp $	*/
+/*	$OpenBSD: clnp_options.c,v 1.4 2003/06/02 23:28:17 millert Exp $	*/
 /*	$NetBSD: clnp_options.c,v 1.7 1996/04/13 01:34:29 cgd Exp $	*/
 
 /*-

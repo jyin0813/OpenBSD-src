@@ -1,4 +1,4 @@
-.\"     $OpenBSD: intro.4,v 1.3 1999/05/16 19:56:43 alex Exp $
+.\"     $OpenBSD: intro.4,v 1.5 2001/08/22 12:15:46 heko Exp $
 .\"
 .\" Copyright (c) 1998 The OpenBSD Project
 .\" All Rights Reserved.
@@ -10,7 +10,7 @@
 .Nm intro
 .Nd introduction to special files and hardware support
 .Sh DESCRIPTION
-The manual pages in section 4 describes the special files, 
+The manual pages in section 4 describe the special files, 
 related driver functions, and networking support
 available in the system.
 In this part of the manual, the
@@ -36,7 +36,8 @@ and network related information.
 The networking support is introduced in
 .Xr netintro 4 .
 .Sh DEVICE SUPPORT
-This section describes the hardware supported on the Alpha
+This section describes the hardware supported on the
+Alpha
 platform.
 Software support for these devices comes in two forms.  A hardware
 device may be supported with a character or block
@@ -58,32 +59,23 @@ and, if found, enable the software support for it.
 If a device does not respond at autoconfiguration
 time it is not accessible at any time afterwards.
 To enable a device which did not autoconfigure,
-the system must be rebooted.
+the system will have to be rebooted.
 .Pp
 The autoconfiguration system is described in
 .Xr autoconf 4 .
-A list of the supported devices is given below.
+.\" A list of the supported devices is given below.
+.\" .Sh LIST OF DEVICES
+.\" The devices listed below are supported in this incarnation of
+.\" the system.  Pseudo-devices are not listed.
+.\" Devices are indicated by their functional interface.
+.\" Not all supported devices are listed.
+.\" .Pp
 .Sh SEE ALSO
 .Xr autoconf 4 ,
-.Xr cd 4 ,
-.Xr sd 4 ,
-.Xr ss 4 ,
-.Xr st 4 ,
 .Xr config 8
-.Sh SUPPORTED SYSTEMS
-The following Alpha system architectures and models are supported:
-.Bl -tag -width speaker
-.It DEC 3000/[3456789]00 series Alpha systems.
-.It AlphaStation 200/250/255/400/500 and AXPpci systems.
-.El
-.Pp
-The DECpc AXP 150 systems (EISA-bus PC-like systems),
-Alpha "server" systems (other than perhaps the AlphaServer 400, which
-might actually be an AlphaStation 400 in disguise), and multiprocessor
-Alpha systems are not supported.
 .Sh HISTORY
 The
 Alpha
-.Nm
-first appeared with
+.Nm intro
+first appeared in
 .Ox 2.3 .

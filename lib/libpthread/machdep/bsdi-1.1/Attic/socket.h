@@ -1,4 +1,4 @@
-/*	BSDI $Id: socket.h,v 1.2 1994/09/05 21:31:56 proven Exp $	*/
+/*	BSDI $Id: socket.h,v 1.1 1998/07/21 13:19:21 peter Exp $	*/
 
 /*
  * Copyright (c) 1982,1985,1986,1988 Regents of the University of California.

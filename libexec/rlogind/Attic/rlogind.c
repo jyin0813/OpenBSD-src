@@ -1,4 +1,4 @@
-/*	$OpenBSD: rlogind.c,v 1.33 2002/02/16 19:34:45 millert Exp $	*/
+/*	$OpenBSD: rlogind.c,v 1.34 2002/02/16 21:27:31 millert Exp $	*/
 
 /*-
  * Copyright (c) 1983, 1988, 1989, 1993
@@ -41,7 +41,7 @@ static char copyright[] =
 
 #ifndef lint
 /* from: static char sccsid[] = "@(#)rlogind.c	8.1 (Berkeley) 6/4/93"; */
-static char *rcsid = "$OpenBSD: rlogind.c,v 1.33 2002/02/16 19:34:45 millert Exp $";
+static char *rcsid = "$OpenBSD: rlogind.c,v 1.34 2002/02/16 21:27:31 millert Exp $";
 #endif /* not lint */
 
 /*

@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)rz.c	8.1 (Berkeley) 7/29/93
- *      $Id: dma.c,v 1.4 1996/05/02 07:59:37 pefo Exp $
+ *      $Id: dma.c,v 1.5 1996/06/06 23:06:26 deraadt Exp pefo $
  */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: flt_rounds.S,v 1.1 2004/01/28 01:44:45 mickey Exp $	*/
 /*	$NetBSD: flt_rounds.S,v 1.2 2002/06/06 23:04:35 fvdl Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_geometry.h,v 1.1 1998/11/13 04:20:30 oster Exp $	*/
+/*	$OpenBSD: rf_geometry.h,v 1.1 1999/01/11 14:29:24 niklas Exp $	*/
 /*	$NetBSD: rf_geometry.h,v 1.1 1998/11/13 04:20:30 oster Exp $	*/
 /* geometry.h
  * code from raidSim to model disk behavior

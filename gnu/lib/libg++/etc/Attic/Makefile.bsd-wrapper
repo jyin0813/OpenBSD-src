@@ -1,4 +1,4 @@
-#       $OpenBSD: Makefile.bsd-wrapper,v 1.1 1996/03/16 05:18:43 etheisen Exp $
+#       $OpenBSD: Makefile.bsd-wrapper,v 1.2 1998/03/03 21:39:51 millert Exp $
 
 FILES=  standards.info*
 NOMAN=	noman

@@ -1,4 +1,4 @@
-/*	$OpenBSD: edit.c,v 1.4 1996/12/14 12:18:07 mickey Exp $	*/
+/*	$OpenBSD: edit.c,v 1.6 1997/06/19 13:58:39 kstailey Exp $	*/
 
 /*
  * Command line editing - common code

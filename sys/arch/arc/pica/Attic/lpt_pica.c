@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: lpt_pica.c,v 1.1 1996/11/28 23:35:44 niklas Exp $	*/
 
 /*
  * Copyright (c) 1993, 1994 Charles Hannum.
@@ -61,34 +61,8 @@
 #include <machine/bus.h>
 #include <machine/intr.h>
 
-#include <dev/isa/lptreg.h>
-
-/* XXX create ic/lptvar.h with this structure and prototypes in it.  */
-struct lpt_softc {
-	struct device sc_dev;
-	void *sc_ih;
-
-	size_t sc_count;
-	struct buf *sc_inbuf;
-	u_char *sc_cp;
-	int sc_spinmax;
-	int sc_iobase;
-	bus_space_tag_t sc_iot;
-	bus_space_handle_t sc_ioh;
-	int sc_irq;
-	u_char sc_state;
-#define	LPT_OPEN	0x01	/* device is open */
-#define	LPT_OBUSY	0x02	/* printer is busy doing output */
-#define	LPT_INIT	0x04	/* waiting to initialize for open */
-	u_char sc_flags;
-#define	LPT_AUTOLF	0x20	/* automatic LF on CR */
-#define	LPT_NOPRIME	0x40	/* don't prime on open */
-#define	LPT_NOINTR	0x80	/* do not use interrupt */
-	u_char sc_control;
-	u_char sc_laststatus;
-};
-
-int lptintr __P((void *));
+#include <dev/ic/lptreg.h>
+#include <dev/ic/lptvar.h>
 
 int lpt_pica_probe __P((struct device *, void *, void *));
 void lpt_pica_attach __P((struct device *, struct device *, void *));
@@ -105,8 +79,8 @@ lpt_pica_probe(parent, match, aux)
 	struct confargs *ca = aux;
 	bus_space_tag_t iot;
 	bus_space_handle_t ioh;
-	u_long base;
-	u_char mask, data;
+	bus_addr_t base;
+	u_int8_t mask, data;
 	int i;
 
 #ifdef DEBUG
@@ -124,8 +98,8 @@ lpt_pica_probe(parent, match, aux)
 		 return(0);
 
 	iot = 0;
-	base = (int)BUS_CVTADDR(ca);
-	ioh = base;
+	base = (bus_addr_t)BUS_CVTADDR(ca);
+	ioh = (bus_space_handle_t)base;
 
 	mask = 0xff;
 
@@ -167,12 +141,9 @@ lpt_pica_attach(parent, self, aux)
 
 	printf("\n");
 
-	sc->sc_iobase = (int)BUS_CVTADDR(ca);
-	sc->sc_irq = 0;
 	sc->sc_state = 0;
-
 	iot = sc->sc_iot = 0;
-	sc->sc_ioh = sc->sc_iobase;
+	sc->sc_ioh = (bus_space_handle_t)BUS_CVTADDR(ca);
 
 	bus_space_write_1(iot, ioh, lpt_control, LPC_NINIT);
 

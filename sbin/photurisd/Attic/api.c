@@ -1,4 +1,4 @@
-/*	$OpenBSD: api.c,v 1.6 2001/11/30 20:31:49 provos Exp $	*/
+/*	$OpenBSD: api.c,v 1.7 2002/06/09 08:13:08 todd Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -39,7 +39,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: api.c,v 1.6 2001/11/30 20:31:49 provos Exp $";
+static char rcsid[] = "$OpenBSD: api.c,v 1.7 2002/06/09 08:13:08 todd Exp $";
 #endif
 
 #define _API_C_

@@ -1,4 +1,4 @@
-/*	$OpenBSD: bus.h,v 1.2 1996/04/21 22:16:46 deraadt Exp $	*/
+/*	$OpenBSD: bus.h,v 1.2 1996/06/06 23:06:33 deraadt Exp pefo $	*/
 /*	$NetBSD: bus.h,v 1.2 1996/04/05 23:59:37 thorpej Exp $	*/
 
 /*

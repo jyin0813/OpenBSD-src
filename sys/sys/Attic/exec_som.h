@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec_som.h,v 1.2 1998/07/14 15:26:34 mickey Exp $	*/
+/*	$OpenBSD: exec_som.h,v 1.3 1998/07/14 17:16:21 mickey Exp $	*/
 
 /*
  * Copyright 1996 1995 by Open Software Foundation, Inc.

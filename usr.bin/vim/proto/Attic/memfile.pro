@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: memfile.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* memfile.c */
 MEMFILE *mf_open __PARMS((char_u *fname, int trunc_file));
 int mf_open_file __PARMS((MEMFILE *mfp, char_u *fname));

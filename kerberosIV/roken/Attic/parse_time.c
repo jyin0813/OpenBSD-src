@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: parse_time.c,v 1.1 1998/05/18 01:22:47 art Exp $	*/
 /*	$KTH: parse_time.c,v 1.4 1998/02/20 07:51:44 assar Exp $	*/
 /*
  * Copyright (c) 1997, 1998 Kungliga Tekniska Högskolan

@@ -1,4 +1,4 @@
-/*	$Id: sysdep.c,v 1.3 1999/02/25 16:26:49 niklas Exp $	*/
+/*	$Id: sysdep.c,v 1.1 1999/02/26 03:59:48 niklas Exp $	*/
 
 /*
  * Copyright (c) 1998 Niklas Hallqvist.  All rights reserved.

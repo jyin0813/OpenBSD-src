@@ -1,4 +1,4 @@
-dnl	$OpenBSD: install,v 1.7 2004/03/17 09:25:10 jmc Exp $
+dnl	$OpenBSD: install,v 1.8 2004/03/25 08:38:52 tom Exp $
 OpenBSDInstallShortPrelude
 
 Currently only MBR partitioning is supported; RDB support may be added

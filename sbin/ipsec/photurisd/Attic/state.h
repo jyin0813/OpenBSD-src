@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: state.h,v 1.6 1998/05/13 10:01:12 niklas Exp $ */
+/* $Id: state.h,v 1.7 1998/05/18 21:25:41 provos Exp $ */
 /*
  * state.h: 
  * state object

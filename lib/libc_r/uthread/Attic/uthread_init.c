@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_init.c,v 1.24 2002/11/07 03:51:21 marc Exp $	*/
+/*	$OpenBSD: uthread_init.c,v 1.25 2002/11/08 07:53:03 marc Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

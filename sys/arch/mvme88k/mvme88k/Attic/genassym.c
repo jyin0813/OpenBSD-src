@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	@(#)genassym.c	7.8 (Berkeley) 5/7/91
- *	$Id: genassym.c,v 1.1.1.1 1995/10/18 10:54:25 deraadt Exp $
+ *	$Id: genassym.c,v 1.1 1995/10/18 12:32:22 deraadt Exp $
  */
 
 #ifndef KERNEL

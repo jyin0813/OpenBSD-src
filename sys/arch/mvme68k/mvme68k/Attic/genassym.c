@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: genassym.c,v 1.4 1997/02/10 17:49:11 deraadt Exp $ */
 
 /*
  * Copyright (c) 1995 Theo de Raadt

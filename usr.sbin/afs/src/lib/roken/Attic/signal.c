@@ -38,7 +38,7 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-RCSID("$Id: signal.c,v 1.2 2000/03/04 17:57:16 map Exp $");
+RCSID("$Id: signal.c,v 1.2 2000/09/11 14:41:04 art Exp $");
 #endif
 
 #include <signal.h>

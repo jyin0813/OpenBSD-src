@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: sethostent.c,v 1.1 1997/03/12 10:42:11 downsj Exp $	*/
 
 /*
  * Copyright (c) 1985, 1993
@@ -38,7 +38,7 @@
 static char sccsid[] = "@(#)sethostent.c	8.1 (Berkeley) 6/4/93";
 static char rcsid[] = "$From: sethostent.c,v 8.5 1996/09/28 06:51:07 vixie Exp $";
 #else
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: sethostent.c,v 1.1 1997/03/12 10:42:11 downsj Exp $";
 #endif
 #endif /* LIBC_SCCS and not lint */
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: match.c,v 1.1 1997/09/15 06:01:53 downsj Exp $	*/
 /*
  * 27-Mar-96: Jan-Piet Mens <jpm@mens.de>
  * added 'match' option (-m) to specify regular expressions NOT to be included

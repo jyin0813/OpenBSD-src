@@ -1,4 +1,4 @@
-/*	$OpenBSD: asm.S,v 1.2 1997/04/15 06:23:35 mickey Exp $	*/
+/*	$OpenBSD: asm.S,v 1.3 1997/08/07 01:20:33 mickey Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.

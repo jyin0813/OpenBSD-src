@@ -1,4 +1,4 @@
-/* $OpenBSD: coproc15.S,v 1.1 1996/01/31 23:15:33 mark Exp $ */
+/* $OpenBSD: coproc15.S,v 1.2 2000/03/03 00:54:46 todd Exp $ */
 /* $NetBSD: coproc15.S,v 1.1 1996/01/31 23:15:33 mark Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/* $Id: readers.c,v 1.5 2001/06/11 18:35:23 rees Exp $ */
+/* $Id: readers.c,v 1.3 2001/06/12 19:35:25 rees Exp $ */
 
 /*
 copyright 2001

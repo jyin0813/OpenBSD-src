@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.6 1997/04/27 20:56:16 millert Exp $
+#	$OpenBSD: Makefile,v 1.7 1997/07/07 08:42:39 grr Exp $
 
 LIB=	ss
 HDRS=	ss.h ${.OBJDIR}/ss_err.h

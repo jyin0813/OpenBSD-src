@@ -1,4 +1,4 @@
-/*	$OpenBSD: kerberos.c,v 1.15 1998/11/28 23:41:01 art Exp $	*/
+/*	$OpenBSD: kerberos.c,v 1.16 1999/05/23 17:19:24 aaron Exp $	*/
 /* $KTH: kerberos.c,v 1.70 1997/09/26 18:06:38 joda Exp $ */
 
 /*

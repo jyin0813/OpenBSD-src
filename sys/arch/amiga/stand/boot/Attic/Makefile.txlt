@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.txlt,v 1.1.1.1 1996/11/29 23:36:30 is Exp $
+# $OpenBSD: Makefile.txlt,v 1.1 1997/01/16 09:26:22 niklas Exp $
 # $NetBSD: Makefile.txlt,v 1.1.1.1 1996/11/29 23:36:30 is Exp $
 
 AFLAGS += -m68060 -m68030 -l

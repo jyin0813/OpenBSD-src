@@ -1,4 +1,4 @@
-.\"	$OpenBSD: doshutdownhooks.9,v 1.4 1999/09/02 17:28:06 espie Exp $
+.\"	$OpenBSD: doshutdownhooks.9,v 1.5 2001/03/09 14:04:19 aaron Exp $
 .\"	$NetBSD: doshutdownhooks.9,v 1.1 1995/11/25 21:24:49 perry Exp $
 .\"
 .\" Copyright (c) 1994 Christopher G. Demetriou
@@ -54,6 +54,12 @@ with interrupts turned off.
 It is called immediately before the system is halted or rebooted,
 after file systems have been unmounted, after the clock has been updated,
 and after a system dump has been done (if necessary).
+.Pp
+Shutdown hooks are, like startup hooks, implemented via the more general
+.Xr dohooks 9
+API.
 .Sh SEE ALSO
 .Xr boot 9 ,
+.Xr dohooks 9 ,
+.Xr dostartuphooks 9 ,
 .Xr shutdownhook_establish 9

@@ -92,14 +92,3 @@ close(fd)
 	}
 	return (0);
 }
-
-
-void
-closeall()
-{
-	int i;
-
-        for (i = 0; i < SOPEN_MAX; i++)
-            if (files[i].f_flags != 0)
-                (void)close(i);
-}

@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: RELEASE_NOTES,v 1.2 1997/03/12 10:41:51 downsj Exp $
 	@(#)RELEASE_NOTES       e07@nikhef.nl (Eric Wassenaar) 961113
 
 yymmdd		Description of changes per release

@@ -1,4 +1,4 @@
-/*	$OpenBSD: color.h,v 1.2 1996/06/04 12:49:13 niklas Exp $	*/
+/*	$OpenBSD: color.h,v 1.3 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: color.h,v 1.8 1995/02/12 19:34:17 chopps Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$Id: tm.h,v 1.6 1995/06/05 01:59:23 pk Exp $ */
+/*	$Id: tm.h,v 1.1 1995/10/18 08:39:21 deraadt Exp niklas $ */
 
 #include <machine/ansi.h>
 #include "m68k/m68k.h"

@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.1.1.1 1995/12/14 06:52:44 tholo Exp $
+#	$Id: Makefile,v 1.2 1996/02/10 21:04:17 tholo Exp $
 
 LIB=	des
 SRCS=	cbc_cksm.c cbc_enc.c cbc3_enc.c cfb_enc.c cfb64ede.c cfb64enc.c \

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pccons.h,v 1.6 2001/01/30 00:00:32 aaron Exp $	*/
+/*	$OpenBSD: pccons.h,v 1.7 2002/03/14 01:26:33 millert Exp $	*/
 /*	$NetBSD: pccons.h,v 1.4 1996/02/02 18:06:06 mycroft Exp $	*/
 
 /*

@@ -21,7 +21,7 @@ This paragraph is here to try to keep Sun CC from dying.
 The number of chars here seems crucial!!!!  */
 
 #ifndef lint
-static char rcsid[] = "$Id: gcc.c,v 1.6 1994/03/03 01:12:06 cgd Exp $";
+static char rcsid[] = "$Id: gcc.c,v 1.1 1995/10/18 08:39:26 deraadt Exp niklas $";
 #endif /* not lint */
 
 /* This program is the user interface to the C compiler and possibly to

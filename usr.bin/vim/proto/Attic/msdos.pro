@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: msdos.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* msdos.c */
 long mch_avail_mem __PARMS((int special));
 void mch_delay __PARMS((long msec, int ignoreinput));

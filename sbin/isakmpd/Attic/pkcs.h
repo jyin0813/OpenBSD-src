@@ -1,4 +1,4 @@
-/*	$OpenBSD: pkcs.h,v 1.4 1999/03/24 15:00:05 niklas Exp $	*/
+/*	$OpenBSD: pkcs.h,v 1.5 1999/04/19 19:54:54 niklas Exp $	*/
 /*	$EOM: pkcs.h,v 1.8 1999/04/02 00:58:05 niklas Exp $	*/
 
 /*

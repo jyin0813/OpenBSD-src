@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_alloc.c,v 1.3 1996/07/15 03:39:27 downsj Exp $	*/
+/*	$OpenBSD: ext2_alloc.c,v 1.4 1996/10/18 15:23:34 mickey Exp $	*/
 
 /*
  *  modified for Lites 1.1

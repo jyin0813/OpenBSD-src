@@ -33,7 +33,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: exchange.c,v 1.2 1997/07/24 23:47:11 provos Exp $";
+static char rcsid[] = "$Id: exchange.c,v 1.3 1998/10/02 16:52:56 niklas Exp $";
 #endif
 
 #define _EXCHANGE_C_

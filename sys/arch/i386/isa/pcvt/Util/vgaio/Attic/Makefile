@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.3 1999/01/13 07:26:07 niklas Exp $
 
 PROG=	vgaio
 MAN8=	vgaio.${MAN8EXT}

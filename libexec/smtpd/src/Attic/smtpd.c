@@ -1,4 +1,4 @@
-/* $OpenBSD: smtpd.c,v 1.12 2002/05/13 07:44:48 mpech Exp $*/
+/* $OpenBSD: smtpd.c,v 1.13 2002/06/09 01:24:59 deraadt Exp $*/
 
 /*
  * smtpd, Obtuse SMTP daemon, storing agent. does simple collection of
@@ -41,7 +41,7 @@
 
 char *obtuse_copyright =
 "Copyright 1996 - Obtuse Systems Corporation - All rights reserved.";
-char *obtuse_rcsid = "$OpenBSD: smtpd.c,v 1.12 2002/05/13 07:44:48 mpech Exp $";
+char *obtuse_rcsid = "$OpenBSD: smtpd.c,v 1.13 2002/06/09 01:24:59 deraadt Exp $";
 
 #include <stdarg.h>
 #include <stdlib.h>

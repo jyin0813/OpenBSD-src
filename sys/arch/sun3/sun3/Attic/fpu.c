@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu.c,v 1.7 1997/04/05 20:24:24 kstailey Exp $	*/
+/*	$OpenBSD: fpu.c,v 1.8 2002/03/14 01:26:47 millert Exp $	*/
 /*	$NetBSD: fpu.c,v 1.9 1996/11/20 18:57:29 gwr Exp $	*/
 
 /*-

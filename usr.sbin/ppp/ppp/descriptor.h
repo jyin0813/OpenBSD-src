@@ -33,6 +33,7 @@
 #define DATALINK_DESCRIPTOR (5)
 #define BUNDLE_DESCRIPTOR (6)
 #define MPSERVER_DESCRIPTOR (7)
+#define RADIUS_DESCRIPTOR (8)
 
 struct bundle;
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: eeprom.h,v 1.2 1996/10/12 08:27:14 deraadt Exp $	*/
+/*	$OpenBSD: eeprom.h,v 1.3 2002/03/14 01:26:46 millert Exp $	*/
 
 /*
  * Copyright (c) 1995 Theo de Raadt

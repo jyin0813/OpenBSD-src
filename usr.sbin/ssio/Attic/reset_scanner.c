@@ -1,4 +1,4 @@
-static char *rcs_id = "$Id: reset_scanner.c,v 1.3 2002/05/29 19:01:48 deraadt Exp $";
+static char *rcs_id = "$Id: reset_scanner.c,v 1.4 2002/06/01 20:27:15 deraadt Exp $";
 #ifdef _IBMR2
 /*
  *  PINT Pint Is Not TWAIN - common scanner driver interface for UN*X

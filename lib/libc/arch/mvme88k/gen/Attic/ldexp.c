@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  * from: Header: ldexp.c,v 1.1 91/07/07 04:28:19 torek Exp
- * $Id: ldexp.c,v 1.1 1995/11/11 00:55:51 build Exp build $
+ * $Id: ldexp.c,v 1.1 1997/03/25 17:07:04 rahnds Exp $
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)

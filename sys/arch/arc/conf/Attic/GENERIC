@@ -1,4 +1,4 @@
-#	$OpenBSD: GENERIC,v 1.15 1997/04/29 05:16:41 deraadt Exp $
+#	$OpenBSD: GENERIC,v 1.16 1997/04/29 08:13:40 niklas Exp $
 #
 #	Generic configuration file for MIPS R4x00 ARC Systems
 #
@@ -60,7 +60,6 @@ option          IPFILTER        # IP packet filter for security
 
 # Special options
 options 	MACHINE_NONCONTIG # Support noncontigous memory.
-options 	PCIVERBOSE	# Show as much info about pci as possible.
 
 # Specify storage configuration (its a joke..)
 config		bsd	swap generic
@@ -74,9 +73,7 @@ cpu*		at mainbus0
 #### Main local buses
 
 pica*		at mainbus0	# ACER Pica systems local bus.
-algor*		at mainbus0	# Algorithmics local bus.
 isabr*		at mainbus0	# ISA Bus bridge (std ISA bus).
-pbcpcibr*	at mainbus0	# PCI Bus bridge.
 
 #### PICA bus devices
 
@@ -93,21 +90,6 @@ fd*		at fdc? drive ?
 
 asc0		at pica?
 scsibus* 	at asc?
-
-#### Algor bus devices
-
-clock0		at algor?
-com0		at algor?
-com1		at algor?
-lpt0		at algor?
-
-#### PCI Bus
-
-pci*		at pbcpcibr?
-
-#ncr*		at pci? dev ? function ?
-#scsibus* 	at ncr?
-de*		at pci? dev ? function ?
 
 #### ISA Bus.
 

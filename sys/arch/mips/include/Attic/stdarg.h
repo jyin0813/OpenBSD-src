@@ -1,4 +1,4 @@
-/*	$OpenBSD: stdarg.h,v 1.1 1998/01/28 11:14:57 pefo Exp $	*/
+/*	$OpenBSD: stdarg.h,v 1.2 1999/01/27 04:46:06 imp Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: showmount.d,v 1.2 2001/01/29 01:58:12 niklas Exp $
 
 # UDP mountd call.  Use as input to find mount daemons and avoid portmap.
 # Useful proc numbers are 2, 5, and 6.

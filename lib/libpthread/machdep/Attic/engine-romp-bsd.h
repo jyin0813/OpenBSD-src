@@ -8,7 +8,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: engine-romp-bsd.h,v 1.51 1994/11/08 15:39:21 proven Exp $";
+static const char rcsid[] = "$Id: engine-romp-bsd.h,v 1.1 1998/07/21 13:19:14 peter Exp $";
 #endif
 
 #include <setjmp.h>

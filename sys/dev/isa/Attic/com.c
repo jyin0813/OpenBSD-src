@@ -1,4 +1,4 @@
-/*	$OpenBSD: com.c,v 1.27 1996/11/12 20:30:27 niklas Exp $	*/
+/*	$OpenBSD: com.c,v 1.28 1996/11/29 22:54:52 niklas Exp $	*/
 /*	$NetBSD: com.c,v 1.82.4.1 1996/06/02 09:08:00 mrg Exp $	*/
 
 /*-

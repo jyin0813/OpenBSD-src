@@ -1,4 +1,4 @@
-$Id: dir,v 1.2 1996/09/24 18:43:01 karl Exp $
+$Id: dir,v 1.1 1996/12/15 21:37:56 downsj Exp $
 This is the file .../info/dir, which contains the topmost node of the
 Info hierarchy.  The first time you invoke Info you start off
 looking at that node, which is (dir)Top.

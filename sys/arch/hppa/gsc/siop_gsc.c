@@ -1,4 +1,4 @@
-/*	$OpenBSD: siop_gsc.c,v 1.1 1998/11/04 17:01:35 mickey Exp $	*/
+/*	$OpenBSD: siop_gsc.c,v 1.2 2002/03/14 01:26:31 millert Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

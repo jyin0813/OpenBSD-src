@@ -1,7 +1,10 @@
 .rn '' }`
-''' $RCSfile: a2p.man,v $$Revision: 4.1 $$Date: 92/08/07 18:29:10 $
+''' $RCSfile: a2p.man,v $$Revision: 1.1 $$Date: 1996/08/19 10:13:34 $
 ''' 
-''' $Log:	a2p.man,v $
+''' $Log: a2p.man,v $
+''' Revision 1.1  1996/08/19 10:13:34  downsj
+''' Initial revision
+'''
 .de Sh
 .br
 .ne 5

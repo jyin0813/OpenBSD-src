@@ -1,4 +1,4 @@
-/* $OpenBSD: if_wx.c,v 1.18 2001/10/24 18:25:55 mjacob Exp $ */
+/* $OpenBSD: if_wx.c,v 1.19 2002/03/12 09:51:20 kjc Exp $ */
 /*
  * Principal Author: Matthew Jacob <mjacob@feral.com>
  * Copyright (c) 1999, 2001 by Traakan Software

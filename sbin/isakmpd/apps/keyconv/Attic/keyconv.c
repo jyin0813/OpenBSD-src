@@ -1,4 +1,4 @@
-/*	$OpenBSD: keyconv.c,v 1.4 2002/06/09 08:13:07 todd Exp $	*/
+/*	$OpenBSD: keyconv.c,v 1.5 2003/06/03 14:34:03 ho Exp $	*/
 
 /*
  * Copyright (c) 2000, 2001 Hakan Olsson.  All rights reserved.

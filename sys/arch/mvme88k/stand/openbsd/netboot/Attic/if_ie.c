@@ -1,4 +1,4 @@
-/*	$Id: if_ie.c,v 1.3 1995/11/07 08:51:00 deraadt Exp $ */
+/*	$Id: if_ie.c,v 1.1 1997/03/03 19:31:09 rahnds Exp $ */
 
 /*
  * Copyright (c) 1995 Theo de Raadt

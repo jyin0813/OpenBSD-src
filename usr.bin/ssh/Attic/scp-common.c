@@ -60,7 +60,7 @@
  */
 
 #include "includes.h"
-RCSID("$OpenBSD$");
+RCSID("$OpenBSD: scp-common.c,v 1.1 2001/04/16 02:31:43 mouring Exp $");
 
 char *
 cleanhostname(host)

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fd.c,v 1.5 1997/04/19 17:19:52 pefo Exp $	*/
+/*	$OpenBSD: fd.c,v 1.6 1998/10/03 21:18:57 millert Exp $	*/
 /*	$NetBSD: fd.c,v 1.78 1995/07/04 07:23:09 mycroft Exp $	*/
 
 /*-

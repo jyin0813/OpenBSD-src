@@ -23,7 +23,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: storage.c,v 1.2 1993/08/01 17:57:37 mycroft Exp $";
+static char rcsid[] = "$Id: storage.c,v 1.1 1995/10/18 08:47:51 deraadt Exp dm $";
 #endif
 
 #include <sys/param.h>

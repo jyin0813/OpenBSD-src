@@ -1,4 +1,4 @@
-/*	$OpenBSD: gui_at_sb.c,v 1.2 1996/09/21 06:23:02 downsj Exp $	*/
+/*	$OpenBSD: gui_at_sb.c,v 1.3 1996/10/14 03:55:12 downsj Exp $	*/
 /* vi:set ts=4 sw=4: */
 /* MODIFIED ATHENA SCROLLBAR (USING ARROWHEADS AT ENDS OF TRAVEL) */
 /* Modifications Copyright 1992 by Mitch Trachtenberg             */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: busswitch.c,v 1.3 2001/03/08 00:03:13 miod Exp $ */
+/*	$OpenBSD: busswitch.c,v 1.4 2001/03/09 05:44:38 smurph Exp $ */
 
 /*
  * Copyright (c) 1999 Steve Murphree, Jr.

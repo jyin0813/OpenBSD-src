@@ -1,7 +1,8 @@
-/*	$OpenBSD: sysdep-os.h,v 1.5 2002/02/16 21:27:35 millert Exp $	*/
+/*	$OpenBSD$	*/
 
 /*
  * Copyright (c) 1998, 1999 Niklas Hallqvist.  All rights reserved.
+ * Copyright (c) 2003 Thomas Walpuski.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -11,10 +12,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 3. All advertising materials mentioning features or use of this software
- *    must display the following acknowledgement:
- *	This product includes software developed by Ericsson Radio Systems.
- * 4. The name of the author may not be used to endorse or promote products
+ * 3. The name of the author may not be used to endorse or promote products
  *    derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
@@ -29,23 +27,40 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/*
- * This code was written under funding by Ericsson Radio Systems.
- */
-
 #ifndef _SYSDEP_OS_H_
 #define _SYSDEP_OS_H_
 
-typedef u_int16_t in_port_t;
-typedef u_int32_t in_addr_t;
+#include <netinet/in.h>
+#include <time.h>
+#include <sys/types.h>
+#include <linux/ipsec.h>
 
-#if 0
-/*
- * Why -D__USE_GNU does not work in order to get this from stdio.h beats me.
- */
-extern int asprintf(char **, const char *, ...);
+#define KAME
+
+#define LINUX_IPSEC
+
+#define uh_sport source
+#define uh_dport dest
+#define uh_ulen len
+#define uh_sum check
+
+#ifndef CPI_RESERVED_MAX
+#define CPI_RESERVED_MIN		1
+#define CPI_RESERVED_MAX		255
+#define CPI_PRIVATE_MIN			61440
+#define CPI_PRIVATE_MAX			65536
 #endif
 
-#define DL_LAZY RTLD_LAZY
+#define SADB_X_EALG_AES			SADB_X_EALG_AESCBC
+#define SADB_X_EALG_CAST		SADB_X_EALG_CASTCBC
+#define SADB_X_EALG_BLF			SADB_X_EALG_BLOWFISHCBC
 
-#endif /* _SYSDEP_OS_H_ */
+#define IP_IPSEC_POLICY			16
+#define IPV6_IPSEC_POLICY		34
+
+#define IPV6_VERSION			0x1
+
+size_t strlcat(char *dst, const char *src, size_t siz);
+size_t strlcpy(char *dst, const char *src, size_t siz);
+
+#endif

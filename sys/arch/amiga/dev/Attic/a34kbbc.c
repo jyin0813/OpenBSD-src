@@ -1,4 +1,4 @@
-/*	$OpenBSD: a34kbbc.c,v 1.2 2000/01/24 16:02:04 espie Exp $	*/
+/*	$OpenBSD: a34kbbc.c,v 1.3 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: a34kbbc.c,v 1.1 1997/07/19 00:01:42 is Exp $	*/
 
 /*

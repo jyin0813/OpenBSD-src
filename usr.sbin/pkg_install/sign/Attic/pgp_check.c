@@ -1,4 +1,4 @@
-/* $OpenBSD: pgp_check.c,v 1.3 2001/04/08 16:45:48 espie Exp $ */
+/* $OpenBSD: pgp_check.c,v 1.4 2003/06/04 04:29:03 deraadt Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: alloc.c,v 1.1 1996/08/14 06:19:10 downsj Exp $	*/
 
 /*
  * area-based allocation built on malloc/free

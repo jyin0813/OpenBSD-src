@@ -1,4 +1,4 @@
-/*	$OpenBSD: aic7xxx.c,v 1.54 2004/02/08 00:38:08 krw Exp $	*/
+/*	$OpenBSD: aic7xxx.c,v 1.55 2004/02/22 16:06:26 krw Exp $	*/
 /*	$NetBSD: aic7xxx.c,v 1.108 2003/11/02 11:07:44 wiz Exp $	*/
 
 /*
@@ -40,7 +40,7 @@
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGES.
  *
- * $Id: aic7xxx.c,v 1.54 2004/02/08 00:38:08 krw Exp $
+ * $Id: aic7xxx.c,v 1.55 2004/02/22 16:06:26 krw Exp $
  *
  * //depot/aic7xxx/aic7xxx/aic7xxx.c#112 $
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: itevar.h,v 1.10 2002/03/14 01:26:30 millert Exp $	*/
+/*	$OpenBSD: itevar.h,v 1.11 2003/06/02 23:27:45 millert Exp $	*/
 /*	$NetBSD: itevar.h,v 1.14 1997/03/31 07:37:27 scottr Exp $	*/
 
 /*

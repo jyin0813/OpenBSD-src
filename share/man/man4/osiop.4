@@ -1,4 +1,4 @@
-.\"	$OpenBSD: osiop.4,v 1.2 2003/05/15 11:28:50 jmc Exp $
+.\"	$OpenBSD: osiop.4,v 1.3 2003/06/19 20:29:51 deraadt Exp $
 .\"	$NetBSD: osiop.4,v 1.2 2001/09/22 01:44:55 wiz Exp $
 .\"
 .\" Copyright (c) 2001 Izumi Tsutsui.  All rights reserved.
@@ -25,7 +25,7 @@
 .\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 .\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .\"
-.Dd May 12, 2001
+.Dd March 12, 2004
 .Dt OSIOP 4
 .Os
 .Sh NAME
@@ -33,8 +33,7 @@
 .Nd Symbios/NCR 53C710 SCSI driver
 .Sh SYNOPSIS
 .Cd "# hppa"
-.Cd "osiop0 at gsc? irq 9"
-.Cd "osiop1 at gsc? irq 3"
+.Cd "osiop* at gsc? irq 9"
 .Pp
 .Cd "scsibus* at osiop?"
 .Sh DESCRIPTION
@@ -46,18 +45,18 @@ driver provides support for the
 .Tn SCSI
 controller chip.
 .Pp
-This driver does not support the
+The
 .Tn Symbios/NCR
 53C700
 .Tn SCSI
-controller.
-.Pp
-For the
+controller is handled by the
+.Xr oosiop 4
+driver, while the
 .Tn Symbios/NCR
 53C8xx
 .Tn PCI
 .Tn SCSI
-host adapters, use the
+host adapters are handled by the
 .Xr siop 4
 driver.
 .Sh CONFIGURATION
@@ -99,6 +98,7 @@ will suffer.
 .Xr cd 4 ,
 .Xr ch 4 ,
 .Xr intro 4 ,
+.Xr oosiop 4 ,
 .Xr scsi 4 ,
 .Xr sd 4 ,
 .Xr siop 4 ,

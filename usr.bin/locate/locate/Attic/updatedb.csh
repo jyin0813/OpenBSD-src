@@ -1,6 +1,6 @@
 #!/bin/csh -f
 #
-# $OpenBSD$
+# $OpenBSD: updatedb.csh,v 1.3 1996/08/16 22:00:13 michaels Exp michaels $
 #
 # Copyright (c) 1989, 1993
 #	The Regents of the University of California.  All rights reserved.

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $Id: umax_uc630_grabscan.sh,v 1.1 1997/03/11 03:23:18 kstailey Exp $
+# $Id: umax_uc630_grabscan.sh,v 1.2 2002/06/03 09:05:59 deraadt Exp $
 #
 # Copyright (c) 1996 Kenneth Stailey
 # All rights reserved.

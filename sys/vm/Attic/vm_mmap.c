@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_mmap.c,v 1.16 2001/03/09 15:11:47 art Exp $	*/
+/*	$OpenBSD: vm_mmap.c,v 1.17 2001/05/05 21:26:47 art Exp $	*/
 /*	$NetBSD: vm_mmap.c,v 1.47 1996/03/16 23:15:23 christos Exp $	*/
 
 /*

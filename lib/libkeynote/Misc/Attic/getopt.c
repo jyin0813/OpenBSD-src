@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: getopt.c,v 1.1 1999/05/23 22:11:07 angelos Exp $ */
 
 #include <stdio.h>
 #include <string.h>

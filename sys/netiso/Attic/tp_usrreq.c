@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_usrreq.c,v 1.6 2003/06/02 23:28:18 millert Exp $	*/
+/*	$OpenBSD: tp_usrreq.c,v 1.7 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: tp_usrreq.c,v 1.9 1996/03/16 23:14:06 christos Exp $	*/
 
 /*-

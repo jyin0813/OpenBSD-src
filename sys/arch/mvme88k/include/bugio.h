@@ -50,6 +50,23 @@ struct bugbrdid {
 	int	option;
 };
 
+struct bugniocall {
+	unsigned char clun;
+	unsigned char dlun;
+	unsigned char ci;
+	unsigned char cd;
+#define	NETCTRL_INITDEVICE	0
+#define	NETCTRL_GETHDW		1
+#define	NETCTRL_TX		2
+#define	NETCTRL_RX		3
+#define	NETCTRL_FLUSH		4
+#define	NETCTRL_RESET		5
+	unsigned int  cid;
+	unsigned int  memaddr;
+	unsigned int  nbytes;
+	unsigned int  csword;
+};
+
 char buginchr	__P((void));
 int buginstat	__P((void));
 int bugoutchr	__P((unsigned char));
@@ -60,3 +77,4 @@ int bugdskwr	__P((struct bugdisk_io *));
 int bugrtcrd	__P((struct bugrtc *));
 int bugreturn	__P((void));
 int bugbrdid	__P((struct bugbrdid *));
+int bugnetctrl	__P((struct bugniocall *));

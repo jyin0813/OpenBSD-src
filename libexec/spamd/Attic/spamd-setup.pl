@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-# $OpenBSD: spamd-setup.pl,v 1.2 2003/03/03 14:49:59 deraadt Exp $
+# $OpenBSD: spamd-setup.pl,v 1.3 2003/03/04 05:54:53 beck Exp $
 #
 # Copyright (c) 2003 Bob Beck <beck@openbsd.org>.  All rights reserved.
 #

@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: pica.h,v 1.4 1996/09/14 15:58:28 pefo Exp $ */
 
 /*
  * Copyright (c) 1994, 1995, 1996 Per Fogelstrom

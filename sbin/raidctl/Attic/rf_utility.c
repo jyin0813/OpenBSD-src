@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rf_utility.c,v 1.1 1999/01/11 14:49:45 niklas Exp $	*/
 
 /*
  * rf_utility.c

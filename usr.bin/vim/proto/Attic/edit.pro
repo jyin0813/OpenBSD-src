@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: edit.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* edit.c */
 int edit __PARMS((int initstr, int startln, long count));
 int is_ctrl_x_key __PARMS((int c));

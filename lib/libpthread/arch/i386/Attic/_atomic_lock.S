@@ -19,14 +19,14 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF  
  * SUCH DAMAGE.    
  *
- * $Id: _atomic_lock.S,v 1.2 1998/06/09 08:25:41 jb Exp $
- * $OpenBSD$
+ * $Id: _atomic_lock.S,v 1.1 1998/08/28 01:54:58 d Exp $
+ * $OpenBSD: _atomic_lock.S,v 1.1 1998/08/28 01:54:58 d Exp $
  *
  */
 
 #if defined(LIBC_RCS) && !defined(lint)
 	.text
-	.asciz "$Id: _atomic_lock.S,v 1.2 1998/06/09 08:25:41 jb Exp $"
+	.asciz "$Id: _atomic_lock.S,v 1.1 1998/08/28 01:54:58 d Exp $"
 #endif /* LIBC_RCS and not lint */
 
 #include "DEFS.h"

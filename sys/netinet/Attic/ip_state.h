@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_state.h,v 1.17 2001/01/30 04:23:56 kjell Exp $	*/
+/*	$OpenBSD: ip_state.h,v 1.18 2001/02/06 17:29:31 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1995-2000 by Darren Reed.

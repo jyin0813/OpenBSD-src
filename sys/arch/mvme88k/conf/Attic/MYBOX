@@ -1,4 +1,4 @@
-#	$Id: MYBOX,v 1.1.1.2 1997/03/03 19:31:51 rahnds Exp $
+#	$Id: MYBOX,v 1.4 1997/03/03 20:20:30 rahnds Exp $
 
 include "std.mvme88k"
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uboot.c,v 1.7 1997/04/16 12:38:23 downsj Exp $	*/
+/*	$OpenBSD: uboot.c,v 1.8 1997/07/13 07:21:54 downsj Exp $	*/
 /*	$NetBSD: uboot.c,v 1.3 1997/04/27 21:17:13 thorpej Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$Id: $	*/
+/*	$Id: ympu_isa.c,v 1.1 2002/11/28 22:37:20 mickey Exp $	*/
 
 /*
  * Copyright (c) 2002 Sergey Smitienko. All rights reserved.

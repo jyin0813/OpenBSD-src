@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: start.s,v 1.2 1996/04/26 18:23:12 mickey Exp $	*/
 /*	$NetBSD: start.s,v 1.4 1994/10/27 04:21:25 cgd Exp $	*/
 
 #include "asm.h"

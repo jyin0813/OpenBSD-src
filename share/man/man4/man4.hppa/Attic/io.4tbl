@@ -1,4 +1,4 @@
-.\" $OpenBSD: io.4tbl,v 1.6 2003/05/21 15:18:28 mickey Exp $
+.\" $OpenBSD: io.4tbl,v 1.7 2003/06/02 21:39:56 mickey Exp $
 .\"
 .\" Copyright (c) 2003 Paul Weissmann
 .\" All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_stdio_1.c,v 1.3 2000/01/06 06:58:34 d Exp $	*/
+/*	$OpenBSD: stdio.c,v 1.1 2001/08/15 14:37:16 fgsch Exp $	*/
 /*
  * Copyright (c) 1993, 1994, 1995, 1996 by Chris Provenzano and contributors, 
  * proven@mit.edu All rights reserved.

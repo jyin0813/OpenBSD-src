@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: break.h,v 1.1 1998/07/07 21:32:38 mickey Exp $	*/
 
 /* 
  * Copyright (c) 1990, 1991, 1994 The University of Utah and

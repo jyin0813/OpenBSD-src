@@ -1,4 +1,4 @@
-/*	$OpenBSD: gettimeofday.c,v 1.1 1995/12/20 12:56:06 cgd Exp $	*/
+/*	$OpenBSD: gettimeofday.c,v 1.3 1996/07/30 06:46:50 niklas Exp niklas $	*/
 /*	$NetBSD: gettimeofday.c,v 1.1 1995/12/20 12:56:06 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kadm_cli_wrap.c,v 1.6 1998/08/16 02:42:05 art Exp $	*/
+/*	$OpenBSD: kadm_cli_wrap.c,v 1.7 1999/03/03 08:41:27 csapuntz Exp $	*/
 /*	$KTH: kadm_cli_wrap.c,v 1.22 1997/08/17 07:30:04 assar Exp $	*/
 
 /*

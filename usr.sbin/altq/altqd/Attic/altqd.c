@@ -1,4 +1,4 @@
-/*	$OpenBSD: altqd.c,v 1.7 2002/02/13 08:23:04 kjc Exp $	*/
+/*	$OpenBSD: altqd.c,v 1.8 2002/02/20 10:54:24 kjc Exp $	*/
 /*	$KAME: altqd.c,v 1.9 2002/02/12 10:12:15 kjc Exp $	*/
 /*
  * Copyright (c) 2001 Theo de Raadt

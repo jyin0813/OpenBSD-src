@@ -1,4 +1,4 @@
-/*	$OpenBSD: krb-archaeology.h,v 1.2 1998/02/18 11:54:01 art Exp $	*/
+/*	$OpenBSD: krb-archaeology.h,v 1.3 1998/02/25 15:51:20 art Exp $	*/
 /* $KTH: krb-archaeology.h,v 1.2 1997/12/05 02:04:44 joda Exp $ */
 
 /*

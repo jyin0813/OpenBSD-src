@@ -1,4 +1,4 @@
-/*	$OpenBSD: ieeefp.h,v 1.1.1.1 1996/06/24 09:07:17 pefo Exp $	*/
+/*	$OpenBSD: ieeefp.h,v 1.1 1997/02/06 16:02:43 pefo Exp $	*/
 
 /* 
  * Written by J.T. Conklin, Apr 11, 1995

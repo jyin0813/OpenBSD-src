@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: dot.profile,v 1.2 1996/04/25 21:28:17 niklas Exp mickey $
 
 PATH=/sbin:/bin:/
 export PATH

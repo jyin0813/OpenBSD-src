@@ -1,4 +1,4 @@
-/*	$OpenBSD: ksrvutil.h,v 1.1 1997/12/15 17:56:14 art Exp $	*/
+/*	$OpenBSD: ksrvutil.h,v 1.2 1997/12/17 10:21:23 art Exp $	*/
 /* $KTH: ksrvutil.h,v 1.8 1997/04/01 03:58:55 assar Exp $ */
 
 /*

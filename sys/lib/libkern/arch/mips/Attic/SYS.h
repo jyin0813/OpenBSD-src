@@ -1,4 +1,4 @@
-/* *	$OpenBSD: SYS.h,v 1.2 1997/11/07 15:57:15 niklas Exp $*/
+/* *	$OpenBSD: SYS.h,v 1.3 2003/06/02 23:28:08 millert Exp $*/
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_cond.c,v 1.12 2001/12/20 07:33:14 fgsch Exp $	*/
+/*	$OpenBSD: uthread_cond.c,v 1.13 2002/06/04 00:09:07 deraadt Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

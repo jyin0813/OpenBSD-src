@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ns_defs.h,v 1.2 1997/03/12 10:42:28 downsj Exp $	*/
 
 /*
  *	from ns.h	4.33 (Berkeley) 8/23/90

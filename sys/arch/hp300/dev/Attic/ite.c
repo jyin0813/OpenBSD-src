@@ -1,4 +1,4 @@
-/*	$OpenBSD: ite.c,v 1.15 2003/06/02 23:27:45 millert Exp $	*/
+/*	$OpenBSD: ite.c,v 1.16 2003/10/03 16:44:49 miod Exp $	*/
 /*	$NetBSD: ite.c,v 1.38 1997/03/31 07:37:25 scottr Exp $	*/
 
 /*

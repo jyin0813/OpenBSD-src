@@ -1,1 +1,1 @@
-/*	$OpenBSD: dec_3000_500.h,v 1.4 1996/10/30 22:38:05 niklas Exp $	*/
+/*	$OpenBSD: dec_3000_500.h,v 1.5 1997/01/24 19:56:26 niklas Exp $	*/

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cia.h,v 1.4 2001/08/12 12:03:02 heko Exp $	*/
+/*	$OpenBSD: cia.h,v 1.5 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: cia.h,v 1.9 1996/02/01 22:29:06 mycroft Exp $	*/
 
 /*

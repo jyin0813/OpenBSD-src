@@ -1,14 +1,17 @@
 /*
  *------------------------------------------------------------------
  *
- * $Source: /mit/krb5/.cvsroot/src/util/ss/test_ss.c,v $
+ * $Source: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/ss/test_ss.c,v $
  * $Revision: 1.1 $
- * $Date: 1993/06/03 12:31:25 $
+ * $Date: 1997/06/14 07:18:45 $
  * $State: Exp $
- * $Author: tytso $
+ * $Author: downsj $
  * $Locker:  $
  *
  * $Log: test_ss.c,v $
+ * Revision 1.1  1997/06/14 07:18:45  downsj
+ * Initial revision
+ *
  * Revision 1.1  1993/06/03  12:31:25  tytso
  * Initial revision
  *
@@ -30,7 +33,7 @@
 
 #ifndef lint
 static char const rcsid_test_c[] =
-    "$Header: /mit/krb5/.cvsroot/src/util/ss/test_ss.c,v 1.1 1993/06/03 12:31:25 tytso Exp $";
+    "$Header: /cvs/src/gnu/usr.sbin/e2fsprogs/lib/ss/test_ss.c,v 1.1 1997/06/14 07:18:45 downsj Exp $";
 #endif /* lint */
 
 #include <stdio.h>

@@ -38,7 +38,7 @@
  * from: Utah Hdr: vm_machdep.c 1.21 91/04/06
  *
  *	from: @(#)vm_machdep.c	8.3 (Berkeley) 1/4/94
- *      $Id: vm_machdep.c,v 1.2 1996/05/01 18:16:25 pefo Exp $
+ *      $Id: vm_machdep.c,v 1.3 1996/05/15 07:09:12 pefo Exp pefo $
  */
 
 

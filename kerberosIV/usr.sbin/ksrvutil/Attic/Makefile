@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2001/07/28 01:25:03 hugh Exp $
+# $OpenBSD: Makefile,v 1.8 2002/05/11 00:20:19 espie Exp $
 
 PROG	= ksrvutil
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ggbusreg.h,v 1.1 1994/07/08 23:32:17 niklas Exp $	*/
+/*	$OpenBSD: ggbusreg.h,v 1.3 1996/05/04 14:15:27 niklas Exp $	*/
 
 /*
  * Copyright (c) 1994, 1996 Niklas Hallqvist

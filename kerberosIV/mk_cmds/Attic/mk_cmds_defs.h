@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: mk_cmds_defs.h,v 1.1 1995/12/14 06:52:48 tholo Exp $	*/
 
 #include <stdio.h>
 #include <string.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: option.pro,v 1.1.1.1 1996/09/07 21:40:29 downsj Exp $	*/
+/*	$OpenBSD: option.pro,v 1.2 1996/09/21 06:23:53 downsj Exp $	*/
 /* option.c */
 void set_init_1 __PARMS((void));
 void set_init_2 __PARMS((void));

@@ -1,5 +1,5 @@
 #	from: @(#)Makefile	8.1 (Berkeley) 6/16/93
-#	$Id: Makefile,v 1.1.1.1 1995/10/18 10:39:06 deraadt Exp $
+#	$Id: Makefile,v 1.2 1996/05/15 07:09:06 pefo Exp pefo $
 
 # Makefile for pica links, tags file
 

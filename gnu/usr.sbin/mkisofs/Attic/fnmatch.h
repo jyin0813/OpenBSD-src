@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fnmatch.h,v 1.1 1997/09/15 06:01:52 downsj Exp $	*/
 /* Copyright (C) 1991, 1992, 1993 Free Software Foundation, Inc.
 
 NOTE: The canonical source of this file is maintained with the GNU C Library.

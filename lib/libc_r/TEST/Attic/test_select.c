@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: test_select.c,v 1.4 1999/11/28 12:31:42 d Exp $	*/
 /*
  * Rudimentary test of select().
  */

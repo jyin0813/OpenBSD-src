@@ -18,7 +18,7 @@ along with GNU CC; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: genrecog.c,v 1.1 1993/08/23 09:20:53 cgd Exp $";
+static char rcsid[] = "$Id: genrecog.c,v 1.1 1995/10/18 08:39:16 deraadt Exp niklas $";
 #endif /* not lint */
 
 /* This program is used to produce insn-recog.c, which contains

@@ -1,3 +1,11 @@
+#ifndef lint
+/*static char ssl_expr_yysccsid[] = "from: @(#)yaccpar	1.9 (Berkeley) 02/21/93";*/
+static char ssl_expr_yyrcsid[]
+#if __GNUC__ == 2
+  __attribute__ ((unused))
+#endif /* __GNUC__ == 2 */
+  = "$OpenBSD: skeleton.c,v 1.17 2001/07/16 06:29:45 pvalchev Exp $";
+#endif
 #include <stdlib.h>
 #define YYBYACC 1
 #define YYMAJOR 1
@@ -6,8 +14,7 @@
 #define YYEMPTY -1
 #define ssl_expr_yyclearin (ssl_expr_yychar=(YYEMPTY))
 #define ssl_expr_yyerrok (ssl_expr_yyerrflag=0)
-#define YYRECOVERING (ssl_expr_yyerrflag!=0)
-static int ssl_expr_yygrowstack();
+#define YYRECOVERING() (ssl_expr_yyerrflag!=0)
 #define YYPREFIX "ssl_expr_yy"
 #line 72 "ssl_expr_parse.y"
 #include "mod_ssl.h"
@@ -16,7 +23,7 @@ typedef union {
     char     *cpVal;
     ssl_expr *exVal;
 } YYSTYPE;
-#line 29 "y.tab.c"
+#line 27 "y.tab.c"
 #define T_TRUE 257
 #define T_FALSE 258
 #define T_DIGIT 259
@@ -38,17 +45,17 @@ typedef union {
 #define T_OP_AND 275
 #define T_OP_NOT 276
 #define YYERRCODE 256
-const short ssl_expr_yylhs[] = {                                        -1,
+short ssl_expr_yylhs[] = {                                        -1,
     0,    1,    1,    1,    1,    1,    1,    1,    2,    2,
     2,    2,    2,    2,    2,    2,    2,    5,    5,    6,
     6,    6,    6,    4,    4,    3,
 };
-const short ssl_expr_yylen[] = {                                         2,
+short ssl_expr_yylen[] = {                                         2,
     1,    1,    1,    2,    3,    3,    1,    3,    3,    3,
     3,    3,    3,    3,    5,    3,    3,    1,    3,    1,
     1,    4,    1,    1,    1,    4,
 };
-const short ssl_expr_yydefred[] = {                                      0,
+short ssl_expr_yydefred[] = {                                      0,
     2,    3,   20,   21,    0,    0,    0,    0,    0,    0,
     7,   23,    0,    0,    4,    0,    0,    0,    0,    0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    8,
@@ -56,10 +63,10 @@ const short ssl_expr_yydefred[] = {                                      0,
    25,   16,   17,    0,   26,   22,    0,   18,   15,    0,
    19,
 };
-const short ssl_expr_yydgoto[] = {                                       9,
+short ssl_expr_yydgoto[] = {                                       9,
    10,   11,   12,   42,   47,   13,
 };
-const short ssl_expr_yysindex[] = {                                    -37,
+short ssl_expr_yysindex[] = {                                    -37,
     0,    0,    0,    0,  -35,  -37,  -37,  -99,    0, -247,
     0,    0, -250, -229,    0,  -39, -227,  -37,  -37,  -33,
   -33,  -33,  -33,  -33,  -33, -233, -233,  -89,   -6,    0,
@@ -67,7 +74,7 @@ const short ssl_expr_yysindex[] = {                                    -37,
     0,    0,    0,  -33,    0,    0,  -38,    0,    0,  -33,
     0,
 };
-const short ssl_expr_yyrindex[] = {                                      0,
+short ssl_expr_yyrindex[] = {                                      0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,   39,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -75,11 +82,11 @@ const short ssl_expr_yyrindex[] = {                                      0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
     0,
 };
-const short ssl_expr_yygindex[] = {                                      0,
+short ssl_expr_yygindex[] = {                                      0,
     7,    0,    0,   13,    0,  -13,
 };
 #define YYTABLESIZE 275
-const short ssl_expr_yytable[] = {                                       8,
+short ssl_expr_yytable[] = {                                       8,
     5,   30,    7,    8,   14,   50,   34,   35,   36,   37,
    38,   39,   15,   16,   20,   21,   22,   23,   24,   25,
    26,   27,   28,   17,   32,   33,   18,   19,   40,   41,
@@ -109,7 +116,7 @@ const short ssl_expr_yytable[] = {                                       8,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
     0,    0,    0,    0,    5,
 };
-const short ssl_expr_yycheck[] = {                                      37,
+short ssl_expr_yycheck[] = {                                      37,
     0,   41,   40,   37,   40,   44,   20,   21,   22,   23,
    24,   25,    6,    7,  265,  266,  267,  268,  269,  270,
   271,  272,  273,  123,   18,   19,  274,  275,  262,  263,
@@ -142,12 +149,15 @@ const short ssl_expr_yycheck[] = {                                      37,
 #define YYFINAL 9
 #ifndef YYDEBUG
 #define YYDEBUG 0
-#elif YYDEBUG
-#include <stdio.h>
 #endif
 #define YYMAXTOKEN 276
 #if YYDEBUG
-const char * const ssl_expr_yyname[] = {
+#if defined(__cplusplus) || __STDC__
+const char * const ssl_expr_yyname[] =
+#else
+char *ssl_expr_yyname[] =
+#endif
+	{
 "end-of-file",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,"'%'",0,0,"'('","')'",0,0,"','",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -159,8 +169,12 @@ const char * const ssl_expr_yyname[] = {
 "T_OP_EQ","T_OP_NE","T_OP_LT","T_OP_LE","T_OP_GT","T_OP_GE","T_OP_REG",
 "T_OP_NRE","T_OP_IN","T_OP_OR","T_OP_AND","T_OP_NOT",
 };
-const char * const ssl_expr_yyrule[] = {
-"$accept : root",
+#if defined(__cplusplus) || __STDC__
+const char * const ssl_expr_yyrule[] =
+#else
+char *ssl_expr_yyrule[] =
+#endif
+	{"$accept : root",
 "root : expr",
 "expr : T_TRUE",
 "expr : T_FALSE",
@@ -221,9 +235,13 @@ int ssl_expr_yyerror(char *s)
     return 2;
 }
 
-#line 232 "y.tab.c"
+#line 230 "y.tab.c"
 /* allocate initial stack or double stack size, up to YYMAXDEPTH */
+#if defined(__cplusplus) || __STDC__
+static int ssl_expr_yygrowstack(void)
+#else
 static int ssl_expr_yygrowstack()
+#endif
 {
     int newsize, i;
     short *newss;
@@ -236,30 +254,50 @@ static int ssl_expr_yygrowstack()
     else if ((newsize *= 2) > YYMAXDEPTH)
         newsize = YYMAXDEPTH;
     i = ssl_expr_yyssp - ssl_expr_yyss;
-    if ((newss = (short *)realloc(ssl_expr_yyss, newsize * sizeof *newss)) == NULL)
-        return -1;
+    newss = ssl_expr_yyss ? (short *)realloc(ssl_expr_yyss, newsize * sizeof *newss) :
+      (short *)malloc(newsize * sizeof *newss);
+    if (newss == NULL)
+        goto bail;
     ssl_expr_yyss = newss;
     ssl_expr_yyssp = newss + i;
-    if ((newvs = (YYSTYPE *)realloc(ssl_expr_yyvs, newsize * sizeof *newvs)) == NULL)
-        return -1;
+    newvs = ssl_expr_yyvs ? (YYSTYPE *)realloc(ssl_expr_yyvs, newsize * sizeof *newvs) :
+      (YYSTYPE *)malloc(newsize * sizeof *newvs);
+    if (newvs == NULL)
+        goto bail;
     ssl_expr_yyvs = newvs;
     ssl_expr_yyvsp = newvs + i;
     ssl_expr_yystacksize = newsize;
     ssl_expr_yysslim = ssl_expr_yyss + newsize - 1;
     return 0;
+bail:
+    if (ssl_expr_yyss)
+            free(ssl_expr_yyss);
+    if (ssl_expr_yyvs)
+            free(ssl_expr_yyvs);
+    ssl_expr_yyss = ssl_expr_yyssp = NULL;
+    ssl_expr_yyvs = ssl_expr_yyvsp = NULL;
+    ssl_expr_yystacksize = 0;
+    return -1;
 }
 
 #define YYABORT goto ssl_expr_yyabort
 #define YYREJECT goto ssl_expr_yyabort
 #define YYACCEPT goto ssl_expr_yyaccept
 #define YYERROR goto ssl_expr_yyerrlab
-
 int
+#if defined(__cplusplus) || __STDC__
+ssl_expr_yyparse(void)
+#else
 ssl_expr_yyparse()
+#endif
 {
     register int ssl_expr_yym, ssl_expr_yyn, ssl_expr_yystate;
 #if YYDEBUG
+#if defined(__cplusplus) || __STDC__
     register const char *ssl_expr_yys;
+#else /* !(defined(__cplusplus) || __STDC__) */
+    register char *ssl_expr_yys;
+#endif /* !(defined(__cplusplus) || __STDC__) */
 
     if ((ssl_expr_yys = getenv("YYDEBUG")))
     {
@@ -267,7 +305,7 @@ ssl_expr_yyparse()
         if (ssl_expr_yyn >= '0' && ssl_expr_yyn <= '9')
             ssl_expr_yydebug = ssl_expr_yyn - '0';
     }
-#endif
+#endif /* YYDEBUG */
 
     ssl_expr_yynerrs = 0;
     ssl_expr_yyerrflag = 0;
@@ -279,7 +317,7 @@ ssl_expr_yyparse()
     *ssl_expr_yyssp = ssl_expr_yystate = 0;
 
 ssl_expr_yyloop:
-    if ((ssl_expr_yyn = ssl_expr_yydefred[ssl_expr_yystate])) goto ssl_expr_yyreduce;
+    if ((ssl_expr_yyn = ssl_expr_yydefred[ssl_expr_yystate]) != 0) goto ssl_expr_yyreduce;
     if (ssl_expr_yychar < 0)
     {
         if ((ssl_expr_yychar = ssl_expr_yylex()) < 0) ssl_expr_yychar = 0;
@@ -515,7 +553,7 @@ case 26:
                ssl_expr_yyval.exVal = ssl_expr_make(op_Func, "file", args);
             }
 break;
-#line 526 "y.tab.c"
+#line 548 "y.tab.c"
     }
     ssl_expr_yyssp -= ssl_expr_yym;
     ssl_expr_yystate = *ssl_expr_yyssp;

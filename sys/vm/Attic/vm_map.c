@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_map.c,v 1.19 2001/04/06 23:41:02 art Exp $	*/
+/*	$OpenBSD: vm_map.c,v 1.20 2001/05/16 12:54:34 ho Exp $	*/
 /*	$NetBSD: vm_map.c,v 1.23 1996/02/10 00:08:08 christos Exp $	*/
 
 /* 

@@ -1,4 +1,4 @@
-#	$OpenBSD: WALDORF,v 1.21 1999/10/03 21:08:15 niklas Exp $
+#	$OpenBSD: WALDORF,v 1.22 2001/02/15 04:58:08 krw Exp $
 #
 #	WALDORF -- a 486 kernel config Applitron use for some gateway
 #		   machines (waldorf and neuro).

@@ -1,4 +1,4 @@
-/*	$OpenBSD: reset_shell_mode.c,v 1.1.1.1 1996/05/31 05:40:02 tholo Exp $	*/
+/*	$OpenBSD: reset_shell_mode.c,v 1.2 1997/12/09 01:23:03 millert Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: reset_shell_mode.c,v 1.1.1.1 1996/05/31 05:40:02 tholo Exp $";
+static char rcsid[] = "$OpenBSD: reset_shell_mode.c,v 1.2 1997/12/09 01:23:03 millert Exp $";
 #endif
 
 #include <unistd.h>

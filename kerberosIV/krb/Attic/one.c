@@ -1,4 +1,4 @@
-/*	$OpenBSD: one.c,v 1.4 1997/12/22 15:02:11 art Exp $	*/
+/*	$OpenBSD: one.c,v 1.5 1998/02/25 15:51:34 art Exp $	*/
 
 /*
  * This source code is no longer held under any constraint of USA

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_param.h,v 1.5 2004/06/24 19:35:26 tholo Exp $	*/
+/*	$OpenBSD: tp_param.h,v 1.6 2004/06/25 00:54:27 tholo Exp $	*/
 /*	$NetBSD: tp_param.h,v 1.9 1996/02/13 22:11:32 christos Exp $	*/
 
 /*-

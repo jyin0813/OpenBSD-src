@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_vevar.h,v 1.3 2002/03/14 01:26:39 millert Exp $	*/
+/*	$OpenBSD: if_vevar.h,v 1.4 2003/10/11 22:08:57 miod Exp $	*/
 
 /*
  * Copyright (c) 1995 Charles M. Hannum.  All rights reserved.

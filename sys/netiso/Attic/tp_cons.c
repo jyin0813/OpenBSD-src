@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_cons.c,v 1.10 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: tp_cons.c,v 1.11 2004/01/03 14:08:54 espie Exp $	*/
 /*	$NetBSD: tp_cons.c,v 1.8 1996/02/14 21:32:37 christos Exp $	*/
 
 /*-

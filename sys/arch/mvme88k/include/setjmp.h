@@ -4,4 +4,4 @@
  * machine/setjmp.h: machine dependent setjmp-related information.
  */
 
-#define	_JBLEN	19		/* size, in longs, of a jmp_buf */
+#define	_JBLEN	22		/* size, in longs, of a jmp_buf */

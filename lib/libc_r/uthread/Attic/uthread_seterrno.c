@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_seterrno.c,v 1.3 1999/11/25 07:01:43 d Exp $	*/
+/*	$OpenBSD: uthread_seterrno.c,v 1.4 1999/11/27 01:30:11 d Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

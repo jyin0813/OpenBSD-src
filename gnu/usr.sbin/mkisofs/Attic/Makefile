@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1997/09/22 05:25:48 millert Exp $
+#	$OpenBSD: Makefile,v 1.4 2001/11/22 21:04:14 espie Exp $
 
 PROG=	mkisofs
 MAN=	mkisofs.8

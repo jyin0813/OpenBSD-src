@@ -1,4 +1,4 @@
-/*	$Id: glimits.h,v 1.2 1993/08/02 17:34:40 mycroft Exp $ */
+/*	$Id: glimits.h,v 1.1 1995/10/18 08:39:40 deraadt Exp niklas $ */
 
 #ifndef _LIMITS_H___
 #ifndef _MACH_MACHLIMITS_H_

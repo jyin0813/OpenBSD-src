@@ -1,4 +1,4 @@
-$Id: README.openssh2,v 1.8 2000/05/07 18:30:03 markus Exp $
+$Id: README.openssh2,v 1.9 2000/08/31 21:56:03 markus Exp $
 
 howto:
 	1) generate server key:
@@ -38,4 +38,4 @@ todo:
 	keynote
 
 -markus
-$Date: 2000/05/07 18:30:03 $
+$Date: 2000/08/31 21:56:03 $

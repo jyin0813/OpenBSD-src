@@ -30,7 +30,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: //depot/src/aic7xxx/aic7xxx_93cx6.h#5 $
+ * $Id: aic7xxx_93cx6.h,v 1.1 2002/02/16 04:36:33 smurph Exp $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aic7xxx_93cx6.h,v 1.9 2000/12/20 01:11:37 gibbs Exp $
  */

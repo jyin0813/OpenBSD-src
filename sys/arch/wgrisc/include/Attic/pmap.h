@@ -1,4 +1,4 @@
-/*      $OpenBSD: pmap.h,v 1.2 1996/07/16 07:46:18 pefo Exp $ */
+/*      $OpenBSD: pmap.h,v 1.1 1997/02/06 16:02:43 pefo Exp $ */
 
 /* 
  * Copyright (c) 1987 Carnegie-Mellon University

@@ -1,4 +1,4 @@
-/*	$OpenBSD: quip_server.c,v 1.2 2001/08/16 12:59:43 kjc Exp $	*/
+/*	$OpenBSD: quip_server.c,v 1.3 2001/08/20 08:40:14 kjc Exp $	*/
 /*	$KAME: quip_server.c,v 1.5 2001/08/16 07:43:17 itojun Exp $	*/
 /*
  * Copyright (C) 1999-2000

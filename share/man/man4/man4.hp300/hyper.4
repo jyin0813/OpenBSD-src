@@ -1,4 +1,4 @@
-.\"	$OpenBSD: hyper.4,v 1.5 2005/01/08 19:46:51 miod Exp $
+.\"	$OpenBSD: hyper.4,v 1.6 2005/01/08 23:31:00 jmc Exp $
 .\"
 .\" Copyright (c) 2003, Miodrag Vallat.
 .\" All rights reserved.
@@ -24,7 +24,7 @@
 .\" ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 .\" POSSIBILITY OF SUCH DAMAGE.
 .\"
-.Dd March 16, 2003
+.Dd January 12, 2005
 .Dt HYPER 4 hp300
 .Os
 .Sh NAME
@@ -33,17 +33,15 @@
 .Tn HP A1096A
 Hyperion frame buffer
 .Sh SYNOPSIS
-.Cd "hyper* at dio?"
-.Cd "grf*   at hyper?"
+.Cd "hyper*     at dio?"
+.Cd "wsdisplay* at hyper?"
 .Sh DESCRIPTION
 The Hyperion is a monochrome, high-resolution frame buffer.
 .Pp
 The
 .Nm
 driver provides a frame buffer abstraction to the
-.Xr grf 4
-driver, and the associated
-.Xr ite 4
+.Xr wscons 4
 console framework.
 .Sh SELECT CODE
 The
@@ -66,8 +64,9 @@ Leaving a jumper open is equivalent to shorting pins 1 and 2.
 .Sh SEE ALSO
 .Xr dvbox 4 ,
 .Xr gbox 4 ,
-.Xr grf 4 ,
 .Xr intro 4 ,
-.Xr ite 4 ,
 .Xr rbox 4 ,
-.Xr topcat 4
+.Xr sti 4 ,
+.Xr topcat 4 ,
+.Xr wscons 4 ,
+.Xr wsdisplay 4

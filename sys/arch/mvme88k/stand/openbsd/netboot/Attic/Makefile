@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.1.1.1 1997/03/03 19:31:08 rahnds Exp $
+#	$Id: Makefile,v 1.2 1997/04/27 20:56:33 millert Exp $
 
 RELOC=0x3F0000
 

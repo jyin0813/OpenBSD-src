@@ -1,4 +1,4 @@
-/*	$OpenBSD: wdreg.h,v 1.7 1998/07/23 04:40:14 csapuntz Exp $	*/
+/*	$OpenBSD: wdreg.h,v 1.8 1998/08/08 23:01:12 downsj Exp $	*/
 /*	$NetBSD: wdreg.h,v 1.13 1995/03/29 21:56:46 briggs Exp $	*/
 
 /*-

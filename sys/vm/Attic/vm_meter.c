@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_meter.c,v 1.7 1997/11/06 05:59:35 csapuntz Exp $	*/
+/*	$OpenBSD: vm_meter.c,v 1.8 1998/03/01 00:38:14 niklas Exp $	*/
 /*	$NetBSD: vm_meter.c,v 1.18 1996/02/05 01:53:59 christos Exp $	*/
 
 /*

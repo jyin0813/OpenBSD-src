@@ -1,5 +1,5 @@
 # This is the Makefile for the Taylor UUCP uuconf library
-# $Id: Makefile,v 1.5 1995/08/24 05:20:40 jtc Exp $
+# $Id: Makefile,v 1.1 1995/10/18 08:38:32 deraadt Exp $
 
 LIB=		uuconf
 SRCS=		addblk.c addstr.c allblk.c alloc.c base.c bool.c callin.c \

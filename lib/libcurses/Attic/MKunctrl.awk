@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: MKunctrl.awk,v 1.1 1998/07/23 21:17:23 millert Exp $
 # $From: MKunctrl.awk,v 1.6 1998/06/06 18:18:07 tom Exp $
 ##############################################################################
 # Copyright (c) 1998 Free Software Foundation, Inc.                          #

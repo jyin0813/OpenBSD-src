@@ -18,7 +18,7 @@ along with GNU CC; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: function.c,v 1.3 1994/07/13 08:13:58 mycroft Exp $";
+static char rcsid[] = "$Id: function.c,v 1.1 1995/10/18 08:39:39 deraadt Exp niklas $";
 #endif /* not lint */
 
 /* This file handles the generation of rtl code from tree structure

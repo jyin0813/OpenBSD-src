@@ -15,7 +15,7 @@
    along with this program; if not, write to the Free Software
    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA. 
 
-	$Id: longlong.h,v 1.2 1993/08/02 17:35:01 mycroft Exp $
+	$Id: longlong.h,v 1.1 1995/10/18 08:39:41 deraadt Exp niklas $
 */
 
 #ifndef SI_TYPE_SIZE

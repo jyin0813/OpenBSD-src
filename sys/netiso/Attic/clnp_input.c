@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp_input.c,v 1.7 2003/12/10 07:22:43 itojun Exp $	*/
+/*	$OpenBSD: clnp_input.c,v 1.8 2004/01/03 14:08:54 espie Exp $	*/
 /*	$NetBSD: clnp_input.c,v 1.12 1996/04/13 01:34:26 cgd Exp $	*/
 
 /*-

@@ -36,7 +36,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: globals.c,v 1.3 1994/02/07 22:04:19 proven Exp $ $provenid: globals.c,v 1.16 1994/02/07 02:18:57 proven Exp $";
+static const char rcsid[] = "$Id: globals.c,v 1.1 1995/10/18 08:43:05 deraadt Exp $ $provenid: globals.c,v 1.16 1994/02/07 02:18:57 proven Exp $";
 #endif
 
 #include <pthread.h>

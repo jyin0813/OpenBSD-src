@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: poolmem.c,v 1.1 1998/08/13 21:08:16 espie Exp $ */
 
 /* This piece of code ensures that poolmem no longer runs. It is necessary
  * to kill poolmem before assessing the memory configuration, as this patch

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2000/11/09 03:57:33 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.3 2001/06/21 08:10:15 mpech Exp $
 #	from: @(#)Makefile	5.1 (Berkeley) 3/22/91
 
 MAN=	MAKEDEV.8 boot_arm32.8

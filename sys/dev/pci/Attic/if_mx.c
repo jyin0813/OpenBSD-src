@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_mx.c,v 1.6 1999/06/28 20:51:09 jason Exp $	*/
+/*	$OpenBSD: if_mx.c,v 1.7 1999/09/13 20:49:01 jason Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998

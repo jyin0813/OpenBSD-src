@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_demo.h,v 1.1 1998/11/13 04:20:28 oster Exp $	*/
+/*	$OpenBSD: rf_demo.h,v 1.1 1999/01/11 14:29:15 niklas Exp $	*/
 /*	$NetBSD: rf_demo.h,v 1.1 1998/11/13 04:20:28 oster Exp $	*/
 /*
  * Copyright (c) 1995 Carnegie-Mellon University.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: nxstack.c,v 1.2 2002/07/01 19:37:57 art Exp $	*/
+/*	$OpenBSD: nxheap.c,v 1.1 2002/08/31 20:29:47 mickey Exp $	*/
 
 /*
  * Copyright (c) 2002 Michael Shalayeff

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: filesys.h,v 1.4 1998/06/26 21:20:49 millert Exp $	*/
 
 /*
  * Copyright (c) 1983 Regents of the University of California.

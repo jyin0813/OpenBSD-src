@@ -1,7 +1,7 @@
 /* ==== posix.h ============================================================
  * Copyright (c) 1993, 1994 by Chris Provenzano, proven@athena.mit.edu	
  *
- * $Id: posix-linux-1.0.h,v 1.51 1995/01/06 07:25:04 raeburn Exp $
+ * $Id: posix-linux-1.0.h,v 1.1 1998/07/21 13:19:15 peter Exp $
  *
  * Description : Convert a Linux-1.0 system to a more or less POSIX system.
  *				 Mostly POSIX already

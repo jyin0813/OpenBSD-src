@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_disasm.c,v 1.5 2001/01/24 21:09:25 drahn Exp $	*/
+/*	$OpenBSD: db_disasm.c,v 1.1 2001/06/26 21:57:39 smurph Exp $	*/
 
 #include <sys/types.h>
 #include <sys/param.h>

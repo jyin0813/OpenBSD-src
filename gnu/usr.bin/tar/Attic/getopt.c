@@ -21,7 +21,7 @@
    Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: getopt.c,v 1.4 1995/04/29 05:36:24 cgd Exp $";
+static char rcsid[] = "$Id: getopt.c,v 1.1 1995/10/18 08:41:08 deraadt Exp tholo $";
 #endif /* not lint */
 
 /* NOTE!!!  AIX requires this to be the first thing in the file.

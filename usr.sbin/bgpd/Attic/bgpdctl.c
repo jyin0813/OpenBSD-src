@@ -1,4 +1,4 @@
-/*	$OpenBSD: bgpd.c,v 1.47 2003/12/30 22:42:31 henning Exp $ */
+/*	$OpenBSD: bgpdctl.c,v 1.1 2004/01/01 23:51:40 henning Exp $ */
 
 /*
  * Copyright (c) 2003 Henning Brauer <henning@openbsd.org>

@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)db.h	4.16 (Berkeley) 6/1/90
- *	$Id: db.h,v 1.2 1993/08/01 17:57:27 mycroft Exp $
+ *	$Id: db.h,v 1.1 1995/10/18 08:47:49 deraadt Exp dm $
  */
 
 /*

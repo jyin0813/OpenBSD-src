@@ -1,4 +1,4 @@
-/* $OpenBSD: server.h,v 1.3 2001/01/28 22:45:17 niklas Exp $ */
+/* $OpenBSD: server.h,v 1.4 2002/06/09 08:13:09 todd Exp $ */
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
  * All rights reserved.

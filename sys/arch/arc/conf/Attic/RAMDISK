@@ -1,4 +1,4 @@
-#	$OpenBSD: RAMDISK,v 1.8 1998/02/23 10:25:49 pefo Exp $
+#	$OpenBSD: RAMDISK,v 1.9 1999/08/29 12:14:03 niklas Exp $
 #
 #	Generic configuration file for MIPS R4x00 ARC Systems
 #

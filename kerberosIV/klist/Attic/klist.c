@@ -1,4 +1,4 @@
-/*	$OpenBSD: klist.c,v 1.5 1998/02/25 15:51:02 art Exp $	*/
+/*	$OpenBSD: klist.c,v 1.6 1998/05/18 01:24:55 art Exp $	*/
 /*	$KTH: klist.c,v 1.35 1998/05/01 05:16:33 joda Exp $	*/
 
 /*

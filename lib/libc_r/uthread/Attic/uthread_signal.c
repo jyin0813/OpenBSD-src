@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_signal.c,v 1.4 1999/11/25 07:01:45 d Exp $	*/
+/*	$OpenBSD: uthread_signal.c,v 1.5 2002/10/30 19:11:56 marc Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

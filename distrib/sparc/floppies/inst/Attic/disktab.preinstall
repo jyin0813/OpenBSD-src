@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: disktab.preinstall,v 1.2 1997/05/01 11:30:48 niklas Exp $
 
 # Disk geometry and partition layout tables. 
 # Key:

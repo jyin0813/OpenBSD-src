@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with GNU CC; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: xm-netbsd.h,v 1.1 1994/06/28 21:38:19 phil Exp $
+	$Id: xm-netbsd.h,v 1.1 1995/10/18 08:39:23 deraadt Exp niklas $
 */
 
 /* #defines that need visibility everywhere.  */

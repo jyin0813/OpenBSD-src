@@ -1,4 +1,4 @@
-/*	$OpenBSD: limits.h,v 1.3 1999/01/27 04:46:05 imp Exp $	*/
+/*	$OpenBSD: limits.h,v 1.4 2000/07/31 20:06:02 millert Exp $	*/
 
 /*
  * Copyright (c) 1988, 1993

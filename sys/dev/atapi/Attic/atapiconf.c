@@ -1,4 +1,4 @@
-/*	$OpenBSD: atapiconf.c,v 1.22 1998/06/09 13:29:58 provos Exp $	*/
+/*	$OpenBSD: atapiconf.c,v 1.23 1999/06/05 21:58:14 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1996 Manuel Bouyer.  All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ioctl_bt848.h,v 1.23 1999/05/18 12:14:39 roger Exp $	*/
+/*	$OpenBSD: ioctl_bt848.h,v 1.3 1999/08/05 21:18:43 niklas Exp $	*/
 
 /*
  * extensions to ioctl_meteor.h for the bt848 cards

@@ -1,4 +1,4 @@
-/*	$OpenBSD: srt0.s,v 1.4 1997/07/13 07:21:53 downsj Exp $	*/
+/*	$OpenBSD: srt0.s,v 1.5 1997/07/13 09:43:32 downsj Exp $	*/
 /*	$NetBSD: srt0.s,v 1.2 1997/03/10 08:00:47 thorpej Exp $	*/
 
 /*

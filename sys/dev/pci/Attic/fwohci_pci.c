@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fwohci_pci.c,v 1.4 2003/01/09 15:28:53 mickey Exp $	*/
 /*	$NetBSD: fwohci_pci.c,v 1.13 2002/01/26 16:30:00 ichiro Exp $	*/
 
 /*-

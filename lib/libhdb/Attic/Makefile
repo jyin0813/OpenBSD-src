@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.9 2003/05/13 03:13:30 hin Exp $
+# $OpenBSD: Makefile,v 1.1 2003/05/14 23:48:20 hin Exp $
 
 .PATH:	${.CURDIR}/../libkafs
 LIB	= hdb

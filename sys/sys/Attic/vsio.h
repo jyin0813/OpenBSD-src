@@ -1,4 +1,4 @@
-/*	$OpenBSD: vsio.h,v 1.2 1996/03/03 12:12:48 niklas Exp $	*/
+/*	$OpenBSD: vsio.h,v 1.3 1996/04/21 22:32:19 deraadt Exp $	*/
 /*	$NetBSD: vsio.h,v 1.7 1996/04/09 20:55:50 cgd Exp $	*/
 
 /*-

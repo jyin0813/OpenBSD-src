@@ -1,15 +1,7 @@
 /*	$OpenBSD: pcap.c,v 1.1 2001/11/10 02:44:48 marc Exp $ */
 /*
- *	Copyright (c) 2001 Marco S. Hyman
- *
- *	Permission to copy all or part of this material with or without
- *	modification for any purpose is granted provided that the above
- *	copyright notice and this paragraph are duplicated in all copies.
- *
- *	THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
- *	IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
- *	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
- */ 
+ *	Placed in the PUBLIC DOMAIN
+ */
 
 #include <pcap.h>
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: adb_direct.c,v 1.8 2001/08/18 21:22:09 drahn Exp $	*/
+/*	$OpenBSD: adb_direct.c,v 1.9 2001/08/19 15:09:20 miod Exp $	*/
 /*	$NetBSD: adb_direct.c,v 1.14 2000/06/08 22:10:45 tsubai Exp $	*/
 
 /* From: adb_direct.c 2.02 4/18/97 jpw */

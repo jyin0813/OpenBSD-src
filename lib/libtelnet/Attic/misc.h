@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *     from: @(#)misc.h        8.1 (Berkeley) 6/4/93
- *     $OpenBSD: misc.h,v 1.2 1996/03/19 23:15:56 niklas Exp $
+ *     $OpenBSD: misc.h,v 1.3 2001/05/25 10:23:07 hin Exp $
  *     $NetBSD: misc.h,v 1.4 1996/02/24 01:15:27 jtk Exp $
  */
 

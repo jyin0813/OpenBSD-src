@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_sock_2.c,v 1.5 2000/01/06 06:58:34 d Exp $	*/
+/*	$OpenBSD: test_sock_2.c,v 1.6 2001/07/09 07:04:40 deraadt Exp $	*/
 /* ==== test_sock_1.c =========================================================
  * Copyright (c) 1993 by Chris Provenzano, proven@athena.mit.edu
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: vm_user.c,v 1.3 1996/04/19 16:10:52 niklas Exp $	*/
 /*	$NetBSD: vm_user.c,v 1.13 1996/02/28 22:39:16 gwr Exp $	*/
 
 /* 

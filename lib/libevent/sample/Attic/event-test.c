@@ -1,4 +1,4 @@
-/*	$OpenBSD: event-test.c,v 1.2 2002/06/25 15:50:16 mickey Exp $	*/
+/*	$OpenBSD: event-test.c,v 1.3 2003/03/10 04:02:50 david Exp $	*/
 
 /*
  * Compile with:

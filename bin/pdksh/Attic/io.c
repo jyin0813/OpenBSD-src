@@ -1,4 +1,4 @@
-/*	$OpenBSD: io.c,v 1.2 1996/08/19 20:08:51 downsj Exp $	*/
+/*	$OpenBSD: io.c,v 1.4 1997/06/19 13:58:42 kstailey Exp $	*/
 
 /*
  * shell buffered IO and formatted output

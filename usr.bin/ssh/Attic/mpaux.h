@@ -1,4 +1,4 @@
-/*	$OpenBSD: mpaux.h,v 1.11 2001/06/26 17:27:24 markus Exp $	*/
+/*	$OpenBSD: mpaux.h,v 1.12 2002/03/04 17:27:39 stevesk Exp $	*/
 
 /*
  * Author: Tatu Ylonen <ylo@cs.hut.fi>

@@ -1,7 +1,7 @@
 /*
  * Православные праздники
  *
- * $OpenBSD: calendar.orthodox,v 1.1 1996/12/05 06:05:00 millert Exp $
+ * $OpenBSD: calendar.orthodox,v 1.2 1997/01/17 14:51:36 mickey Exp $
  */
 
 #ifndef _ru_SU_KOI8_R_orthodox_

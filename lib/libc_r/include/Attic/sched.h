@@ -1,4 +1,4 @@
-/*	$OpenBSD: sched.h,v 1.5 2002/01/18 00:38:12 fgsch Exp $	*/
+/*	$OpenBSD: sched.h,v 1.6 2002/02/16 21:27:25 millert Exp $	*/
 
 /* sched.h: POSIX 1003.1b Process Scheduling header */
 

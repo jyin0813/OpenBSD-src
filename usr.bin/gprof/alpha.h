@@ -1,9 +1,13 @@
-/*	$OpenBSD: alpha.h,v 1.2 1996/06/26 05:33:47 deraadt Exp $	*/
-/*	$NetBSD: alpha.h,v 1.1 1995/04/19 07:24:21 cgd Exp $	*/
+/*	$OpenBSD: sparc.h,v 1.2 1996/06/26 05:34:00 deraadt Exp $	*/
+/*	$NetBSD: sparc.h,v 1.3 1995/04/19 07:16:25 cgd Exp $	*/
 
 /*-
- * Copyright (c) 1991, 1993
+ * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
+ *
+ * This software was developed by the Computer Systems Engineering group
+ * at Lawrence Berkeley Laboratory under DARPA contract BG 91-66 and
+ * contributed to Berkeley.
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
@@ -33,13 +37,13 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	@(#)hp300.h	8.1 (Berkeley) 6/6/93
+ *	@(#)sparc.h	8.1 (Berkeley) 6/6/93
  */
 
-    /*
-     *	offset (in bytes) of the code from the entry address of a routine.
-     *	(see asgnsamples for use and explanation.)
-     */
+/*
+ * offset (in bytes) of the code from the entry address of a routine.
+ * (see asgnsamples for use and explanation.)
+ */
 #define OFFSET_OF_CODE	0
 #define	UNITS_TO_CODE	(OFFSET_OF_CODE / sizeof(UNIT))
 

@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: et_name.c,v 1.1 1995/12/14 06:52:32 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -23,7 +23,7 @@
 static const char copyright[] =
     "Copyright 1987,1988 by Student Information Processing Board, Massachusetts Institute of Technology";
 static const char rcsid_et_name_c[] =
-    "$Id$";
+    "$Id: et_name.c,v 1.1 1995/12/14 06:52:32 tholo Exp $";
 #endif
 
 static const char char_set[] =

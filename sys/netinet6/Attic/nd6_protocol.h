@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: nd6_protocol.h,v 1.3 1999/12/10 08:53:17 angelos Exp $ */
 
 /*
 %%% portions-copyright-nrl-97

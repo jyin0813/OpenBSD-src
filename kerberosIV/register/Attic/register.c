@@ -1,4 +1,4 @@
-/*	$Id: register.c,v 1.5 1997/06/29 10:32:19 provos Exp $	*/
+/*	$Id: register.c,v 1.6 1997/08/18 03:11:23 millert Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kbd.c,v 1.6 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: kbd.c,v 1.7 2002/06/11 03:25:43 miod Exp $	*/
 /*	$NetBSD: kbd.c,v 1.28 1996/12/23 09:10:22 veego Exp $	*/
 
 /*

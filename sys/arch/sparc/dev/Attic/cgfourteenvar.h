@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: cgfourteenvar.h,v 1.1 1997/08/08 08:24:50 downsj Exp $	*/
 /*	$NetBSD: cgfourteenvar.h,v 1.1 1996/09/30 22:41:03 abrown Exp $ */
 
 /*

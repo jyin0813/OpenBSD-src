@@ -1,4 +1,4 @@
-/*	$OpenBSD: ffs.S,v 1.1 2004/01/21 14:28:36 miod Exp $	*/
+/*	$OpenBSD: ffs.S,v 1.2 2004/01/22 20:39:06 deraadt Exp $	*/
 
 /*
  * Written by Miodrag Vallat, 2004 - Public Domain

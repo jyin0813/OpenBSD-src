@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/03/19 23:14:54 niklas Exp deraadt $
+#	$OpenBSD: Makefile,v 1.1 1996/02/21 02:45:40 jtk Exp $
 #	$NetBSD: Makefile,v 1.1 1996/02/21 02:45:40 jtk Exp $
 
 #.PATH: ${LIBC}/i386

@@ -8,7 +8,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: engine-romp-bsd.c,v 1.50 1994/08/08 03:42:44 proven Exp $";
+static const char rcsid[] = "$Id: engine-romp-bsd.c,v 1.1 1998/07/21 13:19:14 peter Exp $";
 #endif
 
 #include <pthread.h>

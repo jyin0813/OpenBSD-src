@@ -1,4 +1,4 @@
-/*	$OpenBSD: trap.h,v 1.2 1998/01/28 13:46:35 pefo Exp $ */
+/*	$OpenBSD: frame.h,v 1.2 1998/03/16 09:38:45 pefo Exp $ */
 
 /* Use Mips generic include file */
 

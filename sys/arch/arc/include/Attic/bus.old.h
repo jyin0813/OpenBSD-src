@@ -1,4 +1,4 @@
-/*	$OpenBSD: bus.old.h,v 1.7 1996/10/17 18:58:58 niklas Exp $	*/
+/*	$OpenBSD: bus.old.h,v 1.1 1996/11/12 20:29:56 niklas Exp $	*/
 
 /*
  * Copyright (c) 1996 Christopher G. Demetriou.  All rights reserved.

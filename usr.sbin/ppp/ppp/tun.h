@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$OpenBSD: tun.h,v 1.4 2000/02/27 01:38:29 brian Exp $
+ *	$OpenBSD: tun.h,v 1.5 2000/07/11 22:13:04 brian Exp $
  */
 
 struct tun_data {
@@ -36,4 +36,4 @@ struct tun_data {
 
 struct bundle;
 
-extern void tun_configure(struct bundle *, int);
+extern void tun_configure(struct bundle *);

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: memchr.S,v 1.1 1997/11/04 19:08:13 chuck Exp $	*/
 
 /* 
  * Written by Matthias Pfaller, 1996

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_resume_np.c,v 1.4 1999/11/25 07:01:42 d Exp $	*/
+/*	$OpenBSD: uthread_resume_np.c,v 1.5 2001/12/19 02:02:52 fgsch Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_attr_setschedparam.c,v 1.3 2001/08/09 12:00:59 fgsch Exp $	*/
+/*	$OpenBSD: uthread_attr_setschedparam.c,v 1.4 2002/01/19 23:49:32 fgsch Exp $	*/
 /*
  * Copyright (c) 1998 Daniel Eischen <eischen@vigrid.com>.
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_rwlock.c,v 1.3 1999/11/25 07:01:42 d Exp $	*/
+/*	$OpenBSD: uthread_rwlock.c,v 1.4 2002/05/07 05:17:15 pvalchev Exp $	*/
 /*-
  * Copyright (c) 1998 Alex Nash
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pms.c,v 1.6 1997/11/06 12:27:03 niklas Exp $	*/
+/*	$OpenBSD: pms.c,v 1.1 1998/09/27 03:55:58 rahnds Exp $	*/
 /*	$NetBSD: pms.c,v 1.7 1996/12/05 01:39:31 cgd Exp $	*/
 
 /*-

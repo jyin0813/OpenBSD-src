@@ -28,7 +28,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: aic7xxx.h,v 1.1 2002/02/16 05:12:39 smurph Exp $
+ * $Id: aic7xxx.h,v 1.2 2002/03/14 00:04:09 krw Exp $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aic7xxx.h,v 1.40 2001/07/18 21:39:47 gibbs Exp $
  */

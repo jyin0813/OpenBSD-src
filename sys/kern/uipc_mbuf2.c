@@ -1,3 +1,5 @@
+/*	$OpenBSD$	*/
+/*	$KAME: uipc_mbuf2.c,v 1.15 2000/02/22 14:01:37 itojun Exp $	*/
 /*	$NetBSD: uipc_mbuf.c,v 1.40 1999/04/01 00:23:25 thorpej Exp $	*/
 
 /*
@@ -67,12 +69,6 @@
 #define PULLDOWN_STAT
 /*#define PULLDOWN_DEBUG*/
 
-#ifdef PULLDOWN_STAT
-#if defined(__NetBSD__) || (defined(__FreeBSD__) && __FreeBSD__ >= 3)
-#include "opt_inet.h"
-#endif
-#endif
-
 #include <sys/param.h>
 #include <sys/systm.h>
 #include <sys/proc.h>
@@ -80,7 +76,7 @@
 #include <sys/mbuf.h>
 #if defined(PULLDOWN_STAT) && defined(INET6)
 #include <netinet/in.h>
-#include <netinet6/ip6.h>
+#include <netinet/ip6.h>
 #include <netinet6/ip6_var.h>
 #endif
 
@@ -103,6 +99,10 @@ m_pulldown(m, off, len, offp)
 	struct mbuf *n, *o;
 	int hlen, tlen, olen;
 	int sharedcluster;
+#if defined(PULLDOWN_STAT) && defined(INET6)
+	static struct mbuf *prev = NULL;
+	int prevlen = 0, prevmlen = 0;
+#endif
 
 	/* check invalid arguments. */
 	if (m == NULL)
@@ -114,6 +114,68 @@ m_pulldown(m, off, len, offp)
 
 #if defined(PULLDOWN_STAT) && defined(INET6)
 	ip6stat.ip6s_pulldown++;
+#endif
+
+#if defined(PULLDOWN_STAT) && defined(INET6)
+	/* statistics for m_pullup */
+	ip6stat.ip6s_pullup++;
+	if (off + len > MHLEN)
+		ip6stat.ip6s_pullup_fail++;
+	else {
+		int dlen, mlen;
+
+		dlen = (prev == m) ? prevlen : m->m_len;
+		mlen = (prev == m) ? prevmlen : m->m_len + M_TRAILINGSPACE(m);
+
+		if (dlen >= off + len)
+			ip6stat.ip6s_pullup--; /* call will not be made! */
+		else if ((m->m_flags & M_EXT) != 0) {
+			ip6stat.ip6s_pullup_alloc++;
+			ip6stat.ip6s_pullup_copy++;
+		} else {
+			if (mlen >= off + len)
+				ip6stat.ip6s_pullup_copy++;
+			else {
+				ip6stat.ip6s_pullup_alloc++;
+				ip6stat.ip6s_pullup_copy++;
+			}
+		}
+
+		prevlen = off + len;
+		prevmlen = MHLEN;
+	}
+
+	/* statistics for m_pullup2 */
+	ip6stat.ip6s_pullup2++;
+	if (off + len > MCLBYTES)
+		ip6stat.ip6s_pullup2_fail++;
+	else {
+		int dlen, mlen;
+
+		dlen = (prev == m) ? prevlen : m->m_len;
+		mlen = (prev == m) ? prevmlen : m->m_len + M_TRAILINGSPACE(m);
+		prevlen = off + len;
+		prevmlen = mlen;
+
+		if (dlen >= off + len)
+			ip6stat.ip6s_pullup2--; /* call will not be made! */
+		else if ((m->m_flags & M_EXT) != 0) {
+			ip6stat.ip6s_pullup2_alloc++;
+			ip6stat.ip6s_pullup2_copy++;
+			prevmlen = (off + len > MHLEN) ? MCLBYTES : MHLEN;
+		} else {
+			if (mlen >= off + len)
+				ip6stat.ip6s_pullup2_copy++;
+			else {
+				ip6stat.ip6s_pullup2_alloc++;
+				ip6stat.ip6s_pullup2_copy++;
+				prevmlen = (off + len > MHLEN) ? MCLBYTES
+							       : MHLEN;
+			}
+		}
+	}
+
+	prev = m;
 #endif
 
 #ifdef PULLDOWN_DEBUG
@@ -132,6 +194,9 @@ m_pulldown(m, off, len, offp)
 		off -= n->m_len;
 		n = n->m_next;
 	}
+	/* be sure to point non-empty mbuf */
+	while (n != NULL && n->m_len == 0)
+		n = n->m_next;
 	if (!n) {
 		m_freem(m);
 		return NULL;	/* mbuf chain too short */
@@ -195,17 +260,9 @@ m_pulldown(m, off, len, offp)
 	if ((n->m_flags & M_EXT) == 0)
 		sharedcluster = 0;
 	else {
-#ifdef __bsdi__
-		if (n->m_ext.ext_func)
-#else
 		if (n->m_ext.ext_free)
-#endif
 			sharedcluster = 1;
-#ifdef __NetBSD__
-		else if (MCLISREFERENCED(n))
-#else
 		else if (mclrefcnt[mtocl(n->m_ext.ext_buf)] > 1)
-#endif
 			sharedcluster = 1;
 		else
 			sharedcluster = 0;

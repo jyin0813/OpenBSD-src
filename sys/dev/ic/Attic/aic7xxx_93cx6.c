@@ -28,7 +28,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: //depot/src/aic7xxx/aic7xxx_93cx6.c#8 $
+ * $Id: aic7xxx_93cx6.c,v 1.1 2002/02/16 04:36:33 smurph Exp $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aic7xxx_93cx6.c,v 1.15 2001/07/18 21:39:47 gibbs Exp $
  */
@@ -67,7 +67,7 @@
  *
  */
 
-/* $OpenBSD: src/sys/dev/aic7xxx/aic7xxx_93cx6.c,v 1.15 2001/07/18 21:39:47 gibbs Exp $ */
+/* $OpenBSD: aic7xxx_93cx6.c,v 1.1 2002/02/16 04:36:33 smurph Exp $ */
 
 #ifdef __OpenBSD__
 #include <dev/ic/aic7xxx_openbsd.h>

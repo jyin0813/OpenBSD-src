@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 2001/08/22 15:29:54 ho Exp $
+#	$OpenBSD: Makefile,v 1.4 2003/06/03 14:34:03 ho Exp $
 
 #
 # Copyright (c) 2000 Håkan Olsson.  All rights reserved.

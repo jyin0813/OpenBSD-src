@@ -1,4 +1,5 @@
 /*
+ * $OpenBSD: src/sys/dev/ic/aic7xxx.h,v 1.1 2001/07/18 21:39:47 smurph Exp $
  * Core definitions and data structures shareable across OS platforms.
  *
  * Copyright (c) 1994-2001 Justin T. Gibbs.
@@ -28,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: aic7xxx.h,v 1.2 2002/03/14 00:04:09 krw Exp $
+ * $Id: //depot/src/aic7xxx/aic7xxx.h#29 $
  *
  * $FreeBSD: src/sys/dev/aic7xxx/aic7xxx.h,v 1.40 2001/07/18 21:39:47 gibbs Exp $
  */
@@ -1214,3 +1215,4 @@ cam_status	ahc_find_tmode_devs(struct ahc_softc *ahc,
 void			ahc_print_scb(struct scb *scb);
 void			ahc_dump_card_state(struct ahc_softc *ahc);
 #endif /* _AIC7XXX_H_ */
+

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rsh.c,v 1.4 2001/02/15 17:37:33 itojun Exp $	*/
+/*	$OpenBSD: rsh.c,v 1.5 2001/09/05 01:31:33 itojun Exp $	*/
 /*	$KAME: rsh.c,v 1.7 2001/09/05 01:10:30 itojun Exp $	*/
 
 /*

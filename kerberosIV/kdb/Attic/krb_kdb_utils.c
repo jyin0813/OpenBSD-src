@@ -1,4 +1,4 @@
-/*	$OpenBSD: krb_kdb_utils.c,v 1.4 1998/05/15 06:10:50 art Exp $	*/
+/*	$OpenBSD: krb_kdb_utils.c,v 1.5 1999/05/07 15:40:09 deraadt Exp $	*/
 /*	$KTH: krb_kdb_utils.c,v 1.23 1997/05/02 14:29:10 assar Exp $	*/
 
 /*

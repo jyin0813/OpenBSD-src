@@ -144,6 +144,6 @@ diff -rc pthreads-1_60_beta6.orig/pthreads/process.c pthreads-1_60_beta6/pthread
 + extern void *alloca();
 + 
   #ifndef lint
-  static const char rcsid[] = "$Id: process.c,v 1.53.4.1 1996/11/12 13:45:16 proven Exp $";
+  static const char rcsid[] = "$Id: chris_demetriou,v 1.1 1998/07/21 13:22:22 peter Exp $";
   #endif
 

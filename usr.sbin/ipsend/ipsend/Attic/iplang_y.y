@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD: iplang_y.y,v 1.2 2001/01/17 06:01:26 fgsch Exp $	*/
+/*	$OpenBSD: iplang_y.y,v 1.3 2001/01/30 14:58:23 kjell Exp $	*/
 
 /*
  * Copyright (C) 1997-1998 by Darren Reed.

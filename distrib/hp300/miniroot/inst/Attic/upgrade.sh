@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD$
+#	$OpenBSD: upgrade.sh,v 1.4 1996/06/29 05:54:10 tholo Exp $
 #	$NetBSD: upgrade.sh,v 1.3 1996/02/28 00:44:06 thorpej Exp $
 #
 # Copyright (c) 1996 The NetBSD Foundation, Inc.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: dlfcn.h,v 1.1 2002/04/08 04:51:48 fgsch Exp $	*/
+/*	$OpenBSD: dlfcn.h,v 1.2 2002/06/02 22:49:59 deraadt Exp $	*/
 /*	$NetBSD: dlfcn.h,v 1.2 1995/06/05 19:38:00 pk Exp $	*/
 
 /*

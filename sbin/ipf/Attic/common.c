@@ -1,4 +1,4 @@
-/*	$OpenBSD: common.c,v 1.1 2001/01/17 05:00:57 fgsch Exp $	*/
+/*	$OpenBSD: common.c,v 1.2 2001/01/30 04:26:01 kjell Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rdsetroot.c,v 1.1 1997/04/13 17:17:46 mickey Exp $	*/
+/*	$OpenBSD: rdsetroot.c,v 1.1 1997/05/14 20:59:47 pefo Exp $	*/
 /*	$NetBSD: rdsetroot.c,v 1.2 1995/10/13 16:38:39 gwr Exp $	*/
 
 /*

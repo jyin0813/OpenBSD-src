@@ -1,4 +1,4 @@
-static char *rcs_id = "$Id: fixup_fujitsu_grayscale.c,v 1.1 1996/01/14 01:30:39 ken Exp $";
+static char *rcs_id = "$Id: fixup_fujitsu_grayscale.c,v 1.1 1997/03/11 03:23:11 kstailey Exp $";
 /*
  * Copyright (c) 1995 Kenneth Stailey
  * All rights reserved.

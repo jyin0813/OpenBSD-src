@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: eba.c,v 1.1 1998/11/23 03:01:43 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

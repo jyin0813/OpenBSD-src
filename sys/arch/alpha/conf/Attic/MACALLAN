@@ -1,3 +1,4 @@
+#	$OpenBSD$
 #	$NetBSD: MACALLAN,v 1.7 1995/12/20 00:14:17 cgd Exp $
 #
 # Kernel for macallan.dssc.cs.cmu.edu.
@@ -36,7 +37,7 @@ options		COMPAT_10
 # Loadable Kernel Modules
 options		LKM
 
-config		netbsd	root on sd0 swap on sd0 and sd1
+config		bsd	root on sd0 swap on sd0 and sd1
 
 mainbus0 at	root
 cpu*	at	mainbus0

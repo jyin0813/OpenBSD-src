@@ -1,4 +1,4 @@
-/*	$OpenBSD: lpt.c,v 1.12 1996/06/22 23:13:36 pefo Exp $ */
+/*	$OpenBSD: lpt.c,v 1.1 1996/06/24 09:07:19 pefo Exp pefo $ */
 /*	$NetBSD: lpt.c,v 1.39 1996/05/12 23:53:06 mycroft Exp $	*/
 
 /*

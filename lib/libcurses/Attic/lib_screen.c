@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_screen.c,v 1.5 1998/07/23 21:19:19 millert Exp $	*/
+/*	$OpenBSD: lib_screen.c,v 1.6 1998/07/27 03:37:31 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

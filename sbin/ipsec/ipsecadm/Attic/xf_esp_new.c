@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_esp_new.c,v 1.3 1997/09/24 18:39:44 angelos Exp $ */
+/* $OpenBSD: xf_esp_new.c,v 1.4 1997/11/04 09:13:42 provos Exp $ */
 /*
  * The author of this code is John Ioannidis, ji@tla.org,
  * 	(except when noted otherwise).
@@ -59,13 +59,13 @@ int x2i __P((char *));
 
 int
 xf_esp_new(src, dst, spi, enc, auth, ivp, keyp, authp, 
-	   osrc, odst, oldpadding)
+	   osrc, odst, newpadding)
 struct in_addr src, dst;
 u_int32_t spi;
 int enc, auth;
 u_char *ivp, *keyp, *authp;
 struct in_addr osrc, odst;
-int oldpadding;
+int newpadding;
 {
 	int i, klen, alen, ivlen;
 
@@ -101,8 +101,8 @@ int oldpadding;
 	xd->edx_wnd = -1;	/* Manual keying -- no seq */
 	xd->edx_flags = auth ? ESP_NEW_FLAG_AUTH : 0;
 	
-	if (oldpadding)
-	  xd->edx_flags |= ESP_NEW_FLAG_OPADDING;
+	if (newpadding)
+	  xd->edx_flags |= ESP_NEW_FLAG_NPADDING;
 
 	for (i = 0; i < ivlen; i++)
 	     xd->edx_data[i] = x2i(ivp+2*i);

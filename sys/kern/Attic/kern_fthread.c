@@ -1,4 +1,4 @@
-/*	$OpenBSD: kern_fthread.c,v 1.2 2001/05/06 01:23:37 art Exp $	*/
+/*	$OpenBSD: kern_fthread.c,v 1.3 2001/06/27 04:49:42 art Exp $	*/
 /*	$NetBSD: kern_fthread.c,v 1.3 1998/02/07 16:23:35 chs Exp $	*/
 
 /* 

@@ -1,4 +1,4 @@
-#	$OpenBSD: install.md,v 1.34 2001/06/23 19:44:57 deraadt Exp $
+#	$OpenBSD: install.md,v 1.1 2001/09/18 14:27:32 jason Exp $
 #	$NetBSD: install.md,v 1.3.2.5 1996/08/26 15:45:28 gwr Exp $
 #
 #

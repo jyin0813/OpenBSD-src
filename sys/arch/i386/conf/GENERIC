@@ -1,4 +1,4 @@
-#	$NetBSD: GENERIC,v 1.23.2.1 1995/10/17 12:54:55 tls Exp $
+#	$NetBSD: GENERIC,v 1.28 1996/01/13 02:05:24 thorpej Exp $
 #
 #	GENERIC -- everything that's currently supported
 #
@@ -73,7 +73,7 @@ options		ISO,TPIP	# OSI
 options		EON		# OSI tunneling over IP
 options		CCITT,LLC,HDLC	# X.25
 
-config		bsd	swap generic
+config		netbsd	swap generic
 options		GENERIC
 
 isa0	at root
@@ -114,6 +114,8 @@ ahb0	at isa? port ? irq ?		# Adaptec 174[024] SCSI controllers
 scsibus* at ahb?
 ahc*	at pci? bus ? dev ?		# Adaptec 2940 SCSI controllers
 scsibus* at ahc?
+ahe0	at isa? port 0x1c00 irq ?	# Adaptec 284x SCSI controllers
+scsibus* at ahe?
 aic0	at isa? port 0x340 irq 12	# Adaptec 152[02] SCSI controllers
 scsibus* at aic?
 bt0	at isa? port 0x330 irq ? drq ?	# BusLogic [57]4X SCSI controllers
@@ -154,8 +156,9 @@ el0	at isa? port 0x300 irq 9		# 3C501 ethernet cards
 ep0	at isa? port ? irq ?			# 3C509 ethernet cards
 ie0	at isa? port 0x360 iomem 0xd0000 irq 7	# StarLAN, 3C507, and Etherexpress
 #le0	at isa? port 0x320 irq 10 drq 7		# IsoLan, NE2100, and DEPCA
-le*	at pci? bus ? dev ?
-de*	at pci? bus ? dev ?
+le*	at pci? bus ? dev ?			# PCnet-PCI based ethernet cards
+de*	at pci? bus ? dev ?			# DC21X4X-based ethernet cards
+ep*	at pci? bus ? dev ?			# 3C590 ethernet cards
 
 pss0	at isa? port 0x220 irq 7 drq 6  # Personal Sound System
 sp0	at pss0 port 0x530 irq 10 drq 0	# 	sound port driver
@@ -175,3 +178,4 @@ pseudo-device	tun	2		# network tunneling over tty
 pseudo-device	pty	64		# pseudo-terminals
 pseudo-device	tb	1		# tablet line discipline
 pseudo-device	vnd	4		# paging to files
+pseudo-device	ccd	4		# concatenated disk devices

@@ -1,4 +1,4 @@
-/*	$OpenBSD: loadfont.c,v 1.5 1999/05/24 15:37:44 aaron Exp $	*/
+/*	$OpenBSD: loadfont.c,v 1.6 2000/12/07 18:19:12 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis

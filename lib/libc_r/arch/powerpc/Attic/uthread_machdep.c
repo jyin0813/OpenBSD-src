@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_machdep.c,v 1.3 2000/10/05 04:56:44 drahn Exp $	*/
+/*	$OpenBSD: uthread_machdep.c,v 1.3 2000/10/05 04:59:34 rahnds Exp $	*/
 /* David Leonard, <d@csee.uq.edu.au>. Public domain */
 
 #include <pthread.h>

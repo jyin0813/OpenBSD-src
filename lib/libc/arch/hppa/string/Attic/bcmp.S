@@ -1,4 +1,4 @@
-/*	$OpenBSD: bcmp.S,v 1.2 2001/03/29 01:43:52 mickey Exp $	*/
+/*	$OpenBSD: bcmp.S,v 1.3 2001/06/04 23:14:02 mickey Exp $	*/
 
 /*
  * Copyright 1996 1995 by Open Software Foundation, Inc.   
@@ -52,7 +52,7 @@
 
 #ifdef SYSLIBC_SCCS
 	.text
-	.asciz "$OpenBSD: bcmp.S,v 1.2 2001/03/29 01:43:52 mickey Exp $"
+	.asciz "$OpenBSD: bcmp.S,v 1.3 2001/06/04 23:14:02 mickey Exp $"
 	.align	4
 #endif
 

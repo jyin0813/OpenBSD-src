@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: resolve.c,v 1.1 1998/08/12 23:45:13 art Exp $	*/
 /*	$KTH: resolve.c,v 1.16 1998/04/26 14:35:43 assar Exp $	*/
 
 /*

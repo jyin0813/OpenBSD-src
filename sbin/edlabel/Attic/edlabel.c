@@ -1,4 +1,4 @@
-/*	$OpenBSD: edlabel.c,v 1.5 2000/08/05 21:40:14 pjanzen Exp $	*/
+/*	$OpenBSD: edlabel.c,v 1.6 2001/06/04 14:59:48 mickey Exp $	*/
 /*	$NetBSD: edlabel.c,v 1.1.1.1 1995/10/08 22:39:09 gwr Exp $	*/
 
 /*

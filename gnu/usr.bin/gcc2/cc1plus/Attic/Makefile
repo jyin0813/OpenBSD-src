@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.5 1993/08/23 09:22:46 cgd Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:39:30 deraadt Exp niklas $
 
 PROG=		cc1plus
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fileio.pro,v 1.1.1.1 1996/09/07 21:40:29 downsj Exp $	*/
+/*	$OpenBSD: fileio.pro,v 1.2 1996/09/21 06:23:51 downsj Exp $	*/
 /* fileio.c */
 void filemess __PARMS((BUF *buf, char_u *name, char_u *s));
 int readfile __PARMS((char_u *fname, char_u *sfname, linenr_t from, int newfile, linenr_t lines_to_skip, linenr_t lines_to_read, int filtering));

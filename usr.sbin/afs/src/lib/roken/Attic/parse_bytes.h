@@ -31,7 +31,7 @@
  * SUCH DAMAGE. 
  */
 
-/* $Id: parse_bytes.h,v 1.2 2000/08/16 01:23:42 lha Exp $ */
+/* $Id: parse_bytes.h,v 1.1 2000/09/11 14:41:02 art Exp $ */
 
 #ifndef __PARSE_BYTES_H__
 #define __PARSE_BYTES_H__

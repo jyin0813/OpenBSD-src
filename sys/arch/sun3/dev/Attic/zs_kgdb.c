@@ -1,4 +1,4 @@
-/*	$OpenBSD: zs_kgdb.c,v 1.5 1997/01/16 04:04:01 kstailey Exp $	*/
+/*	$OpenBSD: zs_kgdb.c,v 1.6 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: zs_kgdb.c,v 1.9 1996/11/20 18:57:04 gwr Exp $	*/
 
 /*-

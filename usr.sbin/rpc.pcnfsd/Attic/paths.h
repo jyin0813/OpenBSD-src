@@ -1,4 +1,4 @@
-/*	$OpenBSD: paths.h,v 1.4 2002/02/17 19:42:39 millert Exp $	*/
+/*	$OpenBSD: paths.h,v 1.5 2003/02/15 12:19:27 deraadt Exp $	*/
 /*	$NetBSD: paths.h,v 1.1 1995/08/14 19:50:09 gwr Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.6 2001/05/11 14:09:57 hin Exp $
+# $OpenBSD: Makefile,v 1.7 2002/06/08 21:49:49 hin Exp $
 
 LIB	= roken
 

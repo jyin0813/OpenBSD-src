@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec_i386.S,v 1.1.2.2 1996/12/03 13:13:47 mickey Exp $	*/
+/*	$OpenBSD: exec_i386.S,v 1.2 1997/03/31 23:08:37 mickey Exp $	*/
 
 #include <machine/asm.h>
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_machdep.c,v 1.3 2004/02/25 04:10:53 deraadt Exp $	*/
 
 /*
  * Copyright (c) 2004 Theo de Raadt

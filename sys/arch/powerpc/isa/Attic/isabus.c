@@ -1,4 +1,4 @@
-/*	$OpenBSD: isabus.c,v 1.12 1999/06/15 02:40:05 rahnds Exp $	*/
+/*	$OpenBSD: isabus.c,v 1.13 1999/11/09 04:51:35 rahnds Exp $	*/
 
 /*-
  * Copyright (c) 1995 Per Fogelstrom

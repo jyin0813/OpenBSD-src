@@ -1,4 +1,4 @@
-/*	$OpenBSD: cloak.c,v 1.2 1996/09/05 21:26:50 deraadt Exp $	*/
+/*	$OpenBSD: cloak.c,v 1.3 2000/03/01 22:10:07 todd Exp $	*/
 /*
  * Copyright (c) 1995 Matthias Pfaller.
  * All rights reserved.

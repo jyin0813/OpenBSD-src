@@ -1,4 +1,4 @@
-/*	$OpenBSD: ledsvar.h,v 1.2 1997/01/16 04:04:26 kstailey Exp $	*/
+/*	$OpenBSD: ledsvar.h,v 1.3 2002/03/14 01:26:47 millert Exp $	*/
 
 extern volatile unsigned int led_n_patterns;
 extern volatile unsigned int led_countmax;

@@ -1,4 +1,4 @@
-/*	$OpenBSD: swap_pager.c,v 1.16 1999/05/22 21:22:34 weingart Exp $	*/
+/*	$OpenBSD: swap_pager.c,v 1.17 2001/02/28 20:32:40 csapuntz Exp $	*/
 /*	$NetBSD: swap_pager.c,v 1.27 1996/03/16 23:15:20 christos Exp $	*/
 
 /*

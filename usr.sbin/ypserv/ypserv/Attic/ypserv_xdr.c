@@ -13,8 +13,7 @@ xdr_ypstat(xdrs, objp)
 	XDR *xdrs;
 	ypstat *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_enum(xdrs, (enum_t *)objp)) {
 		return (FALSE);
@@ -27,8 +26,7 @@ xdr_ypxfrstat(xdrs, objp)
 	XDR *xdrs;
 	ypxfrstat *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_enum(xdrs, (enum_t *)objp)) {
 		return (FALSE);
@@ -41,8 +39,7 @@ xdr_domainname(xdrs, objp)
 	XDR *xdrs;
 	domainname *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_string(xdrs, objp, YPMAXDOMAIN)) {
 		return (FALSE);
@@ -55,8 +52,7 @@ xdr_mapname(xdrs, objp)
 	XDR *xdrs;
 	mapname *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_string(xdrs, objp, YPMAXMAP)) {
 		return (FALSE);
@@ -69,8 +65,7 @@ xdr_peername(xdrs, objp)
 	XDR *xdrs;
 	peername *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_string(xdrs, objp, YPMAXPEER)) {
 		return (FALSE);
@@ -83,8 +78,7 @@ xdr_keydat(xdrs, objp)
 	XDR *xdrs;
 	keydat *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_bytes(xdrs, (char **)&objp->keydat_val, (u_int *)&objp->keydat_len, YPMAXRECORD)) {
 		return (FALSE);
@@ -97,8 +91,7 @@ xdr_valdat(xdrs, objp)
 	XDR *xdrs;
 	valdat *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_bytes(xdrs, (char **)&objp->valdat_val, (u_int *)&objp->valdat_len, YPMAXRECORD)) {
 		return (FALSE);
@@ -111,8 +104,7 @@ xdr_ypmap_parms(xdrs, objp)
 	XDR *xdrs;
 	ypmap_parms *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_domainname(xdrs, &objp->domain)) {
 		return (FALSE);
@@ -134,8 +126,7 @@ xdr_ypreq_key(xdrs, objp)
 	XDR *xdrs;
 	ypreq_key *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_domainname(xdrs, &objp->domain)) {
 		return (FALSE);
@@ -154,8 +145,7 @@ xdr_ypreq_nokey(xdrs, objp)
 	XDR *xdrs;
 	ypreq_nokey *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_domainname(xdrs, &objp->domain)) {
 		return (FALSE);
@@ -171,8 +161,7 @@ xdr_ypreq_xfr(xdrs, objp)
 	XDR *xdrs;
 	ypreq_xfr *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypmap_parms(xdrs, &objp->map_parms)) {
 		return (FALSE);
@@ -194,8 +183,7 @@ xdr_ypresp_val(xdrs, objp)
 	XDR *xdrs;
 	ypresp_val *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypstat(xdrs, &objp->stat)) {
 		return (FALSE);
@@ -211,8 +199,7 @@ xdr_ypresp_key_val(xdrs, objp)
 	XDR *xdrs;
 	ypresp_key_val *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypstat(xdrs, &objp->stat)) {
 		return (FALSE);
@@ -231,8 +218,7 @@ xdr_ypresp_master(xdrs, objp)
 	XDR *xdrs;
 	ypresp_master *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypstat(xdrs, &objp->stat)) {
 		return (FALSE);
@@ -248,8 +234,7 @@ xdr_ypresp_order(xdrs, objp)
 	XDR *xdrs;
 	ypresp_order *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypstat(xdrs, &objp->stat)) {
 		return (FALSE);
@@ -265,8 +250,7 @@ xdr_ypresp_all(xdrs, objp)
 	XDR *xdrs;
 	ypresp_all *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_bool(xdrs, &objp->more)) {
 		return (FALSE);
@@ -290,8 +274,7 @@ xdr_ypresp_xfr(xdrs, objp)
 	XDR *xdrs;
 	ypresp_xfr *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_u_int(xdrs, &objp->transid)) {
 		return (FALSE);
@@ -307,8 +290,7 @@ xdr_ypmaplist(xdrs, objp)
 	XDR *xdrs;
 	ypmaplist *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_mapname(xdrs, &objp->map)) {
 		return (FALSE);
@@ -324,8 +306,7 @@ xdr_ypresp_maplist(xdrs, objp)
 	XDR *xdrs;
 	ypresp_maplist *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypstat(xdrs, &objp->stat)) {
 		return (FALSE);
@@ -341,8 +322,7 @@ xdr_yppush_status(xdrs, objp)
 	XDR *xdrs;
 	yppush_status *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_enum(xdrs, (enum_t *)objp)) {
 		return (FALSE);
@@ -355,8 +335,7 @@ xdr_yppushresp_xfr(xdrs, objp)
 	XDR *xdrs;
 	yppushresp_xfr *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_u_int(xdrs, &objp->transid)) {
 		return (FALSE);
@@ -372,8 +351,7 @@ xdr_ypbind_resptype(xdrs, objp)
 	XDR *xdrs;
 	ypbind_resptype *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_enum(xdrs, (enum_t *)objp)) {
 		return (FALSE);
@@ -386,8 +364,7 @@ xdr_ypbind_binding(xdrs, objp)
 	XDR *xdrs;
 	ypbind_binding *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_opaque(xdrs, objp->ypbind_binding_addr, 4)) {
 		return (FALSE);
@@ -403,8 +380,7 @@ xdr_ypbind_resp(xdrs, objp)
 	XDR *xdrs;
 	ypbind_resp *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_ypbind_resptype(xdrs, &objp->ypbind_status)) {
 		return (FALSE);
@@ -431,8 +407,7 @@ xdr_ypbind_setdom(xdrs, objp)
 	XDR *xdrs;
 	ypbind_setdom *objp;
 {
-
-	register long *buf;
+	int32_t *buf;
 
 	if (!xdr_domainname(xdrs, &objp->ypsetdom_domain)) {
 		return (FALSE);

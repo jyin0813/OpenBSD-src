@@ -1,4 +1,4 @@
-/*	$OpenBSD: syscall.h,v 1.1 2004/02/10 14:18:14 drahn Exp $	*/
+/*	$OpenBSD: syscall.h,v 1.2 2004/02/23 20:52:05 deraadt Exp $	*/
 
 /*
  * Copyright (c) 2001 Niklas Hallqvist

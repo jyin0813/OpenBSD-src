@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-/* $Id: exchange.h,v 1.1.1.1 1997/07/18 22:48:49 provos Exp $ */
+/* $Id: exchange.h,v 1.2 1997/07/24 23:47:12 provos Exp $ */
 /* 
  * exchange.h: 
  * exchange generation header file

@@ -1,4 +1,4 @@
-/*	$OpenBSD: atapi.h,v 1.5 1996/08/06 22:41:02 downsj Exp $	*/
+/*	$OpenBSD: atapi.h,v 1.6 1997/07/07 19:48:48 niklas Exp $	*/
 
 /*
  * Copyright (c) 1996 Manuel Bouyer.  All rights reserved.

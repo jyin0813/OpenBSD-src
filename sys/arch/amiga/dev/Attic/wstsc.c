@@ -1,4 +1,4 @@
-/*	$OpenBSD: wstsc.c,v 1.6 1997/01/18 12:26:36 niklas Exp $	*/
+/*	$OpenBSD: wstsc.c,v 1.7 2002/03/14 01:26:29 millert Exp $	*/
 /*	$NetBSD: wstsc.c,v 1.18 1996/12/23 09:10:31 veego Exp $	*/
 
 /*

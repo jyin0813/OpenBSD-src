@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: charset.pro,v 1.1 1996/09/07 21:40:28 downsj Exp $	*/
 /* charset.c */
 int init_chartab __PARMS((void));
 void trans_characters __PARMS((char_u *buf, int bufsize));

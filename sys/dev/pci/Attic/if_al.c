@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_al.c,v 1.4 1999/12/08 00:38:07 aaron Exp $ */
+/*	$OpenBSD: if_al.c,v 1.5 2000/02/15 02:28:14 jason Exp $ */
 /*
  * Copyright (c) 1997, 1998, 1999
  *	Bill Paul <wpaul@ee.columbia.edu>.  All rights reserved.

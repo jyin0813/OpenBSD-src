@@ -1,4 +1,4 @@
-/* $OpenBSD: areahand.S,v 1.1 1996/01/31 23:18:01 mark Exp $ */
+/* $OpenBSD: areahand.S,v 1.2 2000/03/03 00:54:47 todd Exp $ */
 /* $NetBSD: areahand.S,v 1.1 1996/01/31 23:18:01 mark Exp $ */
 
 /*

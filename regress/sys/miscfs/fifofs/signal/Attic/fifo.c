@@ -1,4 +1,4 @@
-/*	$OpenBSD: fifo.c,v 1.1 2002/03/10 23:37:47 fgsch Exp $	*/
+/*	$OpenBSD: fifo.c,v 1.2 2002/03/13 15:00:37 fgsch Exp $	*/
 
 #include <sys/types.h>
 #include <sys/time.h>

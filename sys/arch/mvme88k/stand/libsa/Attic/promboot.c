@@ -1,4 +1,4 @@
-/*	$Id: promboot.c,v 1.1 1996/02/03 02:41:19 build Exp build $ */
+/*	$Id: promboot.c,v 1.1 1997/03/03 19:30:36 rahnds Exp $ */
 
 /*
  * Copyright (c) 1995 Theo de Raadt

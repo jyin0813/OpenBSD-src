@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: eefile.c,v 1.1 1999/04/30 01:59:16 art Exp $	*/
 /*
  * Copyright (c) 1995, 1996, 1997, 1999 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).

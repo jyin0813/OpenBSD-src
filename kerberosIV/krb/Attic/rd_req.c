@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rd_req.c,v 1.5 1997/12/09 07:57:34 art Exp $	*/
 /* $KTH: rd_req.c,v 1.24 1997/05/11 11:05:28 assar Exp $ */
 
 /*

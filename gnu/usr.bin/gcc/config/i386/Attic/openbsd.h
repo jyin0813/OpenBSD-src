@@ -36,7 +36,7 @@
 #undef WCHAR_TYPE_SIZE
 #define WCHAR_TYPE_SIZE 32
 
-/*	$OpenBSD: openbsd.h,v 1.6 1999/01/17 17:41:13 espie Exp $	*/
+/*	$OpenBSD: openbsd.h,v 1.7 1999/04/01 21:24:41 espie Exp $	*/
 
 /* There are conflicting reports about whether this system uses
    a different assembler syntax.  wilson@cygnus.com says # is right.  */

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: smtpd_check_rules.example,v 1.2 2001/01/28 19:34:34 niklas Exp $
 
 #
 # example smtpd_check_rules file.  If you compiled smtpd with

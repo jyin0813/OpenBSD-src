@@ -1,4 +1,4 @@
-;;; $OpenBSD: bootcode.asm,v 1.1 1996/06/10 06:37:12 deraadt Exp $
+;;; $OpenBSD: bootcode.asm,v 1.2 1996/06/23 14:31:48 deraadt Exp $
 ;;; Hello emacs, this looks like -*- asm -*- code, doesn't it?
 ;;;
 ;;; This forms a simple dummy boot program for use with a tool to

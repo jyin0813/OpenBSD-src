@@ -17,7 +17,7 @@
  * IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  *
- * $Id: vars.c,v 1.6 1998/01/20 22:46:32 brian Exp $
+ * $Id: vars.c,v 1.7 1998/01/21 02:13:43 brian Exp $
  *
  */
 #include <sys/param.h>
@@ -39,7 +39,7 @@
 #include "auth.h"
 
 char VarVersion[] = "PPP Version 1.65";
-char VarLocalVersion[] = "$Date: 1998/01/20 22:46:32 $";
+char VarLocalVersion[] = "$Date: 1998/01/21 02:13:43 $";
 int Utmp = 0;
 int ipKeepAlive = 0;
 int reconnectState = RECON_UNKNOWN;

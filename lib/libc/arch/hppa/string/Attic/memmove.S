@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: memmove.S,v 1.1 1998/12/17 16:56:47 mickey Exp $	*/
 
 /*
  *  (c) Copyright 1988 HEWLETT-PACKARD COMPANY

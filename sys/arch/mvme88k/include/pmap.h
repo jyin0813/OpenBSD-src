@@ -1,14 +1,19 @@
 /*
- * HISTORY
+ * Mach Operating System
+ * Copyright (c) 1991 Carnegie Mellon University
+ * Copyright (c) 1991 OMRON Corporation
+ * All Rights Reserved.
+ *
+ * Permission to use, copy, modify and distribute this software and its
+ * documentation is hereby granted, provided that both the copyright
+ * notice and this permission notice appear in all copies of the
+ * software, derivative works or modified versions, and any portions
+ * thereof, and that both notices appear in supporting documentation.
+ *
  */
 #ifndef _MACHINE_PMAP_H_
 #define _MACHINE_PMAP_H_
 #define OMRON_PMAP
-
-/* use builtin memcpy in gcc 2.0 */
-#if (__GNUC__ > 1)
-#define bcopy(a,b,c) memcpy(b,a,c)
-#endif
 
 #include <machine/psl.h>		/* get standard goodies		*/
 #include <vm/vm_param.h>
@@ -87,19 +92,7 @@ void _pmap_activate(pmap_t pmap, pcb_t, int my_cpu);
 void _pmap_deactivate(pmap_t pmap, pcb_t, int my_cpu);
 void pmap_activate(pmap_t my_pmap, pcb_t);
 void pmap_deactivate(pmap_t pmap, pcb_t);
-void pmap_protect(pmap_t pmap, vm_offset_t s, vm_offset_t e, vm_prot_t prot);
 int pmap_check_transaction(pmap_t pmap, vm_offset_t va, vm_prot_t type);
-void pmap_page_protect(vm_offset_t phys, vm_prot_t prot);
-
-vm_offset_t pmap_map(
-      vm_offset_t virt,
-      vm_offset_t start,
-      vm_offset_t end,
-      vm_prot_t prot
-  #ifdef OMRON_PMAP
-      , unsigned cmode
-  #endif
-      );
 
 vm_offset_t pmap_map_batc(
       vm_offset_t virt,
@@ -107,14 +100,6 @@ vm_offset_t pmap_map_batc(
       vm_offset_t end,
       vm_prot_t prot,
       unsigned cmode);
-
-void pmap_enter(
-      pmap_t pmap,
-      vm_offset_t va,
-      vm_offset_t pa,
-      vm_prot_t prot,
-      boolean_t wired);
-
 
 #ifdef JUNK
 int pmap_attribute(
@@ -132,49 +117,15 @@ void pmap_bootstrap(
     vm_offset_t *virt_start, /* OUT */
     vm_offset_t *virt_end); /* OUT */
 
-#ifdef MACH_KERNEL
- void pmap_init();
-#else
- void pmap_init(vm_offset_t phys_start, vm_offset_t phys_end);
-#endif
-
-void pmap_copy(
-    pmap_t dst_pmap,
-    pmap_t src_pmap,
-    vm_offset_t dst_addr,
-    vm_size_t len,
-    vm_offset_t src_addr);
-
-void pmap_pageable(
-    pmap_t pmap,
-    vm_offset_t start,
-    vm_offset_t end,
-    boolean_t pageable);
-
 pt_entry_t *pmap_pte(pmap_t map, vm_offset_t virt);
 void pmap_cache_ctrl(pmap_t pmap, vm_offset_t s, vm_offset_t e, unsigned mode);
 void pmap_zero_page(vm_offset_t phys);
-pmap_t pmap_create(vm_size_t size);
-void pmap_pinit(pmap_t p);
-void pmap_release(pmap_t p);
-void pmap_destroy(pmap_t p);
-void pmap_reference(pmap_t p);
-void pmap_remove(pmap_t map, vm_offset_t s, vm_offset_t e);
 void pmap_remove_all(vm_offset_t phys);
-void pmap_change_wiring(pmap_t map, vm_offset_t v, boolean_t wired);
-vm_offset_t pmap_extract(pmap_t pmap, vm_offset_t va);
 vm_offset_t pmap_extract_unlocked(pmap_t pmap, vm_offset_t va);
-void pmap_update(void);
-void pmap_collect(pmap_t pmap);
 pmap_t pmap_kernel(void);
-void pmap_copy_page(vm_offset_t src, vm_offset_t dst);
 void copy_to_phys(vm_offset_t srcva, vm_offset_t dstpa, int bytecount);
 void copy_from_phys(vm_offset_t srcpa, vm_offset_t dstva, int bytecount);
 void pmap_redzone(pmap_t pmap, vm_offset_t va);
-void pmap_clear_modify(vm_offset_t phys);
-boolean_t pmap_is_modified(vm_offset_t phys);
-void pmap_clear_reference(vm_offset_t phys);
-boolean_t pmap_is_referenced(vm_offset_t phys);
 boolean_t pmap_verify_free(vm_offset_t phys);
 boolean_t pmap_valid_page(vm_offset_t p);
 void icache_flush(vm_offset_t pa);
@@ -182,9 +133,6 @@ void pmap_dcache_flush(pmap_t pmap, vm_offset_t va);
 void pmap_cache_flush(pmap_t pmap, vm_offset_t virt, int bytes, int mode);
 void pmap_print (pmap_t pmap);
 void pmap_print_trace (pmap_t pmap, vm_offset_t va, boolean_t long_format);
-void pmap_virtual_space(vm_offset_t *startp, vm_offset_t *endp);
-unsigned pmap_free_pages(void);
-boolean_t pmap_next_page(vm_offset_t *addrp);
 
 #if 0
 #ifdef OMRON_PMAP

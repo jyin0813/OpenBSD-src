@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: snake.h,v 1.1 1999/03/13 02:08:10 pjanzen Exp $	*/
 
 /*
  * Copyright (c) 1980, 1993

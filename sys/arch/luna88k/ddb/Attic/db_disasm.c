@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_disasm.c,v 1.13 2004/01/07 17:52:30 miod Exp $	*/
+/*	$OpenBSD: db_disasm.c,v 1.1 2004/04/21 15:23:49 aoyama Exp $	*/
 /*
  * Mach Operating System
  * Copyright (c) 1993-1991 Carnegie Mellon University

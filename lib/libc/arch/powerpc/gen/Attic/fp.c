@@ -1,5 +1,5 @@
 #if defined(LIBC_SCCS) && !defined(lint)
-static char rcsid[] = "$OpenBSD:$";
+static char rcsid[] = "$OpenBSD: fp.c,v 1.1 1997/01/02 02:28:58 rahnds Exp $";
 #endif /* LIBC_SCCS and not lint */
  
 #include <ieeefp.h>

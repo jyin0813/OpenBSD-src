@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_wait4.c,v 1.6 2001/08/21 19:24:53 fgsch Exp $	*/
+/*	$OpenBSD: uthread_wait4.c,v 1.7 2001/11/09 00:20:26 marc Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

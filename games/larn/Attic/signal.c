@@ -1,10 +1,10 @@
-/*	$OpenBSD: signal.c,v 1.5 2002/02/16 21:27:10 millert Exp $	*/
+/*	$OpenBSD: signal.c,v 1.6 2002/05/06 19:48:47 millert Exp $	*/
 /*	$NetBSD: signal.c,v 1.6 1997/10/18 20:03:50 christos Exp $	*/
 
 /* "Larn is copyrighted 1986 by Noah Morgan.\n" */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: signal.c,v 1.5 2002/02/16 21:27:10 millert Exp $";
+static char rcsid[] = "$OpenBSD: signal.c,v 1.6 2002/05/06 19:48:47 millert Exp $";
 #endif	/* not lint */
 
 #include <stdio.h>

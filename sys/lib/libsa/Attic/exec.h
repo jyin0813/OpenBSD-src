@@ -1,4 +1,4 @@
-/*	$OpenBSD: exec.h,v 1.4 2000/05/30 21:59:30 mickey Exp $	*/
+/*	$OpenBSD: exec.h,v 1.5 2002/03/14 01:27:07 millert Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

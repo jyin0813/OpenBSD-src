@@ -1,4 +1,4 @@
-/*	$OpenBSD: link.h,v 1.2 2004/08/10 20:28:13 deraadt Exp $ */
+/*	$OpenBSD: link.h,v 1.3 2004/08/10 21:10:56 pefo Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

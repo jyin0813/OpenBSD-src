@@ -1,4 +1,4 @@
-/*	$OpenBSD: dnsquery.c,v 1.6 2001/10/24 13:06:36 mpech Exp $	*/
+/*	$OpenBSD: dnsquery.c,v 1.7 2002/06/01 20:31:41 deraadt Exp $	*/
 
 #include <stdio.h>
 #include <sys/types.h>

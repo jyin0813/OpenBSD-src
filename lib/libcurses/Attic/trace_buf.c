@@ -1,4 +1,4 @@
-/*	$OpenBSD: trace_buf.c,v 1.4 1998/08/15 18:44:46 millert Exp $	*/
+/*	$OpenBSD: trace_buf.c,v 1.5 1998/09/13 19:16:31 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

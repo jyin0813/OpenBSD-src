@@ -3,7 +3,7 @@
  *
  * Description : Convert an IRIX-5.2 system to a more or less POSIX system.
  *
- * $Id: posix-irix-5.2.h,v 1.1 1995/08/30 22:19:20 proven Exp $
+ * $Id: posix-irix-5.2.h,v 1.1 1998/07/21 13:19:15 peter Exp $
  *
  *  1.00 95/06/01 proven
  *      -Started coding this file.

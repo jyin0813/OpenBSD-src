@@ -32,7 +32,7 @@ Thu Sep  9 09:06:29 CDT 1993 Dale Rahn (drahn@pacific)
 #include <va-clipper.h>
 #else
 #ifdef __m88k__
-#include <va-m88k.h>
+#include <machine/va-m88k.h>
 #else
 #if defined(__hppa__) || defined(hp800)
 #include <va-pa.h>
@@ -166,11 +166,13 @@ typedef __gnuc_va_list va_list;
 
 #endif /* not __svr4__ */
 
+/* took this one out Nivas */
 /* The next BSD release (if there is one) wants this symbol to be
    undefined instead of _VA_LIST_.  */
-#ifdef _BSD_VA_LIST
-#undef _BSD_VA_LIST
-#endif
+#ifdef _BSD_VA_LIST_
+#undef _BSD_VA_LIST_
+#define _BSD_VA_LIST_	__gnuc_va_list
+#endif /* _BSD_VA_LIST_ */
 #if defined(__cplusplus) && !defined(__GNUG__)
 
 /* This is added to work with AT&T C++. */

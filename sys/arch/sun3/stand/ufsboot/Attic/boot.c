@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: boot.c,v 1.3 2001/07/04 08:33:58 niklas Exp $	*/
 
 
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ecoff.h,v 1.3 1996/10/02 21:47:53 pefo Exp $	*/
+/*	$OpenBSD: ecoff.h,v 1.1 1997/02/06 16:02:42 pefo Exp $	*/
 /*	$NetBSD: ecoff.h,v 1.4 1995/06/16 02:07:33 mellon Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcnfsd.x,v 1.2 2001/08/19 19:16:12 ericj Exp $	*/
+/*	$OpenBSD: pcnfsd.x,v 1.3 2003/02/15 12:19:27 deraadt Exp $	*/
 /*	$NetBSD: pcnfsd.x,v 1.2 1995/07/25 22:20:33 gwr Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: parse_name.c,v 1.2 1997/12/09 07:57:33 art Exp $	*/
 /* $KTH: parse_name.c,v 1.4 1997/04/01 08:18:39 joda Exp $ */
 
 /*

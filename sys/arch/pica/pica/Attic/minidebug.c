@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)kadb.c	8.1 (Berkeley) 6/10/93
- *      $Id: minidebug.c,v 1.2 1996/05/01 18:16:13 pefo Exp $
+ *      $Id: minidebug.c,v 1.3 1996/06/06 23:07:41 deraadt Exp pefo $
  */
 
 /*

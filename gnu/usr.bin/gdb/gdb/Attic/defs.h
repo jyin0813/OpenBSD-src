@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: defs.h,v 1.3 1995/01/12 10:20:27 pk Exp $
+	$Id: defs.h,v 1.1 1995/10/18 08:39:59 deraadt Exp $
 */
 
 #if !defined (DEFS_H)

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kdc_reply.c,v 1.2 1997/12/09 07:57:22 art Exp $	*/
+/*	$OpenBSD: kdc_reply.c,v 1.3 1998/05/18 00:53:46 art Exp $	*/
 /*	$KTH: kdc_reply.c,v 1.10 1998/03/19 15:45:28 joda Exp $		*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: sendauth.c,v 1.6 1997/12/22 15:02:14 art Exp $	*/
+/*	$OpenBSD: sendauth.c,v 1.7 1998/02/25 15:51:40 art Exp $	*/
 /* $KTH: sendauth.c,v 1.15 1997/04/18 14:11:36 joda Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_mxreg.h,v 1.2 1999/03/03 22:51:48 jason Exp $	*/
+/*	$OpenBSD: if_mxreg.h,v 1.3 1999/06/28 20:51:11 jason Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998

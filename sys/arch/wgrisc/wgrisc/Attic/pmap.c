@@ -1,4 +1,4 @@
-/*	$OpenBSD: pmap.c,v 1.1.1.1 1997/02/06 16:02:46 pefo Exp $	*/
+/*	$OpenBSD: pmap.c,v 1.2 1998/03/01 00:37:51 niklas Exp $	*/
 /* 
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -36,7 +36,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)pmap.c	8.4 (Berkeley) 1/26/94
- *      $Id: pmap.c,v 1.1.1.1 1997/02/06 16:02:46 pefo Exp $
+ *      $Id: pmap.c,v 1.2 1998/03/01 00:37:51 niklas Exp $
  */
 
 /*

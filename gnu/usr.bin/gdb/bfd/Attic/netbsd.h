@@ -1,4 +1,4 @@
-/*	$Id: netbsd.h,v 1.1 1994/01/28 12:38:02 pk Exp $ */
+/*	$Id: netbsd.h,v 1.1 1995/10/18 08:39:53 deraadt Exp $ */
 
 /* ZMAGIC files never have the header in the text.  */
 #define	N_HEADER_IN_TEXT(x)	0

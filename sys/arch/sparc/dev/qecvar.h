@@ -1,4 +1,4 @@
-/*	$OpenBSD: qecvar.h,v 1.3 1998/07/04 07:57:01 deraadt Exp $	*/
+/*	$OpenBSD: qecvar.h,v 1.4 1998/08/26 00:57:07 jason Exp $	*/
 
 /*
  * Copyright (c) 1998 Theo de Raadt and Jason L. Wright.
@@ -36,6 +36,8 @@ struct qec_softc {
 	caddr_t	sc_buffer;		/* VA of the buffer we provide */
 	int	sc_bufsiz;		/* Size of buffer */
 	int	sc_nrange;		/* number of ranges */
+	int	sc_pri;
+	int	sc_nchannels;		/* number of channels on board */
 	struct	rom_range *sc_range;	/* array of ranges */
 };
 

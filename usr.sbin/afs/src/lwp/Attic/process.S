@@ -1,5 +1,5 @@
-/* $Header: /usr/local/cvsroot/arla/lwp/process.S,v 1.18 1999/01/13 14:38:48 rb Exp $ */
-/* $Source: /usr/local/cvsroot/arla/lwp/process.S,v $ */
+/* $Header: /cvs/src/usr.sbin/afs/src/lwp/process.S,v 1.4 1999/04/30 01:59:14 art Exp $ */
+/* $Source: /cvs/src/usr.sbin/afs/src/lwp/process.S,v $ */
 
 /*
 ****************************************************************************

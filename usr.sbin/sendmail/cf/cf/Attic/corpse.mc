@@ -31,7 +31,7 @@ divert(-1)
 #
 
 include(`../m4/cf.m4')                                                  
-VERSIONID(`$OpenBSD: corpse.mc,v 1.1 1997/12/16 04:20:37 mickey Exp $')dnl
+VERSIONID(`$OpenBSD: corpse.mc,v 1.2 1998/08/15 18:17:11 millert Exp $')dnl
 
 OSTYPE(openbsd)dnl
 

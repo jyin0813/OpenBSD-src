@@ -1,4 +1,4 @@
-/*	$OpenBSD: strdup.c,v 1.5 2002/04/09 19:59:47 drahn Exp $	*/
+/*	$OpenBSD: strdup.c,v 1.6 2002/05/24 03:44:37 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1998 Per Fogelstrom, Opsycon AB

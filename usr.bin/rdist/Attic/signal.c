@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: signal.c,v 1.4 1998/06/26 21:21:21 millert Exp $	*/
 
 /*
  * Copyright (c) 1993 Regents of the University of California.
@@ -39,7 +39,7 @@ static char RCSid[] =
 "$From: signal.c,v 6.1 1993/07/15 22:47:30 mcooper Exp mcooper $";
 #else
 static char RCSid[] = 
-"$OpenBSD$";
+"$OpenBSD: signal.c,v 1.4 1998/06/26 21:21:21 millert Exp $";
 #endif
 
 static char sccsid[] = "@(#)signal.c";

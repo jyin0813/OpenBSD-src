@@ -1,4 +1,4 @@
-/*	$OpenBSD: size.c,v 1.19 2003/06/10 22:20:51 deraadt Exp $	*/
+/*	$OpenBSD: size.c,v 1.20 2003/09/30 19:00:14 mickey Exp $	*/
 /*	$NetBSD: size.c,v 1.7 1996/01/14 23:07:12 pk Exp $	*/
 
 /*
@@ -40,7 +40,7 @@ static const char copyright[] =
 #if 0
 static char sccsid[] = "@(#)size.c	8.2 (Berkeley) 12/9/93";
 #endif
-static const char rcsid[] = "$OpenBSD: size.c,v 1.19 2003/06/10 22:20:51 deraadt Exp $";
+static const char rcsid[] = "$OpenBSD: size.c,v 1.20 2003/09/30 19:00:14 mickey Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

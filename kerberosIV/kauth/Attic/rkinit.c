@@ -1,4 +1,4 @@
-/*	$OpenBSD: rkinit.c,v 1.1 1997/12/18 22:28:05 art Exp $	*/
+/*	$OpenBSD: rkinit.c,v 1.2 1998/08/16 02:42:10 art Exp $	*/
 /* $KTH: rkinit.c,v 1.19 1997/04/01 08:17:33 joda Exp $ */
 
 /*

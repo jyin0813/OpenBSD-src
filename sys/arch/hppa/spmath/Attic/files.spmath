@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: files.spmath,v 1.1 1998/07/02 19:05:26 mickey Exp $
 
 file	arch/hppa/spmath/dfadd.c	fpemul
 file	arch/hppa/spmath/dfcmp.c	fpemul

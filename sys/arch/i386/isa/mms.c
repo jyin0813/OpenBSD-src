@@ -1,4 +1,4 @@
-/*	$OpenBSD: mms.c,v 1.11 1999/11/22 07:26:04 matthieu Exp $	*/
+/*	$OpenBSD: mms.c,v 1.12 2000/05/16 18:12:14 mickey Exp $	*/
 /*	$NetBSD: mms.c,v 1.24 1996/05/12 23:12:18 mycroft Exp $	*/
 
 /*-

@@ -1,5 +1,5 @@
 # Makefile for uucico
-# $Id: Makefile,v 1.5 1995/08/24 05:22:49 jtc Exp $
+# $Id: Makefile,v 1.1 1995/10/18 08:38:40 deraadt Exp $
 
 BINDIR=		$(sbindir)
 BINOWN=		$(owner)

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mksyntax.c,v 1.3 1996/09/15 22:58:08 millert Exp $	*/
+/*	$OpenBSD: mksyntax.c,v 1.4 1996/10/20 00:54:55 millert Exp $	*/
 /*	$NetBSD: mksyntax.c,v 1.11 1995/05/11 21:29:37 christos Exp $	*/
 
 /*-
@@ -47,7 +47,7 @@ static char copyright[] =
 #if 0
 static char sccsid[] = "@(#)mksyntax.c	8.2 (Berkeley) 5/4/95";
 #else
-static char rcsid[] = "$OpenBSD: mksyntax.c,v 1.3 1996/09/15 22:58:08 millert Exp $";
+static char rcsid[] = "$OpenBSD: mksyntax.c,v 1.4 1996/10/20 00:54:55 millert Exp $";
 #endif
 #endif /* not lint */
 

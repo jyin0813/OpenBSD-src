@@ -1,4 +1,4 @@
-/*	$OpenBSD: clist.h,v 1.3 2001/07/05 10:12:27 art Exp $	*/
+/*	$OpenBSD: clist.h,v 1.4 2003/06/02 23:28:20 millert Exp $	*/
 /*	$NetBSD: clist.h,v 1.7 1995/03/26 20:23:57 jtc Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: libalpha.h,v 1.1 1995/12/20 12:56:44 cgd Exp $	*/
+/*	$OpenBSD: libalpha.h,v 1.3 1996/07/30 06:46:50 niklas Exp niklas $	*/
 /*	$NetBSD: libalpha.h,v 1.1 1995/12/20 12:56:44 cgd Exp $	*/
 
 /*

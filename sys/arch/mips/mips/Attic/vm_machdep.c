@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_machdep.c,v 1.13 2001/05/06 00:45:52 art Exp $	*/
+/*	$OpenBSD: vm_machdep.c,v 1.14 2001/06/08 08:09:04 art Exp $	*/
 
 /*
  * Copyright (c) 1988 University of Utah.

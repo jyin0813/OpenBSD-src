@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: message.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* message.c */
 int msg __PARMS((char_u *s));
 int emsg __PARMS((char_u *s));

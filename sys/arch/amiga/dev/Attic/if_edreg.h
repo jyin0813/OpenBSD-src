@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_edreg.h,v 1.2 1997/01/16 09:24:41 niklas Exp $	*/
+/*	$OpenBSD: if_edreg.h,v 1.3 2002/06/03 20:01:36 deraadt Exp $	*/
 /*	$NetBSD: if_edreg.h,v 1.4 1995/05/08 02:40:54 chopps Exp $	*/
 
 /*

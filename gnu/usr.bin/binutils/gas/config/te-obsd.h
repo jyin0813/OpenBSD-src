@@ -1,6 +1,5 @@
 /* te-obsd.h -- OpenBSD target environment declarations.
-
-   Copyright (C) 1987, 1990, 1991, 1992 Free Software Foundation, Inc.
+   Copyright (C) 1996 Free Software Foundation, Inc.
    
    This file is part of GAS, the GNU Assembler.
    
@@ -19,4 +18,8 @@
    the Free Software Foundation, 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */
 
 #define TE_OpenBSD	1
+
+/* We want [0-9][bf] style local temporary labels.  */
+#define LOCAL_LABELS_FB	1
+
 #include "obj-format.h"

@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  * from: Header: isnan.c,v 1.1 91/07/08 19:03:34 torek Exp
- * $Id: isnan.c,v 1.1 1995/10/18 21:25:21 drahn Exp $
+ * $Id: isnan.c,v 1.1 1997/03/25 17:07:03 rahnds Exp $
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)

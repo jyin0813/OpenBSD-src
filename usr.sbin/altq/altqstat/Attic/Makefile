@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 2001/06/27 18:23:19 kjc Exp $
 #	$NetBSD: Makefile,v 1.2 2000/12/16 18:57:35 thorpej Exp $
 
 BINDIR=/usr/bin

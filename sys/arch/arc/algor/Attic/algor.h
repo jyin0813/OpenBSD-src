@@ -1,4 +1,4 @@
-/*	$OpenBSD: algor.h,v 1.3 1997/04/19 17:19:36 pefo Exp $ */
+/*	$OpenBSD: algor.h,v 1.4 1998/03/16 09:38:23 pefo Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

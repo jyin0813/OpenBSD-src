@@ -36,7 +36,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)pwd.h	8.2 (Berkeley) 1/21/94
- *	$Id: pwd.h,v 1.1 1995/02/12 04:31:33 snl Exp $
+ *	$Id: pwd.h,v 1.1 1998/07/21 13:19:08 peter Exp $
  */
 
 #ifndef _PWD_H_

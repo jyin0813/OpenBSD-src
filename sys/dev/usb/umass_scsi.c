@@ -1,31 +1,5 @@
-/*	$OpenBSD: umass_scsi.c,v 1.1 2002/05/07 18:08:04 nate Exp $	*/
-/*
- * Copyright (c) 2001 Nathan L. Binkert
- * All rights reserved.
- *
- * Permission to redistribute, use, copy, and modify this software
- * without fee is hereby granted, provided that the following
- * conditions are met:
- *
- * 1. This entire notice is included in all source code copies of any
- *    software which is or includes a copy or modification of this
- *    software.
- * 2. The name of the author may not be used to endorse or promote
- *    products derived from this software without specific prior
- *    written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
- * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
- * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
- * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- * GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
- * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */
+/*	$OpenBSD$ */
+/*	$NetBSD: umass_scsipi.c,v 1.9 2003/02/16 23:14:08 augustss Exp $	*/
 /*
  * Copyright (c) 2001 The NetBSD Foundation, Inc.
  * All rights reserved.
@@ -106,8 +80,6 @@ struct umass_scsi_softc {
 
 int umass_scsi_cmd(struct scsi_xfer *);
 void umass_scsi_minphys(struct buf *);
-int umass_scsi_ioctl(struct scsi_link *, u_long cmd, caddr_t addrp, int flag,
-		     struct proc *p);
 
 void umass_scsi_cb(struct umass_softc *sc, void *priv, int residue,
 		   int status);
@@ -117,6 +89,10 @@ struct umass_scsi_softc *umass_scsi_setup(struct umass_softc *);
 
 struct scsi_device umass_scsi_dev = { NULL, NULL, NULL, NULL, };
 
+#if NATAPISCSI > 0
+struct scsi_device umass_atapiscsi_dev = { NULL, NULL, NULL, NULL, };
+#endif
+
 int
 umass_scsi_attach(struct umass_softc *sc)
 {
@@ -125,17 +101,18 @@ umass_scsi_attach(struct umass_softc *sc)
 	scbus = umass_scsi_setup(sc);
 	scbus->sc_link.adapter_target = UMASS_SCSIID_HOST;
 	scbus->sc_link.luns = sc->maxlun + 1;
-
-	scbus->sc_adapter.scsi_cmd = umass_scsi_cmd;
-	scbus->sc_adapter.scsi_minphys = umass_scsi_minphys;
-	scbus->sc_adapter.ioctl = umass_scsi_ioctl;
+	scbus->sc_link.flags &= ~SDEV_ATAPI;
+	scbus->sc_link.device = &umass_scsi_dev;
 
 	DPRINTF(UDMASS_USB, ("%s: umass_attach_bus: SCSI\n"
 			     "sc = 0x%x, scbus = 0x%x\n",
 			     USBDEVNAME(sc->sc_dev), sc, scbus));
 
+	sc->sc_refcnt++;
 	scbus->base.sc_child =
 	  config_found((struct device *)sc, &scbus->sc_link, scsiprint);
+	if (--sc->sc_refcnt < 0)
+		usb_detach_wakeup(USBDEV(sc->sc_dev));
 
 	return (0);
 }
@@ -149,17 +126,19 @@ umass_atapi_attach(struct umass_softc *sc)
 	scbus = umass_scsi_setup(sc);
 	scbus->sc_link.adapter_target = UMASS_SCSIID_HOST;
 	scbus->sc_link.luns = 1;
-
-	scbus->sc_adapter.scsi_cmd = umass_scsi_cmd;
-	scbus->sc_adapter.scsi_minphys = umass_scsi_minphys;
-	scbus->sc_adapter.ioctl = umass_scsi_ioctl;
+	scbus->sc_link.flags |= SDEV_ATAPI;
+	scbus->sc_link.quirks |= SDEV_NOLUNS;
+	scbus->sc_link.device = &umass_atapiscsi_dev;
 
 	DPRINTF(UDMASS_USB, ("%s: umass_attach_bus: ATAPI\n"
 			     "sc = 0x%x, scbus = 0x%x\n",
 			     USBDEVNAME(sc->sc_dev), sc, scbus));
 
+	sc->sc_refcnt++;
 	scbus->base.sc_child =
 	  config_found((struct device *)sc, &scbus->sc_link, scsiprint);
+	if (--sc->sc_refcnt < 0)
+		usb_detach_wakeup(USBDEV(sc->sc_dev));
 
 	return (0);
 }
@@ -176,13 +155,18 @@ umass_scsi_setup(struct umass_softc *sc)
 
 	sc->bus = (struct umassbus_softc *)scbus;
 
+	/* Fill in the adapter. */
+	scbus->sc_adapter.scsi_cmd = umass_scsi_cmd;
+	scbus->sc_adapter.scsi_minphys = umass_scsi_minphys;
+
+	/* Fill in the link. */
 	scbus->sc_link.adapter_buswidth = 2;
 	scbus->sc_link.openings = 1;
-	scbus->sc_link.flags &= ~SDEV_ATAPI;
-	scbus->sc_link.device = &umass_scsi_dev;
 	scbus->sc_link.adapter = &scbus->sc_adapter;
 	scbus->sc_link.adapter_softc = sc;
 	scbus->sc_link.openings = 1;
+	scbus->sc_link.quirks |= PQUIRK_ONLYBIG | PQUIRK_NOMODESENSE |
+		sc->sc_busquirks;
 
 	return (scbus);
 }
@@ -195,7 +179,7 @@ umass_scsi_cmd(struct scsi_xfer *xs)
 	struct umass_scsi_softc *scbus = (struct umass_scsi_softc *)sc->bus;
 
 	struct scsi_generic *cmd, trcmd;
-	int cmdlen, dir;
+	int cmdlen, dir, s;
 
 #ifdef UMASS_DEBUG
 	microtime(&sc->tv);
@@ -249,9 +233,14 @@ umass_scsi_cmd(struct scsi_xfer *xs)
 
 	if (cmd->opcode == INQUIRY &&
 	    (sc->sc_quirks & UMASS_QUIRK_FORCE_SHORT_INQUIRY)) {
+			/*
+			 * Some drives wedge when asked for full inquiry
+			 * information.
+			 */
 		memcpy(&trcmd, cmd, sizeof(trcmd));
 		trcmd.bytes[4] = SHORT_INQUIRY_LENGTH;
 		cmd = &trcmd;
+		xs->datalen = SHORT_INQUIRY_LENGTH;
 	}
 
 	dir = DIR_NONE;
@@ -281,7 +270,7 @@ umass_scsi_cmd(struct scsi_xfer *xs)
 					  xs->data, xs->datalen, dir,
 					  xs->timeout, 0, xs);
 		sc->sc_xfer_flags = 0;
-		DPRINTF(UDMASS_SCSI, ("umass_scsi_cmd: done err=%d\n", 
+		DPRINTF(UDMASS_SCSI, ("umass_scsi_cmd: done err=%d\n",
 				      scbus->sc_sync_status));
 		switch (scbus->sc_sync_status) {
 		case USBD_NORMAL_COMPLETION:
@@ -310,7 +299,9 @@ umass_scsi_cmd(struct scsi_xfer *xs)
  done:
 	xs->flags |= ITSDONE;
 	
+	s = splbio();
 	scsi_done(xs);
+	splx(s);
 	if (xs->flags & SCSI_POLL)
 		return (COMPLETE);
 	else
@@ -324,26 +315,6 @@ umass_scsi_minphys(struct buf *bp)
 		bp->b_bcount = UMASS_MAX_TRANSFER_SIZE;
 
 	minphys(bp);
-}
-
-int
-umass_scsi_ioctl(struct scsi_link *link, u_long cmd, caddr_t arg, int flag,
-		 struct proc *p)
-{
-#if 0
-	struct umass_softc *sc = link->adapter_softc;
-#endif
-
-	switch (cmd) {
-#if 0
-	case SCBUSIORESET:
-		ccb->ccb_h.status = CAM_REQ_INPROG;
-		umass_reset(sc, umass_cam_cb, (void *) ccb);
-		return (0);
-#endif
-	default:
-		return (ENOTTY);
-	}
 }
 
 void
@@ -375,6 +346,7 @@ umass_scsi_cb(struct umass_softc *sc, void *priv, int residue, int status)
 		break;
 
 	case STATUS_CMD_UNKNOWN:
+		DPRINTF(UDMASS_CMD, ("umass_scsi_cb: status cmd unknown\n"));
 		/* we can't issue REQUEST SENSE */
 		if (xs->sc_link->quirks & PQUIRK_NOSENSE) {
 			/*
@@ -402,6 +374,7 @@ umass_scsi_cb(struct umass_softc *sc, void *priv, int residue, int status)
 		}
 		/* FALLTHROUGH */
 	case STATUS_CMD_FAILED:
+		printf("umass_scsi_cb: status cmd failed\n");
 		/* fetch sense data */
 		memset(&scbus->sc_sense_cmd, 0, sizeof(scbus->sc_sense_cmd));
 		scbus->sc_sense_cmd.opcode = REQUEST_SENSE;
@@ -423,9 +396,11 @@ umass_scsi_cb(struct umass_softc *sc, void *priv, int residue, int status)
 		break;
 
 	default:
-		panic("%s: Unknown status %d in umass_scsi_cb\n",
+		panic("%s: Unknown status %d in umass_scsi_cb",
 		      USBDEVNAME(sc->sc_dev), status);
 	}
+
+	xs->flags |= ITSDONE;
 
 	DPRINTF(UDMASS_CMD,("umass_scsi_cb: at %lu.%06lu: return error=%d, "
 			    "status=0x%x resid=%d\n",
@@ -437,7 +412,7 @@ umass_scsi_cb(struct umass_softc *sc, void *priv, int residue, int status)
 	splx(s);
 }
 
-/* 
+/*
  * Finalise a completed autosense operation
  */
 void
@@ -476,13 +451,14 @@ umass_scsi_sense_cb(struct umass_softc *sc, void *priv, int residue,
 		break;
 	}
 
-	xs->status |= ITSDONE;
+	xs->flags |= ITSDONE;
 
 	DPRINTF(UDMASS_CMD,("umass_scsi_sense_cb: return xs->error=%d, "
-		"xs->status=0x%x xs->resid=%d\n", xs->error, xs->status,
+		"xs->flags=0x%x xs->resid=%d\n", xs->error, xs->status,
 		xs->resid));
 
 	s = splbio();
 	scsi_done(xs);
 	splx(s);
 }
+

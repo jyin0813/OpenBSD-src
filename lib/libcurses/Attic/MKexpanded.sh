@@ -29,7 +29,7 @@
 #
 # Author: Thomas E. Dickey <dickey@clark.net> 1997
 #
-# $OpenBSD$
+# $OpenBSD: MKexpanded.sh,v 1.3 1998/07/23 21:17:20 millert Exp $
 # $From: MKexpanded.sh,v 1.6 1998/02/11 12:13:54 tom Exp $
 #
 # Script to generate 'expanded.c', a dummy source that contains functions

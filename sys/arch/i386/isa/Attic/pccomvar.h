@@ -1,4 +1,4 @@
-/*	$OpenBSD: pccomvar.h,v 1.1 1996/07/07 00:05:49 downsj Exp downsj $	*/
+/*	$OpenBSD: comvar.h,v 1.1 1996/11/30 13:39:31 niklas Exp $	*/
 /*	$NetBSD: comvar.h,v 1.5 1996/05/05 19:50:47 christos Exp $	*/
 
 /*
@@ -31,20 +31,92 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-struct pccommulti_attach_args {
+/* XXX - should be shared among com.c and pccom.c */
+struct commulti_attach_args {
 	int		ca_slave;		/* slave number */
 
-	bus_chipset_tag_t ca_bc;
-	bus_io_handle_t ca_ioh;
+	bus_space_tag_t ca_iot;
+	bus_space_handle_t ca_ioh;
 	int		ca_iobase;
 	int		ca_noien;
 };
 
-int pccomprobe1 __P((bus_chipset_tag_t, bus_io_handle_t, int));
-int pccomintr __P((void *));
+struct com_softc {
+	struct device sc_dev;
+	void *sc_ih;
+	bus_space_tag_t sc_iot;
+	struct tty *sc_tty;
 
-extern int pccomconsaddr;
-extern int pccomconsattached;
-extern bus_chipset_tag_t pccomconsbc;
-extern bus_io_handle_t pccomconsioh;
-extern tcflag_t pccomconscflag;
+	int sc_overflows;
+	int sc_floods;
+	int sc_errors;
+
+	int sc_halt;
+
+	int sc_iobase;
+#ifdef COM_HAYESP
+	int sc_hayespbase;
+#endif
+
+	bus_space_handle_t sc_ioh;
+	bus_space_handle_t sc_hayespioh;
+	isa_chipset_tag_t sc_ic;
+
+	u_char sc_hwflags;
+#define	COM_HW_NOIEN	0x01
+#define	COM_HW_FIFO	0x02
+#define	COM_HW_HAYESP	0x04
+#define	COM_HW_ABSENT_PENDING	0x08	/* reattached, awaiting close/reopen */
+#define	COM_HW_ABSENT	0x10		/* configure actually failed, or removed */
+#define	COM_HW_REATTACH	0x20		/* reattaching */
+#define	COM_HW_CONSOLE	0x40
+	u_char sc_swflags;
+#define	COM_SW_SOFTCAR	0x01
+#define	COM_SW_CLOCAL	0x02
+#define	COM_SW_CRTSCTS	0x04
+#define	COM_SW_MDMBUF	0x08
+	int	sc_fifolen;
+	u_char sc_msr, sc_mcr, sc_lcr, sc_ier;
+	u_char sc_dtr;
+
+	u_char	sc_cua;
+
+	u_char	sc_initialize;		/* force initialization */
+
+#define RBUFSIZE 512                                                
+#define RBUFMASK 511                                                     
+	u_int sc_rxget;
+	volatile u_int sc_rxput;
+	u_char sc_rxbuf[RBUFSIZE];
+	u_char *sc_tba;
+	int sc_tbc;
+};
+
+int	comprobe1 __P((bus_space_tag_t, bus_space_handle_t, int));
+void	cominit __P((bus_space_tag_t, bus_space_handle_t, int));
+int	comintr __P((void *));
+void	com_absent_notify __P((struct com_softc *sc));
+
+#ifdef COM_HAYESP
+int comprobeHAYESP __P((bus_space_handle_t hayespioh, struct com_softc *sc));
+#endif
+void	comdiag		__P((void *));
+int	comspeed	__P((long));
+int	comparam	__P((struct tty *, struct termios *));
+void	comstart	__P((struct tty *));
+void	comsoft		__P((void));
+int	comhwiflow	__P((struct tty *, int));
+
+struct consdev;
+void	comcnprobe	__P((struct consdev *));
+void	comcninit	__P((struct consdev *));
+int	comcngetc	__P((dev_t));
+void	comcnputc	__P((dev_t, int));
+void	comcnpollc	__P((dev_t, int));
+
+extern int comconsaddr;
+extern int comconsinit;
+extern int comconsattached;
+extern bus_space_tag_t comconsiot;
+extern bus_space_handle_t comconsioh;
+extern tcflag_t comconscflag;

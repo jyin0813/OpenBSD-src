@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1997/09/21 11:43:51 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.1 1997/12/12 05:55:20 beck Exp $
 
 SUBDIR=	smtpd smtpfwdd
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: write_entry.c,v 1.4 1998/09/13 19:16:31 millert Exp $	*/
+/*	$OpenBSD: write_entry.c,v 1.5 1998/10/31 06:30:31 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

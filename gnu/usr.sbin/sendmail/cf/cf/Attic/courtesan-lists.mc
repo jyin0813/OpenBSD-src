@@ -6,7 +6,7 @@ divert(-1)
 #
 
 divert(0)dnl
-VERSIONID(`$OpenBSD: courtesan-lists.mc,v 1.5 2001/12/04 02:23:56 millert Exp $')
+VERSIONID(`$OpenBSD: courtesan-lists.mc,v 1.6 2001/12/04 03:56:53 millert Exp $')
 OSTYPE(openbsd)dnl
 dnl
 dnl Advertise ourselves as ``lists.courtesan.com''

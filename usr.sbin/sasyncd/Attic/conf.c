@@ -1,4 +1,4 @@
-/*	$OpenBSD: conf.c,v 1.1 2005/03/30 18:44:49 ho Exp $	*/
+/*	$OpenBSD: conf.c,v 1.2 2005/03/30 18:56:19 ho Exp $	*/
 
 /*
  * Copyright (c) 2005 Håkan Olsson.  All rights reserved.

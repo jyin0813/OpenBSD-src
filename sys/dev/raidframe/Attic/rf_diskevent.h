@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_diskevent.h,v 1.1 1998/11/13 04:20:28 oster Exp $	*/
+/*	$OpenBSD: rf_diskevent.h,v 1.1 1999/01/11 14:29:16 niklas Exp $	*/
 /*	$NetBSD: rf_diskevent.h,v 1.1 1998/11/13 04:20:28 oster Exp $	*/
 /* 
  * rf_diskevent.h

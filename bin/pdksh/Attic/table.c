@@ -1,4 +1,4 @@
-/*	$OpenBSD: table.c,v 1.2 1996/08/19 20:08:59 downsj Exp $	*/
+/*	$OpenBSD: table.c,v 1.4 1997/06/19 13:58:47 kstailey Exp $	*/
 
 /*
  * dynamic hashed associative table for commands and variables

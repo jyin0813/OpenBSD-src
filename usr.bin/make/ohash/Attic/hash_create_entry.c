@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: hash_create_entry.c,v 1.1 2000/06/23 16:24:50 espie Exp $ */
 /* ex:ts=8 sw=4: 
  */
 

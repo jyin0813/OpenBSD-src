@@ -1,4 +1,4 @@
-/*	$OpenBSD: pci_machdep.h,v 1.3 1998/03/16 09:38:49 pefo Exp $	*/
+/*	$OpenBSD: pci_machdep.h,v 1.4 1998/03/18 12:06:18 pefo Exp $	*/
 
 /*
  * Copyright (c) 1996 Carnegie-Mellon University.

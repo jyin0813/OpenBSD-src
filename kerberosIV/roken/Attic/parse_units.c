@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: parse_units.c,v 1.1 1998/05/18 01:22:48 art Exp $	*/
 /*	$KTH: parse_units.c,v 1.6 1998/02/20 07:51:04 assar Exp $	*/
 /*
  * Copyright (c) 1997, 1998 Kungliga Tekniska Högskolan

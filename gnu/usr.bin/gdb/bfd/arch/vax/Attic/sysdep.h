@@ -1,4 +1,4 @@
-/*	$Id: sysdep.h,v 1.1 1995/06/05 15:22:54 ragge Exp $ */
+/*	$Id: sysdep.h,v 1.1 1995/10/18 08:39:55 deraadt Exp $ */
 #ifndef	hosts_vaxbsd_H
 /* DEC VAX running any BSD Unix */
 #include <fcntl.h>

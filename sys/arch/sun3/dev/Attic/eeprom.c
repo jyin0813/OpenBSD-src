@@ -1,4 +1,4 @@
-/*	$OpenBSD: eeprom.c,v 1.8 2001/05/16 12:49:48 ho Exp $	*/
+/*	$OpenBSD: eeprom.c,v 1.9 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: eeprom.c,v 1.8 1996/03/26 15:16:06 gwr Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: acvar.h,v 1.5 2002/03/14 01:26:30 millert Exp $	*/
+/*	$OpenBSD: acvar.h,v 1.6 2003/06/02 23:27:44 millert Exp $	*/
 /*	$NetBSD: acvar.h,v 1.4 1997/03/31 07:32:15 scottr Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rcons_font.h,v 1.4 1997/08/08 08:25:25 downsj Exp $	*/
+/*	$OpenBSD: rcons_font.h,v 1.5 1998/03/20 05:18:30 todd Exp $	*/
 /* $NetBSD: rcons_font.h,v 1.3 1995/11/29 22:03:53 pk Exp $ */
 
 /*

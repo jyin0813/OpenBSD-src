@@ -1,4 +1,4 @@
-/*	$OpenBSD: qop_hfsc.c,v 1.3 2001/12/03 08:38:48 kjc Exp $	*/
+/*	$OpenBSD: qop_hfsc.c,v 1.4 2002/09/08 09:09:54 kjc Exp $	*/
 /*	$KAME: qop_hfsc.c,v 1.6 2001/08/16 10:39:14 kjc Exp $	*/
 /*
  * Copyright (C) 1999-2000

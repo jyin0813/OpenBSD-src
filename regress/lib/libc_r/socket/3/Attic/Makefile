@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2002/01/03 00:43:48 art Exp $
+# $OpenBSD: Makefile,v 1.1 2002/10/10 00:45:20 marc Exp $
 
 PROG=	socket3
 CFLAGS+= -I${.CURDIR}/../../include

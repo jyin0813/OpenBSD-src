@@ -27,7 +27,7 @@
  * defined and declared here, see the corresponding UDI spec available
  * from AMD at the address above.
  *****************************************************************************
- *       $Id: udiproc.h,v 1.1.2.1 1996/11/19 15:03:51 niklas Exp $
+ *       $Id: udiproc.h,v 1.2 1996/11/23 04:11:30 niklas Exp $
  *	 $Id: @(#)udiproc.h	2.12, AMD
  */
 

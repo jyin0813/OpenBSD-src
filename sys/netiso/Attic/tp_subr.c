@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_subr.c,v 1.5 2003/06/02 23:28:18 millert Exp $	*/
+/*	$OpenBSD: tp_subr.c,v 1.6 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: tp_subr.c,v 1.8 1996/03/16 23:14:00 christos Exp $	*/
 
 /*-

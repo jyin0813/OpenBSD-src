@@ -1,4 +1,4 @@
-/*    $OpenBSD: sfas.c,v 1.14 2001/11/30 22:08:16 miod Exp $  */
+/*    $OpenBSD: sfas.c,v 1.16 2002/12/14 07:20:25 fgsch Exp $  */
 /*	$NetBSD: sfas.c,v 1.12 1996/10/13 03:07:33 christos Exp $	*/
 
 /*

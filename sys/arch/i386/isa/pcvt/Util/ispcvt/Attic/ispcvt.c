@@ -1,4 +1,4 @@
-/*	$OpenBSD: ispcvt.c,v 1.9 2000/01/19 15:51:54 aaron Exp $	*/
+/*	$OpenBSD: ispcvt.c,v 1.10 2000/12/07 18:19:11 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis

@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfabs_reg.h,v 1.3 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: grfabs_reg.h,v 1.4 2002/06/14 21:34:58 todd Exp $	*/
 /*	$NetBSD: grfabs_reg.h,v 1.5 1996/04/21 21:11:31 veego Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: process.S,v 1.28 2004/01/13 14:15:56 miod Exp $	*/
+/*	$OpenBSD: process.S,v 1.29 2004/01/17 22:35:41 miod Exp $	*/
 /*
  * Copyright (c) 1996 Nivas Madhur
  * All rights reserved.

@@ -1,4 +1,4 @@
-#	$Id: Makefile.icm3216,v 1.1 1993/12/19 08:42:08 davidb Exp $
+#	$Id: Makefile.icm3216,v 1.1 1995/10/18 08:39:00 deraadt Exp $
 
 SRCS+=		tc-ns32k.c atof-ns32k.c
 

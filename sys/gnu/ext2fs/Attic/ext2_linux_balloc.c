@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_linux_balloc.c,v 1.2 1996/07/13 21:21:15 downsj Exp $	*/
+/*	$OpenBSD: ext2_linux_balloc.c,v 1.3 1996/10/18 15:23:36 mickey Exp $	*/
 
 /*
  *  modified for Lites 1.1

@@ -1,4 +1,4 @@
-/*	$OpenBSD: doctags.c,v 1.1.1.1 1996/09/07 21:40:30 downsj Exp $	*/
+/*	$OpenBSD: doctags.c,v 1.2 1996/09/21 06:23:31 downsj Exp $	*/
 /* vim:set ts=4 sw=4:
  * this program makes a tags file for vim_ref.txt
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: drbbc.c,v 1.1 1997/09/18 13:39:44 niklas Exp $	*/
+/*	$OpenBSD: drbbc.c,v 1.2 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: drbbc.c,v 1.1 1997/07/17 23:29:30 is Exp $	*/
 
 /*

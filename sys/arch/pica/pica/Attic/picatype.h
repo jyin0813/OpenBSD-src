@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)picatype.h	8.1 (Berkeley) 6/10/93
- *      $Id: picatype.h,v 1.4 1994/06/02 21:27:50 glass Exp $
+ *      $Id: picatype.h,v 1.1 1995/10/18 10:39:19 deraadt Exp pefo $
  */
 
 /*

@@ -35,7 +35,7 @@
 
 #if defined(SYSLIBC_SCCS)
 	.text
-	.asciz "$OpenBSD$"
+	.asciz "$OpenBSD: fork.S,v 1.3 1996/08/19 08:11:55 tholo Exp $"
 #endif /* SYSLIBC_SCCS */
 
 SYSCALL(fork)

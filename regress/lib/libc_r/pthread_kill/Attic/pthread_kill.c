@@ -1,4 +1,4 @@
-/* $OpenBSD: pthread_kill.c,v 1.1 2002/10/21 18:44:11 marc Exp $ */
+/* $OpenBSD: pthread_kill.c,v 1.2 2002/10/23 22:30:04 marc Exp $ */
 /* PUBLIC DOMAIN Oct 2002 <marc@snafu.org> */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: aeonvar.h,v 1.2 1999/02/21 00:05:15 deraadt Exp $	*/
+/*	$OpenBSD: aeonvar.h,v 1.3 1999/02/24 06:09:45 deraadt Exp $	*/
 
 /*
  *  Invertex AEON driver

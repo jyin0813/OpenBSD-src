@@ -1,4 +1,4 @@
-/*	$OpenBSD: mk_req.c,v 1.4 1997/12/12 05:30:28 art Exp $	*/
+/*	$OpenBSD: mk_req.c,v 1.5 1998/05/18 00:53:53 art Exp $	*/
 /*	$KTH: mk_req.c,v 1.19 1998/02/19 19:13:51 joda Exp $	*/
 
 /*

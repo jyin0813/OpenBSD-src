@@ -1,4 +1,4 @@
-/*	$OpenBSD: bt.c,v 1.23 1999/01/07 06:14:47 niklas Exp $	*/
+/*	$OpenBSD: bt.c,v 1.24 2001/01/29 07:17:00 mickey Exp $	*/
 /*	$NetBSD: bt.c,v 1.10 1996/05/12 23:51:54 mycroft Exp $	*/
 
 #undef BTDIAG

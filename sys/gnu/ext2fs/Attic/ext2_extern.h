@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_extern.h,v 1.3 1996/07/14 09:14:13 downsj Exp $	*/
+/*	$OpenBSD: ext2_extern.h,v 1.4 1996/11/09 08:38:34 downsj Exp $	*/
 
 /*
  *  modified for EXT2FS support in Lites 1.1

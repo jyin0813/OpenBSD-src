@@ -16,7 +16,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
-#	$Id: Makefile.gnu,v 1.2 1993/08/02 17:48:37 mycroft Exp $
+#	$Id: Makefile.gnu,v 1.1 1995/10/18 08:41:08 deraadt Exp tholo $
 
 #### Start of system configuration section. ####
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: drisavar.h,v 1.1 1996/11/30 00:43:05 is Exp $	*/
+/*	$OpenBSD: drisavar.h,v 1.1 1997/01/16 09:23:57 niklas Exp $	*/
 /*	$NetBSD: drisavar.h,v 1.1 1996/11/30 00:43:05 is Exp $	*/
 
 #ifndef DRISAVAR_H

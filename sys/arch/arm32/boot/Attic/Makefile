@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 1996/02/01 22:29:25 mycroft Exp $
+# $OpenBSD: Makefile,v 1.2 2000/03/03 00:54:46 todd Exp $
 # $NetBSD: Makefile,v 1.2 1996/02/01 22:29:25 mycroft Exp $
 
 # Copyright (c) 1994,1995 Mark Brinicombe.

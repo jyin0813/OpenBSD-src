@@ -33,7 +33,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: cookie.c,v 1.1.1.1 1997/07/18 22:48:48 provos Exp $";
+static char rcsid[] = "$Id: cookie.c,v 1.2 1997/07/24 23:47:10 provos Exp $";
 #endif
 
 #define _COOKIE_C_

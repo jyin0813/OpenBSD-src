@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_reconstub.c,v 1.1 1999/01/11 14:29:47 niklas Exp $	*/
+/*	$OpenBSD: rf_reconstub.c,v 1.2 1999/02/16 00:03:23 niklas Exp $	*/
 /*	$NetBSD: rf_reconstub.c,v 1.3 1999/02/05 00:06:17 oster Exp $	*/
 /*
  * Copyright (c) 1995 Carnegie-Mellon University.

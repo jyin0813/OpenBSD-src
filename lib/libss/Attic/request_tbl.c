@@ -1,4 +1,4 @@
-/*	$OpenBSD: request_tbl.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $	*/
+/*	$OpenBSD: request_tbl.c,v 1.1 1996/11/15 09:25:33 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board

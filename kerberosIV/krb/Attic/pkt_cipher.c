@@ -1,7 +1,7 @@
 /*
  * This software may now be redistributed outside the US.
  *
- * $Source: /usr/src/kerberosIV/lib/krb/RCS/pkt_cipher.c,v $
+ * $Source: /cvs/src/kerberosIV/krb/pkt_cipher.c,v $
  *
  * $Locker:  $
  */

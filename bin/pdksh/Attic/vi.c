@@ -1,4 +1,4 @@
-/*	$OpenBSD: vi.c,v 1.3 1996/11/21 07:59:37 downsj Exp $	*/
+/*	$OpenBSD: vi.c,v 1.5 1997/06/19 13:58:49 kstailey Exp $	*/
 
 /*
  *	vi command editing

@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	@(#)swapgeneric.c	7.5 (Berkeley) 5/7/91
- *	$Id: swapgeneric.c,v 1.2 1995/06/22 04:19:28 build Exp $
+ *	$Id: swapgeneric.c,v 1.1 1995/10/18 10:54:27 deraadt Exp deraadt $
  */
 
 #include <sys/param.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_wavelan_ieee.h,v 1.1 1999/07/11 16:25:36 niklas Exp $	*/
+/*	$OpenBSD: if_wavelan_ieee.h,v 1.2 2000/02/03 00:56:45 angelos Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998, 1999

@@ -1,4 +1,4 @@
-#	$OpenBSD: NETTAN,v 1.39 2000/06/08 00:16:03 mickey Exp $
+#	$OpenBSD: NETTAN,v 1.40 2001/02/15 04:58:07 krw Exp $
 #
 #	NETTAN -- Applitron Datasystem AB
 #
@@ -6,7 +6,7 @@
 machine		i386		# architecture, used by config; REQUIRED
 
 #include "../../../conf/GENERIC"
-#	$OpenBSD: NETTAN,v 1.39 2000/06/08 00:16:03 mickey Exp $
+#	$OpenBSD: NETTAN,v 1.40 2001/02/15 04:58:07 krw Exp $
 #
 #	Machine-independent option; used by all architectures for their
 #	GENERIC kernel

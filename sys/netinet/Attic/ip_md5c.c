@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ip_md5c.c,v 1.3 1997/02/24 14:06:43 niklas Exp $	*/
 
 /*
  * The rest of the code is derived from MD5C.C by RSADSI. Minor cosmetic

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: hash_interval.c,v 1.1 2000/06/23 16:24:50 espie Exp $ */
 /* ex:ts=8 sw=4: 
  */
 

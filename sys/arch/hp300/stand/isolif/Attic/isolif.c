@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: isolif.c,v 1.1 1997/09/15 06:20:56 downsj Exp $	*/
 
 /*
  * Copyright (c) 1997, Jason Downs.  All rights reserved.
@@ -77,7 +77,7 @@ static char copyright[] =
 #if 0
 static char sccsid[] = "@(#)mkboot.c	7.2 (Berkeley) 12/16/90";
 #endif
-static char rcsid[] = "$OpenBSD: mkboot.c,v 1.1 1997/07/14 08:14:53 downsj Exp $";
+static char rcsid[] = "$OpenBSD: isolif.c,v 1.1 1997/09/15 06:20:56 downsj Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

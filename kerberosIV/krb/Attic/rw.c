@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rw.c,v 1.2 1997/12/09 07:57:37 art Exp $	*/
 /* $KTH: rw.c,v 1.8 1997/04/01 08:18:44 joda Exp $ */
 
 /*

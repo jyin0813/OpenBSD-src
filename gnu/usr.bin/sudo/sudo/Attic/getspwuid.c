@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: getspwuid.c,v 1.10 1999/03/29 20:29:03 millert Exp $	*/
 
 /*
  *  CU sudo version 1.5.9

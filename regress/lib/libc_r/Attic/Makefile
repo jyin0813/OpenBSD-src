@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.14 2002/11/12 03:17:16 marc Exp $
+# $OpenBSD: Makefile,v 1.15 2003/01/19 21:23:45 marc Exp $
 
 SUBDIR= cancel cancel2 close cwd execve fork group malloc_duel netdb pcap poll \
 	preemption preemption_float pthread_cond_timedwait pthread_create \

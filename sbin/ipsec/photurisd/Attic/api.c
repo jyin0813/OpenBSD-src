@@ -37,7 +37,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$Id: api.c,v 1.3 1997/09/14 10:37:48 deraadt Exp $";
+static char rcsid[] = "$Id: api.c,v 1.4 1998/03/04 11:43:07 provos Exp $";
 #endif
 
 #define _API_C_

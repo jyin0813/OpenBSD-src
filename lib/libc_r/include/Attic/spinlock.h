@@ -29,8 +29,8 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: spinlock.h,v 1.6 2001/09/04 22:17:45 fgsch Exp $
- * $OpenBSD: spinlock.h,v 1.6 2001/09/04 22:17:45 fgsch Exp $
+ * $Id: spinlock.h,v 1.7 2002/02/16 21:27:25 millert Exp $
+ * $OpenBSD: spinlock.h,v 1.7 2002/02/16 21:27:25 millert Exp $
  *
  * Lock definitions used in both libc and libpthread.
  *

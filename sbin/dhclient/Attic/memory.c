@@ -1,4 +1,4 @@
-/*	$OpenBSD: memory.c,v 1.3 2004/02/07 20:41:23 tedu Exp $	*/
+/*	$OpenBSD: memory.c,v 1.4 2004/02/14 23:52:48 henning Exp $	*/
 
 /* Memory-resident database... */
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: viewioctl.h,v 1.2 1996/05/02 06:44:37 niklas Exp $	*/
+/*	$OpenBSD: viewioctl.h,v 1.3 2002/03/14 01:26:29 millert Exp $	*/
 /*	$NetBSD: viewioctl.h,v 1.6 1996/04/21 21:12:40 veego Exp $	*/
 
 /*

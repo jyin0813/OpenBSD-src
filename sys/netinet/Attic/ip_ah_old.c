@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_ah_old.c,v 1.25 1999/10/29 02:10:01 angelos Exp $	*/
+/*	$OpenBSD: ip_ah_old.c,v 1.26 1999/12/06 07:14:35 angelos Exp $	*/
 
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),

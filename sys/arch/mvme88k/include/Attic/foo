@@ -26,7 +26,10 @@
  */
 /*
  * HISTORY
- * $Log:	psl.h,v $
+ * $Log: foo,v $
+ * Revision 1.1  1995/10/18 10:54:24  deraadt
+ * Initial revision
+ *
  * Revision 2.6  93/01/26  18:01:15  danner
  * 	Added #ifndef file wrapper.
  * 	[93/01/25            jfriedl]

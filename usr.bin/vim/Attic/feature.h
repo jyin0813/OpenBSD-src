@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: feature.h,v 1.1 1996/09/07 21:40:28 downsj Exp $	*/
 /* vi:set ts=8 sw=8:
  *
  * VIM - Vi IMproved		by Bram Moolenaar

@@ -1,4 +1,4 @@
-/* $OpenBSD: sf64pcr.c,v 1.2 2001/12/05 10:27:06 mickey Exp $ */
+/* $OpenBSD: sf64pcr.c,v 1.4 2002/01/07 18:32:19 mickey Exp $ */
 /* $RuOBSD: sf64pcr.c,v 1.11 2001/12/05 10:19:40 mickey Exp $ */
 
 /*

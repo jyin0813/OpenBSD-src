@@ -1,4 +1,4 @@
-/*	$OpenBSD: frexp.c,v 1.1 2002/03/11 02:59:01 miod Exp $	*/
+/*	$OpenBSD: frexp.c,v 1.2 2003/06/02 20:18:30 millert Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993
@@ -34,7 +34,7 @@
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
-static char rcsid[] = "$OpenBSD: frexp.c,v 1.1 2002/03/11 02:59:01 miod Exp $";
+static char rcsid[] = "$OpenBSD: frexp.c,v 1.2 2003/06/02 20:18:30 millert Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 #include <sys/types.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: error.h,v 1.6 2002/06/14 21:35:00 todd Exp $	*/
+/*	$OpenBSD: error.h,v 1.7 2003/06/03 02:56:07 millert Exp $	*/
 /*	$NetBSD: error.h,v 1.3 1995/09/02 06:15:25 jtc Exp $	*/
 
 /*

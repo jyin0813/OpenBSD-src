@@ -34,7 +34,7 @@
 
 #if defined(LIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: bzero.S,v 1.5 2001/01/04 21:45:30 todd Exp $"
+	.asciz "$OpenBSD: bzero.S,v 1.6 2003/06/02 20:18:32 millert Exp $"
 #endif /* LIBC_SCCS */
 
 /* bzero(s1, n) */

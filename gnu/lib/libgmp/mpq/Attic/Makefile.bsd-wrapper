@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.bsd-wrapper,v 1.1.1.1 1997/06/24 21:28:25 provos Exp $
+#	$OpenBSD: Makefile.bsd-wrapper,v 1.2 1997/11/04 13:15:31 kstailey Exp $
 
 GNUCFLAGS= 	CFLAGS="${CFLAGS} ${COPTS}"
 

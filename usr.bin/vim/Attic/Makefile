@@ -1,18 +1,12 @@
-#	$OpenBSD: Makefile,v 1.8 1997/04/27 20:56:58 millert Exp $
+#	$OpenBSD: Makefile,v 1.9 1998/02/23 12:06:25 downsj dead $
 
 .PATH:	${.CURDIR}/doc
 
 CFLAGS+=-I${.CURDIR} -I${.OBJDIR} -DHAVE_CONFIG_H
 
-LDADD+=	-ltermlib
-DPADD+=	${LIBTERMLIB}
+LDADD+=	-lcurses
+DPADD+=	${LIBCURSES}
 PROG=	vim
-LINKS=	${BINDIR}/vim ${BINDIR}/vi
-LINKS+=	${BINDIR}/vim ${BINDIR}/view
-LINKS+=	${BINDIR}/vim ${BINDIR}/ex
-MLINKS=	vim.1 vi.1
-MLINKS+=vim.1 view.1
-MLINKS+=vim.1 ex.1
 
 SRCS=	alloc.c buffer.c charset.c cmdcmds.c cmdline.c csearch.c \
 	digraph.c edit.c fileio.c getchar.c help.c linefunc.c main.c mark.c \

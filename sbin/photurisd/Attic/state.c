@@ -1,4 +1,4 @@
-/*	$OpenBSD: state.c,v 1.9 2002/06/09 08:13:09 todd Exp $	*/
+/*	$OpenBSD: state.c,v 1.10 2002/06/10 19:58:20 espie Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>

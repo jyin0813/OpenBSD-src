@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: i386b-nat.c,v 1.5 1996/03/30 15:29:53 niklas Exp $	*/
 
 /* Native-dependent code for BSD Unix running on i386's, for GDB.
    Copyright 1988, 1989, 1991, 1992 Free Software Foundation, Inc.

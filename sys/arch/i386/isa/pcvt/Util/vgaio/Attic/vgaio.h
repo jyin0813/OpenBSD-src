@@ -1,4 +1,4 @@
-/*	$OpenBSD: vgaio.h,v 1.3 1999/01/13 07:26:07 niklas Exp $	*/
+/*	$OpenBSD: vgaio.h,v 1.4 1999/02/09 13:01:26 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1994 Joerg Wunsch

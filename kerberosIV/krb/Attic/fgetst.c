@@ -1,7 +1,7 @@
 /*
  * This software may now be redistributed outside the US.
  *
- * $Source: /usr/src/kerberosIV/lib/krb/RCS/fgetst.c,v $
+ * $Source: /cvs/src/kerberosIV/krb/fgetst.c,v $
  *
  * $Locker:  $
  */

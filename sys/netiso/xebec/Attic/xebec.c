@@ -1,4 +1,4 @@
-/*	$OpenBSD: xebec.c,v 1.2 1996/03/04 10:37:30 mickey Exp $	*/
+/*	$OpenBSD: xebec.c,v 1.3 2001/08/12 12:03:03 heko Exp $	*/
 /*	$NetBSD: xebec.c,v 1.4 1994/06/29 06:41:23 cgd Exp $	*/
 
 #include "xebec.h"

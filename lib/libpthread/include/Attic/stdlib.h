@@ -37,7 +37,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)time.h	5.12 (Berkeley) 3/9/91
- *	$Id: stdlib.h,v 1.5 1995/05/25 19:16:34 ghudson Exp $
+ *	$Id: stdlib.h,v 1.1 1998/07/21 13:19:10 peter Exp $
  */
 
 #ifndef _STDLIB_H_

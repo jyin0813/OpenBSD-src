@@ -1,4 +1,4 @@
-/*	$OpenBSD: m8820x.c,v 1.6 2001/12/14 04:30:12 smurph Exp $	*/
+/*	$OpenBSD: m8820x.c,v 1.7 2001/12/14 08:55:45 miod Exp $	*/
 /*
  * Copyright (c) 2001 Steve Murphree, Jr.
  * Copyright (c) 1996 Nivas Madhur

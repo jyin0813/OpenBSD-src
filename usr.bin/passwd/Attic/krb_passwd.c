@@ -1,4 +1,4 @@
-/*	$OpenBSD: krb_passwd.c,v 1.15 2002/06/12 06:07:16 mpech Exp $	*/
+/*	$OpenBSD: krb_passwd.c,v 1.16 2002/06/28 22:28:17 deraadt Exp $	*/
 /* $KTH: kpasswd.c,v 1.25 1997/05/02 14:28:51 assar Exp $ */
 
 /*

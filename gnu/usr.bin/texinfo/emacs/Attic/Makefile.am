@@ -1,5 +1,5 @@
 ## Makefile.am for texinfo/emacs.
-## $Id: Makefile.am,v 1.4 1997/07/18 15:23:24 karl Exp $
+## $Id: Makefile.am,v 1.1 1997/08/01 21:59:44 kstailey Exp $
 ## Run automake in .. to produce Makefile.in from this.
 
 # Do not byte compile our Elisp files by default.

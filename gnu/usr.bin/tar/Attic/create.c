@@ -18,7 +18,7 @@ along with GNU Tar; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: create.c,v 1.6 1994/03/27 09:26:59 cgd Exp $";
+static char rcsid[] = "$Id: create.c,v 1.1 1995/10/18 08:41:08 deraadt Exp tholo $";
 #endif /* not lint */
 
 /*

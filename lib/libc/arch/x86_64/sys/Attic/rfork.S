@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rfork.S,v 1.1 2004/01/28 01:44:45 mickey Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.

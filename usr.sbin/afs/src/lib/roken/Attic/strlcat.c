@@ -36,7 +36,7 @@
 #endif
 #include "roken.h"
 
-RCSID("$Id: strlcat.c,v 1.1 2000/08/16 01:23:47 lha Exp $");
+RCSID("$Id: strlcat.c,v 1.1 2000/09/11 14:41:04 art Exp $");
 
 #ifndef HAVE_STRLCAT
 

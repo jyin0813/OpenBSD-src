@@ -1,4 +1,4 @@
-/*	$OpenBSD: si_vme.c,v 1.6 1997/01/16 04:03:54 kstailey Exp $	*/
+/*	$OpenBSD: si_vme.c,v 1.7 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: si_vme.c,v 1.7 1996/11/20 18:57:01 gwr Exp $	*/
 
 /*-

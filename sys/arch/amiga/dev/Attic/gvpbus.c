@@ -1,4 +1,4 @@
-/*	$OpenBSD: gvpbus.c,v 1.5 1997/01/16 09:24:32 niklas Exp $	*/
+/*	$OpenBSD: gvpbus.c,v 1.6 2002/03/14 01:26:29 millert Exp $	*/
 /*	$NetBSD: gvpbus.c,v 1.15 1996/12/23 09:10:12 veego Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: psl.h,v 1.13 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: psl.h,v 1.14 2002/04/29 07:35:17 miod Exp $	*/
 /*	$NetBSD: psl.h,v 1.11 1996/11/30 00:33:49 is Exp $	*/
 
 #ifndef _MACHINE_PSL_H_

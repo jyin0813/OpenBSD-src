@@ -1,4 +1,4 @@
-/* $OpenBSD: spi.h,v 1.7 2001/01/28 22:45:17 niklas Exp $ */
+/* $OpenBSD: spi.h,v 1.8 2002/06/09 08:13:09 todd Exp $ */
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
  * All rights reserved.

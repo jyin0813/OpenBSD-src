@@ -2,9 +2,12 @@
 'di';
 'ig00';
 #
-# $Header: wrapsuid,v 1.1 90/08/11 13:51:29 lwall Locked $
+# $Header: /cvs/src/gnu/usr.bin/perl/eg/wrapsuid,v 1.5 2001/05/24 18:35:04 millert Exp $
 #
-# $Log:	wrapsuid,v $
+# $Log: wrapsuid,v $
+# Revision 1.5  2001/05/24 18:35:04  millert
+# merge in perl 5.6.1 with our local changes
+#
 # Revision 1.1  90/08/11  13:51:29  lwall
 # Initial revision
 # 

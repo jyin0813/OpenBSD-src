@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)resolv.h	5.15 (Berkeley) 4/3/91
- *	$Id: resolv.h,v 1.5 1995/02/21 07:05:47 proven Exp $
+ *	$Id: resolv.h,v 1.1 1998/07/21 13:19:08 peter Exp $
  */
 
 #ifndef _RESOLV_H_

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: simple_exec.c,v 1.1 1998/08/12 23:53:53 art Exp $	*/
 /*	$KTH: simple_exec.c,v 1.1 1998/03/19 19:41:19 joda Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: grf_ul.c,v 1.14 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: grf_ul.c,v 1.15 2002/08/02 16:13:07 millert Exp $	*/
 /*	$NetBSD: grf_ul.c,v 1.24 1997/07/29 17:50:01 veego Exp $	*/
 
 #define UL_DEBUG

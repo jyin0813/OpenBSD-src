@@ -1,4 +1,4 @@
-/*	$OpenBSD: mntopts.h,v 1.3 2003/06/02 20:06:15 millert Exp $	*/
+/*	$OpenBSD: mntopts.h,v 1.5 2004/05/18 11:07:53 otto Exp $	*/
 
 /*-
  * Copyright (c) 1994

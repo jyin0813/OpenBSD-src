@@ -1,5 +1,5 @@
 #	from: @(#)Makefile	5.6.1.2 (Berkeley) 5/8/91
-#	$Id: Makefile.main,v 1.0 1994/05/29 21:01:48 moj Exp $
+#	$Id: Makefile.main,v 1.1 1995/11/01 16:56:28 deraadt Exp deraadt $
 
 SUBDIR=	
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_sig.c,v 1.15 2002/11/02 23:52:46 millert Exp $	*/
+/*	$OpenBSD: uthread_sig.c,v 1.16 2002/11/08 23:18:25 todd Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: signal.c,v 1.3 2001/11/11 23:26:35 deraadt Exp $	*/
+/*	$OpenBSD: signal.c,v 1.4 2002/06/16 23:06:15 marc Exp $	*/
 /* David Leonard <d@openbsd.org>, 2001. Public Domain. */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_compat.h,v 1.1 2001/01/17 04:47:12 fgsch Exp $	*/
+/*	$OpenBSD: ip_compat.h,v 1.2 2001/01/17 07:25:18 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

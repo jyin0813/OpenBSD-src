@@ -84,6 +84,9 @@
  *        get knowledge of
  */
 /* $Log: uurate.c,v $
+/* Revision 1.1  1995/10/18 08:38:24  deraadt
+/* Initial revision
+/*
 /* Revision 1.3  1995/08/24 05:19:21  jtc
 /* Upgraded to Taylor UUCP 1.06.1 (Thanks to John Kohl).
 /*
@@ -142,7 +145,7 @@
  * */
 
 char version[] = "@(#) Taylor UUCP Log File Summary Filter, Version 1.2.2";
-static char rcsid[] = "$Id: uurate.c,v 1.3 1995/08/24 05:19:21 jtc Exp $";
+static char rcsid[] = "$Id: uurate.c,v 1.1 1995/10/18 08:38:24 deraadt Exp $";
 #include <ctype.h>            /* Character Classification      */
 #include <math.h>
 #include "uucp.h"

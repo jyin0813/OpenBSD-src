@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_ieee80211.h,v 1.9 2003/11/16 20:30:07 avsm Exp $	*/
+/*	$OpenBSD: if_ieee80211.h,v 1.10 2004/01/07 00:13:22 fgsch Exp $	*/
 /*	$NetBSD: if_ieee80211.h,v 1.36 2003/07/06 20:54:24 dyoung Exp $	*/
 
 /*-

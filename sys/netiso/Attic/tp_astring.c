@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_astring.c,v 1.2 1996/03/04 10:35:48 mickey Exp $	*/
+/*	$OpenBSD: tp_astring.c,v 1.3 2003/06/02 23:28:18 millert Exp $	*/
 /*	$NetBSD: tp_astring.c,v 1.3 1996/02/13 22:10:37 christos Exp $	*/
 
 /*-

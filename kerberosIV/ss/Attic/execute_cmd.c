@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: execute_cmd.c,v 1.1 1995/12/14 06:52:47 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -24,7 +24,7 @@
 
 #ifndef lint
 static char const rcsid[] =
-    "$Id$";
+    "$Id: execute_cmd.c,v 1.1 1995/12/14 06:52:47 tholo Exp $";
 #endif
 
 /*

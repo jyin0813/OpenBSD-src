@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_wireg.h,v 1.9 2001/03/19 20:25:00 niklas Exp $	*/
+/*	$OpenBSD: if_wireg.h,v 1.10 2001/04/04 20:13:12 mickey Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998, 1999

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mk_cmds.c,v 1.1 1996/11/15 09:26:06 downsj Exp $	*/
+/*	$OpenBSD: mk_cmds.c,v 1.2 1996/12/11 13:44:20 deraadt Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pci_intr_fixup.h,v 1.3 2000/03/28 03:37:59 mickey Exp $	 */
+/*	$OpenBSD: pci_intr_fixup.h,v 1.4 2000/11/07 18:21:22 mickey Exp $	 */
 /*	$NetBSD: pci_intr_fixup.h,v 1.1 1999/11/17 01:20:38 thorpej Exp $  */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tc-mvme88k.c,v 1.2 1998/02/15 18:49:41 niklas Exp $	*/
 
 /* m88k.c -- Assembler for the Motorola 88000
    Contributed by Devon Bowen of Buffalo University

@@ -23,7 +23,7 @@
  */
 
 #include "includes.h"
-RCSID("$OpenBSD: auth2-krb5.c,v 1.1 2003/05/14 02:15:47 markus Exp $");
+RCSID("$OpenBSD: auth2-krb5.c,v 1.2 2003/05/15 14:09:21 markus Exp $");
 
 #include <krb5.h>
 

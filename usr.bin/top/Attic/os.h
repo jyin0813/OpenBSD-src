@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: os.h,v 1.1 1997/08/14 14:00:23 downsj Exp $	*/
 
 #include <sys/types.h>
 #include <sys/param.h>	/* This defines BSD */

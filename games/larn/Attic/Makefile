@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.13 2002/05/23 18:43:00 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.14 2002/05/31 03:46:35 pjanzen Exp $
 
 # EXTRA
 #	Incorporates code to gather additional performance statistics

@@ -1,5 +1,5 @@
 /* termdep.h -- System things that terminal.c depends on.
-   $Id: termdep.h,v 1.2 1997/10/30 05:55:14 law Exp $
+   $Id: termdep.h,v 1.1 1998/03/03 20:25:14 millert Exp $
 
    This file is part of GNU Info, a program for reading online documentation
    stored in Info format.

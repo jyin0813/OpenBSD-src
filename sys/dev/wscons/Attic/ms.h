@@ -1,4 +1,4 @@
-/*	$OpenBSD: ms.h,v 1.1 1996/10/30 22:41:44 niklas Exp $ */
+/*	$OpenBSD: ms.h,v 1.2 1997/01/24 19:58:28 niklas Exp $ */
 
 /*
  * Copyright (c) 1996 Niklas Hallqvist

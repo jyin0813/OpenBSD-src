@@ -1,4 +1,4 @@
-/*	$OpenBSD: ieee1212var.h,v 1.1 2002/06/25 17:11:49 itojun Exp $	*/
+/*	$OpenBSD: ieee1212var.h,v 1.2 2002/12/13 02:52:11 tdeval Exp $	*/
 /*	$NetBSD: ieee1212var.h,v 1.1 2002/02/27 04:58:51 jmc Exp $	*/
 
 /*

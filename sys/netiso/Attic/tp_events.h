@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tp_events.h,v 1.2 1996/03/04 10:35:58 mickey Exp $	*/
 /*	$NetBSD: tp_events.h,v 1.5 1996/02/13 22:10:58 christos Exp $	*/
 
 struct tp_event {

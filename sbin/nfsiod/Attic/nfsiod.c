@@ -1,4 +1,4 @@
-/*	$OpenBSD: nfsiod.c,v 1.6 1999/02/26 16:06:42 millert Exp $	*/
+/*	$OpenBSD: nfsiod.c,v 1.7 1999/02/26 16:17:46 millert Exp $	*/
 /*	$NetBSD: nfsiod.c,v 1.12 1996/02/20 16:06:55 fvdl Exp $	*/
 
 /*

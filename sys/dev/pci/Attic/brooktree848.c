@@ -1,4 +1,4 @@
-/* $OpenBSD: brooktree848.c,v 1.17 2000/11/13 22:16:21 aaron Exp $ */
+/* $OpenBSD: brooktree848.c,v 1.18 2001/01/31 22:39:45 jason Exp $ */
 /* $Roger: brooktree848.c,v 1.85 1999/06/12 14:54:54 roger Exp $ */
 
 /* BT848 Driver for Brooktree's Bt848, Bt848A, Bt849A, Bt878, Bt879 based cards.

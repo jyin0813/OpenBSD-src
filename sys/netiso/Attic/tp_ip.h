@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_ip.h,v 1.2 1996/03/04 10:36:05 mickey Exp $	*/
+/*	$OpenBSD: tp_ip.h,v 1.3 2003/06/02 23:28:18 millert Exp $	*/
 /*	$NetBSD: tp_ip.h,v 1.7 1996/02/13 22:11:12 christos Exp $	*/
 
 /*-

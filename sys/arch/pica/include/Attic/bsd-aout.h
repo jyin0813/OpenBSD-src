@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: bsd-aout.h,v 1.2 1996/06/06 23:06:32 deraadt Exp pefo $	*/
 
 /* bsd-aout.h
 

@@ -1,4 +1,4 @@
-;	$OpenBSD$
+;	$OpenBSD: ssh_script.ss,v 1.1 2001/03/07 01:57:56 miod Exp $
 
 ;
 ; Copyright (c) 1995 Michael L. Hitch

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kcmd.c,v 1.6 2003/04/15 08:05:33 deraadt Exp $	*/
+/*	$OpenBSD: kcmd.c,v 1.7 2003/06/03 02:56:15 millert Exp $	*/
 /*	$NetBSD: kcmd.c,v 1.2 1995/03/21 07:58:32 cgd Exp $	*/
 
 /*
@@ -35,7 +35,7 @@
 static char Xsccsid[] = "derived from @(#)rcmd.c 5.17 (Berkeley) 6/27/88";
 static char sccsid[] = "@(#)kcmd.c	8.2 (Berkeley) 8/19/93";
 #else
-static char rcsid[] = "$OpenBSD: kcmd.c,v 1.6 2003/04/15 08:05:33 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: kcmd.c,v 1.7 2003/06/03 02:56:15 millert Exp $";
 #endif
 #endif /* not lint */
 

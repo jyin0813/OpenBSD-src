@@ -1,4 +1,4 @@
-/*	$OpenBSD: viareg.h,v 1.2 2001/07/04 08:38:52 niklas Exp $	*/
+/*	$OpenBSD: viareg.h,v 1.3 2001/07/09 03:30:20 mickey Exp $	*/
 /*	$NetBSD: viareg.h,v 1.2 1998/10/20 14:56:30 tsubai Exp $	*/
 
 /*-

@@ -1,5 +1,5 @@
 /*
-**	$Id: paths.h,v 1.2 1994/02/04 23:18:03 cgd Exp $
+**	$Id: paths.h,v 1.1 1995/10/18 08:43:18 deraadt Exp $
 **
 ** paths.h		Common path definitions for the in.identd daemon
 **

@@ -3,7 +3,7 @@
    actual type **after default promotions**.
    Thus, va_arg (..., short) is not valid. 
 
-	$Id: gstdarg.h,v 1.3 1993/12/06 09:51:12 cgd Exp $
+	$Id: gstdarg.h,v 1.1 1995/10/18 08:39:49 deraadt Exp niklas $
 */
 
 #ifndef _STDARG_H

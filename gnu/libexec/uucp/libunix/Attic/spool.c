@@ -26,7 +26,7 @@
 #include "uucp.h"
 
 #if USE_RCS_ID
-const char spool_rcsid[] = "$Id: spool.c,v 1.3 1995/08/24 05:20:19 jtc Exp $";
+const char spool_rcsid[] = "$Id: spool.c,v 1.1 1995/10/18 08:38:31 deraadt Exp $";
 #endif
 
 #include "uudefs.h"

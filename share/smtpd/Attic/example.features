@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: example.features,v 1.2 2001/02/03 08:23:45 niklas Exp $
 
 #
 # example smtpd rules file.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipft_pc.c,v 1.17 2001/01/17 06:01:22 fgsch Exp $	*/
+/*	$OpenBSD: ipft_pc.c,v 1.18 2001/01/30 04:31:01 kjell Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

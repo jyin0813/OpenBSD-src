@@ -1,6 +1,6 @@
 #
 #       from: @(#)ttys  5.1 (Berkeley) 4/17/89
-#       $Id: ttys,v 1.1 1996/05/18 15:07:24 pefo Exp $
+#       $Id: ttys,v 1.2 1996/07/28 09:01:02 deraadt Exp pefo $
 #
 # name	getty				type	status		comments
 #

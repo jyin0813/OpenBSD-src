@@ -15,7 +15,7 @@
 //    License along with this library; if not, write to the Free
 //    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 //
-//	$Id: streambuf.h,v 1.2 1993/08/02 17:22:41 mycroft Exp $
+//	$Id: streambuf.h,v 1.1 1995/10/18 08:38:14 deraadt Exp etheisen $
 
 #ifndef _STREAMBUF_H
 #define _STREAMBUF_H

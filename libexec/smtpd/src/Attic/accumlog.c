@@ -1,4 +1,4 @@
-/* $OpenBSD: accumlog.c,v 1.2 2001/01/28 19:34:34 niklas Exp $*/
+/* $OpenBSD: accumlog.c,v 1.3 2002/02/19 19:39:38 millert Exp $*/
 
 /*
  * 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tty.h,v 1.1.1.1 1996/08/14 06:19:12 downsj Exp $	*/
+/*	$OpenBSD: tty.h,v 1.2 1996/11/21 07:59:36 downsj Exp $	*/
 
 /*
 	tty.h -- centralized definitions for a variety of terminal interfaces

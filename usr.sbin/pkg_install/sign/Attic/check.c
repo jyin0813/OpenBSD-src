@@ -1,4 +1,4 @@
-/* $OpenBSD: check.c,v 1.2 1999/10/04 21:46:27 espie Exp $ */
+/* $OpenBSD: check.c,v 1.3 2003/06/04 04:29:03 deraadt Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

@@ -1,5 +1,5 @@
 /*	$OpenBSD: if_ae.c,v 1.9 1997/01/16 09:24:35 niklas Exp $	*/
-/*	$NetBSD: if_ae.c,v 1.12 1996/12/23 09:10:13 veego Exp $	*/
+/*	$NetBSD: if_ae.c,v 1.14 1997/03/18 18:44:53 veego Exp $	*/
 
 /*
  * Copyright (c) 1995 Bernd Ernesti and Klaus Burkert. All rights reserved.
@@ -47,9 +47,6 @@
  *	byte-swapped. In addition ALL write accesses to the board have to be
  *	WORD or LONG, BYTE-access is prohibited!!
  */
-
-#include "ae.h"
-#if NAE > 0
 
 #include "bpfilter.h"
 
@@ -130,11 +127,11 @@ struct	ae_softc {
 	int	sc_rmd;		/* predicted next rmd to process */
 	int	sc_tmd;		/* next tmd to use */
 	int	sc_no_td;	/* number of tmds in use */
+	u_int16_t	ae_rev;	/* revision of the lance chip */
 } ae_softc[NAE];
 
 /* offsets for:	   ID,   REGS,    MEM */
 int	aestd[] = { 0, 0x0370, 0x8000 };
-static u_int16_t	revision;
 
 int	aematch __P((struct device *, void *, void *));
 void	aeattach __P((struct device *, struct device *, void *));
@@ -233,8 +230,8 @@ aeattach(parent, self, aux)
 
 	/* get the chip version of the lance chip */
 	sc->sc_r1->aer1_rap = 0x5900;
-	revision = ((sc->sc_r1->aer1_rdp >> 4) -2);
-	printf("  chip-revision: B%x\n", revision);
+	sc->ae_rev = ((sc->sc_r1->aer1_rdp >> 4) -2);
+	printf("  chip-revision: B%x\n", sc->ae_rev);
 
 	splx (s);
 
@@ -327,9 +324,9 @@ aememinit(sc)
 
 	for (i = 0; i < AERBUF; i++) {  
 		aer2->aer2_rmd[i].rmd0 = SWAP((int)aemem->aer2_rbuf[i]);
-		aer2->aer2_rmd[i].rmd1 = AE_OWN; 
 		aer2->aer2_rmd[i].rmd2 = SWAP(-ETHER_MAX_LEN);
 		aer2->aer2_rmd[i].rmd3 = 0;
+		aer2->aer2_rmd[i].rmd1 = AE_OWN; 
 	}
 
 	for (i = 0; i < AETBUF; i++) {
@@ -490,9 +487,9 @@ aestart(ifp)
 
 		ifp->if_timer = 5;
 
-		tmd->tmd1 = AE_OWN | AE_STP | AE_ENP;
 		tmd->tmd2 = SWAP(-len);
 		tmd->tmd3 = 0;
+		tmd->tmd1 = AE_OWN | AE_STP | AE_ENP;
 
 		sc->sc_r1->aer1_rdp = AE_INEA | AE_TDMD;
 
@@ -666,11 +663,11 @@ aerint(sc)
 		sc->sc_r1->aer1_rdp =  AE_RINT | AE_INEA;
 		if (rmd->rmd1 & (AE_FRAM | AE_OFLO | AE_CRC | AE_RBUFF)) {
 			ifp->if_ierrors++;
-			if ((rmd->rmd1 & (AE_FRAM | AE_OFLO | AE_ENP)) == (AE_FRAM | AE_ENP))
-				printf("%s: framing error\n", sc->sc_dev.dv_xname);
 			if ((rmd->rmd1 & (AE_OFLO | AE_ENP)) == AE_OFLO)
 				printf("%s: overflow\n", sc->sc_dev.dv_xname);
-			if ((rmd->rmd1 & (AE_CRC | AE_OFLO | AE_ENP)) == (AE_CRC | AE_ENP))
+			else if ((rmd->rmd1 & (AE_FRAM | AE_OFLO | AE_ENP)) == (AE_FRAM | AE_ENP))
+				printf("%s: framing error\n", sc->sc_dev.dv_xname);
+			else if ((rmd->rmd1 & (AE_CRC | AE_OFLO | AE_ENP)) == (AE_CRC | AE_ENP))
 				printf("%s: crc mismatch\n", sc->sc_dev.dv_xname);
 			if (rmd->rmd1 & AE_RBUFF)
 				printf("%s: receive buffer error\n", sc->sc_dev.dv_xname);
@@ -690,9 +687,9 @@ aerint(sc)
 		} else
 			aeread(sc, sc->sc_r2->aer2_rbuf[bix], SWAP(rmd->rmd3) - 4);
 
-		rmd->rmd1 = AE_OWN;
-		rmd->rmd2 = SWAP(-ETHER_MAX_LEN);
 		rmd->rmd3 = 0;
+		rmd->rmd2 = SWAP(-ETHER_MAX_LEN);
+		rmd->rmd1 = AE_OWN;
 
 		AENEXTRMP;
 	} while ((rmd->rmd1 & AE_OWN) == 0);
@@ -1137,5 +1134,3 @@ allmulti:
 	ifp->if_flags |= IFF_ALLMULTI;
 	af[0] = af[1] = af[2] = af[3] = 0xffff;
 }
-
-#endif /* NAE > 0 */

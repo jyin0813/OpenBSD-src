@@ -1,4 +1,4 @@
-/*	$OpenBSD: linux_audio.h,v 1.2 1996/04/18 21:21:38 niklas Exp $	*/
+/*	$OpenBSD: linux_audio.h,v 1.3 1996/09/16 15:34:28 mickey Exp $	*/
 
 #define LINUX_IOCPARM_MASK    0x7f            /* parameters must be < 128 bytes */
 #define LINUX_IOC_VOID        0x00000000      /* no parameters */

@@ -1,4 +1,4 @@
-#	$NetBSD: GENERIC,v 1.32 1995/11/21 05:00:37 briggs Exp $
+#	$NetBSD: GENERIC,v 1.37 1996/05/19 22:29:04 scottr Exp $
 #
 # GENERIC
 
@@ -49,10 +49,12 @@ options		COMPAT_43
 options		NS
 options		MAPMEM
 options		SYSVSHM,SYSVSEM,SYSVMSG
+options		PPP_BSDCOMP,PPP_DEFLATE
 
 # Mac-specific options
 options		M68040
-options		M68030		# Includes the 020+851
+options		M68030
+options		M68020		# Must have 68851 PMMU
 options		FPSP
 options		FPU_EMULATE
 options		COMPAT_NOMID
@@ -64,12 +66,19 @@ options		MACHINE_NONCONTIG
 config		bsd	swap generic
 options		GENERIC
 
-ae*	at nubus0	slot -1   id ?   claimed 0
+sn0		at obio?	# SONIC ethernet (68040)
 
-sn0	at mainbus?		# SONIC ethernet (68040)
+intvid0		at obio?	# Internal video hardware
+grf*		at intvid?
 
-ncrscsi0	at mainbus?		# SCSI NCR 5380
-ncr96scsi0	at mainbus?		# SCSI NCR 53C96
+nubus0		at mainbus?
+
+ae*		at nubus?
+macvid*		at nubus?
+grf*		at macvid?
+
+ncrscsi0	at obio?		# SCSI NCR 5380
+ncr96scsi0	at obio?		# SCSI NCR 53C96
 
 scsibus*	at scsi?
 sd*	at scsibus? target ? lun ?
@@ -77,7 +86,6 @@ st*	at scsibus? target ? lun ?
 cd*	at scsibus? target ? lun ?
 ch*	at scsibus? target ? lun ?
 ss*	at scsibus? target ? lun ?
-su*	at scsibus? target ? lun ?
 uk*	at scsibus? target ? lun ?
 
 pseudo-device	pty		16

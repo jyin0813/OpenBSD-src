@@ -1,4 +1,4 @@
-/*	$OpenBSD: xf_flow.c,v 1.1 1998/11/14 23:37:21 deraadt Exp $	*/
+/*	$OpenBSD: xf_flow.c,v 1.2 1998/11/24 14:41:58 niklas Exp $	*/
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: m18x_cmmu.c,v 1.16 2001/12/16 23:49:46 miod Exp $	*/
+/*	$OpenBSD: m18x_cmmu.c,v 1.18 2001/12/22 07:35:43 smurph Exp $	*/
 /*
  * Copyright (c) 1998 Steve Murphree, Jr.
  * Copyright (c) 1996 Nivas Madhur

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcvt_out.c,v 1.30 2001/01/22 18:48:44 deraadt Exp $	*/
+/*	$OpenBSD: pcvt_out.c,v 1.31 2001/05/16 12:49:45 ho Exp $	*/
 
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch.

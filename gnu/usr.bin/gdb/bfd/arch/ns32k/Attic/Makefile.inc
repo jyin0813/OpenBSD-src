@@ -1,4 +1,4 @@
-# $Id: Makefile.inc,v 1.3 1994/12/22 04:05:39 phil Exp $
+# $Id: Makefile.inc,v 1.1 1995/10/18 08:39:55 deraadt Exp $
 
 SRCS+=		netbsd-ns32k.c cpu-ns32k.c
 

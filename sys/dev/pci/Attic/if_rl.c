@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_rl.c,v 1.26 2001/02/20 19:39:43 mickey Exp $	*/
+/*	$OpenBSD: if_rl.c,v 1.27 2001/03/25 03:53:00 fgsch Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998

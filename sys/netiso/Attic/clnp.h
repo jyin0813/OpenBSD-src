@@ -1,4 +1,4 @@
-/*	$OpenBSD: clnp.h,v 1.3 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: clnp.h,v 1.4 2003/06/02 23:28:16 millert Exp $	*/
 /*	$NetBSD: clnp.h,v 1.10 1996/02/13 22:08:09 christos Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: rd.c,v 1.2 1996/01/12 20:20:38 deraadt Exp $	*/
+/*	$OpenBSD: rd.c,v 1.3 2000/03/03 00:54:54 todd Exp $	*/
 /*
  * Copyright (c) 1995 Philip A. Nelson.
  * All rights reserved.

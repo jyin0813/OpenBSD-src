@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: genassym.c,v 1.1 1996/06/24 09:07:20 pefo Exp $	*/
 /*
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)genassym.c	8.2 (Berkeley) 9/23/93
- *      $Id: genassym.c,v 1.2 1996/05/15 07:09:11 pefo Exp $
+ *      $Id: genassym.c,v 1.1 1996/06/24 09:07:20 pefo Exp $
  */
 
 

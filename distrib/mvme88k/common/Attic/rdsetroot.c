@@ -1,4 +1,4 @@
-/*	$OpenBSD: rdsetroot.c,v 1.1 1995/10/13 16:38:39 gwr Exp $	*/
+/*	$OpenBSD: rdsetroot.c,v 1.1 1998/12/17 02:16:30 smurph Exp $	*/
 
 /*
  * Copyright (c) 1994 Gordon W. Ross
@@ -26,7 +26,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- *	$Id: rdsetroot.c,v 1.2 1997/11/26 02:32:25 deraadt Exp $
+ *	$Id: rdsetroot.c,v 1.1 1998/12/17 02:16:30 smurph Exp $
  */
 
 /*

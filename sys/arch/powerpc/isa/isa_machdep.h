@@ -1,4 +1,4 @@
-/*	$OpenBSD: isa_machdep.h,v 1.5 1998/09/20 22:11:47 rahnds Exp $ */
+/*	$OpenBSD: isa_machdep.h,v 1.6 1999/11/09 04:51:35 rahnds Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

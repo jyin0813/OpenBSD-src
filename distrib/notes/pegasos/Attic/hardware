@@ -1,4 +1,4 @@
-dnl	$OpenBSD: hardware,v 1.5 2004/02/07 21:58:16 miod Exp $
+dnl	$OpenBSD: hardware,v 1.6 2004/03/14 08:59:00 mickey Exp $
 OpenBSD/MACHINE OSREV runs on Pegasos and Pegasos II PowerPC motherboard
 based machines.
 

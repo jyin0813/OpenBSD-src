@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_ip4.h,v 1.16 1999/12/09 09:02:59 angelos Exp $	*/
+/*	$OpenBSD: ip_ip4.h,v 1.17 2000/01/13 05:03:45 angelos Exp $	*/
 
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),

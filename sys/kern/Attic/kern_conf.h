@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kern_conf.h,v 1.2 1996/04/19 16:08:52 niklas Exp deraadt $	*/
 /*	$NetBSD: kern_conf.h,v 1.2 1996/03/14 19:01:08 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: clock_mc.c,v 1.8 1998/01/28 13:45:47 pefo Exp $	*/
+/*	$OpenBSD: clock_mc.c,v 1.9 1998/03/16 09:38:26 pefo Exp $	*/
 
 /*
  * Copyright (c) 1988 University of Utah.

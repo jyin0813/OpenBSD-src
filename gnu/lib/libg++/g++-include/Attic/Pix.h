@@ -1,4 +1,4 @@
-/*	$Id: Pix.h,v 1.2 1993/08/02 17:23:26 mycroft Exp $ */
+/*	$Id: Pix.h,v 1.1 1995/10/18 08:38:17 deraadt Exp etheisen $ */
 
 #ifndef _Pix_h
 #define _Pix_h 1

@@ -1,4 +1,4 @@
-/*	$OpenBSD: startprog.S,v 1.2 1997/03/31 05:52:25 weingart Exp $	*/
+/*	$OpenBSD: startprog.S,v 1.3 1997/03/31 23:06:32 mickey dead $	*/
 
 #include <machine/asm.h>
 
@@ -32,13 +32,16 @@ ENTRY(startprog)
 
 	# push on our entry address
 	movl	$0x8, %ebx		# segment
-	pushl	%bx
+	pushl	%ebx
 	pushl	%ecx
 
 	# convert over the other data segs
 	movl	$0x10, %ebx
 	movl	%bx, %ds
 	movl	%bx, %es
+	movl	%bx, %ss
+	movl	%bx, %fs
+	movl	%bx, %gs
 
 	# convert the PC (and code seg)
 	lret

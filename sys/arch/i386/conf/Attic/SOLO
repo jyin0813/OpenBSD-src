@@ -1,7 +1,7 @@
 #
 #	SOLO -- Gateway Solo 9300cx
 #
-#	$OpenBSD$
+#	$OpenBSD: SOLO,v 1.1 2001/02/02 06:41:17 tholo Exp $
 #
 
 machine		i386		# architecture, used by config; REQUIRED

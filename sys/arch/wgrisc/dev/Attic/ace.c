@@ -1,4 +1,4 @@
-/*	$OpenBSD: ace.c,v 1.6 1996/09/14 15:58:21 pefo Exp $	*/
+/*	$OpenBSD: ace.c,v 1.1 1997/02/06 16:02:42 pefo Exp $	*/
 /*	$NetBSD: com.c,v 1.82.4.1 1996/06/02 09:08:00 mrg Exp $	*/
 
 /*-

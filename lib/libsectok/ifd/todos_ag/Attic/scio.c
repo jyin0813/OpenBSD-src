@@ -3,7 +3,7 @@
  *
  * Jim Rees, University of Michigan, October 1997
  */
-static char *rcsid = "$Id: $";
+static char *rcsid = "$Id: scio.c,v 1.1 2001/05/22 15:35:57 rees Exp $";
 
 #include <sys/ioctl.h>
 #include <sys/file.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfioctl.h,v 1.3 2003/04/03 06:47:58 jmc Exp $	*/
+/*	$OpenBSD: grfioctl.h,v 1.4 2003/06/02 23:27:44 millert Exp $	*/
 /*	$NetBSD: grfioctl.h,v 1.5 1994/10/26 07:24:08 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: iplang.h,v 1.2 2001/01/17 06:01:25 fgsch Exp $	*/
 
 /*
  * Copyright (C) 1997-1998 by Darren Reed.

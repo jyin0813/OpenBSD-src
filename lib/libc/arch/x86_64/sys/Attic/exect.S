@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: exect.S,v 1.1 2004/01/28 01:44:45 mickey Exp $	*/
 /*	$NetBSD: exect.S,v 1.1 2001/06/19 00:25:06 fvdl Exp $	*/
 
 /*-

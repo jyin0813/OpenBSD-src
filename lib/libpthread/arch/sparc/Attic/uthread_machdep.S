@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_machdep.S,v 1.1 2000/01/06 07:04:36 d Exp $	*/
 
 #include <machine/asm.h>
 #include <machine/trap.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_memrw.c,v 1.7 2001/11/06 19:53:13 miod Exp $	*/
+/*	$OpenBSD: db_memrw.c,v 1.8 2002/03/14 01:26:28 millert Exp $	*/
 /*	$NetBSD: db_memrw.c,v 1.7 1997/06/10 18:24:34 veego Exp $	*/
 
 /*-

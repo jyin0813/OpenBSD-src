@@ -1,4 +1,4 @@
-/*	$OpenBSD: lifvar.h,v 1.1 1998/07/27 15:39:01 mickey Exp $	*/
+/*	$OpenBSD: lifvar.h,v 1.2 1998/09/29 07:32:26 mickey Exp $	*/
 
 /*
  * Copyright (c) 1998 Michael Shalayeff

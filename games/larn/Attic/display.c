@@ -1,9 +1,9 @@
-/*	$OpenBSD: display.c,v 1.2 1998/09/15 05:12:31 pjanzen Exp $	*/
+/*	$OpenBSD: display.c,v 1.3 2002/02/16 21:27:10 millert Exp $	*/
 /*	$NetBSD: display.c,v 1.4 1997/10/18 20:03:15 christos Exp $	*/
 
 /* display.c		Larn is copyrighted 1986 by Noah Morgan. */
 #ifndef lint
-static char rcsid[] = "$OpenBSD: display.c,v 1.2 1998/09/15 05:12:31 pjanzen Exp $";
+static char rcsid[] = "$OpenBSD: display.c,v 1.3 2002/02/16 21:27:10 millert Exp $";
 #endif /* not lint */
 
 #include "header.h"

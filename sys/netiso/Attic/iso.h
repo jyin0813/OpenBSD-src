@@ -1,4 +1,4 @@
-/*	$OpenBSD: iso.h,v 1.3 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: iso.h,v 1.4 2003/06/02 23:28:17 millert Exp $	*/
 /*	$NetBSD: iso.h,v 1.8 1996/02/13 22:09:58 christos Exp $	*/
 
 /*-

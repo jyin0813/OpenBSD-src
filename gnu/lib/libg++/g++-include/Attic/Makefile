@@ -1,4 +1,4 @@
-#	$Id: Makefile,v 1.25 1995/10/22 21:04:42 christos Exp $
+#	$Id: Makefile,v 1.2 1995/12/14 03:42:17 deraadt Exp etheisen $
 
 LIB=		g++
 

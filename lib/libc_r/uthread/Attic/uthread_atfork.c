@@ -1,6 +1,6 @@
 /*
  * David Leonard <d@openbsd.org>, 1999. Public domain.
- * $OpenBSD$
+ * $OpenBSD: uthread_atfork.c,v 1.1 1999/01/17 23:46:26 d Exp $
  */
 
 #include <stdlib.h>

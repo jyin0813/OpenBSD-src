@@ -1,4 +1,4 @@
-/*	$OpenBSD: iso_snpac.h,v 1.2 1996/03/04 10:35:42 mickey Exp $	*/
+/*	$OpenBSD: iso_snpac.h,v 1.3 2003/06/02 23:28:17 millert Exp $	*/
 /*	$NetBSD: iso_snpac.h,v 1.9 1996/02/13 22:10:29 christos Exp $	*/
 
 /*-

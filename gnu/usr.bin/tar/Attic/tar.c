@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: tar.c,v 1.2 1996/04/23 00:16:11 niklas Exp tholo $	*/
 
 /* Tar -- a tape archiver.
    Copyright (C) 1988, 1992, 1993 Free Software Foundation
@@ -20,7 +20,7 @@ along with GNU Tar; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD$";
+static char rcsid[] = "$OpenBSD: tar.c,v 1.2 1996/04/23 00:16:11 niklas Exp tholo $";
 #endif /* not lint */
 
 /*

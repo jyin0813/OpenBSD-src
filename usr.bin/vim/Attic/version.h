@@ -1,4 +1,4 @@
-/*	$OpenBSD: version.h,v 1.3 1996/10/14 03:55:34 downsj Exp $	*/
+/*	$OpenBSD: version.h,v 1.4 1996/10/15 08:08:02 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  *
  * VIM - Vi IMproved		by Bram Moolenaar

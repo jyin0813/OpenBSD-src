@@ -4,7 +4,7 @@ static char ssl_expr_yyrcsid[]
 #if __GNUC__ == 2
   __attribute__ ((unused))
 #endif /* __GNUC__ == 2 */
-  = "$OpenBSD: skeleton.c,v 1.17 2001/07/16 06:29:45 pvalchev Exp $";
+  = "$OpenBSD: ssl_expr_parse.c,v 1.6 2002/03/29 02:08:06 beck Exp $";
 #endif
 #include <stdlib.h>
 #define YYBYACC 1

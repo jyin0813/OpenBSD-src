@@ -1,4 +1,4 @@
-/*	$OpenBSD: tp_meas.c,v 1.4 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: tp_meas.c,v 1.5 2004/06/24 19:35:26 tholo Exp $	*/
 /*	$NetBSD: tp_meas.c,v 1.7 1996/02/13 22:11:18 christos Exp $	*/
 
 /*-

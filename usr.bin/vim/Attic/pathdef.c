@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: pathdef.c,v 1.1 1996/09/07 21:40:25 downsj Exp $	*/
 #include "vim.h"
 char_u *sys_compatrc_fname = (char_u *)SYS_COMPATRC_FILE;
 char_u *sys_vimrc_fname = (char_u *)SYS_VIMRC_FILE;

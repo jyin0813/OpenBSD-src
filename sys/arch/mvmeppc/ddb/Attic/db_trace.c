@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_trace.c,v 1.1 2001/06/26 21:57:39 smurph Exp $	*/
+/*	$OpenBSD: db_trace.c,v 1.2 2002/05/18 09:49:17 art Exp $	*/
 
 /* 
  * Mach Operating System

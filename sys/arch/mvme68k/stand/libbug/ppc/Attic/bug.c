@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: bug.c,v 1.2 1996/04/28 10:48:50 deraadt Exp deraadt $ */
 
 /*
  * bug routines -- assumes that the necessary sections of memory

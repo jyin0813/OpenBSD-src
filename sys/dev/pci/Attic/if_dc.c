@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_dc.c,v 1.10 2000/02/15 02:28:14 jason Exp $	*/
+/*	$OpenBSD: if_dc.c,v 1.11 2000/03/17 01:27:13 aaron Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998, 1999

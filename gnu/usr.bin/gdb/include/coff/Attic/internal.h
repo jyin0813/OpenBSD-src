@@ -1,7 +1,7 @@
 /* Internal format of COFF object file data structures, for GNU BFD.
    This file is part of BFD, the Binary File Descriptor library.
 
-	$Id: internal.h,v 1.1 1994/01/28 12:42:39 pk Exp $
+	$Id: internal.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $
 */
 
 /* First, make "signed char" work, even on old compilers. */

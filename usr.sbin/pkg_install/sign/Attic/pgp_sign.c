@@ -1,4 +1,4 @@
-/* $OpenBSD: pgp_sign.c,v 1.4 2003/06/04 04:29:03 deraadt Exp $ */
+/* $OpenBSD: pgp_sign.c,v 1.5 2003/08/16 17:31:56 deraadt Exp $ */
 /*-
  * Copyright (c) 1999 Marc Espie.
  *

@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.2 1995/10/22 22:48:51 christos Exp $
+# $Id: Makefile,v 1.2 1995/12/14 03:42:41 deraadt Exp $
 
 # Paths to libraries
 #

@@ -1,4 +1,4 @@
-#       $OpenBSD: Makefile,v 1.5 1998/09/15 02:42:43 millert Exp $
+#       $OpenBSD: Makefile,v 1.6 1999/03/29 20:29:00 millert Exp $
 
 PROG=	sudo
 MAN=	sudo.8 sudoers.5

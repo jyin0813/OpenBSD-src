@@ -1,4 +1,4 @@
-/*	$OpenBSD: i386_iopl.c,v 1.4 1998/02/03 04:42:21 tholo Exp $	*/
+/*	$OpenBSD: x86_64_iopl.c,v 1.1 2004/02/26 00:10:54 deraadt Exp $	*/
 /*	$NetBSD: i386_iopl.c,v 1.2 1996/02/27 22:57:29 jtc Exp $	*/
 
 /*-

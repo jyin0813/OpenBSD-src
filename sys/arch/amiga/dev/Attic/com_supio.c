@@ -1,4 +1,4 @@
-/*	$OpenBSD: com_supio.c,v 1.4 2002/03/14 01:26:28 millert Exp $	*/
+/*	$OpenBSD: com_supio.c,v 1.5 2002/06/11 03:25:42 miod Exp $	*/
 /*	$NetBSD: com_supio.c,v 1.3 1997/08/27 20:41:30 is Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: isapnpvar.h,v 1.3 1997/12/21 14:41:27 downsj Exp $	*/
 /*	$NetBSD: isapnpvar.h,v 1.5.4.2 1997/10/29 00:40:49 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: uthread_condattr_init.c,v 1.3 1999/11/25 07:01:33 d Exp $	*/
 /*
  * Copyright (c) 1997 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

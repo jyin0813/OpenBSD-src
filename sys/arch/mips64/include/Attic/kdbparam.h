@@ -1,4 +1,4 @@
-/*	$OpenBSD: kdbparam.h,v 1.2 1999/01/27 04:46:05 imp Exp $	*/
+/*	$OpenBSD: kdbparam.h,v 1.1 2004/08/06 20:56:02 pefo Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

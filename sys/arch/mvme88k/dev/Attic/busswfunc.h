@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcctwofunc.h,v 1.1 2001/03/08 00:03:14 miod Exp $ */
+/*	$OpenBSD: busswfunc.h,v 1.1 2001/12/13 08:55:51 smurph Exp $ */
 
 #ifndef _MVME88K_BUSSWF_H_
 #define _MVME88K_BUSSWF_H_

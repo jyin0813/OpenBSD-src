@@ -1,4 +1,4 @@
-/*	$OpenBSD: icu.h,v 1.7 2001/12/04 00:00:36 niklas Exp $	*/
+/*	$OpenBSD: icu.h,v 1.8 2003/06/02 23:27:47 millert Exp $	*/
 /*	$NetBSD: icu.h,v 1.19 1996/02/01 22:31:21 mycroft Exp $	*/
 
 /*-

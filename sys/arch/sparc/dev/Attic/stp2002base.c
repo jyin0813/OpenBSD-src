@@ -1,4 +1,4 @@
-/*	$OpenBSD: stp2002base.c,v 1.1 1998/07/17 21:33:11 jason Exp $	*/
+/*	$OpenBSD: stp2002base.c,v 1.2 1998/07/22 17:27:15 jason Exp $	*/
 
 /*
  * Copyright (c) 1998 Jason L. Wright (jason@thought.net)

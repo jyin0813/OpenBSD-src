@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_nanosleep.c,v 1.6 2001/08/21 19:24:53 fgsch Exp $	*/
+/*	$OpenBSD: uthread_nanosleep.c,v 1.7 2001/12/31 18:23:15 fgsch Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

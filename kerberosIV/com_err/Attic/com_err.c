@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: com_err.c,v 1.1 1995/12/14 06:52:33 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -48,7 +48,7 @@
 
 #if !defined(lint)
 static const char rcsid[] =
-    "$Id$";
+    "$Id: com_err.c,v 1.1 1995/12/14 06:52:33 tholo Exp $";
 #endif	/* ! lint */
 
 static void

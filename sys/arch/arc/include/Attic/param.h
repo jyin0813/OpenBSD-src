@@ -1,4 +1,4 @@
-/*      $OpenBSD: param.h,v 1.11 1998/08/30 22:05:35 millert Exp $ */
+/*      $OpenBSD: param.h,v 1.12 1999/08/11 22:14:17 niklas Exp $ */
 
 /*
  * Copyright (c) 1988 University of Utah.

@@ -36,7 +36,7 @@
  * SUCH DAMAGE.
  */
 
-/* $Id: roken.h,v 1.23 2000/08/16 01:23:45 lha Exp $ */
+/* $Id: roken.h,v 1.3 2000/09/11 14:41:03 art Exp $ */
 
 #ifndef __ROKEN_H__
 #define __ROKEN_H__

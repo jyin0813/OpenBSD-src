@@ -1,4 +1,4 @@
-/*	$OpenBSD: pf_encap.h,v 1.8 2000/12/12 01:46:17 niklas Exp $	*/
+/*	$OpenBSD: pf_encap.h,v 1.9 2001/06/29 19:08:11 ho Exp $	*/
 /*	$EOM: pf_encap.h,v 1.13 2000/12/04 04:46:35 angelos Exp $	*/
 
 /*

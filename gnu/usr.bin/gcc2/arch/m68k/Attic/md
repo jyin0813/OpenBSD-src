@@ -18,7 +18,7 @@
 ;; along with GNU CC; see the file COPYING.  If not, write to
 ;; the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-;;	$Id: md,v 1.1 1993/11/25 01:26:24 paulus Exp $
+;;	$Id: md,v 1.1 1995/10/18 08:39:20 deraadt Exp niklas $
 
 
 ;;- instruction definitions

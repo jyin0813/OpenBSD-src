@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_swap.c,v 1.15 2001/03/09 03:13:48 deraadt Exp $	*/
+/*	$OpenBSD: vm_swap.c,v 1.16 2001/05/05 20:57:04 art Exp $	*/
 /*	$NetBSD: vm_swap.c,v 1.64 1998/11/08 19:45:17 mycroft Exp $	*/
 
 /*

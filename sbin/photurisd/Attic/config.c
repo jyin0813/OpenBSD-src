@@ -1,4 +1,4 @@
-/*	$OpenBSD: config.c,v 1.9 2002/06/09 08:13:08 todd Exp $	*/
+/*	$OpenBSD: config.c,v 1.10 2002/12/06 02:17:42 deraadt Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -35,7 +35,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: config.c,v 1.9 2002/06/09 08:13:08 todd Exp $";
+static char rcsid[] = "$OpenBSD: config.c,v 1.10 2002/12/06 02:17:42 deraadt Exp $";
 #endif
 
 #define _CONFIG_C_

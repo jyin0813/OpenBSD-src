@@ -1,4 +1,4 @@
-/*	$OpenBSD: sun3_startup.c,v 1.21 2002/03/14 01:26:47 millert Exp $	*/
+/*	$OpenBSD: sun3_startup.c,v 1.22 2002/03/14 03:16:01 millert Exp $	*/
 /*	$NetBSD: sun3_startup.c,v 1.55 1996/11/20 18:57:38 gwr Exp $	*/
 
 /*-

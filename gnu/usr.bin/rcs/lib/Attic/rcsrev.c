@@ -28,6 +28,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsrev.c,v $
+ * Revision 1.2  1996/05/07 14:10:44  deraadt
+ * rcs used gets(); netbsd pr#2287; from beal@umiacs.UMD.EDU, cleaned up by me
+ *
  * Revision 1.1.1.1  1995/10/18 08:41:02  deraadt
  * initial import of NetBSD tree
  *
@@ -103,7 +106,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(revId, "$Id: rcsrev.c,v 1.1.1.1 1995/10/18 08:41:02 deraadt Exp $")
+libId(revId, "$Id: rcsrev.c,v 1.2 1996/05/07 14:10:44 deraadt Exp millert $")
 
 static char const *branchtip P((char const*));
 static char const *lookupsym P((char const*));

@@ -1,4 +1,4 @@
-/*	$OpenBSD: akbd.c,v 1.9 2001/07/17 23:34:14 drahn Exp $	*/
+/*	$OpenBSD: akbd.c,v 1.10 2001/07/25 08:21:08 maja Exp $	*/
 /*	$NetBSD: akbd.c,v 1.13 2001/01/25 14:08:55 tsubai Exp $	*/
 
 /*

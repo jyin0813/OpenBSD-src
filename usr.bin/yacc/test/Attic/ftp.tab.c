@@ -1,6 +1,6 @@
 #ifndef lint
 /*static char yysccsid[] = "from: @(#)yaccpar	1.9 (Berkeley) 02/21/93";*/
-static char yyrcsid[] = "$OpenBSD: ftp.tab.c,v 1.2 1996/04/21 23:45:32 deraadt Exp $";
+static char yyrcsid[] = "$OpenBSD: ftp.tab.c,v 1.3 1997/01/17 07:13:55 millert Exp $";
 #endif
 #include <stdlib.h>
 #define YYBYACC 1
@@ -16,7 +16,7 @@ static char yyrcsid[] = "$OpenBSD: ftp.tab.c,v 1.2 1996/04/21 23:45:32 deraadt E
 
 #ifndef lint
 /*static char sccsid[] = "from: @(#)ftpcmd.y	5.20.1.1 (Berkeley) 3/2/89";*/
-static char rcsid[] = "$Id: ftp.tab.c,v 1.2 1996/04/21 23:45:32 deraadt Exp $";
+static char rcsid[] = "$Id: ftp.tab.c,v 1.3 1997/01/17 07:13:55 millert Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

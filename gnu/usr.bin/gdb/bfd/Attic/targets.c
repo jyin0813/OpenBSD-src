@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: targets.c,v 1.5 1995/06/05 15:22:42 ragge Exp $
+	$Id: targets.c,v 1.1 1995/10/18 08:39:54 deraadt Exp $
 */
 
 #include "bfd.h"

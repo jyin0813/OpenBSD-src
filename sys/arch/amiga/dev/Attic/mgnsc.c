@@ -1,4 +1,4 @@
-/*	$OpenBSD: mgnsc.c,v 1.10 1997/01/18 12:26:32 niklas Exp $	*/
+/*	$OpenBSD: mgnsc.c,v 1.11 2002/03/14 01:26:29 millert Exp $	*/
 /*	$NetBSD: mgnsc.c,v 1.18 1996/04/21 21:12:11 veego Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: xdbm.h,v 1.1 1997/12/01 08:22:39 art Exp $	*/
+/*	$OpenBSD: xdbm.h,v 1.2 1998/02/18 11:53:39 art Exp $	*/
 
 /*
  * Copyright (c) 1995, 1996, 1997 Kungliga Tekniska Högskolan

@@ -1,4 +1,4 @@
-/*	$OpenBSD: decomp_ticket.c,v 1.4 1997/12/09 07:57:13 art Exp $	*/
+/*	$OpenBSD: decomp_ticket.c,v 1.5 1997/12/12 05:30:19 art Exp $	*/
 /* $KTH: decomp_ticket.c,v 1.16 1997/04/01 08:18:22 joda Exp $ */
 
 /*

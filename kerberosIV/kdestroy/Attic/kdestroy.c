@@ -1,4 +1,4 @@
-/*	$OpenBSD: kdestroy.c,v 1.5 1998/05/18 02:18:52 art Exp $	*/
+/*	$OpenBSD: kdestroy.c,v 1.6 1998/08/12 23:39:40 art Exp $	*/
 /*	$KTH: kdestroy.c,v 1.10 1998/05/13 22:44:24 assar Exp $		*/
 /*
  * Copyright (c) 1998 Kungliga Tekniska Högskolan

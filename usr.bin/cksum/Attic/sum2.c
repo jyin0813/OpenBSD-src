@@ -1,4 +1,4 @@
-/*	$OpenBSD: sum2.c,v 1.3 2001/11/19 19:02:13 mpech Exp $	*/
+/*	$OpenBSD: sum2.c,v 1.4 2003/06/03 02:56:06 millert Exp $	*/
 /*	$NetBSD: sum2.c,v 1.5 1996/02/27 21:17:28 cgd Exp $	*/
 
 /*-
@@ -35,7 +35,7 @@
 static char sccsid[] = "@(#)sum2.c	8.1 (Berkeley) 6/6/93";
 static char rcsid[] = "$NetBSD: sum2.c,v 1.5 1996/02/27 21:17:28 cgd Exp $";
 #else
-static char rcsid[] = "$OpenBSD: sum2.c,v 1.3 2001/11/19 19:02:13 mpech Exp $";
+static char rcsid[] = "$OpenBSD: sum2.c,v 1.4 2003/06/03 02:56:06 millert Exp $";
 #endif
 #endif /* not lint */
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: i82586.h,v 1.3 2003/06/02 07:06:56 deraadt Exp $ */
+/*	$OpenBSD: i82586.h,v 1.4 2003/10/11 22:08:57 miod Exp $ */
 
 /*-
  * Copyright (c) 1998 Steve Murphree, Jr.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: test_sock_1.c,v 1.4 2000/01/06 06:58:34 d Exp $	*/
+/*	$OpenBSD: socket1.c,v 1.1 2001/08/15 14:37:10 fgsch Exp $	*/
 /*
  * Copyright (c) 1993, 1994, 1995, 1996 by Chris Provenzano and contributors, 
  * proven@mit.edu All rights reserved.

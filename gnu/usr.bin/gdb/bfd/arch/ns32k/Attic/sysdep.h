@@ -1,4 +1,4 @@
-/*	$Id: sysdep.h,v 1.1 1994/04/28 17:11:04 phil Exp $ */
+/*	$Id: sysdep.h,v 1.1 1995/10/18 08:39:55 deraadt Exp $ */
 #ifndef	hosts_ns32kbsd_H
 /* ns32k running any BSD Unix */
 #include <fcntl.h>

@@ -28,7 +28,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: s_fabs.c,v 1.1 1996/02/16 20:48:21 mark Exp $
+ *	$Id: s_fabs.c,v 1.1 1996/05/01 12:51:19 deraadt Exp deraadt $
  */
 
 /*

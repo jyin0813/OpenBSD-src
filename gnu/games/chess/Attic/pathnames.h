@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)pathnames.h	5.1 (Berkeley) 5/2/90
- *	$Id: pathnames.h,v 1.2 1993/08/01 18:49:15 mycroft Exp $
+ *	$Id: pathnames.h,v 1.1 1995/10/18 08:41:11 deraadt Exp deraadt $
  */
 
 #define	_PATH_CHESSBOOK	"/usr/share/games/gnuchess.book"

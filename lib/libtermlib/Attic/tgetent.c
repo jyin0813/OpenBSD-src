@@ -1,4 +1,4 @@
-/*	$OpenBSD: tgetent.c,v 1.2 1996/07/22 03:13:55 tholo Exp $	*/
+/*	$OpenBSD: tgetent.c,v 1.3 1996/12/09 01:18:19 tholo Exp $	*/
 
 /*
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>
@@ -31,7 +31,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: tgetent.c,v 1.2 1996/07/22 03:13:55 tholo Exp $";
+static char rcsid[] = "$OpenBSD: tgetent.c,v 1.3 1996/12/09 01:18:19 tholo Exp $";
 #endif
 
 #include <stdlib.h>

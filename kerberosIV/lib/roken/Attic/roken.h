@@ -38,7 +38,7 @@
  * SUCH DAMAGE.
  */
 
-/* $Id: roken.h.in,v 1.125 1999/12/02 16:58:52 joda Exp $ */
+/* $Id: roken.h,v 1.1 2000/02/25 16:35:26 hin Exp $ */
 
 #include <stdio.h>
 #include <stdlib.h>

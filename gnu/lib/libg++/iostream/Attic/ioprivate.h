@@ -15,7 +15,7 @@
 //    License along with this library; if not, write to the Free
 //    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 //
-//	$Id: ioprivate.h,v 1.2 1993/08/02 17:22:35 mycroft Exp $
+//	$Id: ioprivate.h,v 1.1 1995/10/18 08:38:13 deraadt Exp etheisen $
 
 #include <stddef.h>
 #include <stdlib.h>

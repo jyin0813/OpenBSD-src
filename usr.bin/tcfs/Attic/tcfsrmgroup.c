@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfsrmgroup.c,v 1.9 2000/06/20 08:59:53 fgsch Exp $	*/
+/*	$OpenBSD: tcfsrmgroup.c,v 1.10 2000/06/20 18:15:57 aaron Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

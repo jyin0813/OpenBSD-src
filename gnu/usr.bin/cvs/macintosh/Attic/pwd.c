@@ -15,7 +15,7 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-    $Header: /u/src/master/ccvs/macintosh/pwd.c,v 1.2 1996/01/11 01:44:44 kfogel Exp $
+    $Header: /cvs/src/gnu/usr.bin/cvs/macintosh/pwd.c,v 1.1 1996/01/30 00:19:39 tholo Exp $
 */
 
 /* This 'implementation' is conjectured from the use of this functions in

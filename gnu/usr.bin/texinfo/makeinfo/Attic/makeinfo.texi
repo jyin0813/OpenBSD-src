@@ -4,7 +4,7 @@
 @set VERSION 1.61
 @paragraphindent none
 @comment %**start of header
-@comment $Id: makeinfo.texi,v 1.1.1.2 1996/12/15 21:39:28 downsj Exp $
+@comment $Id: makeinfo.texi,v 1.3 2002/06/10 13:51:03 espie Exp $
 
 @dircategory Texinfo documentation system
 @direntry

@@ -1,4 +1,4 @@
-/*	$OpenBSD: iso.c,v 1.6 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: iso.c,v 1.7 2004/06/20 17:19:27 itojun Exp $	*/
 /*	$NetBSD: iso.c,v 1.14 1996/04/13 01:34:48 cgd Exp $	*/
 
 /*-

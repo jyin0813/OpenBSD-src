@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_dcreg.h,v 1.4 2000/01/09 01:20:35 jason Exp $ */
+/*	$OpenBSD: if_dcreg.h,v 1.5 2000/03/17 01:27:14 aaron Exp $ */
 
 /*
  * Copyright (c) 1997, 1998, 1999

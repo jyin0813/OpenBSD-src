@@ -20,7 +20,7 @@
 ;* 5900 E. Ben White Blvd.
 ;* Austin, TX 78741
 ;*****************************************************************************
-;*       $Id: dosdfe.asm,v 1.1.2.1 1996/11/19 15:03:31 niklas Exp $
+;*       $Id: dosdfe.asm,v 1.2 1996/11/23 04:11:15 niklas Exp $
 ;*	 $Id: @(#)dosdfe.asm	2.5, AMD
 ;*
 IFNDEF	DOS386

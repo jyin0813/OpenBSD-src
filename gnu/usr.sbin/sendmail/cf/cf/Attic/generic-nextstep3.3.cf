@@ -23,21 +23,21 @@
 ######################################################################
 ######################################################################
 
-#####  $Id: cfhead.m4,v 8.76.4.13 2000/08/24 17:09:50 gshapiro Exp $  #####
-#####  $Id: cf.m4,v 8.32 1999/02/07 07:26:14 gshapiro Exp $  #####
-#####  $Id: generic-nextstep3.3.mc,v 8.10 1999/02/07 07:26:02 gshapiro Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
-#####  $Id: nextstep.m4,v 8.21 1999/10/21 00:31:40 gshapiro Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
-#####  $Id: generic.m4,v 8.15 1999/04/04 00:51:09 ca Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
-#####  $Id: redirect.m4,v 8.15 1999/08/06 01:47:36 gshapiro Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
-#####  $Id: use_cw_file.m4,v 8.9 1999/02/07 07:26:13 gshapiro Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
 
 
-#####  $Id: proto.m4,v 8.446.2.5.2.38 2000/12/28 03:37:28 ca Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
 
 # level 9 config file format
@@ -1105,7 +1105,7 @@ R$* $| $*		$@ NO		not authenticated
 ###   Local and Program Mailer specification   ###
 ##################################################
 
-#####  $Id: local.m4,v 8.50.16.2 2000/09/17 17:04:22 gshapiro Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
 #
 #  Envelope sender rewriting
@@ -1154,7 +1154,7 @@ Mprog,		P=/bin/sh, F=lsDFMoqeuP, S=EnvFromL/HdrFromL, R=EnvToL/HdrToL, D=$z:/,
 ###   SMTP Mailer specification   ###
 #####################################
 
-#####  $Id: smtp.m4,v 8.56.2.1.2.3 2000/09/25 13:53:27 ca Exp $  #####
+#####  $Id: generic-nextstep3.3.cf,v 1.1 2001/01/15 20:52:26 millert Exp $  #####
 
 #
 #  common sender and masquerading recipient rewriting

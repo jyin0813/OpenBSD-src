@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs_subr.c,v 1.3 2002/03/14 01:27:08 millert Exp $	*/
+/*	$OpenBSD: tcfs_subr.c,v 1.4 2002/06/14 21:35:00 todd Exp $	*/
 /*	$NetBSD: tcfs_subr.c,v 1.6 1996/05/10 22:50:52 jtk Exp $	*/
 
 /*

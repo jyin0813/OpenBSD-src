@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipmon.c,v 1.26 2001/01/17 07:26:59 fgsch Exp $	*/
+/*	$OpenBSD: ipmon.c,v 1.27 2001/01/30 04:29:53 kjell Exp $	*/
 
 /*
  * Copyright (C) 1993-2000 by Darren Reed.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_axreg.h,v 1.1 1999/08/14 17:29:22 aaron Exp $ */
+/*	$OpenBSD: if_axreg.h,v 1.2 1999/09/27 00:07:50 aaron Exp $ */
 
 /*
  * Copyright (c) 1997, 1998, 1999
@@ -31,7 +31,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  *
- *	$Id: if_axreg.h,v 1.1 1999/08/14 17:29:22 aaron Exp $
+ *	$Id: if_axreg.h,v 1.2 1999/09/27 00:07:50 aaron Exp $
  */
 
 /*

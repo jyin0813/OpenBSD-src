@@ -1,4 +1,4 @@
-/*	$OpenBSD: hashmap.c,v 1.3 1998/07/23 21:18:19 millert Exp $	*/
+/*	$OpenBSD: hashmap.c,v 1.4 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

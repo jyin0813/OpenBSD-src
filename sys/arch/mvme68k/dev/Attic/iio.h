@@ -1,5 +1,5 @@
 /*	$NetBSD: iio.h,v 1.1.1.1 1995/07/25 23:12:11 chuck Exp $	*/
-/* $Id: iio.h,v 1.1.1.1 1995/07/25 23:12:11 chuck Exp $ */
+/* $Id: iio.h,v 1.1 1995/10/18 08:51:10 deraadt Exp deraadt $ */
 
 struct iioargs {
 	int	ic_addr;

@@ -1,4 +1,4 @@
-/* $OpenBSD: fiq.S,v 1.1 1996/01/31 23:15:55 mark Exp $ */
+/* $OpenBSD: fiq.S,v 1.2 2000/03/03 00:54:46 todd Exp $ */
 /* $NetBSD: fiq.S,v 1.1 1996/01/31 23:15:55 mark Exp $ */
 
 /*

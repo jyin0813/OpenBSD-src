@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_file.c,v 1.8 2001/09/04 22:17:45 fgsch Exp $	*/
+/*	$OpenBSD: uthread_file.c,v 1.9 2002/11/07 03:51:21 marc Exp $	*/
 /*
  * Copyright (c) 1995 John Birrell <jb@cimlogic.com.au>.
  * All rights reserved.

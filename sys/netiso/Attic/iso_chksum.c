@@ -1,4 +1,4 @@
-/*	$OpenBSD: iso_chksum.c,v 1.6 2003/06/02 23:28:17 millert Exp $	*/
+/*	$OpenBSD: iso_chksum.c,v 1.7 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: iso_chksum.c,v 1.8 1996/04/22 01:43:45 christos Exp $	*/
 
 /*-

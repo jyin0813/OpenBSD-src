@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_doupdate.c,v 1.10 1998/09/17 04:14:30 millert Exp $	*/
+/*	$OpenBSD: lib_doupdate.c,v 1.11 1998/10/31 06:30:29 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

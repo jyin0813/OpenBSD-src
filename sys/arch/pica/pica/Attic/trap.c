@@ -38,7 +38,7 @@
  * from: Utah Hdr: trap.c 1.32 91/04/06
  *
  *	from: @(#)trap.c	8.5 (Berkeley) 1/11/94
- *      $Id: trap.c,v 1.6 1996/05/15 07:09:12 pefo Exp $
+ *      $Id: trap.c,v 1.7 1996/06/06 23:07:46 deraadt Exp pefo $
  */
 
 #include <sys/param.h>

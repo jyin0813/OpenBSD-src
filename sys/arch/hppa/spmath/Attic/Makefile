@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 1998/06/23 20:33:49 mickey Exp $
 
 LIB=	spmath
 NOPIC=

@@ -28,14 +28,16 @@
 **
 */
 
-#include "curses.priv.h"
+#include <curses.priv.h>
+
+MODULE_ID("Id: lib_insch.c,v 1.7 1997/04/12 17:43:02 tom Exp $")
 
 int  winsch(WINDOW *win, chtype c)
 {
 chtype	*temp1, *temp2;
 chtype	*end;
 
-	T(("winsch(%p,'%lx') called", win, c));
+	T((T_CALLED("winsch(%p, %s)"), win, _tracechtype(c)));
 
 	end = &win->_line[win->_cury].text[win->_curx];
 	temp1 = &win->_line[win->_cury].text[win->_maxx];
@@ -44,11 +46,11 @@ chtype	*end;
 	while (temp1 > end)
 	    *temp1-- = *temp2--;
 
-	*temp1 = _nc_render(win, c, c | win->_attrs);
+	*temp1 = _nc_render(win, c);
 
 	win->_line[win->_cury].lastchar = win->_maxx;
 	if (win->_line[win->_cury].firstchar == _NOCHANGE
 	    			||  win->_line[win->_cury].firstchar > win->_curx)
 	    win->_line[win->_cury].firstchar = win->_curx;
-	return OK;
+	returnCode(OK);
 }

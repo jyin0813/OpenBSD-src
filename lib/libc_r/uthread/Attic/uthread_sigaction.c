@@ -1,4 +1,4 @@
-/*	$OpenBSD: uthread_sigaction.c,v 1.5 1999/11/25 07:01:44 d Exp $	*/
+/*	$OpenBSD: uthread_sigaction.c,v 1.6 2002/10/30 19:11:56 marc Exp $	*/
 /*
  * Copyright (c) 1995-1998 John Birrell <jb@cimlogic.com.au>
  * All rights reserved.

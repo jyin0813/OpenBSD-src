@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this software; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: sparc-opc.c,v 1.1 1994/01/28 12:42:07 pk Exp $
+	$Id: sparc-opc.c,v 1.1 1995/10/18 08:40:08 deraadt Exp $
 */
 
 /* FIXME-someday: perhaps the ,a's and such should be embedded in the

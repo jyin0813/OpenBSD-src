@@ -1,4 +1,4 @@
-/*	$OpenBSD: pnpinfo.c,v 1.1.1.1 1996/08/11 15:48:55 shawn Exp $	*/
+/*	$OpenBSD: pnpinfo.c,v 1.2 1997/01/09 15:35:18 weingart Exp $	*/
 /*
  * Copyright (c) 1996, Sujal M. Patel
  * All rights reserved.

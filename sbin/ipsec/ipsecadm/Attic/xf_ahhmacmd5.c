@@ -1,4 +1,4 @@
-/* $OpenBSD: xf_ahhmacmd5.c,v 1.3 1997/07/01 22:18:01 provos Exp $ */
+/* $OpenBSD: xf_ahhmacmd5.c,v 1.4 1997/07/11 23:50:21 provos Exp $ */
 /*
  * The author of this code is John Ioannidis, ji@tla.org,
  * 	(except when noted otherwise).

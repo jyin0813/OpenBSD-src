@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: xfs_attr.h,v 1.2 1998/08/30 17:35:44 art Exp $	*/
 /*
  * Copyright (c) 1998 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).

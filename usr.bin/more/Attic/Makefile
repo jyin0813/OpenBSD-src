@@ -1,5 +1,5 @@
 #	from: @(#)Makefile	5.6 (Berkeley) 3/12/91
-#	$Id: Makefile,v 1.6 1994/04/16 08:14:50 andrew Exp $
+#	$Id: Makefile,v 1.1 1995/10/18 08:45:48 deraadt Exp deraadt $
 
 PROG=	more
 CFLAGS+=-I${.CURDIR} -DREGEX -DTERMIOS

@@ -1,4 +1,4 @@
-/*	$OpenBSD: window.pro,v 1.1.1.1 1996/09/07 21:40:28 downsj Exp $	*/
+/*	$OpenBSD: window.pro,v 1.2 1996/09/21 06:23:55 downsj Exp $	*/
 /* window.c */
 void do_window __PARMS((int nchar, long Prenum));
 int win_split __PARMS((int new_height, int redraw));

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcvt_drv.c,v 1.35 2000/10/07 03:12:45 aaron Exp $	*/
+/*	$OpenBSD: pcvt_drv.c,v 1.36 2000/10/16 02:25:21 aaron Exp $	*/
 /*
  * Copyright (c) 1992, 1995 Hellmuth Michaelis and Joerg Wunsch.
  *

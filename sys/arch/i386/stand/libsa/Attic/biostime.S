@@ -1,4 +1,4 @@
-/*	$OpenBSD: biostime.S,v 1.9 1997/07/08 03:41:00 mickey Exp $	*/
+/*	$OpenBSD: biostime.S,v 1.10 1997/07/18 00:29:10 mickey Exp $	*/
 
 /*
  * Copyright (c) 1997 Michael Shalayeff

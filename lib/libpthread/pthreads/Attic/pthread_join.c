@@ -36,7 +36,7 @@
  */
 
 #ifndef lint
-static const char rcsid[] = "$Id: pthread_join.c,v 1.1 1994/02/07 22:04:26 proven Exp $ $provenid: pthread_join.c,v 1.16 1994/02/07 02:19:19 proven Exp $";
+static const char rcsid[] = "$Id: pthread_join.c,v 1.1 1995/10/18 08:43:05 deraadt Exp $ $provenid: pthread_join.c,v 1.16 1994/02/07 02:19:19 proven Exp $";
 #endif
 
 #include <pthread.h>

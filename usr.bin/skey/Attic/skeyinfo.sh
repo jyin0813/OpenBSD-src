@@ -1,5 +1,5 @@
 #!/bin/sh
-# $OpenBSD: skeyinfo.sh,v 1.3 1996/09/27 15:41:37 millert Exp $
+# $OpenBSD: skeyinfo.sh,v 1.4 1996/09/29 04:46:17 millert Exp $
 # search /etc/skeykeys for the skey string for
 # this user OR user specified in 1st parameter
 

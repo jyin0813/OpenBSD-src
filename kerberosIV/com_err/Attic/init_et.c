@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: init_et.c,v 1.1 1995/12/14 06:52:32 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -28,7 +28,7 @@
 
 #ifndef	lint
 static const char rcsid_init_et_c[] =
-    "$Id$";
+    "$Id: init_et.c,v 1.1 1995/12/14 06:52:32 tholo Exp $";
 #endif
 
 struct foobar {

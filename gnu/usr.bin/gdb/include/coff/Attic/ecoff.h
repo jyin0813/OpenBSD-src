@@ -1,4 +1,4 @@
-/*	$Id: ecoff.h,v 1.1 1994/01/28 12:42:38 pk Exp $ */
+/*	$Id: ecoff.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $ */
 #ifndef ECOFF_H
 #define ECOFF_H
 

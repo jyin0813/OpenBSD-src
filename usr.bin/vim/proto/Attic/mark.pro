@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: mark.pro,v 1.1 1996/09/07 21:40:29 downsj Exp $	*/
 /* mark.c */
 int setmark __PARMS((int c));
 void setpcmark __PARMS((void));

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: version.h,v 1.11 1999/03/29 20:29:07 millert Exp $	*/
 
 /*
  *  CU sudo version 1.5.9

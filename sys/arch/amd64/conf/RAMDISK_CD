@@ -1,8 +1,10 @@
-#	$OpenBSD$
+#	$OpenBSD: RAMDISK_CD,v 1.1 2004/02/08 07:07:05 deraadt Exp $
 
 machine		amd64		# architecture, used by config; REQUIRED
 
 option		SCSITERSE
+option		SMALL_KERNEL
+option		NO_PROPOLICE
 
 maxusers	4		# estimated number of users
 option		TIMEZONE=0	# time zone to adjust RTC time by

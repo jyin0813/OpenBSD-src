@@ -1,6 +1,6 @@
 .\" -*- nroff -*-
 .\"
-.\"	$OpenBSD$
+.\"	$OpenBSD: send-pr.man,v 1.2 1996/03/30 15:30:07 niklas Exp tholo $
 .\"
 .\" ---------------------------------------------------------------------------
 .\"    man page for send-pr (by Heinz G. Seidl, hgs@cygnus.com)

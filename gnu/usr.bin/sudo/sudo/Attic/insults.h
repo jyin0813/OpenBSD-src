@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: insults.h,v 1.9 1999/03/29 20:29:04 millert Exp $	*/
 
 /*
  *  CU sudo version 1.5.9

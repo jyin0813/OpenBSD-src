@@ -1,4 +1,4 @@
-/*	$OpenBSD: .h,v 1.2 1996/06/26 05:33:54 deraadt Exp $	*/
+/*	$OpenBSD: powerpc.h,v 1.1 1996/12/22 20:24:25 rahnds Exp $	*/
 
 /*-
  * Copyright (c) 1991, 1993

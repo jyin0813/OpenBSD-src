@@ -1,4 +1,4 @@
-/*	$OpenBSD: dcm.c,v 1.4 1997/02/03 04:48:02 downsj Exp $	*/
+/*	$OpenBSD: dcm.c,v 1.5 1997/04/16 11:56:37 downsj Exp $	*/
 /*	$NetBSD: dcm.c,v 1.2 1997/04/14 05:58:32 scottr Exp $	*/
 
 /*

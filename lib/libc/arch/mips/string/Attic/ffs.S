@@ -34,7 +34,7 @@
 
 #if defined(LIBC_SCCS)
 	.text
-	.asciz "$OpenBSD: ffs.S,v 1.4 1996/08/19 08:16:14 tholo Exp $"
+	.asciz "$OpenBSD: ffs.S,v 1.5 2003/06/02 20:18:32 millert Exp $"
 #endif /* LIBC_SCCS */
 
 /* bit = ffs(value) */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ip_esp3des.c,v 1.6 1997/06/25 07:53:25 provos Exp $	*/
+/*	$OpenBSD: ip_esp3des.c,v 1.7 1997/07/01 22:12:46 provos Exp $	*/
 
 /*
  * The author of this code is John Ioannidis, ji@tla.org,

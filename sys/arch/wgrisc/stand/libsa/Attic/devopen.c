@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: devopen.c,v 1.3 1997/07/21 06:58:14 pefo Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cd9660_mount.h,v 1.2 1997/11/07 10:29:40 niklas Exp $	*/
+/*	$OpenBSD: cd9660_mount.h,v 1.3 1999/07/01 02:20:21 d Exp $	*/
 
 /*
  * Copyright (c) 1995

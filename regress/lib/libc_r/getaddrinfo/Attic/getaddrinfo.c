@@ -1,4 +1,4 @@
-/*	$OpenBSD: getaddrinfo.c,v 1.2 2002/02/01 21:49:51 fgsch Exp $	*/
+/*	$OpenBSD: getaddrinfo.c,v 1.3 2003/01/18 01:48:21 marc Exp $	*/
 /*
  * Copyright (c) 2002 Todd T. Fries <todd@OpenBSD.org>
  * All rights reserved.

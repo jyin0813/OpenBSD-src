@@ -1,4 +1,4 @@
-/*	$Id: i82586.h,v 1.2 1995/11/07 08:51:00 deraadt Exp $ */
+/*	$Id: i82586.h,v 1.1 1997/03/03 19:31:08 rahnds Exp $ */
 
 /*-
  * Copyright (c) 1995 Theo de Raadt

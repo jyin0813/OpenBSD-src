@@ -1,4 +1,4 @@
-/*	$OpenBSD: str.s,v 1.1 2000/04/27 02:26:26 bjc Exp $ */
+/*	$OpenBSD: str.s,v 1.2 2000/05/01 00:12:02 bjc Exp $ */
 /*	$NetBSD: str.s,v 1.1 1999/03/06 16:36:06 ragge Exp $ */
 /*
  * Copyright (c) 1996 Ludd, University of Lule}, Sweden.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: link.h,v 1.2 1996/12/11 05:55:35 imp Exp $ */
+/*	$OpenBSD: link.h,v 1.2 1997/07/31 15:42:28 pefo Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

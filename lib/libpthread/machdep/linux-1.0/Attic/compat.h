@@ -29,7 +29,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF 
  * SUCH DAMAGE.
  *
- * $Id: compat.h,v 1.52 1995/10/20 09:32:56 proven Exp $
+ * $Id: compat.h,v 1.1 1998/07/21 13:19:28 peter Exp $
  *
  * Description : Basic timers header.
  *

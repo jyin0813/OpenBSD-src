@@ -1,4 +1,4 @@
-/*	$OpenBSD: cltp_var.h,v 1.3 2002/03/14 01:27:12 millert Exp $	*/
+/*	$OpenBSD: cltp_var.h,v 1.4 2003/06/02 23:28:17 millert Exp $	*/
 /*	$NetBSD: cltp_var.h,v 1.7 1996/02/13 22:09:03 christos Exp $	*/
 
 /*

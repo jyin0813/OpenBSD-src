@@ -1,4 +1,4 @@
-/*	$OpenBSD: alpha_mmclock_init.c,v 1.1 1995/12/20 12:55:21 cgd Exp $	*/
+/*	$OpenBSD: alpha_mmclock_init.c,v 1.3 1996/07/30 06:46:49 niklas Exp niklas $	*/
 /*	$NetBSD: alpha_mmclock_init.c,v 1.1 1995/12/20 12:55:21 cgd Exp $	*/
 
 /*

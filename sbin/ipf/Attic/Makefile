@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.9 2000/04/26 21:03:59 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.10 2001/01/17 05:00:57 fgsch Exp $
 
 PROG=	ipf
 MAN=	ipf.8 ipf.4 ipf.5

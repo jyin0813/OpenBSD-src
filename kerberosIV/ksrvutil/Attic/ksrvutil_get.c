@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ksrvutil_get.c,v 1.1 1997/12/17 07:50:17 art Exp $	*/
 /* $KTH: ksrvutil_get.c,v 1.35 1997/12/05 04:27:02 assar Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: grf_ulreg.h,v 1.4 1996/07/08 13:28:42 is Exp $	*/
+/*	$OpenBSD: grf_ulreg.h,v 1.3 1997/01/16 09:24:22 niklas Exp $	*/
 /*	$NetBSD: grf_ulreg.h,v 1.4 1996/07/08 13:28:42 is Exp $	*/
 
 /*

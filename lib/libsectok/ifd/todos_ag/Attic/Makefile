@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.5 2000/03/02 00:29:51 todd Exp $
+# $OpenBSD: Makefile,v 1.1 2001/05/22 15:35:57 rees Exp $
 
 LIB=	todos_ag
 LIBDIR= /usr/lib/ifd

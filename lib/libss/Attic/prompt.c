@@ -1,4 +1,4 @@
-/*	$OpenBSD: prompt.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $	*/
+/*	$OpenBSD: prompt.c,v 1.1 1996/11/15 09:25:32 downsj Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board
@@ -25,7 +25,7 @@
 #include "ss_internal.h"
 
 static const char rcsid[] =
-    "$Id: prompt.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $";
+    "$Id: prompt.c,v 1.1 1996/11/15 09:25:32 downsj Exp $";
 
 int
 ss_set_prompt(sci_idx, new_prompt)

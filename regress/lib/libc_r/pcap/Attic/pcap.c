@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcap.c,v 1.3 2001/11/11 20:20:53 marc Exp $ */
+/*	$OpenBSD: pcap.c,v 1.4 2002/01/08 18:55:46 marc Exp $ */
 /*
  *	Placed in the PUBLIC DOMAIN
  */

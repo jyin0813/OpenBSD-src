@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.UNIX,v 1.2 1997/09/21 11:43:24 deraadt Exp $
 
 #
 # Makefile for the BOOTP programs:

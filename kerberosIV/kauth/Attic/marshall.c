@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: marshall.c,v 1.1 1997/12/18 22:28:04 art Exp $	*/
 /* $KTH: marshall.c,v 1.7 1997/04/01 08:17:32 joda Exp $ */
 
 /*

@@ -1,5 +1,5 @@
 #	from: @(#)Makefile.inc	5.21 (Berkeley) 5/24/91
-#	$Id: GNUmakefile.inc,v 1.7 1995/03/10 03:58:48 snl Exp $
+#	$Id: GNUmakefile.inc,v 1.1 1998/07/21 13:19:02 peter Exp $
 
 # gen sources
 VPATH:= ${VPATH}:${srcdir}/gen

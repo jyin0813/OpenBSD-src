@@ -1,4 +1,4 @@
-/*	$OpenBSD: _atomic_lock.c,v 1.6 2002/06/06 15:43:04 art Exp $	*/
+/*	$OpenBSD: _atomic_lock.c,v 1.7 2002/10/11 19:08:41 marc Exp $	*/
 /*
  * Atomi lock for alpha.
  */

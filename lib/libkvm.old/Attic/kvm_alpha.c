@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kvm_alpha.c,v 1.1 1996/03/19 23:15:28 niklas Exp $	*/
 /*	$NetBSD: kvm_alpha.c,v 1.1.1.1 1996/03/16 10:05:25 leo Exp $	*/
 
 /*

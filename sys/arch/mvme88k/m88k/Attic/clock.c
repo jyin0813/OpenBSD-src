@@ -42,7 +42,7 @@
  *	@(#)clock.c	8.1 (Berkeley) 6/11/93
  *
  * from: Header: clock.c,v 1.17 92/11/26 03:04:47 torek Exp  (LBL)
- * $Id: clock.c,v 1.8 1994/07/01 19:59:13 deraadt Exp $
+ * $Id: clock.c,v 1.1 1995/10/18 10:54:27 deraadt Exp deraadt $
  */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: log.h,v 1.4 2002/06/09 08:13:08 todd Exp $	*/
+/*	$OpenBSD: log.h,v 1.5 2002/06/10 19:58:20 espie Exp $	*/
 /*	$EOM: log.h,v 1.19 2000/03/30 14:27:23 ho Exp $	*/
 
 /*

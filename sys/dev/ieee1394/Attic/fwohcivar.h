@@ -1,4 +1,4 @@
-/*	$OpenBSD: fwohcivar.h,v 1.3 2002/12/30 11:12:12 tdeval Exp $	*/
+/*	$OpenBSD: fwohcivar.h,v 1.4 2003/01/12 12:03:48 tdeval Exp $	*/
 /*	$NetBSD: fwohcivar.h,v 1.17 2002/01/16 01:47:37 eeh Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: vgafbvar.h,v 1.1 1998/09/27 03:55:59 rahnds Exp $	*/
+/*	$OpenBSD: vgafbvar.h,v 1.2 1998/10/09 02:00:52 rahnds Exp $	*/
 /*	$NetBSD: vgavar.h,v 1.2 1996/11/23 06:06:43 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: path.c,v 1.1.1.1 1996/08/14 06:19:11 downsj Exp $	*/
+/*	$OpenBSD: path.c,v 1.3 1997/06/19 13:58:46 kstailey Exp $	*/
 
 #include "sh.h"
 #include "ksh_stat.h"
@@ -14,6 +14,9 @@
 
 /*
  * $Log: path.c,v $
+ * Revision 1.3  1997/06/19 13:58:46  kstailey
+ * back out
+ *
  * Revision 1.1.1.1  1996/08/14 06:19:11  downsj
  * Import pdksh 5.2.7.
  *

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2002/03/05 00:09:31 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.5 2002/05/11 00:20:20 espie Exp $
 
 .include <bsd.own.mk>
 

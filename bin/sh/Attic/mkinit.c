@@ -1,4 +1,4 @@
-/*	$OpenBSD: mkinit.c,v 1.4 1996/09/15 22:58:09 millert Exp $	*/
+/*	$OpenBSD: mkinit.c,v 1.5 1996/10/20 00:54:53 millert Exp $	*/
 /*	$NetBSD: mkinit.c,v 1.14 1996/02/18 12:29:21 mycroft Exp $	*/
 
 /*-
@@ -47,7 +47,7 @@ static char copyright[] =
 #if 0
 static char sccsid[] = "@(#)mkinit.c	8.2 (Berkeley) 5/4/95";
 #else
-static char rcsid[] = "$OpenBSD: mkinit.c,v 1.4 1996/09/15 22:58:09 millert Exp $";
+static char rcsid[] = "$OpenBSD: mkinit.c,v 1.5 1996/10/20 00:54:53 millert Exp $";
 #endif
 #endif /* not lint */
 

@@ -1,4 +1,4 @@
-/*	$Id$	*/
+/*	$Id: 3cbc_enc.c,v 1.1 1995/12/14 06:52:43 tholo Exp tholo $	*/
 
 /* Copyright (C) 1993 Eric Young - see README for more details */
 #include "des_locl.h"

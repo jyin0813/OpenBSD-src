@@ -20,7 +20,7 @@
    along with this program; if not, write to the Free Software
    Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: getopt.c,v 1.1 1994/01/28 12:43:01 pk Exp $
+	$Id: getopt.c,v 1.1 1995/10/18 08:40:12 deraadt Exp $
 */
 
 #ifdef HAVE_CONFIG_H

@@ -1,4 +1,4 @@
-/*	$OpenBSD: isabr.c,v 1.3 2004/01/30 22:38:30 miod Exp $	*/
+/*	$OpenBSD: isabr.c,v 1.4 2004/02/04 20:07:18 drahn Exp $	*/
 
 /*-
  * Copyright (c) 1995 Per Fogelstrom

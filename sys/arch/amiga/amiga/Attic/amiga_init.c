@@ -1,4 +1,4 @@
-/*	$OpenBSD: amiga_init.c,v 1.24 2001/12/20 19:02:23 miod Exp $	*/
+/*	$OpenBSD: amiga_init.c,v 1.28 2002/03/25 19:41:03 niklas Exp $	*/
 /*	$NetBSD: amiga_init.c,v 1.56 1997/06/10 18:22:24 veego Exp $	*/
 
 /*

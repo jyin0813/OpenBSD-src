@@ -1,4 +1,4 @@
-/*	$OpenBSD: btvar.h,v 1.2 2001/07/04 08:33:41 niklas Exp $ */
+/*	$OpenBSD: btvar.h,v 1.3 2002/03/14 01:26:46 millert Exp $ */
 /*	$NetBSD: btvar.h,v 1.1 1995/03/10 01:50:47 gwr Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: list2sh.awk,v 1.1 1998/08/23 18:08:55 kstailey Exp $
 
 BEGIN {
 	printf("cd ${CURDIR}\n");

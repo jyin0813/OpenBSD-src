@@ -1,4 +1,4 @@
-/*	$OpenBSD: idesc.c,v 1.11 2002/03/14 01:26:29 millert Exp $	*/
+/*	$OpenBSD: idesc.c,v 1.12 2002/03/14 03:15:51 millert Exp $	*/
 /*	$NetBSD: idesc.c,v 1.29 1996/12/23 09:10:12 veego Exp $	*/
 
 /*

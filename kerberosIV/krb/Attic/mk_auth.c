@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: mk_auth.c,v 1.2 1997/12/09 07:57:28 art Exp $	*/
 /* $KTH: mk_auth.c,v 1.4 1997/04/01 08:18:35 joda Exp $ */
 
 /*

@@ -6,7 +6,7 @@
 # this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
 # ----------------------------------------------------------------------------
 #
-# $Id: Makefile,v 1.6 1994/10/24 20:09:27 phk Exp $
+# $Id: Makefile,v 1.1 1996/10/30 17:32:59 graichen Exp $
 #
 PROG=		ctm_scan
 NOMAN=		1

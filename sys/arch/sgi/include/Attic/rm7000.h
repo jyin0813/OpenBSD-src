@@ -1,4 +1,4 @@
-/*	$OpenBSD: rm7000.h,v 1.1 2004/08/06 21:12:19 pefo Exp $ */
+/*	$OpenBSD: rm7000.h,v 1.2 2004/08/10 18:52:58 deraadt Exp $ */
 
 /*
  * Copyright (c) 2001-2004 Opsycon AB  (www.opsycon.se / www.opsycon.com)

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ext2_subr.c,v 1.1 1996/06/24 03:34:58 downsj Exp $	*/
+/*	$OpenBSD: ext2_subr.c,v 1.2 1996/10/18 15:23:38 mickey Exp $	*/
 
 /*
  *  modified for Lites 1.1

@@ -1,6 +1,6 @@
 /*
  *	from: @(#)msd_dir.h 1.4 87/11/06	Public Domain.
- *	$Id: msd_dir.h,v 1.2 1993/08/01 18:48:57 mycroft Exp $
+ *	$Id: msd_dir.h,v 1.1 1995/10/18 08:41:09 deraadt Exp tholo $
  *
  *  A public domain implementation of BSD directory routines for
  *  MS-DOS.  Written by Michael Rendell ({uunet,utai}michael@garfield),

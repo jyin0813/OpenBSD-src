@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_extern.h,v 1.22 2001/06/27 07:14:22 art Exp $	*/
+/*	$OpenBSD: vm_extern.h,v 1.23 2001/07/05 07:24:10 art Exp $	*/
 /*	$NetBSD: vm_extern.h,v 1.20 1996/04/23 12:25:23 christos Exp $	*/
 
 /*-

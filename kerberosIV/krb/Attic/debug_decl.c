@@ -1,4 +1,4 @@
-/*	$OpenBSD: debug_decl.c,v 1.5 1998/02/25 15:51:05 art Exp $	*/
+/*	$OpenBSD: debug_decl.c,v 1.6 1998/07/07 19:06:45 art Exp $	*/
 /* $KTH: debug_decl.c,v 1.7 1997/10/28 15:44:00 bg Exp $ */
 
 /*

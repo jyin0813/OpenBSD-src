@@ -40,7 +40,7 @@ userland (*):						mickey@
 X11 (X11/*):						fries@ mickey@
 * patch is available, nothing to run at tho (;
 
-$OpenBSD: TODO,v 1.27 2003/01/25 07:53:45 mickey Exp $
+$OpenBSD: TODO,v 1.28 2003/01/28 20:11:28 mickey Exp $
 
 --
 	paranoic mickey

@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: clockvar.h,v 1.1 1997/02/06 16:02:45 pefo Exp $ */
 
 /*
  * Copyright (c) 1996 Per Fogelstrom

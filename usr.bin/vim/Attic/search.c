@@ -1,4 +1,4 @@
-/*	$OpenBSD: search.c,v 1.1.1.1 1996/09/07 21:40:24 downsj Exp $	*/
+/*	$OpenBSD: search.c,v 1.2 1996/09/21 06:23:19 downsj Exp $	*/
 /* vi:set ts=4 sw=4:
  *
  * VIM - Vi IMproved		by Bram Moolenaar

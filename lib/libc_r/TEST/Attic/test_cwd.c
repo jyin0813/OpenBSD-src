@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: test_cwd.c,v 1.3 2000/01/06 06:53:09 d Exp $	*/
 /*
  * 'Test' getcwd() and getwd()
  */

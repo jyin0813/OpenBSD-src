@@ -9,50 +9,111 @@ HTDOCS= \
 CGIFILES= \
 	cgi-bin/printenv cgi-bin/test-cgi	
 MANUALFILES= \
-	manual/images/home.gif manual/images/index.gif			\
-	manual/images/sub.gif manual/misc/API.html			\
-	manual/misc/known_bugs.html manual/misc/FAQ.html		\
-	manual/misc/known_client_problems.html				\
-	manual/misc/client_block_api.html manual/misc/nopgp.html	\
-	manual/misc/compat_notes.html manual/misc/perf-bsd44.html	\
-	manual/misc/descriptors.html manual/misc/perf-dec.html		\
-	manual/misc/fin_wait_2.html manual/misc/perf.html		\
-	manual/misc/footer.html manual/misc/security_tips.html		\
-	manual/misc/header.html manual/misc/vif-info.html		\
-	manual/misc/howto.html manual/misc/windoz_keepalive.html	\
-	manual/LICENSE manual/host.html manual/multilogs.html		\
-	manual/TODO  manual/new_features_1_0.html		\
-	manual/bind.html manual/index.html				\
-	manual/new_features_1_1.html manual/cgi_path.html		\
-	manual/install.html manual/new_features_1_2.html		\
-	manual/content-negotiation.html manual/install_1_1.html		\
-	manual/process-model.html manual/custom-error.html		\
-	manual/invoking.html manual/stopping.html			\
-	manual/dns-caveats.html manual/keepalive.html			\
-	manual/suexec.html manual/env.html manual/location.html		\
-	manual/unixware.html manual/footer.html				\
-	manual/man-template.html manual/vhosts-in-depth.html		\
-	manual/handler.html manual/virtual-host.html	\
-	manual/header.html manual/mod/core.html		\
-	manual/mod/mod_auth_msql.html manual/mod/mod_include.html	\
-	manual/mod/directives.html manual/mod/mod_browser.html		\
-	manual/mod/mod_info.html manual/mod/footer.html			\
-	manual/mod/mod_cern_meta.html manual/mod/mod_log_agent.html	\
-	manual/mod/header.html manual/mod/mod_cgi.html			\
-	manual/mod/mod_log_common.html manual/mod/index.html		\
-	manual/mod/mod_cookies.html manual/mod/mod_log_config.html	\
-	manual/mod/mod_access.html manual/mod/mod_digest.html		\
-	manual/mod/mod_log_referer.html manual/mod/mod_actions.html	\
-	manual/mod/mod_dir.html manual/mod/mod_mime.html		\
-	manual/mod/mod_alias.html manual/mod/mod_dld.html		\
-	manual/mod/mod_negotiation.html manual/mod/mod_asis.html	\
-	manual/mod/mod_env.html manual/mod/mod_proxy.html		\
-	manual/mod/mod_auth.html manual/mod/mod_example.html		\
-	manual/mod/mod_rewrite.html manual/mod/mod_auth_anon.html	\
-	manual/mod/mod_expires.html manual/mod/mod_status.html		\
-	manual/mod/mod_auth_db.html manual/mod/mod_headers.html		\
-	manual/mod/mod_userdir.html manual/mod/mod_auth_dbm.html	\
-	manual/mod/mod_imap.html manual/mod/mod_usertrack.html
+	manual/mod/mod_cgi.html  \
+	manual/mod/mod_cookies.html \
+	manual/mod/mod_digest.html \
+	manual/mod/mod_dir.html \
+	manual/mod/mod_dld.html \
+	manual/mod/mod_dll.html \
+	manual/mod/mod_env.html \
+	manual/mod/mod_example.html \
+	manual/mod/mod_expires.html \
+	manual/mod/mod_headers.html \
+	manual/mod/mod_imap.html \
+	manual/mod/mod_include.html \
+	manual/mod/mod_info.html \
+	manual/mod/mod_isapi.html \
+	manual/mod/mod_log_agent.html \
+	manual/mod/mod_log_common.html \
+	manual/mod/mod_log_config.html \
+	manual/mod/mod_log_referer.html \
+	manual/mod/mod_mime.html \
+	manual/mod/mod_mime_magic.html \
+	manual/mod/mod_mmap_static.html \
+	manual/mod/mod_negotiation.html \
+	manual/mod/mod_proxy.html \
+	manual/mod/mod_rewrite.html \
+	manual/mod/mod_setenvif.html \
+	manual/mod/mod_so.html \
+	manual/mod/mod_speling.html \
+	manual/mod/mod_status.html \
+	manual/mod/mod_unique_id.html \
+	manual/mod/mod_userdir.html \
+	manual/mod/mod_usertrack.html \
+	manual/LICENSE \
+	manual/bind.html \
+	manual/cgi_path.html \
+	manual/content-negotiation.html \
+	manual/custom-error.html \
+	manual/dns-caveats.html \
+	manual/dso.html \
+	manual/ebcdic.html \
+	manual/env.html \
+	manual/footer.html \
+	manual/handler.html \
+	manual/header.html \
+	manual/index.html \
+	manual/install.html \
+	manual/invoking.html \
+	manual/keepalive.html \
+	manual/location.html \
+	manual/man-template.html \
+	manual/multilogs.html \
+	manual/new_features_1_0.html \
+	manual/new_features_1_1.html \
+	manual/new_features_1_2.html \
+	manual/new_features_1_3.html \
+	manual/process-model.html \
+	manual/sections.html \
+	manual/sourcereorg.html \
+	manual/stopping.html \
+	manual/suexec.html \
+	manual/unixware.html \
+	manual/upgrading_to_1_3.html \
+	manual/windows.html \
+	manual/images/custom_errordocs.gif \
+	manual/images/home.gif \
+	manual/images/index.gif \
+	manual/images/mod_rewrite_fig1.fig \
+	manual/images/mod_rewrite_fig1.gif \
+	manual/images/mod_rewrite_fig2.fig \
+	manual/images/mod_rewrite_fig2.gif \
+	manual/images/sub.gif \
+	manual/misc/API.html \
+	manual/misc/FAQ.html \
+	manual/misc/HTTP_Features.tsv \
+	manual/misc/client_block_api.html \
+	manual/misc/compat_notes.html \
+	manual/misc/custom_errordocs.html \
+	manual/misc/descriptors.html \
+	manual/misc/fin_wait_2.html \
+	manual/misc/footer.html \
+	manual/misc/header.html \
+	manual/misc/howto.html \
+	manual/misc/index.html \
+	manual/misc/known_client_problems.html \
+	manual/misc/nopgp.html \
+	manual/misc/perf-bsd44.html \
+	manual/misc/perf-dec.html \
+	manual/misc/perf-hp.html \
+	manual/misc/perf-tuning.html \
+	manual/misc/perf.html \
+	manual/misc/security_tips.html \
+	manual/misc/vif-info.html \
+	manual/misc/windoz_keepalive.html \
+	manual/vhosts/details.html \
+	manual/vhosts/details_1_2.html \
+	manual/vhosts/examples.html \
+	manual/vhosts/fd-limits.html \
+	manual/vhosts/footer.html \
+	manual/vhosts/header.html \
+	manual/vhosts/host.html \
+	manual/vhosts/index.html \
+	manual/vhosts/ip-based.html \
+	manual/vhosts/name-based.html \
+	manual/vhosts/vhosts-in-depth.html \
+	manual/vhosts/virtual-host.html
+
 ICONFILES= \
 	icons/README icons/c.gif icons/hand.right.gif icons/pie2.gif	\
 	icons/sphere1.gif icons/a.gif icons/comp.blue.gif		\

@@ -1,7 +1,7 @@
 /* ==== machdep.h ============================================================
  * Copyright (c) 1993 Chris Provenzano, proven@athena.mit.edu
  *
- * $Id: engine-i386-bsdi-1.1.h,v 1.52 1994/11/08 15:38:53 proven Exp $
+ * $Id: engine-i386-bsdi-1.1.h,v 1.1 1998/07/21 13:19:13 peter Exp $
  *
  */
 

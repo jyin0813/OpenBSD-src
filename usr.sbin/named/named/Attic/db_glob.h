@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: db_glob.h,v 1.2 1997/03/12 10:42:22 downsj Exp $	*/
 
 /*
  *	from db.h	4.16 (Berkeley) 6/1/90

@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)stdio.h	5.17 (Berkeley) 6/3/91
- *	$Id: stdio.h,v 1.1.1.2 1998/07/21 13:19:08 peter Exp $
+ *	$Id: stdio.h,v 1.3 1998/07/21 13:53:52 peter Exp $
  */
 
 #ifndef _STDIO_H_

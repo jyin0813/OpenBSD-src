@@ -26,7 +26,10 @@
  */
 /*
  * HISTORY
- * $Log:	asm.h,v $
+ * $Log: asm.h,v $
+ * Revision 1.1  1995/10/18 10:54:22  deraadt
+ * Initial revision
+ *
  * Revision 2.3  93/01/26  18:05:05  danner
  * 	Added #ifndef file wrapper.
  * 	[93/01/24            jfriedl]

@@ -1,7 +1,7 @@
 /*
  * This software may now be redistributed outside the US.
  *
- * $Source: /usr/src/kerberosIV/lib/krb/RCS/extract_ticket.c,v $
+ * $Source: /cvs/src/kerberosIV/krb/extract_ticket.c,v $
  *
  * $Locker:  $
  */

@@ -1,4 +1,4 @@
-#	$OpenBSD: PETRA,v 1.23 2000/08/30 00:01:37 jason Exp $
+#	$OpenBSD: PETRA,v 1.24 2001/02/15 04:58:07 krw Exp $
 #
 #	PETRA -- everything that's currently supported with certain
 #		 changes for Applitron's fileserver petra, a 128 MB
@@ -10,7 +10,7 @@ machine		i386		# architecture, used by config; REQUIRED
 makeoptions	DEBUG="-g"	# make a bsd.gdb too
 
 #include "../../../conf/GENERIC"
-#	$OpenBSD: PETRA,v 1.23 2000/08/30 00:01:37 jason Exp $
+#	$OpenBSD: PETRA,v 1.24 2001/02/15 04:58:07 krw Exp $
 #
 #	Machine-independent option; used by all architectures for their
 #	GENERIC kernel

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 2000/05/18 16:46:38 espie Exp $
+#	$OpenBSD: Makefile,v 1.5 2002/02/19 20:20:39 miod Exp $
 
 .if ${MACHINE}=="hp300"
 PROG=	hilinfo

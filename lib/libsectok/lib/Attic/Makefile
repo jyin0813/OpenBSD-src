@@ -1,4 +1,4 @@
-# $OpenBSD: $
+# $OpenBSD: Makefile,v 1.1 2001/05/22 15:35:58 rees Exp $
 
 LIB=	sectok
 SRCS=	atr.c cmdtab.c input.c r1r2.c readers.c sc7816.c

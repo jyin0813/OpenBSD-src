@@ -1,4 +1,4 @@
-/*	$OpenBSD: krb_cache.c,v 1.4 1997/12/15 17:56:23 art Exp $	*/
+/*	$OpenBSD: krb_cache.c,v 1.5 1998/05/15 06:10:47 art Exp $	*/
 /*	$KTH: krb_cache.c,v 1.6 1997/05/02 10:27:53 joda Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: touch.c,v 1.8 2001/07/12 05:17:02 deraadt Exp $	*/
+/*	$OpenBSD: touch.c,v 1.9 2003/06/03 02:56:07 millert Exp $	*/
 /*	$NetBSD: touch.c,v 1.3 1995/09/02 06:15:54 jtc Exp $	*/
 
 /*
@@ -34,7 +34,7 @@
 #if 0
 static char sccsid[] = "@(#)touch.c	8.1 (Berkeley) 6/6/93";
 #endif
-static char rcsid[] = "$OpenBSD: touch.c,v 1.8 2001/07/12 05:17:02 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: touch.c,v 1.9 2003/06/03 02:56:07 millert Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

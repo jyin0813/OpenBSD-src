@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.3 2000/01/06 08:32:17 d Exp $
+# $OpenBSD: Makefile.inc,v 1.4 2002/01/18 00:36:36 fgsch Exp $
 
 includes:
 	@cd ${LIBC_RSRCDIR}/include; \

@@ -1,4 +1,4 @@
-/*	$OpenBSD: error_table.h,v 1.1 1996/11/11 04:55:04 downsj Exp $	*/
+/*	$OpenBSD: error_table.h,v 1.2 2003/07/03 02:23:19 deraadt Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board

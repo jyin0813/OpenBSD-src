@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: m68k-tdep.c,v 1.3 1994/05/25 18:27:51 pk Exp $
+	$Id: m68k-tdep.c,v 1.1 1995/10/18 08:40:07 deraadt Exp $
 */
 
 #include "defs.h"

@@ -34,7 +34,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)scsi.h	8.1 (Berkeley) 6/10/93
- *      $Id: scsi.h,v 1.3 1994/05/27 08:59:28 glass Exp $
+ *      $Id: scsi.h,v 1.1 1995/10/18 10:39:09 deraadt Exp pefo $
  *
  * scsi.h --
  *
@@ -46,7 +46,7 @@
  *
  * from: Header: /sprite/src/kernel/dev/RCS/scsi.h,
  *	v 9.1 90/02/13 23:11:24 jhh Exp  SPRITE (Berkeley)
- * $Id: scsi.h,v 1.3 1994/05/27 08:59:28 glass Exp $
+ * $Id: scsi.h,v 1.1 1995/10/18 10:39:09 deraadt Exp pefo $
  */
 
 #ifndef _SCSI_H

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfs.h,v 1.4 2002/03/14 01:27:08 millert Exp $	*/
+/*	$OpenBSD: tcfs.h,v 1.5 2002/06/04 00:00:55 nordin Exp $	*/
 /*
  * Copyright 2000 The TCFS Project at http://tcfs.dia.unisa.it/
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fwnode.c,v 1.5 2002/12/13 21:35:11 tdeval Exp $	*/
+/*	$OpenBSD: fwnode.c,v 1.6 2003/01/12 12:05:53 tdeval Exp $	*/
 /*	$NetBSD: fwnode.c,v 1.13 2002/04/03 04:15:59 jmc Exp $	*/
 
 /*

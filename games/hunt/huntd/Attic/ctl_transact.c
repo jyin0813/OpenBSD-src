@@ -1,5 +1,5 @@
 /*	$NetBSD: ctl_transact.c,v 1.3 1997/10/20 00:37:16 lukem Exp $	*/
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ctl_transact.c,v 1.2 1999/01/21 05:47:40 d Exp $	*/
 /*
  * Copyright (c) 1983 Regents of the University of California.
  * All rights reserved.  The Berkeley software License Agreement

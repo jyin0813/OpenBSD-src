@@ -1,4 +1,4 @@
-/*	$OpenBSD: netwrite.c,v 1.4 1997/12/22 15:02:11 art Exp $	*/
+/*	$OpenBSD: netwrite.c,v 1.5 1998/02/25 15:51:33 art Exp $	*/
 /* $KTH: netwrite.c,v 1.8 1997/06/19 23:56:25 assar Exp $ */
 
 /*

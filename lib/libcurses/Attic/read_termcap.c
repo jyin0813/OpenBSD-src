@@ -1,4 +1,4 @@
-/*	$OpenBSD: read_termcap.c,v 1.6 1998/10/31 06:30:31 millert Exp $	*/
+/*	$OpenBSD: read_termcap.c,v 1.7 1998/11/19 17:22:23 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998 Free Software Foundation, Inc.                        *

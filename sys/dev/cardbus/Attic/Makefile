@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.cardbusdevs,v 1.1 2000/03/02 23:03:26 aaron Exp $
+#	$OpenBSD: Makefile,v 1.1 2001/01/27 21:16:00 deraadt Exp $
 #	$NetBSD: Makefile.cardbusdevs,v 1.2 1999/10/15 06:42:21 haya Exp $
 
 AWK=	awk

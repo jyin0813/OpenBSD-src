@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD$
+#	$OpenBSD: th.sh,v 1.4 2001/01/28 23:04:57 niklas Exp $
 
 
 #

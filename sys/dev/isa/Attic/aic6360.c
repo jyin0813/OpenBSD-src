@@ -1,4 +1,4 @@
-/*	$OpenBSD: aic6360.c,v 1.14 1997/07/07 18:37:19 niklas Exp $ */
+/*	$OpenBSD: aic6360.c,v 1.15 1997/07/30 13:03:50 niklas Exp $ */
 /*	$NetBSD: aic6360.c,v 1.52 1996/12/10 21:27:51 thorpej Exp $	*/
 
 #ifdef DDB

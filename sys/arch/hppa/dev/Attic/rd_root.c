@@ -1,4 +1,4 @@
-/*	$OpenBSD: rd_root.c,v 1.1 1998/09/12 03:11:18 mickey Exp $	*/
+/*	$OpenBSD: rd_root.c,v 1.2 1999/04/20 20:23:24 mickey Exp $	*/
 
 /*
  * Copyright (c) 1996 Christopher G. Demetriou.  All rights reserved.

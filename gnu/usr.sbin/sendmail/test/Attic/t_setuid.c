@@ -15,7 +15,7 @@
 #include <stdio.h>
 
 #ifndef lint
-static char id[] = "@(#)$Id: t_setuid.c,v 8.2.2.1 2000/05/31 00:29:47 gshapiro Exp $";
+static char id[] = "@(#)$Id: t_setuid.c,v 1.1 2001/01/15 20:52:20 millert Exp $";
 #endif /* ! lint */
 
 static void

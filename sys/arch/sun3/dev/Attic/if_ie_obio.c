@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_ie_obio.c,v 1.6 2000/08/28 21:59:34 miod Exp $	*/
+/*	$OpenBSD: if_ie_obio.c,v 1.7 2002/03/14 01:26:46 millert Exp $	*/
 /*	$NetBSD: if_ie_obio.c,v 1.6 1996/11/20 18:56:51 gwr Exp $	*/
 
 /*-

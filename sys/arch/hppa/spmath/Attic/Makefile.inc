@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.inc,v 1.1 1998/06/23 20:33:50 mickey Exp $
 #
 #	NOTE: $S must correspond to the top of the 'sys' tree
 

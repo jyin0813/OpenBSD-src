@@ -15,7 +15,7 @@ You should have received a copy of the GNU Library General Public
 License along with this library; if not, write to the Free Software
 Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: Geom.h,v 1.2 1993/08/02 17:23:13 mycroft Exp $
+	$Id: Geom.h,v 1.1 1995/10/18 08:38:16 deraadt Exp etheisen $
 */
 
 #ifndef _Geometric_h

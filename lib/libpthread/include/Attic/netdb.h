@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)netdb.h	5.15 (Berkeley) 4/3/91
- *	$Id: netdb.h,v 1.4.4.1 1996/02/09 05:40:45 ghudson Exp $
+ *	$Id: netdb.h,v 1.1 1998/07/21 13:19:05 peter Exp $
  */
 
 #ifndef _NETDB_H_

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: device.h,v 1.1 1997/02/03 04:48:03 downsj Exp $	*/
 /*	$NetBSD: device.h,v 1.1 1997/01/30 10:31:44 thorpej Exp $	*/
 
 /*

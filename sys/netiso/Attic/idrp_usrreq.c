@@ -1,4 +1,4 @@
-/*	$OpenBSD: idrp_usrreq.c,v 1.5 2003/12/10 07:22:43 itojun Exp $	*/
+/*	$OpenBSD: idrp_usrreq.c,v 1.6 2004/01/03 14:08:54 espie Exp $	*/
 /*	$NetBSD: idrp_usrreq.c,v 1.5 1996/02/13 22:09:33 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: bt742a.c,v 1.6 1996/03/20 01:00:41 mickey Exp $      */
+/*	$OpenBSD: bt742a.c,v 1.7 1996/04/18 23:47:31 niklas Exp deraadt $      */
 /*	$NetBSD: bt742a.c,v 1.55 1996/03/16 05:33:28 cgd Exp $	*/
 
 /*

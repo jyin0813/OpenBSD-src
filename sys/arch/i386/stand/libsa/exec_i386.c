@@ -1,11 +1,14 @@
 
-/* $OpenBSD: exec_i386.c,v 1.2 1997/03/31 05:52:25 weingart Exp $ */
+/* $OpenBSD: exec_i386.c,v 1.3 1997/03/31 23:06:29 mickey dead $ */
 
 #include <sys/param.h>
 #include <sys/exec.h>
 #include <sys/reboot.h>
 #include <libsa.h>
 
+#include <biosdev.h>
+int startprog(void *, void *);
+static int bootdev;
 
 void
 machdep_start(startaddr, howto, loadaddr, ssym, esym)
@@ -41,7 +44,7 @@ machdep_start(startaddr, howto, loadaddr, ssym, esym)
 	 *  arg0 = 8 (magic)
 	 *  arg1 = boot flags
 	 *  arg2 = boot device
-	 *  arg3 = Cylinder offset (XXX - used to be ssym)
+	 *  arg3 = start of symbol table (0 if not loaded)
 	 *  arg4 = end of symbol table (0 if not loaded)
 	 *  arg5 = transfer address from image
 	 *  arg6 = transfer address for next image pointer
@@ -50,13 +53,13 @@ machdep_start(startaddr, howto, loadaddr, ssym, esym)
 	 */
 	argv[0] = 8;
 	argv[1] = howto;
-	argv[2] = bootdev;		/* Boot device */
-	argv[3] = 0;			/* Cyl offset */
-	argv[4] = 0;
+	argv[2] = bootdev;
+	argv[3] = (int)ssym;
+	argv[4] = (int)esym;
 	argv[5] = (int)startaddr;
 	argv[6] = 0;
-	argv[7] = memsize(0);
-	argv[8] = memsize(1);
+	argv[7] = biosmem(0);
+	argv[8] = biosmem(1);
 
 #ifdef DEBUG
 	{ int i;

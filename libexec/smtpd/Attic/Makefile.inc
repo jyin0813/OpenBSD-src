@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.5 2002/02/10 23:15:05 deraadt Exp $
+#	$OpenBSD: Makefile.inc,v 1.6 2002/06/19 19:13:50 pvalchev Exp $
 
 ##########################################################
 ## Compile time options, These set defaults ##############

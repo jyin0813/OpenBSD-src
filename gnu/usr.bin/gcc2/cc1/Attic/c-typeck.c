@@ -18,7 +18,7 @@ along with GNU CC; see the file COPYING.  If not, write to
 the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 #ifndef lint
-static char rcsid[] = "$Id: c-typeck.c,v 1.3 1994/09/19 14:44:05 mycroft Exp $";
+static char rcsid[] = "$Id: c-typeck.c,v 1.1 1995/10/18 08:39:28 deraadt Exp niklas $";
 #endif /* not lint */
 
 /* This file is part of the C front end.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: if_sn.h,v 1.1 1996/06/24 09:07:19 pefo Exp $	*/
 /*
  * Copyright (c) 1991   Algorithmics Ltd (http://www.algor.co.uk)
  * You may use, copy, and modify this program so long as you retain the

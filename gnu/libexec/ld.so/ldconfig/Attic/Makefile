@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/09/18 08:16:06 pefo Exp $
+#	$OpenBSD: Makefile,v 1.2 1996/09/29 14:47:06 deraadt Exp $
 
 LDSTATIC=-static
 PROG=	ldconfig

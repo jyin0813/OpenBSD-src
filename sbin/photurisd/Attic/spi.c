@@ -1,4 +1,4 @@
-/*	$OpenBSD: spi.c,v 1.9 2002/06/09 08:13:09 todd Exp $	*/
+/*	$OpenBSD: spi.c,v 1.10 2002/06/10 19:58:20 espie Exp $	*/
 
 /*
  * Copyright 1997-2000 Niels Provos <provos@citi.umich.edu>
@@ -35,7 +35,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: spi.c,v 1.9 2002/06/09 08:13:09 todd Exp $";
+static char rcsid[] = "$OpenBSD: spi.c,v 1.10 2002/06/10 19:58:20 espie Exp $";
 #endif
 
 #define _SPI_C_

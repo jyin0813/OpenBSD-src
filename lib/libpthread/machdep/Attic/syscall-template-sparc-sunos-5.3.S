@@ -6,7 +6,7 @@
 
 #ifndef lint
 	.text
-	.asciz "$Id: syscall-template-sparc-sunos-5.3.S,v 1.2 1994/12/14 09:51:17 proven Exp $";
+	.asciz "$Id: syscall-template-sparc-sunos-5.3.S,v 1.1 1998/07/21 13:19:17 peter Exp $";
 #endif
  
 #define _ASM

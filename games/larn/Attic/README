@@ -1,4 +1,4 @@
-$OpenBSD$
+$OpenBSD: README,v 1.2 1998/09/15 05:17:51 pjanzen Exp $
 
 Larn is a dungeon type game program.  Larn is a adventure/action game similar
 in concept to rogue or hack, but with a much different feel. 

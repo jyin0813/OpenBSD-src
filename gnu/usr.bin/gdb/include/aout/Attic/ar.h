@@ -1,4 +1,4 @@
-/*	$Id: ar.h,v 1.1 1994/01/28 12:42:32 pk Exp $ */
+/*	$Id: ar.h,v 1.1 1995/10/18 08:40:10 deraadt Exp $ */
 /* archive file definition for GNU software */
 
 /* So far this is correct for BSDish archives.  Don't forget that

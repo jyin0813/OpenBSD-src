@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)limits.h	8.3 (Berkeley) 1/4/94
- *      $Id: limits.h,v 1.4 1994/05/27 09:01:15 glass Exp $
+ *      $Id: limits.h,v 1.1 1995/10/18 10:54:21 deraadt Exp $
  */
 
 #define	CHAR_BIT	8		/* number of bits in a char */

@@ -1,5 +1,5 @@
-.\"	$OpenBSD: bus_dma.9,v 1.1 1999/09/22 03:16:47 csapuntz Exp $
-.\"	$NetBSD: bus_dma.9,v 1.11 1999/03/16 00:40:47 garbled Exp $
+.\"	$OpenBSD$ 
+.\" $NetBSD: bus_dma.9,v 1.14 2000/06/14 06:49:19 cgd Exp $
 .\"
 .\" Copyright (c) 1996, 1997, 1998 The NetBSD Foundation, Inc.
 .\" All rights reserved.
@@ -36,7 +36,7 @@
 .\" ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 .\" POSSIBILITY OF SUCH DAMAGE.
 .\"
-.Dd February 3, 1998
+.Dd November 23, 2000
 .Dt BUS_DMA 9
 .Os
 .Sh NAME
@@ -54,7 +54,7 @@
 .Nm bus_dmamem_map ,
 .Nm bus_dmamem_unmap ,
 .Nm bus_dmamem_mmap
-.Nd Bus and Machine Independent DMA Mapping Interface
+.Nd bus and machine independent DMA mapping interface
 .Sh SYNOPSIS
 .Fd #include <machine/bus.h>
 .Ft int
@@ -77,8 +77,7 @@
 .Ft void
 .Fn bus_dmamap_unload "bus_dma_tag_t tag" "bus_dmamap_t dmam"
 .Ft void
-.Fn bus_dmamap_sync "bus_dma_tag_t tag" "bus_dmamap_t dmam" \
-"bus_addr_t offset" "bus_size_t len" "int ops"
+.Fn bus_dmamap_sync "bus_dma_tag_t tag" "bus_dmamap_t dmam" "int ops"
 .Ft int
 .Fn bus_dmamem_alloc "bus_dma_tag_t tag" "bus_size_t size" \
 "bus_size_t alignment" "bus_size_t boundary" "bus_dma_segment_t *segs" \
@@ -94,28 +93,85 @@
 .Fn bus_dmamem_mmap "bus_dma_tag_t tag" "bus_dma_segment_t *segs" \
 "int nsegs" "int off" "int prot" "int flags"
 .Sh DESCRIPTION
-Provide a bus- and machine-independent "DMA mapping interface."
-.Sh NOTES
+The
+.Nm
+interface provides a bus and machine independent mechanism
+for managing DMA data transfers to and from devices.
 .Pp
-All data structures, function prototypes, and macros will be defined
-by the port-specific header
+The basic abstraction is the bus_dmamap_t, a pointer to a structure
+which contains an array of bus_dma_segment_t's (dm_segs) and a count
+of how many are currently valid (dm_nsegs).
+.Pp
+Each segment in the array describes a single physical area of memory
+which can be DMA'd, with a starting address (ds_addr) and a length
+(ds_len).
+These are the values that must be communicated to the DMA device.
+Taken together the segments exactly and completely describe the buffer
+being used to transfer data.
+.Pp
+bus_dma_tag_t's are an opaque type, received from higher software
+layers and are never created, changed, deleted or even examined in
+this interface.
+.Pp
+The basic cycle to transfer data to/from a dma device is:
+.Bd -literal
+bus_dmamap_create();         /* get a dmamap to load/unload          */
+
+for each dma xfer {
+        bus_dmamem_alloc();  /* allocate some DMA'able memory        */
+        bus_dmamem_map();    /* map it into the kernel address space */
+
+        /*
+         * Fill the allocated DMA'able memory with whatever data
+         * is to be sent out, using the pointer obtained with
+         * bus_dmamem_map().
+         */
+
+        bus_dmamap_load();   /* initialize the segments of dmamap    */
+        bus_dmamap_sync();   /* synchronize/flush any dma cache      */
+
+        for (i=0; i<dm_nsegs; i++) {
+                /*
+                 * Tell the DMA device the physical address
+                 * (dmamap->dm_segs[i].ds_addr) and the length
+                 * (dmamap->dm_segs[i].ds_len) of the memory to xfer.
+                 *
+                 * Start the DMA, wait until it's done
+                 */
+        }
+
+        bus_dmamap_sync();   /* synchronize/flush any dma cache      */
+        bus_dmamap_unload(); /* prepare dmamap for reuse             */
+
+        /*
+         * copy any data desired from the DMA'able memory using the
+         * pointer created by bus_dmamem_map().
+         */
+
+        bus_dmamem_unmap();  /* free kernel virtual address space    */
+        bus_dmamem_free();   /* free DMA'able memory                 */
+}
+
+bus_dmamap_destroy();        /* release any resources used by dmamap */
+.Ed
+.Sh NOTES
+All data structures, function prototypes, and macros are defined in
+the architecture-specific header
 .Pa Aq machine/bus.h .
-Note that this document
-assumes the existence of types already defined by the current "bus.h"
-interface.
+Note that this document assumes the existence of types already defined
+by the current "bus.h" interface.
 .Pp
 Unless otherwise noted, all function calls in this interface may be
 defined as
 .Xr cpp 1
 macros.
 .Sh DATA TYPES
-.Pp
-Individual implementations may name these structures whatever they
-wish, providing that the external representations are:
+Individual implementations may name these structures whatever they wish,
+providing that the external representations are:
 .Bl -tag -width compact
 .It Fa bus_dma_tag_t
-A machine-dependent opaque type describing the implementation of
-DMA for a given bus.
+A machine-dependent opaque type describing the implementation of DMA for
+a given bus.
 .It Fa bus_dma_segment_t
 A structure with at least the following members:
 .Bd -literal
@@ -128,25 +184,20 @@ The values in
 .Fa ds_addr
 and
 .Fa ds_len
-are suitable for programming into
-DMA controller address and length registers.
+are suitable for programming into DMA controller address and length
+registers.
 .It Fa bus_dmamap_t
 A pointer to a structure with at least the following members:
 .Bd -literal
-	bus_size_t	dm_mapsize;
-	int		dm_nsegs;
+	int		   dm_nsegs;
 	bus_dma_segment_t *dm_segs;
 .Ed
 .sp
 The structure may have machine-dependent members and arbitrary layout.
 The
-.Fa dm_mapsize
-member indicates the size of the mapping.  A value of 0 indicates the
-mapping is invalid.
-The
 .Fa dm_segs
-member may be an array of segments or a pointer to an
-array of segments.  The
+member may be an array of segments or a pointer to an array of segments.
+The
 .Fa dm_nsegs
 member indicates the number of segments in
 .Fa dm_segs .
@@ -172,11 +223,14 @@ The maximum number of bytes that may be transferred by any given DMA
 segment.
 .It Fa boundary
 Some DMA controllers are not able to transfer data that crosses a
-particular boundary.  This argument allows this boundary to be
-specified.  The boundary lines begin at 0, and occur every
+particular boundary.
+This argument allows this boundary to be specified.
+The boundary lines begin at 0, and occur every
 .Fa boundary
-bytes.  Mappings may begin on a boundary line but may not end on or
-cross a boundary line.  If no boundary condition needs to be observed, a
+bytes.
+Mappings may begin on a boundary line but may not end on or cross a
+boundary line.
+If no boundary condition needs to be observed, a
 .Fa boundary
 argument of 0 should be used.
 .It Fa flags
@@ -187,20 +241,19 @@ It is safe to wait (sleep) for resources during this call.
 .It Dv BUS_DMA_NOWAIT
 It is not safe to wait (sleep) for resources during this call.
 .It Dv BUS_DMA_ALLOCNOW
-Perform any resource allocation this handle may need now.  If this is
-not specified, the allocation may be deferred to
+Perform any resource allocation this handle may need now.
+If this is not specified, the allocation may be deferred to
 .Fn bus_dmamap_load .
 If this flag is specified,
 .Fn bus_dmamap_load
-will not block on resource
-allocation.
+will not block on resource allocation.
 .It Dv BUS_DMA_BUS[1-4]
 These flags are placeholders, and may be used by busses to provide
 bus-dependent functionality.
 .El
 .It Fa dmamp
-This is a pointer to a bus_dmamap_t.  A DMA map will be allocated and
-pointed to by 
+This is a pointer to a bus_dmamap_t.
+A DMA map will be allocated and pointed to by
 .Fa dmamp
 upon successful completion of this routine.
 .El
@@ -210,8 +263,8 @@ Behavior is not defined if invalid arguments are passed to
 .Pp
 Returns 0 on success, or an error code to indicate mode of failure.
 .It Fn bus_dmamap_destroy "tag" "dmam"
-Frees all resources associated with a given DMA handle.  Arguments are
-as follows:
+Frees all resources associated with a given DMA handle.
+Arguments are as follows:
 .Bl -tag -width dmam -compact
 .It Fa tag
 This is the bus_dma_tag_t passed down from the parent driver via
@@ -220,8 +273,8 @@ This is the bus_dma_tag_t passed down from the parent driver via
 The DMA handle to destroy.
 .El
 .Pp
-In the event that the DMA handle contains a valid mapping,
-the mapping will be unloaded via the same mechanism used by 
+In the event that the DMA handle contains a valid mapping, the mapping
+will be unloaded via the same mechanism used by
 .Fn bus_dmamap_unload .
 .Pp
 Behavior is not defined if invalid arguments are passed to
@@ -231,8 +284,8 @@ If given valid arguments,
 .Fn bus_dmamap_destroy
 always succeeds.
 .It Fn bus_dmamap_load "tag" "dmam" "buf" "buflen" "p" "flags"
-Loads a DMA handle with mappings for a DMA transfer.  It assumes that
-all pages involved in a DMA transfer are wired.
+Loads a DMA handle with mappings for a DMA transfer.
+It assumes that all pages involved in a DMA transfer are wired.
 Arguments are as follows:
 .Bl -tag -width buflen -compact
 .It Fa tag
@@ -245,10 +298,11 @@ The buffer to be used for the DMA transfer.
 .It Fa buflen
 The size of the buffer.
 .It Fa p
-Used to indicate the address space in which the buffer is located.  If
+Used to indicate the address space in which the buffer is located.
+If
 .Dv NULL ,
-the buffer is assumed to be in kernel space.  Otherwise, the
-buffer is assumed to be in process
+the buffer is assumed to be in kernel space.
+Otherwise, the buffer is assumed to be in process
 .Fa p Ns 's
 address space.
 .It Fa flags
@@ -259,8 +313,8 @@ It is safe to wait (sleep) for resources during this call.
 .It Dv BUS_DMA_NOWAIT
 It is not safe to wait (sleep) for resources during this call.
 .It Dv BUS_DMA_BUS[1-4]
-These flags are placeholders, and may be used by busses to
-provide bus-dependent functionality.
+These flags are placeholders, and may be used by busses to provide
+bus-dependent functionality.
 .El
 .El
 .Pp
@@ -269,32 +323,31 @@ As noted above, if a DMA handle is created with
 .Fn bus_dmamap_load
 will never block.
 .Pp
-If a call to 
+If a call to
 .Fn bus_dmamap_load
-fails, the mapping in
-the DMA handle will be invalid.  It is the responsibility
-of the caller to clean up any inconsistent device state
-resulting from incomplete iteration through the uio.
+fails, the mapping in the DMA handle will be invalid.
+It is the responsibility of the caller to clean up any inconsistent
+device state resulting from incomplete iteration through the uio.
 .Pp
 Behavior is not defined if invalid arguments are passed to
 .Fn bus_dmamap_load .
 .Pp
 Returns 0 on success, or an error code to indicate mode of failure.
 .It Fn bus_dmamap_load_mbuf "tag" "dmam" "chain" "flags"
-This is a variation of 
+This is a variation of
 .Fn bus_dmamap_load
-which maps mbuf chains
-for DMA transfers.  Mbuf chains are assumed to be in kernel
-virtual address space.
+which maps mbuf chains for DMA transfers.
+Mbuf chains are assumed to be in kernel virtual address space.
 .It Fn bus_dmamap_load_uio "tag" "dmam" "uio" "flags"
 This is a variation of
 .Fn bus_dmamap_load
 which maps buffers pointed to by
 .Fa uio
-for DMA transfers.  The value of
+for DMA transfers.
+The value of
 .Fa "uio->uio_segflg"
-will
-determine if the buffers are in user or kernel virtual address space.
+will determine if the buffers are in user or kernel virtual address
+space.
 If the buffers are in user address space, the buffers are assumed to be
 in
 .Fa "uio->uio_procp" Ns 's
@@ -302,21 +355,22 @@ address space.
 .It Fn bus_dmamap_load_raw "tag" "dmam" "segs" "nsegs" "size" "flags"
 This is a variation of
 .Fn bus_dmamap_load
-which maps buffers
-allocated by
+which maps buffers allocated by
 .Fn bus_dmamem_alloc
-(see below).  The
+(see below).
+The
 .Fa segs
-argument is an array of bus_dma_segment_t's filled in
-by
+argument is an array of bus_dma_segment_t's filled in by
 .Fn bus_dmamem_alloc .
 The
 .Fa nsegs
-argument is the number of segments in the array.  The
+argument is the number of segments in the array.
+The
 .Fa size
 argument is the size of the DMA transfer.
 .It Fn bus_dmamap_unload "tag" "dmam"
-Deletes the mappings for a given DMA handle.  Arguments are as follows:
+Deletes the mappings for a given DMA handle.
+Arguments are as follows:
 .Bl -tag -width dmam -compact
 .It Fa tag
 This is the bus_dma_tag_t passed down from the parent driver via
@@ -328,13 +382,11 @@ The DMA handle containing the mappings which are to be deleted.
 If the DMA handle was created with
 .Dv BUS_DMA_ALLOCNOW ,
 .Fn bus_dmamap_unload
-will not free the corresponding
-resources which were allocated by
+will not free the corresponding resources which were allocated by
 .Fn bus_dmamap_create .
 This is to ensure that
 .Fn bus_dmamap_load
-will never block
-on resources if the handle was created with
+will never block on resources if the handle was created with
 .Dv BUS_DMA_ALLOCNOW .
 .Pp
 Behavior is not defined if invalid arguments are passed to
@@ -343,7 +395,7 @@ Behavior is not defined if invalid arguments are passed to
 If given valid arguments,
 .Fn bus_dmamap_unload
 always succeeds.
-.It Fn bus_dmamap_sync "tag" "dmam" "offset" "len" "ops"
+.It Fn bus_dmamap_sync "tag" "dmam" "ops"
 Performs pre- and post-DMA operation cache and/or buffer synchronization.
 Arguments are as follows:
 .Bl -tag -width offset -compact
@@ -352,15 +404,9 @@ This is the bus_dma_tag_t passed down from the parent driver via
 .Fa <bus>_attach_args .
 .It Fa dmam
 The DMA mapping to be synchronized.
-.It Fa offset
-The offset into the DMA mapping to synchronize.
-.It Fa len
-The length of the mapping from
-.Fa offset
-to synchronize.
 .It Fa ops
-One or more synchronization operation to perform.  The following DMA
-synchronization operations are defined:
+One or more synchronization operation to perform.
+The following DMA synchronization operations are defined:
 .Bl -tag -width BUS_DMASYNC_POSTWRITE -compact
 .It Dv BUS_DMASYNC_PREREAD
 Perform any pre-read DMA cache and/or bounce operations.
@@ -380,8 +426,8 @@ and
 operations is not allowed, and behavior is undefined if this is attempted.
 .El
 .Pp
-Synchronization operations are expressed from the perspective of
-the host RAM, e.g. a
+Synchronization operations are expressed from the perspective of the
+host RAM, e.g. a
 .Em "device -> memory"
 operation is a
 .Em READ
@@ -390,12 +436,14 @@ and a
 operation is a
 .Em WRITE .
 .Pp
-.Fn bus_dmamp_sync
-may consult state kept within the DMA map to determine if the memory
-is mapped in a DMA coherent fashion.  If so,
 .Fn bus_dmamap_sync
-may elect to skip certain expensive operations, such as flushing
-of the data cache.  See
+may consult state kept within the DMA map to determine if the memory is
+mapped in a DMA coherent fashion.
+If so,
+.Fn bus_dmamap_sync
+may elect to skip certain expensive operations, such as flushing of the
+data cache.
+See
 .Fn bus_dmamem_map
 for more information on this subject.
 .Pp
@@ -406,7 +454,7 @@ will always cause the store buffer to be flushed.
 This function exists so that multiple read and write transfers can be
 performed with the same buffer, and so that drivers can explicitly
 inform the
-.Nm 
+.Nm
 code when their data is 'ready' in its DMA buffer.
 .Pp
 An example of multiple read-write use of a single mapping
@@ -453,14 +501,24 @@ always succeeds.
 .\" XXX: This does not work with all the arguments.
 .It Fn bus_dmamem_alloc "tag" "size" "alignment" "boundary" "segs" "..."
 Allocates memory that is "DMA safe" for the bus corresponding to the
-given tag.  The mapping of this memory is machine-dependent (or
-"opaque"); machine-independent code is not to assume that the
-addresses returned are valid in kernel virtual address space, or that
-the addresses returned are system physical addresses.
+given tag.
 .Pp
-Allocations will always be rounded to the hardware page size.  Callers
-may wish to take advantage of this, and cluster allocation of small
-data structures.
+The mapping of this memory is machine-dependent (or "opaque");
+machine-independent code is not to assume that the addresses returned
+are valid in kernel virtual address space, or that the addresses
+returned are system physical addresses.
+The address value returned as part of
+.Fa segs
+can thus not be used to program DMA controller address registers.
+Only the values in the
+.Fa dm_segs
+array of a sucessfully loaded DMA map (using
+.Fn bus_dmamap_load
+) can be used for this purpose.
+.Pp
+Allocations will always be rounded to the hardware page size.
+Callers may wish to take advantage of this, and cluster allocation of
+small data structures.
 Arguments are as follows:
 .Bl -tag -width alignment -compact
 .It Fa tag
@@ -469,21 +527,23 @@ The is the bus_dma_tag_t passed down from the parent driver via
 .It Fa size
 The amount of memory to allocate.
 .It Fa alignment
-Each segment in the allocated memory will be aligned to this value.  If
-the alignment is less than a hardware page size, it will be rounded up
-to the hardware page size.  This value must be a power of two.
+Each segment in the allocated memory will be aligned to this value.
+If the alignment is less than a hardware page size, it will be rounded
+up to the hardware page size.
+This value must be a power of two.
 .It Fa boundary
 Each segment in the allocated memory must not cross this boundary
-(relative to zero).  This value must be a power of two.  A boundary
-value less than the size of the allocation is invalid.
+(relative to zero).
+This value must be a power of two.
+A boundary value less than the size of the allocation is invalid.
 .It Fa segs
 An array of bus_dma_segment_t's, filled in as memory is allocated,
 representing the opaque addresses of the memory chunks.
 .It Fa nsegs
 Specifies the number of segments in
 .Fa segs ,
-and this is the maximum number
-of segments that the allocated memory may contain.
+and this is the maximum number of segments that the allocated memory may
+contain.
 .It Fa rsegs
 Used to return the actual number of segments the memory contains.
 .It Fa flags
@@ -501,8 +561,7 @@ bus-dependent functionality.
 .Pp
 All pages allocated by
 .Fn bus_dmamem_alloc
-will be wired down
-until they are freed by
+will be wired down until they are freed by
 .Fn bus_dmamem_free .
 .Pp
 Behavior is undefined if invalid arguments are passed to
@@ -510,10 +569,10 @@ Behavior is undefined if invalid arguments are passed to
 .Pp
 Returns 0 on success, or an error code indicating mode of failure.
 .It Fn bus_dmamem_free "tag" "segs" "nsegs"
-Frees memory previously allocated by 
+Frees memory previously allocated by
 .Fn bus_dmamem_alloc .
-Any mappings
-will be invalidated.  Arguments are as follows:
+Any mappings will be invalidated.
+Arguments are as follows:
 .Bl -tag -width nsegs -compact
 .It Fa tag
 This is the bus_dma_tag_t passed down from the parent driver via
@@ -529,13 +588,14 @@ The number of segments in
 Behavior is undefined if invalid arguments are passed to
 .Fn bus_dmamem_free .
 .Pp
-If given valid arguments, 
+If given valid arguments,
 .Fn bus_dmamem_free
 always succeeds.
 .It Fn bus_dmamem_map "tag" "segs" "nsegs" "size" "kvap" "flags"
 Maps memory allocated with
 .Fn bus_dmamem_alloc
-into kernel virtual address space.  Arguments are as follows:
+into kernel virtual address space.
+Arguments are as follows:
 .Bl -tag -width flags -compact
 .It Fa tag
 This is the bus_dma_tag_t passed down from the parent driver via
@@ -550,7 +610,8 @@ The number of segments in
 .It Fa size
 The size of the mapping.
 .It Fa kvap
-Filled in to specify the kernel virtual address where the memory is mapped.
+Filled in to specify the kernel virtual address where the memory is
+mapped.
 .It Fa flags
 Flags are defined as follows:
 .Bl -tag -width BUS_DMA_COHERENT -compact
@@ -564,19 +625,21 @@ bus-dependent functionality.
 .It Dv BUS_DMA_COHERENT
 This flag is a
 .Em hint
-to machine-dependent code.  If possible, map the memory in such a way
-as it will be DMA coherent.  This may include mapping the pages into
-uncached address space or setting the cache-inhibit bits in page table
-entries.  If implementation of DMA coherent mappings is impossible, this
-is ignored.
+to machine-dependent code.
+If possible, map the memory in such a way as it will be DMA coherent.
+This may include mapping the pages into uncached address space or
+setting the cache-inhibit bits in page table entries.
+If implementation of DMA coherent mappings is impossible, this is
+ignored.
 .Pp
 Later, when this memory is loaded into a DMA map, machine-dependent code
 will take whatever steps are necessary to determine if the memory was
-mapped in a DMA coherent fashion.  This may include checking if the
-kernel virtual address lies within uncached address space or if the
-cache-inhibit bits are set in page table entries.  If it is determined
-that the mapping is DMA coherent, state may be placed into the DMA map
-for use by later calls to
+mapped in a DMA coherent fashion.
+This may include checking if the kernel virtual address lies within
+uncached address space or if the cache-inhibit bits are set in page
+table entries.
+If it is determined that the mapping is DMA coherent, state may be
+placed into the DMA map for use by later calls to
 .Fn bus_dmamap_sync .
 .El
 .El
@@ -588,9 +651,8 @@ Returns 0 on success, or an error code indicating mode of failure.
 .It Fn bus_dmamem_unmap "tag" "kva" "size"
 Unmaps memory previously mapped with
 .Fn bus_dmamem_map ,
-freeing the
-kernel virtual address space used by the mapping.  The arguments are as
-follows:
+freeing the kernel virtual address space used by the mapping.
+The arguments are as follows:
 .Bl -tag -width size -compact
 .It Fa tag
 This is the bus_dma_tag_t passed down from the parent driver via
@@ -604,15 +666,16 @@ The size of the mapping.
 Behavior is undefined if invalid arguments are passed to
 .Fn bus_dmamem_unmap .
 .Pp
-If given valid arguments, 
+If given valid arguments,
 .Fn bus_dmamem_unmap
 always succeeds.
 .It Fn bus_dmamem_mmap "tag" "segs" "nsegs" "off" "prot" "flags"
 Provides support for user
 .Xr mmap 2 Ns 'ing
-of DMA-safe memory.  This function is to be called by a device
-driver's (*d_mmap)() entry point, which is called by the
-device pager for each page to be mapped.  The arguments are
+of DMA-safe memory.
+This function is to be called by a device driver's (*d_mmap)() entry
+point, which is called by the device pager for each page to be mapped.
+The arguments are
 as follows:
 .Bl -tag -width nsegs -compact
 .It Fa tag
@@ -652,8 +715,9 @@ Behavior is undefined if invalid arguments are passed
 to
 .Fn bus_dmamem_mmap .
 .Pp
-Returns -1 to indicate failure.  Otherwise, returns an opaque
-value to be interpreted by the device pager.
+Returns -1 to indicate failure.
+Otherwise, returns an opaque value to be interpreted by the device
+pager.
 .El
 .Sh SEE ALSO
 .Xr bus_space 9

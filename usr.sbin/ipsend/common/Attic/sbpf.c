@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: sbpf.c,v 1.5 2001/01/17 06:01:25 fgsch Exp $	*/
 
 /*
  * (C)opyright 1995-1998 Darren Reed. (from tcplog)

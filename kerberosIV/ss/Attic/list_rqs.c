@@ -1,4 +1,4 @@
-/*	$Id: list_rqs.c,v 1.1.1.1 1995/12/14 06:52:47 tholo Exp $	*/
+/*	$Id: list_rqs.c,v 1.2 1996/09/16 03:12:59 tholo Exp $	*/
 
 /*-
  * Copyright 1987, 1988 by the Student Information Processing Board

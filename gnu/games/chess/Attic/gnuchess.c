@@ -25,7 +25,7 @@
 */
 
 #ifndef lint
-static char rcsid[] = "$Id: gnuchess.c,v 1.2 1995/12/21 14:50:10 deraadt Exp $";
+static char rcsid[] = "$Id: gnuchess.c,v 1.3 1996/06/02 19:51:39 tholo Exp deraadt $";
 #endif /* not lint */
 
 #include <stdio.h>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: nxbss.c,v 1.1 2002/07/26 01:20:44 deraadt Exp $	*/
+/*	$OpenBSD: nxbss.c,v 1.2 2002/07/26 23:30:42 deraadt Exp $	*/
 
 /*
  * Copyright (c) 2002 Michael Shalayeff

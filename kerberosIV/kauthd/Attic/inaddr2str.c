@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: inaddr2str.c,v 1.1 1998/02/18 07:10:24 art Exp $	*/
 /* $KTH: inaddr2str.c,v 1.8 1997/10/29 01:32:55 assar Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: endian.h,v 1.2 1996/04/21 22:17:40 deraadt Exp $	*/
+/*	$OpenBSD: endian.h,v 1.2 1996/11/25 13:11:28 niklas Exp $	*/
 
 /*
  * Copyright (c) 1987, 1991, 1993

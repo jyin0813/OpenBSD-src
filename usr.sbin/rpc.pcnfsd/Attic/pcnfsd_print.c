@@ -1,4 +1,4 @@
-/*	$OpenBSD: pcnfsd_print.c,v 1.17 2003/04/05 10:43:39 avsm Exp $	*/
+/*	$OpenBSD: pcnfsd_print.c,v 1.18 2003/04/19 18:26:06 avsm Exp $	*/
 /*	$NetBSD: pcnfsd_print.c,v 1.3 1995/08/14 19:45:18 gwr Exp $	*/
 
 /*

@@ -45,7 +45,7 @@ static char  *license_msg[] = {
  */
 
 #ifdef RCSID
-static char rcsid[] = "$Id: gzip.c,v 1.6 2002/11/05 16:16:14 henning Exp $";
+static char rcsid[] = "$Id: gzip.c,v 1.7 2003/04/26 22:12:00 deraadt Exp $";
 #endif
 
 #include <ctype.h>

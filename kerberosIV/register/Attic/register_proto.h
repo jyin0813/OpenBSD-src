@@ -31,7 +31,7 @@
  * SUCH DAMAGE.
  *
  *	from @(#)register_proto.h	8.1 (Berkeley) 6/1/93
- *	$Id$
+ *	$Id: register_proto.h,v 1.1 1995/12/14 06:52:33 tholo Exp $
  */
 
 #define	APPEND_DB	0x01

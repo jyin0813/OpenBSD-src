@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-	$Id: trad-core.c,v 1.3 1994/06/24 06:57:52 pk Exp $
+	$Id: trad-core.c,v 1.1 1995/10/18 08:39:54 deraadt Exp $
 */
 
 /* To use this file on a particular host, configure the host with these

@@ -1,4 +1,4 @@
-/* * $OpenBSD: paths.h,v 1.1 1996/03/05 03:20:21 dm Exp $*/
+/* * $OpenBSD: paths.h,v 1.2 1996/06/26 05:38:16 deraadt Exp $*/
 /*
  * Copyright (c) 1983 Regents of the University of California.
  * All rights reserved.

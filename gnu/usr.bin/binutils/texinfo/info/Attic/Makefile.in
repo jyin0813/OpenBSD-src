@@ -1,5 +1,5 @@
 # Makefile for texinfo/info.	-*- Indented-Text -*-
-# $Id: Makefile.in,v 1.1.2.1 1996/11/19 14:51:53 niklas Exp $
+# $Id: Makefile.in,v 1.2 1996/11/23 04:02:28 niklas Exp $
 # 
 # Copyright (C) 1993,96 Free Software Foundation, Inc.
 

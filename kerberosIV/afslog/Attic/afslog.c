@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: afslog.c,v 1.1 1998/03/12 14:36:17 art Exp $	*/
 /* $KTH: aklog.c,v 1.20 1997/12/09 10:36:25 joda Exp $ */
 
 /*

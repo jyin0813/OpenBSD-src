@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2001/12/03 08:40:43 kjc Exp $
+#	$OpenBSD: Makefile,v 1.5 2002/02/07 23:13:53 art Exp $
 #	$NetBSD: Makefile,v 1.3 2001/01/11 13:15:06 enami Exp $
 
 SUBDIR=altq.conf.samples

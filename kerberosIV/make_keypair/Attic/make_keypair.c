@@ -1,4 +1,4 @@
-/*	$Id: make_keypair.c,v 1.4 1997/06/29 10:32:18 provos Exp $	*/
+/*	$Id: make_keypair.c,v 1.5 1997/08/18 03:11:22 millert Exp $	*/
 
 /*-
  * Copyright (c) 1988, 1993

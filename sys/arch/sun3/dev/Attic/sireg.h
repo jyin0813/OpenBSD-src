@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: sireg.h,v 1.2 1997/01/16 04:03:54 kstailey Exp $	*/
 /*	$NetBSD: sireg.h,v 1.1 1996/03/26 15:01:14 gwr Exp $	*/
 
 /*

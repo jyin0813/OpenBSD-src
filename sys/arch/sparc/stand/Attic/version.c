@@ -39,4 +39,4 @@
  *	1.4	add cd9660 support
  */
 
-char *version = "$Revision: 1.3 $";
+char *version = "$Revision: 1.4 $";

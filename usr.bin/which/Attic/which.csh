@@ -1,5 +1,5 @@
 #!/bin/csh
-#	$OpenBSD: which.csh,v 1.2 1996/06/26 05:42:58 deraadt Exp $
+#	$OpenBSD: which.csh,v 1.3 1997/01/07 15:38:58 niklas Exp $
 
 #
 # DO NOT USE "csh -f"

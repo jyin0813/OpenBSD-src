@@ -1,4 +1,4 @@
-/*	$OpenBSD: reboot.S,v 1.3 2003/01/07 22:01:35 miod Exp $	*/
+/*	$OpenBSD: reboot.S,v 1.4 2003/06/02 20:18:31 millert Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
@@ -35,7 +35,7 @@
 
 #if defined(LIBC_SCCS)
 	.data
-	.string "$OpenBSD: reboot.S,v 1.3 2003/01/07 22:01:35 miod Exp $"
+	.string "$OpenBSD: reboot.S,v 1.4 2003/06/02 20:18:31 millert Exp $"
 #endif /* LIBC_SCCS */
 
 #include "SYS.h"

@@ -29,6 +29,6 @@ divert(-1)
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-VERSIONID(`$OpenBSD: alatar.mc,v 1.2 1998/08/15 18:17:10 millert Exp $')dnl
+VERSIONID(`$OpenBSD: alatar.mc,v 1.1 2000/04/02 19:48:11 millert Exp $')dnl
 OSTYPE(openbsd)dnl
 FEATURE(nullclient, gandalf.$m)dnl

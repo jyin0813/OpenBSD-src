@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_pager.c,v 1.9 1999/09/03 18:02:29 art Exp $	*/
+/*	$OpenBSD: vm_pager.c,v 1.10 2001/06/08 08:09:44 art Exp $	*/
 /*	$NetBSD: vm_pager.c,v 1.21 1996/03/16 23:15:25 christos Exp $	*/
 
 /* 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tcfsrmuser.c,v 1.8 2000/06/20 08:59:53 fgsch Exp $	*/
+/*	$OpenBSD: tcfsrmuser.c,v 1.9 2000/06/20 18:15:58 aaron Exp $	*/
 
 /*
  *	Transparent Cryptographic File System (TCFS) for NetBSD 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: sock.c,v 1.14 2005/03/10 22:37:00 deraadt Exp $	*/
+/*	$OpenBSD: sock.c,v 1.15 2005/03/10 22:40:04 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cvsd.h,v 1.7 2004/12/07 17:10:56 tedu Exp $	*/
+/*	$OpenBSD: cvsd.h,v 1.8 2005/02/22 22:33:01 jfb Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

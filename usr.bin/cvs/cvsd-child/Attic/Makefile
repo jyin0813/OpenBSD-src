@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.8 2004/12/08 18:52:53 xsa Exp $
+# $Id: Makefile,v 1.1 2005/02/22 22:33:01 jfb Exp $
 
 .PATH:	${.CURDIR}/..
 

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cvsd.c,v 1.18 2005/02/22 22:33:01 jfb Exp $	*/
+/*	$OpenBSD: cvsd.c,v 1.19 2005/04/03 17:32:50 xsa Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

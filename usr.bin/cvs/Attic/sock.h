@@ -1,4 +1,4 @@
-/*	$OpenBSD: sock.h,v 1.2 2004/07/25 03:31:25 jfb Exp $	*/
+/*	$OpenBSD: sock.h,v 1.3 2004/12/07 17:10:56 tedu Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

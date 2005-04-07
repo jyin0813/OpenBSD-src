@@ -1,4 +1,4 @@
-/*	$OpenBSD: session.c,v 1.1 2004/11/09 20:50:27 krapht Exp $	*/
+/*	$OpenBSD: session.c,v 1.2 2004/12/07 17:10:56 tedu Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

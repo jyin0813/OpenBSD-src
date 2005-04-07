@@ -1,4 +1,4 @@
-/*	$OpenBSD: child.c,v 1.2 2005/02/22 22:36:09 jfb Exp $	*/
+/*	$OpenBSD: child.c,v 1.3 2005/04/03 17:32:50 xsa Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: grouptest.c,v 1.3 1998/12/21 01:02:34 niklas Exp $	*/
+/*	$OpenBSD: grouptest.c,v 1.4 2003/06/03 14:39:51 ho Exp $	*/
 /*	$EOM: grouptest.c,v 1.2 1998/07/18 21:15:55 provos Exp $	*/
 
 /*

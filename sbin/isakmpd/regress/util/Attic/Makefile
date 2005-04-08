@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2001/07/01 19:25:11 niklas Exp $
+#	$OpenBSD: Makefile,v 1.2 2004/02/25 16:01:29 hshoexer Exp $
 
 # Test some utility functions
 

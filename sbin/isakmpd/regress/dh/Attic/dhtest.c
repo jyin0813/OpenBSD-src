@@ -1,4 +1,4 @@
-/*	$OpenBSD: dhtest.c,v 1.4 2002/06/09 08:13:07 todd Exp $	*/
+/*	$OpenBSD: dhtest.c,v 1.5 2003/06/03 14:39:50 ho Exp $	*/
 /*	$EOM: dhtest.c,v 1.1 1998/07/18 21:14:20 provos Exp $	*/
 
 /*

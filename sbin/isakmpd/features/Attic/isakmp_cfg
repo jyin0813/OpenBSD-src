@@ -1,4 +1,4 @@
-#	$OpenBSD: isakmp_cfg,v 1.1 2001/07/01 20:43:40 niklas Exp $
+#	$OpenBSD: isakmp_cfg,v 1.2 2003/06/03 14:29:41 ho Exp $
 
 #
 # Copyright (c) 2001 Niklas Hallqvist.  All rights reserved.

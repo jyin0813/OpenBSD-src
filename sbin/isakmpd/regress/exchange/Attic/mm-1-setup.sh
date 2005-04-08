@@ -1,4 +1,4 @@
-# $OpenBSD: mm-1-setup.sh,v 1.1 1999/08/05 22:41:39 niklas Exp $
+# $OpenBSD: mm-1-setup.sh,v 1.2 2000/01/26 15:23:52 niklas Exp $
 # $EOM: mm-1-setup.sh,v 1.2 1999/10/05 12:54:27 niklas Exp $
 
 # XXX Need to start isakmpd here in a nice way.

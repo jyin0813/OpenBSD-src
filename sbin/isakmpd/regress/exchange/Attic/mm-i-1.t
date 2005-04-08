@@ -1,4 +1,4 @@
-# $OpenBSD: mm-i-1.t,v 1.1 1999/08/05 15:07:38 niklas Exp $
+# $OpenBSD: mm-i-1.t,v 1.1 1999/08/05 22:41:39 niklas Exp $
 # $EOM: mm-i-1.t,v 1.1 1999/08/05 15:07:38 niklas Exp $
 
 # The seed to isakmpd was 19990805

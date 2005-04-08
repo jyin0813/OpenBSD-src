@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: run.sh,v 1.7 2003/06/03 14:39:50 ho Exp $
+#	$OpenBSD: run.sh,v 1.8 2004/01/09 10:03:04 hshoexer Exp $
 #	$EOM: run.sh,v 1.6 1999/08/05 15:02:33 niklas Exp $
 
 #

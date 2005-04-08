@@ -1,4 +1,4 @@
-#	$OpenBSD: GNUmakefile.sysdep,v 1.11 2005/02/10 15:00:36 ho Exp $
+#	$OpenBSD: GNUmakefile.sysdep,v 1.12 2005/04/05 22:53:50 cloder Exp $
 
 #
 # Copyright (c) 1999 Niklas Hallqvist.  All rights reserved.

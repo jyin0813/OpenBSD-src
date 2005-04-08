@@ -1,4 +1,4 @@
-/* $OpenBSD: blf.h,v 1.4 2003/03/14 14:49:08 ho Exp $ */
+/* $OpenBSD: blf.h,v 1.5 2003/06/03 14:52:06 ho Exp $ */
 /*
  * Blowfish - a fast block cipher designed by Bruce Schneier
  *

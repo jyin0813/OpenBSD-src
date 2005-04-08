@@ -1,4 +1,4 @@
-/*	$OpenBSD: ec2ntest.c,v 1.4 2002/01/23 17:43:24 ho Exp $	*/
+/*	$OpenBSD: ec2ntest.c,v 1.5 2003/06/04 07:31:17 ho Exp $	*/
 /*	$EOM: ec2ntest.c,v 1.3 1998/07/16 09:21:59 niklas Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: prftest.c,v 1.6 2002/06/09 08:13:07 todd Exp $	*/
+/*	$OpenBSD: prftest.c,v 1.7 2003/06/03 14:39:51 ho Exp $	*/
 /*	$EOM: prftest.c,v 1.2 1998/10/07 16:40:50 niklas Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: b2ntest.c,v 1.7 2002/06/09 08:13:07 todd Exp $	*/
+/*	$OpenBSD: b2ntest.c,v 1.8 2003/06/03 14:39:50 ho Exp $	*/
 /*	$EOM: b2ntest.c,v 1.4 1998/07/16 19:31:55 provos Exp $	*/
 
 /*

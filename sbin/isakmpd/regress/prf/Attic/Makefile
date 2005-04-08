@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.6 2000/04/07 22:06:11 niklas Exp $
+#	$OpenBSD: Makefile,v 1.7 2004/02/25 16:01:29 hshoexer Exp $
 #	$EOM: Makefile,v 1.6 2000/03/28 21:22:07 ho Exp $
 
 # Test PRF:

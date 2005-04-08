@@ -1,4 +1,4 @@
-/*	$OpenBSD: rsakeygen.c,v 1.18 2004/02/25 16:01:29 hshoexer Exp $	*/
+/*	$OpenBSD: rsakeygen.c,v 1.19 2004/02/26 15:27:05 hshoexer Exp $	*/
 /*	$EOM: rsakeygen.c,v 1.10 2000/12/21 15:18:53 ho Exp $	*/
 
 /*

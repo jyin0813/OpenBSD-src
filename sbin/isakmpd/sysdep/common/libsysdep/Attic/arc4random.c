@@ -1,4 +1,4 @@
-/*	$OpenBSD: arc4random.c,v 1.6 2004/10/08 15:18:26 hshoexer Exp $	*/
+/*	$OpenBSD: arc4random.c,v 1.7 2005/02/10 14:43:14 ho Exp $	*/
 
 /*
  * Arc4 random number generator for OpenBSD.

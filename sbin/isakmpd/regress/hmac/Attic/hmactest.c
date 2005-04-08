@@ -1,4 +1,4 @@
-/*	$OpenBSD: hmactest.c,v 1.4 2002/06/09 08:13:07 todd Exp $	*/
+/*	$OpenBSD: hmactest.c,v 1.5 2003/06/04 07:31:17 ho Exp $	*/
 /*	$EOM: hmactest.c,v 1.3 1998/08/09 19:16:24 niklas Exp $	*/
 
 /*

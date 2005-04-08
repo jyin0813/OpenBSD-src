@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: check.sh,v 1.3 1998/11/17 11:10:23 niklas Exp $
+#	$OpenBSD: check.sh,v 1.4 2003/06/03 14:39:50 ho Exp $
 #	$EOM: check.sh,v 1.4 1998/07/17 21:33:13 niklas Exp $
 
 #

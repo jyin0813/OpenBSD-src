@@ -1,4 +1,4 @@
-/*	$OpenBSD: x509test.c,v 1.21 2002/08/02 17:09:29 aaron Exp $	*/
+/*	$OpenBSD: x509test.c,v 1.22 2003/06/03 14:39:51 ho Exp $	*/
 /*	$EOM: x509test.c,v 1.9 2000/12/21 15:24:25 ho Exp $	*/
 
 /*

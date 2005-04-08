@@ -1,4 +1,4 @@
-/*	$OpenBSD: cryptotest.c,v 1.12 2004/02/25 16:01:29 hshoexer Exp $	*/
+/*	$OpenBSD: cryptotest.c,v 1.13 2004/04/07 22:45:50 ho Exp $	*/
 /*	$EOM: cryptotest.c,v 1.5 1998/10/07 16:40:49 niklas Exp $	*/
 
 /*

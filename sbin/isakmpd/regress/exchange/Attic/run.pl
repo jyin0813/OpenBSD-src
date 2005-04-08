@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $OpenBSD: run.pl,v 1.1 1999/08/05 22:42:14 niklas Exp $
+# $OpenBSD: run.pl,v 1.2 2004/01/26 14:56:03 niklas Exp $
 # $EOM: run.pl,v 1.2 1999/08/05 22:42:42 niklas Exp $
 
 #

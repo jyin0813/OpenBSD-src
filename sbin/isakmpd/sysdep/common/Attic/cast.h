@@ -1,4 +1,4 @@
-/*      $OpenBSD: cast.h,v 1.1 1999/12/08 20:34:48 niklas Exp $       */
+/*      $OpenBSD: cast.h,v 1.1 2001/01/26 11:34:00 niklas Exp $       */
 /*
  *	CAST-128 in C
  *	Written by Steve Reid <sreid@sea-to-sky.net>

@@ -1,4 +1,4 @@
-#	$OpenBSD: GNUmakefile.sysdep,v 1.7 2003/06/03 14:53:11 ho Exp $
+#	$OpenBSD: GNUmakefile.sysdep,v 1.8 2004/06/26 03:40:57 mcbride Exp $
 
 #
 # Copyright (c) 1999 Niklas Hallqvist.  All rights reserved.

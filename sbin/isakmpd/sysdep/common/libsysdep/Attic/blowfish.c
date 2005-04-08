@@ -1,4 +1,4 @@
-/* $OpenBSD: blowfish.c,v 1.3 2003/03/14 14:49:08 ho Exp $ */
+/* $OpenBSD: blowfish.c,v 1.4 2003/06/03 14:52:06 ho Exp $ */
 /*
  * Blowfish block cipher for OpenBSD
  * Copyright 1997 Niels Provos <provos@physnet.uni-hamburg.de>

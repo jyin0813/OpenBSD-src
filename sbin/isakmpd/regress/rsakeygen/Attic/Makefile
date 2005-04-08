@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.15 2004/02/25 16:01:29 hshoexer Exp $
+#	$OpenBSD: Makefile,v 1.16 2005/04/05 22:53:50 cloder Exp $
 #	$EOM: Makefile,v 1.10 2000/03/28 21:23:24 ho Exp $
 
 #

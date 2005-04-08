@@ -1,4 +1,4 @@
-#	$OpenBSD: nat_traversal,v 1.1 2004/06/20 15:24:05 ho Exp $
+#	$OpenBSD: nat_traversal,v 1.2 2004/06/21 17:02:53 markus Exp $
 
 #
 # Copyright (c) 2004 Håkan Olsson.  All rights reserved.

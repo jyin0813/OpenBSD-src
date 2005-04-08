@@ -1,4 +1,4 @@
-#	$OpenBSD: GNUmakefile,v 1.3 2002/09/03 18:40:18 markus Exp $
+#	$OpenBSD: GNUmakefile,v 1.4 2003/06/03 14:52:06 ho Exp $
 
 #
 # Copyright (c) 1999 Niklas Hallqvist.  All rights reserved.

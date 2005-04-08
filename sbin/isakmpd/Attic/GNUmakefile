@@ -1,4 +1,4 @@
-#    $OpenBSD: GNUmakefile,v 1.12 2005/04/05 20:46:20 cloder Exp $
+#    $OpenBSD: GNUmakefile,v 1.13 2005/04/05 21:07:35 hshoexer Exp $
 
 #
 # Copyright (c) 1998, 1999, 2000 Niklas Hallqvist.  All rights reserved.

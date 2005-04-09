@@ -1,4 +1,4 @@
-/*	$OpenBSD: sysdep-os.h,v 1.6 2003/06/03 14:53:11 ho Exp $	*/
+/*	$OpenBSD: sysdep-os.h,v 1.7 2005/04/08 15:56:35 deraadt Exp $	*/
 /*	$EOM: sysdep-os.h,v 1.3 1999/07/08 16:48:40 niklas Exp $	*/
 
 /*

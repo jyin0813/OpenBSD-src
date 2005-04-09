@@ -1,4 +1,4 @@
-/* $OpenBSD: gmp_util.c,v 1.11 2004/04/15 18:39:25 deraadt Exp $	 */
+/* $OpenBSD: gmp_util.c,v 1.12 2005/04/08 19:19:39 hshoexer Exp $	 */
 /* $EOM: gmp_util.c,v 1.7 2000/09/18 00:01:47 ho Exp $	 */
 
 /*

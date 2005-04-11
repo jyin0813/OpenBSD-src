@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: usb_cardbus.h,v 1.1 2004/12/07 05:42:41 dlg Exp $ */
 /*	$NetBSD: usb_cardbus.h,v 1.1.6.1 2002/01/10 19:53:47 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: cache.c,v 1.2 2004/12/07 17:10:56 tedu Exp $	*/
+/*	$OpenBSD: cache.c,v 1.3 2004/12/15 05:09:06 jfb Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

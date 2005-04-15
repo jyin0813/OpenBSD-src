@@ -1,4 +1,4 @@
-/*	$OpenBSD: stddef.h,v 1.5 2002/10/25 21:55:28 millert Exp $	*/
+/*	$OpenBSD: stddef.h,v 1.6 2003/06/02 19:34:12 millert Exp $	*/
 /*	$NetBSD: stddef.h,v 1.4 1994/10/26 00:56:26 cgd Exp $	*/
 
 /*-
@@ -50,6 +50,11 @@ typedef	_BSD_SIZE_T_	size_t;
 typedef	_BSD_WCHAR_T_	wchar_t;
 #undef	_BSD_WCHAR_T_
 #endif
+#endif
+
+#ifdef	_BSD_WINT_T_
+typedef	_BSD_WINT_T_	wint_t;
+#undef	_BSD_WINT_T_
 #endif
 
 #ifndef	NULL

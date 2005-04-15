@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.23 2005/03/29 02:58:27 joris Exp $
+#	$OpenBSD: Makefile,v 1.24 2005/03/31 17:21:45 xsa Exp $
 
 .PATH:	${.CURDIR}/..
 

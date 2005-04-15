@@ -1,4 +1,4 @@
-/*	$OpenBSD: rcsprog.c,v 1.4 2005/04/11 18:02:58 joris Exp $	*/
+/*	$OpenBSD: rcsprog.c,v 1.5 2005/04/11 19:55:28 jfb Exp $	*/
 /*
  * Copyright (c) 2005 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

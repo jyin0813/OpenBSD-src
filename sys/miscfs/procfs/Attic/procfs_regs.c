@@ -1,4 +1,4 @@
-/*	$OpenBSD: procfs_regs.c,v 1.7 2003/06/02 23:28:11 millert Exp $	*/
+/*	$OpenBSD: procfs_regs.c,v 1.8 2004/05/05 23:52:10 tedu Exp $	*/
 /*	$NetBSD: procfs_regs.c,v 1.9 1995/08/13 09:06:07 mycroft Exp $	*/
 
 /*

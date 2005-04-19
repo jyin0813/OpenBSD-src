@@ -1,4 +1,4 @@
-/*	$OpenBSD: err.c,v 1.2 2002/06/25 15:50:15 mickey Exp $	*/
+/*	$OpenBSD: log.c,v 1.1 2005/04/19 02:03:12 brad Exp $	*/
 
 /*
  * log.c

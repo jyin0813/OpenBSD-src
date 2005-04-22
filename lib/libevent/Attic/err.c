@@ -1,4 +1,4 @@
-/*	$OpenBSD: err.c,v 1.3 2003/06/02 20:18:40 millert Exp $	*/
+/*	$OpenBSD: err.c,v 1.5 2005/04/19 08:07:45 deraadt Exp $	*/
 
 /*
  * err.c

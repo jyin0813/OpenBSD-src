@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_txvar.h,v 1.11 2001/11/19 19:22:43 deraadt Exp $	*/
+/*	$OpenBSD: if_txvar.h,v 1.12 2002/03/14 03:16:06 millert Exp $	*/
 /* $FreeBSD: src/sys/pci/if_txvar.h,v 1.8 2001/02/07 20:11:02 semenu Exp $ */
 
 /*-

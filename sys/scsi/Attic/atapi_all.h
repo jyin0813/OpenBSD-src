@@ -1,4 +1,4 @@
-/*	$OpenBSD: atapi_all.h,v 1.2 2002/03/14 01:27:13 millert Exp $	*/
+/*	$OpenBSD: atapi_all.h,v 1.3 2005/04/16 16:41:46 krw Exp $	*/
 /*	$NetBSD: atapi_all.h,v 1.3 1998/02/13 08:28:16 enami Exp $	*/
 
 /*

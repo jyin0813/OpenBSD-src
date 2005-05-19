@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1999/07/17 21:48:59 niklas Exp $
+#	$OpenBSD: Makefile,v 1.2 2003/06/03 14:35:00 ho Exp $
 #	$EOM: Makefile,v 1.2 1999/07/17 20:44:12 niklas Exp $
 
 #

@@ -1,4 +1,4 @@
-/*	$OpenBSD: certpatch.c,v 1.21 2003/06/04 07:31:17 ho Exp $	*/
+/*	$OpenBSD: certpatch.c,v 1.22 2005/04/08 21:51:08 deraadt Exp $	*/
 /*	$EOM: certpatch.c,v 1.11 2000/12/21 14:50:09 ho Exp $	*/
 
 /*

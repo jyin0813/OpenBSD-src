@@ -1,4 +1,4 @@
-/*	$OpenBSD: msg.c,v 1.5 2004/12/06 21:03:12 deraadt Exp $	*/
+/*	$OpenBSD: msg.c,v 1.6 2004/12/07 17:10:56 tedu Exp $	*/
 /*
  * Copyright (c) 2002 Matthieu Herrb
  * Copyright (c) 2001 Niels Provos <provos@citi.umich.edu>

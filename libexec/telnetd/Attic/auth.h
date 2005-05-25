@@ -27,7 +27,7 @@
  * SUCH DAMAGE.
  *
  *     from: @(#)auth.h        8.1 (Berkeley) 6/4/93
- *     $OpenBSD: auth.h,v 1.1 2003/05/14 01:46:51 hin Exp $
+ *     $OpenBSD: auth.h,v 1.2 2003/06/02 19:38:24 millert Exp $
  *     $NetBSD: auth.h,v 1.5 1996/02/24 01:15:18 jtk Exp $
  */
 

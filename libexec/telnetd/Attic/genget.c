@@ -1,4 +1,4 @@
-/*     $OpenBSD: genget.c,v 1.1 2003/05/14 01:46:51 hin Exp $  */
+/*     $OpenBSD: genget.c,v 1.2 2003/06/02 19:38:25 millert Exp $  */
 
 /*-
  * Copyright (c) 1991, 1993
@@ -32,7 +32,7 @@
 #ifndef lint
 /* from: static char sccsid[] = "@(#)genget.c  8.2 (Berkeley) 5/30/95"; */
 /* from: static char *rcsid = "$NetBSD: genget.c,v 1.5 1996/02/24 01:15:21 jtk Exp $"; */
-static char *rcsid = "$OpenBSD: genget.c,v 1.1 2003/05/14 01:46:51 hin Exp $";
+static char *rcsid = "$OpenBSD: genget.c,v 1.2 2003/06/02 19:38:25 millert Exp $";
 #endif /* not lint */
 
 /* $KTH: genget.c,v 1.6 1997/05/04 09:01:34 assar Exp $ */

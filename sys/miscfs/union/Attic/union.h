@@ -1,4 +1,4 @@
-/*	$OpenBSD: union.h,v 1.9 2003/06/02 23:28:11 millert Exp $	*/
+/*	$OpenBSD: union.h,v 1.10 2003/08/14 07:46:40 mickey Exp $	*/
 /*	$NetBSD: union.h,v 1.13 2002/09/21 18:09:31 christos Exp $	*/
 
 /*

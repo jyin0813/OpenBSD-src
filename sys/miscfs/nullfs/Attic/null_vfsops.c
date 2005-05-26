@@ -1,4 +1,4 @@
-/*	$OpenBSD: null_vfsops.c,v 1.21 2004/05/20 18:32:37 tedu Exp $	*/
+/*	$OpenBSD: null_vfsops.c,v 1.22 2004/06/01 21:58:19 pedro Exp $	*/
 /*	$NetBSD: null_vfsops.c,v 1.38 2002/09/21 18:09:29 christos Exp $	*/
 
 /*

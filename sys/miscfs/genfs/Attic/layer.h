@@ -1,4 +1,4 @@
-/*	$OpenBSD: layer.h,v 1.1 2003/05/12 20:58:40 tedu Exp $ */
+/*	$OpenBSD: layer.h,v 1.2 2003/06/02 23:28:10 millert Exp $ */
 /*	$NetBSD: layer.h,v 1.4 2001/06/07 13:32:46 wiz Exp $	*/
 
 /*

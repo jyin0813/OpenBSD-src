@@ -1,4 +1,4 @@
-/*	$OpenBSD: umap_subr.c,v 1.15 2003/05/12 21:02:10 tedu Exp $ */
+/*	$OpenBSD: umap_subr.c,v 1.16 2003/06/02 23:28:11 millert Exp $ */
 /*	$NetBSD: umap_subr.c,v 1.19 2001/11/15 09:48:23 lukem Exp $	*/
 
 /*

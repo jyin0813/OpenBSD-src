@@ -1,4 +1,4 @@
-/*	$OpenBSD: null_vnops.c,v 1.17 2003/05/12 21:00:39 tedu Exp $ */
+/*	$OpenBSD: null_vnops.c,v 1.18 2003/06/02 23:28:10 millert Exp $ */
 /*	$NetBSD: null_vnops.c,v 1.26 2002/09/10 02:52:40 jtk Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: union_vfsops.c,v 1.20 2004/07/10 15:18:45 pedro Exp $	*/
+/*	$OpenBSD: union_vfsops.c,v 1.21 2004/07/11 00:11:50 pedro Exp $	*/
 /*	$NetBSD: union_vfsops.c,v 1.10 1995/06/18 14:47:47 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: layer_subr.c,v 1.1 2003/05/12 20:58:40 tedu Exp $ */
+/*	$OpenBSD: layer_subr.c,v 1.2 2003/06/02 23:28:10 millert Exp $ */
 /*	$NetBSD: layer_subr.c,v 1.11 2002/02/20 06:16:22 enami Exp $	*/
 
 /*

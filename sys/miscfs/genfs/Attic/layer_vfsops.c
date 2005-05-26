@@ -1,4 +1,4 @@
-/*	$OpenBSD: layer_vfsops.c,v 1.1 2003/05/12 20:58:40 tedu Exp $ */
+/*	$OpenBSD: layer_vfsops.c,v 1.2 2003/06/02 23:28:10 millert Exp $ */
 /*	$NetBSD: layer_vfsops.c,v 1.5 2001/11/15 09:48:21 lukem Exp $	*/
 
 /*

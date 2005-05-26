@@ -1,4 +1,4 @@
-/*	$OpenBSD: layer_vnops.c,v 1.6 2004/05/26 23:17:14 pedro Exp $ */
+/*	$OpenBSD: layer_vnops.c,v 1.7 2004/10/26 18:23:47 pedro Exp $ */
 /*	$NetBSD: layer_vnops.c,v 1.10 2001/12/06 04:29:23 chs Exp $	*/
 
 /*
@@ -68,7 +68,7 @@
  *
  * Ancestors:
  *	@(#)lofs_vnops.c	1.2 (Berkeley) 6/18/92
- *	$Id: layer_vnops.c,v 1.6 2004/05/26 23:17:14 pedro Exp $
+ *	$Id: layer_vnops.c,v 1.7 2004/10/26 18:23:47 pedro Exp $
  *	...and...
  *	@(#)null_vnodeops.c 1.20 92/07/07 UCLA Ficus project
  */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mount_null.c,v 1.11 2003/07/03 22:41:40 tedu Exp $	*/
+/*	$OpenBSD: mount_null.c,v 1.12 2005/04/08 20:09:37 jaredy Exp $	*/
 /*	$NetBSD: mount_null.c,v 1.3 1996/04/13 01:31:49 jtc Exp $	*/
 
 /*
@@ -43,7 +43,7 @@ char copyright[] =
 #if 0
 static char sccsid[] = "@(#)mount_null.c	8.5 (Berkeley) 3/27/94";
 #else
-static char rcsid[] = "$OpenBSD: mount_null.c,v 1.11 2003/07/03 22:41:40 tedu Exp $";
+static char rcsid[] = "$OpenBSD: mount_null.c,v 1.12 2005/04/08 20:09:37 jaredy Exp $";
 #endif
 #endif /* not lint */
 

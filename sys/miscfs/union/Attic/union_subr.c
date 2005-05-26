@@ -1,4 +1,4 @@
-/*	$OpenBSD: union_subr.c,v 1.16 2004/04/25 19:46:40 tedu Exp $ */
+/*	$OpenBSD: union_subr.c,v 1.17 2004/05/14 04:00:34 tedu Exp $ */
 /*	$NetBSD: union_subr.c,v 1.41 2001/11/10 13:33:45 lukem Exp $	*/
 
 /*

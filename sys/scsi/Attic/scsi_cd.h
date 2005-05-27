@@ -1,4 +1,4 @@
-/*	$OpenBSD: scsi_cd.h,v 1.5 1999/07/20 06:21:59 csapuntz Exp $	*/
+/*	$OpenBSD: scsi_cd.h,v 1.6 2001/06/22 14:35:42 deraadt Exp $	*/
 /*	$NetBSD: scsi_cd.h,v 1.6 1996/03/19 03:06:39 mycroft Exp $	*/
 
 /*

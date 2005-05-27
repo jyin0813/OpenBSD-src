@@ -1,4 +1,4 @@
-/*	$OpenBSD: config.c,v 1.6 2005/04/14 20:02:09 cloder Exp $ */
+/*	$OpenBSD: config.c,v 1.7 2005/05/23 19:59:02 norby Exp $ */
 
 /*
  * Copyright (c) 2004, 2005 Esben Norby <norby@openbsd.org>

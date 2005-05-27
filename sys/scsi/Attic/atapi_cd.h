@@ -1,4 +1,4 @@
-/*	$OpenBSD: atapi_cd.h,v 1.4 2005/05/23 06:46:38 krw Exp $	*/
+/*	$OpenBSD: atapi_cd.h,v 1.5 2005/05/23 18:29:15 krw Exp $	*/
 /*	$NetBSD: atapi_cd.h,v 1.9 1998/07/13 16:50:56 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pxacom.c,v 1.1 2004/12/30 23:46:14 drahn Exp $	*/
+/*	$OpenBSD: pxacom.c,v 1.2 2005/05/09 15:25:29 uwe Exp $	*/
 /*	$NetBSD: com.c,v 1.82.4.1 1996/06/02 09:08:00 mrg Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pxacomvar.h,v 1.1 2004/12/30 23:46:14 drahn Exp $	*/
+/*	$OpenBSD: pxacomvar.h,v 1.2 2005/05/09 15:25:29 uwe Exp $	*/
 /*	$NetBSD: comvar.h,v 1.5 1996/05/05 19:50:47 christos Exp $	*/
 
 /*

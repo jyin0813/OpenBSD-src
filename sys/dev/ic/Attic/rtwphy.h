@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: rtwphy.h,v 1.2 2004/12/30 06:31:57 jsg Exp $	*/
 /* $NetBSD: rtw.c,v 1.35 2004/12/29 01:13:07 dyoung Exp $ */
 /*-
  * Copyright (c) 2004, 2005 David Young.  All rights reserved.

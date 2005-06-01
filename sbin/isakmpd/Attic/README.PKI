@@ -1,4 +1,4 @@
-$OpenBSD: README.PKI,v 1.6 1999/08/26 22:30:46 niklas Exp $
+$OpenBSD: README.PKI,v 1.7 1999/10/01 14:10:45 niklas Exp $
 $EOM: README.PKI,v 1.7 1999/09/30 13:40:38 niklas Exp $
 
 1	Make sure you have an RSA-enabled isakmpd.  An easy way to do this

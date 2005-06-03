@@ -1,4 +1,4 @@
-/*	$OpenBSD: cdvar.h,v 1.3 2002/03/14 01:27:13 millert Exp $	*/
+/*	$OpenBSD: cdvar.h,v 1.4 2005/05/27 16:07:51 krw Exp $	*/
 /*	$NetBSD: cdvar.h,v 1.10 1999/02/02 13:02:49 bouyer Exp $	*/
 
 /*

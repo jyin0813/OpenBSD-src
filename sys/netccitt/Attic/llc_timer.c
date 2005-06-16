@@ -1,4 +1,4 @@
-/*	$OpenBSD: llc_timer.c,v 1.3 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: llc_timer.c,v 1.4 2003/12/10 07:22:42 itojun Exp $	*/
 /*	$NetBSD: llc_timer.c,v 1.3 1996/02/13 22:04:57 christos Exp $	*/
 
 /* 

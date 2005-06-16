@@ -1,4 +1,4 @@
-/*	$OpenBSD: dll.h,v 1.2 1997/02/24 14:34:14 niklas Exp $	*/
+/*	$OpenBSD: dll.h,v 1.3 2003/06/02 23:28:13 millert Exp $	*/
 /*	$NetBSD: dll.h,v 1.3 1995/03/26 20:33:43 jtc Exp $	*/
 
 /* 

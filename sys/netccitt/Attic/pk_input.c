@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_input.c,v 1.7 2003/12/10 07:22:42 itojun Exp $	*/
+/*	$OpenBSD: pk_input.c,v 1.8 2004/01/03 14:08:53 espie Exp $	*/
 /*	$NetBSD: pk_input.c,v 1.7 1996/02/13 22:05:21 christos Exp $	*/
 
 /*

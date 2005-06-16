@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_llcsubr.c,v 1.7 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: pk_llcsubr.c,v 1.8 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: pk_llcsubr.c,v 1.4 1996/02/13 22:05:26 christos Exp $	*/
 
 /* 

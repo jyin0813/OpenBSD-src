@@ -1,4 +1,4 @@
-/*	$OpenBSD: hd_input.c,v 1.6 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: hd_input.c,v 1.7 2003/12/10 07:22:42 itojun Exp $	*/
 /*	$NetBSD: hd_input.c,v 1.9 1996/04/13 01:34:16 cgd Exp $	*/
 
 /*

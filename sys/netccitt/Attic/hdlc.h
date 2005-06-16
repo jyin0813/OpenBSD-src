@@ -1,4 +1,4 @@
-/*	$OpenBSD: hdlc.h,v 1.2 1996/03/04 07:36:28 niklas Exp $	*/
+/*	$OpenBSD: hdlc.h,v 1.3 2003/06/02 23:28:13 millert Exp $	*/
 /*	$NetBSD: hdlc.h,v 1.6 1996/02/13 22:04:37 christos Exp $	*/
 
 /*-

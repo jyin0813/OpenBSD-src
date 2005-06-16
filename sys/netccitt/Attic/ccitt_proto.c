@@ -1,4 +1,4 @@
-/*	$OpenBSD: ccitt_proto.c,v 1.3 2001/05/25 22:08:23 itojun Exp $	*/
+/*	$OpenBSD: ccitt_proto.c,v 1.4 2003/06/02 23:28:13 millert Exp $	*/
 /*	$NetBSD: ccitt_proto.c,v 1.6 1996/02/13 22:04:21 christos Exp $	*/
 
 /*

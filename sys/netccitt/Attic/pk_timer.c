@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_timer.c,v 1.3 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: pk_timer.c,v 1.4 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: pk_timer.c,v 1.6 1996/02/13 22:05:39 christos Exp $	*/
 
 /* 

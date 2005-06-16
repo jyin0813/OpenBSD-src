@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_subr.c,v 1.11 2004/01/03 14:08:53 espie Exp $	*/
+/*	$OpenBSD: pk_subr.c,v 1.12 2004/06/21 23:50:37 tholo Exp $	*/
 /*	$NetBSD: pk_subr.c,v 1.12 1996/03/30 21:54:33 christos Exp $	*/
 
 /*

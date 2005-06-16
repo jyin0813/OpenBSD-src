@@ -1,4 +1,4 @@
-/*	$OpenBSD: x25.h,v 1.4 2002/03/14 01:27:10 millert Exp $	*/
+/*	$OpenBSD: x25.h,v 1.5 2003/06/02 23:28:13 millert Exp $	*/
 /*	$NetBSD: x25.h,v 1.7 1996/02/13 22:05:51 christos Exp $	*/
 
 /*

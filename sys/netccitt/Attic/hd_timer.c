@@ -1,4 +1,4 @@
-/*	$OpenBSD: hd_timer.c,v 1.3 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: hd_timer.c,v 1.4 2003/12/10 07:22:42 itojun Exp $	*/
 /*	$NetBSD: hd_timer.c,v 1.6 1996/02/13 22:04:33 christos Exp $	*/
 
 /*

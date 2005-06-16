@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_output.c,v 1.6 2003/06/12 01:07:27 deraadt Exp $	*/
+/*	$OpenBSD: pk_output.c,v 1.7 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: pk_output.c,v 1.7 1996/02/13 22:05:30 christos Exp $	*/
 
 /*

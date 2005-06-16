@@ -1,4 +1,4 @@
-/*	$OpenBSD: hd_debug.c,v 1.4 2003/12/10 07:22:42 itojun Exp $	*/
+/*	$OpenBSD: hd_debug.c,v 1.5 2004/06/24 19:35:25 tholo Exp $	*/
 /*	$NetBSD: hd_debug.c,v 1.6 1996/02/13 22:04:25 christos Exp $	*/
 
 /*

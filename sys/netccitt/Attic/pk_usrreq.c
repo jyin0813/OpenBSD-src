@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_usrreq.c,v 1.8 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: pk_usrreq.c,v 1.9 2003/12/10 07:22:43 itojun Exp $	*/
 /*	$NetBSD: pk_usrreq.c,v 1.10 1996/02/13 22:05:43 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_acct.c,v 1.6 2003/12/10 07:22:42 itojun Exp $	*/
+/*	$OpenBSD: pk_acct.c,v 1.7 2004/06/21 23:50:37 tholo Exp $	*/
 /*	$NetBSD: pk_acct.c,v 1.9 1996/02/13 22:05:11 christos Exp $	*/
 
 /*

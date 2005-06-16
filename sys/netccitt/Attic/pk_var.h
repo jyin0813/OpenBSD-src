@@ -1,4 +1,4 @@
-/*	$OpenBSD: pk_var.h,v 1.4 2002/03/15 01:20:04 millert Exp $	*/
+/*	$OpenBSD: pk_var.h,v 1.5 2003/06/02 23:28:13 millert Exp $	*/
 /*	$NetBSD: pk_var.h,v 1.8 1996/02/13 22:05:47 christos Exp $	*/
 
 /* 

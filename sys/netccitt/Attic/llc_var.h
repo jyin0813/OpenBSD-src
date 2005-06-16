@@ -1,4 +1,4 @@
-/*	$OpenBSD: llc_var.h,v 1.4 2003/06/02 23:28:13 millert Exp $	*/
+/*	$OpenBSD: llc_var.h,v 1.5 2003/12/10 07:22:42 itojun Exp $	*/
 /*	$NetBSD: llc_var.h,v 1.5 1996/02/13 22:05:01 christos Exp $	*/
 
 /* 

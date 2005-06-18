@@ -1,5 +1,5 @@
 
-/*	$OpenBSD: ns_input.c,v 1.6 2003/12/10 07:22:44 itojun Exp $	*/
+/*	$OpenBSD: ns_input.c,v 1.7 2004/06/24 19:35:26 tholo Exp $	*/
 /*	$NetBSD: ns_input.c,v 1.9 1996/02/13 22:13:56 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_if.h,v 1.3 2003/05/14 02:02:56 itojun Exp $	*/
+/*	$OpenBSD: ns_if.h,v 1.4 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: ns_if.h,v 1.8 1996/02/13 22:13:54 christos Exp $	*/
 
 /*

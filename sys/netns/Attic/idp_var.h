@@ -1,4 +1,4 @@
-/*	$OpenBSD: idp_var.h,v 1.3 2002/03/14 01:27:13 millert Exp $	*/
+/*	$OpenBSD: idp_var.h,v 1.4 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: idp_var.h,v 1.7 1996/02/13 22:13:47 christos Exp $	*/
 
 /*

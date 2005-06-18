@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: extattr_name.c,v 1.1 2002/02/22 21:06:00 drahn Exp $	*/
 /*-
  * Copyright (c) 2001 Robert N. M. Watson
  * All rights reserved.

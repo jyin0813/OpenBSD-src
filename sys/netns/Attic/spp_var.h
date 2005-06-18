@@ -1,4 +1,4 @@
-/*	$OpenBSD: spp_var.h,v 1.3 2002/03/14 01:27:13 millert Exp $	*/
+/*	$OpenBSD: spp_var.h,v 1.4 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: spp_var.h,v 1.6 1996/02/13 22:14:16 christos Exp $	*/
 
 /*

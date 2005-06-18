@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_cksum.c,v 1.5 2003/06/02 23:28:19 millert Exp $	*/
+/*	$OpenBSD: ns_cksum.c,v 1.6 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: ns_cksum.c,v 1.3 1995/03/08 02:14:53 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_proto.c,v 1.3 2001/05/25 22:08:25 itojun Exp $	*/
+/*	$OpenBSD: ns_proto.c,v 1.4 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: ns_proto.c,v 1.6 1996/02/13 22:14:08 christos Exp $	*/
 
 /*

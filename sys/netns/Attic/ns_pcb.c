@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_pcb.c,v 1.5 2003/06/02 23:28:19 millert Exp $	*/
+/*	$OpenBSD: ns_pcb.c,v 1.6 2003/12/10 07:22:44 itojun Exp $	*/
 /*	$NetBSD: ns_pcb.c,v 1.10 1996/03/27 14:44:14 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile.inc,v 1.1 2002/02/22 21:06:00 drahn Exp $
 
 .PATH: ${.CURDIR}/../libc/posix1e
 

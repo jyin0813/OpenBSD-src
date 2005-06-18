@@ -1,4 +1,4 @@
-/*	$OpenBSD: getextattr.c,v 1.1 2002/02/22 21:10:30 drahn Exp $	*/
+/*	$OpenBSD: getextattr.c,v 1.2 2002/02/22 21:54:24 drahn Exp $	*/
 /*-
  * Copyright (c) 1999, 2000, 2001 Robert N. M. Watson
  * All rights reserved.

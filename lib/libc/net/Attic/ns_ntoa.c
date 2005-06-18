@@ -28,7 +28,7 @@
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
-static char rcsid[] = "$OpenBSD: ns_ntoa.c,v 1.12 2003/06/02 20:18:35 millert Exp $";
+static char rcsid[] = "$OpenBSD: ns_ntoa.c,v 1.13 2003/09/25 21:14:46 millert Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 #include <sys/param.h>

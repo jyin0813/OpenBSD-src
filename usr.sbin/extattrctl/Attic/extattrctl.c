@@ -1,4 +1,4 @@
-/*	$OpenBSD: extattrctl.c,v 1.4 2003/04/13 22:42:57 avsm Exp $	*/
+/*	$OpenBSD: extattrctl.c,v 1.5 2004/04/07 14:09:35 aaron Exp $	*/
 /*-
  * Copyright (c) 1999, 2000, 2001 Robert N. M. Watson
  * All rights reserved.

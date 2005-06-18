@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_var.h,v 1.7 2002/03/14 01:27:13 millert Exp $	*/
+/*	$OpenBSD: ns_var.h,v 1.8 2002/03/14 03:16:12 millert Exp $	*/
 
 #ifdef _KERNEL
 struct socket;

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_error.h,v 1.4 2002/06/09 02:11:47 jsyn Exp $	*/
+/*	$OpenBSD: ns_error.h,v 1.5 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: ns_error.h,v 1.6 1995/03/26 20:36:20 jtc Exp $	*/
 
 /*

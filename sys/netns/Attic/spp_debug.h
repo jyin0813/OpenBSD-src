@@ -1,4 +1,4 @@
-/*	$OpenBSD: spp_debug.h,v 1.2 1997/02/24 14:38:39 niklas Exp $	*/
+/*	$OpenBSD: spp_debug.h,v 1.3 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: spp_debug.h,v 1.5 1994/06/29 06:41:54 cgd Exp $	*/
 
 /*

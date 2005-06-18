@@ -1,4 +1,4 @@
-/*	$OpenBSD: ns_pcb.h,v 1.2 1996/03/04 08:20:30 niklas Exp $	*/
+/*	$OpenBSD: ns_pcb.h,v 1.3 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: ns_pcb.h,v 1.7 1996/02/13 22:14:05 christos Exp $	*/
 
 /*

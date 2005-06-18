@@ -1,4 +1,4 @@
-/*	$OpenBSD: spp_timer.h,v 1.2 1997/02/24 14:38:39 niklas Exp $	*/
+/*	$OpenBSD: spp_timer.h,v 1.3 2003/06/02 23:28:19 millert Exp $	*/
 /*	$NetBSD: spp_timer.h,v 1.6 1995/03/26 20:36:22 jtc Exp $	*/
 
 /*

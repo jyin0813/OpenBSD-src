@@ -1,4 +1,4 @@
-/*	$OpenBSD: sd_scsi.c,v 1.21 2005/06/24 23:39:18 krw Exp $	*/
+/*	$OpenBSD: sd_scsi.c,v 1.22 2005/06/27 23:50:43 krw Exp $	*/
 /*	$NetBSD: sd_scsi.c,v 1.8 1998/10/08 20:21:13 thorpej Exp $	*/
 
 /*-

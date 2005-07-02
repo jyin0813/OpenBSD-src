@@ -1,4 +1,4 @@
-/*	$OpenBSD: atapi_disk.h,v 1.3 2005/05/22 21:11:31 krw Exp $	*/
+/*	$OpenBSD: atapi_disk.h,v 1.4 2005/06/19 20:41:28 krw Exp $	*/
 /*	$NetBSD: atapi_disk.h,v 1.3 1998/02/13 08:28:21 enami Exp $	*/
 
 /*

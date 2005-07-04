@@ -1,4 +1,4 @@
-/*	$OpenBSD: ufs_extattr.c,v 1.4 2003/08/15 20:32:21 tedu Exp $ */
+/*	$OpenBSD: ufs_extattr.c,v 1.5 2004/05/14 04:00:34 tedu Exp $ */
 /*-
  * Copyright (c) 1999, 2000, 2001, 2002 Robert N. M. Watson
  * Copyright (c) 2002 Networks Associates Technology, Inc.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: extattr.h,v 1.1 2002/02/22 20:37:45 drahn Exp $	*/
+/*	$OpenBSD: extattr.h,v 1.2 2002/05/16 16:42:15 drahn Exp $	*/
 
 /*-
  * Copyright (c) 1999, 2000, 2001 Robert N. M. Watson

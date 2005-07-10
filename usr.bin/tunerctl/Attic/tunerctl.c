@@ -15,7 +15,7 @@
  */
 
 /*
- *  $OpenBSD$
+ *  $OpenBSD: tunerctl.c,v 1.1 2005/07/04 21:10:26 jakemsr Exp $
  */
 
 

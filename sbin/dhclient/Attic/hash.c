@@ -1,4 +1,4 @@
-/*	$OpenBSD: hash.c,v 1.8 2004/05/04 22:23:01 mickey Exp $	*/
+/*	$OpenBSD: hash.c,v 1.9 2004/05/10 15:30:47 deraadt Exp $	*/
 
 /* Routines for manipulating hash tables... */
 

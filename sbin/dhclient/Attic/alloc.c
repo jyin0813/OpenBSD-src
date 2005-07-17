@@ -1,4 +1,4 @@
-/*	$OpenBSD: alloc.c,v 1.9 2004/05/04 20:28:40 deraadt Exp $	*/
+/*	$OpenBSD: alloc.c,v 1.10 2005/07/11 18:09:09 krw Exp $	*/
 
 /* Memory allocation... */
 

@@ -1,6 +1,6 @@
 /* $NetBSD: $ */
 /* $FreeBSD: $ */
-/* $OpenBSD: eltsub.c,v 1.4 2003/04/03 18:49:51 deraadt Exp $ */
+/* $OpenBSD: eltsub.c,v 1.5 2004/08/01 18:32:21 deraadt Exp $ */
 /*
  * Copyright (c) 2000 by Matthew Jacob
  * All rights reserved.

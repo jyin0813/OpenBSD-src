@@ -1,6 +1,6 @@
 /* $NetBSD: $ */ 
 /* $FreeBSD: $ */
-/* $OpenBSD: getencstat.c,v 1.4 2003/07/18 22:58:56 david Exp $ */
+/* $OpenBSD: getencstat.c,v 1.5 2004/08/01 18:32:21 deraadt Exp $ */
 /*
  * Copyright (c) 2000 by Matthew Jacob
  * All rights reserved.

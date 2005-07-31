@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile.inc,v 1.2 2000/02/22 06:21:35 mjacob Exp $
+# $OpenBSD: Makefile.inc,v 1.3 2000/06/28 18:55:08 deraadt Exp $
 #
 # Copyright (c) 2000 by Matthew Jacob
 # All rights reserved.

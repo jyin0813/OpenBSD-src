@@ -1,6 +1,6 @@
 /* $NetBSD: $ */ 
 /* $FreeBSD: $ */
-/* $OpenBSD: getobjstat.c,v 1.3 2002/02/16 21:28:09 millert Exp $ */
+/* $OpenBSD: getobjstat.c,v 1.4 2004/08/01 18:32:21 deraadt Exp $ */
 /*
  * Copyright (c) 2000 by Matthew Jacob
  * All rights reserved.

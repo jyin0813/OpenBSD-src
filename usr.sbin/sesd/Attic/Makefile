@@ -1,5 +1,5 @@
 # $NetBSD: $
-# $OpenBSD: $
+# $OpenBSD: Makefile,v 1.1 2000/02/21 08:45:14 mjacob Exp $
 # $FreeBSD: $
 #
 # Copyright (c) 2000 by Matthew Jacob

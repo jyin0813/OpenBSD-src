@@ -1,4 +1,4 @@
-/* $OpenBSD: scsi_ses.h,v 1.2 2005/04/09 15:24:16 marco Exp $ */
+/* $OpenBSD: scsi_ses.h,v 1.3 2005/04/12 20:44:18 marco Exp $ */
 /*
  * Copyright (c) 2005 Marco Peereboom
  * All rights reserved.

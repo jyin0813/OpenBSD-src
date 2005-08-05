@@ -1,4 +1,4 @@
-/*	$OpenBSD: scsi_safte.c,v 1.5 2005/07/27 15:06:00 dlg Exp $ */
+/*	$OpenBSD: scsi_safte.c,v 1.6 2005/07/28 10:11:30 dlg Exp $ */
 
 /*
  * Copyright (c) 2005 David Gwynne <dlg@openbsd.org>

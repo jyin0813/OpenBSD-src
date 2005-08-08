@@ -1,4 +1,4 @@
-/*	$OpenBSD: iswctype_sb.c,v 1.2 2005/05/11 18:44:12 espie Exp $	*/
+/*	$OpenBSD: iswctype_sb.c,v 1.3 2005/07/01 08:59:27 espie Exp $	*/
 /*	$NetBSD: iswctype_sb.c,v 1.3 2003/08/07 16:43:04 agc Exp $	*/
 
 /*
@@ -36,7 +36,7 @@
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
-static char rcsid[] = "$OpenBSD: iswctype_sb.c,v 1.2 2005/05/11 18:44:12 espie Exp $";
+static char rcsid[] = "$OpenBSD: iswctype_sb.c,v 1.3 2005/07/01 08:59:27 espie Exp $";
 #endif /* LIBC_SCCS and not lint */
 
 #include <wchar.h>

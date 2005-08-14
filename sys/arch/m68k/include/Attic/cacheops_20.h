@@ -1,4 +1,4 @@
-/*	$OpenBSD: cacheops_20.h,v 1.2 2001/01/15 19:50:37 deraadt Exp $	*/
+/*	$OpenBSD: cacheops_20.h,v 1.3 2002/03/14 01:26:34 millert Exp $	*/
 /*	$NetBSD: cacheops_20.h,v 1.1 1997/06/02 20:26:39 leo Exp $	*/
 
 /*-

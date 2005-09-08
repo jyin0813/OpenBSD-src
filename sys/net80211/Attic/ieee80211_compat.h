@@ -1,4 +1,4 @@
-/*	$OpenBSD: ieee80211_compat.h,v 1.2 2005/09/07 05:40:11 jsg Exp $	*/
+/*	$OpenBSD: ieee80211_compat.h,v 1.3 2005/09/08 09:11:08 jsg Exp $	*/
 /*	$NetBSD: ieee80211_compat.h,v 1.5 2004/01/13 23:37:30 dyoung Exp $	*/
 
 /*-

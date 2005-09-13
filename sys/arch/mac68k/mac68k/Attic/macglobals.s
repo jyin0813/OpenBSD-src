@@ -1,4 +1,4 @@
-/*	$OpenBSD: macglobals.s,v 1.3 1996/05/26 18:36:21 briggs Exp $	*/
+/*	$OpenBSD: macglobals.s,v 1.4 2005/09/12 15:17:52 martin Exp $	*/
 /*	$NetBSD: macglobals.s,v 1.4 1997/09/16 16:13:47 scottr Exp $	*/
 
 /* Copyright 1994 by Bradley A. Grantham, All rights reserved */

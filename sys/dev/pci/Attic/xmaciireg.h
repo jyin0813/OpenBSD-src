@@ -1,4 +1,4 @@
-/*	$OpenBSD: xmaciireg.h,v 1.2 1999/10/01 02:54:15 jason Exp $	*/
+/*	$OpenBSD: xmaciireg.h,v 1.3 2000/08/29 23:45:40 jason Exp $	*/
 
 /*
  * Copyright (c) 1997, 1998, 1999

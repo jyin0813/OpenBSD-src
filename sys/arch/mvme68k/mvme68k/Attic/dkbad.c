@@ -1,4 +1,4 @@
-/*	$OpenBSD: dkbad.c,v 1.6 2002/04/27 23:21:06 miod Exp $ */
+/*	$OpenBSD: dkbad.c,v 1.7 2003/06/02 23:27:51 millert Exp $ */
 
 /*
  * Copyright (c) 1982, 1986, 1990, 1993

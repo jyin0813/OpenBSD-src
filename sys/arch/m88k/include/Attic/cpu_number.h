@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpu_number.h,v 1.12 2003/10/05 20:25:08 miod Exp $	*/
+/*	$OpenBSD: cpu_number.h,v 1.1 2004/04/26 12:34:05 miod Exp $	*/
 
 /*
  * Mach Operating System

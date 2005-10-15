@@ -1,4 +1,4 @@
-/*	$OpenBSD: adb_direct.h,v 1.2 2002/03/14 01:26:36 millert Exp $	*/
+/*	$OpenBSD: adb_direct.h,v 1.3 2002/06/07 07:14:48 miod Exp $	*/
 /*	$NetBSD: adb_direct.h,v 1.1 1998/05/15 10:15:47 tsubai Exp $	*/
 
 /*

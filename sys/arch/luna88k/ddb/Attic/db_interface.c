@@ -1,4 +1,4 @@
-/*	$OpenBSD: db_interface.c,v 1.4 2005/10/13 19:48:28 miod Exp $	*/
+/*	$OpenBSD: db_interface.c,v 1.5 2005/10/18 05:53:45 miod Exp $	*/
 /*
  * Mach Operating System
  * Copyright (c) 1993-1991 Carnegie Mellon University

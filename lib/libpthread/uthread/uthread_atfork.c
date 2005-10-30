@@ -1,93 +1,58 @@
+/*	$OpenBSD$	*/
+
 /*
- * David Leonard <d@openbsd.org>, 1999. Public domain.
- * $OpenBSD: uthread_atfork.c,v 1.1 1999/01/17 23:46:26 d Exp $
+ * Copyright (c) 2003 Daniel Eischen <deischen@freebsd.org>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Neither the name of the author nor the names of any co-contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * $FreeBSD: /repoman/r/ncvs/src/lib/libc_r/uthread/uthread_atfork.c,v 1.1 2004/12/10 03:36:45 grog Exp $
  */
 
+#include <errno.h>
 #include <stdlib.h>
-#include <sys/queue.h>
 #ifdef _THREAD_SAFE
 #include <pthread.h>
+#include <sys/queue.h>
 #include "pthread_private.h"
 
-struct atfork_entry {
-	void (*handler)(void);
-	TAILQ_ENTRY(atfork_entry) entries;
-};
-
-static TAILQ_HEAD(atfork_list, atfork_entry) atfork_head[3] =
-	{ TAILQ_HEAD_INITIALIZER(atfork_head[PTHREAD_ATFORK_PREPARE]),
-	  TAILQ_HEAD_INITIALIZER(atfork_head[PTHREAD_ATFORK_PARENT]),
-	  TAILQ_HEAD_INITIALIZER(atfork_head[PTHREAD_ATFORK_CHILD]) };
-
-void
-_thread_atfork(which)
-{
-	struct atfork_list *head;
-	struct atfork_entry *ae;
-
-	head = &atfork_head[which];
-
-	/* Call the fork handlers in order: */
-	for (ae = head->tqh_first; ae != NULL; ae = ae->entries.tqe_next)
-		(*ae->handler)();
-}
-
 int
-pthread_atfork(prepare, parent, child)
-	void (*prepare)(void);
-	void (*parent)(void);
-	void (*child)(void);
+pthread_atfork(void (*prepare)(void), void (*parent)(void),
+    void (*child)(void))
 {
-	int ret = 0;
-	struct atfork_entry *prepare_entry = NULL;
-	struct atfork_entry *parent_entry = NULL;
-	struct atfork_entry *child_entry = NULL;
+	struct pthread_atfork *af;
 
-	if (ret == 0 && prepare != NULL) {
-		/* Allocate space for the prepare handler: */
-	        if ((prepare_entry = malloc(sizeof *prepare_entry)) != NULL)
-			prepare_entry->handler = prepare;
-	        else
-			ret = -1;
-	}
+	if (_thread_initial == NULL)
+		_thread_init();
 
-	if (ret == 0 && parent != NULL) {
-		/* Allocate space for the parent handler: */
-	        if ((parent_entry = malloc(sizeof *parent_entry)) != NULL)
-			parent_entry->handler = parent;
-	        else
-			ret = -1;
-	}
+	if ((af = malloc(sizeof(struct pthread_atfork))) == NULL)
+		return (ENOMEM);
 
-	if (ret == 0 && child != NULL) {
-		/* Allocate space for the child handler: */
-	        if ((child_entry = malloc(sizeof *child_entry)) != NULL)
-			child_entry->handler = child;
-	        else
-			ret = -1;
-	}
-
-	if (ret == 0) {
-		/* Insert the handlers into the handler lists: */
-		if (prepare_entry != NULL)
-			TAILQ_INSERT_HEAD(&atfork_head[PTHREAD_ATFORK_PREPARE],
-			    prepare_entry, entries);
-		if (parent_entry != NULL)
-			TAILQ_INSERT_TAIL(&atfork_head[PTHREAD_ATFORK_PARENT],
-			    parent_entry, entries);
-		if (child_entry != NULL)
-			TAILQ_INSERT_TAIL(&atfork_head[PTHREAD_ATFORK_CHILD],
-			    child_entry, entries);
-	} else {
-		/* Release unused resources: */
-		if (prepare_entry)
-			free(prepare_entry);
-		if (child_entry)
-			free(child_entry);
-		if (parent_entry)
-			free(parent_entry);
-	}
-
-	return (ret);
+	af->prepare = prepare;
+	af->parent = parent;
+	af->child = child;
+	pthread_mutex_lock(&_atfork_mutex);
+	TAILQ_INSERT_TAIL(&_atfork_list, af, qe);
+	pthread_mutex_unlock(&_atfork_mutex);
+	return (0);
 }
 #endif

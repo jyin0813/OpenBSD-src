@@ -1,4 +1,4 @@
-/*	$OpenBSD: mpt_ioctl.h,v 1.2 2004/10/22 05:01:05 marco Exp $	*/
+/*	$OpenBSD: mpt_ioctl.h,v 1.3 2004/10/22 05:03:40 marco Exp $	*/
 /*
  * Copyright (c) 2004 Marco Peereboom
  * All rights reserved.

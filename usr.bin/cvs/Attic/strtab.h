@@ -1,4 +1,4 @@
-/*	$OpenBSD: strtab.h,v 1.2 2005/03/24 03:11:03 jfb Exp $	*/
+/*	$OpenBSD: strtab.h,v 1.3 2005/07/25 11:32:20 xsa Exp $	*/
 /*
  * Copyright (c) 2005 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

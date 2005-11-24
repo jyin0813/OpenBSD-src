@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1.1.1 1995/10/18 08:44:22 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.2 2000/03/02 14:46:39 todd Exp $
 #
 # Makefile for sample loadable file system
 #

@@ -1,4 +1,4 @@
-/*	$OpenBSD: kernfs.h,v 1.13 2003/08/14 07:46:39 mickey Exp $	*/
+/*	$OpenBSD: kernfs.h,v 1.14 2003/09/23 16:51:13 millert Exp $	*/
 /*	$NetBSD: kernfs.h,v 1.10 1996/02/09 22:40:21 christos Exp $	*/
 
 /*

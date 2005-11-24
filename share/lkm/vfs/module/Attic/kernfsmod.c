@@ -1,4 +1,4 @@
-/*	$OpenBSD: kernfsmod.c,v 1.3 2000/03/02 14:46:41 todd Exp $	*/
+/*	$OpenBSD: kernfsmod.c,v 1.4 2004/04/05 07:19:26 deraadt Exp $	*/
 /*
  * kernfsmod.c
  *

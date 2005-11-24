@@ -1,4 +1,4 @@
-/*	$OpenBSD: kernfs_vnops.c,v 1.42 2004/11/18 17:12:33 millert Exp $	*/
+/*	$OpenBSD: kernfs_vnops.c,v 1.43 2005/11/19 02:18:01 pedro Exp $	*/
 /*	$NetBSD: kernfs_vnops.c,v 1.43 1996/03/16 23:52:47 christos Exp $	*/
 
 /*

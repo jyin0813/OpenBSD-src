@@ -1,4 +1,4 @@
-/*	$OpenBSD: util.c,v 1.18 2004/01/22 16:10:30 beck Exp $ */
+/*	$OpenBSD: util.c,v 1.19 2004/07/06 19:49:11 dhartmei Exp $ */
 
 /*
  * Copyright (c) 1996-2001

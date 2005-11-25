@@ -1,4 +1,4 @@
-/*	$OpenBSD: ftp-proxy.c,v 1.40 2005/02/24 15:49:08 dhartmei Exp $ */
+/*	$OpenBSD: ftp-proxy.c,v 1.41 2005/03/05 23:11:19 cloder Exp $ */
 
 /*
  * Copyright (c) 1996-2001

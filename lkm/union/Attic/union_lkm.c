@@ -1,4 +1,4 @@
-/*	$OpenBSD: union_lkm.c,v 1.2 2002/02/16 21:27:31 millert Exp $	*/
+/*	$OpenBSD: union_lkm.c,v 1.3 2002/02/17 19:42:26 millert Exp $	*/
 
 /*
  * union_lkm.c (was: kernfsmod.c)

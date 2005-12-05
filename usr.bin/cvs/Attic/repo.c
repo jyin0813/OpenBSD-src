@@ -1,4 +1,4 @@
-/*	$OpenBSD: repo.c,v 1.9 2005/10/07 21:47:32 reyk Exp $	*/
+/*	$OpenBSD: repo.c,v 1.10 2005/11/28 08:49:25 xsa Exp $	*/
 /*
  * Copyright (c) 2005 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

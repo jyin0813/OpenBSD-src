@@ -1,4 +1,4 @@
-/*	$OpenBSD: fdesc.h,v 1.8 2003/06/02 23:28:10 millert Exp $	*/
+/*	$OpenBSD: fdesc.h,v 1.9 2003/08/14 07:46:39 mickey Exp $	*/
 /*	$NetBSD: fdesc.h,v 1.9 1996/02/09 22:40:03 christos Exp $	*/
 
 /*

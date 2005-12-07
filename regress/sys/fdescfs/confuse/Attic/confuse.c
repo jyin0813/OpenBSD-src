@@ -1,4 +1,4 @@
-/*	$OpenBSD: confuse.c,v 1.1 2002/02/08 17:33:32 art Exp $	*/
+/*	$OpenBSD: confuse.c,v 1.2 2003/07/31 21:48:07 deraadt Exp $	*/
 /*
  *	Written by Artur Grabowski <art@openbsd.org> 2002 Public Domain.
  */

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fdesc_vnops.c,v 1.37 2004/05/20 18:32:37 tedu Exp $	*/
+/*	$OpenBSD: fdesc_vnops.c,v 1.38 2005/11/19 02:18:01 pedro Exp $	*/
 /*	$NetBSD: fdesc_vnops.c,v 1.32 1996/04/11 11:24:29 mrg Exp $	*/
 
 /*

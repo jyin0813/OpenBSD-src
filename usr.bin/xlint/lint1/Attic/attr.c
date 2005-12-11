@@ -1,4 +1,4 @@
-/*	$OpenBSD: attr.c,v 1.1 2005/12/07 01:55:12 cloder Exp $	*/
+/*	$OpenBSD: attr.c,v 1.2 2005/12/07 02:11:26 cloder Exp $	*/
 
 /*
  * Copyright (c) 2005 Chad Loder
@@ -28,7 +28,7 @@
  */
 
 #ifndef lint
-static char rcsid[] = "$OpenBSD: attr.c,v 1.1 2005/12/07 01:55:12 cloder Exp $";
+static char rcsid[] = "$OpenBSD: attr.c,v 1.2 2005/12/07 02:11:26 cloder Exp $";
 #endif
 
 #include "lint1.h"

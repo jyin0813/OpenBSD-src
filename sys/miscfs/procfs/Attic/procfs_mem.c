@@ -1,4 +1,4 @@
-/*	$OpenBSD: procfs_mem.c,v 1.22 2004/05/20 09:20:41 kettenis Exp $	*/
+/*	$OpenBSD: procfs_mem.c,v 1.23 2005/11/04 21:48:07 miod Exp $	*/
 /*	$NetBSD: procfs_mem.c,v 1.8 1996/02/09 22:40:50 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: acpiac.h,v 1.1 2005/12/14 04:15:43 marco Exp $ */
 /*
  * Copyright (c) 2005 Marco Peereboom <marco@openbsd.org>
  *

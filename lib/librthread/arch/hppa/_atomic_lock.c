@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: _atomic_lock.c,v 1.1 2005/12/14 17:21:01 marco Exp $ */
 /*
  * Copyright (c) 2005 Marco Peereboom <marco@openbsd.org>
  *

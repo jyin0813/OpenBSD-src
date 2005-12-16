@@ -1,4 +1,4 @@
-/*	$OpenBSD: hpetreg.h,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
+/*	$OpenBSD: hpetreg.h,v 1.2 2005/07/10 17:24:18 grange Exp $	*/
 /*
  * Copyright (c) 2005 Thorsten Lockert <tholo@sigmasoft.com>
  *

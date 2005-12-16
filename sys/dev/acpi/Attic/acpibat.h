@@ -1,4 +1,4 @@
-/* $OpenBSD: acpibat.h,v 1.1 2005/12/13 23:19:15 marco Exp $ */
+/* $OpenBSD: acpibat.h,v 1.2 2005/12/14 03:35:04 marco Exp $ */
 /*
  * Copyright (c) 2005 Marco Peereboom <marco@openbsd.org>
  *

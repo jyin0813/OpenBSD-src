@@ -1,4 +1,4 @@
-/*	$OpenBSD: aed.c,v 1.8 2003/10/16 03:54:48 deraadt Exp $	*/
+/*	$OpenBSD: aed.c,v 1.9 2005/11/21 18:16:37 millert Exp $	*/
 /*	$NetBSD: aed.c,v 1.5 2000/03/23 06:40:33 thorpej Exp $	*/
 
 /*

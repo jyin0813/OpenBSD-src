@@ -1,4 +1,4 @@
-/*	$OpenBSD: swapnfs.c,v 1.4 2002/03/14 01:27:13 millert Exp $	*/
+/*	$OpenBSD: swapnfs.c,v 1.5 2003/06/02 23:28:20 millert Exp $	*/
 /*	$NetBSD: swapnfs.c,v 1.9 1995/04/30 07:03:13 cgd Exp $	*/
 
 /*

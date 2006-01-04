@@ -1,4 +1,4 @@
-/*	$OpenBSD: zlib.h,v 1.1 2005/01/13 18:59:03 jfb Exp $	*/
+/*	$OpenBSD: zlib.h,v 1.2 2005/07/25 11:32:20 xsa Exp $	*/
 /*
  * Copyright (c) 2005 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

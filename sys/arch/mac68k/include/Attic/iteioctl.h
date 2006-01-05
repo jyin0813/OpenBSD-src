@@ -1,4 +1,4 @@
-/*	$OpenBSD: iteioctl.h,v 1.4 1997/11/11 22:46:26 gene Exp $	*/
+/*	$OpenBSD: iteioctl.h,v 1.5 1997/11/30 06:12:28 gene Exp $	*/
 /*	$NetBSD: iteioctl.h,v 1.1 1994/12/03 23:34:31 briggs Exp $	*/
 
 /*-

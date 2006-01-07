@@ -1,4 +1,4 @@
-/*	$OpenBSD: ansi.h,v 1.4 2005/04/16 15:44:39 miod Exp $	*/
+/*	$OpenBSD: ansi.h,v 1.5 2005/08/07 07:29:44 miod Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993

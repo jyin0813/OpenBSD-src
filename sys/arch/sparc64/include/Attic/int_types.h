@@ -1,4 +1,4 @@
-/*	$OpenBSD: int_types.h,v 1.3 2002/04/19 11:04:24 espie Exp $	*/
+/*	$OpenBSD: int_types.h,v 1.4 2003/06/02 23:27:56 millert Exp $	*/
 /*	$NetBSD: int_types.h,v 1.7 2001/04/28 15:41:33 kleink Exp $	*/
 
 /*

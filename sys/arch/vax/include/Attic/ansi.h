@@ -1,4 +1,4 @@
-/*	$OpenBSD: ansi.h,v 1.11 2005/04/14 20:56:24 espie Exp $	*/
+/*	$OpenBSD: ansi.h,v 1.12 2005/12/14 16:30:03 millert Exp $	*/
 /*	$NetBSD: ansi.h,v 1.7 1998/04/27 17:39:11 kleink Exp $	*/
 
 /*-

@@ -1,5 +1,5 @@
 /*	$NetBSD: types.h,v 1.7 1995/07/05 17:46:11 pk Exp $ */
-/*	$OpenBSD: types.h,v 1.5 2005/12/03 19:01:14 miod Exp $ */
+/*	$OpenBSD: types.h,v 1.6 2005/12/14 21:46:31 millert Exp $ */
 
 /*
  * Copyright (c) 1992, 1993

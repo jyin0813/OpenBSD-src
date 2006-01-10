@@ -1,4 +1,4 @@
-/*	$OpenBSD: ancontrol.c,v 1.28 2004/10/24 11:50:47 deraadt Exp $	*/
+/*	$OpenBSD: ancontrol.c,v 1.29 2005/12/13 00:33:59 cloder Exp $	*/
 /*
  * Copyright (c) 2001 Eric Jackson <ericj@monkey.org>
  *

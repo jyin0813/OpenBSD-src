@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.8 2004/01/29 03:42:49 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.9 2004/08/06 20:33:02 mickey Exp $
 
 .if (${MACHINE} == "i386") || (${MACHINE} == "amd64") || \
     (${MACHINE_ARCH} == "powerpc") || (${MACHINE} == "alpha") || \

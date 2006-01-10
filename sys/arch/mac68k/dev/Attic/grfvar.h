@@ -1,4 +1,4 @@
-/*	$OpenBSD: grfvar.h,v 1.18 2006/01/05 20:30:18 miod Exp $	*/
+/*	$OpenBSD: grfvar.h,v 1.19 2006/01/08 20:35:21 miod Exp $	*/
 /*	$NetBSD: grfvar.h,v 1.11 1996/08/04 06:03:58 scottr Exp $	*/
 /*	$NetBSD: grfioctl.h,v 1.5 1995/07/02 05:26:45 briggs Exp $	*/
 

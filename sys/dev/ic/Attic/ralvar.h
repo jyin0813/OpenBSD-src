@@ -1,4 +1,4 @@
-/*	$OpenBSD: ralvar.h,v 1.7 2005/03/11 19:39:35 damien Exp $  */
+/*	$OpenBSD: ralvar.h,v 1.8 2005/10/02 13:50:29 damien Exp $  */
 
 /*-
  * Copyright (c) 2005

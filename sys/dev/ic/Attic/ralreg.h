@@ -1,4 +1,4 @@
-/*	$OpenBSD: ralreg.h,v 1.2 2005/03/11 20:47:59 damien Exp $  */
+/*	$OpenBSD: ralreg.h,v 1.5 2005/04/01 11:12:57 damien Exp $  */
 
 /*-
  * Copyright (c) 2005

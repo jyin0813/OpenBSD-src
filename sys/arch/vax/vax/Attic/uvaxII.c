@@ -1,4 +1,4 @@
-/*	$OpenBSD: uvaxII.c,v 1.12 2003/06/02 23:27:59 millert Exp $	*/
+/*	$OpenBSD: uvaxII.c,v 1.13 2005/11/06 22:21:33 miod Exp $	*/
 /*	$NetBSD: uvaxII.c,v 1.10 1996/10/13 03:36:04 christos Exp $	*/
 
 /*-

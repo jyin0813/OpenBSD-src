@@ -1,4 +1,4 @@
-/*	$OpenBSD: macrom.h,v 1.12 2005/02/20 18:08:08 martin Exp $	*/
+/*	$OpenBSD: macrom.h,v 1.13 2006/01/04 20:39:05 miod Exp $	*/
 /*	$NetBSD: macrom.h,v 1.12 2000/11/15 07:15:36 scottr Exp $	*/
 
 /*-

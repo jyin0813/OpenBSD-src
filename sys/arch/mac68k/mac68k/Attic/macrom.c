@@ -1,4 +1,4 @@
-/*	$OpenBSD: macrom.c,v 1.29 2005/05/22 19:40:51 art Exp $	*/
+/*	$OpenBSD: macrom.c,v 1.30 2006/01/04 20:39:05 miod Exp $	*/
 /*	$NetBSD: macrom.c,v 1.47 2000/11/15 07:15:36 scottr Exp $	*/
 
 /*-

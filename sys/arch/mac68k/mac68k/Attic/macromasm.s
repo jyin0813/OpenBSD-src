@@ -1,4 +1,4 @@
-/*	$OpenBSD: macromasm.s,v 1.8 1997/04/14 18:48:04 gene Exp $	*/
+/*	$OpenBSD: macromasm.s,v 1.9 2005/02/20 18:08:08 martin Exp $	*/
 /*	$NetBSD: macromasm.s,v 1.18 2000/11/15 07:15:36 scottr Exp $	*/
 
 /*-

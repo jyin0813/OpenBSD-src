@@ -1,4 +1,4 @@
-/*	$OpenBSD: adbsysasm.s,v 1.3 2006/01/04 20:39:04 miod Exp $	*/
+/*	$OpenBSD: adbsysasm.s,v 1.4 2006/01/08 17:45:29 miod Exp $	*/
 /*	$NetBSD: adbsysasm.s,v 1.11 2001/11/20 03:19:42 chs Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: osta.h,v 1.1 2005/03/29 17:24:52 pedro Exp $	*/
 
 /*
  * Prototypes for the OSTA functions

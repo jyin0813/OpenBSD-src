@@ -1,4 +1,4 @@
-/*	$OpenBSD: osta.c,v 1.1 2005/03/29 17:24:52 pedro Exp $	*/
+/*	$OpenBSD: osta.c,v 1.2 2005/03/30 01:06:49 pedro Exp $	*/
 
 /*
  * Various routines from the OSTA 2.01 specs.  Copyrights are included with

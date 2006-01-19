@@ -1,4 +1,4 @@
-/*	$OpenBSD: akbdvar.h,v 1.2 2002/03/14 01:26:36 millert Exp $	*/
+/*	$OpenBSD: akbdvar.h,v 1.3 2002/03/27 21:48:12 drahn Exp $	*/
 /*	$NetBSD: akbdvar.h,v 1.4 1999/02/17 14:56:56 tsubai Exp $	*/
 
 /*

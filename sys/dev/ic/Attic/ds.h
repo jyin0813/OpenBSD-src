@@ -1,4 +1,4 @@
-/*	$OpenBSD: ds.h,v 1.1 1997/09/13 14:16:19 niklas Exp $	*/
+/*	$OpenBSD: ds.h,v 1.2 2002/03/14 01:26:54 millert Exp $	*/
 /*	$NetBSD: ds.h,v 1.1 1997/07/06 22:22:01 is Exp $	*/
 
 /*-

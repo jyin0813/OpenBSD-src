@@ -1,4 +1,4 @@
-/*	$OpenBSD: lm_isa.c,v 1.9 2006/01/23 18:45:33 kettenis Exp $	*/
+/*	$OpenBSD: lm_isa.c,v 1.10 2006/01/26 22:07:14 kettenis Exp $	*/
 /*	$NetBSD: lm_isa.c,v 1.9 2002/11/15 14:55:44 ad Exp $ */
 
 /*-

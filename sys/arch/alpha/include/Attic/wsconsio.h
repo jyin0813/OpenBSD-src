@@ -1,4 +1,4 @@
-/*	$OpenBSD: wsconsio.h,v 1.1 1996/04/12 01:43:06 cgd Exp $	*/
+/*	$OpenBSD: wsconsio.h,v 1.3 1996/10/30 22:39:35 niklas Exp $	*/
 /*	$NetBSD: wsconsio.h,v 1.1 1996/04/12 01:43:06 cgd Exp $	*/
 
 /*

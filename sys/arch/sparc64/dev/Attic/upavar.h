@@ -1,4 +1,4 @@
-/*	$OpenBSD: upavar.h,v 1.5 2002/06/11 06:44:34 jason Exp $	*/
+/*	$OpenBSD: upavar.h,v 1.6 2003/06/02 23:27:55 millert Exp $	*/
 /*	$NetBSD: upavar.h,v 1.2 2000/01/14 14:33:31 pk Exp $ */
 
 /*-

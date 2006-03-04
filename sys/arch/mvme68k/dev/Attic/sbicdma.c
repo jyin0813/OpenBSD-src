@@ -1,4 +1,4 @@
-/*	$OpenBSD: sbicdma.c,v 1.12 2004/09/29 19:17:40 miod Exp $ */
+/*	$OpenBSD: sbicdma.c,v 1.13 2005/12/17 07:31:26 miod Exp $ */
 
 /*
  * Copyright (c) 1995 Theo de Raadt

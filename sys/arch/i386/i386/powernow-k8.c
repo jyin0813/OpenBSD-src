@@ -1,4 +1,4 @@
-/*	$OpenBSD: powernow-k8.c,v 1.2 2005/10/28 07:11:13 tedu Exp $ */
+/*	$OpenBSD: powernow-k8.c,v 1.3 2005/11/26 11:22:12 tedu Exp $ */
 /*
  * Copyright (c) 2004 Martin Végiard.
  * All rights reserved.
@@ -112,29 +112,6 @@
 #define FID_TO_VCO_FID(fid)	\
 	(((fid) < 8) ? (8 + ((fid) << 1)) : (fid))
 
-/*
- * Divide each value by 10 to get the processor multiplier.
- */
-
-static int pn8_fid_to_mult[32] = {
-	40, 50, 60, 70, 80, 90, 100, 110,
-	120, 130, 140, 150, 160, 170, 180, 190,
-	220, 230, 240, 250, 260, 270, 280, 290,
-	300, 310, 320, 330, 340, 350,
-};
-
-/*
- * Units are in mV.
- */
-
-/* Desktop and Mobile VRM (K8) */
-static int pn8_vid_to_volts[] = {
-	1550, 1525, 1500, 1475, 1450, 1425, 1400, 1375,
-	1350, 1325, 1300, 1275, 1250, 1225, 1200, 1175,
-	1150, 1125, 1100, 1075, 1050, 1025, 1000, 975,
-	950, 925, 900, 875, 850, 825, 800, 0,
-};
-
 #define POWERNOW_MAX_STATES		16
 
 struct k8pnow_state {
@@ -146,7 +123,6 @@ struct k8pnow_state {
 struct k8pnow_cpu_state {
 	struct k8pnow_state state_table[POWERNOW_MAX_STATES];
 	unsigned int n_states;
-	unsigned int fsb;
 	unsigned int sgtc;
 	unsigned int vst;
 	unsigned int mvs;
@@ -154,7 +130,6 @@ struct k8pnow_cpu_state {
 	unsigned int rvo;
 	unsigned int irt;
 	int low;
-	int *vid_to_volts;
 };
 
 struct psb_s {
@@ -174,7 +149,7 @@ struct pst_s {
 	uint8_t n_states;
 };
 
-struct k8pnow_cpu_state *k8pnow_current_state[I386_MAXPROCS];
+struct k8pnow_cpu_state *k8pnow_current_state = NULL; 
 
 /*
  * Prototypes
@@ -216,7 +191,7 @@ k8_powernow_setperf(int level)
 	cfid = PN8_STA_CFID(status);
 	cvid = PN8_STA_CVID(status);
 
-	cstate = k8pnow_current_state[cpu_number()];
+	cstate = k8pnow_current_state;
 	low = cstate->state_table[0].freq;
 	high = cstate->state_table[cstate->n_states-1].freq;
 
@@ -273,8 +248,7 @@ k8_powernow_setperf(int level)
 					val = FID_TO_VCO_FID(cfid) + 2;
 			} else
 				val = cfid - 2;
-			WRITE_FIDVID(val, cvid, cstate->pll *
-			    (uint64_t)cstate->fsb);
+			WRITE_FIDVID(val, cvid, (uint64_t)cstate->pll * 1000 / 5);
 
 			if (k8pnow_read_pending_wait(&status))
 				return 1;
@@ -284,7 +258,7 @@ k8_powernow_setperf(int level)
 			vco_cfid = FID_TO_VCO_FID(cfid);
 		}
 
-		WRITE_FIDVID(fid, cvid, cstate->pll * (uint64_t)cstate->fsb);
+		WRITE_FIDVID(fid, cvid, (uint64_t) cstate->pll * 1000 / 5);
 		if (k8pnow_read_pending_wait(&status))
 			return 1;
 		cfid = PN8_STA_CFID(status);
@@ -304,7 +278,7 @@ k8_powernow_setperf(int level)
 	if (cfid != fid || cvid != vid)
 		return (1);
 
-	pentium_mhz = ((cstate->state_table[i].freq / 100000)+1)*100;
+	pentium_mhz = cstate->state_table[i].freq;
 	return (0);
 }
 
@@ -320,8 +294,12 @@ k8pnow_decode_pst(struct k8pnow_cpu_state *cstate, uint8_t *p)
 	for (n = 0, i = 0; i < cstate->n_states; i++) {
 		state.fid = *p++;
 		state.vid = *p++;
-
-		state.freq = 100 * pn8_fid_to_mult[state.fid >>1] *cstate->fsb;
+	
+		/* 
+		 * The minimum supported frequency per the data sheet is 800MHz
+	   	 * The maximum supported frequency is 5000MHz. 
+		 */ 	   
+		state.freq = 800 + state.fid * 100;
 		j = n;
 		while (j > 0 && cstate->state_table[j - 1].freq > state.freq) {
 			memcpy(&cstate->state_table[j],
@@ -382,12 +360,15 @@ void
 k8_powernow_init(void)
 {
 	uint64_t status;
-	u_int maxfid, maxvid, currentfid, i;
+	u_int maxfid, maxvid, i;
 	struct k8pnow_cpu_state *cstate;
 	struct k8pnow_state *state;
 	struct cpu_info * ci;
 	char * techname = NULL;
 	ci = curcpu();
+
+	if(k8pnow_current_state)
+		return;
 
 	cstate = malloc(sizeof(struct k8pnow_cpu_state), M_DEVBUF, M_NOWAIT);
 	if (!cstate)
@@ -396,12 +377,7 @@ k8_powernow_init(void)
 	status = rdmsr(MSR_AMDK7_FIDVID_STATUS);
 	maxfid = PN8_STA_MFID(status);
 	maxvid = PN8_STA_MVID(status);
-	currentfid = PN8_STA_CFID(status);
 
-	CPU_CLOCKUPDATE();
-	cstate->fsb = pentium_base_tsc/ 100000/ pn8_fid_to_mult[currentfid>>1];
-
-	cstate->vid_to_volts = pn8_vid_to_volts;
 	/*
 	* If start FID is different to max FID, then it is a
 	* mobile processor.  If not, it is a low powered desktop
@@ -419,10 +395,10 @@ k8_powernow_init(void)
 			for(i= 0; i < cstate->n_states; i++) {
 				state = &cstate->state_table[i];
 				printf("%c%d", i==0 ? '(' : ',',
-				    ((state->freq / 100000)+1)*100);
+				    state->freq);
 			}
 			printf(")\n");
-			k8pnow_current_state[cpu_number()] = cstate;
+			k8pnow_current_state = cstate;
 			cpu_setperf = k8_powernow_setperf;
 		}
 	}

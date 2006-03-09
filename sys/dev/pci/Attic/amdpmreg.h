@@ -1,4 +1,4 @@
-/*	$OpenBSD: amdpmreg.h,v 1.6 2006/01/09 19:32:15 deraadt Exp $	*/
+/*	$OpenBSD: amdpmreg.h,v 1.7 2006/03/08 09:21:14 dlg Exp $	*/
 
 /*
  * Copyright (c) 2006 Alexander Yurchenko <grange@openbsd.org>

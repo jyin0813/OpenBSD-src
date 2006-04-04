@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: hsregex.h,v 1.7 2005/03/28 23:26:51 niallo Exp $ */
 
 /* DON'T EVEN THINK ABOUT EDITING THIS, go see regex/Makefile,
  * search for mkh */

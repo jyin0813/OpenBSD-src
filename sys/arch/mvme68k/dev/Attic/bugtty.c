@@ -1,4 +1,4 @@
-/*	$OpenBSD: bugtty.c,v 1.13 2004/07/31 22:27:34 miod Exp $ */
+/*	$OpenBSD: bugtty.c,v 1.14 2006/01/01 11:59:39 miod Exp $ */
 
 /*
  * Copyright (c) 1995 Dale Rahn.

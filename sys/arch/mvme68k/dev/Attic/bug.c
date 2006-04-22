@@ -1,4 +1,4 @@
-/*	$OpenBSD: bug.c,v 1.5 2002/04/27 23:21:05 miod Exp $ */
+/*	$OpenBSD: bug.c,v 1.6 2003/06/03 01:35:30 drahn Exp $ */
 
 /*
  * Copyright (c) 1995 Dale Rahn.

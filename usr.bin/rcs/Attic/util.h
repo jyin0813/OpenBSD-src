@@ -1,4 +1,4 @@
-/*	$OpenBSD: util.h,v 1.4 2006/03/27 06:13:51 pat Exp $	*/
+/*	$OpenBSD: util.h,v 1.1 2006/04/26 02:55:13 joris Exp $	*/
 /*
  * Copyright (c) 2006 Niall O'Higgins <niallo@openbsd.org>
  * All rights reserved.

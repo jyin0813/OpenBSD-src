@@ -1,4 +1,4 @@
-/*	$OpenBSD: smc90cx6.c,v 1.11 2005/02/14 14:00:49 brad Exp $ */
+/*	$OpenBSD: smc90cx6.c,v 1.12 2006/03/25 22:41:43 djm Exp $ */
 /*	$NetBSD: smc90cx6.c,v 1.17 1996/05/07 01:43:18 thorpej Exp $ */
 
 /*

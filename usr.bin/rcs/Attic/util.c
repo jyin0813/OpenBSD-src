@@ -1,4 +1,4 @@
-/*	$OpenBSD: util.c,v 1.78 2006/04/14 02:45:35 deraadt Exp $	*/
+/*	$OpenBSD: util.c,v 1.1 2006/04/26 02:55:13 joris Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * Copyright (c) 2005, 2006 Joris Vink <joris@openbsd.org>

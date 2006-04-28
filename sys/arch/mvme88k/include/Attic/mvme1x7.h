@@ -1,4 +1,4 @@
-/*	$OpenBSD: mvme1x7.h,v 1.12 2006/04/19 22:09:40 miod Exp $ */
+/*	$OpenBSD: mvme1x7.h,v 1.13 2006/04/27 20:19:31 miod Exp $ */
 /*
  * Copyright (c) 1996 Nivas Madhur
  * Copyright (c) 1999 Steve Murphree, Jr.

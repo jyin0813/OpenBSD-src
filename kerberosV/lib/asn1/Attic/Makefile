@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.7 2003/05/11 20:54:39 mho Exp $
+# $OpenBSD: Makefile,v 1.8 2003/05/11 22:41:10 hin Exp $
 
 LIB=	asn1
 

@@ -1,4 +1,4 @@
-/* $Id$ */
+/* $Id: dummy.c,v 1.1 2003/05/14 01:44:56 hin Exp $ */
 
 /*-
  * Copyright (c) 2003 Hans Insulander <hin@openbsd.org>.

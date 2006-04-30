@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2003/05/12 00:59:35 hin Exp $
+# $OpenBSD: Makefile,v 1.9 2003/05/13 03:13:30 hin Exp $
 
 KRBDEPTH=../..
 .include <${.CURDIR}/../../Makefile.inc>

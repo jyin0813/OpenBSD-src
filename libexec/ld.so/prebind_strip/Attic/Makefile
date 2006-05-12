@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.30 2005/09/28 16:20:01 drahn Exp $
+#	$OpenBSD: Makefile,v 1.1 2006/05/03 16:10:52 drahn Exp $
 
 SRCS=	prebind_strip.c
 

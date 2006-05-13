@@ -1,4 +1,4 @@
-/* $OpenBSD: prebind_struct.h,v 1.4 2006/05/12 15:12:42 drahn Exp $ */
+/* $OpenBSD: prebind_struct.h,v 1.5 2006/05/12 16:37:59 drahn Exp $ */
 /*
  * Copyright (c) 2006 Dale Rahn <drahn@dalerahn.com>
  *

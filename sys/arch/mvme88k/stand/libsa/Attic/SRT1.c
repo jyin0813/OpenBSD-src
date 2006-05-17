@@ -1,4 +1,4 @@
-/*	$OpenBSD: SRT1.c,v 1.3 2001/01/13 05:19:01 smurph Exp $ */
+/*	$OpenBSD: SRT1.c,v 1.4 2003/06/04 16:36:15 deraadt Exp $ */
 
 /*
  * Copyright (c) 1996 Nivas Madhur

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2000/10/13 16:22:07 chris Exp $
+#	$OpenBSD: Makefile,v 1.1 2000/10/16 22:56:39 chris Exp $
 
 PROG=	spppcontrol
 SRCS=	spppcontrol.c

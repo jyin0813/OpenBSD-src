@@ -1,4 +1,4 @@
-/*	$OpenBSD: katelib.h,v 1.2 2004/01/29 16:17:16 drahn Exp $	*/
+/*	$OpenBSD: katelib.h,v 1.1 2004/02/01 05:09:49 drahn Exp $	*/
 /*	$NetBSD: katelib.h,v 1.3 2001/11/23 19:21:48 thorpej Exp $	*/
 
 /*

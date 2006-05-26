@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 2003/02/25 22:29:33 markus Exp $
+#	$OpenBSD: Makefile,v 1.6 2004/01/27 22:46:55 itojun Exp $
 
 PROG= ipsecadm
 MAN=  ipsecadm.8

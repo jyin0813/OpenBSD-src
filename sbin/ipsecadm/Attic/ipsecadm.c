@@ -1,4 +1,4 @@
-/* $OpenBSD: ipsecadm.c,v 1.85 2005/05/25 05:51:13 markus Exp $ */
+/* $OpenBSD: ipsecadm.c,v 1.86 2005/06/07 02:36:41 henning Exp $ */
 /*
  * The authors of this code are John Ioannidis (ji@tla.org),
  * Angelos D. Keromytis (kermit@csd.uch.gr) and

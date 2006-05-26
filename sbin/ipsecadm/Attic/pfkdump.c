@@ -1,4 +1,4 @@
-/*	$OpenBSD: pfkdump.c,v 1.17 2005/09/27 11:53:42 markus Exp $	*/
+/*	$OpenBSD: pfkdump.c,v 1.18 2005/12/21 01:40:23 millert Exp $	*/
 
 /*
  * Copyright (c) 2003 Markus Friedl.  All rights reserved.

@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.2 2004/05/31 13:03:59 sturm Exp $
+# $OpenBSD: Makefile,v 1.3 2004/12/29 04:39:17 david Exp $
 
 SRC=192.0.2.0
 DST=192.0.2.1

@@ -1,4 +1,4 @@
-/*	$OpenBSD: resp.c,v 1.72 2006/03/16 08:43:43 xsa Exp $	*/
+/*	$OpenBSD: resp.c,v 1.73 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

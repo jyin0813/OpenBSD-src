@@ -1,4 +1,4 @@
-/*	$OpenBSD: server.c,v 1.26 2005/12/24 19:07:52 xsa Exp $	*/
+/*	$OpenBSD: server.c,v 1.27 2006/01/02 08:11:56 xsa Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

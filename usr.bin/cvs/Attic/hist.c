@@ -1,4 +1,4 @@
-/*	$OpenBSD: hist.c,v 1.13 2006/01/02 08:11:56 xsa Exp $	*/
+/*	$OpenBSD: hist.c,v 1.14 2006/04/05 01:38:55 ray Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

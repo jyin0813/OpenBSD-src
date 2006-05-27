@@ -1,4 +1,4 @@
-/*	$OpenBSD: history.c,v 1.25 2006/01/02 08:11:56 xsa Exp $	*/
+/*	$OpenBSD: history.c,v 1.26 2006/01/23 14:02:42 xsa Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

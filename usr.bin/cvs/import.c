@@ -1,4 +1,4 @@
-/*	$OpenBSD: import.c,v 1.42 2006/04/05 01:38:55 ray Exp $	*/
+/*	$OpenBSD: import.c,v 1.43 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Joris Vink <joris@openbsd.org>
  * All rights reserved.

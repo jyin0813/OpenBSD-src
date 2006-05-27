@@ -1,4 +1,4 @@
-/*	$OpenBSD: req.c,v 1.43 2006/03/28 07:17:17 ray Exp $	*/
+/*	$OpenBSD: req.c,v 1.44 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

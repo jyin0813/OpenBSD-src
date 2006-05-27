@@ -1,4 +1,4 @@
-/*	$OpenBSD: logmsg.c,v 1.27 2006/01/02 08:11:56 xsa Exp $	*/
+/*	$OpenBSD: logmsg.c,v 1.28 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

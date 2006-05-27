@@ -1,4 +1,4 @@
-/*	$OpenBSD: edit.c,v 1.11 2006/01/02 08:11:56 xsa Exp $	*/
+/*	$OpenBSD: edit.c,v 1.12 2006/03/16 09:06:19 xsa Exp $	*/
 /*
  * Copyright (c) 2005 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

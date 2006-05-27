@@ -1,4 +1,4 @@
-/*	$OpenBSD: remove.c,v 1.43 2006/03/16 09:06:19 xsa Exp $	*/
+/*	$OpenBSD: remove.c,v 1.44 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * Copyright (c) 2004, 2005 Xavier Santolaria <xsa@openbsd.org>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: tag.c,v 1.42 2006/04/12 14:09:11 xsa Exp $	*/
+/*	$OpenBSD: tag.c,v 1.43 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * Copyright (c) 2004 Joris Vink <joris@openbsd.org>

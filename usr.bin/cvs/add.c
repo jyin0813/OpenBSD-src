@@ -1,4 +1,4 @@
-/*	$OpenBSD: add.c,v 1.40 2006/01/27 12:56:28 xsa Exp $	*/
+/*	$OpenBSD: add.c,v 1.41 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * Copyright (c) 2005 Xavier Santolaria <xsa@openbsd.org>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: release.c,v 1.31 2006/01/27 15:26:38 xsa Exp $	*/
+/*	$OpenBSD: release.c,v 1.32 2006/03/15 19:59:36 niallo Exp $	*/
 /*
  * Copyright (c) 2005 Xavier Santolaria <xsa@openbsd.org>
  * All rights reserved.

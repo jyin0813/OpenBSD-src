@@ -1,4 +1,4 @@
-/*	$OpenBSD: watch.c,v 1.11 2006/01/02 08:11:56 xsa Exp $	*/
+/*	$OpenBSD: watch.c,v 1.12 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2005 Xavier Santolaria <xsa@openbsd.org>
  * Copyright (c) 2005 Moritz Jodeit <moritz@openbsd.org>

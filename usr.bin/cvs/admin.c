@@ -1,4 +1,4 @@
-/*	$OpenBSD: admin.c,v 1.32 2006/04/01 20:11:25 joris Exp $	*/
+/*	$OpenBSD: admin.c,v 1.33 2006/04/10 08:08:00 xsa Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * Copyright (c) 2005 Joris Vink <joris@openbsd.org>

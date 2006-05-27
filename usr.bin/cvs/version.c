@@ -1,4 +1,4 @@
-/*	$OpenBSD: version.c,v 1.19 2006/01/02 08:11:56 xsa Exp $	*/
+/*	$OpenBSD: version.c,v 1.20 2006/04/14 02:45:35 deraadt Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

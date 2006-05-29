@@ -1,28 +1,18 @@
-/*	$OpenBSD: remove.c,v 1.44 2006/04/14 02:45:35 deraadt Exp $	*/
+/*	$OpenBSD$	*/
 /*
- * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
- * Copyright (c) 2004, 2005 Xavier Santolaria <xsa@openbsd.org>
- * All rights reserved.
+ * Copyright (c) 2005, 2006 Xavier Santolaria <xsa@openbsd.org>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
- * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
- * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
- * THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- * EXEMPLARY, OR CONSEQUENTIAL  DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
- * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
- * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
 #include "includes.h"
@@ -31,17 +21,14 @@
 #include "log.h"
 #include "proto.h"
 
-
 extern char *__progname;
 
+int		cvs_remove(int, char **);
+void		cvs_remove_local(struct cvs_file *);
 
-static int	cvs_remove_init(struct cvs_cmd *, int, char **, int *);
-static int	cvs_remove_remote(CVSFILE *, void *);
-static int	cvs_remove_local(CVSFILE *, void *);
-static int	cvs_remove_file(const char *);
-
-static int	force_remove = 0;	/* -f option */
-static int	nuked = 0;
+static int	force_remove = 0;
+static int	removed = 0;
+static int	existing = 0;
 
 struct cvs_cmd cvs_cmd_remove = {
 	CVS_OP_REMOVE, CVS_REQ_REMOVE, "remove",
@@ -50,190 +37,150 @@ struct cvs_cmd cvs_cmd_remove = {
 	"[-flR] [file ...]",
 	"flR",
 	NULL,
-	CF_IGNORE | CF_RECURSE,
-	cvs_remove_init,
-	NULL,
-	cvs_remove_remote,
-	cvs_remove_local,
-	NULL,
-	NULL,
-	CVS_CMD_SENDDIR | CVS_CMD_SENDARGS2 | CVS_CMD_ALLOWSPEC
+	cvs_remove
 };
 
-static int
-cvs_remove_init(struct cvs_cmd *cmd, int argc, char **argv, int *arg)
+int
+cvs_remove(int argc, char **argv)
 {
 	int ch;
+	char *arg = ".";
+	struct cvs_recursion cr;
 
-	while ((ch = getopt(argc, argv, cmd->cmd_opts)) != -1) {
+	while ((ch = getopt(argc, argv, cvs_cmd_commit.cmd_opts)) != -1) {
 		switch (ch) {
 		case 'f':
 			force_remove = 1;
 			break;
 		case 'l':
-			cmd->file_flags &= ~CF_RECURSE;
 			break;
 		case 'R':
-			cmd->file_flags |= CF_RECURSE;
 			break;
 		default:
-			return (CVS_EX_USAGE);
+			fatal("%s", cvs_cmd_commit.cmd_synopsis);
 		}
 	}
 
 	argc -= optind;
 	argv += optind;
 
-	*arg = optind;
-	return (0);
-}
+	cr.enterdir = NULL;
+	cr.leavedir = NULL;
+	cr.local = cvs_remove_local;
+	cr.remote = NULL;
 
-
-static int
-cvs_remove_remote(CVSFILE *cf, void *arg)
-{
-	char fpath[MAXPATHLEN];
-	struct cvsroot *root;
-
-	root = CVS_DIR_ROOT(cf);
-
-	if (cf->cf_type == DT_DIR) {
-		if (cf->cf_cvstat == CVS_FST_UNKNOWN)
-			cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		else
-			cvs_senddir(root, cf);
-		return (0);
-	}
-
-	cvs_file_getpath(cf, fpath, sizeof(fpath));
-
-	if (cvs_remove_file(fpath) < 0)
-		fatal("cvs_remove_remote: cvs_remove_file `%s' failed", fpath);
-
-	cvs_sendentry(root, cf);
-
-	if (cf->cf_cvstat != CVS_FST_LOST && force_remove != 1) {
-		if (cf->cf_cvstat != CVS_FST_ADDED)
-			cvs_sendreq(root, CVS_REQ_MODIFIED, cf->cf_name);
-
-		if (cf->cf_flags & CVS_FILE_ONDISK)
-			cvs_sendfile(root, fpath);
-	}
+	if (argc > 0)
+		cvs_file_run(argc, argv, &cr);
+	else
+		cvs_file_run(1, &arg, &cr);
 
 	return (0);
 }
 
-static int
-cvs_remove_local(CVSFILE *cf, void *arg)
+void
+cvs_remove_local(struct cvs_file *cf)
 {
-	int existing, removed;
-	char buf[MAXPATHLEN], fpath[MAXPATHLEN];
-	CVSENTRIES *entf;
-	struct cvs_ent *ent;
+	int l;
+	CVSENTRIES *entlist;
+	char *entry, buf[MAXPATHLEN], tbuf[32], rbuf[16];
 
-	existing = removed = 0;
-	entf = (CVSENTRIES *)cf->cf_entry;
+	cvs_log(LP_TRACE, "cvs_remove_local(%s)", cf->file_path);
 
-	if (cf->cf_type == DT_DIR) {
+	if (cf->file_type == CVS_DIR) {
 		if (verbosity > 1)
-			cvs_log(LP_NOTICE, "Removing %s", cf->cf_name);
-		return (0);
+			cvs_log(LP_NOTICE, "Removing %s", cf->file_path);
+		return;
 	}
 
-	if (cvs_cmdop != CVS_OP_SERVER) {
-		cvs_file_getpath(cf, fpath, sizeof(fpath));
+	cvs_file_classify(cf, 0);
 
-		if (cvs_remove_file(fpath) < 0)
-			fatal("cvs_remove_local: cvs_remove_file `%s' failed",
-			     fpath);
+	if (force_remove == 1) {
+		if (unlink(cf->file_path) == -1)
+			fatal("cvs_remove_local: %s", strerror(errno));
+		(void)close(cf->fd);
+		cf->fd = -1;
 	}
 
-	if (nuked == 0) {
+	if (cf->fd != -1) {
+		if (verbosity > 1)
+			cvs_log(LP_ERR, "file `%s' still in working directory",
+			    cf->file_name);
 		existing++;
-		if (verbosity > 1)
-			cvs_log(LP_WARN, "file `%s' still in working directory",
-			    cf->cf_name);
-	} else if (cf->cf_cvstat == CVS_FST_UNKNOWN) {
-		if (verbosity > 1)
-			cvs_log(LP_WARN, "nothing known about `%s'",
-			    cf->cf_name);
-		return (0);
-	} else if (cf->cf_cvstat == CVS_FST_ADDED) {
-		if (cvs_ent_remove(entf, cf->cf_name, 0) == -1)
-			fatal("cvs_remove_local: cvs_ent_remove failed");
-
-		if (strlcpy(buf, CVS_PATH_CVSDIR, sizeof(buf)) >= sizeof(buf) ||
-		    strlcat(buf, "/", sizeof(buf)) >= sizeof(buf) ||
-		    strlcat(buf, cf->cf_name, sizeof(buf)) >= sizeof(buf) ||
-		    strlcat(buf, CVS_DESCR_FILE_EXT,
-		    sizeof(buf)) >= sizeof(buf))
-			fatal("cvs_remove_local: path truncation");
-
-		if (cvs_unlink(buf) == -1)
-			fatal("cvs_remove_local: cvs_unlink `%s' failed", buf);
-
-		if (verbosity > 1)
-			cvs_log(LP_NOTICE, "removed `%s'", cf->cf_name);
-		return (0);
-	} else if (cf->cf_cvstat == CVS_FST_REMOVED) {
-		if (verbosity > 1 )
-			cvs_log(LP_WARN,
-			    "file `%s' already scheduled for removal",
-			    cf->cf_name);
-		return (0);
 	} else {
-		if ((ent = cvs_ent_get(entf, cf->cf_name)) == NULL)
-			fatal("cvs_remove_local: cvs_ent_get failed");
+		switch(cf->file_status) {
+		case FILE_UNKNOWN:
+			if (verbosity > 1) {
+				cvs_log(LP_ERR, "nothing known about `%s'",
+				    cf->file_name);
+			}
+			return;
+		case FILE_ADDED:
+			entlist = cvs_ent_open(cf->file_wd);
+			cvs_ent_remove(entlist, cf->file_name);
+			cvs_ent_close(entlist, ENT_SYNC);
 
-		/* Prefix revision with `-' */
-		ent->ce_status = CVS_ENT_REMOVED;
-		entf->cef_flags &= ~CVS_ENTF_SYNC;
+			l = snprintf(buf, sizeof(buf), "%s/%s/%s%s",
+			    cf->file_path, CVS_PATH_CVSDIR, cf->file_name,
+			    CVS_DESCR_FILE_EXT);
+			if (l == -1 || l >= (int)sizeof(buf))
+				fatal("cvs_remove_local: overflow");
 
-		if (verbosity > 1)
-			cvs_log(LP_NOTICE, "scheduling file `%s' for removal",
-			    cf->cf_name);
-		removed++;
+			(void)unlink(buf);
+
+			if (verbosity > 1) {
+				cvs_log(LP_NOTICE, "removed `%s'",
+				    cf->file_name);
+			}
+			return;
+		case FILE_REMOVED:
+			if (verbosity > 1 ) {
+				cvs_log(LP_ERR,
+				    "file `%s' already scheduled for removal",
+				    cf->file_name);
+			}
+			return;
+		default:
+			rcsnum_tostr(cf->file_ent->ce_rev, rbuf,
+			     sizeof(rbuf));
+
+			ctime_r(&cf->file_ent->ce_mtime, tbuf);
+			if (tbuf[strlen(tbuf) - 1] == '\n')
+				tbuf[strlen(tbuf) - 1] = '\0';
+
+			entry = xmalloc(CVS_ENT_MAXLINELEN);
+			l = snprintf(entry, CVS_ENT_MAXLINELEN,
+			     "/%s/-%s/%s//", cf->file_name, rbuf, tbuf);
+			if (l == -1 || l >= CVS_ENT_MAXLINELEN)
+				fatal("cvs_remove_local: overflow");
+
+			entlist = cvs_ent_open(cf->file_wd);
+			cvs_ent_add(entlist, entry);
+			cvs_ent_close(entlist, ENT_SYNC);
+
+			xfree(entry);
+
+			if (verbosity > 1) {
+				cvs_log(LP_NOTICE,
+				    "scheduling file `%s' for removal",
+				    cf->file_name);
+			}
+
+			cf->file_status = FILE_REMOVED;
+			removed++;
+			break;
+		}
 	}
 
-	if (removed != 0) {
+	if (cf->file_status == FILE_REMOVED) {
 		if (verbosity > 0)
 			cvs_log(LP_NOTICE, "use '%s commit' to remove %s "
 			    "permanently", __progname,
 			    (removed == 1) ? "this file" : "these files");
-		return (0);
-	}
-
-	if (existing != 0) {
-		cvs_log(LP_WARN, existing == 1 ?
-		    "%d file exists; remove it first" :
-		    "%d files exist; remove them first", existing);
-		return (0);
-	}
-
-	return (0);
-}
-
-/*
- * cvs_remove_file()
- *
- * Physically remove the file.
- * Used by both remote and local handlers.
- * Returns 0 on success, -1 on failure.
- */
-static int
-cvs_remove_file(const char *fpath)
-{
-	struct stat st;
-
-	/* if -f option is used, physically remove the file */
-	if (force_remove == 1) {
-		if (cvs_unlink(fpath) == -1)
-			return (-1);
-		nuked++;
 	} else {
-		if (stat(fpath, &st) == -1 && errno == ENOENT)
-			nuked++;
+		if (cf->fd != -1) {
+			cvs_log(LP_ERR, existing == 1 ?
+			    "%d file exists; remove it first" :
+			    "%d files exist; remove them first", existing);
+		}
 	}
-
-	return (0);
 }

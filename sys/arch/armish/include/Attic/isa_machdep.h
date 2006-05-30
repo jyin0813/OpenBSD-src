@@ -1,4 +1,4 @@
-/* 	$OpenBSD: isa_machdep.h,v 1.2 2004/12/31 14:57:13 drahn Exp $	*/
+/* 	$OpenBSD: isa_machdep.h,v 1.1 2006/05/29 17:13:19 drahn Exp $	*/
 /* $NetBSD: isa_machdep.h,v 1.4 2002/01/07 22:58:08 chris Exp $ */
 
 #ifndef _ARMISH_ISA_MACHDEP_H_

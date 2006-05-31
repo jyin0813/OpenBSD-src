@@ -1,4 +1,4 @@
-/* 	$OpenBSD: isa_machdep.h,v 1.1 2004/12/31 00:04:35 drahn Exp $	*/
+/* 	$OpenBSD: isa_machdep.h,v 1.2 2004/12/31 14:57:13 drahn Exp $	*/
 /* $NetBSD: isa_machdep.h,v 1.4 2002/01/07 22:58:08 chris Exp $ */
 
 #ifndef _ZAURUS_ISA_MACHDEP_H_

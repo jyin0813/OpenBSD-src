@@ -1,4 +1,4 @@
-/*	$OpenBSD: proto.h,v 1.12 2006/01/04 14:58:12 xsa Exp $	*/
+/*	$OpenBSD: proto.h,v 1.13 2006/05/27 03:30:31 joris Exp $	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * All rights reserved.

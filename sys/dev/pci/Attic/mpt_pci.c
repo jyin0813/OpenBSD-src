@@ -1,4 +1,4 @@
-/*	$OpenBSD: mpt_pci.c,v 1.12 2006/02/04 19:05:00 marco Exp $	*/
+/*	$OpenBSD: mpt_pci.c,v 1.13 2006/05/31 03:38:32 dlg Exp $	*/
 /*	$NetBSD: mpt_pci.c,v 1.2 2003/07/14 15:47:26 lukem Exp $	*/
 
 /*

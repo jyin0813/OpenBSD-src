@@ -1,4 +1,4 @@
-/*	$OpenBSD: mpt_debug.c,v 1.4 2005/04/21 16:02:27 deraadt Exp $	*/
+/*	$OpenBSD: mpt_debug.c,v 1.5 2006/02/04 19:05:00 marco Exp $	*/
 /*	$NetBSD: mpt_debug.c,v 1.2 2003/07/14 15:47:11 lukem Exp $	*/
 
 /*

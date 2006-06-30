@@ -1,4 +1,4 @@
-/*	$OpenBSD: mpt_openbsd.c,v 1.32 2006/02/04 19:05:00 marco Exp $	*/
+/*	$OpenBSD: mpt_openbsd.c,v 1.33 2006/04/20 20:29:56 miod Exp $	*/
 /*	$NetBSD: mpt_netbsd.c,v 1.7 2003/07/14 15:47:11 lukem Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: mpt_mpilib.h,v 1.6 2005/11/16 04:31:32 marco Exp $ */
 
 /* $FreeBSD: /repoman/r/ncvs/src/sys/dev/mpt/mpilib/mpi_type.h,v 1.7 2005/07/10 15:05:39 scottl Exp $ */
 /*
@@ -145,7 +145,7 @@ typedef U64     *PU64;
  *                  in the IOCLogInfo field of a MPI Default Reply Message.
  *
  *  CREATION DATE:  6/02/2000
- *  ID:             $Id: fc_log.h,v 4.6 2001/07/26 14:41:33 sschremm Exp $
+ *  ID:             $Id: mpt_mpilib.h,v 1.6 2005/11/16 04:31:32 marco Exp $
  */
 
 /*

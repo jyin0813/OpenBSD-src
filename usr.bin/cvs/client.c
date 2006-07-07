@@ -1,470 +1,585 @@
 /*	$OpenBSD$	*/
 /*
- * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
- * All rights reserved.
+ * Copyright (c) 2006 Joris Vink <joris@openbsd.org>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
- * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
- * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
- * THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- * EXEMPLARY, OR CONSEQUENTIAL  DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
- * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
- * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <sys/types.h>
-#include <sys/stat.h>
-
-#include <fcntl.h>
-#include <stdio.h>
-#include <errno.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <signal.h>
-#include <string.h>
-#include <sysexits.h>
-#ifdef CVS_ZLIB
-#include <zlib.h>
-#endif
+#include "includes.h"
 
 #include "cvs.h"
 #include "log.h"
-#include "proto.h"
+#include "diff.h"
+#include "remote.h"
 
+struct cvs_req cvs_requests[] = {
+	/* this is what our client will use, the server should support it */
+	{ "Root",		1,	cvs_server_root, REQ_NEEDED },
+	{ "Valid-responses",	1,	cvs_server_validresp, REQ_NEEDED },
+	{ "valid-requests",	1,	cvs_server_validreq, REQ_NEEDED },
+	{ "Global_option",	0,	cvs_server_globalopt, REQ_NEEDED },
+	{ "Directory",		0,	cvs_server_directory, REQ_NEEDED },
+	{ "Entry",		0,	cvs_server_entry, REQ_NEEDED },
+	{ "Modified",		0,	cvs_server_modified, REQ_NEEDED },
+	{ "UseUnchanged",	0,	cvs_server_useunchanged, REQ_NEEDED },
+	{ "Unchanged",		0,	cvs_server_unchanged, REQ_NEEDED },
+	{ "Questionable",	0,	cvs_server_questionable, REQ_NEEDED },
+	{ "Argument",		0,	cvs_server_argument, REQ_NEEDED },
 
+	/*
+	 * used to tell the server what is going on in our
+	 * working copy, unsupported until we are told otherwise
+	 */
+	{ "Max-dotdot",			0,	NULL, 0 },
+	{ "Static-directory",		0,	NULL, 0 },
+	{ "Sticky",			0,	NULL, 0 },
+	{ "Checkin-prog",		0,	NULL, 0 },
+	{ "Update-prog",		0,	NULL, 0 },
+	{ "Kopt",			0,	NULL, 0 },
+	{ "Checkin-time",		0,	NULL, 0 },
+	{ "Is-modified",		0,	NULL, 0 },
+	{ "Notify",			0,	NULL, 0 },
+	{ "Case",			0,	NULL, 0 },
+	{ "Argumentx",			0,	NULL, 0 },
+	{ "Gzip-stream",		0,	NULL, 0 },
+	{ "Kerberos-encrypt",		0,	NULL, 0 },
+	{ "Gssapi-encrypt",		0,	NULL, 0 },
+	{ "Gssapi-authenticate",	0,	NULL, 0 },
+	{ "Set",			0,	NULL, 0 },
+	{ "expand-modules",		0,	NULL, 0 },
 
-extern int   verbosity;
-extern int   cvs_compress;
-extern char *cvs_rsh;
-extern int   cvs_trace;
-extern int   cvs_nolog;
-extern int   cvs_readonly;
+	/* commands that might be supported */
+	{ "ci",				0,	cvs_server_commit, 0 },
+	{ "co",				0,	NULL, 0 },
+	{ "diff",			0,	cvs_server_diff, 0 },
+	{ "tag",			0,	NULL, 0 },
+	{ "status",			0,	cvs_server_status, 0 },
+	{ "admin",			0,	NULL, 0 },
+	{ "history",			0,	NULL, 0 },
+	{ "watchers",			0,	NULL, 0 },
+	{ "editors",			0,	NULL, 0 },
+	{ "annotate",			0,	NULL, 0 },
+	{ "log",			0,	cvs_server_log, 0 },
+	{ "export",			0,	NULL, 0 },
+	{ "rdiff",			0,	NULL, 0 },
+	{ "rtag",			0,	NULL, 0 },
+	{ "init",			0,	NULL, 0 },
+	{ "update",			0,	cvs_server_update, 0 },
+	{ "import",			0,	NULL, 0 },
+	{ "add",			0,	NULL, 0 },
+	{ "remove",			0,	NULL, 0 },
+	{ "watch-on",			0,	NULL, 0 },
+	{ "watch-off",			0,	NULL, 0 },
+	{ "watch-add",			0,	NULL, 0 },
+	{ "watch-remove",		0,	NULL, 0 },
+	{ "release",			0,	NULL, 0 },
+	{ "noop",			0,	NULL, 0 },
+	{ "update-patches",		0,	NULL, 0 },
+	{ "gzip-file-contents",		0,	NULL, 0 },
+	{ "wrapper-sendme-rcsOptions",	0,	NULL, 0 },
+	{ "",				-1,	NULL, 0 }
+};
 
+static char *client_get_supported_responses(void);
+static char *lastdir = NULL;
+static int end_of_response = 0;
 
-static int  cvs_client_sendinfo (struct cvsroot *);
-static int  cvs_client_initlog  (void);
-
-
-
-static int    cvs_server_infd = -1;
-static int    cvs_server_outfd = -1;
-static FILE  *cvs_server_in;
-static FILE  *cvs_server_out;
-
-/* protocol log files, if the CVS_CLIENT_LOG environment variable is used */
-static FILE  *cvs_server_inlog;
-static FILE  *cvs_server_outlog;
-
-static char   cvs_client_buf[4096];
-
-
-
-/*
- * cvs_client_connect()
- *
- * Open a client connection to the cvs server whose address is given in
- * the <root> variable.  The method used to connect depends on the
- * setting of the CVS_RSH variable.
- * Returns 0 on success, or -1 on failure.
- */
-
-int
-cvs_client_connect(struct cvsroot *root)
+static char *
+client_get_supported_responses(void)
 {
-	int argc, infd[2], outfd[2];
-	pid_t pid;
-	char *argv[16], *cvs_server_cmd;
+	BUF *bp;
+	char *d;
+	int i, first;
 
-	if (pipe(infd) == -1) {
-		cvs_log(LP_ERRNO,
-		    "failed to create input pipe for client connection");
-		return (-1);
+	first = 0;
+	bp = cvs_buf_alloc(512, BUF_AUTOEXT);
+	for (i = 0; cvs_responses[i].supported != -1; i++) {
+		if (cvs_responses[i].hdlr == NULL)
+			continue;
+
+		if (first != 0)
+			cvs_buf_append(bp, " ", 1);
+		else
+			first++;
+		cvs_buf_append(bp, cvs_responses[i].name,
+		    strlen(cvs_responses[i].name));
 	}
 
-	if (pipe(outfd) == -1) {
-		cvs_log(LP_ERRNO,
-		    "failed to create output pipe for client connection");
-		(void)close(infd[0]);
-		(void)close(infd[1]);
-		return (-1);
+	cvs_buf_putc(bp, '\0');
+	d = cvs_buf_release(bp);
+	return (d);
+}
+
+void
+cvs_client_connect_to_server(void)
+{
+	char *cmd, *argv[9], *resp;
+	int ifd[2], ofd[2], argc;
+
+	switch (current_cvsroot->cr_method) {
+	case CVS_METHOD_PSERVER:
+	case CVS_METHOD_KSERVER:
+	case CVS_METHOD_GSERVER:
+	case CVS_METHOD_FORK:
+	case CVS_METHOD_EXT:
+		fatal("the specified connection method is not support");
+	default:
+		break;
 	}
 
-	pid = fork();
-	if (pid == -1) {
-		cvs_log(LP_ERRNO, "failed to fork for cvs server connection");
-		return (-1);
-	}
-	if (pid == 0) {
-		if ((dup2(infd[0], STDIN_FILENO) == -1) ||
-		    (dup2(outfd[1], STDOUT_FILENO) == -1)) {
-			cvs_log(LP_ERRNO,
-			    "failed to setup standard streams for cvs server");
-			return (-1);
-		}
-		(void)close(infd[1]);
-		(void)close(outfd[0]);
+	if (pipe(ifd) == -1)
+		fatal("cvs_client_connect: %s", strerror(errno));
+	if (pipe(ofd) == -1)
+		fatal("cvs_client_connect: %s", strerror(errno));
+
+	switch (fork()) {
+	case -1:
+		fatal("cvs_client_connect: fork failed: %s", strerror(errno));
+	case 0:
+		if (dup2(ifd[0], STDIN_FILENO) == -1)
+			fatal("cvs_client_connect: %s", strerror(errno));
+		if (dup2(ofd[1], STDOUT_FILENO) == -1)
+			fatal("cvs_client_connect: %s", strerror(errno));
+
+		close(ifd[1]);
+		close(ofd[0]);
+
+		if ((cmd = getenv("CVS_SERVER")) == NULL)
+			cmd = CVS_SERVER_DEFAULT;
 
 		argc = 0;
 		argv[argc++] = cvs_rsh;
 
-		if (root->cr_user != NULL) {
+		if (current_cvsroot->cr_user != NULL) {
 			argv[argc++] = "-l";
-			argv[argc++] = root->cr_user;
+			argv[argc++] = current_cvsroot->cr_user;
 		}
 
-
-		cvs_server_cmd = getenv("CVS_SERVER");
-		if (cvs_server_cmd == NULL)
-			cvs_server_cmd = "cvs";
-
-		argv[argc++] = root->cr_host;
-		argv[argc++] = cvs_server_cmd;
+		argv[argc++] = current_cvsroot->cr_host;
+		argv[argc++] = cmd;
 		argv[argc++] = "server";
 		argv[argc] = NULL;
 
+		cvs_log(LP_TRACE, "connecting to server %s",
+		    current_cvsroot->cr_host);
+
 		execvp(argv[0], argv);
-		cvs_log(LP_ERRNO, "failed to exec");
-		exit(EX_OSERR);
+		fatal("cvs_client_connect: failed to execute cvs server");
+	default:
+		break;
 	}
 
-	/* we are the parent */
-	cvs_server_infd = infd[1];
-	cvs_server_outfd = outfd[0];
+	close(ifd[0]);
+	close(ofd[1]);
 
-	cvs_server_in = fdopen(cvs_server_infd, "w");
-	if (cvs_server_in == NULL) {
-		cvs_log(LP_ERRNO, "failed to create pipe stream");
-		return (-1);
-	}
+	if ((current_cvsroot->cr_srvin = fdopen(ifd[1], "w")) == NULL)
+		fatal("cvs_client_connect: %s", strerror(errno));
+	if ((current_cvsroot->cr_srvout = fdopen(ofd[0], "r")) == NULL)
+		fatal("cvs_client_connect: %s", strerror(errno));
 
-	cvs_server_out = fdopen(cvs_server_outfd, "r");
-	if (cvs_server_out == NULL) {
-		cvs_log(LP_ERRNO, "failed to create pipe stream");
-		return (-1);
-	}
-	root->cr_srvin = cvs_server_in;
-	root->cr_srvout = cvs_server_out;
+	setvbuf(current_cvsroot->cr_srvin, NULL,_IOLBF, 0);
+	setvbuf(current_cvsroot->cr_srvout, NULL, _IOLBF, 0);
 
-	/* make the streams line-buffered */
-	setvbuf(cvs_server_in, NULL, _IOLBF, 0);
-	setvbuf(cvs_server_out, NULL, _IOLBF, 0);
+	cvs_client_send_request("Root %s", current_cvsroot->cr_dir);
 
-	(void)close(infd[0]);
-	(void)close(outfd[1]);
+	resp = client_get_supported_responses();
+	cvs_client_send_request("Valid-responses %s", resp);
+	xfree(resp);
 
-	cvs_client_initlog();
+	cvs_client_send_request("valid-requests");
+	cvs_client_get_responses();
 
-	cvs_client_sendinfo(root);
+	if (cvs_trace)
+		cvs_client_send_request("Global_option -t");
 
-#ifdef CVS_ZLIB
-	/* if compression was requested, initialize it */
-#endif
+	if (verbosity == 2)
+		cvs_client_send_request("Global_option -V");
 
-	return (0);
+	cvs_client_send_request("UseUnchanged");
 }
-
-
-/*
- * cvs_client_disconnect()
- *
- * Disconnect from the cvs server.
- */
 
 void
-cvs_client_disconnect(struct cvsroot *root)
+cvs_client_send_request(char *fmt, ...)
 {
-	cvs_log(LP_DEBUG, "closing client connection");
-	(void)fclose(cvs_server_in);
-	(void)fclose(cvs_server_out);
-	cvs_server_in = NULL;
-	cvs_server_out = NULL;
-	cvs_server_infd = -1;
-	cvs_server_outfd = -1;
+	va_list ap;
+	char *data, *s;
+	struct cvs_req *req;
 
-	if (cvs_server_inlog != NULL)
-		fclose(cvs_server_inlog);
-	if (cvs_server_outlog != NULL)
-		fclose(cvs_server_outlog);
+	va_start(ap, fmt);
+	vasprintf(&data, fmt, ap);
+	va_end(ap);
+
+	if ((s = strchr(data, ' ')) != NULL)
+		*s = '\0';
+
+	req = cvs_remote_get_request_info(data);
+	if (req == NULL)
+		fatal("'%s' is an unknown request", data);
+
+	if (req->supported != 1)
+		fatal("remote cvs server does not support '%s'", data);
+
+	if (s != NULL)
+		*s = ' ';
+
+	cvs_remote_output(data);
+	xfree(data);
 }
 
-
-/*
- * cvs_client_sendln()
- *
- * Send a single line <line> string to the server.  The line is sent as is,
- * without any modifications.
- * Returns 0 on success, or -1 on failure.
- */
-
-int
-cvs_client_sendln(const char *line)
+void
+cvs_client_read_response(void)
 {
-	int nl;
-	size_t len;
+	char *cmd, *data;
+	struct cvs_resp *resp;
 
-	nl = 0;
-	len = strlen(line);
+	cmd = cvs_remote_input();
+	if ((data = strchr(cmd, ' ')) != NULL)
+		(*data++) = '\0';
 
-	if ((len > 0) && (line[len - 1] != '\n'))
-		nl = 1;
+	resp = cvs_remote_get_response_info(cmd);
+	if (resp == NULL)
+		fatal("response '%s' is not supported by our client", cmd);
 
-	if (cvs_server_inlog != NULL) {
-		fputs(line, cvs_server_inlog);
-		if (nl)
-			fputc('\n', cvs_server_inlog);
-	}
-	fputs(line, cvs_server_in);
-	if (nl)
-		fputc('\n', cvs_server_in);
+	if (resp->hdlr == NULL)
+		fatal("opencvs client does not support '%s'", cmd);
 
-	return (0);
+	(*resp->hdlr)(data);
+	xfree(cmd);
 }
 
-
-/*
- * cvs_client_sendraw()
- *
- * Send the first <len> bytes from the buffer <src> to the server.
- */
-
-int
-cvs_client_sendraw(const void *src, size_t len)
+void
+cvs_client_get_responses(void)
 {
-	if (cvs_server_inlog != NULL)
-		fwrite(src, sizeof(char), len, cvs_server_inlog);
-	if (fwrite(src, sizeof(char), len, cvs_server_in) < len) {
-		return (-1);
-	}
+	while (end_of_response != 1)
+		cvs_client_read_response();
 
-	return (0);
+	end_of_response = 0;
 }
 
-
-/*
- * cvs_client_recvraw()
- *
- * Receive the first <len> bytes from the buffer <src> to the server.
- */
-
-ssize_t
-cvs_client_recvraw(void *dst, size_t len)
-{
-	size_t ret;
-
-	ret = fread(dst, sizeof(char), len, cvs_server_out);
-	if (ret == 0)
-		return (-1);
-	if (cvs_server_outlog != NULL)
-		fwrite(dst, sizeof(char), len, cvs_server_outlog);
-	return (ssize_t)ret;
-}
-
-
-/*
- * cvs_client_getln()
- *
- * Get a line from the server's output and store it in <lbuf>.  The terminating
- * newline character is stripped from the result.
- */
-
-int
-cvs_client_getln(char *lbuf, size_t len)
-{
-	size_t rlen;
-
-	if (fgets(lbuf, len, cvs_server_out) == NULL) {
-		if (ferror(cvs_server_out)) {
-			cvs_log(LP_ERRNO, "failed to read line from server");
-			return (-1);
-		}
-
-		if (feof(cvs_server_out))
-			*lbuf = '\0';
-	}
-
-	if (cvs_server_outlog != NULL)
-		fputs(lbuf, cvs_server_outlog);
-
-	rlen = strlen(lbuf);
-	if ((rlen > 0) && (lbuf[rlen - 1] == '\n'))
-		lbuf[--rlen] = '\0';
-
-	return (0);
-}
-
-
-/*
- * cvs_client_sendinfo()
- *
- * Initialize the connection status by first requesting the list of
- * supported requests from the server.  Then, we send the CVSROOT variable
- * with the `Root' request.
- * Returns 0 on success, or -1 on failure.
- */
-
-static int
-cvs_client_sendinfo(struct cvsroot *root)
-{
-	char *vresp;
-	/*
-	 * First, send the server the list of valid responses, then ask
-	 * for valid requests
-	 */
-
-	vresp = cvs_resp_getvalid();
-	if (vresp == NULL) {
-		cvs_log(LP_ERR, "can't generate list of valid responses");
-		return (-1);
-	}
-
-	if (cvs_client_sendreq(CVS_REQ_VALIDRESP, vresp, 0) < 0) {
-	}
-	free(vresp);
-
-	if (cvs_client_sendreq(CVS_REQ_VALIDREQ, NULL, 1) < 0) {
-		cvs_log(LP_ERR, "failed to get valid requests from server");
-		return (-1);
-	}
-
-	/* not sure why, but we have to send this */
-	if (cvs_client_sendreq(CVS_REQ_USEUNCHANGED, NULL, 0) < 0)
-		return (-1);
-
-	/* now share our global options with the server */
-	if (verbosity == 1)
-		cvs_client_sendreq(CVS_REQ_GLOBALOPT, "-q", 0);
-	else if (verbosity == 0)
-		cvs_client_sendreq(CVS_REQ_GLOBALOPT, "-Q", 0);
-
-	if (cvs_nolog)
-		cvs_client_sendreq(CVS_REQ_GLOBALOPT, "-l", 0);
-	if (cvs_readonly)
-		cvs_client_sendreq(CVS_REQ_GLOBALOPT, "-r", 0);
-	if (cvs_trace)
-		cvs_client_sendreq(CVS_REQ_GLOBALOPT, "-t", 0);
-
-	/* now send the CVSROOT to the server */
-	if (cvs_client_sendreq(CVS_REQ_ROOT, root->cr_dir, 0) < 0)
-		return (-1);
-
-	return (0);
-}
-
-
-/*
- * cvs_client_senddir()
- *
- * Send a `Directory' request along with the 2 paths that follow it.
- */
-
-int
+void
 cvs_client_senddir(const char *dir)
 {
-	char repo[MAXPATHLEN], buf[MAXPATHLEN];
+	char *repo;
 
-	if (cvs_readrepo(dir, repo, sizeof(repo)) < 0) {
-		repo[0] = '\0';
-		strlcpy(buf, cvs_root->cr_dir, sizeof(buf));
+	cvs_log(LP_TRACE, "cvs_client_senddir(%s)", dir);
+
+	if (lastdir != NULL && !strcmp(dir, lastdir))
+		return;
+
+	cvs_client_send_request("Directory %s", dir);
+
+	repo = xmalloc(MAXPATHLEN);
+	cvs_get_repository_path(dir, repo, MAXPATHLEN);
+	cvs_remote_output(repo);
+	xfree(repo);
+
+	if (lastdir != NULL)
+		xfree(lastdir);
+	lastdir = xstrdup(dir);
+}
+
+void
+cvs_client_sendfile(struct cvs_file *cf)
+{
+	int l;
+	size_t len;
+	char rev[16], timebuf[64], sticky[32];
+
+	if (cf->file_type != CVS_FILE)
+		return;
+
+	cvs_client_senddir(cf->file_wd);
+
+	cvs_log(LP_TRACE, "cvs_client_sendfile(%s)", cf->file_path);
+	cvs_remote_classify_file(cf);
+
+	if (cf->file_ent != NULL) {
+		if (cf->file_status == FILE_ADDED) {
+			len = strlcpy(rev, "0", sizeof(rev));
+			if (len >= sizeof(rev))
+				fatal("cvs_client_sendfile: truncation");
+
+			len = strlcpy(timebuf, "Initial ", sizeof(timebuf));
+			if (len >= sizeof(timebuf))
+				fatal("cvs_client_sendfile: truncation");
+
+			len = strlcat(timebuf, cf->file_name, sizeof(timebuf));
+			if (len >= sizeof(timebuf))
+				fatal("cvs_client_sendfile: truncation");
+		} else {
+			rcsnum_tostr(cf->file_ent->ce_rev, rev, sizeof(rev));
+			ctime_r(&cf->file_ent->ce_mtime, timebuf);
+		}
+
+		if (cf->file_ent->ce_conflict == NULL) {
+			if (timebuf[strlen(timebuf) - 1] == '\n')
+				timebuf[strlen(timebuf) - 1] = '\0';
+		} else {
+			len = strlcpy(timebuf, cf->file_ent->ce_conflict,
+			    sizeof(timebuf));
+			if (len >= sizeof(timebuf))
+				fatal("cvs_client_sendfile: truncation");
+		}
+
+		sticky[0] = '\0';
+		if (cf->file_ent->ce_tag != NULL) {
+			l = snprintf(sticky, sizeof(sticky), "T%s",
+			    cf->file_ent->ce_tag);
+			if (l == -1 || l >= (int)sizeof(sticky))
+				fatal("cvs_client_sendfile: overflow");
+		}
+
+		cvs_client_send_request("Entry /%s/%s%s/%s/%s/",
+		    cf->file_name, (cf->file_status == FILE_REMOVED) ? "-" : "",
+		   rev, timebuf, sticky);
 	}
-	else {
-		snprintf(buf, sizeof(buf), "%s/%s", cvs_root->cr_dir, repo);
+
+	switch (cf->file_status) {
+	case FILE_UNKNOWN:
+		if (cf->fd != -1)
+			cvs_client_send_request("Questionable %s",
+			    cf->file_name);
+		break;
+	case FILE_ADDED:
+	case FILE_MODIFIED:
+		cvs_client_send_request("Modified %s", cf->file_name);
+		cvs_remote_send_file(cf->file_path);
+		break;
+	case FILE_UPTODATE:
+		cvs_client_send_request("Unchanged %s", cf->file_name);
+		break;
+	}
+}
+
+void
+cvs_client_send_files(char **argv, int argc)
+{
+	int i;
+
+	for (i = 0; i < argc; i++)
+		cvs_client_send_request("Argument %s", argv[i]);
+}
+
+void
+cvs_client_ok(char *data)
+{
+	cvs_log(LP_TRACE, "cvs_client_ok()");
+	end_of_response = 1;
+}
+
+void
+cvs_client_error(char *data)
+{
+	cvs_log(LP_TRACE, "cvs_client_error()");
+	end_of_response = 1;
+}
+
+void
+cvs_client_validreq(char *data)
+{
+	int i;
+	char *sp, *ep;
+	struct cvs_req *req;
+
+	sp = data;
+	do {
+		if ((ep = strchr(sp, ' ')) != NULL)
+			*ep = '\0';
+
+		req = cvs_remote_get_request_info(sp);
+		if (req != NULL)
+			req->supported = 1;
+
+		if (ep != NULL)
+			sp = ep + 1;
+	} while (ep != NULL);
+
+	for (i = 0; cvs_requests[i].supported != -1; i++) {
+		req = &cvs_requests[i];
+		if ((req->flags & REQ_NEEDED) &&
+		    req->supported != 1) {
+			fatal("server does not support required '%s'",
+			    req->name);
+		}
+	}
+}
+
+void
+cvs_client_e(char *data)
+{
+	cvs_printf("%s\n", data);
+}
+
+void
+cvs_client_m(char *data)
+{
+	cvs_printf("%s\n", data);
+}
+
+void
+cvs_client_checkedin(char *data)
+{
+	int l;
+	CVSENTRIES *entlist;
+	struct cvs_ent *ent, *newent;
+	char *dir, *entry, rev[16], timebuf[64], sticky[16];
+
+	cvs_log(LP_TRACE, "cvs_client_checkedin(%s)", data);
+
+	dir = cvs_remote_input();
+	entry = cvs_remote_input();
+	xfree(dir);
+
+	entlist = cvs_ent_open(data);
+	newent = cvs_ent_parse(entry);
+	ent = cvs_ent_get(entlist, newent->ce_name);
+	xfree(entry);
+
+	entry = xmalloc(CVS_ENT_MAXLINELEN);
+
+	rcsnum_tostr(newent->ce_rev, rev, sizeof(rev));
+	ctime_r(&ent->ce_mtime, timebuf);
+	if (timebuf[strlen(timebuf) - 1] == '\n')
+		timebuf[strlen(timebuf) - 1] = '\0';
+
+	sticky[0] = '\0';
+	if (ent->ce_tag != NULL) {
+		l = snprintf(sticky, sizeof(sticky), "T%s", ent->ce_tag);
+		if (l == -1 || l >= (int)sizeof(sticky))
+			fatal("cvs_client_checkedin: overflow");
 	}
 
-	if ((cvs_client_sendreq(CVS_REQ_DIRECTORY, dir, 0) < 0) ||
-	    (cvs_client_sendln(buf) < 0))
-		return (-1);
+	l = snprintf(entry, CVS_ENT_MAXLINELEN, "/%s/%s/%s//%s/",
+	    newent->ce_name, rev, timebuf, sticky);
+	if (l == -1 || l >= CVS_ENT_MAXLINELEN)
+		fatal("cvs_client_checkedin: overflow");
 
-	return (0);
+	cvs_ent_free(ent);
+	cvs_ent_free(newent);
+	cvs_ent_add(entlist, entry);
+	cvs_ent_close(entlist, ENT_SYNC);
+
+	xfree(entry);
 }
 
-
-/*
- * cvs_client_sendarg()
- *
- * Send the argument <arg> to the server.  The argument <append> is used to
- * determine if the argument should be simply appended to the last argument
- * sent or if it should be created as a new argument (0).
- */
-
-int
-cvs_client_sendarg(const char *arg, int append)
+void
+cvs_client_updated(char *data)
 {
-	return cvs_client_sendreq(((append == 0) ?
-	    CVS_REQ_ARGUMENT : CVS_REQ_ARGUMENTX), arg, 0);
-}
+	BUF *bp;
+	int l, fd;
+	time_t now;
+	mode_t fmode;
+	size_t flen;
+	CVSENTRIES *ent;
+	struct cvs_ent *e;
+	const char *errstr;
+	struct timeval tv[2];
+	char timebuf[32], *repo, *rpath, *entry, *mode;
+	char revbuf[32], *len, *fpath, *wdir;
 
+	cvs_log(LP_TRACE, "cvs_client_updated(%s)", data);
 
-/*
- * cvs_client_sendentry()
- *
- * Send an `Entry' request to the server along with the mandatory fields from
- * the CVS entry <ent> (which are the name and revision).
- */
+	rpath = cvs_remote_input();
+	entry = cvs_remote_input();
+	mode = cvs_remote_input();
+	len = cvs_remote_input();
 
-int
-cvs_client_sendentry(const struct cvs_ent *ent)
-{
-	char ebuf[128], numbuf[64];
+	repo = xmalloc(MAXPATHLEN);
+	cvs_get_repository_path(".", repo, MAXPATHLEN);
 
-	snprintf(ebuf, sizeof(ebuf), "/%s/%s///", ent->ce_name,
-	    rcsnum_tostr(ent->ce_rev, numbuf, sizeof(numbuf)));
+	if (strlen(repo) + 1 > strlen(rpath))
+		fatal("received a repository path that is too short");
 
-	return cvs_client_sendreq(CVS_REQ_ENTRY, ebuf, 0);
-}
+	fpath = rpath + strlen(repo) + 1;
+	if ((wdir = dirname(fpath)) == NULL)
+		fatal("cvs_client_updated: dirname: %s", strerror(errno));
+	xfree(repo);
 
+	flen = strtonum(len, 0, INT_MAX, &errstr);
+	if (errstr != NULL)
+		fatal("cvs_client_updated: %s: %s", len, errstr);
+	xfree(len);
 
-/*
- * cvs_client_initlog()
- *
- * Initialize protocol logging if the CVS_CLIENT_LOG environment variable is
- * set.  In this case, the variable's value is used as a path to which the
- * appropriate suffix is added (".in" for server input and ".out" for server
- * output.
- * Returns 0 on success, or -1 on failure.
- */
+	cvs_strtomode(mode, &fmode);
+	xfree(mode);
 
-static int
-cvs_client_initlog(void)
-{
-	char *env, fpath[MAXPATHLEN];
+	time(&now);
+	now = cvs_hack_time(now, 0);
+	ctime_r(&now, timebuf);
+	if (timebuf[strlen(timebuf) - 1] == '\n')
+		timebuf[strlen(timebuf) - 1] = '\0';
 
-	env = getenv("CVS_CLIENT_LOG");
-	if (env == NULL)
-		return (0);
+	e = cvs_ent_parse(entry);
+	xfree(entry);
+	rcsnum_tostr(e->ce_rev, revbuf, sizeof(revbuf));
+	entry = xmalloc(CVS_ENT_MAXLINELEN);
+	l = snprintf(entry, CVS_ENT_MAXLINELEN, "/%s/%s/%s//", e->ce_name,
+	    revbuf, timebuf);
+	if (l == -1 || l >= CVS_ENT_MAXLINELEN)
+		fatal("cvs_client_updated: overflow");
 
-	strlcpy(fpath, env, sizeof(fpath));
-	strlcat(fpath, ".in", sizeof(fpath));
-	cvs_server_inlog = fopen(fpath, "w");
-	if (cvs_server_inlog == NULL) {
-		cvs_log(LP_ERRNO, "failed to open server input log `%s'",
+	cvs_ent_free(e);
+	ent = cvs_ent_open(wdir);
+	cvs_ent_add(ent, entry);
+	cvs_ent_close(ent, ENT_SYNC);
+	xfree(entry);
+
+	bp = cvs_remote_receive_file(flen);
+	if ((fd = open(fpath, O_CREAT | O_WRONLY | O_TRUNC)) == -1)
+		fatal("cvs_client_updated: open: %s: %s",
+		    fpath, strerror(errno));
+
+	if (cvs_buf_write_fd(bp, fd) == -1)
+		fatal("cvs_client_updated: cvs_buf_write_fd failed for %s",
 		    fpath);
-		return (-1);
-	}
 
-	strlcpy(fpath, env, sizeof(fpath));
-	strlcat(fpath, ".out", sizeof(fpath));
-	cvs_server_outlog = fopen(fpath, "w");
-	if (cvs_server_outlog == NULL) {
-		cvs_log(LP_ERRNO, "failed to open server output log `%s'",
-		    fpath);
-		return (-1);
-	}
+	cvs_buf_free(bp);
 
-	/* make the streams line-buffered */
-	setvbuf(cvs_server_inlog, NULL, _IOLBF, 0);
-	setvbuf(cvs_server_outlog, NULL, _IOLBF, 0);
+	now = cvs_hack_time(now, 0);
+	tv[0].tv_sec = now;
+	tv[0].tv_usec = 0;
+	tv[1] = tv[0];
 
-	return (0);
+	if (futimes(fd, tv) == -1)
+		fatal("cvs_client_updated: futimes: %s", strerror(errno));
+
+	if (fchmod(fd, fmode) == -1)
+		fatal("cvs_client_updated: fchmod: %s", strerror(errno));
+
+	(void)close(fd);
+
+	xfree(rpath);
+}
+
+void
+cvs_client_merged(char *data)
+{
+	cvs_log(LP_TRACE, "cvs_client_merged(%s)", data);
+}
+
+void
+cvs_client_removed(char *data)
+{
+	cvs_log(LP_TRACE, "cvs_client_removed(%s)", data);
+}
+
+void
+cvs_client_remove_entry(char *data)
+{
+	char *dir;
+
+	cvs_log(LP_TRACE, "cvs_client_remove_entry(%s)", data);
+
+	dir = cvs_remote_input();
+	xfree(dir);
 }

@@ -1,4 +1,4 @@
-/*	$OpenBSD: atomic.S,v 1.1 2004/01/29 16:17:16 drahn Exp $	*/
+/*	$OpenBSD: atomic.S,v 1.1 2004/02/01 05:09:48 drahn Exp $	*/
 /*	$NetBSD: atomic.S,v 1.1 2002/10/19 12:46:57 bsh Exp $	*/
 
 

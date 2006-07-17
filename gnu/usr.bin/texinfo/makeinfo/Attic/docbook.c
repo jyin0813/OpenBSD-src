@@ -1,5 +1,5 @@
 /* docbook.c -- docbook output.
-   $Id: docbook.c,v 1.3 2001/12/31 16:52:17 karl Exp $
+   $Id: docbook.c,v 1.1 2002/06/10 13:21:15 espie Exp $
 
    Copyright (C) 2001 Free Software Foundation, Inc.
 

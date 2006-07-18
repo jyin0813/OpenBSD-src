@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_arc.h,v 1.6 2002/06/09 16:26:10 itojun Exp $	*/
+/*	$OpenBSD: if_arc.h,v 1.7 2003/06/02 23:28:13 millert Exp $	*/
 /*	$NetBSD: if_arc.h,v 1.5 1995/06/07 00:14:04 cgd Exp $	*/
 
 /*

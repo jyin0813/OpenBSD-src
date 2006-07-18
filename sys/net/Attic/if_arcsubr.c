@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_arcsubr.c,v 1.22 2006/03/04 22:40:15 brad Exp $	*/
+/*	$OpenBSD: if_arcsubr.c,v 1.23 2006/06/17 14:14:12 henning Exp $	*/
 /*	$NetBSD: if_arcsubr.c,v 1.8 1996/05/07 02:40:29 thorpej Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uvax.c,v 1.9 2003/06/12 01:07:31 deraadt Exp $ */
+/*	$OpenBSD: uvax.c,v 1.10 2005/11/06 22:21:33 miod Exp $ */
 /*	$NetBSD: uvax.c,v 1.4 1997/02/19 10:04:27 ragge Exp $ */
 /*
  * Copyright (c) 1996 Ludd, University of Lule}, Sweden.

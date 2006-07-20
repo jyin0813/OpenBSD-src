@@ -1,4 +1,4 @@
-/*	$OpenBSD: lk201.c,v 1.5 2002/03/14 03:16:02 millert Exp $	*/
+/*	$OpenBSD: lk201.c,v 1.6 2005/11/21 18:16:37 millert Exp $	*/
 
 /*
  * The LK201 keycode mapping routine is here, along with initialization

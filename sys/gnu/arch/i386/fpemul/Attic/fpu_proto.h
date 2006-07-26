@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fpu_proto.h,v 1.1 1996/08/27 10:32:49 downsj Exp $	*/
 /*
  *
  *    $FreeBSD: fpu_proto.h,v 1.5 1995/12/17 21:13:51 phk Exp $

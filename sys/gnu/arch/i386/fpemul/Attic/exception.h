@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: exception.h,v 1.1 1996/08/27 10:32:43 downsj Exp $	*/
 /*
  *  exception.h
  *

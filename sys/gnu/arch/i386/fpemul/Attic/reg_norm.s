@@ -1,4 +1,4 @@
-/*	$OpenBSD: reg_norm.s,v 1.1 1996/08/27 10:33:00 downsj Exp $	*/
+/*	$OpenBSD: reg_norm.s,v 1.2 2002/10/12 07:12:59 pvalchev Exp $	*/
 /*
  *  reg_norm.s
  *

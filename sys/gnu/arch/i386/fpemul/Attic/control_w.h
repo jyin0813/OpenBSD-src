@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: control_w.h,v 1.1 1996/08/27 10:32:40 downsj Exp $	*/
 /*
  *  control_w.h
  *

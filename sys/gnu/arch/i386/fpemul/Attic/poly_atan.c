@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: poly_atan.c,v 1.1 1996/08/27 10:32:53 downsj Exp $	*/
 /*
  *  p_atan.c
  *

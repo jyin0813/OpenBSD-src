@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: poly_sin.c,v 1.1 1996/08/27 10:32:55 downsj Exp $	*/
 /*
  *  poly_sin.c
  *

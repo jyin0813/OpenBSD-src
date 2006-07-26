@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: reg_constant.h,v 1.1 1996/08/27 10:32:58 downsj Exp $	*/
 /*
  *  reg_constant.h
  *

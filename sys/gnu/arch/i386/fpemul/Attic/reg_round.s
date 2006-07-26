@@ -1,5 +1,5 @@
 	.file "reg_round.S"
-/*	$OpenBSD: reg_round.s,v 1.3 2003/04/17 03:45:30 drahn Exp $	*/
+/*	$OpenBSD: reg_round.s,v 1.4 2004/01/13 18:08:48 espie Exp $	*/
 /*
  *  reg_round.S
  *

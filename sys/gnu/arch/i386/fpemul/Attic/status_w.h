@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: status_w.h,v 1.1 1996/08/27 10:33:03 downsj Exp $	*/
 /*
  *  status_w.h
  *

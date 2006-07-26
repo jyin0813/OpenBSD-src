@@ -1,4 +1,4 @@
-/*	$OpenBSD: poly_mul64.s,v 1.1 1996/08/27 10:32:54 downsj Exp $	*/
+/*	$OpenBSD: poly_mul64.s,v 1.2 2002/10/12 07:12:58 pvalchev Exp $	*/
 /*
  *  poly_mul64.S
  *

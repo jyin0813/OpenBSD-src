@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: reg_add_sub.c,v 1.1 1996/08/27 10:32:56 downsj Exp $	*/
 /*
  *  reg_add_sub.c
  *

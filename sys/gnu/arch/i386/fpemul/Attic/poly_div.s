@@ -1,5 +1,5 @@
 	.file	"poly_div.S"
-/*	$OpenBSD: poly_div.s,v 1.1 1996/08/27 10:32:53 downsj Exp $	*/
+/*	$OpenBSD: poly_div.s,v 1.2 2002/10/12 07:12:58 pvalchev Exp $	*/
 /*
  *  poly_div.S
  *

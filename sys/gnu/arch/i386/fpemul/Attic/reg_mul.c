@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: reg_mul.c,v 1.1 1996/08/27 10:33:00 downsj Exp $	*/
 /*
  *  reg_mul.c
  *

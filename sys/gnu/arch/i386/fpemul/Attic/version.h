@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: version.h,v 1.1 1996/08/27 10:33:03 downsj Exp $	*/
 /*
  *  version.h
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fpu_emu.h,v 1.1 1996/08/27 10:32:46 downsj Exp $	*/
 /*
  *  fpu_emu.h
  *

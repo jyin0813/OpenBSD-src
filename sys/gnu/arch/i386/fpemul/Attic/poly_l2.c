@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: poly_l2.c,v 1.1 1996/08/27 10:32:54 downsj Exp $	*/
 /*
  *  poly_l2.c
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu_system.h,v 1.2 2003/07/30 20:24:03 jason Exp $	*/
+/*	$OpenBSD: fpu_system.h,v 1.3 2003/07/30 21:30:31 jason Exp $	*/
 /*
  *  fpu_system.h
  *

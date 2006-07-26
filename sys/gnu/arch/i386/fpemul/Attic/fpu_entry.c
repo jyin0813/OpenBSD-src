@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu_entry.c,v 1.4 2003/07/30 21:30:31 jason Exp $	*/
+/*	$OpenBSD: fpu_entry.c,v 1.5 2003/07/31 17:41:56 jason Exp $	*/
 /*
  *  fpu_entry.c
  *

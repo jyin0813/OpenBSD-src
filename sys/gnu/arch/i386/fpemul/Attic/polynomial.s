@@ -1,4 +1,4 @@
-/*	$OpenBSD: polynomial.s,v 1.2 2002/10/12 07:12:58 pvalchev Exp $	*/
+/*	$OpenBSD: polynomial.s,v 1.3 2004/01/13 18:08:48 espie Exp $	*/
 /*
  *  polynomial.S
  *

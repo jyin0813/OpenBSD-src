@@ -1,5 +1,5 @@
 	.file	"wm_sqrt.S"
-/*	$OpenBSD: wm_sqrt.s,v 1.3 2002/10/12 07:12:59 pvalchev Exp $	*/
+/*	$OpenBSD: wm_sqrt.s,v 1.4 2004/01/13 18:08:48 espie Exp $	*/
 /*
  *  wm_sqrt.S
  *

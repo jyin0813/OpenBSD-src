@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: math_emu.h,v 1.1 1996/08/27 10:32:52 downsj Exp $	*/
 /*
  *
  *    $FreeBSD: math_emu.h,v 1.2 1994/04/29 21:23:24 gclarkii Exp $

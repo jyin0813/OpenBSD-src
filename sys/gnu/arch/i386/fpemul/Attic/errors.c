@@ -1,4 +1,4 @@
-/*	$OpenBSD: errors.c,v 1.3 2003/07/30 21:30:31 jason Exp $	*/
+/*	$OpenBSD: errors.c,v 1.4 2003/08/08 04:21:44 jason Exp $	*/
 /*
  *  errors.c
  *

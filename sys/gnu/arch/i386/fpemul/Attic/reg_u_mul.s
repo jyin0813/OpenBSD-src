@@ -1,5 +1,5 @@
 	.file	"reg_u_mul.S"
-/*	$OpenBSD: reg_u_mul.s,v 1.2 2002/10/12 07:12:59 pvalchev Exp $	*/
+/*	$OpenBSD: reg_u_mul.s,v 1.3 2004/01/13 18:08:48 espie Exp $	*/
 /*
  *  reg_u_mul.S
  *

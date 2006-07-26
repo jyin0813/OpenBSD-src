@@ -1,5 +1,5 @@
 	.file	"reg_div.S"
-/*	$OpenBSD: reg_div.s,v 1.4 2003/07/03 04:09:07 drahn Exp $	*/
+/*	$OpenBSD: reg_div.s,v 1.5 2004/01/13 18:08:48 espie Exp $	*/
 /*
  *  reg_div.S
  *

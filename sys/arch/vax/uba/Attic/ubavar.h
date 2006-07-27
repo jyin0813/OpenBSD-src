@@ -1,4 +1,4 @@
-/*	$OpenBSD: ubavar.h,v 1.13 2003/06/02 23:27:58 millert Exp $	*/
+/*	$OpenBSD: ubavar.h,v 1.14 2003/11/10 21:05:06 miod Exp $	*/
 /*	$NetBSD: ubavar.h,v 1.21 1999/01/19 21:04:48 ragge Exp $	*/
 
 /*

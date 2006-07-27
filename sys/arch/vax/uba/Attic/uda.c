@@ -1,4 +1,4 @@
-/*	$OpenBSD: uda.c,v 1.11 2003/06/02 23:27:58 millert Exp $	*/
+/*	$OpenBSD: uda.c,v 1.12 2004/12/25 23:02:25 miod Exp $	*/
 /*	$NetBSD: uda.c,v 1.25 1997/07/04 13:26:02 ragge Exp $	*/
 /*
  * Copyright (c) 1996 Ludd, University of Lule}, Sweden.

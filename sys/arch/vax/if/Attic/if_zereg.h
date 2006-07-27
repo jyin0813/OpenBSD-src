@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_zereg.h,v 1.1 2000/04/27 03:14:43 bjc Exp $	*/
+/*	$OpenBSD: if_zereg.h,v 1.2 2003/06/02 23:27:57 millert Exp $	*/
 /*	$NetBSD: if_zereg.h,v 1.1 1998/07/01 10:52:10 ragge Exp $	*/
 /*
  * Copyright (c) 1988 Regents of the University of California.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: boot.c,v 1.1 2006/07/28 17:12:06 kettenis Exp $	*/
 
 /*
  * Copyright (c) 2006 Mark Kettenis

@@ -1,4 +1,4 @@
-/* $OpenBSD: wscons_rinit.c,v 1.9 2002/03/14 01:27:03 millert Exp $ */
+/* $OpenBSD: wscons_rinit.c,v 1.10 2003/06/02 23:28:04 millert Exp $ */
 /* $NetBSD: wscons_rinit.c,v 1.2 1998/05/14 20:49:56 drochner Exp $ */
 
 /*

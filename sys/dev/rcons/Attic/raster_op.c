@@ -1,4 +1,4 @@
-/*	$OpenBSD: raster_op.c,v 1.5 2002/03/14 03:16:07 millert Exp $ */
+/*	$OpenBSD: raster_op.c,v 1.6 2003/06/02 23:28:03 millert Exp $ */
 /*	$NetBSD: raster_op.c,v 1.4 1996/03/14 19:02:30 christos Exp $ */
 
 /*-

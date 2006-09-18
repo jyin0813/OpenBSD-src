@@ -1,4 +1,4 @@
-/*	$OpenBSD: remote-sl.h,v 1.2 1997/08/08 08:26:47 downsj Exp $	*/
+/*	$OpenBSD: remote-sl.h,v 1.3 2003/06/02 23:27:54 millert Exp $	*/
 /*	$NetBSD: remote-sl.h,v 1.2 1994/11/20 20:53:31 deraadt Exp $ */
 
 /*

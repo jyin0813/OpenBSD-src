@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 1996/06/23 14:30:17 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.3 1997/09/21 11:36:23 deraadt Exp $
 
 PROG=	dumplfs
 SRCS=	dumplfs.c lfs_cksum.c misc.c

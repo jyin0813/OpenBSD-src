@@ -1,4 +1,4 @@
-/*	$OpenBSD: bad144.c,v 1.17 2003/06/26 22:11:01 deraadt Exp $	*/
+/*	$OpenBSD: bad144.c,v 1.18 2005/02/17 13:50:41 aaron Exp $	*/
 /*
  * Copyright (c) 1980, 1986, 1988, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -36,7 +36,7 @@ static char copyright[] =
 
 #ifndef lint
 /*static char sccsid[] = "from: @(#)bad144.c	8.1 (Berkeley) 6/6/93";*/
-static char *rcsid = "$Id: bad144.c,v 1.17 2003/06/26 22:11:01 deraadt Exp $";
+static char *rcsid = "$Id: bad144.c,v 1.18 2005/02/17 13:50:41 aaron Exp $";
 #endif /* not lint */
 
 /*

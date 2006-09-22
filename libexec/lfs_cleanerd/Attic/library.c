@@ -1,4 +1,4 @@
-/*	$OpenBSD: library.c,v 1.11 2003/06/11 14:24:46 deraadt Exp $	*/
+/*	$OpenBSD: library.c,v 1.12 2005/11/12 15:49:40 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -31,7 +31,7 @@
 
 #ifndef lint
 /*static char sccsid[] = "@(#)library.c	8.3 (Berkeley) 5/24/95";*/
-static char rcsid[] = "$OpenBSD: library.c,v 1.11 2003/06/11 14:24:46 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: library.c,v 1.12 2005/11/12 15:49:40 deraadt Exp $";
 #endif /* not lint */
 
 #include <sys/param.h>

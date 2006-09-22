@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_df.c,v 1.8 2002/07/04 04:26:39 deraadt Exp $	*/
+/*	$OpenBSD: lfs_df.c,v 1.9 2003/06/02 23:32:07 millert Exp $	*/
 
 /*
  * This file is substantially duplicated from src/sys/ufs/lfs/lfs_vfsops.c:lfs_statfs().

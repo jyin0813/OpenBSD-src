@@ -1,4 +1,4 @@
-/*	$OpenBSD: clean.h,v 1.4 2002/02/17 19:42:26 millert Exp $	*/
+/*	$OpenBSD: clean.h,v 1.5 2003/06/02 19:38:24 millert Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993

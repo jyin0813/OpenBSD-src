@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_inode.c,v 1.11 2005/12/28 20:48:18 pedro Exp $	*/
+/*	$OpenBSD: lfs_inode.c,v 1.12 2006/03/05 21:48:57 miod Exp $	*/
 /*	$NetBSD: lfs_inode.c,v 1.5 1996/05/11 18:27:35 mycroft Exp $	*/
 
 /*

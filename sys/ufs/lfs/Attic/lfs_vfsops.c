@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_vfsops.c,v 1.22 2005/12/28 20:48:18 pedro Exp $	*/
+/*	$OpenBSD: lfs_vfsops.c,v 1.23 2006/03/05 21:48:57 miod Exp $	*/
 /*	$NetBSD: lfs_vfsops.c,v 1.11 1996/03/25 12:53:35 pk Exp $	*/
 
 /*

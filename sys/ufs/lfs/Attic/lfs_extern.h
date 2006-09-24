@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_extern.h,v 1.8 2002/03/14 03:16:13 millert Exp $	*/
+/*	$OpenBSD: lfs_extern.h,v 1.9 2003/06/02 23:28:23 millert Exp $	*/
 /*	$NetBSD: lfs_extern.h,v 1.5 1996/02/12 15:20:12 christos Exp $	*/
 
 /*-

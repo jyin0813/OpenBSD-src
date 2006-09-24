@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_debug.c,v 1.4 1996/07/01 07:41:50 downsj Exp $	*/
+/*	$OpenBSD: lfs_debug.c,v 1.5 2003/06/02 23:28:23 millert Exp $	*/
 /*	$NetBSD: lfs_debug.c,v 1.4 1996/03/17 02:16:28 christos Exp $	*/
 
 /*

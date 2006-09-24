@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_balloc.c,v 1.9 2003/06/02 23:28:23 millert Exp $	*/
+/*	$OpenBSD: lfs_balloc.c,v 1.10 2005/12/28 20:48:18 pedro Exp $	*/
 /*	$NetBSD: lfs_balloc.c,v 1.3 1996/02/09 22:28:48 christos Exp $	*/
 
 /*

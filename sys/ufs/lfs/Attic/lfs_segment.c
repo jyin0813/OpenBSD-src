@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_segment.c,v 1.15 2006/01/20 23:27:26 miod Exp $	*/
+/*	$OpenBSD: lfs_segment.c,v 1.16 2006/03/05 21:48:57 miod Exp $	*/
 /*	$NetBSD: lfs_segment.c,v 1.4 1996/02/09 22:28:54 christos Exp $	*/
 
 /*

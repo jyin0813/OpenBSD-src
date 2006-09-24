@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_alloc.c,v 1.11 2004/06/21 23:50:38 tholo Exp $	*/
+/*	$OpenBSD: lfs_alloc.c,v 1.12 2005/12/28 20:48:18 pedro Exp $	*/
 /*	$NetBSD: lfs_alloc.c,v 1.4 1996/03/25 12:53:37 pk Exp $	*/
 
 /*

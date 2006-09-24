@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_cksum.c,v 1.2 1996/02/27 07:13:22 niklas Exp $	*/
+/*	$OpenBSD: lfs_cksum.c,v 1.3 2003/06/02 23:28:23 millert Exp $	*/
 /*	$NetBSD: lfs_cksum.c,v 1.6 1996/02/16 02:22:05 christos Exp $	*/
 
 /*-

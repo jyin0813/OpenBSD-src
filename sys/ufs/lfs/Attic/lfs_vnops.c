@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_vnops.c,v 1.12 2005/05/28 02:02:50 pedro Exp $	*/
+/*	$OpenBSD: lfs_vnops.c,v 1.13 2005/12/28 20:48:18 pedro Exp $	*/
 /*	$NetBSD: lfs_vnops.c,v 1.11 1996/05/11 18:27:41 mycroft Exp $	*/
 
 /*

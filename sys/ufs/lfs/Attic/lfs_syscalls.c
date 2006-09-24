@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_syscalls.c,v 1.8 2003/06/02 23:28:23 millert Exp $	*/
+/*	$OpenBSD: lfs_syscalls.c,v 1.9 2003/08/15 20:32:20 tedu Exp $	*/
 /*	$NetBSD: lfs_syscalls.c,v 1.10 1996/02/09 22:28:56 christos Exp $	*/
 
 /*-

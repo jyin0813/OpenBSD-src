@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs_subr.c,v 1.3 1996/07/01 07:41:53 downsj Exp $	*/
+/*	$OpenBSD: lfs_subr.c,v 1.4 2003/06/02 23:28:23 millert Exp $	*/
 /*	$NetBSD: lfs_subr.c,v 1.3 1996/02/09 22:28:55 christos Exp $	*/
 
 /*

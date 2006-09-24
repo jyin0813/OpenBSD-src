@@ -1,4 +1,4 @@
-/*	$OpenBSD: lfs.h,v 1.5 1996/10/18 14:46:22 mickey Exp $	*/
+/*	$OpenBSD: lfs.h,v 1.6 2003/06/02 23:28:23 millert Exp $	*/
 /*	$NetBSD: lfs.h,v 1.7 1996/02/09 22:28:45 christos Exp $	*/
 
 /*-

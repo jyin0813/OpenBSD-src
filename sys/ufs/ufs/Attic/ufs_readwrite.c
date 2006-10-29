@@ -1,4 +1,4 @@
-/*	$OpenBSD: ufs_readwrite.c,v 1.28 2005/12/28 20:48:18 pedro Exp $	*/
+/*	$OpenBSD: ufs_readwrite.c,v 1.29 2006/10/16 11:27:53 pedro Exp $	*/
 /*	$NetBSD: ufs_readwrite.c,v 1.9 1996/05/11 18:27:57 mycroft Exp $	*/
 
 /*

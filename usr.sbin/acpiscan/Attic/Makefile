@@ -1,4 +1,4 @@
-# $OpenBSD$
+# $OpenBSD: Makefile,v 1.1 2006/11/03 19:33:56 marco Exp $
 
 .if (${MACHINE} == "i386") || (${MACHINE} == "amd64")
 PROG=	acpiscan

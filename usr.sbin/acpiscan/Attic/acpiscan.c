@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: acpiscan.c,v 1.1 2006/11/03 19:33:56 marco Exp $ */
 /*
  * Copyright (c) 2006 Jordan Hargrave <jordan@openbsd.org>
  *

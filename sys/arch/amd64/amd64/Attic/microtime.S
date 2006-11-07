@@ -1,4 +1,4 @@
-/*	$OpenBSD: microtime.S,v 1.4 2004/06/25 11:03:27 art Exp $	*/
+/*	$OpenBSD: microtime.S,v 1.5 2005/12/13 00:18:19 jsg Exp $	*/
 /*	$NetBSD: microtime.S,v 1.1 2003/04/26 18:39:30 fvdl Exp $	*/
 
 /*-

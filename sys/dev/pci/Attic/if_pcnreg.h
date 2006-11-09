@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: if_pcnreg.h,v 1.1 2005/07/28 01:31:22 brad Exp $	*/
 /*	$NetBSD: if_pcnreg.h,v 1.3 2002/09/04 01:36:07 thorpej Exp $	*/
 
 /*

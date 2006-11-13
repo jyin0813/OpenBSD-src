@@ -1,379 +1,209 @@
-/*	$OpenBSD: admin.c,v 1.33 2006/04/10 08:08:00 xsa Exp $	*/
+/*	$OpenBSD$	*/
 /*
  * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
  * Copyright (c) 2005 Joris Vink <joris@openbsd.org>
- * All rights reserved.
+ * Copyright (c) 2006 Xavier Santolaria <xsa@openbsd.org>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
- * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
- * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
- * THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- * EXEMPLARY, OR CONSEQUENTIAL  DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
- * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
- * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
 #include "includes.h"
 
 #include "cvs.h"
 #include "log.h"
-#include "proto.h"
+#include "remote.h"
 
+#define ADM_EFLAG	0x01
 
-#define LOCK_SET	0x01
-#define LOCK_REMOVE	0x02
-
-#define FLAG_BRANCH		0x01
-#define FLAG_DELUSER		0x02
-#define FLAG_INTERACTIVE	0x04
-#define FLAG_QUIET		0x08
-
-static int	cvs_admin_init(struct cvs_cmd *, int, char **, int *);
-static int	cvs_admin_pre_exec(struct cvsroot *);
-static int	cvs_admin_remote(CVSFILE *, void *);
-static int	cvs_admin_local(CVSFILE *, void *);
+void	cvs_admin_local(struct cvs_file *);
 
 struct cvs_cmd cvs_cmd_admin = {
-	CVS_OP_ADMIN, CVS_REQ_ADMIN, "admin",
+	CVS_OP_ADMIN, 0, "admin",
 	{ "adm", "rcs" },
 	"Administrative front-end for RCS",
-	"",
-	"a:A:b::c:e::Ik:l::Lm:n:N:o:qs:t:u::U",
+	"[-ILqU] [A oldfile] [-a users] [-b branch]\n"
+	"[-c string] [-e [users]] [-k mode] [-l [rev]] [-m rev:msg]\n"
+	"[-N tag[:rev]] [-n tag[:rev]] [-o rev] [-s state[:rev]]"
+	"[-t file | str]\n"
+	"[-u [rev]] file ...",
+	"A:a:b::c:e::Ik:l::Lm:N:n:o:qs:t:Uu::",
 	NULL,
-	CF_SORT | CF_IGNORE | CF_RECURSE,
-	cvs_admin_init,
-	cvs_admin_pre_exec,
-	cvs_admin_remote,
-	cvs_admin_local,
-	NULL,
-	NULL,
-	CVS_CMD_ALLOWSPEC | CVS_CMD_SENDDIR | CVS_CMD_SENDARGS2
+	cvs_admin
 };
 
-static char *q, *Ntag, *ntag, *comment, *replace_msg;
-static char *alist, *subst, *lockrev_arg, *unlockrev_arg;
-static char *state, *userfile, *branch_arg, *elist, *range;
-static int runflags, kflag, lockrev, lkmode;
+static int	 runflags = 0;
+static int	 lkmode = RCS_LOCK_INVAL;
+static char	*comment = NULL;
+static char	*elist = NULL;
 
-/* flag as invalid */
-static int kflag = RCS_KWEXP_ERR;
-static int lkmode = RCS_LOCK_INVAL;
-
-static int
-cvs_admin_init(struct cvs_cmd *cmd, int argc, char **argv, int *arg)
+int
+cvs_admin(int argc, char **argv)
 {
 	int ch;
-	RCSNUM *rcs;
+	int flags;
+	struct cvs_recursion cr;
 
-	runflags = lockrev = 0;
-	Ntag = ntag = comment = replace_msg = NULL;
-	state = alist = subst = elist = lockrev_arg = NULL;
-	range = userfile = branch_arg = unlockrev_arg = NULL;
+	flags = CR_RECURSE_DIRS;
 
-	/* option-o-rama ! */
-	while ((ch = getopt(argc, argv, cmd->cmd_opts)) != -1) {
+	while ((ch = getopt(argc, argv, cvs_cmd_admin.cmd_opts)) != -1) {
 		switch (ch) {
-		case 'a':
-			alist = optarg;
-			break;
 		case 'A':
-			userfile = optarg;
+			break;
+		case 'a':
 			break;
 		case 'b':
-			runflags |= FLAG_BRANCH;
-			if (optarg)
-				branch_arg = optarg;
 			break;
 		case 'c':
 			comment = optarg;
 			break;
 		case 'e':
-			runflags |= FLAG_DELUSER;
-			if (optarg)
-				elist = optarg;
+			elist = optarg;
+			runflags |= ADM_EFLAG;
 			break;
 		case 'I':
-			runflags |= FLAG_INTERACTIVE;
 			break;
 		case 'k':
-			subst = optarg;
-			kflag = rcs_kflag_get(subst);
-			if (RCS_KWEXP_INVAL(kflag)) {
-				cvs_log(LP_ERR,
-				    "invalid RCS keyword expansion mode");
-				rcs_kflag_usage();
-				return (CVS_EX_USAGE);
-			}
-			break;
-		case 'l':
-			lockrev |= LOCK_SET;
-			if (optarg)
-				lockrev_arg = optarg;
 			break;
 		case 'L':
+			if (lkmode == RCS_LOCK_LOOSE) {
+				cvs_log(LP_ERR, "-L and -U are incompatible");
+				fatal("%s", cvs_cmd_admin.cmd_synopsis);
+			}
 			lkmode = RCS_LOCK_STRICT;
 			break;
-		case 'm':
-			replace_msg = optarg;
+		case 'l':
 			break;
-		case 'n':
-			ntag = optarg;
+		case 'm':
 			break;
 		case 'N':
-			Ntag = optarg;
+			break;
+		case 'n':
 			break;
 		case 'o':
-			range = optarg;
 			break;
 		case 'q':
-			runflags |= FLAG_QUIET;
+			verbosity = 0;
 			break;
 		case 's':
-			state = optarg;
 			break;
 		case 't':
 			break;
-		case 'u':
-			lockrev |= LOCK_REMOVE;
-			if (optarg)
-				unlockrev_arg = optarg;
-			break;
 		case 'U':
-			if (lkmode != RCS_LOCK_INVAL) {
-				cvs_log(LP_ERR, "-L and -U are incompatible");
-				return (CVS_EX_USAGE);
+			if (lkmode == RCS_LOCK_STRICT) {
+				cvs_log(LP_ERR, "-U and -L are incompatible");
+				fatal("%s", cvs_cmd_admin.cmd_synopsis);
 			}
 			lkmode = RCS_LOCK_LOOSE;
 			break;
+		case 'u':
+			break;
 		default:
-			return (CVS_EX_USAGE);
+			fatal("%s", cvs_cmd_admin.cmd_synopsis);
 		}
 	}
 
 	argc -= optind;
 	argv += optind;
 
-	if (lockrev_arg != NULL) {
-		if ((rcs = rcsnum_parse(lockrev_arg)) == NULL) {
-			cvs_log(LP_ERR, "%s is not a numeric branch",
-			    lockrev_arg);
-			return (CVS_EX_USAGE);
-		}
-		rcsnum_free(rcs);
+	if (argc <= 1)
+		fatal("%s", cvs_cmd_admin.cmd_synopsis);
+
+	cr.enterdir = NULL;
+	cr.leavedir = NULL;
+
+	if (current_cvsroot->cr_method != CVS_METHOD_LOCAL) {
+		cr.fileproc = cvs_client_sendfile;
+
+		if (comment != NULL)
+			cvs_client_send_request("Argument -c%s", comment);
+
+		if (lkmode == RCS_LOCK_STRICT)
+			cvs_client_send_request("Argument -L");
+		else if (lkmode == RCS_LOCK_LOOSE)
+			cvs_client_send_request("Argument -U");
+
+		if (verbosity == 0)
+			cvs_client_send_request("Argument -q");
+
+	} else {
+		cr.fileproc = cvs_admin_local;
 	}
 
-	if (unlockrev_arg != NULL) {
-		if ((rcs = rcsnum_parse(unlockrev_arg)) == NULL) {
-			cvs_log(LP_ERR, "%s is not a numeric branch",
-			    unlockrev_arg);
-			return (CVS_EX_USAGE);
-		}
-		rcsnum_free(rcs);
-	}
+	cr.flags = flags;
 
-	if (replace_msg != NULL) {
-		if ((q = strchr(replace_msg, ':')) == NULL) {
-			cvs_log(LP_ERR, "invalid option for -m");
-			return (CVS_EX_USAGE);
-		}
-		*q = '\0';
-		if ((rcs = rcsnum_parse(replace_msg)) == NULL) {
-			cvs_log(LP_ERR, "%s is not a numeric revision",
-			    replace_msg);
-			return (CVS_EX_USAGE);
-		}
-		rcsnum_free(rcs);
-		*q = ':';
-	}
+	cvs_file_run(argc, argv, &cr);
 
-	*arg = optind;
-	return (0);
-}
-
-static int
-cvs_admin_pre_exec(struct cvsroot *root)
-{
-	if (root->cr_method == CVS_METHOD_LOCAL)
-		return (0);
-
-	if (alist != NULL) {
-		cvs_sendarg(root, "-a", 0);
-		cvs_sendarg(root, alist, 0);
-	}
-
-	if (userfile != NULL) {
-		cvs_sendarg(root, "-A", 0);
-		cvs_sendarg(root, userfile, 0);
-	}
-
-	if (runflags & FLAG_BRANCH) {
-		cvs_sendarg(root, "-b", 0);
-		if (branch_arg != NULL)
-			cvs_sendarg(root, branch_arg, 0);
-	}
-
-	if (comment != NULL) {
-		cvs_sendarg(root, "-c", 0);
-		cvs_sendarg(root, comment, 0);
-	}
-
-	if (runflags & FLAG_DELUSER)  {
-		cvs_sendarg(root, "-e", 0);
-		if (elist != NULL)
-			cvs_sendarg(root, elist, 0);
-	}
-
-	if (runflags & FLAG_INTERACTIVE)
-		cvs_sendarg(root, "-I", 0);
-
-	if (subst != NULL) {
-		cvs_sendarg(root, "-k", 0);
-		cvs_sendarg(root, subst, 0);
-	}
-
-	if (lockrev & LOCK_SET) {
-		cvs_sendarg(root, "-l", 0);
-		if (lockrev_arg != NULL)
-			cvs_sendarg(root, lockrev_arg, 0);
-	}
-
-	if (lkmode == RCS_LOCK_STRICT)
-		cvs_sendarg(root, "-L", 0);
-	else if (lkmode == RCS_LOCK_LOOSE)
-		cvs_sendarg(root, "-U", 0);
-
-	if (replace_msg != NULL) {
-		cvs_sendarg(root, "-m", 0);
-		cvs_sendarg(root, replace_msg, 0);
-	}
-
-	if (ntag != NULL) {
-		cvs_sendarg(root, "-n", 0);
-		cvs_sendarg(root, ntag, 0);
-	}
-
-	if (Ntag != NULL) {
-		cvs_sendarg(root, "-N", 0);
-		cvs_sendarg(root, Ntag, 0);
-	}
-
-	if (range != NULL) {
-		cvs_sendarg(root, "-o", 0);
-		cvs_sendarg(root, range, 0);
-	}
-
-	if (state != NULL) {
-		cvs_sendarg(root, "-s", 0);
-		cvs_sendarg(root, state, 0);
-	}
-
-	if (lockrev & LOCK_REMOVE) {
-		cvs_sendarg(root, "-u", 0);
-		if (unlockrev_arg != NULL)
-			cvs_sendarg(root, unlockrev_arg, 0);
+	if (current_cvsroot->cr_method != CVS_METHOD_LOCAL) {
+		cvs_client_send_files(argv, argc);
+		cvs_client_senddir(".");
+		cvs_client_send_request("admin");
+		cvs_client_get_responses();
 	}
 
 	return (0);
 }
 
-/*
- * cvs_admin_remote()
- *
- * Perform admin commands on each file.
- */
-static int
-cvs_admin_remote(CVSFILE *cf, void *arg)
+void
+cvs_admin_local(struct cvs_file *cf)
 {
-	char fpath[MAXPATHLEN];
-	struct cvsroot *root;
+	int i;
 
-	root = CVS_DIR_ROOT(cf);
+	cvs_log(LP_TRACE, "cvs_admin_local(%s)", cf->file_path);
 
-	if (cf->cf_type == DT_DIR) {
-		if (cf->cf_cvstat == CVS_FST_UNKNOWN)
-			cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		else
-			cvs_senddir(root, cf);
-		return (0);
-	}
-
-	cvs_file_getpath(cf, fpath, sizeof(fpath));
-	cvs_sendentry(root, cf);
-
-	switch (cf->cf_cvstat) {
-	case CVS_FST_UNKNOWN:
-		cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		break;
-	case CVS_FST_UPTODATE:
-		cvs_sendreq(root, CVS_REQ_UNCHANGED, cf->cf_name);
-		break;
-	case CVS_FST_MODIFIED:
-		cvs_sendreq(root, CVS_REQ_MODIFIED, cf->cf_name);
-		cvs_sendfile(root, fpath);
-		break;
-	default:
-		break;
-	}
-
-	return (0);
-}
-
-/*
- * cvs_admin_local()
- *
- * Perform administrative operations on a local RCS file.
- */
-static int
-cvs_admin_local(CVSFILE *cf, void *arg)
-{
-	char fpath[MAXPATHLEN], rcspath[MAXPATHLEN];
-	RCSFILE *rf;
-
-	if (cf->cf_type == DT_DIR) {
+	if (cf->file_type == CVS_DIR) {
 		if (verbosity > 1)
-			cvs_log(LP_NOTICE, "Administrating %s", cf->cf_name);
-		return (0);
+			cvs_log(LP_NOTICE, "Administrating %s", cf->file_name);
+		return;
 	}
 
-	if (cf->cf_cvstat == CVS_FST_UNKNOWN)
-		return (0);
-	else if (cf->cf_cvstat == CVS_FST_ADDED) {
-		cvs_log(LP_WARN, "cannot admin newly added file `%s'",
-		    cf->cf_name);
-		return (0);
+	if (cf->file_status == FILE_UNKNOWN)
+		return;
+	else if (cf->file_status == FILE_ADDED) {
+		cvs_log(LP_ERR, "cannot admin newly added file `%s'",
+		    cf->file_name);
+		return;
 	}
 
-	cvs_file_getpath(cf, fpath, sizeof(fpath));
-	cvs_rcs_getpath(cf, rcspath, sizeof(rcspath));
+	if (verbosity > 0)
+		cvs_printf("RCS file: %s\n", cf->file_path);
 
-	if ((rf = rcs_open(rcspath, RCS_RDWR)) == NULL)
-		fatal("cvs_admin_local: rcs_open `%s': %s", rcspath,
-		    rcs_errstr(rcs_errno));
+	if (comment != NULL)
+		rcs_comment_set(cf->file_rcs, comment);
 
-	if (!(runflags & FLAG_QUIET))
-		cvs_printf("RCS file: %s\n", rcspath);
+	if (elist != NULL) {
+		struct cvs_argvector *eargv;
 
-	rcs_kwexp_set(rf, kflag);
+		eargv = cvs_strsplit(elist, ",");
+		for (i = 0; eargv->argv[i] != NULL; i++)
+			rcs_access_remove(cf->file_rcs, eargv->argv[i]);
+
+		cvs_argv_destroy(eargv);
+	} else if (runflags & ADM_EFLAG) {
+		struct rcs_access *rap;
+
+		while (!TAILQ_EMPTY(&(cf->file_rcs->rf_access))) {
+			rap = TAILQ_FIRST(&(cf->file_rcs->rf_access));
+			TAILQ_REMOVE(&(cf->file_rcs->rf_access), rap, ra_list);
+			xfree(rap->ra_name);
+			xfree(rap);
+		}
+		/* no synced anymore */
+		cf->file_rcs->rf_flags &= ~RCS_SYNCED;
+	}
 
 	if (lkmode != RCS_LOCK_INVAL)
-		rcs_lock_setmode(rf, lkmode);
+		(void)rcs_lock_setmode(cf->file_rcs, lkmode);
 
-	rcs_close(rf);
-
-	if (!(runflags & FLAG_QUIET))
+	if (verbosity > 0)
 		cvs_printf("done\n");
-
-	return (0);
 }

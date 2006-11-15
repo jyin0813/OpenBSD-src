@@ -1,183 +1,153 @@
-/*	$OpenBSD: annotate.c,v 1.29 2006/01/30 17:58:47 xsa Exp $	*/
+/*	$OpenBSD$	*/
 /*
- * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
- * All rights reserved.
+ * Copyright (c) 2006 Xavier Santolaria <xsa@openbsd.org>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
- * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
- * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
- * THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- * EXEMPLARY, OR CONSEQUENTIAL  DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
- * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
- * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
 #include "includes.h"
 
 #include "cvs.h"
 #include "log.h"
-#include "proto.h"
+#include "remote.h"
 
-static int	cvs_annotate_init(struct cvs_cmd *, int, char **, int *);
-static int	cvs_annotate_remote(CVSFILE *, void *);
-static int	cvs_annotate_local(CVSFILE *, void *);
-static int	cvs_annotate_pre_exec(struct cvsroot *);
+void	cvs_annotate_local(struct cvs_file *);
+
+static int	 force_head = 0;
+static char	*rev = NULL;
 
 struct cvs_cmd cvs_cmd_annotate = {
-	CVS_OP_ANNOTATE, CVS_REQ_ANNOTATE, "annotate",
-	{ "ann", "blame"  },
+	CVS_OP_ANNOTATE, 0, "annotate",
+	{ "ann", "blame" },
 	"Show last revision where each line was modified",
-	"[-flR] [-D date | -r rev] ...",
+	"[-flR] [-D date | -r rev] [file ...]",
 	"D:flRr:",
 	NULL,
-	CF_SORT | CF_RECURSE | CF_IGNORE | CF_NOSYMS,
-	cvs_annotate_init,
-	cvs_annotate_pre_exec,
-	cvs_annotate_remote,
-	cvs_annotate_local,
-	NULL,
-	NULL,
-	CVS_CMD_ALLOWSPEC | CVS_CMD_SENDDIR | CVS_CMD_SENDARGS2
+	cvs_annotate
 };
 
-static char *date, *rev;
-static int usehead;
-
-static int
-cvs_annotate_init(struct cvs_cmd *cmd, int argc, char **argv, int *arg)
+int
+cvs_annotate(int argc, char **argv)
 {
-	int ch;
+	int ch, flags;
+	char *arg = ".";
+	struct cvs_recursion cr;
 
-	usehead = 0;
-	date = NULL;
-	rev = NULL;
+	flags = CR_RECURSE_DIRS;
 
-	while ((ch = getopt(argc, argv, cmd->cmd_opts)) != -1) {
+	while ((ch = getopt(argc, argv, cvs_cmd_annotate.cmd_opts)) != -1) {
 		switch (ch) {
 		case 'D':
-			date = optarg;
 			break;
 		case 'f':
-			usehead = 1;
+			force_head = 1;
 			break;
 		case 'l':
-			cmd->file_flags &= ~CF_RECURSE;
+			flags &= ~CR_RECURSE_DIRS;
 			break;
 		case 'R':
-			cmd->file_flags |= CF_RECURSE;
 			break;
 		case 'r':
 			rev = optarg;
 			break;
 		default:
-			return (CVS_EX_USAGE);
+			fatal("%s", cvs_cmd_annotate.cmd_synopsis);
 		}
 	}
 
-	*arg = optind;
-	return (0);
-}
+	argc -= optind;
+	argv += optind;
 
-static int
-cvs_annotate_pre_exec(struct cvsroot *root)
-{
-	if (root->cr_method != CVS_METHOD_LOCAL) {
-		if (usehead == 1)
-			cvs_sendarg(root, "-f", 0);
+	cr.enterdir = NULL;
+	cr.leavedir = NULL;
 
-		if (rev != NULL) {
-			cvs_sendarg(root, "-r", 0);
-			cvs_sendarg(root, rev, 0);
-		}
+	if (current_cvsroot->cr_method != CVS_METHOD_LOCAL) {
+		cr.fileproc = cvs_client_sendfile;
 
-		if (date != NULL) {
-			cvs_sendarg(root, "-D", 0);
-			cvs_sendarg(root, date, 0);
-		}
+		if (force_head == 1)
+			cvs_client_send_request("Argument -f");
+
+		if (!(flags & CR_RECURSE_DIRS))
+			cvs_client_send_request("Argument -l");
+
+		if (rev != NULL)
+			cvs_client_send_request("Argument -r%s", rev);
+	} else {
+		cr.fileproc = cvs_annotate_local;
 	}
 
-	return (0);
-}
+	cr.flags = flags;
 
-/*
- * cvs_annotate_remote()
- *
- * Annotate a single file.
- */
-static int
-cvs_annotate_remote(CVSFILE *cf, void *arg)
-{
-	char fpath[MAXPATHLEN];
-	struct cvsroot *root;
+	if (argc > 0)
+		cvs_file_run(argc, argv, &cr);
+	else
+		cvs_file_run(1, &arg, &cr);
 
-	root = CVS_DIR_ROOT(cf);
-
-	if (cf->cf_type == DT_DIR) {
-		if (cf->cf_cvstat == CVS_FST_UNKNOWN)
-			cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		else
-			cvs_senddir(root, cf);
-		return (0);
-	}
-
-	cvs_file_getpath(cf, fpath, sizeof(fpath));
-	cvs_sendentry(root, cf);
-
-	switch (cf->cf_cvstat) {
-	case CVS_FST_UNKNOWN:
-		cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		break;
-	case CVS_FST_UPTODATE:
-		cvs_sendreq(root, CVS_REQ_UNCHANGED, cf->cf_name);
-		break;
-	case CVS_FST_ADDED:
-	case CVS_FST_MODIFIED:
-		cvs_sendreq(root, CVS_REQ_ISMODIFIED, cf->cf_name);
-		break;
-	default:
-		break;
+	if (current_cvsroot->cr_method != CVS_METHOD_LOCAL) {
+		cvs_client_send_files(argv, argc);
+		cvs_client_senddir(".");
+		cvs_client_send_request("annotate");
+		cvs_client_get_responses();
 	}
 
 	return (0);
 }
 
-
-static int
-cvs_annotate_local(CVSFILE *cf, void *arg)
+void
+cvs_annotate_local(struct cvs_file *cf)
 {
-	char fpath[MAXPATHLEN], rcspath[MAXPATHLEN];
-	RCSFILE *rf;
+	struct cvs_line *lp;
+	struct cvs_lines *lines;
+	BUF *b;
+	RCSNUM *ann_rev;
+	char *content;
 
-	if (cf->cf_type == DT_DIR)
-		return (0);
+	ann_rev = NULL;
 
-	cvs_file_getpath(cf, fpath, sizeof(fpath));
+	cvs_log(LP_TRACE, "cvs_annotate_local(%s)", cf->file_path);
 
-	if (cf->cf_cvstat == CVS_FST_UNKNOWN)
-		return (0);
+	cvs_file_classify(cf, NULL, 0);
 
-	cvs_rcs_getpath(cf, rcspath, sizeof(rcspath));
+	if (cf->file_status == FILE_UNKNOWN)
+		return;
 
-	if ((rf = rcs_open(rcspath, RCS_READ)) == NULL)
-		fatal("cvs_annotate_local: rcs_open `%s': %s", rcspath,
-		    rcs_errstr(rcs_errno));
-
-	cvs_printf("Annotations for %s", cf->cf_name);
+	cvs_printf("Annotations for %s", cf->file_name);
 	cvs_printf("\n***************\n");
 
-	rcs_close(rf);
+	if (rev != NULL)
+		ann_rev = rcs_translate_tag(rev, cf->file_rcs);
+	else {
+		ann_rev = rcsnum_alloc();
+		rcsnum_cpy(cf->file_rcs->rf_head, ann_rev, 0);
+	}
 
-	return (0);
+	b = rcs_getrev(cf->file_rcs, ann_rev);
+	cvs_buf_putc(b, '\0');
+
+	content = cvs_buf_release(b);
+	if ((lines = cvs_splitlines(content)) == NULL)
+		fatal("cvs_annotate_local: cvs_splitlines failed");
+
+        xfree(content);
+
+	TAILQ_FOREACH(lp, &(lines->l_lines), l_list) {
+		if (lp->l_line == NULL)
+			continue;
+
+		cvs_printf("%s\n", lp->l_line);
+	}
+        cvs_freelines(lines);
+
+	if (ann_rev != NULL)
+		rcsnum_free(ann_rev);
 }

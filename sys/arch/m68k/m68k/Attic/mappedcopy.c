@@ -1,4 +1,4 @@
-/*	$OpenBSD: mappedcopy.c,v 1.10 2003/01/09 22:27:09 miod Exp $	*/
+/*	$OpenBSD: mappedcopy.c,v 1.11 2003/06/02 23:27:48 millert Exp $	*/
 /*	$NetBSD: mappedcopy.c,v 1.1 1997/02/02 06:54:10 thorpej Exp $	*/
 
 /*

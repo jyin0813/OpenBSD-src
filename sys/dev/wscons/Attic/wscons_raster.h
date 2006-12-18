@@ -1,4 +1,4 @@
-/* $OpenBSD: wscons_raster.h,v 1.6 2002/03/14 01:27:03 millert Exp $ */
+/* $OpenBSD: wscons_raster.h,v 1.7 2003/06/02 23:28:04 millert Exp $ */
 /* $NetBSD: wscons_raster.h,v 1.5 1999/02/12 11:25:23 drochner Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: main.c,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
+/*	$OpenBSD: main.c,v 1.2 2005/06/03 22:45:13 deraadt Exp $	*/
 /*
  * Copyright (c) 2005 Thorsten Lockert <tholo@sigmasoft.com>
  *

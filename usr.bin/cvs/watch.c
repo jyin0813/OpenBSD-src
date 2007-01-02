@@ -1,255 +1,92 @@
-/*	$OpenBSD: watch.c,v 1.12 2006/04/14 02:45:35 deraadt Exp $	*/
+/*	$OpenBSD$	*/
 /*
- * Copyright (c) 2005 Xavier Santolaria <xsa@openbsd.org>
- * Copyright (c) 2005 Moritz Jodeit <moritz@openbsd.org>
- * All rights reserved.
+ * Copyright (c) 2005, 2006 Xavier Santolaria <xsa@openbsd.org>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
- * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
- * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
- * THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- * EXEMPLARY, OR CONSEQUENTIAL  DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
- * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
- * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
 #include "includes.h"
 
 #include "cvs.h"
 #include "log.h"
-#include "proto.h"
+#include "remote.h"
 
-static int	cvs_watch_init(struct cvs_cmd *, int, char **, int *);
-static int	cvs_watch_pre_exec(struct cvsroot *);
-static int	cvs_watch_remote(CVSFILE *, void*);
-static int	cvs_watch_local(CVSFILE *, void*);
-
-static int	cvs_watchers_init(struct cvs_cmd *, int, char **, int *);
-static int	cvs_watchers_local(CVSFILE *, void*);
-
-
-struct cvs_cmd cvs_cmd_watch = {
-	CVS_OP_WATCH, CVS_REQ_NOOP, "watch",
-	{},
-	"Set watches",
-	"on | off | add | remove [-lR] [-a action] [file ...]",
-	"a:lR",
-	NULL,
-	CF_SORT | CF_IGNORE | CF_RECURSE,
-	cvs_watch_init,
-	cvs_watch_pre_exec,
-	cvs_watch_remote,
-	cvs_watch_local,
-	NULL,
-	NULL,
-	CVS_CMD_SENDDIR | CVS_CMD_ALLOWSPEC | CVS_CMD_SENDARGS2
-};
+static void	cvs_watchers_local(struct cvs_file *);
 
 struct cvs_cmd cvs_cmd_watchers = {
-	CVS_OP_WATCHERS, CVS_REQ_WATCHERS, "watchers",
-	{},
+	CVS_OP_WATCHERS, 0, "watchers",
+	{ },
 	"See who is watching a file",
 	"[-lR] [file ...]",
 	"lR",
 	NULL,
-	CF_SORT | CF_IGNORE | CF_RECURSE,
-	cvs_watchers_init,
-	NULL,
-	cvs_watch_remote,
-	cvs_watchers_local,
-	NULL,
-	NULL,
-	CVS_CMD_SENDDIR | CVS_CMD_ALLOWSPEC | CVS_CMD_SENDARGS2
+	cvs_watchers
 };
 
-
-static char *aoptstr = NULL;
-static int watchreq = 0;
-
-static int
-cvs_watch_init(struct cvs_cmd *cmd, int argc, char **argv, int *arg)
+int
+cvs_watchers(int argc, char **argv)
 {
 	int ch;
+	int flags;
+	struct cvs_recursion cr;
 
-	if (argc < 2)
-		return (CVS_EX_USAGE);
+	flags = CR_RECURSE_DIRS;
 
-	if (strcmp(argv[1], "on") == 0)
-		watchreq = CVS_REQ_WATCH_ON;
-	else if (strcmp(argv[1], "off") == 0)
-		watchreq = CVS_REQ_WATCH_OFF;
-	else if (strcmp(argv[1], "add") == 0)
-		watchreq = CVS_REQ_WATCH_ADD;
-	else if (strcmp(argv[1], "remove") == 0)
-		watchreq = CVS_REQ_WATCH_REMOVE;
-	else
-		return (CVS_EX_USAGE);
-
-	cmd->cmd_req = watchreq;
-	optind = 2;
-
-	while ((ch = getopt(argc, argv, cmd->cmd_opts)) != -1) {
+	while ((ch = getopt(argc, argv, cvs_cmd_watchers.cmd_opts)) != -1) {
 		switch (ch) {
-		case 'a':
-			/*
-			 * Only `watch add | remove' support the -a option.
-			 * Check which command has been issued.
-			 */
-			if (watchreq != CVS_REQ_WATCH_ADD &&
-			    watchreq != CVS_REQ_WATCH_REMOVE)
-				return (CVS_EX_USAGE);
-			if (strcmp(optarg, "commit") != 0 &&
-			    strcmp(optarg, "edit") != 0 &&
-			    strcmp(optarg, "unedit") != 0 &&
-			    strcmp(optarg, "all") != 0 &&
-			    strcmp(optarg, "none") != 0)
-				return (CVS_EX_USAGE);
-			aoptstr = xstrdup(optarg);
-			break;
 		case 'l':
-			cmd->file_flags &= ~CF_RECURSE;
+			flags &= ~CR_RECURSE_DIRS;
 			break;
 		case 'R':
-			cmd->file_flags |= CF_RECURSE;
 			break;
 		default:
-			return (CVS_EX_USAGE);
+			fatal("%s", cvs_cmd_watchers.cmd_synopsis);
 		}
 	}
 
-	*arg = optind;
-	return (CVS_EX_OK);
-}
+	argc -= optind;
+	argv += optind;
 
+	if (argc == 0)
+		fatal("%s", cvs_cmd_watchers.cmd_synopsis);
 
-/*
- * cvs_watch_pre_exec()
- *
- */
-static int
-cvs_watch_pre_exec(struct cvsroot *root)
-{
-	if (root->cr_method != CVS_METHOD_LOCAL) {
-		if (watchreq != CVS_REQ_WATCH_ADD &&
-		    watchreq != CVS_REQ_WATCH_REMOVE)
-			return (CVS_EX_OK);
+	cr.enterdir = NULL;
+	cr.leavedir = NULL;
 
-		if (aoptstr == NULL || strcmp(aoptstr, "all") == 0) {
-			/* Defaults to: edit, unedit, commit */
-			cvs_sendarg(root, "-a", 0);
-			cvs_sendarg(root, "edit", 0);
-			cvs_sendarg(root, "-a", 0);
-			cvs_sendarg(root, "unedit", 0);
-			cvs_sendarg(root, "-a", 0);
-			cvs_sendarg(root, "commit", 0);
-		} else {
-			cvs_sendarg(root, "-a", 0);
-			cvs_sendarg(root, aoptstr, 0);
-		}
+	if (current_cvsroot->cr_method != CVS_METHOD_LOCAL) {
+		cr.fileproc = cvs_client_sendfile;
+
+		if (!(flags & CR_RECURSE_DIRS))
+			cvs_client_send_request("Argument -l");
+	} else {
+		cr.fileproc = cvs_watchers_local;
 	}
 
-	xfree(aoptstr);
+	cr.flags = flags;
 
-	return (CVS_EX_OK);
-}
+	cvs_file_run(argc, argv, &cr);
 
-
-/*
- * cvs_watch_local()
- *
- */
-static int
-cvs_watch_local(CVSFILE *cf, void *arg)
-{
-	return (CVS_EX_OK);
-}
-
-
-/*
- * cvs_watch_remote()
- *
- */
-static int
-cvs_watch_remote(CVSFILE *cf, void *arg)
-{
-	struct cvsroot *root;
-
-	root = CVS_DIR_ROOT(cf);
-
-	if (cf->cf_type == DT_DIR) {
-		if (cf->cf_cvstat == CVS_FST_UNKNOWN)
-			cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		else
-			cvs_senddir(root, cf);
-		return (0);
-	}
-
-	cvs_sendentry(root, cf);
-
-	switch (cf->cf_cvstat) {
-	case CVS_FST_UNKNOWN:
-		cvs_sendreq(root, CVS_REQ_QUESTIONABLE, cf->cf_name);
-		break;
-	case CVS_FST_UPTODATE:
-		cvs_sendreq(root, CVS_REQ_UNCHANGED, cf->cf_name);
-		break;
-	case CVS_FST_ADDED:
-	case CVS_FST_MODIFIED:
-		cvs_sendreq(root, CVS_REQ_ISMODIFIED, cf->cf_name);
-		break;
-	default:
-		break;
+	if (current_cvsroot->cr_method != CVS_METHOD_LOCAL) {
+		cvs_client_send_files(argv, argc);
+		cvs_client_senddir(".");
+		cvs_client_send_request("watchers");
+		cvs_client_get_responses();
 	}
 
 	return (0);
 }
 
-
-/*
- * cvs_watchers_init()
- *
- */
-static int
-cvs_watchers_init(struct cvs_cmd *cmd, int argc, char **argv, int *arg)
+static void
+cvs_watchers_local(struct cvs_file *cf)
 {
-	int ch;
-
-	while ((ch = getopt(argc, argv, cmd->cmd_opts)) != -1) {
-		switch (ch) {
-		case 'l':
-			cmd->file_flags &= ~CF_RECURSE;
-			break;
-		case 'R':
-			cmd->file_flags |= CF_RECURSE;
-			break;
-		default:
-			return (CVS_EX_USAGE);
-		}
-	}
-
-	*arg = optind;
-	return (CVS_EX_OK);
-}
-
-
-/*
- * cvs_watchers_local()
- *
- */
-static int
-cvs_watchers_local(CVSFILE *cf, void *arg)
-{
-	return (CVS_EX_OK);
 }

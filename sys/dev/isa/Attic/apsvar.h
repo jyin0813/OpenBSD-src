@@ -1,4 +1,4 @@
-/*	$OpenBSD: apsvar.h,v 1.3 2007/01/05 06:00:25 jsg Exp $	*/
+/*	$OpenBSD: apsvar.h,v 1.4 2007/01/05 06:36:37 jsg Exp $	*/
 /*
  * Copyright (c) 2005 Jonathan Gray <jsg@openbsd.org>
  *

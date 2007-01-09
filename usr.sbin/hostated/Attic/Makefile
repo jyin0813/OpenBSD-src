@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2006/12/16 11:45:07 reyk Exp $
+#	$OpenBSD: Makefile,v 1.2 2007/01/08 13:37:26 reyk Exp $
 
 PROG=		hostated
 SRCS=		parse.y log.c control.c buffer.c imsg.c hostated.c 	\

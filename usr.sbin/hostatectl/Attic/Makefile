@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 2006/12/16 11:45:07 reyk Exp $
 
 .PATH:		${.CURDIR}/../hostated
 

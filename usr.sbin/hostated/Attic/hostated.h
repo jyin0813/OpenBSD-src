@@ -1,4 +1,4 @@
-/*	$OpenBSD: hostated.h,v 1.10 2007/01/08 16:52:58 reyk Exp $	*/
+/*	$OpenBSD: hostated.h,v 1.11 2007/01/08 20:46:18 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@spootnik.org>

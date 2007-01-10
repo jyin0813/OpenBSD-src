@@ -1,4 +1,4 @@
-.\"     $OpenBSD: acpibat.4,v 1.2 2006/09/20 08:07:34 jmc Exp $
+.\"     $OpenBSD$
 .\"
 .\" Copyright (c) 2006 Dmitri Alenitchev <dmitri@wave.net.ru>
 .\"
@@ -29,7 +29,10 @@ driver supports the ACPI Control Method Battery interface between the
 battery and the host.
 Information about the battery, such as capacity, recharge rate, voltage,
 and serial number, is available through this driver.
-Battery status is updated every 10 seconds and can be monitored using
+Battery status is updated through an event triggered when a battery
+changes state (such as starting to charge) and, as a failsafe if the
+system does not support passing such events, every 10 seconds.
+Battery status can be monitored using
 .Xr sysctl 8
 or
 .Xr sensorsd 8 .

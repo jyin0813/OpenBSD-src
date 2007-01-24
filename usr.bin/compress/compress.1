@@ -1,4 +1,4 @@
-.\"	$OpenBSD: compress.1,v 1.33 2005/07/22 09:02:42 jmc Exp $
+.\"	$OpenBSD: compress.1,v 1.34 2005/07/22 09:30:51 jmc Exp $
 .\"	$NetBSD: compress.1,v 1.5 1995/03/26 09:44:34 glass Exp $
 .\"
 .\" Copyright (c) 1986, 1990, 1993
@@ -40,16 +40,11 @@
 .Sh NAME
 .Nm compress ,
 .Nm uncompress ,
-.Nm gzip ,
-.Nm gunzip ,
-.Nm zcat ,
-.Nm gzcat
-.Nd compress and expand data
+.Nm zcat
+.Nd compress and expand data (compress mode)
 .Sh SYNOPSIS
 .Nm compress
-.Op Fl LV
-.Nm compress
-.Op Fl 123456789cdfghlNnOqrtv
+.Op Fl 123456789cdfghLlNnOqrtVv
 .Op Fl b Ar bits
 .Op Fl o Ar filename
 .Op Fl S Ar suffix
@@ -58,68 +53,42 @@
 .Op Fl cfhlNnqrtv
 .Op Fl o Ar filename
 .Op Ar
-.Pp
-.Nm gzip
-.Op Fl LV
-.Nm gzip
-.Op Fl 123456789cdfghlNnOqrtv
-.Op Fl b Ar bits
-.Op Fl o Ar filename
-.Op Fl S Ar suffix
-.Op Ar
-.Nm gunzip
-.Op Fl cfhlNnqrtv
-.Op Fl o Ar filename
-.Op Ar
-.Pp
 .Nm zcat
-.Op Fl fghqr
-.Op Ar
-.Nm gzcat
 .Op Fl fghqr
 .Op Ar
 .Sh DESCRIPTION
 The
-.Nm compress
-and
-.Nm gzip
-utilities
-reduce the size of the named files using adaptive Lempel-Ziv coding.
-They are functionally identical, but use different algorithms for compression.
+.Nm
+utility
+reduces the size of the named files using adaptive Lempel-Ziv coding,
+in compress mode.
 If invoked as
-.Nm gzip
-or
 .Nm compress Fl g ,
-the deflate mode of compression is chosen by default;
-otherwise the older method of compression
-.Pq compress mode
-is used.
-.Pp
-Each
-.Ar file
-is renamed to the same name plus the extension
-.Dq .Z ,
-or
-.Dq .gz
-(in deflate mode).
+the deflate mode of compression is chosen;
+see
+.Xr gzip 1
+for more information.
+Each file is renamed to the same name plus the extension
+.Dq .Z .
 As many of the modification time, access time, file flags, file mode,
 user ID, and group ID as allowed by permissions are retained in the
 new file.
-If compression would not reduce the size of a
-.Ar file ,
+If compression would not reduce the size of a file,
 the file is ignored (unless
 .Fl f
 is used).
 .Pp
 The
 .Nm uncompress
-and
-.Nm gunzip
-utilities restore compressed files to their original form, renaming the
+utility restores compressed files to their original form, renaming the
 files by removing the extension (or by using the stored name if the
 .Fl N
 flag is specified).
-When decompressing, the following extensions are recognized:
+It has the ability to restore files compressed by both
+.Nm
+and
+.Xr gzip 1 ,
+recognising the following extensions:
 .Dq .Z ,
 .Dq -Z ,
 .Dq _Z ,
@@ -145,11 +114,6 @@ The
 command is equivalent in functionality to
 .Nm uncompress
 .Fl c .
-The
-.Nm gzcat
-command is equivalent in functionality to
-.Nm gunzip
-.Fl c .
 .Pp
 If renaming the files would cause files to be overwritten and the standard
 input device is a terminal, the user is prompted (on the standard error
@@ -166,7 +130,7 @@ not removed, and the attributes of the input file are not retained.
 The options are as follows:
 .Bl -tag -width Ds
 .It Fl 1...9
-Use deflate scheme with compression factor of
+Use the deflate scheme, with compression factor of
 .Fl 1
 to
 .Fl 9 .
@@ -189,8 +153,6 @@ code limit
 Compressed or uncompressed output is written to the standard output.
 No files are modified (force
 .Nm zcat
-or
-.Nm gzcat
 mode).
 .It Fl d
 Decompress the source files instead of compressing them (force
@@ -208,20 +170,17 @@ and if the option
 is also given, copy the input data without change
 to the standard output: let
 .Nm zcat
-or
-.Nm gzcat
 behave as
 .Xr cat 1 .
 .It Fl g
-Use deflate scheme which reportedly provides better compression rates (force
-.Nm gzip
+Use the deflate scheme, which reportedly provides better compression rates
+(force
+.Xr gzip 1
 mode).
-This flag need not be specified when invoked as
-.Nm gzip
-or
-.Nm gzcat .
 .It Fl h
 Print a short help message.
+.It Fl L
+Print the license.
 .It Fl l
 List information for the specified compressed files.
 The following information is listed:
@@ -257,28 +216,33 @@ is printed instead).
 .It Fl N
 When compressing, save the original file name and time stamp in the
 compressed file.
-This information is saved by default when the deflate scheme is used.
+This information is saved by default when the deflate scheme
+.Pf ( Fl g )
+is used.
 When uncompressing or listing, use the time stamp and file name stored
 in the compressed file, if any, for the uncompressed version.
 .It Fl n
 When compressing, do not save the original file name and time stamp.
-This information is saved by default when the deflate scheme is used.
+This information is saved by default when the deflate scheme
+.Pf ( Fl g )
+is used.
 When uncompressing, do not restore the original file name and time stamp.
 By default, the uncompressed file inherits the time stamp of the
 compressed version and the uncompressed file name is generated from
 the name of the compressed file name as described above.
 .It Fl O
-Use old compression method.
+Use compress mode
+(the default).
 .It Fl o Ar filename
 Set the output file name.
 .It Fl q
-Be quiet, suppress all messages.
+Be quiet: suppress all messages.
 .It Fl r
-Recursive mode,
+Recursive mode:
 .Nm
 will descend into specified directories.
 .It Fl S Ar suffix
-Set suffix for compressed files.
+Set the suffix for compressed files.
 .It Fl t
 Test the integrity of each file leaving any files intact.
 .It Fl V
@@ -289,7 +253,6 @@ and exit.
 Print the percentage reduction of each file and other information.
 .El
 .Pp
-In normal mode,
 .Nm
 uses a modified Lempel-Ziv algorithm
 .Pq LZW .
@@ -318,20 +281,10 @@ This allows the algorithm to adapt to the next
 .Dq block
 of the file.
 .Pp
-.Nm gzip
-uses a slightly different version of the Lempel-Ziv algorithm
-.Pq LZ77 .
-Common substrings are replaced by pointers to previous strings,
-and are found using a hash table.
-Unique substrings are emitted as a string of literal bytes,
-and compressed as Huffman trees.
-.Pp
 The
 .Fl b
 flag is omitted for
 .Nm uncompress
-or
-.Nm gunzip
 since the
 .Ar bits
 parameter specified during compression
@@ -344,22 +297,22 @@ input, the number of
 .Ar bits
 per code, and the distribution of common substrings.
 Typically, text such as source code or English is reduced by 50 \- 60% using
-.Nm
-and by 60 \- 70% using
-.Nm gzip .
+.Nm .
 Compression is generally much better than that achieved by Huffman
 coding (as used in the historical command pack), or adaptive Huffman
 coding (as used in the historical command compact), and takes less
 time to compute.
 .Pp
 The
-.Nm
+.Nm compress ,
+.Nm uncompress ,
 and
-.Nm gzip
+.Nm zcat
 utilities exit with 0 on success; 1 if an error occurred;
 or 2 if a warning occurred.
 .Sh SEE ALSO
 .Xr gzexe 1 ,
+.Xr gzip 1 ,
 .Xr zdiff 1 ,
 .Xr zforce 1 ,
 .Xr zmore 1 ,
@@ -374,41 +327,16 @@ or 2 if a warning occurred.
 .%V 17:6
 .%P pp. 8\-19
 .Re
-.Pp
-.Bl -tag -width 12n -compact
-.It RFC 1950
-ZLIB Compressed Data Format Specification.
-.It RFC 1951
-DEFLATE Compressed Data Format Specification.
-.It RFC 1952
-GZIP File Format Specification.
-.El
 .Sh STANDARDS
 The
 .Nm
 utility is compliant with the
 .St -p1003.2-92
 specification.
-.Pp
-The
-.Nm gzip
-and
-.Nm gunzip
-utilities are extensions.
 .Sh HISTORY
 The
 .Nm
 command appeared in
 .Bx 4.3 .
-The deflate compression support was added in
+Deflate compression support was added in
 .Ox 2.1 .
-Full
-.Nm gzip
-compatibility was added in
-.Ox 3.4 .
-The
-.Sq g
-in this version of
-.Nm gzip
-stands for
-.Dq gratis .

@@ -1,4 +1,4 @@
-/*	$OpenBSD: check_http.c,v 1.10 2007/01/12 16:43:01 pyr Exp $	*/
+/*	$OpenBSD: check_http.c,v 1.11 2007/01/29 14:23:31 pyr Exp $	*/
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@spootnik.org>
  *

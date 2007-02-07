@@ -1,2 +1,9 @@
-/* 	$OpenBSD: atomic.h,v 1.1 2004/12/31 00:04:35 drahn Exp $	*/
+/*	$OpenBSD$	*/
+
+/* Public Domain */
+#ifndef __ZAURUS_ATOMIC_H__
+#define __ZAURUS_ATOMIC_H__
+
 #include <arm/atomic.h>
+
+#endif

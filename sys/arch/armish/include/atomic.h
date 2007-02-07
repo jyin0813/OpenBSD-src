@@ -1,2 +1,9 @@
-/* 	$OpenBSD: atomic.h,v 1.1 2006/05/29 17:13:19 drahn Exp $	*/
+/*	$OpenBSD$	*/
+
+/* Public Domain */
+#ifndef __ARMISH_ATOMIC_H__
+#define __ARMISH_ATOMIC_H__
+
 #include <arm/atomic.h>
+
+#endif

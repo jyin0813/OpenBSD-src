@@ -1,4 +1,4 @@
-/*	$OpenBSD: rcstime.c,v 1.4 2006/04/14 02:49:44 deraadt Exp $	*/
+/*	$OpenBSD: rcstime.c,v 1.6 2006/05/27 03:30:31 joris Exp $	*/
 /*
  * Copyright (c) 2006 Joris Vink <joris@openbsd.org>
  * All rights reserved.

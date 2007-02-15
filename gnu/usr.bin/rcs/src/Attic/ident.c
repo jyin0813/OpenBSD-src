@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: ident.c,v $
+ * Revision 1.1  1996/08/12 04:08:07  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.9  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -103,7 +106,7 @@ static int match P((FILE*));
 static int scanfile P((FILE*,char const*,int));
 static void reportError P((char const*));
 
-mainProg(identId, "ident", "$Id: ident.c,v 5.9 1995/06/16 06:19:24 eggert Exp $")
+mainProg(identId, "ident", "$Id: ident.c,v 1.1 1996/08/12 04:08:07 millert Exp $")
 /*  Ident searches the named files for all occurrences
  *  of the pattern $@: text $ where @ is a keyword.
  */

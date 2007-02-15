@@ -40,6 +40,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcslex.c,v $
+ * Revision 1.1  1996/08/12 04:08:22  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.19  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -169,7 +172,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(lexId, "$Id: rcslex.c,v 5.19 1995/06/16 06:19:24 eggert Exp $")
+libId(lexId, "$Id: rcslex.c,v 1.1 1996/08/12 04:08:22 millert Exp $")
 
 static char *checkidentifier P((char*,int,int));
 static void errsay P((char const*));

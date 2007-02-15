@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsgen.c,v $
+ * Revision 1.1  1996/08/12 04:08:19  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.16  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -141,7 +144,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(genId, "$Id: rcsgen.c,v 5.16 1995/06/16 06:19:24 eggert Exp $")
+libId(genId, "$Id: rcsgen.c,v 1.1 1996/08/12 04:08:19 millert Exp $")
 
 int interactiveflag;  /* Should we act as if stdin is a tty?  */
 struct buf curlogbuf;  /* buffer for current log message */

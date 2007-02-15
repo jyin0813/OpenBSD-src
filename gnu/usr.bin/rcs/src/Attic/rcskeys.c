@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcskeys.c,v $
+ * Revision 1.4  2002/07/03 23:07:32  deraadt
+ * if localid is too long, abort; found by cloder@acm.org
+ *
  * Revision 1.3  1996/08/12 21:05:54  millert
  * slightly less gross fix to avoid a coredump.
  *
@@ -73,7 +76,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(keysId, "$Id: rcskeys.c,v 1.3 1996/08/12 21:05:54 millert Exp $")
+libId(keysId, "$Id: rcskeys.c,v 1.4 2002/07/03 23:07:32 deraadt Exp $")
 
 
 char const *Keyword[] = {

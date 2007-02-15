@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: co.c,v $
+ * Revision 1.1  1996/08/12 04:08:03  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.18  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -192,7 +195,7 @@ static struct hshentries *gendeltas;	/* deltas to be generated	*/
 static struct hshentry *targetdelta;	/* final delta to be generated	*/
 static struct stat workstat;
 
-mainProg(coId, "co", "$Id: co.c,v 5.18 1995/06/16 06:19:24 eggert Exp $")
+mainProg(coId, "co", "$Id: co.c,v 1.1 1996/08/12 04:08:03 millert Exp $")
 {
 	static char const cmdusage[] =
 		"\nco usage: co -{fIlMpqru}[rev] -ddate -jjoins -ksubst -sstate -T -w[who] -Vn -xsuff -zzone file ...";

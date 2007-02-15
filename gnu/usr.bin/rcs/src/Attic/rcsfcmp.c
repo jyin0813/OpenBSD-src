@@ -39,6 +39,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsfcmp.c,v $
+ * Revision 1.1  1996/08/12 04:08:17  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.14  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -119,7 +122,7 @@ Report problems and direct all questions to:
 
 #include  "rcsbase.h"
 
-libId(fcmpId, "$Id: rcsfcmp.c,v 5.14 1995/06/16 06:19:24 eggert Exp $")
+libId(fcmpId, "$Id: rcsfcmp.c,v 1.1 1996/08/12 04:08:17 millert Exp $")
 
 	static int discardkeyval P((int,RILE*));
 	static int

@@ -32,6 +32,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsutil.c,v $
+ * Revision 1.1  1996/08/12 04:08:29  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.20  1995/06/16 06:19:24  eggert
  * (catchsig): Remove `return'.
  * Update FSF address.
@@ -187,7 +190,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(utilId, "$Id: rcsutil.c,v 5.20 1995/06/16 06:19:24 eggert Exp $")
+libId(utilId, "$Id: rcsutil.c,v 1.1 1996/08/12 04:08:29 millert Exp $")
 
 #if !has_memcmp
 	int

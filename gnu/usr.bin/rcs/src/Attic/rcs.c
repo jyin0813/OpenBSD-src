@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcs.c,v $
+ * Revision 1.2  1997/07/29 02:25:20  deraadt
+ * use sendmail -t
+ *
  * Revision 1.1  1996/08/12 04:08:12  millert
  * rcs 5.7 + OpenBSD changes
  *
@@ -279,7 +282,7 @@ static struct delrevpair delrev;
 static struct hshentry *cuthead, *cuttail, *delstrt;
 static struct hshentries *gendeltas;
 
-mainProg(rcsId, "rcs", "$Id: rcs.c,v 1.1 1996/08/12 04:08:12 millert Exp $")
+mainProg(rcsId, "rcs", "$Id: rcs.c,v 1.2 1997/07/29 02:25:20 deraadt Exp $")
 {
 	static char const cmdusage[] =
 		"\nrcs usage: rcs -{ae}logins -Afile -{blu}[rev] -cstring -{iILqTU} -ksubst -mrev:msg -{nN}name[:[rev]] -orange -sstate[:rev] -t[text] -Vn -xsuff -zzone file ...";

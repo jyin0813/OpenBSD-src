@@ -1,6 +1,6 @@
 #! /bin/sh
 # Output RCS compile-time configuration.
-Id='$Id: conf.sh,v 1.1 1996/08/12 04:08:05 millert Exp $'
+Id='$Id: conf.sh,v 1.2 1996/08/16 18:01:24 millert Exp $'
 #	Copyright 1990, 1991, 1992, 1993, 1994, 1995 Paul Eggert
 #	Distributed under license by the Free Software Foundation, Inc.
 

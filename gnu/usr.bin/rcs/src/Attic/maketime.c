@@ -43,7 +43,7 @@ Report problems and direct all questions to:
 #include "maketime.h"
 
 char const maketId[]
-  = "$Id: maketime.c,v 5.11 1995/06/16 06:19:24 eggert Exp $";
+  = "$Id: maketime.c,v 1.1 1996/08/12 04:08:07 millert Exp $";
 
 static int isleap P((int));
 static int month_days P((struct tm const*));

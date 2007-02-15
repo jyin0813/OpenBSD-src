@@ -18,7 +18,7 @@
 .de Id
 .ND \\$4
 ..
-.Id $Id: rcs.ms,v 5.4 1995/06/01 16:23:43 eggert Exp $
+.Id $Id: rcs.ms,v 1.1 1996/08/12 04:07:40 millert Exp $
 .RP
 .TL
 RCS\*-A System for Version Control

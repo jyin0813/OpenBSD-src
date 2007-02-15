@@ -1,6 +1,6 @@
 /* RCS common definitions and data structures */
 
-#define RCSBASE "$Id: rcsbase.h,v 5.20 1995/06/16 06:19:24 eggert Exp $"
+#define RCSBASE "$Id: rcsbase.h,v 1.1 1996/08/12 04:08:13 millert Exp $"
 
 /* Copyright 1982, 1988, 1989 Walter Tichy
    Copyright 1990, 1991, 1992, 1993, 1994, 1995 Paul Eggert
@@ -31,6 +31,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsbase.h,v $
+ * Revision 1.1  1996/08/12 04:08:13  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.20  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *

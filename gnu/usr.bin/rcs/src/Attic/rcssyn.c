@@ -37,6 +37,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcssyn.c,v $
+ * Revision 1.1  1996/08/12 04:08:26  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.15  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -154,7 +157,7 @@ Report problems and direct all questions to:
 
 #include "rcsbase.h"
 
-libId(synId, "$Id: rcssyn.c,v 5.15 1995/06/16 06:19:24 eggert Exp $")
+libId(synId, "$Id: rcssyn.c,v 1.1 1996/08/12 04:08:26 millert Exp $")
 
 static char const *getkeyval P((char const*,enum tokens,int));
 static int getdelta P((void));

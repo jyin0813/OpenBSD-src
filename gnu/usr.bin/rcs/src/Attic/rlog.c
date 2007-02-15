@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rlog.c,v $
+ * Revision 1.1  1996/08/12 04:08:31  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.18  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -219,7 +222,7 @@ static struct rcslockers *lockerlist;
 static struct stateattri *statelist;
 
 
-mainProg(rlogId, "rlog", "$Id: rlog.c,v 5.18 1995/06/16 06:19:24 eggert Exp $")
+mainProg(rlogId, "rlog", "$Id: rlog.c,v 1.1 1996/08/12 04:08:31 millert Exp $")
 {
 	static char const cmdusage[] =
 		"\nrlog usage: rlog -{bhLNRt} -ddates -l[lockers] -r[revs] -sstates -Vn -w[logins] -xsuff -zzone file ...";

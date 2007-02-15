@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcsmerge.c,v $
+ * Revision 1.1  1996/08/12 04:08:24  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.15  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -118,7 +121,7 @@ Report problems and direct all questions to:
 
 static char const co[] = CO;
 
-mainProg(rcsmergeId, "rcsmerge", "$Id: rcsmerge.c,v 5.15 1995/06/16 06:19:24 eggert Exp $")
+mainProg(rcsmergeId, "rcsmerge", "$Id: rcsmerge.c,v 1.1 1996/08/12 04:08:24 millert Exp $")
 {
 	static char const cmdusage[] =
 		"\nrcsmerge usage: rcsmerge -rrev1 [-rrev2] -ksubst -{pq}[rev] -Vn -xsuff -zzone file";

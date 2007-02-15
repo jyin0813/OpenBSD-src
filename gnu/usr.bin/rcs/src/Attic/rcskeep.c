@@ -29,6 +29,9 @@ Report problems and direct all questions to:
 
 /*
  * $Log: rcskeep.c,v $
+ * Revision 1.1  1996/08/12 04:08:20  millert
+ * rcs 5.7 + OpenBSD changes
+ *
  * Revision 5.10  1995/06/16 06:19:24  eggert
  * Update FSF address.
  *
@@ -99,7 +102,7 @@ Report problems and direct all questions to:
 
 #include  "rcsbase.h"
 
-libId(keepId, "$Id: rcskeep.c,v 5.10 1995/06/16 06:19:24 eggert Exp $")
+libId(keepId, "$Id: rcskeep.c,v 1.1 1996/08/12 04:08:20 millert Exp $")
 
 static int badly_terminated P((void));
 static int checknum P((char const*));

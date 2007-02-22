@@ -1,4 +1,4 @@
-/*	$OpenBSD: includes.h,v 1.4 2006/01/06 13:14:24 xsa Exp $	*/
+/*	$OpenBSD: includes.h,v 1.5 2006/05/28 15:45:31 joris Exp $	*/
 /*
  * Copyright (c) 2005 Xavier Santolaria <xsa@openbsd.org>
  * All rights reserved.

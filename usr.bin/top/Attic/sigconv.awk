@@ -30,7 +30,7 @@ BEGIN {
 	j = 0;
 	print "/* This file was automatically generated */"
 	print "/* by the awk script \"sigconv.awk\".      */"
-	print "/* $OpenBSD: sigconv.awk,v 1.4 2003/06/18 08:42:31 deraadt Exp $ */\n"
+	print "/* $OpenBSD: sigconv.awk,v 1.5 2004/05/09 22:14:15 deraadt Exp $ */\n"
 	print "struct sigdesc {"
 	print "	char	*name;"
 	print "	int	number;"

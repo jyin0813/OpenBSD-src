@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: http.c,v 1.1 2007/03/19 15:12:49 millert Exp $	*/
 
 /*
  * Copyright (c) 2002-2006 Niels Provos <provos@citi.umich.edu>

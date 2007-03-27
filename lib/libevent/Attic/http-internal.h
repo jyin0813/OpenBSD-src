@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: http-internal.h,v 1.1 2007/03/19 15:12:49 millert Exp $	*/
 
 /*
  * Copyright 2001 Niels Provos <provos@citi.umich.edu>

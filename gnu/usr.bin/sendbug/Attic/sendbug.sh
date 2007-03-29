@@ -21,7 +21,7 @@
 # along with GNU GNATS; see the file COPYING.  If not, write to
 # the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
 #
-#	$OpenBSD: sendbug.sh,v 1.15 2003/10/01 17:58:17 millert Exp $
+#	$OpenBSD: sendbug.sh,v 1.16 2004/11/29 21:57:45 millert Exp $
 
 # The version of this sendbug.
 VERSION=3.97

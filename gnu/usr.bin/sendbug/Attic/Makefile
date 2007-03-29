@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/06/27 21:09:06 tholo Exp $
+#	$OpenBSD: Makefile,v 1.2 1997/04/27 20:55:57 millert Exp $
 
 MAN=	sendbug.1
 

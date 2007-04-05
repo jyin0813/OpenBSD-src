@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_bcw_cardbus.c,v 1.11 2007/03/04 00:43:25 mglocker Exp $ */
+/*	$OpenBSD: if_bcw_cardbus.c,v 1.12 2007/03/04 11:06:07 mglocker Exp $ */
 
 /*
  * Copyright (c) 2006 Jon Simola <jsimola@gmail.com>

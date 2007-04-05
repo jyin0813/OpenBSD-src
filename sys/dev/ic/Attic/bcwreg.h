@@ -1,4 +1,4 @@
-/*	$OpenBSD: bcwreg.h,v 1.26 2007/03/31 23:50:59 mglocker Exp $ */
+/*	$OpenBSD: bcwreg.h,v 1.27 2007/04/04 19:36:42 mglocker Exp $ */
 
 /*
  * Copyright (c) 2007 Marcus Glocker <mglocker@openbsd.org>

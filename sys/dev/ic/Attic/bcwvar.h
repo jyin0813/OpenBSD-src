@@ -1,4 +1,4 @@
-/*	$OpenBSD: bcwvar.h,v 1.36 2007/04/01 11:58:00 mglocker Exp $ */
+/*	$OpenBSD: bcwvar.h,v 1.37 2007/04/04 19:36:42 mglocker Exp $ */
 
 /*
  * Copyright (c) 2007 Marcus Glocker <mglocker@openbsd.org>

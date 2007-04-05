@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_bcw_pci.c,v 1.15 2007/03/31 09:48:02 mglocker Exp $ */
+/*	$OpenBSD: if_bcw_pci.c,v 1.16 2007/04/01 11:21:40 mglocker Exp $ */
 
 /*
  * Copyright (c) 2006 Jon Simola <jsimola@gmail.com>

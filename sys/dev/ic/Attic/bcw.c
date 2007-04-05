@@ -1,4 +1,4 @@
-/*	$OpenBSD: bcw.c,v 1.87 2007/04/04 19:36:41 mglocker Exp $ */
+/*	$OpenBSD: bcw.c,v 1.88 2007/04/04 20:48:12 mglocker Exp $ */
 
 /*
  * Copyright (c) 2007 Marcus Glocker <mglocker@openbsd.org>

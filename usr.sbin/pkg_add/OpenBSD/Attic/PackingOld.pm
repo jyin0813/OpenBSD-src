@@ -1,5 +1,5 @@
 # ex:ts=8 sw=4:
-# $OpenBSD: PackingOld.pm,v 1.10 2007/05/01 18:20:12 espie Exp $
+# $OpenBSD: PackingOld.pm,v 1.11 2007/05/01 18:22:20 espie Exp $
 #
 # Copyright (c) 2004-2006 Marc Espie <espie@openbsd.org>
 #

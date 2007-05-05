@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: locc.S,v 1.2 1996/09/27 06:47:46 mickey Exp $	*/
 /*	$NetBSD: locc.S,v 1.2 1994/10/26 06:39:10 cgd Exp $	*/
 
 /*

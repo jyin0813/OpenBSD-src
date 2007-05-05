@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: strcat.S,v 1.2 1996/09/27 06:47:49 mickey Exp $	*/
 
 /*
  * Written by J.T. Conklin <jtc@netbsd.org>.

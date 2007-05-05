@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: strcpy.S,v 1.2 1996/09/27 06:47:50 mickey Exp $	*/
 
 /*
  * Written by J.T. Conklin <jtc@netbsd.org>.

@@ -27,7 +27,7 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- *	$Id: pathnames.h,v 1.1 1994/04/27 22:37:13 cgd Exp $
+ *	$Id: pathnames.h,v 1.1 1995/10/18 08:47:29 deraadt Exp $
  */
 
 #define	_MAN_SECTIONS		"12345678"	/* l, n, o, and p, too? */

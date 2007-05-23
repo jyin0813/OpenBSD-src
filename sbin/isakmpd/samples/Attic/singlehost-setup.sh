@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$OpenBSD: singlehost-setup.sh,v 1.4 2002/06/17 12:23:31 ho Exp $
+#	$OpenBSD: singlehost-setup.sh,v 1.5 2003/08/18 09:41:40 markus Exp $
 #	$EOM: singlehost-setup.sh,v 1.3 2000/11/23 12:24:43 niklas Exp $
 
 # A script to test single-host VPNs

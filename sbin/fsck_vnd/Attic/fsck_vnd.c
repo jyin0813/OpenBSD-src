@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: fsck_vnd.c,v 1.1 2007/04/14 11:54:00 grunk Exp $ */
 
 /*
  * Copyright (c) 2007 Alexander von Gernler <grunk@pestilenz.org>

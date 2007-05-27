@@ -1,4 +1,4 @@
-/*	$OpenBSD: vnconfig.c,v 1.26 2007/03/14 17:59:41 grunk Exp $	*/
+/*	$OpenBSD: vnconfig.c,v 1.27 2007/04/10 15:28:55 tedu Exp $	*/
 /*
  * Copyright (c) 1993 University of Utah.
  * Copyright (c) 1990, 1993

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: netbsd_syscalls.c,v 1.27 2006/09/22 15:30:44 pedro Exp $	*/
 
 /*
  * System call names.

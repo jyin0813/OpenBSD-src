@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: if_ubtreg.h,v 1.1 2005/01/14 12:21:02 grange Exp $	*/
 
 /*
  * ng_ubt_var.h
@@ -27,7 +27,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: ng_ubt_var.h,v 1.2 2003/03/22 23:44:36 max Exp $
+ * $Id: if_ubtreg.h,v 1.1 2005/01/14 12:21:02 grange Exp $
  * $FreeBSD: src/sys/netgraph/bluetooth/drivers/ubt/ng_ubt_var.h,v 1.4 2004/10/12 23:33:46 emax Exp $
  */
 

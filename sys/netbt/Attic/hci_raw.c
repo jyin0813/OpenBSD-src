@@ -1,4 +1,4 @@
-/*	$OpenBSD: hci_raw.c,v 1.4 2006/03/04 22:40:16 brad Exp $	*/
+/*	$OpenBSD: hci_raw.c,v 1.5 2007/05/26 17:13:31 jason Exp $	*/
 
 /*
  * ng_btsocket_hci_raw.c

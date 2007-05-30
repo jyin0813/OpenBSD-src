@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_ubt.c,v 1.11 2007/05/27 04:00:24 jsg Exp $	*/
+/*	$OpenBSD: if_ubt.c,v 1.12 2007/05/28 15:48:02 fkr Exp $	*/
 
 /*
  * ng_ubt.c
@@ -27,7 +27,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: if_ubt.c,v 1.11 2007/05/27 04:00:24 jsg Exp $
+ * $Id: if_ubt.c,v 1.12 2007/05/28 15:48:02 fkr Exp $
  * $FreeBSD: src/sys/netgraph/bluetooth/drivers/ubt/ng_ubt.c,v 1.20 2004/10/12 23:33:46 emax Exp $
  */
 

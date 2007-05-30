@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_token.h,v 1.6 2003/11/16 20:30:07 avsm Exp $	*/
+/*	$OpenBSD: if_token.h,v 1.7 2007/05/29 18:21:19 claudio Exp $	*/
 /*	$NetBSD: if_token.h,v 1.6 1999/11/19 20:41:19 thorpej Exp $	*/
 
 /*

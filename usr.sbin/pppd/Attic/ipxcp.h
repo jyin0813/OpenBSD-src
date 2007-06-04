@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipxcp.h,v 1.3 2002/06/11 18:49:18 hin Exp $	*/
+/*	$OpenBSD: ipxcp.h,v 1.4 2002/07/01 19:31:37 deraadt Exp $	*/
 
 /*
  * ipxcp.h - IPX Control Protocol definitions.

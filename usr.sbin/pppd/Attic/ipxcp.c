@@ -1,4 +1,4 @@
-/*	$OpenBSD: ipxcp.c,v 1.10 2002/07/01 19:31:37 deraadt Exp $	*/
+/*	$OpenBSD: ipxcp.c,v 1.11 2003/04/04 20:25:07 deraadt Exp $	*/
 
 /*
  * ipxcp.c - PPP IPX Control Protocol.
@@ -47,7 +47,7 @@
 #if 0
 static char rcsid[] = "Id: ipxcp.c,v 1.6 1998/03/25 03:08:16 paulus Exp $";
 #else
-static char rcsid[] = "$OpenBSD: ipxcp.c,v 1.10 2002/07/01 19:31:37 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: ipxcp.c,v 1.11 2003/04/04 20:25:07 deraadt Exp $";
 #endif
 #endif
 

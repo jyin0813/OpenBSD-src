@@ -1,226 +1,156 @@
-/*	$OpenBSD: history.c,v 1.26 2006/01/23 14:02:42 xsa Exp $	*/
+/*	$OpenBSD$	*/
 /*
- * Copyright (c) 2004 Jean-Francois Brousseau <jfb@openbsd.org>
- * All rights reserved.
+ * Copyright (c) 2007 Joris Vink <joris@openbsd.org>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. The name of the author may not be used to endorse or promote products
- *    derived from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES,
- * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
- * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
- * THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
- * EXEMPLARY, OR CONSEQUENTIAL  DAMAGES (INCLUDING, BUT NOT LIMITED TO,
- * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
- * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
- * WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
- * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
- * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include "includes.h"
+#include <sys/stat.h>
+
+#include <ctype.h>
+#include <errno.h>
+#include <pwd.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 
 #include "cvs.h"
-#include "log.h"
-#include "proto.h"
+#include "remote.h"
 
-#define CVS_HISTORY_MAXMOD	16
+void	cvs_history_local(struct cvs_file *);
 
-/* history flags */
-#define CVS_HF_A	0x01
-#define CVS_HF_C	0x02
-#define CVS_HF_E	0x04
-#define CVS_HF_L	0x08
-#define CVS_HF_M	0x10
-#define CVS_HF_O	0x20
-#define CVS_HF_T	0x40
-#define CVS_HF_W	0x80
-
-#define CVS_HF_EXCL	(CVS_HF_C|CVS_HF_E|CVS_HF_M|CVS_HF_O|CVS_HF_T|CVS_HF_X)
-
-static int	cvs_history_init(struct cvs_cmd *, int, char **, int *);
-#if 0
-static void	cvs_history_print(struct cvs_hent *);
-#endif
-static int	cvs_history_pre_exec(struct cvsroot *);
-
-extern char *__progname;
-
-struct cvs_cmd cvs_cmd_history = {
-	CVS_OP_HISTORY, CVS_REQ_HISTORY, "history",
-	{ "hi", "his" },
-	"Show repository access history",
-	"[-aceloTw] [-b str] [-D date] [-f file] [-m module]\n"
-	"                   [-n module] [-p path] [-r rev] [-t tag]\n"
-	"                   [-u user] [-x ACEFGMORTUW] [-z tz] [file ...]",
-	"ab:cD:ef:lm:n:op:r:Tt:u:wx:z:",
+struct cvs_cmd		cvs_cmd_history = {
+	CVS_OP_HISTORY, 0, "history",
+	{ "hi" },				/* omghi2you */
+	"Display the history of actions done in the base repository",
+	"[-ac]",
+	"ac",
 	NULL,
-	0,
-	cvs_history_init,
-	cvs_history_pre_exec,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	CVS_CMD_SENDDIR
+	cvs_history
 };
 
-static int flags = 0;
-static char *date, *rev, *user, *tag;
-static char *zone = "+0000";
-static u_int nbmod = 0;
-static u_int rep = 0;
-static char *modules[CVS_HISTORY_MAXMOD];
+/* keep in sync with the defines for history stuff in cvs.h */
+const char historytab[] = {
+	'T',
+	'O',
+	'E',
+	'F',
+	'W',
+	'U',
+	'G',
+	'C',
+	'M',
+	'A',
+	'R',
+	NULL
+};
 
-static int
-cvs_history_init(struct cvs_cmd *cmd, int argc, char **argv, int *arg)
+#define HISTORY_ALL_USERS		0x01
+#define HISTORY_DISPLAY_ARCHIVED	0x02
+
+void
+cvs_history_add(int type, struct cvs_file *cf, const char *argument)
 {
-	int ch;
+	FILE *fp;
+	char *cwd;
+	char revbuf[64], repo[MAXPATHLEN], fpath[MAXPATHLEN];
 
-	date = rev = user = tag = NULL;
+	if (cvs_nolog == 1)
+		return;
 
-	while ((ch = getopt(argc, argv, cmd->cmd_opts)) != -1) {
+	if (cvs_cmdop == CVS_OP_CHECKOUT || cvs_cmdop == CVS_OP_EXPORT) {
+		if (type != CVS_HISTORY_CHECKOUT &&
+		    type != CVS_HISTORY_EXPORT)
+			return;
+	}
+
+	cvs_log(LP_TRACE, "cvs_history_add(`%c', `%s', `%s')",
+	    historytab[type], (cf != NULL) ? cf->file_name : "", argument);
+
+	if ((cwd = getcwd(NULL, MAXPATHLEN)) == NULL)
+		fatal("cvs_history_add: getcwd: %s", strerror(errno));
+
+	/* construct repository field */
+	if (cvs_cmdop != CVS_OP_CHECKOUT && cvs_cmdop != CVS_OP_EXPORT) {
+		cvs_get_repository_name(".", repo, sizeof(repo));
+
+		if (strlen(repo) > strlen(cwd))
+			fatal("bad repository `%s'", repo);
+	} else {
+		strlcpy(repo, argument, sizeof(repo));
+	}
+
+	/* construct revision field */
+	revbuf[0] = '\0';
+	if (cvs_cmdop != CVS_OP_CHECKOUT && cvs_cmdop != CVS_OP_EXPORT) {
+		switch (type) {
+		case CVS_HISTORY_TAG:
+			strlcpy(revbuf, argument, sizeof(revbuf));
+			break;
+		case CVS_HISTORY_CHECKOUT:
+		case CVS_HISTORY_EXPORT:
+			/* copy TAG or DATE to revbuf */
+			break;
+		case CVS_HISTORY_UPDATE_MERGED:
+		case CVS_HISTORY_UPDATE_MERGED_ERR:
+		case CVS_HISTORY_COMMIT_MODIFIED:
+		case CVS_HISTORY_COMMIT_ADDED:
+		case CVS_HISTORY_COMMIT_REMOVED:
+		case CVS_HISTORY_UPDATE_CO:
+			rcsnum_tostr(cf->file_rcs->rf_head,
+			    revbuf, sizeof(revbuf));
+			break;
+		}
+	}
+
+	(void)xsnprintf(fpath, sizeof(fpath), "%s/%s",
+	    current_cvsroot->cr_dir, CVS_PATH_HISTORY);
+
+	if ((fp = fopen(fpath, "a")) != NULL) {
+		fprintf(fp, "%c%x|%s|%s|%s|%s|%s\n",
+		    historytab[type], time(NULL), getlogin(), cwd, repo,
+		    revbuf, (cf != NULL) ? cf->file_name : argument);
+
+		(void)fclose(fp);
+	} else {
+		cvs_log(LP_ERR, "failed to add entry to history file");
+	}
+
+	xfree(cwd);
+}
+
+int
+cvs_history(int argc, char **argv)
+{
+	int ch, flags;
+
+	flags = 0;
+
+	while ((ch = getopt(argc, argv, cvs_cmd_history.cmd_opts)) != -1) {
 		switch (ch) {
 		case 'a':
-			flags |= CVS_HF_A;
-			break;
-		case 'b':
+			flags |= HISTORY_ALL_USERS;
 			break;
 		case 'c':
-			rep++;
-			flags |= CVS_HF_C;
-			break;
-		case 'D':
-			break;
-		case 'e':
-			rep++;
-			flags |= CVS_HF_E;
-			break;
-		case 'f':
-			break;
-		case 'l':
-			flags |= CVS_HF_L;
-			break;
-		case 'm':
-			rep++;
-			flags |= CVS_HF_M;
-			if (nbmod == CVS_HISTORY_MAXMOD) {
-				cvs_log(LP_ERR, "too many `-m' options");
-				return (CVS_EX_USAGE);
-			}
-			modules[nbmod++] = optarg;
-			break;
-		case 'n':
-			break;
-		case 'o':
-			rep++;
-			flags |= CVS_HF_O;
-			break;
-		case 'r':
-			rev = optarg;
-			break;
-		case 'T':
-			rep++;
-			flags |= CVS_HF_T;
-			break;
-		case 't':
-			tag = optarg;
-			break;
-		case 'u':
-			user = optarg;
-			break;
-		case 'w':
-			flags |= CVS_HF_W;
-			break;
-		case 'x':
-			rep++;
-			break;
-		case 'z':
-			zone = optarg;
+			flags |= HISTORY_DISPLAY_ARCHIVED;
 			break;
 		default:
-			return (CVS_EX_USAGE);
+			fatal("%s", cvs_cmd_history.cmd_synopsis);
 		}
 	}
 
-	if (rep > 1) {
-		cvs_log(LP_ERR,
-		    "Only one report type allowed from: \"-Tcomxe\"");
-		return (CVS_EX_USAGE);
-	} else if (rep == 0)
-		flags |= CVS_HF_O;    /* use -o as default */
-
-	*arg = optind;
-	return (0);
-}
-
-static int
-cvs_history_pre_exec(struct cvsroot *root)
-{
-	if (root->cr_method != CVS_METHOD_LOCAL) {
-		if (flags & CVS_HF_A)
-			cvs_sendarg(root, "-a", 0);
-
-		if (flags & CVS_HF_C)
-			cvs_sendarg(root, "-c", 0);
-
-		if (flags & CVS_HF_O)
-			cvs_sendarg(root, "-o", 0);
-
-		if (date != NULL) {
-			cvs_sendarg(root, "-D", 0);
-			cvs_sendarg(root, date, 0);
-		}
-
-		if (rev != NULL) {
-			cvs_sendarg(root, "-r", 0);
-			cvs_sendarg(root, rev, 0);
-		}
-
-		if (tag != NULL) {
-			cvs_sendarg(root, "-t", 0);
-			cvs_sendarg(root, tag, 0);
-		}
-
-		/* if no user is specified, get login name of command issuer */
-		if (!(flags & CVS_HF_A) && (user == NULL)) {
-			if ((user = getlogin()) == NULL)
-				fatal("cannot get login name");
-		}
-
-		if (!(flags & CVS_HF_A)) {
-			cvs_sendarg(root, "-u", 0);
-			cvs_sendarg(root, user, 0);
-		}
-
-		cvs_sendarg(root, "-z", 0);
-		cvs_sendarg(root, zone, 0);
-	}
+	argc -= optind;
+	argv += optind;
 
 	return (0);
 }
-
-
-#if 0
-static void
-cvs_history_print(struct cvs_hent *hent)
-{
-	struct tm etime;
-
-	if (localtime_r(&(hent->ch_date), &etime) == NULL) {
-		cvs_log(LP_ERR, "failed to convert timestamp to structure");
-		return;
-	}
-
-	printf("%c %4d-%02d-%02d %02d:%02d +%04d %-16s %-16s\n",
-	    hent->ch_event, etime.tm_year + 1900, etime.tm_mon + 1,
-	    etime.tm_mday, etime.tm_hour, etime.tm_min,
-	    0, hent->ch_user, hent->ch_repo);
-}
-#endif

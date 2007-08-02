@@ -1,4 +1,4 @@
-dnl	$OpenBSD: install,v 1.6 2004/03/16 08:24:59 jmc Exp $
+dnl	$OpenBSD: install,v 1.7 2007/03/01 19:24:45 miod Exp $
 OpenBSDInstallPrelude
 
 There are several ways to install OpenBSD onto a disk.  The easiest way

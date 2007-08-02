@@ -1,3 +1,3 @@
-/*	$OpenBSD: disklabel.h,v 1.1 2004/02/01 05:12:54 drahn Exp $	*/
+/*	$OpenBSD: disklabel.h,v 1.2 2007/06/17 00:27:27 deraadt Exp $	*/
 
 #include <arm/disklabel.h>

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.4 2004/02/09 02:28:23 drahn Exp $
+#	$OpenBSD: Makefile.inc,v 1.5 2006/07/27 02:53:55 deraadt Exp $
 
 .ifdef DESTDIR
 snap_md: bsd bootblocks distrib

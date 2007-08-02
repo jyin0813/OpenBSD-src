@@ -1,4 +1,4 @@
-/*	$OpenBSD: footbridge_com_io.c,v 1.1 2004/02/01 05:09:49 drahn Exp $	*/
+/*	$OpenBSD: footbridge_com_io.c,v 1.2 2007/05/25 16:45:59 krw Exp $	*/
 /*	$NetBSD: footbridge_com_io.c,v 1.4 2002/09/27 15:35:44 provos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mutex.c,v 1.1 2007/05/01 18:59:40 miod Exp $	*/
+/*	$OpenBSD: footbridge_mutex.c,v 1.1 2007/05/15 05:26:44 miod Exp $	*/
 
 /*
  * Copyright (c) 2004 Artur Grabowski <art@openbsd.org>

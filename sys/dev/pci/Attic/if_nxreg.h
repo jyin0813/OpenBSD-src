@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_nxreg.h,v 1.27 2007/05/26 18:11:42 reyk Exp $	*/
+/*	$OpenBSD: if_nxreg.h,v 1.28 2007/05/28 19:44:15 reyk Exp $	*/
 
 /*
  * Copyright (c) 2007 Reyk Floeter <reyk@openbsd.org>

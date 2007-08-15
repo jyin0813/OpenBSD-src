@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_nx.c,v 1.49 2007/05/26 18:56:23 reyk Exp $	*/
+/*	$OpenBSD: if_nx.c,v 1.50 2007/05/28 19:44:15 reyk Exp $	*/
 
 /*
  * Copyright (c) 2007 Reyk Floeter <reyk@openbsd.org>

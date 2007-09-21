@@ -1,4 +1,4 @@
-/* $OpenBSD: auth-skey.c,v 1.26 2006/08/05 08:28:24 dtucker Exp $ */
+/* $OpenBSD: auth-skey.c,v 1.27 2007/01/21 01:41:54 stevesk Exp $ */
 /*
  * Copyright (c) 2001 Markus Friedl.  All rights reserved.
  *

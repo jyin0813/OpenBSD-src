@@ -1,4 +1,4 @@
-/*	$OpenBSD: version.c,v 1.5 2003/06/12 22:30:23 pvalchev Exp $	*/
+/*	$OpenBSD: version.c,v 1.6 2003/06/12 23:09:30 deraadt Exp $	*/
 
 /*
  *  Top users/processes display for Unix

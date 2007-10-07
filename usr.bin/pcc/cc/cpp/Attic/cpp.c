@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpp.c,v 1.9 2007/09/24 16:04:01 otto Exp $	*/
+/*	$OpenBSD: cpp.c,v 1.10 2007/09/26 12:46:47 otto Exp $	*/
 
 /*
  * Copyright (c) 2004 Anders Magnusson (ragge@ludd.luth.se).

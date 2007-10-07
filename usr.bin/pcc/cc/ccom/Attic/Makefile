@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.8 2007/09/19 13:35:53 otto Exp $
+#	$OpenBSD: Makefile,v 1.9 2007/09/19 15:21:07 todd Exp $
 #
 # Makefile for the ccom part of pcc.
 #

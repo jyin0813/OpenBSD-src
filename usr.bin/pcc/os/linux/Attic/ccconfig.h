@@ -1,4 +1,4 @@
-/*	$OpenBSD: ccconfig.h,v 1.2 2007/09/15 22:04:39 ray Exp $	*/
+/*	$OpenBSD: ccconfig.h,v 1.3 2007/09/19 15:21:07 todd Exp $	*/
 
 /*
  * Copyright (c) 2004 Anders Magnusson (ragge@ludd.luth.se).

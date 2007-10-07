@@ -1,4 +1,4 @@
-/*	$OpenBSD: table.c,v 1.96 2007/09/20 14:52:13 ragge Exp $	*/
+/*	$OpenBSD: table.c,v 1.3 2007/09/20 19:29:29 otto Exp $	*/
 /*
  * Copyright (c) 2003 Anders Magnusson (ragge@ludd.luth.se).
  * All rights reserved.

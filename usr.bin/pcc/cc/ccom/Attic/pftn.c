@@ -1,4 +1,4 @@
-/*	$OpenBSD: pftn.c,v 1.5 2007/09/29 13:57:14 otto Exp $	*/
+/*	$OpenBSD: pftn.c,v 1.6 2007/10/01 18:51:57 otto Exp $	*/
 /*
  * Copyright (c) 2003 Anders Magnusson (ragge@ludd.luth.se).
  * All rights reserved.

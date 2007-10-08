@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.18 2006/03/14 03:57:42 ray Exp $
+#	$OpenBSD: Makefile,v 1.1 2007/10/05 16:49:37 otto Exp $
 
 SUBDIR=	cpp ccom
 

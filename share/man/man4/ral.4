@@ -1,4 +1,4 @@
-.\" $OpenBSD: ral.4,v 1.72 2007/08/29 20:09:30 damien Exp $
+.\" $OpenBSD: ral.4,v 1.73 2007/11/17 12:01:46 damien Exp $
 .\"
 .\" Copyright (c) 2005-2007
 .\"	Damien Bergamini <damien.bergamini@free.fr>
@@ -15,30 +15,24 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: August 29 2007 $
+.Dd $Mdocdate: November 17 2007 $
 .Os
 .Dt RAL 4
 .Sh NAME
-.Nm ral ,
-.Nm ural
+.Nm ral
 .Nd Ralink Technology IEEE 802.11a/b/g/Draft-N wireless network device
 .Sh SYNOPSIS
 .Cd "ral* at cardbus?"
 .Cd "ral* at pci?"
-.Cd "ural* at uhub? port ?"
 .Sh DESCRIPTION
 The
 .Nm
 driver supports PCI/PCIe/CardBus wireless adapters based on the Ralink RT2500,
 RT2501, RT2600 and RT2800 chipsets.
-The
-.Nm ural
-driver supports USB 2.0 wireless adapters based on the Ralink RT2500USB
-chipset.
 .Pp
 The RT2500 chipset is the first generation of 802.11b/g adapters from Ralink.
-It consists of two integrated chips, an RT2560 or RT2570(USB) MAC/BBP
-and an RT2525 or RT2526(USB) radio transceiver.
+It consists of two integrated chips, an RT2560 MAC/BBP and an RT2525 radio
+transceiver.
 .Pp
 The RT2501 chipset is the second generation of 802.11a/b/g adapters from
 Ralink.
@@ -380,45 +374,6 @@ MSI MS-6833.
 Tonze PC-620C.
 Zinwell ZWX-G360.
 .Ed
-.Pp
-The following USB 2.0 adapters should work:
-.Bd -filled
-AMIT WL532U.
-ASUS WL-167g v1.
-Belkin F5D7050 v2000.
-Buffalo WLI-U2-KG54.
-Buffalo WLI-U2-KG54-AI.
-Buffalo WLI-U2-KG54-YB.
-CNet CWD-854.
-Compex WLU54G 2A1100.
-Conceptronic C54RU.
-D-Link DWL-G122 (b1).
-Dynalink WLG25USB.
-E-Tech WGUS02.
-Eminent EM3035.
-Gigabyte GN-WBKG.
-Hercules HWGUSB2-54.
-KCORP LifeStyle KLS-685.
-Linksys HU200-TS.
-Linksys WUSB54G v4.
-Linksys WUSB54GP v4.
-MSI MS-6861.
-MSI MS-6865.
-MSI MS-6869.
-Nintendo Wi-Fi USB Connector.
-Nova Tech NV-902W.
-OvisLink Evo-W54USB.
-SerComm UB801R.
-SparkLAN WL-685R.
-Sphairon UB801R.
-Surecom EP-9001-g rev 3A.
-Sweex LC100060.
-Tonze UW-6200C.
-Zaapa ZNWUSB-54.
-Zinwell ZPlus-G250.
-Zinwell ZWX-G261.
-Zonet ZEW2500P.
-.Ed
 .Sh EXAMPLES
 The following
 .Xr hostname.if 5
@@ -478,7 +433,6 @@ This should not happen.
 .Xr intro 4 ,
 .Xr netintro 4 ,
 .Xr pci 4 ,
-.Xr usb 4 ,
 .Xr hostname.if 5 ,
 .Xr hostapd 8 ,
 .Xr ifconfig 8
@@ -514,10 +468,3 @@ adapters seem to strictly require a system supporting PCI 2.2 or greater and
 will likely not work in systems based on older revisions of the PCI
 specification.
 Check the board's PCI version before purchasing the card.
-.Pp
-The
-.Nm ural
-driver supports automatic control of the transmit speed in BSS mode only.
-Therefore the use of a
-.Nm ural
-adapter in Host AP mode is discouraged.

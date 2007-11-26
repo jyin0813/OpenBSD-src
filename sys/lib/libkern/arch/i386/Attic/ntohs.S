@@ -1,4 +1,4 @@
-/*	$OpenBSD: ntohs.S,v 1.2 1996/09/27 06:47:47 mickey Exp $	*/
+/*	$OpenBSD: ntohs.S,v 1.3 2003/06/02 23:28:08 millert Exp $	*/
 
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
@@ -32,7 +32,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)ntohs.s	5.2 (Berkeley) 12/17/90
- *	$Id: ntohs.S,v 1.2 1996/09/27 06:47:47 mickey Exp $
+ *	$Id: ntohs.S,v 1.3 2003/06/02 23:28:08 millert Exp $
  */
 
 #include <machine/asm.h>

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2006/12/16 11:45:07 reyk Exp $
+#	$OpenBSD: Makefile,v 1.2 2007/01/09 00:45:32 deraadt Exp $
 
 .PATH:		${.CURDIR}/../hoststated
 

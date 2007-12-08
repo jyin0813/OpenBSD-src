@@ -1,4 +1,4 @@
-/*	$OpenBSD: hce.c,v 1.35 2007/11/21 09:54:39 pyr Exp $	*/
+/*	$OpenBSD: hce.c,v 1.36 2007/11/24 17:07:28 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@openbsd.org>

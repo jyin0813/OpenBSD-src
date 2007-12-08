@@ -1,4 +1,4 @@
-/*	$OpenBSD: hoststated.h,v 1.85 2007/11/24 16:13:50 reyk Exp $	*/
+/*	$OpenBSD: hoststated.h,v 1.86 2007/11/26 09:38:25 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006, 2007 Pierre-Yves Ritschard <pyr@openbsd.org>

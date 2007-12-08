@@ -1,4 +1,4 @@
-/*	$OpenBSD: pfe.c,v 1.42 2007/11/19 15:31:36 reyk Exp $	*/
+/*	$OpenBSD: pfe.c,v 1.43 2007/11/24 17:07:28 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@openbsd.org>

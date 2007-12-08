@@ -1,4 +1,4 @@
-/*	$OpenBSD: hoststatectl.c,v 1.26 2007/11/23 09:39:42 reyk Exp $	*/
+/*	$OpenBSD: hoststatectl.c,v 1.27 2007/11/24 17:09:12 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@openbsd.org>

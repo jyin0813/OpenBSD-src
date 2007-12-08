@@ -1,4 +1,4 @@
-/*	$OpenBSD: check_script.c,v 1.3 2007/10/13 17:50:05 deraadt Exp $	*/
+/*	$OpenBSD: check_script.c,v 1.4 2007/11/24 17:07:28 reyk Exp $	*/
 
 /*
  * Copyright (c) 2007 Reyk Floeter <reyk@openbsd.org>

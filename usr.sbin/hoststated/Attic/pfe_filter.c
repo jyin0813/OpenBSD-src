@@ -1,4 +1,4 @@
-/*	$OpenBSD: pfe_filter.c,v 1.18 2007/09/28 13:29:56 pyr Exp $	*/
+/*	$OpenBSD: pfe_filter.c,v 1.19 2007/11/24 17:07:28 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@openbsd.org>

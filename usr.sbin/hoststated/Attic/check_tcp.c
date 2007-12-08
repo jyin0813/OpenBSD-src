@@ -1,4 +1,4 @@
-/*	$OpenBSD: check_tcp.c,v 1.29 2007/11/21 20:13:20 reyk Exp $	*/
+/*	$OpenBSD: check_tcp.c,v 1.30 2007/11/24 17:07:28 reyk Exp $	*/
 
 /*
  * Copyright (c) 2006 Pierre-Yves Ritschard <pyr@openbsd.org>

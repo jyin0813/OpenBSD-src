@@ -1,4 +1,4 @@
-/*	$OpenBSD: m88110_fp.S,v 1.4 2007/12/08 18:39:50 miod Exp $	*/
+/*	$OpenBSD: m88110_fp.S,v 1.5 2007/12/21 23:56:54 miod Exp $	*/
 
 /*
  * Copyright (c) 2007, Miodrag Vallat.

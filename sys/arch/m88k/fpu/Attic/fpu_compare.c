@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu_compare.c,v 1.2 2007/12/25 15:47:16 miod Exp $	*/
+/*	$OpenBSD: fpu_compare.c,v 1.3 2007/12/26 18:27:43 miod Exp $	*/
 
 /*
  * Copyright (c) 2007 Miodrag Vallat.

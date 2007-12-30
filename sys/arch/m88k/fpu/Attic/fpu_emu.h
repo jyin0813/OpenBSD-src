@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu_emu.h,v 1.3 2003/06/02 23:27:54 millert Exp $	*/
+/*	$OpenBSD: fpu_emu.h,v 1.1 2007/12/25 00:29:49 miod Exp $	*/
 
 /*
  * Copyright (c) 2007 Miodrag Vallat.

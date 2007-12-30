@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu_implode.c,v 1.2 2007/12/25 15:47:16 miod Exp $	*/
+/*	$OpenBSD: fpu_implode.c,v 1.3 2007/12/26 18:29:33 miod Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

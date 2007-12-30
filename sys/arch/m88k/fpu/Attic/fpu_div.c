@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpu_div.c,v 1.1 2007/12/25 00:29:49 miod Exp $	*/
+/*	$OpenBSD: fpu_div.c,v 1.2 2007/12/25 15:45:48 miod Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

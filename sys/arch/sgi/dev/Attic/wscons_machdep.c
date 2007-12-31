@@ -1,4 +1,4 @@
-/*	$OpenBSD: wscons_machdep.c,v 1.5 2007/11/13 12:01:45 jsing Exp $ */
+/*	$OpenBSD: wscons_machdep.c,v 1.6 2007/12/14 16:16:28 jsing Exp $ */
 
 /*
  * Copyright (c) 2001 Aaron Campbell

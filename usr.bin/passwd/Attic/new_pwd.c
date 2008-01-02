@@ -1,4 +1,4 @@
-/* $OpenBSD: new_pwd.c,v 1.6 2005/05/01 02:56:28 deraadt Exp $ */
+/* $OpenBSD: new_pwd.c,v 1.7 2007/03/20 03:50:39 tedu Exp $ */
 /* $KTH: new_pwd.c,v 1.11 1997/05/02 14:28:54 assar Exp $ */
 
 /*

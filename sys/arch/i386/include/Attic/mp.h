@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: mp.h,v 1.2 2004/06/13 21:49:16 niklas Exp $	*/
 
 /*-
  * Copyright (c) 1996 SigmaSoft, Th. Lockert <tholo@sigmasoft.com>

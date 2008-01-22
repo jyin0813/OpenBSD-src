@@ -1,4 +1,4 @@
-# $OpenBSD: README,v 1.5 2008/01/09 12:16:58 reyk Exp $
+# $OpenBSD: README,v 1.6 2008/01/21 23:33:39 reyk Exp $
 
 SNMP daemon
 -----------

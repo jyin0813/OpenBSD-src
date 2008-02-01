@@ -1,4 +1,4 @@
-# $OpenBSD: ackpri,v 1.2 2003/03/10 14:24:33 henning Exp $
+# $OpenBSD: ackpri,v 1.3 2006/10/07 04:48:01 mcbride Exp $
 
 # Use a simple priority queue to prioritize empty (no payload) TCP ACKs,
 # which dramatically improves throughput on (asymmetric) links when the

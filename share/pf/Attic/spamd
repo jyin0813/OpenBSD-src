@@ -1,4 +1,4 @@
-# $OpenBSD: spamd,v 1.1 2003/08/22 15:25:01 henning Exp $
+# $OpenBSD: spamd,v 1.2 2005/08/06 19:52:37 jmc Exp $
 
 # spamd-setup puts addresses to be redirected into table <spamd>.
 

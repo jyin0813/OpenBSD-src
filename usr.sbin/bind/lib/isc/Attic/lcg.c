@@ -16,7 +16,7 @@
  * WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/* $OpenBSD: lcg.c,v 1.6 2002/12/20 00:23:15 jakob Exp $ */
+/* $OpenBSD: lcg.c,v 1.2 2004/09/28 17:14:07 jakob Exp $ */
 
 #include <config.h>
 

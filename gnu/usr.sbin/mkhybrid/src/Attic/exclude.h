@@ -3,7 +3,7 @@
  * added 'exclude' option (-x) to specify pathnames NOT to be included in 
  * CD image.
  *
- * 	$Id: exclude.h,v 1.2 1999/03/02 03:41:25 eric Exp $
+ * 	$Id: exclude.h,v 1.1 2000/10/10 20:40:14 beck Exp $
  */
 
 void exclude	__PR((char * fn));

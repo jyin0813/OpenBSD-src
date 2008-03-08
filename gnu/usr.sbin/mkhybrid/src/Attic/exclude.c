@@ -4,7 +4,7 @@
  * CD image.
  */
 
-static char rcsid[] ="$Id: exclude.c,v 1.2 1997/02/23 16:12:34 eric Rel $";
+static char rcsid[] ="$Id: exclude.c,v 1.1 2000/10/10 20:40:14 beck Exp $";
 
 #include <stdio.h>
 #ifndef VMS

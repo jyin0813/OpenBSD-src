@@ -18,7 +18,7 @@ along with this program; if not, write to the Free Software
 Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
 
 /*
- * 	$Id: fnmatch.h,v 1.1 1997/02/23 15:54:20 eric Rel $
+ * 	$Id: fnmatch.h,v 1.1 2000/10/10 20:40:14 beck Exp $
  */
 
 #ifndef	_FNMATCH_H

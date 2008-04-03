@@ -1,4 +1,4 @@
-/*	$OpenBSD: sdivsi3.S,v 1.8 2006/05/22 20:56:44 uwe Exp $	*/
+/*	$OpenBSD: udivsi3.S,v 1.1 2006/11/10 07:44:58 drahn Exp $	*/
 /*	$NetBSD: udivsi3.S,v 1.7 2006/05/22 20:56:44 uwe Exp $	*/
 
 /* copied from libkern with raise code removed */

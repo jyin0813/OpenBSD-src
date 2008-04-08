@@ -1,4 +1,4 @@
-/*	$OpenBSD: clock_md.c,v 1.10 2007/12/27 02:59:13 jsing Exp $ */
+/*	$OpenBSD: clock_md.c,v 1.12 2008/03/27 14:36:11 jsing Exp $ */
 
 /*
  * Copyright (c) 2001-2004 Opsycon AB  (www.opsycon.se / www.opsycon.com)

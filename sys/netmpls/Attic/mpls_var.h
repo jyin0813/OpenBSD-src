@@ -29,7 +29,7 @@
 
 /*
  *
- *	$Id: ayame-src.diff,v 1.2 2006/03/04 10:45:08 koifren Exp $
+ *	$Id: mpls_var.h,v 1.1 2008/04/23 11:00:35 norby Exp $
  */
 
 #ifdef _KERNEL

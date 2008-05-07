@@ -1,4 +1,4 @@
-/*	$OpenBSD: pathnames.h,v 1.3 1996/09/05 14:31:38 mickey Exp $	*/
+/*	$OpenBSD: pathnames.h,v 1.4 2003/06/02 20:06:17 millert Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993

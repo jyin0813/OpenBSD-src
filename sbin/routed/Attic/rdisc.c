@@ -1,4 +1,4 @@
-/*	$OpenBSD: rdisc.c,v 1.5 2003/06/02 20:06:17 millert Exp $	*/
+/*	$OpenBSD: rdisc.c,v 1.6 2005/04/12 15:26:47 cloder Exp $	*/
 
 /*
  * Copyright (c) 1995

@@ -1,4 +1,4 @@
-/*	$OpenBSD: if.c,v 1.7 2002/08/08 14:00:24 aaron Exp $	*/
+/*	$OpenBSD: if.c,v 1.8 2003/06/02 20:06:17 millert Exp $	*/
 
 /*
  * Copyright (c) 1983, 1993
@@ -32,7 +32,7 @@
 #if !defined(lint)
 static char sccsid[] = "@(#)if.c	8.1 (Berkeley) 6/5/93";
 #else
-static char rcsid[] = "$OpenBSD: if.c,v 1.7 2002/08/08 14:00:24 aaron Exp $";
+static char rcsid[] = "$OpenBSD: if.c,v 1.8 2003/06/02 20:06:17 millert Exp $";
 #endif
 
 #include "defs.h"

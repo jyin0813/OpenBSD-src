@@ -1,4 +1,4 @@
-/*	$OpenBSD: defs.h,v 1.8 2003/06/02 20:06:17 millert Exp $	*/
+/*	$OpenBSD: defs.h,v 1.9 2006/06/16 15:48:42 claudio Exp $	*/
 
 /*
  * Copyright (c) 1983, 1988, 1993

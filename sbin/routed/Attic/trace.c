@@ -1,4 +1,4 @@
-/*	$OpenBSD: trace.c,v 1.15 2005/04/12 15:26:47 cloder Exp $	*/
+/*	$OpenBSD: trace.c,v 1.16 2007/12/28 19:19:22 chl Exp $	*/
 /*	$NetBSD: trace.c,v 1.13 1995/06/20 22:28:03 christos Exp $	*/
 
 /*
@@ -33,7 +33,7 @@
 #if !defined(lint)
 static char sccsid[] = "@(#)trace.c	8.1 (Berkeley) 6/5/93";
 #else
-static char rcsid[] = "$OpenBSD: trace.c,v 1.15 2005/04/12 15:26:47 cloder Exp $";
+static char rcsid[] = "$OpenBSD: trace.c,v 1.16 2007/12/28 19:19:22 chl Exp $";
 #endif
 
 #define	RIPCMDS

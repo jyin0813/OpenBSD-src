@@ -1,4 +1,4 @@
-/*	$OpenBSD: rtquery.c,v 1.17 2005/04/12 15:26:47 cloder Exp $	*/
+/*	$OpenBSD: rtquery.c,v 1.18 2007/12/30 13:46:13 sobrado Exp $	*/
 
 /*-
  * Copyright (c) 1982, 1986, 1993

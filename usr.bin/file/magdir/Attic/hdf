@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: hdf,v 1.1 2004/06/03 03:14:20 tedu Exp $
 
 #------------------------------------------------------------------------------
 # Hierarchical Data Format, used to facilitate scientific data exchange

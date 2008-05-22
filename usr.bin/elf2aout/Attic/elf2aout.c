@@ -1,4 +1,4 @@
-/* $OpenBSD: elf2aout.c,v 1.5 2004/03/16 01:11:09 tedu Exp $	 */
+/* $OpenBSD: elf2aout.c,v 1.6 2006/04/02 21:38:56 djm Exp $	 */
 
 /*
  * Copyright (c) 1995

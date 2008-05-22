@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 1996/10/02 21:52:32 pefo Exp $
+#	$OpenBSD: Makefile,v 1.1 1996/12/22 15:03:32 graichen Exp $
 
 PROG=	elf2aout
 

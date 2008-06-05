@@ -1,4 +1,4 @@
-/*      $OpenBSD: elf2olf.c,v 1.8 2006/03/22 13:25:58 ray Exp $	*/
+/*      $OpenBSD: elf2olf.c,v 1.9 2007/03/15 23:06:01 jmc Exp $	*/
 /*
  * Copyright (c) 1996 Erik Theisen.  All rights reserved.
  *
@@ -30,7 +30,7 @@ static char copyright[] =
 #endif /* not lint */
 
 #ifndef lint
-static char rcsid[] = "@(#) $Id: elf2olf.c,v 1.8 2006/03/22 13:25:58 ray Exp $";
+static char rcsid[] = "@(#) $Id: elf2olf.c,v 1.9 2007/03/15 23:06:01 jmc Exp $";
 #endif
 
 #include <stdlib.h>

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 1996/11/24 23:09:38 etheisen Exp $
+#	$OpenBSD: Makefile,v 1.5 1996/12/08 20:59:20 tholo Exp $
 
 PROG=	elf2olf
 CPPFLAGS+= -DOS_ID=OOS_OPENBSD

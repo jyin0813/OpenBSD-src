@@ -1,4 +1,4 @@
-/*	$OpenBSD: nmeaattach.c,v 1.8 2007/04/18 13:50:38 mbalmer Exp $	*/
+/*	$OpenBSD: nmeaattach.c,v 1.9 2007/10/13 16:28:24 mbalmer Exp $	*/
 /*
  * Copyright (c) 1988, 1993
  *	The Regents of the University of California.  All rights reserved.

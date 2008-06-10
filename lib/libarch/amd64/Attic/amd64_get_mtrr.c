@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: amd64_get_mtrr.c,v 1.1 2004/02/28 23:51:35 deraadt Exp $	*/
 
 /*
  * Copyright (c) 2004 Theo de Raadt

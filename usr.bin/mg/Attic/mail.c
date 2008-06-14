@@ -1,4 +1,4 @@
-/* $OpenBSD: mail.c,v 1.8 2005/10/14 19:46:46 kjell Exp $ */
+/* $OpenBSD: mail.c,v 1.9 2005/11/18 20:56:53 deraadt Exp $ */
 /*
  * This file is in the public domain.
  *

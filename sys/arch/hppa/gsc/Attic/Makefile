@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.1 2003/02/16 01:42:49 miod Exp $
 
 AWK=	awk
 PROG=	makemap.awk

@@ -1,4 +1,4 @@
-/* $Id: config.h,v 1.1 2008/06/12 22:26:01 canacar Exp $ */
+/* $Id: config.h,v 1.2 2008/06/29 08:42:15 mcbride Exp $ */
 /*
  * Copyright (c) 2001, 2007 Can Erkin Acar <canacar@openbsd.org>
  *

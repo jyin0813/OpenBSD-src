@@ -1,4 +1,4 @@
-/*	$OpenBSD: gsckbdmap.c,v 1.21 2008/03/21 17:12:42 miod Exp $	*/
+/*	$OpenBSD: gsckbdmap.c,v 1.22 2008/06/26 05:42:10 ray Exp $	*/
 
 /*
  * THIS FILE IS AUTOMAGICALLY GENERATED.  DO NOT EDIT.

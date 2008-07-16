@@ -1,4 +1,4 @@
-/*	$OpenBSD: gsckbd.c,v 1.7 2006/12/17 21:26:53 miod Exp $	*/
+/*	$OpenBSD: gsckbd.c,v 1.8 2008/06/26 05:42:10 ray Exp $	*/
 /*
  * Copyright (c) 2003, Miodrag Vallat.
  * All rights reserved.

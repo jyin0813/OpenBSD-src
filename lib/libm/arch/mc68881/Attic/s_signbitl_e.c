@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: s_signbitl_e.c,v 1.1 2007/06/01 05:53:27 jason Exp $	*/
 
 /*
  * Written by Jason L. Wright (jason@thought.net) in 2007 and placed

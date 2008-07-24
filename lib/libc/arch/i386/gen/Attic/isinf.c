@@ -1,4 +1,4 @@
-/*	$OpenBSD: isinf.c,v 1.6 2003/06/25 21:15:04 deraadt Exp $	*/
+/*	$OpenBSD: isinf.c,v 1.7 2005/08/07 11:30:38 espie Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

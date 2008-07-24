@@ -1,4 +1,4 @@
-/*	$OpenBSD: isnan.c,v 1.2 2003/06/02 20:18:30 millert Exp $	*/
+/*	$OpenBSD: isnan.c,v 1.3 2005/08/07 16:40:13 espie Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

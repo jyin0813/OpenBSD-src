@@ -1,4 +1,4 @@
-/* $OpenBSD: isinf.S,v 1.4 2005/08/07 16:40:15 espie Exp $ */
+/* $OpenBSD: isnan.S,v 1.1 2008/07/24 09:31:06 martynas Exp $ */
 /*-
  * Copyright (c) 1993
  *	The Regents of the University of California.  All rights reserved.

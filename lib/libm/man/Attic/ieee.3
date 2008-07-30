@@ -1,4 +1,4 @@
-.\"	$OpenBSD: ieee.3,v 1.14 2008/06/11 14:50:06 martynas Exp $
+.\"	$OpenBSD: ieee.3,v 1.15 2008/07/29 18:38:21 martynas Exp $
 .\" Copyright (c) 1985, 1991 Regents of the University of California.
 .\" All rights reserved.
 .\"
@@ -28,7 +28,7 @@
 .\"
 .\"     from: @(#)ieee.3	6.4 (Berkeley) 5/6/91
 .\"
-.Dd $Mdocdate: June 11 2008 $
+.Dd $Mdocdate: July 29 2008 $
 .Dt IEEE 3
 .Os
 .Sh NAME
@@ -38,8 +38,6 @@
 .Nm ilogbf ,
 .Nm nextafter ,
 .Nm nextafterf ,
-.Nm remainder ,
-.Nm remainderf ,
 .Nm scalbn ,
 .Nm scalbnf
 .Nd functions for IEEE arithmetic
@@ -57,10 +55,6 @@
 .Fn nextafter "double x" "double y"
 .Ft float
 .Fn nextafterf "float x" "float y"
-.Ft double
-.Fn remainder "double x" "double y"
-.Ft float
-.Fn remainderf "float x" "float y"
 .Ft double
 .Fn scalbn "double x" "int n"
 .Ft float
@@ -106,48 +100,6 @@ The
 function is a single precision version of
 .Fn nextafter .
 .Pp
-.Fn remainder
-returns the remainder
-.Fa r
-:=
-.Fa x
-\-
-.Fa n\(**y
-where
-.Fa n
-is the integer nearest the exact value of
-.Bk -words
-.Fa x Ns / Ns Fa y ;
-.Ek
-moreover if
-.Pf \\*(Ba Fa n
-\-
-.Sm off
-.Fa x No / Fa y No \\*(Ba
-.Sm on
-=
-1/2
-then
-.Fa n
-is even.
-Consequently, the remainder is computed exactly and
-.Sm off
-.Pf \\*(Ba Fa r No \\*(Ba
-.Sm on
-\*(Le
-.Sm off
-.Pf \\*(Ba Fa y No \\*(Ba/2.
-.Sm on
-But
-.Fn remainder x 0
-and
-.Fn remainder \*(If 0
-are invalid operations that produce a \*(Na.
-The
-.Fn remainderf
-function is a single precision version of
-.Fn remainder .
-.Pp
 .Fn scalbn
 returns
 .Fa x Ns \(**(2** Ns Fa n )
@@ -160,15 +112,6 @@ function is a single precision version of
 .Xr math 3
 .Sh STANDARDS
 .St -ieee754
-.Pp
-.Fn drem
-and
-.Fn dremf
-are deprecated aliases for
-.Fn remainder
-and
-.Fn remainderf ,
-respectively.
 .Sh HISTORY
 The
 .Nm ieee

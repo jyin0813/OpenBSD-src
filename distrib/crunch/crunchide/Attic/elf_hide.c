@@ -1,4 +1,4 @@
-/* $OpenBSD: elf_hide.c,v 1.11 2007/08/07 05:42:05 ray Exp $ */
+/* $OpenBSD: elf_hide.c,v 1.12 2007/08/14 20:43:10 miod Exp $ */
 
 /*
  * Copyright (c) 1997 Dale Rahn.

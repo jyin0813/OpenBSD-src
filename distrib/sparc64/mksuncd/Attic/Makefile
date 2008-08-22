@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2001/10/12 21:59:27 jason Exp $
+#	$OpenBSD: Makefile,v 1.3 2003/03/02 12:32:08 deraadt Exp $
 
 .if ${MACHINE} == "sparc64"
 

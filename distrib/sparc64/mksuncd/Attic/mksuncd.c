@@ -1,4 +1,4 @@
-/*	$OpenBSD: mksuncd.c,v 1.2 2003/06/02 19:32:31 millert Exp $	*/
+/*	$OpenBSD: mksuncd.c,v 1.3 2003/06/02 20:09:40 jason Exp $	*/
 
 /*
  * Copyright (c) 2001 Jason L. Wright (jason@thought.net)

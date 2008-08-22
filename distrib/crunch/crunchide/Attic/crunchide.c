@@ -1,4 +1,4 @@
-/* $OpenBSD: crunchide.c,v 1.21 2006/12/26 10:20:11 deraadt Exp $	 */
+/* $OpenBSD: crunchide.c,v 1.22 2007/02/18 23:50:46 ray Exp $	 */
 
 /*
  * Copyright (c) 1994 University of Maryland

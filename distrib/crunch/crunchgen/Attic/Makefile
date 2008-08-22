@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1996/09/25 06:40:52 etheisen Exp $
 
 PROG=		crunchgen
 SRCS=		crunchgen.c crunched_skel.c

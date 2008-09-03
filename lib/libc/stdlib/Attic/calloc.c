@@ -1,4 +1,4 @@
-/*	$OpenBSD: calloc.c,v 1.10 2005/08/08 08:05:36 espie Exp $ */
+/*	$OpenBSD: calloc.c,v 1.11 2006/04/02 18:22:14 otto Exp $ */
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
  * All rights reserved.

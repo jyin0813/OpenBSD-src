@@ -1,4 +1,4 @@
-/*	$OpenBSD: strtod.c,v 1.29 2006/10/29 18:45:56 deraadt Exp $ */
+/*	$OpenBSD: strtod.c,v 1.30 2006/10/30 18:30:52 deraadt Exp $ */
 /****************************************************************
  *
  * The author of this software is David M. Gay.

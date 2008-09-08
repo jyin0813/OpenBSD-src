@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: strtof.c,v 1.1 2008/06/13 21:04:24 landry Exp $ */
 
 /*
  * Copyright (c) 2008 Landry Breuil

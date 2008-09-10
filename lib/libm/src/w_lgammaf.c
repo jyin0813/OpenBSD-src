@@ -25,20 +25,5 @@ extern int signgam;
 float
 lgammaf(float x)
 {
-#ifdef _IEEE_LIBM
-	return __ieee754_lgammaf_r(x,&signgam);
-#else
-        float y;
-        y = __ieee754_lgammaf_r(x,&signgam);
-        if(_LIB_VERSION == _IEEE_) return y;
-        if(!finitef(y)&&finitef(x)) {
-            if(floorf(x)==x&&x<=(float)0.0)
-	        /* lgamma pole */
-                return (float)__kernel_standard((double)x,(double)x,115);
-            else
-	        /* lgamma overflow */
-                return (float)__kernel_standard((double)x,(double)x,114);
-        } else
-            return y;
-#endif
-}             
+	return lgammaf_r(x,&signgam);
+}

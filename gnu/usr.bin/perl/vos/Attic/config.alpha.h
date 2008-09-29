@@ -7,7 +7,7 @@
  * that running config_h.SH again will wipe out any changes you've made.
  * For a more permanent change edit config.sh and rerun config_h.SH.
  *
- * \$Id: config.alpha.h,v 1.7 2005/01/15 21:30:42 millert Exp $
+ * \$Id: config.alpha.h,v 1.8 2006/03/28 19:23:13 millert Exp $
  */
 
 /*

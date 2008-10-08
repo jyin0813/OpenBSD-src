@@ -1,4 +1,4 @@
-/*	$OpenBSD: n_cabs.S,v 1.3 2008/05/21 20:37:10 miod Exp $	*/
+/*	$OpenBSD: n_cabs.S,v 1.4 2008/09/13 21:25:40 martynas Exp $	*/
 /*	$NetBSD: n_cabs.S,v 1.1 1995/10/10 23:40:26 ragge Exp $	*/
 /*
  * Copyright (c) 1985, 1993

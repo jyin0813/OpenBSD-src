@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2008/10/26 08:49:44 ratchov Exp $
+#	$OpenBSD: Makefile,v 1.2 2008/10/26 13:55:03 ratchov Exp $
 
 LIB=	sa
 MAN=	sa_open.3

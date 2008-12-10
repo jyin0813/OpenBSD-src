@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: s_finite.S,v 1.3 2005/08/02 11:17:32 espie Exp $ */
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
  * All rights reserved.

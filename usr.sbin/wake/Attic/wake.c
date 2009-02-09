@@ -1,4 +1,4 @@
-/*	$OpenBSD: wake.c,v 1.13 2009/02/02 21:29:27 mbalmer Exp $ */
+/*	$OpenBSD: wake.c,v 1.14 2009/02/02 22:08:58 sobrado Exp $ */
 
 /*
  * Copyright (C) 2006,2007,2008,2009 Marc Balmer <mbalmer@openbsd.org>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ssh.c,v 1.20 2008/11/25 17:52:02 krw Exp $ */
+/*	$OpenBSD: ssh.c,v 1.21 2009/02/16 21:19:06 miod Exp $ */
 
 /*
  * Copyright (c) 1994 Michael L. Hitch

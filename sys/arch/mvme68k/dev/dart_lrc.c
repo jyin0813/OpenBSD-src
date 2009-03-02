@@ -36,8 +36,8 @@
 #include <mvme68k/dev/dartreg.h>
 #include <mvme68k/dev/dartvar.h>
 
-int	dart_lrc_match(struct device *parent, void *self, void *aux);
-void	dart_lrc_attach(struct device *parent, struct device *self, void *aux);
+int	dart_lrc_match(struct device *, void *, void *);
+void	dart_lrc_attach(struct device *, struct device *, void *);
 
 struct cfattach dartlrc_ca = {
 	sizeof(struct dartsoftc), dart_lrc_match, dart_lrc_attach
@@ -52,13 +52,7 @@ dart_lrc_match(struct device *parent, void *cf, void *aux)
 	int rc;
 #endif
 
-	if (cputyp != CPU_165)
-		return (0);
-
-	/*
-	 * We do not accept empty locators here...
-	 */
-	if (ca->ca_paddr != CONSOLE_DART_BASE)
+	if (cputyp != CPU_165 || ca->ca_paddr != MVME165_DART_BASE)
 		return (0);
 
 #if 0	/* overkill, this is the console so if we've run so far, it exists */
@@ -102,5 +96,6 @@ dart_lrc_attach(struct device *parent, struct device *self, void *aux)
 	lrcintr_establish(LRCVEC_DART, &sc->sc_ih, self->dv_xname);
 
 	sc->sc_vec = LRC_VECBASE + LRCVEC_DART;
+	sc->sc_stride = 2;
 	dart_common_attach(sc);
 }

@@ -1,4 +1,4 @@
-/*	$OpenBSD: uvm_fault_i.h,v 1.11 2007/04/11 12:10:42 art Exp $	*/
+/*	$OpenBSD: uvm_fault_i.h,v 1.12 2007/05/31 21:20:30 thib Exp $	*/
 /*	$NetBSD: uvm_fault_i.h,v 1.11 2000/06/26 14:21:17 mrg Exp $	*/
 
 /*

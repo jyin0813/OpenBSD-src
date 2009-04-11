@@ -1,4 +1,4 @@
-/*	$OpenBSD: amd7930var.h,v 1.6 2003/06/02 23:27:53 millert Exp $	*/
+/*	$OpenBSD: amd7930var.h,v 1.7 2004/09/29 07:35:11 miod Exp $	*/
 /*	$NetBSD: amd7930var.h,v 1.3 1996/02/01 22:32:25 mycroft Exp $ */
 
 /*
@@ -64,6 +64,7 @@ struct auio {
 	u_char	*au_pend;		/* end of play data */
 
 	struct	intrhand au_ih;
+	void	*au_swih;		/* software interrupt cookie */
 };
 
 /*

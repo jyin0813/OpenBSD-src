@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_en_pci.c,v 1.11 2005/09/11 18:17:08 mickey Exp $	*/
+/*	$OpenBSD: if_en_pci.c,v 1.12 2009/03/29 21:53:52 sthen Exp $	*/
 
 /*
  *

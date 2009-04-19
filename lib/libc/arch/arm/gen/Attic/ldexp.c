@@ -1,4 +1,4 @@
-/*	$OpenBSD: ldexp.c,v 1.3 2008/06/26 05:42:04 ray Exp $	*/
+/*	$OpenBSD: ldexp.c,v 1.4 2008/12/09 20:32:06 martynas Exp $	*/
 /*	$NetBSD: ldexp.c,v 1.2 2001/11/08 22:45:45 bjh21 Exp $	*/
 
 /*-

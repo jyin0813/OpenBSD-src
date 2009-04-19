@@ -1,4 +1,4 @@
-/*	$OpenBSD: modf.c,v 1.4 2003/03/10 04:02:49 david Exp $	*/
+/*	$OpenBSD: modf.c,v 1.5 2005/08/07 16:40:13 espie Exp $	*/
 /*	$NetBSD: modf.c,v 1.1 1995/02/10 17:50:25 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ldexp.c,v 1.5 2008/12/09 20:32:06 martynas Exp $ */
+/*	$OpenBSD: ldexp.c,v 1.6 2008/12/10 01:15:02 martynas Exp $ */
 /*
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.

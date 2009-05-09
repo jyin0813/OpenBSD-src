@@ -1,5 +1,5 @@
 #!/bin/sh -
-#	$OpenBSD: monthly,v 1.7 2006/10/26 12:20:55 ajacoutot Exp $
+#	$OpenBSD$
 umask 022
 
 if [ -f /etc/monthly.local ];then

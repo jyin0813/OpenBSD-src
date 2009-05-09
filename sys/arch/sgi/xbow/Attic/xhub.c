@@ -1,4 +1,4 @@
-/*	$OpenBSD: xhub.c,v 1.1 2008/04/07 22:47:40 miod Exp $	*/
+/*	$OpenBSD: xhub.c,v 1.2 2008/07/28 18:50:59 miod Exp $	*/
 
 /*
  * Copyright (c) 2008 Miodrag Vallat.

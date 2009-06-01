@@ -1,4 +1,4 @@
-/*	$OpenBSD: tt.h,v 1.3 1997/02/25 00:04:20 downsj Exp $	*/
+/*	$OpenBSD: tt.h,v 1.4 2003/06/03 02:56:23 millert Exp $	*/
 /*	$NetBSD: tt.h,v 1.3 1995/09/28 10:34:42 tls Exp $	*/
 
 /*

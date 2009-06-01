@@ -1,4 +1,4 @@
-/*	$OpenBSD: char.h,v 1.5 2000/04/15 05:22:14 millert Exp $	*/
+/*	$OpenBSD: char.h,v 1.6 2003/06/03 02:56:23 millert Exp $	*/
 /*	$NetBSD: char.h,v 1.3 1995/09/28 10:34:01 tls Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: token.h,v 1.3 1997/02/25 00:04:19 downsj Exp $	*/
+/*	$OpenBSD: token.h,v 1.4 2003/06/03 02:56:23 millert Exp $	*/
 /*	$NetBSD: token.h,v 1.3 1995/09/28 10:34:41 tls Exp $	*/
 
 /*

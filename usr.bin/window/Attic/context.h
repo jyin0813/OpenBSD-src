@@ -1,4 +1,4 @@
-/*	$OpenBSD: context.h,v 1.3 1997/02/25 00:04:03 downsj Exp $	*/
+/*	$OpenBSD: context.h,v 1.4 2003/06/03 02:56:23 millert Exp $	*/
 /*	$NetBSD: context.h,v 1.3 1995/09/28 10:34:17 tls Exp $	*/
 
 /*

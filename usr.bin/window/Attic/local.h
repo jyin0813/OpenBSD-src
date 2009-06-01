@@ -1,4 +1,4 @@
-/*	$OpenBSD: local.h,v 1.4 1999/11/14 17:34:24 millert Exp $	*/
+/*	$OpenBSD: local.h,v 1.5 2003/06/03 02:56:23 millert Exp $	*/
 /*	$NetBSD: local.h,v 1.3 1995/09/28 10:34:26 tls Exp $	*/
 
 /*

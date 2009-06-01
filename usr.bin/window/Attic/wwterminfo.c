@@ -1,4 +1,4 @@
-/*	$OpenBSD: wwterminfo.c,v 1.9 2001/07/09 07:04:58 deraadt Exp $	*/
+/*	$OpenBSD: wwterminfo.c,v 1.10 2003/06/03 02:56:23 millert Exp $	*/
 
 /*
  * Copyright (c) 1982, 1993
@@ -36,7 +36,7 @@
 #if 0
 static char sccsid[] = "@(#)wwterminfo.c	8.1 (Berkeley) 6/6/93";
 #else
-static char rcsid[] = "$OpenBSD: wwterminfo.c,v 1.9 2001/07/09 07:04:58 deraadt Exp $";
+static char rcsid[] = "$OpenBSD: wwterminfo.c,v 1.10 2003/06/03 02:56:23 millert Exp $";
 #endif
 #endif /* not lint */
 

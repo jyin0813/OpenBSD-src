@@ -1,4 +1,4 @@
-/*	$OpenBSD: ww.h,v 1.8 2002/06/12 06:07:17 mpech Exp $	*/
+/*	$OpenBSD: ww.h,v 1.9 2003/06/03 02:56:23 millert Exp $	*/
 /*	$NetBSD: ww.h,v 1.9 1996/10/12 23:46:23 christos Exp $	*/
 
 /*

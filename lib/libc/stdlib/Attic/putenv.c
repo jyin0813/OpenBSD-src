@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: putenv.c,v 1.5 2005/08/08 08:05:37 espie Exp $ */
 /*-
  * Copyright (c) 1988, 1993
  *     The Regents of the University of California.  All rights reserved.

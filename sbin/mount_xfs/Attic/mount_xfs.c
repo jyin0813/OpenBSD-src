@@ -1,4 +1,4 @@
-/*	$OpenBSD: mount_xfs.c,v 1.8 2005/04/08 20:09:38 jaredy Exp $	*/
+/*	$OpenBSD: mount_xfs.c,v 1.9 2006/12/15 13:04:06 jmc Exp $	*/
 /*
  * Copyright (c) 1995, 1996, 1997 Kungliga Tekniska Högskolan
  * (Royal Institute of Technology, Stockholm, Sweden).

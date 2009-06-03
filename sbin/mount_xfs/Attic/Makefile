@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 1998/10/28 18:08:50 art Exp $
+#	$OpenBSD: Makefile,v 1.4 1999/04/22 15:21:24 provos Exp $
 
 PROG=	mount_xfs
 SRCS=	mount_xfs.c getmntopts.c

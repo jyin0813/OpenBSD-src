@@ -1,4 +1,4 @@
-/*	$OpenBSD: relayd.h,v 1.119 2009/06/03 05:35:06 eric Exp $	*/
+/*	$OpenBSD: imsg_types.h,v 1.1 2009/06/04 07:16:38 eric Exp $	*/
 
 /*
  * Copyright (c) 2006, 2007 Pierre-Yves Ritschard <pyr@openbsd.org>

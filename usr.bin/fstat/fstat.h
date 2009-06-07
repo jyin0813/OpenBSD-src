@@ -1,4 +1,4 @@
-/*	$OpenBSD: fstat.h,v 1.4 2006/03/26 17:47:11 mickey Exp $	*/
+/*	$OpenBSD: fstat.h,v 1.5 2009/06/02 21:46:16 millert Exp $	*/
 
 /*-
  * Copyright (c) 1988, 1993

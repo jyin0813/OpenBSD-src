@@ -1,4 +1,4 @@
-/*	$OpenBSD: mainbus.c,v 1.6 2008/04/07 22:36:26 miod Exp $ */
+/*	$OpenBSD: mainbus.c,v 1.7 2009/04/19 12:52:33 miod Exp $ */
 
 /*
  * Copyright (c) 2001-2003 Opsycon AB  (www.opsycon.se / www.opsycon.com)

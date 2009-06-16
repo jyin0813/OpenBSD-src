@@ -1,4 +1,4 @@
-/*	$OpenBSD: uvm_pmemrange.c,v 1.2 2009/06/04 00:20:53 jsg Exp $	*/
+/*	$OpenBSD: uvm_pmemrange.c,v 1.8 2009/06/14 03:04:08 deraadt Exp $	*/
 
 /*
  * Copyright (c) 2009 Ariane van der Steldt <ariane@stack.nl>

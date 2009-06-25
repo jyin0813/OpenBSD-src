@@ -1,4 +1,4 @@
-/* $OpenBSD: util.c,v 1.1 2009/06/01 22:58:49 nicm Exp $ */
+/* $OpenBSD: util.c,v 1.2 2009/06/03 19:37:27 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

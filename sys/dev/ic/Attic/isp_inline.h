@@ -1,4 +1,4 @@
-/*	$OpenBSD: isp_inline.h,v 1.14 2008/01/21 20:00:33 sobrado Exp $ */
+/*	$OpenBSD: isp_inline.h,v 1.15 2008/10/27 00:46:09 krw Exp $ */
 /*
  * QLogic Host Adapter Inline Functions
  *

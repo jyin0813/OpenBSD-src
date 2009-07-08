@@ -1,49 +1,49 @@
-/*	$OpenBSD: fstat.h,v 1.5 2009/06/02 21:46:16 millert Exp $	*/
-
-/*-
- * Copyright (c) 1988, 1993
- *	The Regents of the University of California.  All rights reserved.
+/*
+ * Copyright (c) 2009 Todd C. Miller <Todd.Miller@courtesan.com>
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. Neither the name of the University nor the names of its contributors
- *    may be used to endorse or promote products derived from this software
- *    without specific prior written permission.
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
  *
- * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
- * SUCH DAMAGE.
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-struct  filestat {
-	long		fsid;
-	long		fileid;
-	mode_t		mode;
-	dev_t		rdev;
-	u_int64_t	size;
+struct fuser {
+	TAILQ_ENTRY(fuser) tq;
+	uid_t uid;
+	pid_t pid;
+	int flags;
+#define F_ROOT 0x01     /* is procs root directory */
+#define F_CWD  0x02     /* is procs cwd */
+#define F_OPEN 0x04     /* just has it open */
 };
 
-/*
- * a kvm_read that returns true if everything is read 
- */
-#define KVM_READ(kaddr, paddr, len) \
-	(kvm_read(kd, (u_long)(kaddr), (void *)(paddr), (len)) == (len))
-extern kvm_t *kd;
+struct filearg {
+	SLIST_ENTRY(filearg) next;
+	dev_t dev;
+	ino_t ino;
+	char *name;
+	TAILQ_HEAD(fuserhead, fuser) fusers;
+};
 
-extern int vflg;
-#define dprintf	if (vflg) warnx
+SLIST_HEAD(fileargs, filearg);
 
+extern int uflg;
+extern int cflg;
+extern int fsflg;
+extern int sflg;
+extern int signo;
+extern int error;
+extern struct fileargs fileargs;
+
+extern char *__progname;
+
+void fuser_check(struct kinfo_file2 *);
+void fuser_run(void);
+void usage(void);

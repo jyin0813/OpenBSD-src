@@ -1,4 +1,4 @@
-/* $OpenBSD: layout-manual.c,v 1.1 2009/06/01 22:58:49 nicm Exp $ */
+/* $OpenBSD: layout-manual.c,v 1.2 2009/07/14 07:23:36 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

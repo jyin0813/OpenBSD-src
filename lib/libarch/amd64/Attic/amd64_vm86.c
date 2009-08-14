@@ -1,4 +1,4 @@
-/*	$OpenBSD: amd64_vm86.c,v 1.1 2004/02/27 23:44:56 deraadt Exp $	*/
+/*	$OpenBSD: amd64_vm86.c,v 1.2 2008/06/26 05:42:04 ray Exp $	*/
 /*	$NetBSD: i386_vm86.c,v 1.1 1996/02/21 00:21:56 jtk Exp $	*/
 
 /*-

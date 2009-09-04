@@ -1,4 +1,4 @@
-/*	$OpenBSD: store.c,v 1.27 2009/09/02 10:00:58 jacekm Exp $	*/
+/*	$OpenBSD: store.c,v 1.28 2009/09/02 21:04:11 jacekm Exp $	*/
 
 /*
  * Copyright (c) 2008 Gilles Chehade <gilles@openbsd.org>

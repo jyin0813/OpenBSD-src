@@ -1,4 +1,4 @@
-/*	$OpenBSD: wdc_obio.c,v 1.1 2009/08/24 17:48:14 kettenis Exp $	*/
+/*	$OpenBSD: wdc_obio.c,v 1.2 2009/08/24 17:55:01 kettenis Exp $	*/
 
 /*
  * Copyright (c) 2009 Mark Kettenis

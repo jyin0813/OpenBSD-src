@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-set-password.c,v 1.4 2009/07/26 12:58:44 nicm Exp $ */
+/* $OpenBSD: cmd-set-password.c,v 1.5 2009/09/21 15:32:06 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

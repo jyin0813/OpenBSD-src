@@ -1,4 +1,4 @@
-/*      $OpenBSD: ip_divert.c,v 1.1 2009/09/08 17:00:41 michele Exp $ */
+/*      $OpenBSD$ */
 
 /*
  * Copyright (c) 2009 Michele Marchetto <michele@openbsd.org>
@@ -27,6 +27,7 @@
 #include <net/if.h>
 #include <net/route.h>
 #include <net/netisr.h>
+#include <net/pfvar.h>
 
 #include <netinet/in.h>
 #include <netinet/in_systm.h>
@@ -36,12 +37,8 @@
 #include <netinet/in_pcb.h>
 #include <netinet/ip_divert.h>
 
-#include "pf.h"
-#if NPF > 0
-#include <net/pfvar.h>
-#endif
-
-struct	inpcbtable divbtable;
+struct	inpcbtable	divbtable;
+struct	divstat		divstat;
 
 #ifndef DIVERT_SENDSPACE
 #define DIVERT_SENDSPACE	(65536 + 100)
@@ -58,9 +55,9 @@ u_int   divert_recvspace = DIVERT_RECVSPACE;
 
 int *divertctl_vars[DIVERTCTL_MAXID] = DIVERTCTL_VARS;
 
-int	divbhashsize = DIVERTHASHSIZE;
+int divbhashsize = DIVERTHASHSIZE;
 
-void	divert_detach(struct inpcb *);
+void divert_detach(struct inpcb *);
 
 void
 divert_init()
@@ -68,7 +65,6 @@ divert_init()
 	in_pcbinit(&divbtable, divbhashsize);
 }
 
-/* Dummy function, so drop */
 void
 divert_input(struct mbuf *m, ...)
 {
@@ -95,6 +91,7 @@ divert_output(struct mbuf *m, ...)
 
 	m->m_pkthdr.rcvif = NULL;
 	m->m_nextpkt = NULL;
+	m->m_pkthdr.rdomain = inp->inp_rdomain;
 
 	if (control)
 		m_freem(control);
@@ -107,6 +104,7 @@ divert_output(struct mbuf *m, ...)
 	if (sin->sin_addr.s_addr != INADDR_ANY) {
 		ifa = ifa_ifwithaddr((struct sockaddr *)sin, 0);
 		if (ifa == NULL) {
+			divstat.divs_errors++;
 			m_freem(m);
 			return (EADDRNOTAVAIL);
 		}
@@ -125,6 +123,7 @@ divert_output(struct mbuf *m, ...)
 		    (void *)NULL);
 	}
 
+	divstat.divs_opackets++;
 	return (error);
 }
 
@@ -136,12 +135,17 @@ divert_packet(struct mbuf *m, int dir)
 	struct sockaddr_in addr;
 	struct pf_divert *pd;
 
+	divstat.divs_ipackets++;
+
 	if (m->m_len < sizeof(struct ip) &&
-	    (m = m_pullup(m, sizeof(struct ip))) == NULL)
+	    (m = m_pullup(m, sizeof(struct ip))) == NULL) {
+		divstat.divs_errors++;
 		return;
+	}
 
 	pd = pf_find_divert(m);
 	if (pd == NULL) {
+		divstat.divs_errors++;
 		m_freem(m);
 		return;
 	}
@@ -171,6 +175,7 @@ divert_packet(struct mbuf *m, int dir)
 		sa = inp->inp_socket;
 		if (sbappendaddr(&sa->so_rcv, (struct sockaddr *)&addr, 
 		    m, NULL) == 0) {
+			divstat.divs_fullsock++;
 			m_freem(m);
 			return;
 		} else
@@ -178,8 +183,10 @@ divert_packet(struct mbuf *m, int dir)
 		break;
 	}
 
-	if (sa == NULL)
+	if (sa == NULL) {
+		divstat.divs_noport++;
 		m_freem(m);
+	}
 }
 
 /*ARGSUSED*/
@@ -301,6 +308,7 @@ int
 divert_sysctl(int *name, u_int namelen, void *oldp, size_t *oldlenp, void *newp,
     size_t newlen)
 {
+	/* All sysctl names at this level are terminal. */
 	if (namelen != 1)
 		return (ENOTDIR);
 
@@ -311,11 +319,17 @@ divert_sysctl(int *name, u_int namelen, void *oldp, size_t *oldlenp, void *newp,
 	case DIVERTCTL_RECVSPACE:
 		return (sysctl_int(oldp, oldlenp, newp, newlen,
 		    &divert_recvspace));
+	case DIVERTCTL_STATS:
+		if (newp != NULL)
+			return (EPERM);
+		return (sysctl_struct(oldp, oldlenp, newp, newlen,
+		    &divstat, sizeof(divstat)));
 	default:
 		if (name[0] < DIVERTCTL_MAXID)
-		return sysctl_int_arr(divertctl_vars, name, namelen,
-		    oldp, oldlenp, newp, newlen);
+			return sysctl_int_arr(divertctl_vars, name, namelen,
+			    oldp, oldlenp, newp, newlen);
 
 		return (ENOPROTOOPT);
 	}
+	/* NOTREACHED */
 }

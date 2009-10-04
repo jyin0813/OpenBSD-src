@@ -1,4 +1,4 @@
-/*      $OpenBSD: ip_divert.h,v 1.1 2009/09/08 17:00:41 michele Exp $ */
+/*      $OpenBSD$ */
 
 /*
  * Copyright (c) 2009 Michele Marchetto <michele@openbsd.org>
@@ -19,24 +19,39 @@
 #ifndef _IP_DIVERT_H_
 #define _IP_DIVERT_H_
 
+struct divstat {
+	u_long	divs_ipackets;	/* total input packets */
+	u_long	divs_noport;	/* no socket on port */
+	u_long	divs_fullsock;	/* not delivered, input socket full */
+	u_long	divs_opackets;	/* total output packets */
+	u_long	divs_errors;	/* generic errors */
+};
+
+/*
+ * Names for divert sysctl objects
+ */
 #define	DIVERTCTL_RECVSPACE	1	/* receive buffer space */
 #define	DIVERTCTL_SENDSPACE	2	/* send buffer space */
-#define	DIVERTCTL_MAXID		3
+#define	DIVERTCTL_STATS		3	/* divert statistics */
+#define	DIVERTCTL_MAXID		4
 
 #define	DIVERTCTL_NAMES { \
 	{ 0, 0 }, \
-	{ "recvspace", CTLTYPE_INT }, \
-	{ "sendspace", CTLTYPE_INT } \
+	{ "recvspace",	CTLTYPE_INT }, \
+	{ "sendspace",	CTLTYPE_INT }, \
+	{ "stats",	CTLTYPE_STRUCT } \
 }
 
 #define	DIVERTCTL_VARS { \
 	NULL, \
 	&divert_recvspace, \
-	&divert_sendspace \
+	&divert_sendspace, \
+	NULL \
 }
 
 #ifdef _KERNEL
-extern struct	inpcbtable divbtable;
+extern struct	inpcbtable	divbtable;
+extern struct	divstat		divstat;
 
 void	 divert_init(void);
 void	 divert_input(struct mbuf *, ...);

@@ -1,4 +1,4 @@
-.\"     $OpenBSD: divert.4,v 1.1 2009/09/08 17:00:41 michele Exp $
+.\"     $OpenBSD$
 .\"
 .\" Copyright (c) 2009 Michele Marchetto <michele@openbsd.org>
 .\"
@@ -15,7 +15,7 @@
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
 
-.Dd $Mdocdate: September 8 2009 $
+.Dd $Mdocdate: Sep 7 2009 $
 .Dt DIVERT 4
 .Os
 .Sh NAME
@@ -33,6 +33,12 @@ Divert sockets can be bound through
 to a divert port and they will receive every packet
 diverted to that port by
 .Xr pf 4 .
+Divert ports have their own number space, completely
+separated from
+.Xr tcp 4
+and
+.Xr udp 4
+ones.
 Consult
 .Xr pf.conf 5
 for the correct syntax.
@@ -50,7 +56,7 @@ from the divert socket.
 .Xr pf 4
 will reassemble the IP packets by default before sending them to the divert
 socket.
-In addition, TCP reassembling can be enabled on a per-rule basis, see
+In addition, TCP reassembling is enabled for packet divert rules, see
 .Xr pf.conf 5
 for details.
 Writing to a divert socket can be achieved using

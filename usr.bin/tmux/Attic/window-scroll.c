@@ -1,4 +1,4 @@
-/* $OpenBSD: window-scroll.c,v 1.8 2009/08/13 22:32:18 nicm Exp $ */
+/* $OpenBSD: window-scroll.c,v 1.9 2009/09/10 17:16:24 nicm Exp $ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>

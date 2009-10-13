@@ -1,5 +1,5 @@
 package TieOut;
-# $Id$
+# $Id: TieOut.pm,v 1.1 2009/05/16 21:42:58 simon Exp $
 
 sub TIEHANDLE {
     my $scalar = '';

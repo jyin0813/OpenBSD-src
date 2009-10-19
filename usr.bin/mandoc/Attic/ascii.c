@@ -1,4 +1,4 @@
-/*	$Id: ascii.c,v 1.2 2009/06/14 23:00:57 schwarze Exp $ */
+/*	$Id: ascii.c,v 1.3 2009/08/22 17:04:48 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *

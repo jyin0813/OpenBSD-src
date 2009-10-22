@@ -1,4 +1,4 @@
-/* $OpenBSD: client-fn.c,v 1.4 2009/07/30 16:32:12 nicm Exp $ */
+/* $OpenBSD: client-fn.c,v 1.5 2009/08/11 17:18:35 nicm Exp $ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>

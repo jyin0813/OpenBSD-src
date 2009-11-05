@@ -1,4 +1,4 @@
-/* $OpenBSD: server-job.c,v 1.3 2009/11/01 23:20:37 nicm Exp $ */
+/* $OpenBSD: server-job.c,v 1.4 2009/11/04 20:50:11 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

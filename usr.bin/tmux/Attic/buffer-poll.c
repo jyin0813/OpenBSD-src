@@ -1,4 +1,4 @@
-/* $OpenBSD: buffer-poll.c,v 1.4 2009/10/22 19:41:51 nicm Exp $ */
+/* $OpenBSD: buffer-poll.c,v 1.5 2009/11/04 20:50:11 nicm Exp $ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>

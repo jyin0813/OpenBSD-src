@@ -1,4 +1,4 @@
-/* $OpenBSD: buffer.c,v 1.2 2009/06/25 06:05:47 nicm Exp $ */
+/* $OpenBSD: buffer.c,v 1.3 2009/08/20 19:14:42 nicm Exp $ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>

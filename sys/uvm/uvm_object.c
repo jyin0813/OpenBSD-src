@@ -1,4 +1,4 @@
-/*	$OpenBSD: uvm_object.c,v 1.1 2009/06/06 03:45:08 oga Exp $	*/
+/*	$OpenBSD$	*/
 
 /*
  * Copyright (c) 2006 The NetBSD Foundation, Inc.

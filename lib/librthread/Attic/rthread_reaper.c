@@ -1,4 +1,4 @@
-/*	$OpenBSD: rthread_reaper.c,v 1.2 2007/04/10 17:25:08 tedu Exp $	*/
+/*	$OpenBSD: rthread_reaper.c,v 1.3 2007/04/10 17:39:21 tedu Exp $	*/
 /*
  * Copyright (c) 2006 Otto Moerbeek <otto@drijf.net>
  *

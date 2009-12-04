@@ -1,4 +1,4 @@
-/* $OpenBSD: options-cmd.c,v 1.4 2009/09/21 14:56:03 nicm Exp $ */
+/* $OpenBSD: options-cmd.c,v 1.5 2009/09/22 12:38:10 nicm Exp $ */
 
 /*
  * Copyright (c) 2008 Nicholas Marriott <nicm@users.sourceforge.net>

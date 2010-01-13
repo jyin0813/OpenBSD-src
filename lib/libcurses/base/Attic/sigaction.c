@@ -1,4 +1,4 @@
-/*	$OpenBSD: sigaction.c,v 1.3 1999/06/27 08:14:21 millert Exp $	*/
+/*	$OpenBSD: sigaction.c,v 1.4 2001/01/22 18:01:48 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998,2000 Free Software Foundation, Inc.                   *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lib_insstr.c,v 1.3 2000/06/19 03:53:42 millert Exp $	*/
+/*	$OpenBSD: lib_insstr.c,v 1.4 2001/01/22 18:01:40 millert Exp $	*/
 
 /****************************************************************************
  * Copyright (c) 1998,1999,2000 Free Software Foundation, Inc.              *

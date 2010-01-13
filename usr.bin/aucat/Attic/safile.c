@@ -1,4 +1,4 @@
-/*	$OpenBSD: safile.c,v 1.21 2010/01/11 13:06:32 ratchov Exp $	*/
+/*	$OpenBSD: safile.c,v 1.22 2010/01/12 21:42:59 ratchov Exp $	*/
 /*
  * Copyright (c) 2008 Alexandre Ratchov <alex@caoua.org>
  *

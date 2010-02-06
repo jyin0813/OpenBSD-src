@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: lemote_irq.h,v 1.1 2009/12/25 21:11:07 miod Exp $	*/
 
 /*
  * Copyright (c) 2009 Miodrag Vallat.

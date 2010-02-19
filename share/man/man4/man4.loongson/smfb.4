@@ -1,4 +1,4 @@
-.\"	$OpenBSD: smfb.4,v 1.1 2010/02/09 19:08:39 miod Exp $
+.\"	$OpenBSD: smfb.4,v 1.2 2010/02/10 08:35:31 jmc Exp $
 .\"
 .\" Copyright (c) 2010 Miodrag Vallat.
 .\"
@@ -14,14 +14,15 @@
 .\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 .\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd $Mdocdate: February 9 2010 $
+.Dd $Mdocdate: February 10 2010 $
 .Dt SMFB 4 loongson
 .Os
 .Sh NAME
 .Nm smfb
 .Nd Silicon Motion frame buffer
 .Sh SYNOPSIS
-.Cd "smfb* at pci?"
+.Cd "smfb* at pci?" Pq "SM712"
+.Cd "smfb* at voyager?" Pq "SM502"
 .Sh DESCRIPTION
 The
 .Nm
@@ -41,5 +42,6 @@ color depth.
 .Sh SEE ALSO
 .Xr intro 4 ,
 .Xr pci 4 ,
+.Xr voyager 4 ,
 .Xr wscons 4 ,
 .Xr wsdisplay 4

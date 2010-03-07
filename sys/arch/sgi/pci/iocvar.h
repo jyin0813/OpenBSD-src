@@ -1,4 +1,4 @@
-/*	$OpenBSD: iocvar.h,v 1.3 2009/07/26 19:58:51 miod Exp $	*/
+/*	$OpenBSD: iocvar.h,v 1.4 2009/11/11 15:56:42 miod Exp $	*/
 
 /*
  * Copyright (c) 2008 Miodrag Vallat.
@@ -18,6 +18,10 @@
 
 struct ioc_attach_args {
 	const char		*iaa_name;
+
+	int16_t			 iaa_nasid;
+	int			 iaa_widget;
+	int			 iaa_npci;
 
 	bus_space_tag_t		 iaa_memt;
 	bus_space_handle_t	 iaa_memh;

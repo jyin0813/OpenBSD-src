@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-down-pane.c,v 1.7 2009/11/13 19:53:29 nicm Exp $ */
+/* $OpenBSD: cmd-down-pane.c,v 1.8 2010/01/03 12:51:05 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

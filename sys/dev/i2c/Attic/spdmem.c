@@ -1,4 +1,4 @@
-/*	$OpenBSD: spdmem.c,v 1.32 2009/05/23 09:14:39 jsg Exp $	*/
+/*	$OpenBSD: spdmem.c,v 1.33 2009/09/13 23:36:10 jsg Exp $	*/
 /* $NetBSD: spdmem.c,v 1.3 2007/09/20 23:09:59 xtraeme Exp $ */
 
 /*

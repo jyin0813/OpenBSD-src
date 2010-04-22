@@ -1,4 +1,4 @@
-/*	$OpenBSD: evdns.h,v 1.2 2008/05/02 06:09:11 brad Exp $	*/
+/*	$OpenBSD: evdns.h,v 1.3 2008/05/02 15:55:58 brad Exp $	*/
 
 /*
  * Copyright (c) 2006 Niels Provos <provos@citi.umich.edu>

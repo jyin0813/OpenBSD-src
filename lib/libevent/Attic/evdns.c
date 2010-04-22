@@ -1,4 +1,4 @@
-/*	$OpenBSD: evdns.c,v 1.3 2008/05/02 06:09:11 brad Exp $	*/
+/*	$OpenBSD: evdns.c,v 1.4 2008/05/02 15:55:58 brad Exp $	*/
 
 /* The original version of this module was written by Adam Langley; for
  * a history of modifications, check out the subversion logs.

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: event-config.h,v 1.1 2010/04/21 20:02:40 nicm Exp $	*/
 
 #ifndef _EVENT_CONFIG_H_
 #define _EVENT_CONFIG_H_

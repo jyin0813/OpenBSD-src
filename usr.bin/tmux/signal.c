@@ -1,4 +1,4 @@
-/* $OpenBSD: signal.c,v 1.1 2010/05/03 16:06:32 nicm Exp $ */
+/* $Id$ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>
@@ -17,10 +17,8 @@
  * OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <sys/types.h>
-
-#include <signal.h>
 #include <string.h>
+#include <signal.h>
 
 #include "tmux.h"
 
@@ -31,7 +29,7 @@ struct event	ev_sigusr1;
 struct event	ev_sigwinch;
 
 void
-set_signals(void(*handler)(int, short, void *))
+set_signals(void(*handler)(int, short, unused void *))
 {
 	struct sigaction	sigact;
 

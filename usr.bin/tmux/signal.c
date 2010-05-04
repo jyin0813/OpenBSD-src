@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: signal.c,v 1.1 2010/05/03 16:06:32 nicm Exp $ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>

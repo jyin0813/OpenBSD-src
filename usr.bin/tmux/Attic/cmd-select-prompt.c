@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-select-prompt.c,v 1.6 2009/08/13 23:44:18 nicm Exp $ */
+/* $OpenBSD: cmd-select-prompt.c,v 1.7 2009/11/13 19:53:29 nicm Exp $ */
 
 /*
  * Copyright (c) 2008 Nicholas Marriott <nicm@users.sourceforge.net>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: subr.s,v 1.29 2009/06/20 21:02:15 miod Exp $     */
+/*	$OpenBSD: subr.s,v 1.30 2009/08/19 19:47:53 miod Exp $     */
 /*	$NetBSD: subr.s,v 1.32 1999/03/25 00:41:48 mrg Exp $	   */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: moko_start.S,v 1.2 2005/01/02 19:43:07 drahn Exp $	*/
+/*	$OpenBSD: moko_start.S,v 1.1 2008/11/26 14:47:50 drahn Exp $	*/
 
 /*
  * Copyright (c) 2002, 2003  Genetec Corporation.  All rights reserved.

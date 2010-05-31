@@ -1,4 +1,4 @@
-/* $OpenBSD: internal_types.h,v 1.1 2004/12/31 00:04:35 drahn Exp $ */
+/* $OpenBSD: internal_types.h,v 1.1 2008/11/26 14:47:50 drahn Exp $ */
 /* Public domain */
 #ifndef _MACHINE_INTERNAL_TYPES_H_
 #define _MACHINE_INTERNAL_TYPES_H_

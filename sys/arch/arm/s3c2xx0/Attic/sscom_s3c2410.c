@@ -1,4 +1,4 @@
-/*	$OpenBSD: sscom_s3c2410.c,v 1.4 2008/12/30 07:31:31 drahn Exp $ */
+/*	$OpenBSD: sscom_s3c2410.c,v 1.5 2008/12/30 15:52:15 drahn Exp $ */
 /*	$NetBSD: sscom_s3c2410.c,v 1.2 2005/12/11 12:16:51 christos Exp $ */
 
 /*

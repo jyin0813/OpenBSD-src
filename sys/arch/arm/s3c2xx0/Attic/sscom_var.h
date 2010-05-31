@@ -1,4 +1,4 @@
-/*	$OpenBSD: sscom_var.h,v 1.1 2008/11/26 14:39:14 drahn Exp $ */
+/*	$OpenBSD: sscom_var.h,v 1.2 2009/10/13 19:33:16 pirofti Exp $ */
 /* $NetBSD: sscom_var.h,v 1.7 2006/03/06 20:21:25 rjs Exp $ */
 
 /*

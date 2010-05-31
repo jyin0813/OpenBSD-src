@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: s3c24x0_clk.c,v 1.1 2008/11/26 14:39:14 drahn Exp $ */
 /*	$NetBSD: s3c24x0_clk.c,v 1.10 2008/07/04 11:59:45 bsh Exp $ */
 
 /*

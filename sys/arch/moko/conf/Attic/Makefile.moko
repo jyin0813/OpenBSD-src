@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.moko,v 1.25 2010/05/25 17:27:55 deraadt Exp $
+#	$OpenBSD: Makefile.moko,v 1.26 2010/05/28 14:27:08 guenther Exp $
 
 # For instructions on building kernels consult the config(8) and options(4)
 # manual pages.

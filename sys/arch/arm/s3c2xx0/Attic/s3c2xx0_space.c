@@ -1,4 +1,4 @@
-/*	$OpenBSD: s3c2xx0_space.c,v 1.1 2008/11/26 14:39:14 drahn Exp $ */
+/*	$OpenBSD: s3c2xx0_space.c,v 1.2 2010/03/03 15:12:06 oga Exp $ */
 /*	$NetBSD: s3c2xx0_space.c,v 1.7 2005/11/24 13:08:32 yamt Exp $ */
 
 /*

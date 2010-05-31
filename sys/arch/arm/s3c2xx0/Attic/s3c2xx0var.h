@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: s3c2xx0var.h,v 1.1 2008/11/26 14:39:14 drahn Exp $ */
 /* $NetBSD: s3c2xx0var.h,v 1.4 2005/12/11 12:16:51 christos Exp $ */
 
 /*

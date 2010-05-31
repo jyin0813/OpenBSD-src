@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: s3c2xx0_busdma.c,v 1.1 2008/11/26 14:39:14 drahn Exp $ */
 /*	$NetBSD: s3c2xx0_busdma.c,v 1.3 2005/12/11 12:16:51 christos Exp $ */
 
 /*

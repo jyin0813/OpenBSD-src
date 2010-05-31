@@ -1,1 +1,1 @@
-/*	$OpenBSD: psl.h,v 1.1 2004/12/31 00:04:35 drahn Exp $	*/
+/*	$OpenBSD: psl.h,v 1.1 2008/11/26 14:47:50 drahn Exp $	*/

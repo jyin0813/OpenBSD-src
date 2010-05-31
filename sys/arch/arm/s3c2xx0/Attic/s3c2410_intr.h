@@ -1,4 +1,4 @@
-/*	$OpenBSD: s3c2410_intr.h,v 1.2 2008/12/08 20:48:06 drahn Exp $ */
+/*	$OpenBSD: s3c2410_intr.h,v 1.2 2008/12/08 20:50:20 drahn Exp $ */
 /*	$NetBSD: s3c2410_intr.h,v 1.2 2005/12/11 12:16:51 christos Exp $ */
 
 /*

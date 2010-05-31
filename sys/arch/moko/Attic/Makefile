@@ -1,4 +1,4 @@
-# 	$OpenBSD: Makefile,v 1.2 2008/11/27 20:50:35 miod Exp $
+# 	$OpenBSD: Makefile,v 1.3 2009/12/25 16:08:10 miod Exp $
 #	$NetBSD: Makefile,v 1.1 2001/06/12 08:32:46 chris Exp $
 
 # Makefile for moko tags file and boot blocks

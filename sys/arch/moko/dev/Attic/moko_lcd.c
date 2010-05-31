@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: moko_lcd.c,v 1.1 2009/07/14 14:09:05 drahn Exp $ */
 /*	$NetBSD: smdk2410_lcd.c,v 1.4 2008/06/11 23:24:43 cegger Exp $ */
 
 /*

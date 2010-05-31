@@ -1,4 +1,4 @@
-/*	$OpenBSD: sscom.c,v 1.16 2010/02/01 23:53:58 drahn Exp $ */
+/*	$OpenBSD: sscom.c,v 1.17 2010/04/12 12:57:51 tedu Exp $ */
 /*	$NetBSD: sscom.c,v 1.29 2008/06/11 22:37:21 cegger Exp $ */
 
 /*

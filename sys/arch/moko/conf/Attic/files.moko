@@ -1,4 +1,4 @@
-#	$OpenBSD: files.moko,v 1.1 2008/11/26 14:47:50 drahn Exp $
+#	$OpenBSD: files.moko,v 1.2 2009/01/02 06:38:24 drahn Exp $
 #
 # First try for arm-specific configuration info
 #

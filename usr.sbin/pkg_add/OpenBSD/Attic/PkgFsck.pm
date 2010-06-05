@@ -1,7 +1,7 @@
 #! /usr/bin/perl
 
 # ex:ts=8 sw=4:
-# $OpenBSD: PkgFsck.pm,v 1.2 2010/06/05 12:35:32 espie Exp $
+# $OpenBSD: PkgFsck.pm,v 1.3 2010/06/05 16:21:35 espie Exp $
 #
 # Copyright (c) 2003-2010 Marc Espie <espie@openbsd.org>
 #

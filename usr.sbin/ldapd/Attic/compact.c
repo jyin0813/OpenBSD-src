@@ -1,4 +1,4 @@
-/*	$OpenBSD: compact.c,v 1.1 2010/05/31 17:36:31 martinh Exp $ */
+/*	$OpenBSD: compact.c,v 1.2 2010/05/31 18:29:04 martinh Exp $ */
 
 /*
  * Copyright (c) 2010 Martin Hedenfalk <martin@bzero.se>

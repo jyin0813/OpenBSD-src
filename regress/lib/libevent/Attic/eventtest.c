@@ -1,4 +1,4 @@
-/*	$OpenBSD: eventtest.c,v 1.11 2008/05/02 06:09:11 brad Exp $	*/
+/*	$OpenBSD: eventtest.c,v 1.12 2008/05/04 21:14:32 brad Exp $	*/
 /*	$NetBSD: eventtest.c,v 1.3 2004/08/07 21:09:47 provos Exp $	*/
 
 /*

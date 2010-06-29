@@ -1,4 +1,4 @@
-/*	$OpenBSD: acutab.c,v 1.5 2006/03/17 19:17:13 moritz Exp $	*/
+/*	$OpenBSD: acutab.c,v 1.6 2009/10/27 23:59:44 deraadt Exp $	*/
 /*	$NetBSD: acutab.c,v 1.3 1994/12/08 09:30:41 jtc Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: acu.c,v 1.16 2008/11/09 12:34:47 tobias Exp $	*/
+/*	$OpenBSD: acu.c,v 1.17 2009/10/27 23:59:44 deraadt Exp $	*/
 /*	$NetBSD: acu.c,v 1.4 1996/12/29 10:34:03 cgd Exp $	*/
 
 /*

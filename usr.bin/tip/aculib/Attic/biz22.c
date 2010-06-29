@@ -1,4 +1,4 @@
-/*	$OpenBSD: biz22.c,v 1.13 2006/03/17 19:17:13 moritz Exp $	*/
+/*	$OpenBSD: biz22.c,v 1.14 2009/10/27 23:59:45 deraadt Exp $	*/
 /*	$NetBSD: biz22.c,v 1.6 1997/02/11 09:24:11 mrg Exp $	*/
 
 /*

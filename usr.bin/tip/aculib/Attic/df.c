@@ -1,4 +1,4 @@
-/*	$OpenBSD: df.c,v 1.9 2006/03/17 19:17:13 moritz Exp $	*/
+/*	$OpenBSD: df.c,v 1.10 2009/10/27 23:59:45 deraadt Exp $	*/
 /*	$NetBSD: df.c,v 1.4 1995/10/29 00:49:51 pk Exp $	*/
 
 /*

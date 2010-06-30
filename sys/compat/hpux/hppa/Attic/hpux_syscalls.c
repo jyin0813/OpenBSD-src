@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hpux_syscalls.c,v 1.10 2010/01/28 19:59:35 miod Exp $	*/
 
 /*
  * System call names.

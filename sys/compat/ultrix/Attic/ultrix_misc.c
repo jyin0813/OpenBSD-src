@@ -1,4 +1,4 @@
-/*	$OpenBSD: ultrix_misc.c,v 1.30 2007/06/06 17:15:13 deraadt Exp $	*/
+/*	$OpenBSD: ultrix_misc.c,v 1.31 2009/03/05 19:52:24 kettenis Exp $	*/
 /*	$NetBSD: ultrix_misc.c,v 1.23 1996/04/07 17:23:04 jonathan Exp $	*/
 
 /*

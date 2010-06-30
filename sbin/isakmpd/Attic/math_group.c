@@ -1,4 +1,4 @@
-/* $OpenBSD: math_group.c,v 1.31 2006/06/02 19:35:55 hshoexer Exp $	 */
+/* $OpenBSD: math_group.c,v 1.32 2006/07/24 11:45:44 ho Exp $	 */
 /* $EOM: math_group.c,v 1.25 2000/04/07 19:53:26 niklas Exp $	 */
 
 /*

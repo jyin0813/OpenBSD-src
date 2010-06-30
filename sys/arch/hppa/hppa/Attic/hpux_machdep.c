@@ -1,4 +1,4 @@
-/*	$OpenBSD: hpux_machdep.c,v 1.5 2010/06/29 00:50:40 jsing Exp $	*/
+/*	$OpenBSD: hpux_machdep.c,v 1.6 2010/06/29 04:03:21 jsing Exp $	*/
 
 /*
  * Copyright (c) 2005 Michael Shalayeff

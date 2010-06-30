@@ -1,4 +1,4 @@
-/* $OpenBSD: math_mp.h,v 1.6 2004/04/15 18:39:26 deraadt Exp $	 */
+/* $OpenBSD: math_mp.h,v 1.7 2005/04/08 19:19:39 hshoexer Exp $	 */
 /* $EOM: math_mp.h,v 1.4 2000/09/16 09:41:43 ho Exp $	 */
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ultrix_fs.c,v 1.14 2006/03/05 21:48:56 miod Exp $	*/
+/*	$OpenBSD: ultrix_fs.c,v 1.15 2007/10/30 12:09:22 gilles Exp $	*/
 /*	$NetBSD: ultrix_fs.c,v 1.4 1996/04/07 17:23:06 jonathan Exp $	*/
 
 /*

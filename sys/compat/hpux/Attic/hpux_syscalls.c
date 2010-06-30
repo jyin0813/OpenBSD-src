@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hpux_syscalls.c,v 1.12 2004/07/09 21:33:44 mickey Exp $	*/
 
 #if defined(__hppa__)
 #include <compat/hpux/hppa/hpux_syscalls.c>

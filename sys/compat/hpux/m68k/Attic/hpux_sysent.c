@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: hpux_sysent.c,v 1.3 2010/01/28 19:59:35 miod Exp $	*/
 
 /*
  * System call switch table.

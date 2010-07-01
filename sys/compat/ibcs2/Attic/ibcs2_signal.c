@@ -1,4 +1,4 @@
-/*	$OpenBSD: ibcs2_signal.c,v 1.9 2009/06/01 20:11:38 weingart Exp $	*/
+/*	$OpenBSD: ibcs2_signal.c,v 1.10 2009/12/09 16:29:56 jsg Exp $	*/
 /*	$NetBSD: ibcs2_signal.c,v 1.8 1996/05/03 17:05:27 christos Exp $	*/
 
 /*

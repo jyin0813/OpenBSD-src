@@ -1,4 +1,4 @@
-/*	$OpenBSD: osf1_time.c,v 1.2 2001/07/09 05:15:24 fgsch Exp $	*/
+/*	$OpenBSD: osf1_time.c,v 1.3 2008/09/23 04:31:41 miod Exp $	*/
 /*	$NetBSD: osf1_time.c,v 1.1 1999/05/01 05:25:37 cgd Exp $	*/
 
 /*

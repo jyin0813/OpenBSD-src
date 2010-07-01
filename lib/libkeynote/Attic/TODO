@@ -1,4 +1,4 @@
-# $OpenBSD: TODO,v 1.6 1999/10/26 22:31:37 angelos Exp $
+# $OpenBSD: TODO,v 1.7 1999/11/05 00:27:18 angelos Exp $
 
 TODOs:
 	- Write key/signature algorithm drafts

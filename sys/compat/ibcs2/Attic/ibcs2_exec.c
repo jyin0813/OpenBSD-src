@@ -1,4 +1,4 @@
-/*	$OpenBSD: ibcs2_exec.c,v 1.19 2009/03/05 19:52:23 kettenis Exp $	*/
+/*	$OpenBSD: ibcs2_exec.c,v 1.20 2009/06/01 20:11:38 weingart Exp $	*/
 /*	$NetBSD: ibcs2_exec.c,v 1.12 1996/10/12 02:13:52 thorpej Exp $	*/
 
 /*

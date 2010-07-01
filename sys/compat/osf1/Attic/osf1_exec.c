@@ -1,4 +1,4 @@
-/* $OpenBSD: osf1_exec.c,v 1.5 2004/06/22 23:52:18 jfb Exp $ */
+/* $OpenBSD: osf1_exec.c,v 1.6 2009/03/05 19:52:24 kettenis Exp $ */
 /* $NetBSD$ */
 
 /*

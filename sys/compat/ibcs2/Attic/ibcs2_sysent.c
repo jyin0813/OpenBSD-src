@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ibcs2_sysent.c,v 1.10 2007/11/27 18:05:59 art Exp $	*/
 
 /*
  * System call switch table.

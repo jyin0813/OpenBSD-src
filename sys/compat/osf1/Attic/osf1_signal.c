@@ -1,4 +1,4 @@
-/*	$OpenBSD: osf1_signal.c,v 1.9 2000/08/04 15:47:55 ericj Exp $	*/
+/*	$OpenBSD: osf1_signal.c,v 1.10 2008/05/01 11:53:26 miod Exp $	*/
 /*	$NetBSD: osf1_signal.c,v 1.15 1999/05/05 00:57:43 cgd Exp $	*/
 
 /*

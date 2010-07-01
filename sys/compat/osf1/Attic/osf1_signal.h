@@ -1,4 +1,4 @@
-/* 	$OpenBSD$	*/
+/* 	$OpenBSD: osf1_signal.h,v 1.4 2000/08/04 15:47:55 ericj Exp $	*/
 /*	$NetBSD: osf1_signal.h,v 1.5 1999/05/01 02:57:11 cgd Exp $	*/
 
 /* XXX OUT OF DATE, some of the non-signal number bits here don't belong */

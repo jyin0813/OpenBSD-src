@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: ibcs2_syscallargs.h,v 1.12 2007/11/27 18:05:59 art Exp $	*/
 
 /*
  * System call argument lists.

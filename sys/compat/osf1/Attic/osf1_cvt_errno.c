@@ -1,4 +1,4 @@
-/* $OpenBSD: osf1_cvt_errno.c,v 1.2 2007/10/27 22:42:11 miod Exp $ */
+/* $OpenBSD: osf1_cvt_errno.c,v 1.3 2009/10/28 16:38:43 jsg Exp $ */
 /* $NetBSD: osf1_cvt_errno.c,v 1.4 1999/05/01 02:16:01 cgd Exp $ */
 
 /*

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.3 2001/01/29 01:57:59 niklas Exp $
 
 PROG = learn
 

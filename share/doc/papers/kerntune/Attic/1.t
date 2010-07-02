@@ -1,4 +1,4 @@
-.\"	$OpenBSD: 1.t,v 1.3 2003/06/02 23:30:09 millert Exp $
+.\"	$OpenBSD: 1.t,v 1.4 2003/10/30 14:52:24 jmc Exp $
 .\"
 .\" Copyright (c) 1984 M. K. McKusick
 .\" Copyright (c) 1984 The Regents of the University of California.

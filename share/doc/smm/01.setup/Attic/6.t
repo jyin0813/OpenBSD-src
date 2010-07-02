@@ -1,4 +1,4 @@
-.\"	$OpenBSD: 6.t,v 1.3 2003/06/02 23:30:11 millert Exp $
+.\"	$OpenBSD: 6.t,v 1.4 2005/09/19 06:40:01 krw Exp $
 .\"
 .\" Copyright (c) 1980, 1986, 1988, 1993 The Regents of the University of California.
 .\" All rights reserved.

@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 2001/02/03 08:15:04 niklas Exp $
 
 
 DIR=	psd/05.sysman

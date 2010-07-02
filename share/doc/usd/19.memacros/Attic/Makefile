@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2001/02/03 08:15:10 niklas Exp $
+#	$OpenBSD: Makefile,v 1.3 2004/02/01 14:22:46 jmc Exp $
 
 
 DIR=	usd/19.memacros

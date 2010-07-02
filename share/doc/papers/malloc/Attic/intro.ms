@@ -6,7 +6,7 @@
 .\" this stuff is worth it, you can buy me a beer in return.   Poul-Henning Kamp
 .\" ----------------------------------------------------------------------------
 .\"
-.\" $OpenBSD: intro.ms,v 1.2 1997/01/05 22:18:09 tholo Exp $
+.\" $OpenBSD: intro.ms,v 1.3 2003/08/10 23:43:28 mickey Exp $
 .\"
 .ds RH Introduction
 .NH

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2003/11/10 20:32:17 otto Exp $
+#	$OpenBSD: Makefile,v 1.2 2004/02/01 14:22:45 jmc Exp $
 
 DIR=	smm/17.password
 SRCS=	password.ms

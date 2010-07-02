@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.3 2001/02/03 08:15:07 niklas Exp $
+#	$OpenBSD: Makefile,v 1.4 2004/02/01 14:22:45 jmc Exp $
 
 
 DIR=	smm/01.setup

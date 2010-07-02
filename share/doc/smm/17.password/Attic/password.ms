@@ -1,4 +1,4 @@
-.\"	$OpenBSD: password.ms,v 1.1 2003/11/10 20:32:17 otto Exp $
+.\"	$OpenBSD: password.ms,v 1.2 2004/04/06 10:00:32 jmc Exp $
 .\"
 .\" Copyright (C) Caldera International Inc.  2001-2002.
 .\" All rights reserved.

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1.1.1 1998/09/20 23:11:04 ian Exp $
+#	$OpenBSD: Makefile,v 1.2 2004/02/01 14:22:45 jmc Exp $
 #	@(#) This version did not come via Berkeley, but direct from Bell Labs.
 
 DIR=	usd/02.learn

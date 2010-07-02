@@ -1,4 +1,4 @@
-.\"	$OpenBSD: appendix.ms,v 1.2 2001/02/03 08:14:56 niklas Exp $
+.\"	$OpenBSD: appendix.ms,v 1.3 2003/06/02 23:30:09 millert Exp $
 .\"
 .\" Copyright (c) 1983 The Regents of the University of California.
 .\" All rights reserved.

@@ -1,4 +1,4 @@
-.\"	$OpenBSD: fsinterface.ms,v 1.4 2003/06/02 23:30:09 millert Exp $
+.\"	$OpenBSD: fsinterface.ms,v 1.5 2006/03/04 16:18:04 miod Exp $
 .\"
 .\" Copyright (c) 1986 The Regents of the University of California.
 .\" All rights reserved.

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2003/08/09 09:00:14 jmc Exp $
+#	$OpenBSD: Makefile,v 1.3 2004/02/01 14:22:45 jmc Exp $
 
 DIR=	usd/17.msmacros
 SRCS=	ms fig1.pic

@@ -1,4 +1,4 @@
-.\"	$OpenBSD: quotas.ms,v 1.2 2001/02/03 08:15:07 niklas Exp $
+.\"	$OpenBSD: quotas.ms,v 1.3 2003/06/02 23:30:11 millert Exp $
 .\"
 .\" Copyright (c) 1983, 1993
 .\"	The Regents of the University of California.  All rights reserved.

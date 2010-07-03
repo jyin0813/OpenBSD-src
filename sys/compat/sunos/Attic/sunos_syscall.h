@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: sunos_syscall.h,v 1.21 2008/01/05 00:38:13 miod Exp $	*/
 
 /*
  * System call numbers.

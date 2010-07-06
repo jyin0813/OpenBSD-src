@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: bsdos_sysent.c,v 1.22 2010/05/23 11:37:29 deraadt Exp $	*/
 
 /*
  * System call switch table.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ss_scanjet.c,v 1.43 2010/07/01 03:01:37 matthew Exp $	*/
+/*	$OpenBSD: ss_scanjet.c,v 1.44 2010/07/01 05:11:18 krw Exp $	*/
 /*	$NetBSD: ss_scanjet.c,v 1.6 1996/05/18 22:58:01 christos Exp $	*/
 
 /*

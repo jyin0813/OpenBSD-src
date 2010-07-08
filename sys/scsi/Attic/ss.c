@@ -1,4 +1,4 @@
-/*	$OpenBSD: ss.c,v 1.78 2010/07/01 03:01:37 matthew Exp $	*/
+/*	$OpenBSD: ss.c,v 1.79 2010/07/01 05:11:18 krw Exp $	*/
 /*	$NetBSD: ss.c,v 1.10 1996/05/05 19:52:55 christos Exp $	*/
 
 /*

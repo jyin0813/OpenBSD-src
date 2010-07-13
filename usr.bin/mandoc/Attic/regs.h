@@ -1,4 +1,4 @@
-/*	$Id: regs.h,v 1.1 2010/06/27 21:58:57 schwarze Exp $ */
+/*	$Id: regs.h,v 1.2 2010/07/03 15:59:05 schwarze Exp $ */
 /*
  * Copyright (c) 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *

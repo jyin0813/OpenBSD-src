@@ -1,4 +1,4 @@
-/*	$OpenBSD: mbrtowc_sb.c,v 1.3 2005/08/11 20:51:56 espie Exp $	*/
+/*	$OpenBSD: mbrtowc_sb.c,v 1.4 2005/11/27 20:03:06 cloder Exp $	*/
 /*	$NetBSD: multibyte_sb.c,v 1.4 2003/08/07 16:43:04 agc Exp $	*/
 
 /*

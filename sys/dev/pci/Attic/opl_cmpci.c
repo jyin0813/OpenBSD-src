@@ -1,4 +1,4 @@
-/*	$OpenBSD: opl_cmpci.c,v 1.4 2008/06/26 05:42:17 ray Exp $	*/
+/*	$OpenBSD: opl_cmpci.c,v 1.5 2010/04/08 00:23:53 tedu Exp $	*/
 
 /*
  * Copyright (c) 1998 The NetBSD Foundation, Inc.

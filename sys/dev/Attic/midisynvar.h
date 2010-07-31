@@ -1,4 +1,4 @@
-/*	$OpenBSD: midisynvar.h,v 1.2 2002/03/14 01:26:52 millert Exp $	*/
+/*	$OpenBSD: midisynvar.h,v 1.3 2008/06/26 05:42:14 ray Exp $	*/
 /*	$NetBSD: midisynvar.h,v 1.3 1998/11/25 22:17:07 augustss Exp $	*/
 
 /*

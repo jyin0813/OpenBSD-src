@@ -1,4 +1,4 @@
-/*	$OpenBSD: opl_isa.c,v 1.4 2005/11/21 18:16:40 millert Exp $	*/
+/*	$OpenBSD: opl_isa.c,v 1.5 2008/06/26 05:42:16 ray Exp $	*/
 /*	$NetBSD: opl_isa.c,v 1.1 1998/08/26 13:33:59 augustss Exp $	*/
 
 /*

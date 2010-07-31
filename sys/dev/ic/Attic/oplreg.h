@@ -1,4 +1,4 @@
-/*	$OpenBSD: oplreg.h,v 1.1 1999/01/02 00:02:40 niklas Exp $	*/
+/*	$OpenBSD: oplreg.h,v 1.2 2008/06/26 05:42:16 ray Exp $	*/
 /*	$NetBSD: oplreg.h,v 1.3 1998/11/25 22:17:06 augustss Exp $	*/
 
 /*

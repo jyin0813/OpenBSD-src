@@ -1,4 +1,4 @@
-/*	$OpenBSD: midisyn.c,v 1.8 2007/09/11 13:39:33 gilles Exp $	*/
+/*	$OpenBSD: midisyn.c,v 1.9 2008/06/26 05:42:14 ray Exp $	*/
 /*	$NetBSD: midisyn.c,v 1.5 1998/11/25 22:17:07 augustss Exp $	*/
 
 /*

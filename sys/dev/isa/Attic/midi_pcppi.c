@@ -1,4 +1,4 @@
-/*	$OpenBSD: midi_pcppi.c,v 1.5 2006/01/02 05:21:40 brad Exp $	*/
+/*	$OpenBSD: midi_pcppi.c,v 1.6 2008/06/26 05:42:16 ray Exp $	*/
 /*	$NetBSD: midi_pcppi.c,v 1.4 1998/11/25 22:17:06 augustss Exp $	*/
 
 /*

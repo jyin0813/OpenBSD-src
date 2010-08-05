@@ -1,4 +1,4 @@
-/*	$OpenBSD: aml_common.c,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
+/*	$OpenBSD: aml_common.c,v 1.2 2008/09/10 14:59:53 miod Exp $	*/
 /*-
  * Copyright (c) 1999 Takanori Watanabe
  * Copyright (c) 1999, 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
@@ -25,7 +25,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: aml_common.c,v 1.1 2005/06/02 20:09:39 tholo Exp $
+ *	$Id: aml_common.c,v 1.2 2008/09/10 14:59:53 miod Exp $
  *	$FreeBSD: src/usr.sbin/acpi/amldb/aml/aml_common.c,v 1.6 2000/11/09 06:24:45 iwasaki Exp $
  */
 #include <sys/types.h>

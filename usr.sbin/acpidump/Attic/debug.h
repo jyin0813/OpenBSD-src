@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: debug.h,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
 /*-
  * Copyright (c) 1999 Takanori Watanabe
  * Copyright (c) 1999, 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
@@ -25,7 +25,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: debug.h,v 1.8 2000/08/09 14:47:57 iwasaki Exp $
+ *	$Id: debug.h,v 1.1 2005/06/02 20:09:39 tholo Exp $
  *	$FreeBSD: src/usr.sbin/acpi/amldb/debug.h,v 1.1.1.1 2000/08/31 14:45:00 iwasaki Exp $
  */
 

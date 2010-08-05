@@ -1,4 +1,4 @@
-/*	$OpenBSD: aml_dump.c,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
+/*	$OpenBSD: aml_dump.c,v 1.2 2007/02/22 19:09:26 jordan Exp $	*/
 /*-
  * Copyright (c) 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
  * All rights reserved.
@@ -24,7 +24,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: aml_dump.c,v 1.1 2005/06/02 20:09:39 tholo Exp $
+ *	$Id: aml_dump.c,v 1.2 2007/02/22 19:09:26 jordan Exp $
  *	$FreeBSD: src/usr.sbin/acpi/acpidump/aml_dump.c,v 1.3 2000/11/08 02:37:00 iwasaki Exp $
  */
 

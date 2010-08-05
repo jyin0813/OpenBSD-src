@@ -1,4 +1,4 @@
-/*	$OpenBSD: acpidump.h,v 1.2 2005/06/04 02:25:53 cloder Exp $	*/
+/*	$OpenBSD: acpidump.h,v 1.3 2007/10/08 08:20:49 gilles Exp $	*/
 /*-
  * Copyright (c) 1999 Doug Rabson
  * Copyright (c) 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
@@ -25,7 +25,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: acpidump.h,v 1.2 2005/06/04 02:25:53 cloder Exp $
+ *	$Id: acpidump.h,v 1.3 2007/10/08 08:20:49 gilles Exp $
  *	$FreeBSD: src/usr.sbin/acpi/acpidump/acpidump.h,v 1.2 2000/11/08 02:37:00 iwasaki Exp $
  */
 

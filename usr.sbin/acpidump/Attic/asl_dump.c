@@ -1,4 +1,4 @@
-/*	$OpenBSD: asl_dump.c,v 1.7 2007/12/07 18:27:07 fgsch Exp $	*/
+/*	$OpenBSD: asl_dump.c,v 1.8 2008/06/06 10:16:47 marco Exp $	*/
 /*-
  * Copyright (c) 1999 Doug Rabson
  * Copyright (c) 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
@@ -25,7 +25,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: asl_dump.c,v 1.7 2007/12/07 18:27:07 fgsch Exp $
+ *	$Id: asl_dump.c,v 1.8 2008/06/06 10:16:47 marco Exp $
  *	$FreeBSD: src/usr.sbin/acpi/acpidump/asl_dump.c,v 1.5 2001/10/23 14:53:58 takawata Exp $
  */
 

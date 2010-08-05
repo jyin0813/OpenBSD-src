@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: aml_region.h,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
 /*-
  * Copyright (c) 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
  * All rights reserved.
@@ -24,7 +24,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: aml_region.h,v 1.5 2000/08/08 14:12:05 iwasaki Exp $
+ *	$Id: aml_region.h,v 1.1 2005/06/02 20:09:39 tholo Exp $
  *	$FreeBSD: src/usr.sbin/acpi/amldb/aml/aml_region.h,v 1.2 2000/09/20 01:01:27 iwasaki Exp $
  */
 

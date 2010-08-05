@@ -1,4 +1,4 @@
-/*	$OpenBSD: aml_memman.c,v 1.2 2006/02/06 21:46:40 jmc Exp $	*/
+/*	$OpenBSD: aml_memman.c,v 1.3 2008/09/10 14:59:53 miod Exp $	*/
 /*-
  * Copyright (c) 1999, 2000 Mitsuru IWASAKI <iwasaki@FreeBSD.org>
  * All rights reserved.
@@ -24,7 +24,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: aml_memman.c,v 1.2 2006/02/06 21:46:40 jmc Exp $
+ *	$Id: aml_memman.c,v 1.3 2008/09/10 14:59:53 miod Exp $
  *	$FreeBSD: src/usr.sbin/acpi/amldb/aml/aml_memman.c,v 1.2 2000/11/09 06:24:45 iwasaki Exp $
  */
 

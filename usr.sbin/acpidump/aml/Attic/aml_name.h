@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: aml_name.h,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
 /*-
  * Copyright (c) 1999 Takanori Watanabe
  * Copyright (c) 1999, 2000 Yasuo Yokoyama
@@ -26,7 +26,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: aml_name.h,v 1.17 2000/08/16 18:14:54 iwasaki Exp $
+ *	$Id: aml_name.h,v 1.1 2005/06/02 20:09:39 tholo Exp $
  *	$FreeBSD: src/usr.sbin/acpi/amldb/aml/aml_name.h,v 1.2 2000/11/09 06:24:45 iwasaki Exp $
  */
 

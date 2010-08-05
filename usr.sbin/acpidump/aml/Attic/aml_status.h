@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: aml_status.h,v 1.1 2005/06/02 20:09:39 tholo Exp $	*/
 /*-
  * Copyright (c) 1999 Takanori Watanabe
  * All rights reserved.
@@ -24,7 +24,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: aml_status.h,v 1.6 2000/08/08 14:12:05 iwasaki Exp $
+ *	$Id: aml_status.h,v 1.1 2005/06/02 20:09:39 tholo Exp $
  *	$FreeBSD: src/usr.sbin/acpi/amldb/aml/aml_status.h,v 1.1 2000/08/24 09:33:08 takawata Exp $
  */
 

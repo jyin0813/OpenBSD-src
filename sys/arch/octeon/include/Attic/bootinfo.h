@@ -1,4 +1,4 @@
-/*	$OpenBSD: bus.h,v 1.23 2010/04/04 11:24:30 miod Exp $	*/
+/*	$OpenBSD: bootinfo.h,v 1.1 2010/09/20 06:32:30 syuu Exp $	*/
 
 /*
  * Copyright (c) 2010 Takuya Asada. All rights reserved.

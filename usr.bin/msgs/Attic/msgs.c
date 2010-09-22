@@ -1,4 +1,4 @@
-/*	$OpenBSD: msgs.c,v 1.35 2010/09/22 11:10:52 lum Exp $	*/
+/*	$OpenBSD: msgs.c,v 1.36 2010/09/22 11:39:01 pirofti Exp $	*/
 /*	$NetBSD: msgs.c,v 1.7 1995/09/28 06:57:40 tls Exp $	*/
 
 /*-

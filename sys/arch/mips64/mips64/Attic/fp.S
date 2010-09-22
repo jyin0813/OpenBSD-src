@@ -1,4 +1,4 @@
-/*	$OpenBSD: fp.S,v 1.8 2009/08/09 13:41:30 jsing Exp $	*/
+/*	$OpenBSD: fp.S,v 1.9 2010/02/08 19:26:46 miod Exp $	*/
 /*
  * Copyright (c) 1992, 1993
  *	The Regents of the University of California.  All rights reserved.
@@ -35,7 +35,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)fp.s	8.1 (Berkeley) 6/10/93
- *      $Id: fp.S,v 1.8 2009/08/09 13:41:30 jsing Exp $
+ *      $Id: fp.S,v 1.9 2010/02/08 19:26:46 miod Exp $
  */
 
 /*

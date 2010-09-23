@@ -2,7 +2,7 @@
  * Copyright (c) 2007
  *	Internet Initiative Japan Inc.  All rights reserved.
  */
-/* $Id: rt_zebra.c,v 1.2 2010/07/01 03:38:17 yasuoka Exp $ */
+/* $Id: rt_zebra.c,v 1.3 2010/07/02 21:20:57 yasuoka Exp $ */
 /*
  * @file This file provides utility functions to help add/delete routing
  * information with GNU Zebra.  This utility uses event(3) and uses a UNIX

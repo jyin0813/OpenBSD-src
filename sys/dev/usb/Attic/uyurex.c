@@ -1,4 +1,4 @@
-/*	$OpenBSD: uyurex.c,v 1.2 2010/03/03 19:08:02 miod Exp $ */
+/*	$OpenBSD: uyurex.c,v 1.3 2010/03/04 03:47:22 deraadt Exp $ */
 
 /*
  * Copyright (c) 2010 Yojiro UO <yuo@nui.org>

@@ -1,4 +1,4 @@
-/* $Id$
+/* $Id: Base64.xs,v 1.2 2009/10/12 18:24:31 millert Exp $
 
 Copyright 1997-2004 Gisle Aas
 

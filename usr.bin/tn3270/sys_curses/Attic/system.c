@@ -1,4 +1,4 @@
-/*	$OpenBSD: system.c,v 1.17 2004/03/20 04:28:51 aaron Exp $	*/
+/*	$OpenBSD: system.c,v 1.18 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

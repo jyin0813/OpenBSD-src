@@ -1,4 +1,4 @@
-/*	$OpenBSD: mset.c,v 1.6 2003/07/10 00:06:51 david Exp $	*/
+/*	$OpenBSD: mset.c,v 1.7 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

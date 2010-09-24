@@ -1,6 +1,6 @@
 #!/usr/local/bin/perl
 #
-# $Id: rt.pl,v 2.1 2006/05/03 18:24:10 dankogai Exp $
+# $Id: rt.pl,v 1.4 2009/10/12 18:24:28 millert Exp $
 #
 
 BEGIN {

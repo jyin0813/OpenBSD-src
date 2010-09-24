@@ -1,10 +1,13 @@
 #!./perl
 #
-# $Id: soundex.t,v 1.2 1994/03/24 00:30:27 mike Exp $
+# $Id: Soundex.t,v 1.2 2009/10/12 18:24:35 millert Exp $
 #
 # test module for soundex.pl
 #
-# $Log: soundex.t,v $
+# $Log: Soundex.t,v $
+# Revision 1.2  2009/10/12 18:24:35  millert
+# Merge in perl 5.10.1
+#
 # Revision 1.2  1994/03/24  00:30:27  mike
 # Subtle bug (any excuse :-) spotted by Rich Pinder <rpinder@hsc.usc.edu>
 # in the way I handles leasing characters which were different but had

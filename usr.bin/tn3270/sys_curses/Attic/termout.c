@@ -1,4 +1,4 @@
-/*	$OpenBSD: termout.c,v 1.12 2003/07/18 23:11:43 david Exp $	*/
+/*	$OpenBSD: termout.c,v 1.13 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

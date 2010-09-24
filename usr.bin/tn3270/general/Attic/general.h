@@ -1,4 +1,4 @@
-/* *	$OpenBSD: general.h,v 1.6 1997/02/17 08:58:46 deraadt Exp $*/
+/* *	$OpenBSD: general.h,v 1.7 2003/06/03 02:56:19 millert Exp $*/
 /*-
  * Copyright (c) 1988 The Regents of the University of California.
  * All rights reserved.

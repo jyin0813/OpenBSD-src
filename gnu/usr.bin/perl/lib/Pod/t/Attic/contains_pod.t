@@ -2,7 +2,7 @@
 
 # Copyright (C) 2005  Joshua Hoblitt
 #
-# $Id$
+# $Id: contains_pod.t,v 1.4 2009/10/12 18:24:42 millert Exp $
 
 use strict;
 BEGIN {

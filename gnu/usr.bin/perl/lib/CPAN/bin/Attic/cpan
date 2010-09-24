@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $Id: cpan,v 1.9 2006/11/01 21:49:31 comdog Exp $
+# $Id: cpan,v 1.4 2009/10/12 18:24:39 millert Exp $
 use strict;
 
 =head1 NAME
@@ -173,7 +173,7 @@ use CPAN ();
 use Getopt::Std;
 
 my $VERSION =
-	sprintf "%d.%d", q$Revision: 1.9 $ =~ m/ (\d+) \. (\d+) /xg;
+	sprintf "%d.%d", q$Revision: 1.4 $ =~ m/ (\d+) \. (\d+) /xg;
 
 if( $ARGV[0] eq 'install' )
 	{

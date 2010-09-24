@@ -1,4 +1,4 @@
-/*	$OpenBSD: prt3270.c,v 1.6 2003/12/09 11:58:42 mickey Exp $	*/
+/*	$OpenBSD: prt3270.c,v 1.7 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

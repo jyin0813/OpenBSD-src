@@ -1,4 +1,4 @@
-/* *	$OpenBSD: api.h,v 1.3 2003/06/03 02:56:19 millert Exp $*/
+/* *	$OpenBSD: api.h,v 1.4 2004/11/29 06:20:03 jsg Exp $*/
 /*-
  * Copyright (c) 1988 The Regents of the University of California.
  * All rights reserved.

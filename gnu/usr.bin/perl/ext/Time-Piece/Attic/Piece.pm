@@ -1,4 +1,4 @@
-# $Id: Piece.pm 82 2009-06-27 13:20:23Z matt $
+# $Id: Piece.pm,v 1.2 2009/10/12 18:24:36 millert Exp $
 
 package Time::Piece;
 

@@ -1,4 +1,4 @@
-/* *	$OpenBSD: oia.h,v 1.2 1996/06/26 05:41:20 deraadt Exp $*/
+/* *	$OpenBSD: oia.h,v 1.3 2003/06/03 02:56:19 millert Exp $*/
 /*-
  * Copyright (c) 1988 The Regents of the University of California.
  * All rights reserved.

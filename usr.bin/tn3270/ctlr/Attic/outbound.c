@@ -1,4 +1,4 @@
-/*	$OpenBSD: outbound.c,v 1.5 2003/06/03 02:56:19 millert Exp $	*/
+/*	$OpenBSD: outbound.c,v 1.6 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

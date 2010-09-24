@@ -1,4 +1,4 @@
-# $Id$
+# $Id: MakeMaker.pm,v 1.10 2009/10/12 18:24:40 millert Exp $
 package ExtUtils::MakeMaker;
 
 use strict;
@@ -20,7 +20,7 @@ my %Recognized_Att_Keys;
 
 our $VERSION = '6.55_02';
 
-# Emulate something resembling CVS $Revision$
+# Emulate something resembling CVS $Revision: 1.10 $
 (our $Revision = $VERSION) =~ s{_}{};
 $Revision = int $Revision * 10000;
 
@@ -2352,7 +2352,7 @@ MakeMaker object. The following lines will be parsed o.k.:
 
     $VERSION   = '1.00';
     *VERSION   = \'1.01';
-    ($VERSION) = q$Revision$ =~ /(\d+)/g;
+    ($VERSION) = q$Revision: 1.10 $ =~ /(\d+)/g;
     $FOO::VERSION = '1.10';
     *FOO::VERSION = \'1.11';
 

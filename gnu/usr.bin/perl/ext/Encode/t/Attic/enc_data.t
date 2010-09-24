@@ -1,4 +1,4 @@
-# $Id: enc_data.t,v 2.1 2006/05/03 18:24:10 dankogai Exp $
+# $Id: enc_data.t,v 1.5 2009/10/12 18:24:28 millert Exp $
 
 BEGIN {
     require Config; import Config;

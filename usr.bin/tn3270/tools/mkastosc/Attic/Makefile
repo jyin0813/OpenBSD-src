@@ -1,4 +1,4 @@
-#	$OpenBSD$
+#	$OpenBSD: Makefile,v 1.2 1996/03/09 01:33:36 niklas Exp $
 
 CFLAGS += -I${.CURDIR}/../mkhits -I${.CURDIR}/.. -I.
 

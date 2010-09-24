@@ -1,4 +1,4 @@
-/* *	$OpenBSD: telextrn.h,v 1.3 2003/04/06 22:02:05 tedu Exp $*/
+/* *	$OpenBSD: telextrn.h,v 1.4 2003/06/03 02:56:19 millert Exp $*/
 /*-
  * Copyright (c) 1988 The Regents of the University of California.
  * All rights reserved.

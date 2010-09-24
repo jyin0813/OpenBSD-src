@@ -1,4 +1,4 @@
-/*	$OpenBSD: map3270.c,v 1.9 2003/11/08 19:17:29 jmc Exp $	*/
+/*	$OpenBSD: map3270.c,v 1.10 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mkastosc.c,v 1.4 2007/10/17 20:10:44 chl Exp $	*/
+/*	$OpenBSD: mkastosc.c,v 1.5 2009/10/27 23:59:45 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1988 The Regents of the University of California.

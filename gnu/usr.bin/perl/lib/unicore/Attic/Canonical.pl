@@ -8,20 +8,36 @@
 
 ## Mapping from lc(canonical name) to filename in ./lib
 %utf8::Canonical = (
+
+ # InAegeanNumbers
+   aegeannumbers			    => 'InAegean',
+
    alphabetic				    => 'Alphabet',
 
  # InAlphabeticPresentationForms
    alphabeticpresentationforms		    => 'InAlphab',
 
-   arabic				    => 'Arabic',
+ # InAncientGreekMusicalNotation
+   ancientgreekmusicalnotation		    => 'InAncie3',
+
+ # InAncientGreekNumbers
+   ancientgreeknumbers			    => 'InAncie2',
+
+ # InAncientSymbols
+   ancientsymbols			    => 'InAncien',
+
+   arabic				    => 'Arab',
 
  # InArabicPresentationFormsA
-   arabicpresentationformsa		    => 'InArabi3',
+   arabicpresentationformsa		    => 'InArabi4',
 
  # InArabicPresentationFormsB
-   arabicpresentationformsb		    => 'InArabi2',
+   arabicpresentationformsb		    => 'InArabi3',
 
-   armenian				    => 'Armenian',
+ # InArabicSupplement
+   arabicsupplement			    => 'InArabi2',
+
+   armenian				    => 'Armn',
 
  # InArrows
    arrows				    => 'InArrows',
@@ -29,10 +45,14 @@
  # AsciiHexDigit
    asciihexdigit			    => 'AsciiHex',
 
+   avestan				    => 'Avst',
+   balinese				    => 'Bali',
+   bamum				    => 'Bamu',
+
  # InBasicLatin
    basiclatin				    => 'InBasicL',
 
-   bengali				    => 'Bengali',
+   bengali				    => 'Beng',
 
  # BidiControl
    bidicontrol				    => 'BidiCont',
@@ -40,7 +60,7 @@
  # InBlockElements
    blockelements			    => 'InBlockE',
 
-   bopomofo				    => 'Bopomofo',
+   bopomofo				    => 'Bopo',
 
  # InBopomofoExtended
    bopomofoextended			    => 'InBopom2',
@@ -48,10 +68,13 @@
  # InBoxDrawing
    boxdrawing				    => 'InBoxDra',
 
+   braille				    => 'Brai',
+
  # InBraillePatterns
    braillepatterns			    => 'InBraill',
 
-   buhid				    => 'Buhid',
+   buginese				    => 'Bugi',
+   buhid				    => 'Buhd',
 
  # InByzantineMusicalSymbols
    byzantinemusicalsymbols		    => 'InByzant',
@@ -59,7 +82,13 @@
  # CanadianAboriginal
    canadianaboriginal			    => 'Canadian',
 
-   cherokee				    => 'Cherokee',
+   carian				    => 'Cari',
+
+ # CasedLetter
+   casedletter				    => 'LC',
+
+   cham 				    => 'Cham',
+   cherokee				    => 'Cher',
 
  # InCjkCompatibility
    cjkcompatibility			    => 'InCjkCom',
@@ -76,6 +105,9 @@
  # InCjkRadicalsSupplement
    cjkradicalssupplement		    => 'InCjkRad',
 
+ # InCjkStrokes
+   cjkstrokes				    => 'InCjkStr',
+
  # InCjkSymbolsAndPunctuation
    cjksymbolsandpunctuation		    => 'InCjkSym',
 
@@ -83,10 +115,13 @@
    cjkunifiedideographs 		    => 'InCjkUni',
 
  # InCjkUnifiedIdeographsExtensionA
-   cjkunifiedideographsextensiona	    => 'InCjkUn3',
+   cjkunifiedideographsextensiona	    => 'InCjkUn4',
 
  # InCjkUnifiedIdeographsExtensionB
-   cjkunifiedideographsextensionb	    => 'InCjkUn2',
+   cjkunifiedideographsextensionb	    => 'InCjkUn3',
+
+ # InCjkUnifiedIdeographsExtensionC
+   cjkunifiedideographsextensionc	    => 'InCjkUn2',
 
  # ClosePunctuation
    closepunctuation			    => 'Pe',
@@ -95,12 +130,18 @@
    combiningdiacriticalmarks		    => 'InCombi2',
 
  # InCombiningDiacriticalMarksForSymbols
-   combiningdiacriticalmarksforsymbols	    => 'InCombi3',
+   combiningdiacriticalmarksforsymbols	    => 'InCombi4',
+
+ # InCombiningDiacriticalMarksSupplement
+   combiningdiacriticalmarkssupplement	    => 'InCombi3',
 
  # InCombiningHalfMarks
    combininghalfmarks			    => 'InCombin',
 
-   common				    => 'Common',
+   common				    => 'Zyyy',
+
+ # InCommonIndicNumberForms
+   commonindicnumberforms		    => 'InCommon',
 
  # ConnectorPunctuation
    connectorpunctuation 		    => 'Pc',
@@ -110,18 +151,39 @@
  # InControlPictures
    controlpictures			    => 'InContro',
 
+   coptic				    => 'Copt',
+
+ # InCountingRodNumerals
+   countingrodnumerals			    => 'InCounti',
+
+   cuneiform				    => 'Xsux',
+
+ # InCuneiformNumbersAndPunctuation
+   cuneiformnumbersandpunctuation	    => 'InCunei2',
+
  # CurrencySymbol
    currencysymbol			    => 'Sc',
 
  # InCurrencySymbols
    currencysymbols			    => 'InCurren',
 
-   cyrillic				    => 'Cyrillic',
+   cypriot				    => 'Cprt',
 
- # InCyrillicSupplementary
-   cyrillicsupplementary		    => 'InCyril2',
+ # InCypriotSyllabary
+   cypriotsyllabary			    => 'InCyprio',
 
-   dash 				    => 'Dash',
+   cyrillic				    => 'Cyrl',
+
+ # InCyrillicExtendedA
+   cyrillicextendeda			    => 'InCyril3',
+
+ # InCyrillicExtendedB
+   cyrillicextendedb			    => 'InCyril2',
+
+ # InCyrillicSupplement
+   cyrillicsupplement			    => 'InCyril4',
+
+   dash 				    => 'Dash2',
 
  # DashPunctuation
    dashpunctuation			    => 'Pd',
@@ -129,24 +191,50 @@
  # DecimalNumber
    decimalnumber			    => 'Nd',
 
+ # DefaultIgnorableCodePoint
+   defaultignorablecodepoint		    => 'DefaultI',
+
    deprecated				    => 'Deprecat',
-   deseret				    => 'Deseret',
-   devanagari				    => 'Devanaga',
+   deseret				    => 'Dsrt',
+   devanagari				    => 'Deva',
+
+ # InDevanagariExtended
+   devanagariextended			    => 'InDevan2',
+
    diacritic				    => 'Diacriti',
 
  # InDingbats
    dingbats				    => 'InDingba',
 
+ # InDominoTiles
+   dominotiles				    => 'InDomino',
+
+ # EgyptianHieroglyphs
+   egyptianhieroglyphs			    => 'Egyptian',
+
  # InEnclosedAlphanumerics
    enclosedalphanumerics		    => 'InEnclos',
+
+ # InEnclosedAlphanumericSupplement
+   enclosedalphanumericsupplement	    => 'InEnclo4',
 
  # InEnclosedCjkLettersAndMonths
    enclosedcjklettersandmonths		    => 'InEnclo2',
 
+ # InEnclosedIdeographicSupplement
+   enclosedideographicsupplement	    => 'InEnclo3',
+
  # EnclosingMark
    enclosingmark			    => 'Me',
 
-   ethiopic				    => 'Ethiopic',
+   ethiopic				    => 'Ethi',
+
+ # InEthiopicExtended
+   ethiopicextended			    => 'InEthio2',
+
+ # InEthiopicSupplement
+   ethiopicsupplement			    => 'InEthio3',
+
    extender				    => 'Extender',
 
  # FinalPunctuation
@@ -160,13 +248,14 @@
  # InGeometricShapes
    geometricshapes			    => 'InGeomet',
 
-   georgian				    => 'Georgian',
-   gothic				    => 'Gothic',
+   georgian				    => 'Geor',
 
- # GraphemeLink
-   graphemelink 			    => 'Grapheme',
+ # InGeorgianSupplement
+   georgiansupplement			    => 'InGeorg2',
 
-   greek				    => 'Greek',
+   glagolitic				    => 'Glag',
+   gothic				    => 'Goth',
+   greek				    => 'Grek',
 
  # InGreekAndCoptic
    greekandcoptic			    => 'InGreekA',
@@ -174,26 +263,32 @@
  # InGreekExtended
    greekextended			    => 'InGreekE',
 
-   gujarati				    => 'Gujarati',
-   gurmukhi				    => 'Gurmukhi',
+   gujarati				    => 'Gujr',
+   gurmukhi				    => 'Guru',
 
  # InHalfwidthAndFullwidthForms
    halfwidthandfullwidthforms		    => 'InHalfwi',
 
-   han					    => 'Han',
-   hangul				    => 'Hangul',
+   han					    => 'Hani',
+   hangul				    => 'Hang',
 
  # InHangulCompatibilityJamo
-   hangulcompatibilityjamo		    => 'InHangu3',
+   hangulcompatibilityjamo		    => 'InHangu5',
 
  # InHangulJamo
    hanguljamo				    => 'InHangul',
 
+ # InHangulJamoExtendedA
+   hanguljamoextendeda			    => 'InHangu3',
+
+ # InHangulJamoExtendedB
+   hanguljamoextendedb			    => 'InHangu4',
+
  # InHangulSyllables
    hangulsyllables			    => 'InHangu2',
 
-   hanunoo				    => 'Hanunoo',
-   hebrew				    => 'Hebrew',
+   hanunoo				    => 'Hano',
+   hebrew				    => 'Hebr',
 
  # HexDigit
    hexdigit				    => 'HexDigit',
@@ -204,8 +299,8 @@
  # InHighSurrogates
    highsurrogates			    => 'InHighSu',
 
-   hiragana				    => 'Hiragana',
-   hyphen				    => 'Hyphen',
+   hiragana				    => 'Hira',
+   hyphen				    => 'Hyphen2',
 
  # IdContinue
    idcontinue				    => 'IdContin',
@@ -224,23 +319,50 @@
  # IdsTrinaryOperator
    idstrinaryoperator			    => 'IdsTrina',
 
+ # ImperialAramaic
+   imperialaramaic			    => 'Imperial',
+
+ # InAegeanNumbers
+   inaegeannumbers			    => 'InAegean',
+
  # InAlphabeticPresentationForms
    inalphabeticpresentationforms	    => 'InAlphab',
+
+ # InAncientGreekMusicalNotation
+   inancientgreekmusicalnotation	    => 'InAncie3',
+
+ # InAncientGreekNumbers
+   inancientgreeknumbers		    => 'InAncie2',
+
+ # InAncientSymbols
+   inancientsymbols			    => 'InAncien',
 
  # InArabic
    inarabic				    => 'InArabic',
 
  # InArabicPresentationFormsA
-   inarabicpresentationformsa		    => 'InArabi3',
+   inarabicpresentationformsa		    => 'InArabi4',
 
  # InArabicPresentationFormsB
-   inarabicpresentationformsb		    => 'InArabi2',
+   inarabicpresentationformsb		    => 'InArabi3',
+
+ # InArabicSupplement
+   inarabicsupplement			    => 'InArabi2',
 
  # InArmenian
    inarmenian				    => 'InArmeni',
 
  # InArrows
    inarrows				    => 'InArrows',
+
+ # InAvestan
+   inavestan				    => 'InAvesta',
+
+ # InBalinese
+   inbalinese				    => 'InBaline',
+
+ # InBamum
+   inbamum				    => 'InBamum',
 
  # InBasicLatin
    inbasiclatin 			    => 'InBasicL',
@@ -263,11 +385,20 @@
  # InBraillePatterns
    inbraillepatterns			    => 'InBraill',
 
+ # InBuginese
+   inbuginese				    => 'InBugine',
+
  # InBuhid
    inbuhid				    => 'InBuhid',
 
  # InByzantineMusicalSymbols
    inbyzantinemusicalsymbols		    => 'InByzant',
+
+ # InCarian
+   incarian				    => 'InCarian',
+
+ # InCham
+   incham				    => 'InCham',
 
  # InCherokee
    incherokee				    => 'InCherok',
@@ -287,6 +418,9 @@
  # InCjkRadicalsSupplement
    incjkradicalssupplement		    => 'InCjkRad',
 
+ # InCjkStrokes
+   incjkstrokes 			    => 'InCjkStr',
+
  # InCjkSymbolsAndPunctuation
    incjksymbolsandpunctuation		    => 'InCjkSym',
 
@@ -294,31 +428,61 @@
    incjkunifiedideographs		    => 'InCjkUni',
 
  # InCjkUnifiedIdeographsExtensionA
-   incjkunifiedideographsextensiona	    => 'InCjkUn3',
+   incjkunifiedideographsextensiona	    => 'InCjkUn4',
 
  # InCjkUnifiedIdeographsExtensionB
-   incjkunifiedideographsextensionb	    => 'InCjkUn2',
+   incjkunifiedideographsextensionb	    => 'InCjkUn3',
+
+ # InCjkUnifiedIdeographsExtensionC
+   incjkunifiedideographsextensionc	    => 'InCjkUn2',
 
  # InCombiningDiacriticalMarks
    incombiningdiacriticalmarks		    => 'InCombi2',
 
  # InCombiningDiacriticalMarksForSymbols
-   incombiningdiacriticalmarksforsymbols    => 'InCombi3',
+   incombiningdiacriticalmarksforsymbols    => 'InCombi4',
+
+ # InCombiningDiacriticalMarksSupplement
+   incombiningdiacriticalmarkssupplement    => 'InCombi3',
 
  # InCombiningHalfMarks
    incombininghalfmarks 		    => 'InCombin',
 
+ # InCommonIndicNumberForms
+   incommonindicnumberforms		    => 'InCommon',
+
  # InControlPictures
    incontrolpictures			    => 'InContro',
+
+ # InCoptic
+   incoptic				    => 'InCoptic',
+
+ # InCountingRodNumerals
+   incountingrodnumerals		    => 'InCounti',
+
+ # InCuneiform
+   incuneiform				    => 'InCuneif',
+
+ # InCuneiformNumbersAndPunctuation
+   incuneiformnumbersandpunctuation	    => 'InCunei2',
 
  # InCurrencySymbols
    incurrencysymbols			    => 'InCurren',
 
+ # InCypriotSyllabary
+   incypriotsyllabary			    => 'InCyprio',
+
  # InCyrillic
    incyrillic				    => 'InCyrill',
 
- # InCyrillicSupplementary
-   incyrillicsupplementary		    => 'InCyril2',
+ # InCyrillicExtendedA
+   incyrillicextendeda			    => 'InCyril3',
+
+ # InCyrillicExtendedB
+   incyrillicextendedb			    => 'InCyril2',
+
+ # InCyrillicSupplement
+   incyrillicsupplement 		    => 'InCyril4',
 
  # InDeseret
    indeseret				    => 'InDesere',
@@ -326,17 +490,38 @@
  # InDevanagari
    indevanagari 			    => 'InDevana',
 
+ # InDevanagariExtended
+   indevanagariextended 		    => 'InDevan2',
+
  # InDingbats
    indingbats				    => 'InDingba',
+
+ # InDominoTiles
+   indominotiles			    => 'InDomino',
+
+ # InEgyptianHieroglyphs
+   inegyptianhieroglyphs		    => 'InEgypti',
 
  # InEnclosedAlphanumerics
    inenclosedalphanumerics		    => 'InEnclos',
 
+ # InEnclosedAlphanumericSupplement
+   inenclosedalphanumericsupplement	    => 'InEnclo4',
+
  # InEnclosedCjkLettersAndMonths
    inenclosedcjklettersandmonths	    => 'InEnclo2',
 
+ # InEnclosedIdeographicSupplement
+   inenclosedideographicsupplement	    => 'InEnclo3',
+
  # InEthiopic
    inethiopic				    => 'InEthiop',
+
+ # InEthiopicExtended
+   inethiopicextended			    => 'InEthio2',
+
+ # InEthiopicSupplement
+   inethiopicsupplement 		    => 'InEthio3',
 
  # InGeneralPunctuation
    ingeneralpunctuation 		    => 'InGenera',
@@ -346,6 +531,12 @@
 
  # InGeorgian
    ingeorgian				    => 'InGeorgi',
+
+ # InGeorgianSupplement
+   ingeorgiansupplement 		    => 'InGeorg2',
+
+ # InGlagolitic
+   inglagolitic 			    => 'InGlagol',
 
  # InGothic
    ingothic				    => 'InGothic',
@@ -366,10 +557,16 @@
    inhalfwidthandfullwidthforms 	    => 'InHalfwi',
 
  # InHangulCompatibilityJamo
-   inhangulcompatibilityjamo		    => 'InHangu3',
+   inhangulcompatibilityjamo		    => 'InHangu5',
 
  # InHangulJamo
    inhanguljamo 			    => 'InHangul',
+
+ # InHangulJamoExtendedA
+   inhanguljamoextendeda		    => 'InHangu3',
+
+ # InHangulJamoExtendedB
+   inhanguljamoextendedb		    => 'InHangu4',
 
  # InHangulSyllables
    inhangulsyllables			    => 'InHangu2',
@@ -380,7 +577,7 @@
  # InHebrew
    inhebrew				    => 'InHebrew',
 
-   inherited				    => 'Inherite',
+   inherited				    => 'Zinh',
 
  # InHighPrivateUseSurrogates
    inhighprivateusesurrogates		    => 'InHighPr',
@@ -394,11 +591,26 @@
  # InIdeographicDescriptionCharacters
    inideographicdescriptioncharacters	    => 'InIdeogr',
 
+ # InImperialAramaic
+   inimperialaramaic			    => 'InImperi',
+
+ # InInscriptionalPahlavi
+   ininscriptionalpahlavi		    => 'InInscri',
+
+ # InInscriptionalParthian
+   ininscriptionalparthian		    => 'InInscr2',
+
  # InIpaExtensions
    inipaextensions			    => 'InIpaExt',
 
  # InitialPunctuation
    initialpunctuation			    => 'Pi',
+
+ # InJavanese
+   injavanese				    => 'InJavane',
+
+ # InKaithi
+   inkaithi				    => 'InKaithi',
 
  # InKanbun
    inkanbun				    => 'InKanbun',
@@ -415,8 +627,17 @@
  # InKatakanaPhoneticExtensions
    inkatakanaphoneticextensions 	    => 'InKatak2',
 
+ # InKayahLi
+   inkayahli				    => 'InKayahL',
+
+ # InKharoshthi
+   inkharoshthi 			    => 'InKharos',
+
  # InKhmer
    inkhmer				    => 'InKhmer',
+
+ # InKhmerSymbols
+   inkhmersymbols			    => 'InKhmerS',
 
  # InLao
    inlao				    => 'InLao',
@@ -428,16 +649,46 @@
    inlatinextendeda			    => 'InLatin2',
 
  # InLatinExtendedAdditional
-   inlatinextendedadditional		    => 'InLatin3',
+   inlatinextendedadditional		    => 'InLatin5',
 
  # InLatinExtendedB
    inlatinextendedb			    => 'InLatinE',
 
+ # InLatinExtendedC
+   inlatinextendedc			    => 'InLatin4',
+
+ # InLatinExtendedD
+   inlatinextendedd			    => 'InLatin3',
+
+ # InLepcha
+   inlepcha				    => 'InLepcha',
+
  # InLetterlikeSymbols
    inletterlikesymbols			    => 'InLetter',
 
+ # InLimbu
+   inlimbu				    => 'InLimbu',
+
+ # InLinearBIdeograms
+   inlinearbideograms			    => 'InLinear',
+
+ # InLinearBSyllabary
+   inlinearbsyllabary			    => 'InLinea2',
+
+ # InLisu
+   inlisu				    => 'InLisu',
+
  # InLowSurrogates
    inlowsurrogates			    => 'InLowSur',
+
+ # InLycian
+   inlycian				    => 'InLycian',
+
+ # InLydian
+   inlydian				    => 'InLydian',
+
+ # InMahjongTiles
+   inmahjongtiles			    => 'InMahjon',
 
  # InMalayalam
    inmalayalam				    => 'InMalaya',
@@ -448,17 +699,26 @@
  # InMathematicalOperators
    inmathematicaloperators		    => 'InMathem',
 
+ # InMeeteiMayek
+   inmeeteimayek			    => 'InMeetei',
+
  # InMiscellaneousMathematicalSymbolsA
-   inmiscellaneousmathematicalsymbolsa	    => 'InMisce3',
+   inmiscellaneousmathematicalsymbolsa	    => 'InMisce4',
 
  # InMiscellaneousMathematicalSymbolsB
-   inmiscellaneousmathematicalsymbolsb	    => 'InMisce4',
+   inmiscellaneousmathematicalsymbolsb	    => 'InMisce5',
 
  # InMiscellaneousSymbols
    inmiscellaneoussymbols		    => 'InMiscel',
 
+ # InMiscellaneousSymbolsAndArrows
+   inmiscellaneoussymbolsandarrows	    => 'InMisce3',
+
  # InMiscellaneousTechnical
    inmiscellaneoustechnical		    => 'InMisce2',
+
+ # InModifierToneLetters
+   inmodifiertoneletters		    => 'InModifi',
 
  # InMongolian
    inmongolian				    => 'InMongol',
@@ -469,14 +729,35 @@
  # InMyanmar
    inmyanmar				    => 'InMyanma',
 
+ # InMyanmarExtendedA
+   inmyanmarextendeda			    => 'InMyanm2',
+
+ # InNewTaiLue
+   innewtailue				    => 'InNewTai',
+
+ # InNko
+   innko				    => 'InNko',
+
  # InNumberForms
    innumberforms			    => 'InNumber',
 
  # InOgham
    inogham				    => 'InOgham',
 
+ # InOlChiki
+   inolchiki				    => 'InOlChik',
+
  # InOldItalic
    inolditalic				    => 'InOldIta',
+
+ # InOldPersian
+   inoldpersian 			    => 'InOldPer',
+
+ # InOldSouthArabian
+   inoldsoutharabian			    => 'InOldSou',
+
+ # InOldTurkic
+   inoldturkic				    => 'InOldTur',
 
  # InOpticalCharacterRecognition
    inopticalcharacterrecognition	    => 'InOptica',
@@ -484,11 +765,50 @@
  # InOriya
    inoriya				    => 'InOriya',
 
+ # InOsmanya
+   inosmanya				    => 'InOsmany',
+
+ # InPhagsPa
+   inphagspa				    => 'InPhagsP',
+
+ # InPhaistosDisc
+   inphaistosdisc			    => 'InPhaist',
+
+ # InPhoenician
+   inphoenician 			    => 'InPhoeni',
+
+ # InPhoneticExtensions
+   inphoneticextensions 		    => 'InPhonet',
+
+ # InPhoneticExtensionsSupplement
+   inphoneticextensionssupplement	    => 'InPhone2',
+
  # InPrivateUseArea
    inprivateusearea			    => 'InPrivat',
 
+ # InRejang
+   inrejang				    => 'InRejang',
+
+ # InRumiNumeralSymbols
+   inruminumeralsymbols 		    => 'InRumiNu',
+
  # InRunic
    inrunic				    => 'InRunic',
+
+ # InSamaritan
+   insamaritan				    => 'InSamari',
+
+ # InSaurashtra
+   insaurashtra 			    => 'InSauras',
+
+ # InscriptionalPahlavi
+   inscriptionalpahlavi 		    => 'Inscript',
+
+ # InscriptionalParthian
+   inscriptionalparthian		    => 'Inscrip2',
+
+ # InShavian
+   inshavian				    => 'InShavia',
 
  # InSinhala
    insinhala				    => 'InSinhal',
@@ -502,6 +822,9 @@
  # InSpecials
    inspecials				    => 'InSpecia',
 
+ # InSundanese
+   insundanese				    => 'InSundan',
+
  # InSuperscriptsAndSubscripts
    insuperscriptsandsubscripts		    => 'InSupers',
 
@@ -512,13 +835,19 @@
    insupplementalarrowsb		    => 'InSupple',
 
  # InSupplementalMathematicalOperators
-   insupplementalmathematicaloperators	    => 'InSuppl5',
+   insupplementalmathematicaloperators	    => 'InSuppl6',
+
+ # InSupplementalPunctuation
+   insupplementalpunctuation		    => 'InSuppl3',
 
  # InSupplementaryPrivateUseAreaA
-   insupplementaryprivateuseareaa	    => 'InSuppl3',
+   insupplementaryprivateuseareaa	    => 'InSuppl4',
 
  # InSupplementaryPrivateUseAreaB
-   insupplementaryprivateuseareab	    => 'InSuppl4',
+   insupplementaryprivateuseareab	    => 'InSuppl5',
+
+ # InSylotiNagri
+   insylotinagri			    => 'InSyloti',
 
  # InSyriac
    insyriac				    => 'InSyriac',
@@ -531,6 +860,18 @@
 
  # InTags
    intags				    => 'InTags',
+
+ # InTaiLe
+   intaile				    => 'InTaiLe',
+
+ # InTaiTham
+   intaitham				    => 'InTaiTha',
+
+ # InTaiViet
+   intaiviet				    => 'InTaiVie',
+
+ # InTaiXuanJingSymbols
+   intaixuanjingsymbols 		    => 'InTaiXua',
 
  # InTamil
    intamil				    => 'InTamil',
@@ -547,11 +888,35 @@
  # InTibetan
    intibetan				    => 'InTibeta',
 
+ # InTifinagh
+   intifinagh				    => 'InTifina',
+
+ # InUgaritic
+   inugaritic				    => 'InUgarit',
+
  # InUnifiedCanadianAboriginalSyllabics
    inunifiedcanadianaboriginalsyllabics     => 'InUnifie',
 
+ # InUnifiedCanadianAboriginalSyllabicsExtended
+   inunifiedcanadianaboriginalsyllabicsextended  => 'InUnifi2',
+
+ # InVai
+   invai				    => 'InVai',
+
  # InVariationSelectors
    invariationselectors 		    => 'InVariat',
+
+ # InVariationSelectorsSupplement
+   invariationselectorssupplement	    => 'InVaria2',
+
+ # InVedicExtensions
+   invedicextensions			    => 'InVedicE',
+
+ # InVerticalForms
+   inverticalforms			    => 'InVertic',
+
+ # InYijingHexagramSymbols
+   inyijinghexagramsymbols		    => 'InYijing',
 
  # InYiRadicals
    inyiradicals 			    => 'InYiRadi',
@@ -562,8 +927,12 @@
  # InIpaExtensions
    ipaextensions			    => 'InIpaExt',
 
+   javanese				    => 'Java',
+
  # JoinControl
    joincontrol				    => 'JoinCont',
+
+   kaithi				    => 'Kthi',
 
  # InKanbun
    kanbun				    => 'InKanbun',
@@ -571,15 +940,23 @@
  # InKangxiRadicals
    kangxiradicals			    => 'InKangxi',
 
-   kannada				    => 'Kannada',
-   katakana				    => 'Katakana',
+   kannada				    => 'Knda',
+   katakana				    => 'Kana',
 
  # InKatakanaPhoneticExtensions
    katakanaphoneticextensions		    => 'InKatak2',
 
-   khmer				    => 'Khmer',
-   lao					    => 'Lao',
-   latin				    => 'Latin',
+ # KayahLi
+   kayahli				    => 'KayahLi',
+
+   kharoshthi				    => 'Khar',
+   khmer				    => 'Khmr',
+
+ # InKhmerSymbols
+   khmersymbols 			    => 'InKhmerS',
+
+   lao					    => 'Laoo',
+   latin				    => 'Latn',
 
  # InLatin1Supplement
    latin1supplement			    => 'InLatin1',
@@ -588,11 +965,18 @@
    latinextendeda			    => 'InLatin2',
 
  # InLatinExtendedAdditional
-   latinextendedadditional		    => 'InLatin3',
+   latinextendedadditional		    => 'InLatin5',
 
  # InLatinExtendedB
    latinextendedb			    => 'InLatinE',
 
+ # InLatinExtendedC
+   latinextendedc			    => 'InLatin4',
+
+ # InLatinExtendedD
+   latinextendedd			    => 'InLatin3',
+
+   lepcha				    => 'Lepc',
    letter				    => 'L',
 
  # InLetterlikeSymbols
@@ -601,8 +985,21 @@
  # LetterNumber
    letternumber 			    => 'Nl',
 
+   limbu				    => 'Limb',
+
+ # LinearB
+   linearb				    => 'LinearB',
+
+ # InLinearBIdeograms
+   linearbideograms			    => 'InLinear',
+
+ # InLinearBSyllabary
+   linearbsyllabary			    => 'InLinea2',
+
  # LineSeparator
    lineseparator			    => 'Zl',
+
+   lisu 				    => 'Lisu',
 
  # LogicalOrderException
    logicalorderexception		    => 'LogicalO',
@@ -615,7 +1012,13 @@
  # InLowSurrogates
    lowsurrogates			    => 'InLowSur',
 
-   malayalam				    => 'Malayala',
+   lycian				    => 'Lyci',
+   lydian				    => 'Lydi',
+
+ # InMahjongTiles
+   mahjongtiles 			    => 'InMahjon',
+
+   malayalam				    => 'Mlym',
    mark 				    => 'M',
    math 				    => 'Math',
 
@@ -628,14 +1031,20 @@
  # MathSymbol
    mathsymbol				    => 'Sm',
 
+ # MeeteiMayek
+   meeteimayek				    => 'MeeteiMa',
+
  # InMiscellaneousMathematicalSymbolsA
-   miscellaneousmathematicalsymbolsa	    => 'InMisce3',
+   miscellaneousmathematicalsymbolsa	    => 'InMisce4',
 
  # InMiscellaneousMathematicalSymbolsB
-   miscellaneousmathematicalsymbolsb	    => 'InMisce4',
+   miscellaneousmathematicalsymbolsb	    => 'InMisce5',
 
  # InMiscellaneousSymbols
    miscellaneoussymbols 		    => 'InMiscel',
+
+ # InMiscellaneousSymbolsAndArrows
+   miscellaneoussymbolsandarrows	    => 'InMisce3',
 
  # InMiscellaneousTechnical
    miscellaneoustechnical		    => 'InMisce2',
@@ -646,17 +1055,28 @@
  # ModifierSymbol
    modifiersymbol			    => 'Sk',
 
-   mongolian				    => 'Mongolia',
+ # InModifierToneLetters
+   modifiertoneletters			    => 'InModifi',
+
+   mongolian				    => 'Mong',
 
  # InMusicalSymbols
    musicalsymbols			    => 'InMusica',
 
-   myanmar				    => 'Myanmar',
+   myanmar				    => 'Mymr',
+
+ # InMyanmarExtendedA
+   myanmarextendeda			    => 'InMyanm2',
+
+ # NewTaiLue
+   newtailue				    => 'NewTaiLu',
+
+   nko					    => 'Nkoo',
 
  # NoncharacterCodePoint
    noncharactercodepoint		    => 'Nonchara',
 
- # NonSpacingMark
+ # NonspacingMark
    nonspacingmark			    => 'Mn',
 
    number				    => 'N',
@@ -664,10 +1084,22 @@
  # InNumberForms
    numberforms				    => 'InNumber',
 
-   ogham				    => 'Ogham',
+   ogham				    => 'Ogam',
+
+ # OlChiki
+   olchiki				    => 'OlChiki',
 
  # OldItalic
    olditalic				    => 'OldItali',
+
+ # OldPersian
+   oldpersian				    => 'OldPersi',
+
+ # OldSouthArabian
+   oldsoutharabian			    => 'OldSouth',
+
+ # OldTurkic
+   oldturkic				    => 'OldTurki',
 
  # OpenPunctuation
    openpunctuation			    => 'Ps',
@@ -675,7 +1107,8 @@
  # InOpticalCharacterRecognition
    opticalcharacterrecognition		    => 'InOptica',
 
-   oriya				    => 'Oriya',
+   oriya				    => 'Orya',
+   osmanya				    => 'Osma',
    other				    => 'C',
 
  # OtherAlphabetic
@@ -686,6 +1119,12 @@
 
  # OtherGraphemeExtend
    othergraphemeextend			    => 'OtherGra',
+
+ # OtherIdContinue
+   otheridcontinue			    => 'OtherIdC',
+
+ # OtherIdStart
+   otheridstart 			    => 'OtherIdS',
 
  # OtherLetter
    otherletter				    => 'Lo',
@@ -711,6 +1150,26 @@
  # ParagraphSeparator
    paragraphseparator			    => 'Zp',
 
+ # PatternSyntax
+   patternsyntax			    => 'PatternS',
+
+ # PatternWhiteSpace
+   patternwhitespace			    => 'PatternW',
+
+ # PhagsPa
+   phagspa				    => 'PhagsPa',
+
+ # InPhaistosDisc
+   phaistosdisc 			    => 'InPhaist',
+
+   phoenician				    => 'Phnx',
+
+ # InPhoneticExtensions
+   phoneticextensions			    => 'InPhonet',
+
+ # InPhoneticExtensionsSupplement
+   phoneticextensionssupplement 	    => 'InPhone2',
+
  # PrivateUse
    privateuse				    => 'Co',
 
@@ -722,10 +1181,18 @@
  # QuotationMark
    quotationmark			    => 'Quotatio',
 
-   radical				    => 'Radical',
-   runic				    => 'Runic',
+   radical				    => 'Radical2',
+   rejang				    => 'Rjng',
+
+ # InRumiNumeralSymbols
+   ruminumeralsymbols			    => 'InRumiNu',
+
+   runic				    => 'Runr',
+   samaritan				    => 'Samr',
+   saurashtra				    => 'Saur',
    separator				    => 'Z',
-   sinhala				    => 'Sinhala',
+   shavian				    => 'Shaw',
+   sinhala				    => 'Sinh',
 
  # InSmallFormVariants
    smallformvariants			    => 'InSmallF',
@@ -745,6 +1212,9 @@
  # InSpecials
    specials				    => 'InSpecia',
 
+   sterm				    => 'Sterm2',
+   sundanese				    => 'Sund',
+
  # InSuperscriptsAndSubscripts
    superscriptsandsubscripts		    => 'InSupers',
 
@@ -755,40 +1225,64 @@
    supplementalarrowsb			    => 'InSupple',
 
  # InSupplementalMathematicalOperators
-   supplementalmathematicaloperators	    => 'InSuppl5',
+   supplementalmathematicaloperators	    => 'InSuppl6',
+
+ # InSupplementalPunctuation
+   supplementalpunctuation		    => 'InSuppl3',
 
  # InSupplementaryPrivateUseAreaA
-   supplementaryprivateuseareaa 	    => 'InSuppl3',
+   supplementaryprivateuseareaa 	    => 'InSuppl4',
 
  # InSupplementaryPrivateUseAreaB
-   supplementaryprivateuseareab 	    => 'InSuppl4',
+   supplementaryprivateuseareab 	    => 'InSuppl5',
 
    surrogate				    => 'Cs',
+
+ # SylotiNagri
+   sylotinagri				    => 'SylotiNa',
+
    symbol				    => 'S',
-   syriac				    => 'Syriac',
-   tagalog				    => 'Tagalog',
-   tagbanwa				    => 'Tagbanwa',
+   syriac				    => 'Syrc',
+   tagalog				    => 'Tglg',
+   tagbanwa				    => 'Tagb',
 
  # InTags
    tags 				    => 'InTags',
 
-   tamil				    => 'Tamil',
-   telugu				    => 'Telugu',
+ # TaiLe
+   taile				    => 'TaiLe',
+
+ # TaiTham
+   taitham				    => 'TaiTham',
+
+ # TaiViet
+   taiviet				    => 'TaiViet',
+
+ # InTaiXuanJingSymbols
+   taixuanjingsymbols			    => 'InTaiXua',
+
+   tamil				    => 'Taml',
+   telugu				    => 'Telu',
 
  # TerminalPunctuation
    terminalpunctuation			    => 'Terminal',
 
-   thaana				    => 'Thaana',
+   thaana				    => 'Thaa',
    thai 				    => 'Thai',
-   tibetan				    => 'Tibetan',
+   tibetan				    => 'Tibt',
+   tifinagh				    => 'Tfng',
 
  # TitlecaseLetter
    titlecaseletter			    => 'Lt',
 
+   ugaritic				    => 'Ugar',
    unassigned				    => 'Cn',
 
  # InUnifiedCanadianAboriginalSyllabics
    unifiedcanadianaboriginalsyllabics	    => 'InUnifie',
+
+ # InUnifiedCanadianAboriginalSyllabicsExtended
+   unifiedcanadianaboriginalsyllabicsextended  => 'InUnifi2',
 
  # UnifiedIdeograph
    unifiedideograph			    => 'UnifiedI',
@@ -798,13 +1292,30 @@
  # UppercaseLetter
    uppercaseletter			    => 'Lu',
 
+   vai					    => 'Vaii',
+
+ # VariationSelector
+   variationselector			    => 'Variatio',
+
  # InVariationSelectors
    variationselectors			    => 'InVariat',
+
+ # InVariationSelectorsSupplement
+   variationselectorssupplement 	    => 'InVaria2',
+
+ # InVedicExtensions
+   vedicextensions			    => 'InVedicE',
+
+ # InVerticalForms
+   verticalforms			    => 'InVertic',
 
  # WhiteSpace
    whitespace				    => 'WhiteSpa',
 
-   yi					    => 'Yi',
+   yi					    => 'Yiii',
+
+ # InYijingHexagramSymbols
+   yijinghexagramsymbols		    => 'InYijing',
 
  # InYiRadicals
    yiradicals				    => 'InYiRadi',

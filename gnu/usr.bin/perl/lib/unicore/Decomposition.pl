@@ -349,6 +349,7 @@ return <<'END';
 03F2		<compat> 03C2
 03F4		<compat> 0398
 03F5		<compat> 03B5
+03F9		<compat> 03A3
 0400		0415 0300
 0401		0415 0308
 0403		0413 0301
@@ -483,6 +484,116 @@ return <<'END';
 0FAC		0FAB 0FB7
 0FB9		0F90 0FB5
 1026		1025 102E
+10FC		<super> 10DC
+1B06		1B05 1B35
+1B08		1B07 1B35
+1B0A		1B09 1B35
+1B0C		1B0B 1B35
+1B0E		1B0D 1B35
+1B12		1B11 1B35
+1B3B		1B3A 1B35
+1B3D		1B3C 1B35
+1B40		1B3E 1B35
+1B41		1B3F 1B35
+1B43		1B42 1B35
+1D2C		<super> 0041
+1D2D		<super> 00C6
+1D2E		<super> 0042
+1D30		<super> 0044
+1D31		<super> 0045
+1D32		<super> 018E
+1D33		<super> 0047
+1D34		<super> 0048
+1D35		<super> 0049
+1D36		<super> 004A
+1D37		<super> 004B
+1D38		<super> 004C
+1D39		<super> 004D
+1D3A		<super> 004E
+1D3C		<super> 004F
+1D3D		<super> 0222
+1D3E		<super> 0050
+1D3F		<super> 0052
+1D40		<super> 0054
+1D41		<super> 0055
+1D42		<super> 0057
+1D43		<super> 0061
+1D44		<super> 0250
+1D45		<super> 0251
+1D46		<super> 1D02
+1D47		<super> 0062
+1D48		<super> 0064
+1D49		<super> 0065
+1D4A		<super> 0259
+1D4B		<super> 025B
+1D4C		<super> 025C
+1D4D		<super> 0067
+1D4F		<super> 006B
+1D50		<super> 006D
+1D51		<super> 014B
+1D52		<super> 006F
+1D53		<super> 0254
+1D54		<super> 1D16
+1D55		<super> 1D17
+1D56		<super> 0070
+1D57		<super> 0074
+1D58		<super> 0075
+1D59		<super> 1D1D
+1D5A		<super> 026F
+1D5B		<super> 0076
+1D5C		<super> 1D25
+1D5D		<super> 03B2
+1D5E		<super> 03B3
+1D5F		<super> 03B4
+1D60		<super> 03C6
+1D61		<super> 03C7
+1D62		<sub> 0069
+1D63		<sub> 0072
+1D64		<sub> 0075
+1D65		<sub> 0076
+1D66		<sub> 03B2
+1D67		<sub> 03B3
+1D68		<sub> 03C1
+1D69		<sub> 03C6
+1D6A		<sub> 03C7
+1D78		<super> 043D
+1D9B		<super> 0252
+1D9C		<super> 0063
+1D9D		<super> 0255
+1D9E		<super> 00F0
+1D9F		<super> 025C
+1DA0		<super> 0066
+1DA1		<super> 025F
+1DA2		<super> 0261
+1DA3		<super> 0265
+1DA4		<super> 0268
+1DA5		<super> 0269
+1DA6		<super> 026A
+1DA7		<super> 1D7B
+1DA8		<super> 029D
+1DA9		<super> 026D
+1DAA		<super> 1D85
+1DAB		<super> 029F
+1DAC		<super> 0271
+1DAD		<super> 0270
+1DAE		<super> 0272
+1DAF		<super> 0273
+1DB0		<super> 0274
+1DB1		<super> 0275
+1DB2		<super> 0278
+1DB3		<super> 0282
+1DB4		<super> 0283
+1DB5		<super> 01AB
+1DB6		<super> 0289
+1DB7		<super> 028A
+1DB8		<super> 1D1C
+1DB9		<super> 028B
+1DBA		<super> 028C
+1DBB		<super> 007A
+1DBC		<super> 0290
+1DBD		<super> 0291
+1DBE		<super> 0292
+1DBF		<super> 03B8
 1E00		0041 0325
 1E01		0061 0325
 1E02		0042 0307
@@ -1013,6 +1124,11 @@ return <<'END';
 208C		<sub> 003D
 208D		<sub> 0028
 208E		<sub> 0029
+2090		<sub> 0061
+2091		<sub> 0065
+2092		<sub> 006F
+2093		<sub> 0078
+2094		<sub> 0259
 20A8		<compat> 0052 0073
 2100		<compat> 0061 002F 0063
 2101		<compat> 0061 002F 0073
@@ -1054,6 +1170,8 @@ return <<'END';
 2137		<compat> 05D2
 2138		<compat> 05D3
 2139		<font> 0069
+213B		<compat> 0046 0041 0058
+213C		<font> 03C0
 213D		<font> 03B3
 213E		<font> 0393
 213F		<font> 03A0
@@ -1063,6 +1181,9 @@ return <<'END';
 2147		<font> 0065
 2148		<font> 0069
 2149		<font> 006A
+2150		<fraction> 0031 2044 0037
+2151		<fraction> 0031 2044 0039
+2152		<fraction> 0031 2044 0031 0030
 2153		<fraction> 0031 2044 0033
 2154		<fraction> 0032 2044 0033
 2155		<fraction> 0031 2044 0035
@@ -1108,6 +1229,7 @@ return <<'END';
 217D		<compat> 0063
 217E		<compat> 0064
 217F		<compat> 006D
+2189		<fraction> 0030 2044 0033
 219A		2190 0338
 219B		2192 0338
 21AE		2194 0338
@@ -1302,6 +1424,9 @@ return <<'END';
 2A75		<compat> 003D 003D
 2A76		<compat> 003D 003D 003D
 2ADC		2ADD 0338
+2C7C		<sub> 006A
+2C7D		<super> 0056
+2D6F		<super> 2D61
 2E9F		<compat> 6BCD
 2EF3		<compat> 9F9F
 2F00		<compat> 4E00
@@ -1722,6 +1847,8 @@ return <<'END';
 321A		<compat> 0028 1111 1161 0029
 321B		<compat> 0028 1112 1161 0029
 321C		<compat> 0028 110C 116E 0029
+321D		<compat> 0028 110B 1169 110C 1165 11AB 0029
+321E		<compat> 0028 110B 1169 1112 116E 0029
 3220		<compat> 0028 4E00 0029
 3221		<compat> 0028 4E8C 0029
 3222		<compat> 0028 4E09 0029
@@ -1758,6 +1885,11 @@ return <<'END';
 3241		<compat> 0028 4F11 0029
 3242		<compat> 0028 81EA 0029
 3243		<compat> 0028 81F3 0029
+3244		<circle> 554F
+3245		<circle> 5E7C
+3246		<circle> 6587
+3247		<circle> 7B8F
+3250		<square> 0050 0054 0045
 3251		<circle> 0032 0031
 3252		<circle> 0032 0032
 3253		<circle> 0032 0033
@@ -1801,6 +1933,9 @@ return <<'END';
 3279		<circle> 1110 1161
 327A		<circle> 1111 1161
 327B		<circle> 1112 1161
+327C		<circle> 110E 1161 11B7 1100 1169
+327D		<circle> 110C 116E 110B 1174
+327E		<circle> 110B 116E
 3280		<circle> 4E00
 3281		<circle> 4E8C
 3282		<circle> 4E09
@@ -1877,6 +2012,10 @@ return <<'END';
 32C9		<compat> 0031 0030 6708
 32CA		<compat> 0031 0031 6708
 32CB		<compat> 0031 0032 6708
+32CC		<square> 0048 0067
+32CD		<square> 0065 0072 0067
+32CE		<square> 0065 0056
+32CF		<square> 004C 0054 0044
 32D0		<circle> 30A2
 32D1		<circle> 30A4
 32D2		<circle> 30A6
@@ -2043,6 +2182,10 @@ return <<'END';
 3374		<square> 0062 0061 0072
 3375		<square> 006F 0056
 3376		<square> 0070 0063
+3377		<square> 0064 006D
+3378		<square> 0064 006D 00B2
+3379		<square> 0064 006D 00B3
+337A		<square> 0049 0055
 337B		<square> 5E73 6210
 337C		<square> 662D 548C
 337D		<square> 5927 6B63
@@ -2142,6 +2285,8 @@ return <<'END';
 33DB		<square> 0073 0072
 33DC		<square> 0053 0076
 33DD		<square> 0057 0062
+33DE		<square> 0056 2215 006D
+33DF		<square> 0041 2215 006D
 33E0		<compat> 0031 65E5
 33E1		<compat> 0032 65E5
 33E2		<compat> 0033 65E5
@@ -2173,6 +2318,8 @@ return <<'END';
 33FC		<compat> 0032 0039 65E5
 33FD		<compat> 0033 0030 65E5
 33FE		<compat> 0033 0031 65E5
+33FF		<square> 0067 0061 006C
+A770		<super> A76F
 F900		8C48
 F901		66F4
 F902		8ECA
@@ -2520,6 +2667,115 @@ FA67		9038
 FA68		96E3
 FA69		97FF
 FA6A		983B
+FA6B		6075
+FA6C		242EE
+FA6D		8218
+FA70		4E26
+FA71		51B5
+FA72		5168
+FA73		4F80
+FA74		5145
+FA75		5180
+FA76		52C7
+FA77		52FA
+FA78		559D
+FA79		5555
+FA7A		5599
+FA7B		55E2
+FA7C		585A
+FA7D		58B3
+FA7E		5944
+FA7F		5954
+FA80		5A62
+FA81		5B28
+FA82		5ED2
+FA83		5ED9
+FA84		5F69
+FA85		5FAD
+FA86		60D8
+FA87		614E
+FA88		6108
+FA89		618E
+FA8A		6160
+FA8B		61F2
+FA8C		6234
+FA8D		63C4
+FA8E		641C
+FA8F		6452
+FA90		6556
+FA91		6674
+FA92		6717
+FA93		671B
+FA94		6756
+FA95		6B79
+FA96		6BBA
+FA97		6D41
+FA98		6EDB
+FA99		6ECB
+FA9A		6F22
+FA9B		701E
+FA9C		716E
+FA9D		77A7
+FA9E		7235
+FA9F		72AF
+FAA0		732A
+FAA1		7471
+FAA2		7506
+FAA3		753B
+FAA4		761D
+FAA5		761F
+FAA6		76CA
+FAA7		76DB
+FAA8		76F4
+FAA9		774A
+FAAA		7740
+FAAB		78CC
+FAAC		7AB1
+FAAD		7BC0
+FAAE		7C7B
+FAAF		7D5B
+FAB0		7DF4
+FAB1		7F3E
+FAB2		8005
+FAB3		8352
+FAB4		83EF
+FAB5		8779
+FAB6		8941
+FAB7		8986
+FAB8		8996
+FAB9		8ABF
+FABA		8AF8
+FABB		8ACB
+FABC		8B01
+FABD		8AFE
+FABE		8AED
+FABF		8B39
+FAC0		8B8A
+FAC1		8D08
+FAC2		8F38
+FAC3		9072
+FAC4		9199
+FAC5		9276
+FAC6		967C
+FAC7		96E3
+FAC8		9756
+FAC9		97DB
+FACA		97FF
+FACB		980B
+FACC		983B
+FACD		9B12
+FACE		9F9C
+FACF		2284A
+FAD0		22844
+FAD1		233D5
+FAD2		3B9D
+FAD3		4018
+FAD4		4039
+FAD5		25249
+FAD6		25CD0
+FAD7		27ED3
+FAD8		9F43
+FAD9		9F8E
 FB00		<compat> 0066 0066
 FB01		<compat> 0066 0069
 FB02		<compat> 0066 006C
@@ -3169,6 +3425,16 @@ FDF9		<isolated> 0635 0644 0649
 FDFA		<isolated> 0635 0644 0649 0020 0627 0644 0644 0647 0020 0639 0644 064A 0647 0020 0648 0633 0644 0645
 FDFB		<isolated> 062C 0644 0020 062C 0644 0627 0644 0647
 FDFC		<isolated> 0631 06CC 0627 0644
+FE10		<vertical> 002C
+FE11		<vertical> 3001
+FE12		<vertical> 3002
+FE13		<vertical> 003A
+FE14		<vertical> 003B
+FE15		<vertical> 0021
+FE16		<vertical> 003F
+FE17		<vertical> 3016
+FE18		<vertical> 3017
+FE19		<vertical> 2026
 FE30		<vertical> 2025
 FE31		<vertical> 2014
 FE32		<vertical> 2013
@@ -3189,6 +3455,8 @@ FE41		<vertical> 300C
 FE42		<vertical> 300D
 FE43		<vertical> 300E
 FE44		<vertical> 300F
+FE47		<vertical> 005B
+FE48		<vertical> 005D
 FE49	FE4C	<compat> 203E
 FE4D	FE4F	<compat> 005F
 FE50		<small> 002C
@@ -3581,6 +3849,9 @@ FFEB		<narrow> 2192
 FFEC		<narrow> 2193
 FFED		<narrow> 25A0
 FFEE		<narrow> 25CB
+1109A		11099 110BA
+1109C		1109B 110BA
+110AB		110A5 110BA
 1D15E		1D157 1D165
 1D15F		1D158 1D165
 1D160		1D15F 1D16E
@@ -3776,6 +4047,7 @@ FFEE		<narrow> 25CB
 1D4BE		<font> 0069
 1D4BF		<font> 006A
 1D4C0		<font> 006B
+1D4C1		<font> 006C
 1D4C2		<font> 006D
 1D4C3		<font> 006E
 1D4C5		<font> 0070
@@ -4245,6 +4517,8 @@ FFEE		<narrow> 25CB
 1D6A1		<font> 0078
 1D6A2		<font> 0079
 1D6A3		<font> 007A
+1D6A4		<font> 0131
+1D6A5		<font> 0237
 1D6A8		<font> 0391
 1D6A9		<font> 0392
 1D6AA		<font> 0393
@@ -4535,6 +4809,8 @@ FFEE		<narrow> 25CB
 1D7C7		<font> 03D5
 1D7C8		<font> 03F1
 1D7C9		<font> 03D6
+1D7CA		<font> 03DC
+1D7CB		<font> 03DD
 1D7CE		<font> 0030
 1D7CF		<font> 0031
 1D7D0		<font> 0032
@@ -4585,6 +4861,103 @@ FFEE		<narrow> 25CB
 1D7FD		<font> 0037
 1D7FE		<font> 0038
 1D7FF		<font> 0039
+1F100		<compat> 0030 002E
+1F101		<compat> 0030 002C
+1F102		<compat> 0031 002C
+1F103		<compat> 0032 002C
+1F104		<compat> 0033 002C
+1F105		<compat> 0034 002C
+1F106		<compat> 0035 002C
+1F107		<compat> 0036 002C
+1F108		<compat> 0037 002C
+1F109		<compat> 0038 002C
+1F10A		<compat> 0039 002C
+1F110		<compat> 0028 0041 0029
+1F111		<compat> 0028 0042 0029
+1F112		<compat> 0028 0043 0029
+1F113		<compat> 0028 0044 0029
+1F114		<compat> 0028 0045 0029
+1F115		<compat> 0028 0046 0029
+1F116		<compat> 0028 0047 0029
+1F117		<compat> 0028 0048 0029
+1F118		<compat> 0028 0049 0029
+1F119		<compat> 0028 004A 0029
+1F11A		<compat> 0028 004B 0029
+1F11B		<compat> 0028 004C 0029
+1F11C		<compat> 0028 004D 0029
+1F11D		<compat> 0028 004E 0029
+1F11E		<compat> 0028 004F 0029
+1F11F		<compat> 0028 0050 0029
+1F120		<compat> 0028 0051 0029
+1F121		<compat> 0028 0052 0029
+1F122		<compat> 0028 0053 0029
+1F123		<compat> 0028 0054 0029
+1F124		<compat> 0028 0055 0029
+1F125		<compat> 0028 0056 0029
+1F126		<compat> 0028 0057 0029
+1F127		<compat> 0028 0058 0029
+1F128		<compat> 0028 0059 0029
+1F129		<compat> 0028 005A 0029
+1F12A		<compat> 3014 0053 3015
+1F12B		<circle> 0043
+1F12C		<circle> 0052
+1F12D		<circle> 0043 0044
+1F12E		<circle> 0057 005A
+1F131		<square> 0042
+1F13D		<square> 004E
+1F13F		<square> 0050
+1F142		<square> 0053
+1F146		<square> 0057
+1F14A		<square> 0048 0056
+1F14B		<square> 004D 0056
+1F14C		<square> 0053 0044
+1F14D		<square> 0053 0053
+1F14E		<square> 0050 0050 0056
+1F190		<square> 0044 004A
+1F200		<square> 307B 304B
+1F210		<square> 624B
+1F211		<square> 5B57
+1F212		<square> 53CC
+1F213		<square> 30C7
+1F214		<square> 4E8C
+1F215		<square> 591A
+1F216		<square> 89E3
+1F217		<square> 5929
+1F218		<square> 4EA4
+1F219		<square> 6620
+1F21A		<square> 7121
+1F21B		<square> 6599
+1F21C		<square> 524D
+1F21D		<square> 5F8C
+1F21E		<square> 518D
+1F21F		<square> 65B0
+1F220		<square> 521D
+1F221		<square> 7D42
+1F222		<square> 751F
+1F223		<square> 8CA9
+1F224		<square> 58F0
+1F225		<square> 5439
+1F226		<square> 6F14
+1F227		<square> 6295
+1F228		<square> 6355
+1F229		<square> 4E00
+1F22A		<square> 4E09
+1F22B		<square> 904A
+1F22C		<square> 5DE6
+1F22D		<square> 4E2D
+1F22E		<square> 53F3
+1F22F		<square> 6307
+1F230		<square> 8D70
+1F231		<square> 6253
+1F240		<compat> 3014 672C 3015
+1F241		<compat> 3014 4E09 3015
+1F242		<compat> 3014 4E8C 3015
+1F243		<compat> 3014 5B89 3015
+1F244		<compat> 3014 70B9 3015
+1F245		<compat> 3014 6253 3015
+1F246		<compat> 3014 76D7 3015
+1F247		<compat> 3014 52DD 3015
+1F248		<compat> 3014 6557 3015
 2F800		4E3D
 2F801		4E38
 2F802		4E41
@@ -4686,7 +5059,7 @@ FFEE		<narrow> 25CB
 2F865		59D8
 2F866		5A66
 2F867		36EE
-2F868		2136A
+2F868		36FC
 2F869		5B08
 2F86A	2F86B	5B3E
 2F86C		219C8
@@ -4697,7 +5070,7 @@ FFEE		<narrow> 25CB
 2F871		21B18
 2F872		5BFF
 2F873		5C06
-2F874		5F33
+2F874		5F53
 2F875		5C22
 2F876		3781
 2F877		5C60
@@ -4866,7 +5239,7 @@ FFEE		<narrow> 25CB
 2F91C		7145
 2F91D		24263
 2F91E		719C
-2F91F		43AB
+2F91F		243AB
 2F920		7228
 2F921		7235
 2F922		7250
@@ -4927,7 +5300,7 @@ FFEE		<narrow> 25CB
 2F95B		7A4F
 2F95C		2597C
 2F95D	2F95E	25AA7
-2F95F		7AAE
+2F95F		7AEE
 2F960		4202
 2F961		25BAB
 2F962		7BC6
@@ -5023,7 +5396,7 @@ FFEE		<narrow> 25CB
 2F9BC		8728
 2F9BD		876B
 2F9BE		8786
-2F9BF		4D57
+2F9BF		45D7
 2F9C0		87E1
 2F9C1		8801
 2F9C2		45F9

@@ -1,4 +1,4 @@
-/*	$OpenBSD: bounce.c,v 1.21 2010/06/01 19:47:08 jacekm Exp $	*/
+/*	$OpenBSD: bounce.c,v 1.19 2010/05/19 20:57:10 gilles Exp $	*/
 
 /*
  * Copyright (c) 2009 Gilles Chehade <gilles@openbsd.org>

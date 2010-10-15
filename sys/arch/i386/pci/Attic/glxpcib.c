@@ -1,4 +1,4 @@
-/*      $OpenBSD: glxpcib.c,v 1.12 2010/09/22 04:24:19 pirofti Exp $	*/
+/*      $OpenBSD: glxpcib.c,v 1.13 2010/09/24 10:30:29 pirofti Exp $	*/
 
 /*
  * Copyright (c) 2007 Marc Balmer <mbalmer@openbsd.org>

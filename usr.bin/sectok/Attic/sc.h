@@ -1,4 +1,4 @@
-/*	$OpenBSD: sc.h,v 1.11 2002/03/14 21:11:50 rees Exp $ */
+/*	$OpenBSD: sc.h,v 1.12 2002/06/17 07:10:52 deraadt Exp $ */
 
 /*
  * Smartcard commander.

@@ -1,4 +1,4 @@
-/* $Id: cyberflex.c,v 1.3 2001/08/02 16:41:32 rees Exp $ */
+/* $Id: cyberflex.c,v 1.10 2001/08/02 17:02:05 rees Exp $ */
 
 /*
 copyright 2000

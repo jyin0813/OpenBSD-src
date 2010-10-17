@@ -1,4 +1,4 @@
-# $OpenBSD: Makefile,v 1.8 2001/08/03 20:02:36 jakob Exp $
+# $OpenBSD: Makefile,v 1.9 2005/11/24 20:49:20 deraadt Exp $
 
 LIB=	sectok
 WANTLINT=

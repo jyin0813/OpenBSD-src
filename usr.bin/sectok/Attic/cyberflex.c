@@ -1,4 +1,4 @@
-/*	$OpenBSD: cyberflex.c,v 1.28 2007/12/30 13:35:27 sobrado Exp $ */
+/*	$OpenBSD: cyberflex.c,v 1.29 2010/10/15 10:18:42 jsg Exp $ */
 
 /*
  * copyright 1999, 2000

@@ -1,4 +1,4 @@
-/* $Id: input.c,v 1.3 2001/08/02 16:41:32 rees Exp $ */
+/* $Id: input.c,v 1.8 2001/08/02 17:02:05 rees Exp $ */
 
 /*
 copyright 2001

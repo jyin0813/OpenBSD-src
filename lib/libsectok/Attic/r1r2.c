@@ -1,4 +1,4 @@
-/* $Id: r1r2.c,v 1.8 2001/08/02 17:02:05 rees Exp $ */
+/* $Id: r1r2.c,v 1.9 2003/04/02 22:57:51 deraadt Exp $ */
 
 /*
 copyright 1999

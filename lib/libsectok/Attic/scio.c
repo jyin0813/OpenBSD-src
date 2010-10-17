@@ -1,4 +1,4 @@
-/* $Id: scio.c,v 1.11 2002/01/02 20:18:32 deraadt Exp $ */
+/* $Id: scio.c,v 1.12 2003/04/02 22:57:51 deraadt Exp $ */
 
 /*
 copyright 1997

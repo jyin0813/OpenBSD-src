@@ -1,4 +1,4 @@
-/* $Id: ifdhandler.c,v 1.6 2001/07/30 15:51:16 rees Exp $ */
+/* $Id: ifdhandler.c,v 1.7 2001/08/12 12:03:01 heko Exp $ */
 
 /*
 copyright 2000

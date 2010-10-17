@@ -1,4 +1,4 @@
-/* $Id: sectok.c,v 1.11 2003/04/02 22:57:51 deraadt Exp $ */
+/* $Id: sectok.c,v 1.12 2003/04/04 00:50:56 deraadt Exp $ */
 
 /*
 copyright 2000

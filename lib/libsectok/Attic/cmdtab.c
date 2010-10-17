@@ -1,4 +1,4 @@
-/* $Id: cmdtab.c,v 1.6 2001/08/02 17:02:05 rees Exp $ */
+/* $Id: cmdtab.c,v 1.7 2003/04/02 22:57:51 deraadt Exp $ */
 
 /*
 copyright 1999

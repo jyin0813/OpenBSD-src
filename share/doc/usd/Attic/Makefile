@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.9 2010/01/04 17:50:39 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.10 2010/07/01 20:08:54 tedu Exp $
 
 DOCDIR=	/usr/share/doc/usd
 FILES=	Makefile

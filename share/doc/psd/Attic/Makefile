@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.7 2010/01/04 17:50:39 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.8 2010/07/01 20:04:10 tedu Exp $
 
 DOCDIR=	/usr/share/doc/psd
 FILES=	Makefile

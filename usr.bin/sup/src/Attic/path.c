@@ -1,4 +1,4 @@
-/*	$OpenBSD: path.c,v 1.5 2001/05/04 22:16:15 millert Exp $	*/
+/*	$OpenBSD: path.c,v 1.6 2003/04/15 07:21:09 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

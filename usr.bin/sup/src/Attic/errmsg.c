@@ -1,4 +1,4 @@
-/*	$OpenBSD: errmsg.c,v 1.7 2001/05/04 22:16:15 millert Exp $	*/
+/*	$OpenBSD: errmsg.c,v 1.8 2002/02/16 21:27:54 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

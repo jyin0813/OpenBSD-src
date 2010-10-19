@@ -1,4 +1,4 @@
-/*	$OpenBSD: supmsg.h,v 1.6 2001/04/29 21:52:17 millert Exp $	*/
+/*	$OpenBSD: supmsg.h,v 1.7 2002/06/12 06:07:16 mpech Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

@@ -1,4 +1,4 @@
-/*	$OpenBSD: vgrindefs.c,v 1.9 2005/04/13 02:05:18 deraadt Exp $	*/
+/*	$OpenBSD: vgrindefs.c,v 1.10 2009/10/27 23:59:47 deraadt Exp $	*/
 /*	$NetBSD: vgrindefs.c,v 1.5 1994/12/20 12:05:29 cgd Exp $	*/
 
 /*

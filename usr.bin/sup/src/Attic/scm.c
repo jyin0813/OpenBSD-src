@@ -1,4 +1,4 @@
-/*	$OpenBSD: scm.c,v 1.18 2005/03/10 01:36:37 cloder Exp $	*/
+/*	$OpenBSD: scm.c,v 1.19 2007/09/02 15:19:35 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

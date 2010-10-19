@@ -1,4 +1,4 @@
-/*	$OpenBSD: log.c,v 1.7 2001/05/04 22:16:15 millert Exp $	*/
+/*	$OpenBSD: log.c,v 1.8 2002/02/19 19:39:39 millert Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

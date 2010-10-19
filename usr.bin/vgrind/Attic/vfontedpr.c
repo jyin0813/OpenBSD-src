@@ -1,4 +1,4 @@
-/*	$OpenBSD: vfontedpr.c,v 1.11 2006/03/23 02:17:38 ray Exp $	*/
+/*	$OpenBSD: vfontedpr.c,v 1.12 2009/10/27 23:59:46 deraadt Exp $	*/
 /*	$NetBSD: vfontedpr.c,v 1.7 1998/12/19 23:41:53 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: c.h,v 1.2 1996/06/26 05:39:38 deraadt Exp $	*/
+/*	$OpenBSD: c.h,v 1.3 2001/04/29 18:14:09 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

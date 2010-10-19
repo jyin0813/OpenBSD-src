@@ -1,4 +1,4 @@
-/*	$OpenBSD: filecopy.c,v 1.3 1997/04/01 07:35:05 todd Exp $	*/
+/*	$OpenBSD: filecopy.c,v 1.4 2001/05/04 22:16:15 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

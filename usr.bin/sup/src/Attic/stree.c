@@ -1,4 +1,4 @@
-/*	$OpenBSD: stree.c,v 1.10 2002/02/17 19:42:33 millert Exp $	*/
+/*	$OpenBSD: stree.c,v 1.11 2009/05/09 12:02:17 chl Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

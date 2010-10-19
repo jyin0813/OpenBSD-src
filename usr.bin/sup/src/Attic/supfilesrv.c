@@ -1,4 +1,4 @@
-/*	$OpenBSD: supfilesrv.c,v 1.37 2007/09/11 15:47:17 gilles Exp $	*/
+/*	$OpenBSD: supfilesrv.c,v 1.38 2007/09/14 14:29:20 chl Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

@@ -1,4 +1,4 @@
-/*	$OpenBSD: nxtarg.c,v 1.5 2001/05/04 22:16:15 millert Exp $	*/
+/*	$OpenBSD: nxtarg.c,v 1.6 2003/03/10 03:53:32 david Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

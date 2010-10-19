@@ -1,4 +1,4 @@
-/*	$OpenBSD: scan.c,v 1.15 2003/07/10 00:06:51 david Exp $	*/
+/*	$OpenBSD: scan.c,v 1.16 2007/09/11 15:47:17 gilles Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

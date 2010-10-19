@@ -1,4 +1,4 @@
-/*	$OpenBSD: expand.c,v 1.14 2003/05/07 20:39:29 deraadt Exp $	*/
+/*	$OpenBSD: expand.c,v 1.15 2004/04/05 14:30:51 aaron Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

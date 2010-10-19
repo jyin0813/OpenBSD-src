@@ -1,4 +1,4 @@
-/*	$OpenBSD: retest.c,v 1.5 2003/06/03 02:56:21 millert Exp $	*/
+/*	$OpenBSD: retest.c,v 1.6 2009/10/27 23:59:47 deraadt Exp $	*/
 /*	$NetBSD: retest.c,v 1.2 1994/11/17 08:28:18 jtc Exp $	*/
 
 /*

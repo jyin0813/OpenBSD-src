@@ -1,4 +1,4 @@
-/*	$OpenBSD: atoo.c,v 1.3 1997/04/01 07:34:57 todd Exp $	*/
+/*	$OpenBSD: atoo.c,v 1.4 2001/05/04 22:16:14 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

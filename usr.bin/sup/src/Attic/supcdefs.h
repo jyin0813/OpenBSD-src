@@ -1,4 +1,4 @@
-/*	$OpenBSD: supcdefs.h,v 1.7 2001/05/05 15:32:11 millert Exp $	*/
+/*	$OpenBSD: supcdefs.h,v 1.8 2005/04/27 18:13:16 mickey Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

@@ -1,4 +1,4 @@
-/*	$OpenBSD: run.c,v 1.13 2002/06/12 06:07:16 mpech Exp $	*/
+/*	$OpenBSD: run.c,v 1.14 2005/07/04 01:54:10 djm Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

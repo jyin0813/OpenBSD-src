@@ -1,4 +1,4 @@
-/*	$OpenBSD: supcmisc.c,v 1.15 2003/04/15 07:21:09 deraadt Exp $	*/
+/*	$OpenBSD: supcmisc.c,v 1.16 2007/05/17 11:00:37 moritz Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

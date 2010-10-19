@@ -1,4 +1,4 @@
-/*	$OpenBSD: ffilecopy.c,v 1.5 1997/04/01 07:35:03 todd Exp $	*/
+/*	$OpenBSD: ffilecopy.c,v 1.6 2001/05/04 22:16:15 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

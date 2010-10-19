@@ -1,4 +1,4 @@
-/*	$OpenBSD: supcmain.c,v 1.22 2007/10/17 20:10:44 chl Exp $	*/
+/*	$OpenBSD: supcmain.c,v 1.23 2007/11/25 16:40:03 jmc Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

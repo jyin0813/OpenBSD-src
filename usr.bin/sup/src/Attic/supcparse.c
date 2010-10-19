@@ -1,4 +1,4 @@
-/*	$OpenBSD: supcparse.c,v 1.8 2002/02/16 21:27:54 millert Exp $	*/
+/*	$OpenBSD: supcparse.c,v 1.9 2003/09/05 03:28:27 tedu Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

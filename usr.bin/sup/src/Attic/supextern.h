@@ -1,4 +1,4 @@
-/*     $OpenBSD: supextern.h,v 1.8 2003/04/15 07:21:09 deraadt Exp $  */
+/*     $OpenBSD: supextern.h,v 1.9 2009/05/09 12:02:17 chl Exp $  */
 
 /* atoo.c */
 unsigned int atoo(char *);

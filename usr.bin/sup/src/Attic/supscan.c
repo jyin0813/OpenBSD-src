@@ -1,4 +1,4 @@
-/*	$OpenBSD: supscan.c,v 1.14 2006/01/23 17:29:22 millert Exp $	*/
+/*	$OpenBSD: supscan.c,v 1.15 2007/09/11 15:47:17 gilles Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

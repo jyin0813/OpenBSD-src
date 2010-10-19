@@ -1,4 +1,4 @@
-/*	$OpenBSD: scmio.c,v 1.14 2003/08/27 23:05:14 tedu Exp $	*/
+/*	$OpenBSD: scmio.c,v 1.15 2003/11/08 19:17:29 jmc Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

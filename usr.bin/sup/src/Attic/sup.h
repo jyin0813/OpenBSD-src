@@ -1,4 +1,4 @@
-/*	$OpenBSD: sup.h,v 1.8 2001/05/04 22:16:16 millert Exp $	*/
+/*	$OpenBSD: sup.h,v 1.9 2002/02/19 19:39:39 millert Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

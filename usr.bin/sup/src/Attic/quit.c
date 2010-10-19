@@ -1,4 +1,4 @@
-/*	$OpenBSD: quit.c,v 1.4 2001/04/29 21:52:15 millert Exp $	*/
+/*	$OpenBSD: quit.c,v 1.5 2002/02/19 19:39:39 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

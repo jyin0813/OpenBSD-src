@@ -1,4 +1,4 @@
-/*	$OpenBSD: sysent.h,v 1.7 2002/02/19 19:39:39 millert Exp $	*/
+/*	$OpenBSD: sysent.h,v 1.8 2003/05/10 17:52:17 miod Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

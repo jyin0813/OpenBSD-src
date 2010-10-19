@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.10 2001/05/05 15:32:11 millert Exp $
+#	$OpenBSD: Makefile,v 1.11 2003/12/02 01:41:02 millert Exp $
 
 PROG=	supfilesrv
 MAN=	supservers.8

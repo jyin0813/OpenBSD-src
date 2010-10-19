@@ -1,4 +1,4 @@
-/*	$OpenBSD: supcvers.c,v 1.3 1997/04/01 07:35:39 todd Exp $	*/
+/*	$OpenBSD: supcvers.c,v 1.4 2001/04/29 21:52:16 millert Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

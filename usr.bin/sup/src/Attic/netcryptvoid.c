@@ -1,4 +1,4 @@
-/*	$OpenBSD: netcryptvoid.c,v 1.5 2001/05/02 22:56:52 millert Exp $	*/
+/*	$OpenBSD: netcryptvoid.c,v 1.6 2001/05/04 22:16:15 millert Exp $	*/
 
 /*
  * Copyright (c) 1992 Carnegie Mellon University

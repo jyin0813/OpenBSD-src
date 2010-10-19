@@ -1,4 +1,4 @@
-/*	$OpenBSD: vprintf.c,v 1.7 2001/05/02 22:56:54 millert Exp $	*/
+/*	$OpenBSD: vprintf.c,v 1.8 2001/05/04 22:16:17 millert Exp $	*/
 
 /*
  * Copyright (c) 1991 Carnegie Mellon University

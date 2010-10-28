@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: skipjack.c,v 1.3 2004/10/01 04:08:45 jsg Exp $	*/
 
 /* 
  * Further optimized test implementation of SKIPJACK algorithm 

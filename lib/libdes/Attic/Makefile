@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2002/03/04 22:00:13 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.5 2005/11/24 20:49:16 deraadt Exp $
 
 LIB=	des
 WANTLINT=

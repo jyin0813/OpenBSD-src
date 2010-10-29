@@ -1,4 +1,4 @@
-/*	$OpenBSD: soelim.c,v 1.7 2003/06/10 22:20:51 deraadt Exp $	*/
+/*	$OpenBSD: soelim.c,v 1.8 2009/10/27 23:59:43 deraadt Exp $	*/
 /*	$NetBSD: soelim.c,v 1.3 1994/12/21 08:11:26 jtc Exp $	*/
 
 /*

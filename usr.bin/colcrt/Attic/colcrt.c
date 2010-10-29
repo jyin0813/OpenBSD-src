@@ -1,4 +1,4 @@
-/*	$OpenBSD: colcrt.c,v 1.9 2008/07/06 13:36:09 sobrado Exp $	*/
+/*	$OpenBSD: colcrt.c,v 1.10 2009/10/27 23:59:36 deraadt Exp $	*/
 /*	$NetBSD: colcrt.c,v 1.3 1995/03/26 05:31:00 glass Exp $	*/
 
 /*

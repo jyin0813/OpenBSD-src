@@ -1,4 +1,4 @@
-/*	$OpenBSD: checknr.c,v 1.15 2007/06/27 03:29:31 ray Exp $	*/
+/*	$OpenBSD: checknr.c,v 1.16 2009/10/27 23:59:36 deraadt Exp $	*/
 /*	$NetBSD: checknr.c,v 1.4 1995/03/26 04:10:19 glass Exp $	*/
 
 /*

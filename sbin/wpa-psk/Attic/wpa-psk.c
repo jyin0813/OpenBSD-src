@@ -1,4 +1,4 @@
-/*	$OpenBSD: wpa-psk.c,v 1.2 2008/05/08 18:04:34 chl Exp $	*/
+/*	$OpenBSD: wpa-psk.c,v 1.3 2008/07/22 07:37:25 djm Exp $	*/
 
 /*-
  * Copyright (c) 2008 Damien Bergamini <damien.bergamini@free.fr>

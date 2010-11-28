@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: authenticate.c,v 1.1 2009/08/07 19:02:55 gilles Exp $	*/
 
 /*
  * Copyright (c) 2009 Gilles Chehade <gilles@openbsd.org>
@@ -25,6 +25,7 @@
 #include <bsd_auth.h>
 #include <err.h>
 #include <event.h>
+#include <imsg.h>
 #include <pwd.h>
 #include <signal.h>
 #include <stdio.h>

@@ -1,4 +1,4 @@
-/*	$Id: mdoc_action.c,v 1.46 2010/10/24 18:15:43 schwarze Exp $ */
+/*	$Id: mdoc_action.c,v 1.47 2010/10/26 22:48:07 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *

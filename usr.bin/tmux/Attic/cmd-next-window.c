@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-next-window.c,v 1.6 2009/11/13 19:53:29 nicm Exp $ */
+/* $OpenBSD: cmd-next-window.c,v 1.7 2011/01/04 00:42:47 nicm Exp $ */
 
 /*
  * Copyright (c) 2007 Nicholas Marriott <nicm@users.sourceforge.net>

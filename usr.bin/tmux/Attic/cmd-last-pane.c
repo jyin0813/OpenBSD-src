@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-last-pane.c,v 1.1 2010/10/23 13:04:34 nicm Exp $ */
+/* $OpenBSD: cmd-last-pane.c,v 1.2 2011/01/04 00:42:46 nicm Exp $ */
 
 /*
  * Copyright (c) 2010 Nicholas Marriott <nicm@users.sourceforge.net>

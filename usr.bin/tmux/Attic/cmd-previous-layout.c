@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-previous-layout.c,v 1.6 2009/12/03 22:50:10 nicm Exp $ */
+/* $OpenBSD: cmd-previous-layout.c,v 1.7 2011/01/04 00:42:47 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

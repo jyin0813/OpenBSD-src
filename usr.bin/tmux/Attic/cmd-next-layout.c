@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-next-layout.c,v 1.5 2009/11/13 19:53:29 nicm Exp $ */
+/* $OpenBSD: cmd-next-layout.c,v 1.6 2011/01/04 00:42:47 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

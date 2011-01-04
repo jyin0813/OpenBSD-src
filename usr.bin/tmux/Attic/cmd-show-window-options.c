@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-show-window-options.c,v 1.8 2009/12/03 17:44:02 nicm Exp $ */
+/* $OpenBSD: cmd-show-window-options.c,v 1.9 2011/01/04 00:42:47 nicm Exp $ */
 
 /*
  * Copyright (c) 2008 Nicholas Marriott <nicm@users.sourceforge.net>

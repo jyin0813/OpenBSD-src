@@ -1,4 +1,4 @@
-/* $OpenBSD: cmd-generic.c,v 1.11 2009/12/03 22:50:10 nicm Exp $ */
+/* $OpenBSD: cmd-generic.c,v 1.12 2010/12/30 23:16:18 nicm Exp $ */
 
 /*
  * Copyright (c) 2008 Nicholas Marriott <nicm@users.sourceforge.net>

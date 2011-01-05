@@ -1,4 +1,4 @@
-/*	$Id: option.c,v 1.5 2009/09/09 12:51:34 kristaps Exp $ */
+/*	$Id: tbl_option.c,v 1.2 2010/10/15 21:33:47 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *

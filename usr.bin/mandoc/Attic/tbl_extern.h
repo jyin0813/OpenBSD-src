@@ -1,4 +1,4 @@
-/*	$Id: tbl_extern.h,v 1.2 2010/10/15 21:33:47 schwarze Exp $ */
+/*	$Id: tbl_extern.h,v 1.3 2010/10/15 22:07:12 schwarze Exp $ */
 /*
  * Copyright (c) 2009 Kristaps Dzonsons <kristaps@kth.se>
  *

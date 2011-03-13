@@ -1,5 +1,5 @@
 .\"
-.\" $Id: groff_mmse.man,v 1.32 1999/09/03 05:33:12 jh Exp $
+.\" $Id: groff_mmse.7_in,v 1.1 2000/04/09 08:25:19 millert Exp $
 .\" Skrivet av Jörgen Hägg, Lund, Sverige
 .\"
 .TH GROFF_MMSE @MAN7EXT@ "@MDATE@" "Groff Version @VERSION@"

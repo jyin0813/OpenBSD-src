@@ -1,4 +1,4 @@
-/*	$OpenBSD: iommu.c,v 1.29 2009/05/04 16:48:37 oga Exp $	*/
+/*	$OpenBSD: iommu.c,v 1.30 2010/09/10 21:37:03 kettenis Exp $	*/
 
 /*
  * Copyright (c) 2005 Jason L. Wright (jason@thought.net)

@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: freebsd_syscall.h,v 1.37 2010/05/23 11:37:29 deraadt Exp $	*/
 
 /*
  * System call numbers.

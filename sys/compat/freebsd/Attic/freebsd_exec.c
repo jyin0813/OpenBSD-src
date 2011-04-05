@@ -1,4 +1,4 @@
-/*	$OpenBSD: freebsd_exec.c,v 1.18 2008/06/12 04:32:57 miod Exp $	*/
+/*	$OpenBSD: freebsd_exec.c,v 1.19 2009/03/05 19:52:23 kettenis Exp $	*/
 /*	$NetBSD: freebsd_exec.c,v 1.2 1996/05/18 16:02:08 christos Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: pt_exec.c,v 1.4 2003/06/02 20:06:16 millert Exp $	*/
+/*	$OpenBSD: pt_exec.c,v 1.5 2003/06/11 06:22:14 deraadt Exp $	*/
 /*	$NetBSD: pt_exec.c,v 1.4 1995/04/23 10:33:25 cgd Exp $	*/
 
 /*

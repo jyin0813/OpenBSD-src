@@ -1,4 +1,4 @@
-/*	$OpenBSD: portald.h,v 1.5 2002/02/17 19:42:28 millert Exp $	*/
+/*	$OpenBSD: portald.h,v 1.6 2003/06/02 20:06:16 millert Exp $	*/
 /*	$NetBSD: portald.h,v 1.4 1995/04/23 10:33:23 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: activate.c,v 1.8 2008/03/15 16:19:02 deraadt Exp $	*/
+/*	$OpenBSD: activate.c,v 1.9 2008/03/24 16:11:08 deraadt Exp $	*/
 /*	$NetBSD: activate.c,v 1.5 1995/04/23 10:33:18 cgd Exp $	*/
 
 /*

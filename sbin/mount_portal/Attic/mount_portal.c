@@ -1,4 +1,4 @@
-/*	$OpenBSD: mount_portal.c,v 1.28 2008/06/01 18:38:29 sobrado Exp $	*/
+/*	$OpenBSD: mount_portal.c,v 1.29 2009/10/27 23:59:33 deraadt Exp $	*/
 /*	$NetBSD: mount_portal.c,v 1.8 1996/04/13 01:31:54 jtc Exp $	*/
 
 /*

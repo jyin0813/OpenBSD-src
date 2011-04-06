@@ -1,4 +1,4 @@
-/*	$OpenBSD: portal_vfsops.c,v 1.22 2007/10/29 15:38:00 chl Exp $	*/
+/*	$OpenBSD: portal_vfsops.c,v 1.24 2009/07/09 22:29:56 thib Exp $	*/
 /*	$NetBSD: portal_vfsops.c,v 1.14 1996/02/09 22:40:41 christos Exp $	*/
 
 /*

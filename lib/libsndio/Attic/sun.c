@@ -1,4 +1,4 @@
-/*	$OpenBSD: sun.c,v 1.41 2010/09/17 08:08:23 ratchov Exp $	*/
+/*	$OpenBSD: sun.c,v 1.42 2010/11/06 20:25:42 ratchov Exp $	*/
 /*
  * Copyright (c) 2008 Alexandre Ratchov <alex@caoua.org>
  *

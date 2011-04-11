@@ -1,4 +1,4 @@
-/*	$OpenBSD: viaenv.c,v 1.14 2010/07/06 09:05:41 blambert Exp $	*/
+/*	$OpenBSD: viaenv.c,v 1.15 2011/02/15 21:46:21 miod Exp $	*/
 /*	$NetBSD: viaenv.c,v 1.9 2002/10/02 16:51:59 thorpej Exp $	*/
 
 /*

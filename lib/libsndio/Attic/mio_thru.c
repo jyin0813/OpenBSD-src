@@ -1,4 +1,4 @@
-/*	$OpenBSD: mio_thru.c,v 1.11 2010/10/21 18:57:42 ratchov Exp $	*/
+/*	$OpenBSD: mio_thru.c,v 1.12 2010/10/23 10:48:55 ratchov Exp $	*/
 /*
  * Copyright (c) 2008 Alexandre Ratchov <alex@caoua.org>
  *

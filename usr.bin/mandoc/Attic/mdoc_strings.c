@@ -1,4 +1,4 @@
-/*	$Id: mdoc_strings.c,v 1.18 2010/05/23 22:45:00 schwarze Exp $ */
+/*	$Id: mdoc_strings.c,v 1.19 2010/07/31 23:42:04 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  *

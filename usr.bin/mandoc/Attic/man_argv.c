@@ -1,4 +1,4 @@
-/*	$Id: man_argv.c,v 1.3 2010/07/31 23:42:04 schwarze Exp $ */
+/*	$Id: man_argv.c,v 1.4 2011/01/03 22:27:21 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *

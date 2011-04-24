@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: vswprintf.c,v 1.1 2011/04/24 07:46:58 stsp Exp $	*/
 /*	$NetBSD: vswprintf.c,v 1.1 2005/05/14 23:51:02 christos Exp $	*/
 
 /*

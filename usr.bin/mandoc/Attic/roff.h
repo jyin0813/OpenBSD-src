@@ -1,4 +1,4 @@
-/*	$Id: roff.h,v 1.7 2011/01/04 22:28:17 schwarze Exp $ */
+/*	$Id: roff.h,v 1.8 2011/03/20 23:36:42 schwarze Exp $ */
 /*
  * Copyright (c) 2010, 2011 Kristaps Dzonsons <kristaps@bsd.lv>
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: local.h,v 1.14 2009/10/22 01:23:16 guenther Exp $	*/
+/*	$OpenBSD: local.h,v 1.15 2009/11/09 00:18:27 kurt Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993
@@ -58,6 +58,7 @@ int	__swsetup(FILE *);
 int	__sflags(const char *, int *);
 wint_t __fgetwc_unlock(FILE *);
 int	__vfprintf(FILE *, const char *, __va_list);
+int	__vfwprintf(FILE * __restrict, const wchar_t * __restrict, __va_list);
 
 extern void __atexit_register_cleanup(void (*)(void));
 extern int __sdidinit;

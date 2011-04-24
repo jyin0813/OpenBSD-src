@@ -1,4 +1,4 @@
-/*	$Id: chars.h,v 1.5 2010/07/25 18:05:54 schwarze Exp $ */
+/*	$Id: chars.h,v 1.6 2011/01/30 16:05:29 schwarze Exp $ */
 /*
  * Copyright (c) 2008, 2009, 2010 Kristaps Dzonsons <kristaps@bsd.lv>
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>

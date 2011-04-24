@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: vwprintf.c,v 1.1 2011/04/24 07:46:58 stsp Exp $ */
 /*-
  * Copyright (c) 1990, 1993
  *	The Regents of the University of California.  All rights reserved.

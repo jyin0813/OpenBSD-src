@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fenv.c,v 1.1 2011/04/24 00:35:22 martynas Exp $	*/
 /*	$NetBSD: fenv.c,v 1.1 2011/01/31 00:19:33 christos Exp $	*/
 
 /*-
@@ -38,6 +38,17 @@
 /* Save floating-point state register (all 64bits) */
 #define	__stxfsr(__r)	__asm__	__volatile__		\
 	("stx %%fsr, %0" : "=m" (*(__r)))
+
+/*
+ * The following constant represents the default floating-point environment
+ * (that is, the one installed at program startup) and has type pointer to
+ * const-qualified fenv_t.
+ *
+ * It can be used as an argument to the functions within the <fenv.h> header
+ * that manage the floating-point environment, namely fesetenv() and
+ * feupdateenv().
+ */
+fenv_t __fe_dfl_env = 0;
 
 /*
  * The feclearexcept() function clears the supported floating-point exceptions

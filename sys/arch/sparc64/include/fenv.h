@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: fenv.h,v 1.1 2011/04/24 00:35:22 martynas Exp $	*/
 /*	$NetBSD: fenv.h,v 1.1.2.2 2011/02/08 16:19:41 bouyer Exp $	*/
 
 /*-
@@ -34,8 +34,8 @@
 
 #include <sys/stdint.h>
 
-typedef	uint64_t	fenv_t;
-typedef	uint64_t	fexcept_t;
+typedef	unsigned long int	fenv_t;
+typedef	unsigned long int	fexcept_t;
 
 /*
  * Exception flags

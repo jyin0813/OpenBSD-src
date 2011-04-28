@@ -1,4 +1,4 @@
-/*	$OpenBSD: amsg.h,v 1.20 2011/04/16 11:24:18 ratchov Exp $	*/
+/*	$OpenBSD: amsg.h,v 1.21 2011/04/27 20:33:40 deraadt Exp $	*/
 /*
  * Copyright (c) 2008 Alexandre Ratchov <alex@caoua.org>
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: ssvar.h,v 1.17 2010/06/01 15:27:16 thib Exp $	*/
+/*	$OpenBSD: ssvar.h,v 1.18 2010/06/30 00:02:00 dlg Exp $	*/
 /*	$NetBSD: ssvar.h,v 1.2 1996/03/30 21:47:11 christos Exp $	*/
 
 /*

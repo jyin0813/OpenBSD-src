@@ -1,4 +1,4 @@
-/*	$OpenBSD: obiovar.h,v 1.1 2010/09/20 06:32:30 syuu Exp $	*/
+/*	$OpenBSD: combusvar.h,v 1.1 2010/10/01 16:13:59 syuu Exp $	*/
 
 /*
  * Copyright (c) 2001-2003 Opsycon AB  (www.opsycon.se / www.opsycon.com)

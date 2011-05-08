@@ -1,4 +1,4 @@
-/*	$OpenBSD: obio.c,v 1.5 2010/10/28 22:52:10 syuu Exp $ */
+/*	$OpenBSD: obio.c,v 1.6 2010/11/23 18:46:29 syuu Exp $ */
 
 /*
  * Copyright (c) 2000-2004 Opsycon AB  (www.opsycon.se)

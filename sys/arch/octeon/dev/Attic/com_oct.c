@@ -1,4 +1,4 @@
-/*	$OpenBSD: com_oct.c,v 1.2 2010/10/01 16:13:59 syuu Exp $	*/
+/*	$OpenBSD: com_oct.c,v 1.3 2011/05/08 13:24:55 syuu Exp $	*/
 
 /*
  * Copyright (c) 2001-2004 Opsycon AB  (www.opsycon.se / www.opsycon.com)

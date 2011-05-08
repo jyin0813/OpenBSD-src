@@ -1,4 +1,4 @@
-/*	$OpenBSD: combus.c,v 1.1 2010/10/01 16:13:59 syuu Exp $ */
+/*	$OpenBSD: combus.c,v 1.2 2010/10/26 00:02:01 syuu Exp $ */
 
 /*
  * Copyright (c) 2000-2004 Opsycon AB  (www.opsycon.se)

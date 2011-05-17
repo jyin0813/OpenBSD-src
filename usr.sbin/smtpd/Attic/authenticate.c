@@ -1,4 +1,4 @@
-/*	$OpenBSD: authenticate.c,v 1.2 2010/11/28 13:56:43 gilles Exp $	*/
+/*	$OpenBSD: authenticate.c,v 1.3 2010/11/28 14:02:46 gilles Exp $	*/
 
 /*
  * Copyright (c) 2009 Gilles Chehade <gilles@openbsd.org>

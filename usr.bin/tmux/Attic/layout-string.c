@@ -1,4 +1,4 @@
-/* $OpenBSD: layout-string.c,v 1.4 2010/01/08 17:44:27 nicm Exp $ */
+/* $OpenBSD: layout-string.c,v 1.5 2010/06/29 03:30:14 nicm Exp $ */
 
 /*
  * Copyright (c) 2009 Nicholas Marriott <nicm@users.sourceforge.net>

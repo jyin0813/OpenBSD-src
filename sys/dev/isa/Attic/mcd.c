@@ -1,4 +1,4 @@
-/*	$OpenBSD: mcd.c,v 1.59 2011/06/05 18:40:33 matthew Exp $ */
+/*	$OpenBSD: mcd.c,v 1.60 2011/06/20 08:47:59 matthew Exp $ */
 /*	$NetBSD: mcd.c,v 1.60 1998/01/14 12:14:41 drochner Exp $	*/
 
 /*

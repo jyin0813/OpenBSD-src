@@ -1,4 +1,4 @@
-/*	$OpenBSD: pssreg.h,v 1.2 1997/11/07 08:07:09 niklas Exp $	*/
+/*	$OpenBSD: pssreg.h,v 1.3 2007/10/26 15:00:49 martin Exp $	*/
 /*	$NetBSD: pssreg.h,v 1.2 1995/05/08 22:02:09 brezak Exp $	*/
 
 /*

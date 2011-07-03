@@ -1,4 +1,4 @@
-/*	$OpenBSD: score.c,v 1.11 2006/03/08 09:44:35 otto Exp $	*/
+/*	$OpenBSD: score.c,v 1.12 2009/10/27 23:59:26 deraadt Exp $	*/
 /*	$NetBSD: score.c,v 1.5 1995/04/22 10:28:26 cgd Exp $	*/
 
 /*

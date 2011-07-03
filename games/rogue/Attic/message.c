@@ -1,4 +1,4 @@
-/*	$OpenBSD: message.c,v 1.12 2006/03/08 09:44:35 otto Exp $	*/
+/*	$OpenBSD: message.c,v 1.13 2009/10/27 23:59:26 deraadt Exp $	*/
 /*	$NetBSD: message.c,v 1.5 1995/04/22 10:27:43 cgd Exp $	*/
 
 /*

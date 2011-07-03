@@ -1,4 +1,4 @@
-/*	$OpenBSD: monster.c,v 1.9 2009/10/27 23:59:26 deraadt Exp $	*/
+/*	$OpenBSD: monster.c,v 1.10 2009/11/12 21:57:46 dms Exp $	*/
 /*	$NetBSD: monster.c,v 1.3 1995/04/22 10:27:45 cgd Exp $	*/
 
 /*

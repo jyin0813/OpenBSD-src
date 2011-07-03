@@ -1,4 +1,4 @@
-/*	$OpenBSD: object.c,v 1.10 2006/03/08 09:44:35 otto Exp $	*/
+/*	$OpenBSD: object.c,v 1.11 2009/10/27 23:59:26 deraadt Exp $	*/
 /*	$NetBSD: object.c,v 1.3 1995/04/22 10:27:50 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: inventory.c,v 1.9 2006/03/08 09:44:35 otto Exp $	*/
+/*	$OpenBSD: inventory.c,v 1.10 2009/10/27 23:59:26 deraadt Exp $	*/
 /*	$NetBSD: inventory.c,v 1.3 1995/04/22 10:27:35 cgd Exp $	*/
 
 /*

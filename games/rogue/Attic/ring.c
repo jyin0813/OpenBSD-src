@@ -1,4 +1,4 @@
-/*	$OpenBSD: ring.c,v 1.7 2006/03/08 09:44:35 otto Exp $	*/
+/*	$OpenBSD: ring.c,v 1.8 2009/10/27 23:59:26 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1988, 1993

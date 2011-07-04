@@ -4,6 +4,7 @@
 use Errno;
 use IO::Socket;
 use BSD::Socket::Splice "SO_SPLICE";
+use Config;
 
 my $sl = IO::Socket::INET->new(
     Proto => "tcp",
@@ -23,7 +24,13 @@ my $ss = IO::Socket::INET->new(
     PeerPort => $sl->sockport(),
 ) or die "socket splice failed: $!";
 
-$s->setsockopt(SOL_SOCKET, SO_SPLICE, pack('iiii', $ss->fileno(),-1,-1,-1))
+my $packed;
+if ($Config{longsize} == 8) {
+    $packed = pack('iiiiiiii', $ss->fileno(),0,-1,-1,0,0,0,0);
+} else {
+    $packed = pack('iiiii', $ss->fileno(),-1,-1,0,0);
+}
+$s->setsockopt(SOL_SOCKET, SO_SPLICE, $packed)
     and die "splice to unconnected socket succeeded";
 $!{EINVAL}
     or die "error not EINVAL: $!"

@@ -1,4 +1,4 @@
-/*	$OpenBSD: svr4_stat.c,v 1.27 2005/08/07 00:18:33 deraadt Exp $	 */
+/*	$OpenBSD: svr4_stat.c,v 1.28 2009/01/29 22:08:45 guenther Exp $	 */
 /*	$NetBSD: svr4_stat.c,v 1.21 1996/04/22 01:16:07 christos Exp $	 */
 
 /*

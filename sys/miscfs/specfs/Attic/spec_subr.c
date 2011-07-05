@@ -1,4 +1,4 @@
-/*	$OpenBSD: spec_subr.c,v 1.3 2007/12/09 20:54:01 jmc Exp $	*/
+/*	$OpenBSD: spec_subr.c,v 1.4 2008/04/08 14:46:45 thib Exp $	*/
 
 /*
  * Copyright (c) 2006 Pedro Martelletto <pedro@ambientworks.net>

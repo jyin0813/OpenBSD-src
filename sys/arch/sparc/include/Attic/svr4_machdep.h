@@ -1,4 +1,4 @@
-/*	$OpenBSD: svr4_machdep.h,v 1.7 2002/03/14 01:26:44 millert Exp $	*/
+/*	$OpenBSD: svr4_machdep.h,v 1.8 2011/03/23 16:54:37 pirofti Exp $	*/
 /*	$NetBSD: svr4_machdep.h,v 1.4 1996/03/31 22:21:45 pk Exp $	 */
 
 /*

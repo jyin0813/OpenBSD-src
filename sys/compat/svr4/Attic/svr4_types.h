@@ -1,4 +1,4 @@
-/*	$OpenBSD: svr4_types.h,v 1.6 2007/06/06 17:15:13 deraadt Exp $	*/
+/*	$OpenBSD: svr4_types.h,v 1.7 2008/06/26 05:42:14 ray Exp $	*/
 /*	$NetBSD: svr4_types.h,v 1.11 1998/09/11 12:34:46 mycroft Exp $	*/
 
 /*-

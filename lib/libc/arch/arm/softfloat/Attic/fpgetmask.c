@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpgetmask.c,v 1.2 2004/02/01 05:40:52 drahn Exp $	*/
+/*	$OpenBSD: fpgetmask.c,v 1.3 2008/06/26 05:42:04 ray Exp $	*/
 /* $NetBSD: fpgetmask.c,v 1.3 2002/05/12 13:12:45 bjh21 Exp $ */
 
 /*-

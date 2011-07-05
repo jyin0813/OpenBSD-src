@@ -1,4 +1,4 @@
-/*	$OpenBSD: fpsetround.c,v 1.2 2004/02/01 05:40:52 drahn Exp $	*/
+/*	$OpenBSD: fpsetround.c,v 1.3 2008/06/26 05:42:04 ray Exp $	*/
 /* $NetBSD: fpsetround.c,v 1.2 2002/01/13 21:45:53 thorpej Exp $ */
 
 /*-

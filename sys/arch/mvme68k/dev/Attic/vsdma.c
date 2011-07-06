@@ -1,4 +1,4 @@
-/*	$OpenBSD: vsdma.c,v 1.13 2009/02/16 21:19:06 miod Exp $ */
+/*	$OpenBSD: vsdma.c,v 1.14 2010/06/28 18:31:01 krw Exp $ */
 /*
  * Copyright (c) 1999 Steve Murphree, Jr.
  * All rights reserved.

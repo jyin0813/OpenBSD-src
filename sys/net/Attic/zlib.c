@@ -1,4 +1,4 @@
-/*	$OpenBSD: zlib.c,v 1.13 2007/11/26 09:28:33 martynas Exp $	*/
+/*	$OpenBSD: zlib.c,v 1.14 2011/04/08 19:17:15 matthew Exp $	*/
 /*	$NetBSD: zlib.c,v 1.2 1996/03/16 23:55:40 christos Exp $	*/
 
 /*

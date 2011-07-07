@@ -1,4 +1,4 @@
-/*	$OpenBSD: uba_sbi.c,v 1.4 2005/11/24 04:55:18 brad Exp $	*/
+/*	$OpenBSD: uba_sbi.c,v 1.5 2008/08/18 23:09:42 miod Exp $	*/
 /*	$NetBSD: uba_sbi.c,v 1.1 1999/06/21 16:23:01 ragge Exp $	   */
 /*
  * Copyright (c) 1996 Jonathan Stone.

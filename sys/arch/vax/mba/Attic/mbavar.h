@@ -1,4 +1,4 @@
-/*	$OpenBSD: mbavar.h,v 1.6 2002/06/11 09:36:24 hugh Exp $	*/
+/*	$OpenBSD: mbavar.h,v 1.7 2007/05/10 17:59:26 deraadt Exp $	*/
 /*	$NetBSD: mbavar.h,v 1.7 2000/06/04 18:04:39 ragge Exp $ */
 /*
  * Copyright (c) 1994 Ludd, University of Lule}, Sweden

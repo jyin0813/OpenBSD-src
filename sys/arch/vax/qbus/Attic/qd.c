@@ -1,4 +1,4 @@
-/*	$OpenBSD: qd.c,v 1.19 2010/07/10 03:06:51 matthew Exp $	*/
+/*	$OpenBSD: qd.c,v 1.20 2010/09/22 01:18:57 matthew Exp $	*/
 /*	$NetBSD: qd.c,v 1.17 2000/01/24 02:40:29 matt Exp $	*/
 
 /*-

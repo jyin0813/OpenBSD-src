@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 1997/10/10 10:36:54 pefo Exp $
+#	$OpenBSD: Makefile,v 1.1 2001/06/26 22:23:23 smurph Exp $
 
 SUBDIR= ramdisk
 

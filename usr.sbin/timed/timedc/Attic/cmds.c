@@ -1,4 +1,4 @@
-/*	$OpenBSD: cmds.c,v 1.20 2008/03/17 16:29:25 sobrado Exp $	*/
+/*	$OpenBSD: cmds.c,v 1.21 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1985, 1993 The Regents of the University of California.
@@ -30,7 +30,7 @@
  */
 
 #ifdef sgi
-#ident "$Revision: 1.20 $"
+#ident "$Revision: 1.21 $"
 #endif
 
 #include "timedc.h"

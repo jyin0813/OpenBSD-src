@@ -1,4 +1,4 @@
-/*	$OpenBSD: pathnames.h,v 1.3 2002/06/18 00:40:31 ericj Exp $	*/
+/*	$OpenBSD: pathnames.h,v 1.4 2003/06/02 23:36:55 millert Exp $	*/
 
 /*-
  * Copyright (c) 1985 The Regents of the University of California.

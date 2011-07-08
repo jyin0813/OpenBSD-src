@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.4 2001/05/05 06:46:59 mickey Exp $
+#	$OpenBSD: Makefile,v 1.5 2010/01/04 17:50:40 deraadt Exp $
 
 SUBDIR=	timed timedc
 

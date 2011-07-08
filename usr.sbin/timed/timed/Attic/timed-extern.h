@@ -1,4 +1,4 @@
-/*	$OpenBSD: timed-extern.h,v 1.3 2002/06/19 15:45:39 ericj Exp $	*/
+/*	$OpenBSD: timed-extern.h,v 1.4 2003/06/02 23:36:55 millert Exp $	*/
 
 /*-
  * Copyright (c) 1993 The Regents of the University of California.

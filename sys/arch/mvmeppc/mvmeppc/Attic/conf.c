@@ -1,4 +1,4 @@
-/*	$OpenBSD: conf.c,v 1.29 2010/09/23 05:02:14 claudio Exp $ */
+/*	$OpenBSD: conf.c,v 1.30 2011/01/14 19:04:08 jasper Exp $ */
 
 /*
  * Copyright (c) 1997 Per Fogelstrom

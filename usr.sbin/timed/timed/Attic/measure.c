@@ -1,4 +1,4 @@
-/*	$OpenBSD: measure.c,v 1.13 2003/11/19 20:14:58 millert Exp $	*/
+/*	$OpenBSD: measure.c,v 1.14 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1985, 1993 The Regents of the University of California.

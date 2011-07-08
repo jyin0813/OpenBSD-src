@@ -1,4 +1,4 @@
-.\"	$OpenBSD: timed.ms,v 1.2 2003/06/02 23:36:55 millert Exp $
+.\"	$OpenBSD: timed.ms,v 1.3 2003/11/04 14:07:48 jmc Exp $
 .\"
 .\" Copyright (c) 1986, 1993
 .\"	The Regents of the University of California.  All rights reserved.

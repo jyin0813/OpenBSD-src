@@ -1,4 +1,4 @@
-/*	$OpenBSD: ppc1_machdep.c,v 1.17 2007/11/04 13:43:39 martin Exp $	*/
+/*	$OpenBSD: ppc1_machdep.c,v 1.18 2008/01/23 16:37:57 jsing Exp $	*/
 /*	$NetBSD: ofw_machdep.c,v 1.1 1996/09/30 16:34:50 ws Exp $	*/
 
 /*

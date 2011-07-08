@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 2010/11/03 20:08:03 deraadt Exp $
+#	$OpenBSD: Makefile,v 1.6 2010/11/12 17:11:44 deraadt Exp $
 
 S=	${.CURDIR}/../..
 KFILE=	GENERIC

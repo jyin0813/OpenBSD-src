@@ -1,4 +1,4 @@
-/*	$OpenBSD: slave.c,v 1.11 2003/08/19 19:41:21 deraadt Exp $	*/
+/*	$OpenBSD: slave.c,v 1.12 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1985, 1993 The Regents of the University of California.

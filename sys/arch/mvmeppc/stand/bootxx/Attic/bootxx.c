@@ -1,4 +1,4 @@
-/*	$OpenBSD: bootxx.c,v 1.2 2002/03/14 03:15:58 millert Exp $ */
+/*	$OpenBSD: bootxx.c,v 1.3 2011/03/13 00:13:53 deraadt Exp $ */
 
 /*
  * Copyright (c) 1994 Paul Kranenburg

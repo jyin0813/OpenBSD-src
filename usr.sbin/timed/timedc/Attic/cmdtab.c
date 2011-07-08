@@ -1,4 +1,4 @@
-/*	$OpenBSD: cmdtab.c,v 1.4 2003/06/02 23:36:55 millert Exp $	*/
+/*	$OpenBSD: cmdtab.c,v 1.5 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1983 Regents of the University of California.

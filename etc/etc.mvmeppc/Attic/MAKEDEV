@@ -1,5 +1,5 @@
 #!/bin/sh -
-#	$OpenBSD: MAKEDEV,v 1.13 2009/06/03 14:45:40 jj Exp $
+#	$OpenBSD: MAKEDEV,v 1.14 2011/04/18 16:52:11 thib Exp $
 #
 # Copyright (c) 1990 The Regents of the University of California.
 # All rights reserved.

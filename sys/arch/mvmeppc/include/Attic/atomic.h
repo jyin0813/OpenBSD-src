@@ -1,4 +1,4 @@
-/*	$OpenBSD: atomic.h,v 1.2 2007/02/19 17:18:43 deraadt Exp $	*/
+/*	$OpenBSD: atomic.h,v 1.3 2011/03/23 16:54:36 pirofti Exp $	*/
 
 /* Public Domain */
 

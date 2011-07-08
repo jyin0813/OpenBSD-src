@@ -1,4 +1,4 @@
-/*	$OpenBSD: netdate.c,v 1.17 2008/10/01 08:46:58 otto Exp $	*/
+/*	$OpenBSD: netdate.c,v 1.18 2009/10/27 23:59:21 deraadt Exp $	*/
 /*	$NetBSD: netdate.c,v 1.10 1995/09/07 06:21:06 jtc Exp $	*/
 
 /*-

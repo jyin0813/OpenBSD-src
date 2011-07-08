@@ -1,4 +1,4 @@
-/*	$OpenBSD: autoconf.c,v 1.22 2008/07/21 04:35:54 todd Exp $	*/
+/*	$OpenBSD: autoconf.c,v 1.23 2009/08/29 11:41:34 miod Exp $	*/
 /*
  * Copyright (c) 1996, 1997 Per Fogelstrom
  * Copyright (c) 1995 Theo de Raadt
@@ -37,7 +37,7 @@
  * from: Utah Hdr: autoconf.c 1.31 91/01/21
  *
  *	from: @(#)autoconf.c	8.1 (Berkeley) 6/10/93
- *      $Id: autoconf.c,v 1.22 2008/07/21 04:35:54 todd Exp $
+ *      $Id: autoconf.c,v 1.23 2009/08/29 11:41:34 miod Exp $
  */
 
 /*

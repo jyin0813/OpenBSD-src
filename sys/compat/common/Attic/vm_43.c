@@ -1,4 +1,4 @@
-/*	$OpenBSD: vm_43.c,v 1.5 2003/06/02 23:27:59 millert Exp $	*/
+/*	$OpenBSD: vm_43.c,v 1.6 2011/07/04 20:35:35 deraadt Exp $	*/
 /*	$NetBSD: vm_43.c,v 1.1 1996/02/05 01:58:29 christos Exp $	*/
 
 /*

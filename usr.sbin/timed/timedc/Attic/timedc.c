@@ -1,4 +1,4 @@
-/*	$OpenBSD: timedc.c,v 1.13 2004/01/23 21:07:38 deraadt Exp $	*/
+/*	$OpenBSD: timedc.c,v 1.14 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1985, 1993 The Regents of the University of California.

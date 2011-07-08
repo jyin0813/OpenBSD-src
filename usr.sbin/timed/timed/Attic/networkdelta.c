@@ -1,4 +1,4 @@
-/*	$OpenBSD: networkdelta.c,v 1.7 2003/06/12 21:09:48 deraadt Exp $	*/
+/*	$OpenBSD: networkdelta.c,v 1.8 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1985, 1993 The Regents of the University of California.

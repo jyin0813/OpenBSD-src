@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.inc,v 1.6 2009/04/21 09:12:27 deraadt Exp $
+#	$OpenBSD: Makefile.inc,v 1.7 2011/04/15 03:11:38 deraadt Exp $
 
 kernels: bsd bootblocks
 	cp ${.CURDIR}/../sys/arch/mvmeppc/compile/GENERIC/bsd \

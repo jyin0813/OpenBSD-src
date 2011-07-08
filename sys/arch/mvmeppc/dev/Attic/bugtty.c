@@ -1,4 +1,4 @@
-/*	$OpenBSD: bugtty.c,v 1.13 2010/04/12 12:57:52 tedu Exp $ */
+/*	$OpenBSD: bugtty.c,v 1.14 2010/06/28 14:13:30 deraadt Exp $ */
 
 /* Copyright (c) 1998 Steve Murphree, Jr.
  * Copyright (c) 1995 Dale Rahn.

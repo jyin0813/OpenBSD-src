@@ -1,4 +1,4 @@
-/*	$OpenBSD: cksum.c,v 1.5 2003/06/02 23:36:55 millert Exp $	*/
+/*	$OpenBSD: cksum.c,v 1.6 2009/10/27 23:59:57 deraadt Exp $	*/
 
 /*-
  * Copyright (c) 1985, 1993 The Regents of the University of California.

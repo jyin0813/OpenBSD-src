@@ -1,4 +1,4 @@
-/*	$OpenBSD: prom.h,v 1.5 2004/01/24 21:10:31 miod Exp $ */
+/*	$OpenBSD: prom.h,v 1.6 2011/03/23 16:54:36 pirofti Exp $ */
 /*
  * Copyright (c) 2001 Steve Murphree, Jr.
  * All rights reserved.

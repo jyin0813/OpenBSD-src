@@ -1,4 +1,4 @@
-/*	$OpenBSD: at_control.c,v 1.16 2010/07/02 05:45:25 blambert Exp $	*/
+/*	$OpenBSD: at_control.c,v 1.17 2010/09/27 20:16:17 guenther Exp $	*/
 
 /*
  * Copyright (c) 1990,1991 Regents of The University of Michigan.

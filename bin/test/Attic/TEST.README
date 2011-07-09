@@ -1,4 +1,4 @@
-#	$OpenBSD: TEST.README,v 1.3 1997/06/18 20:39:49 kstailey Exp $
+#	$OpenBSD: TEST.README,v 1.4 1997/06/18 20:44:27 kstailey Exp $
 
 OS/shell			syntax error	failed
 --------------------------------------------------------------------

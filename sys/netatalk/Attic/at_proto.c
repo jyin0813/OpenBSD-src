@@ -1,4 +1,4 @@
-/*	$OpenBSD: at_proto.c,v 1.2 2007/12/14 18:33:40 deraadt Exp $	*/
+/*	$OpenBSD: at_proto.c,v 1.3 2010/09/23 09:27:49 claudio Exp $	*/
 /*
  * Copyright (c) 1990,1991 Regents of The University of Michigan.
  * All Rights Reserved.

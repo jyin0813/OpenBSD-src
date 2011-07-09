@@ -1,4 +1,4 @@
-/*	$OpenBSD: modf.S,v 1.2 2004/02/08 17:29:39 deraadt Exp $	*/
+/*	$OpenBSD: s_modf.S,v 1.1 2011/07/08 19:21:42 martynas Exp $	*/
 /*	$NetBSD: modf.S,v 1.1 2001/06/19 00:25:03 fvdl Exp $	*/
 
 /*-

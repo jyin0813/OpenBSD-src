@@ -26,7 +26,7 @@
 #
 # TEST.sh - check if test(1) or builtin test works
 #
-# $OpenBSD$
+# $OpenBSD: TEST.sh,v 1.1 1997/01/23 17:42:53 millert Exp $
 
 # force a specified test program, e.g. `env test=/bin/test sh TEST.sh'
 : ${test=test}		

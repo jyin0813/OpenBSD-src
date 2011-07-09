@@ -1,4 +1,4 @@
-/*	$OpenBSD: ddp_var.h,v 1.2 2007/05/26 12:09:40 claudio Exp $	*/
+/*	$OpenBSD: ddp_var.h,v 1.3 2007/12/14 18:33:40 deraadt Exp $	*/
 
 /*
  * Copyright (c) 1990,1994 Regents of The University of Michigan.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: compat_vm.c,v 1.4 2003/08/06 21:08:06 millert Exp $	*/
+/*	$OpenBSD: compat_vm.c,v 1.5 2007/11/28 13:10:28 deraadt Exp $	*/
 /*	$NetBSD: vm_12.c,v 1.8 1997/10/20 22:05:22 thorpej Exp $	*/
 
 /*

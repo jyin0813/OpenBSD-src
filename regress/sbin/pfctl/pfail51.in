@@ -1,4 +1,6 @@
-no nat pass all -> 127.0.0.1
-no rdr pass all -> 127.0.0.1
-no binat pass from 10/8 to 11/8 -> 12/8
-no binat pass log from 10/8 to 11/8 -> 12/8
+# test prio edge conditions
+
+pass on lo10000000 from any to any port 22 prio 8
+pass on lo10000000 from any to any port 22 prio -1
+pass on lo10000000 from any to any port 22 prio high
+pass on lo10000000 from any to any port 22 prio

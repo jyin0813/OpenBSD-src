@@ -1,4 +1,4 @@
-/*	$OpenBSD: frexp.c,v 1.4 2008/12/10 01:15:02 martynas Exp $	*/
+/*	$OpenBSD: frexp.c,v 1.5 2011/05/30 17:28:15 martynas Exp $	*/
 
 /*-
  * Copyright (c) 2004 David Schultz <das@FreeBSD.ORG>

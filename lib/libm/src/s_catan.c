@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: s_catan.c,v 1.1 2008/09/07 20:36:09 martynas Exp $	*/
 /*
  * Copyright (c) 2008 Stephen L. Moshier <steve@moshier.net>
  *
@@ -14,6 +14,8 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
+
+/* LINTLIBRARY */
 
 /*							catan()
  *
@@ -62,7 +64,9 @@
  * 2.9e-17.  See also clog().
  */
 
+#include <sys/cdefs.h>
 #include <complex.h>
+#include <float.h>
 #include <math.h>
 
 #define MAXNUM 1.0e308
@@ -124,3 +128,12 @@ ovrf:
 	w = MAXNUM + MAXNUM * I;
 	return (w);
 }
+
+#if	LDBL_MANT_DIG == 53
+#ifdef	lint
+/* PROTOLIB1 */
+long double complex catanl(long double complex);
+#else	/* lint */
+__weak_alias(catanl, catan);
+#endif	/* lint */
+#endif	/* LDBL_MANT_DIG == 53 */

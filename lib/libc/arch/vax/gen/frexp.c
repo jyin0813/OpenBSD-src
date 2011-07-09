@@ -1,4 +1,4 @@
-/*	$OpenBSD: frexp.c,v 1.7 2008/12/10 01:15:02 martynas Exp $ */
+/*	$OpenBSD: frexp.c,v 1.8 2011/07/02 19:27:34 martynas Exp $ */
 /*-
  * Copyright (c) 1991, 1993
  *	The Regents of the University of California.  All rights reserved.

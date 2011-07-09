@@ -1,4 +1,4 @@
-/*	$OpenBSD: atalk.c,v 1.19 2010/06/29 03:09:29 blambert Exp $	*/
+/*	$OpenBSD: atalk.c,v 1.20 2010/10/30 23:06:05 bluhm Exp $	*/
 /*	$NetBSD: atalk.c,v 1.2 1997/05/22 17:21:26 christos Exp $	*/
 
 /*

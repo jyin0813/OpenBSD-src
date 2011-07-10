@@ -1,4 +1,4 @@
-/*	$OpenBSD: if_le.c,v 1.5 2008/08/12 17:23:21 miod Exp $ */
+/*	$OpenBSD: if_le.c,v 1.6 2008/08/18 23:20:44 miod Exp $ */
 /*	$NetBSD: if_le.c,v 1.6 2000/05/20 13:30:03 ragge Exp $ */
 /*
  * Copyright (c) 1997, 1999 Ludd, University of Lule}, Sweden.

@@ -1,4 +1,4 @@
-/*	$OpenBSD: bootxx.c,v 1.11 2011/03/13 00:13:53 deraadt Exp $ */
+/*	$OpenBSD: bootxx.c,v 1.12 2011/07/06 18:32:59 miod Exp $ */
 /* $NetBSD: bootxx.c,v 1.16 2002/03/29 05:45:08 matt Exp $ */
 
 /*-

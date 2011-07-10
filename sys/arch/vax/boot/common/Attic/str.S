@@ -1,4 +1,4 @@
-/*	$OpenBSD: str.S,v 1.2 2008/05/21 19:42:07 miod Exp $ */
+/*	$OpenBSD: str.S,v 1.3 2011/06/06 07:54:33 jasper Exp $ */
 /*	$NetBSD: str.S,v 1.1 2002/02/24 01:04:25 matt Exp $ */
 /*
  * Copyright (c) 1996 Ludd, University of Lule}, Sweden.

@@ -1,4 +1,4 @@
-$OpenBSD: version,v 1.8 2008/08/26 18:36:21 miod Exp $
+$OpenBSD: version,v 1.9 2011/07/06 18:32:59 miod Exp $
 $NetBSD: version,v 1.4 2001/11/09 19:53:15 scw Exp $
 
 NOTE ANY CHANGES YOU MAKE TO THE BOOTBLOCKS HERE.  The format of this

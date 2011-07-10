@@ -1,4 +1,4 @@
-/*	$OpenBSD: romread.S,v 1.1 2002/06/11 09:36:23 hugh Exp $ */
+/*	$OpenBSD: romread.S,v 1.2 2011/07/06 18:32:59 miod Exp $ */
 /*	$NetBSD: romread.S,v 1.1 2002/02/24 01:04:25 matt Exp $ */
 /*
  * Copyright (c) 1995 Ludd, University of Lule}, Sweden.

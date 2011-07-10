@@ -1,4 +1,4 @@
-/*	$OpenBSD: autoconf.c,v 1.12 2008/08/12 17:23:21 miod Exp $ */
+/*	$OpenBSD: autoconf.c,v 1.13 2008/08/18 23:20:43 miod Exp $ */
 /*	$NetBSD: autoconf.c,v 1.19 2002/06/01 15:33:22 ragge Exp $ */
 /*
  * Copyright (c) 1994, 1998 Ludd, University of Lule}, Sweden.

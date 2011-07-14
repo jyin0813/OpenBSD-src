@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.56 2011/05/29 21:22:18 schwarze Exp $
+#	$OpenBSD: Makefile,v 1.1 2011/07/10 02:37:22 schwarze Exp $
 
 PROG=		mandoc
 BINDIR=		/usr/bin

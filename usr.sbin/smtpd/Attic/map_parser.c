@@ -1,4 +1,4 @@
-/*	$OpenBSD: map_parser.c,v 1.5 2010/11/28 14:35:58 gilles Exp $	*/
+/*	$OpenBSD: map_parser.c,v 1.6 2011/04/17 13:36:07 gilles Exp $	*/
 
 /*
  * Copyright (c) 2010 Gilles Chehade <gilles@openbsd.org>

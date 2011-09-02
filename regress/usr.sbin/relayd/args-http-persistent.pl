@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-my @lengths = (251, 65536, 0, 1, 2, 3, 4, 5);
+my @lengths = (251, 16384, 0, 1, 2, 3, 4, 5);
 our %args = (
     client => {
 	func => \&http_client,

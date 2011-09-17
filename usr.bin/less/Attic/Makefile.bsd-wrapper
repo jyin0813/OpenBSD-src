@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.bsd-wrapper,v 1.22 2006/10/14 20:20:51 drahn Exp $
+#	$OpenBSD: Makefile.bsd-wrapper,v 1.23 2007/11/03 15:15:40 espie Exp $
 
 #
 # less config

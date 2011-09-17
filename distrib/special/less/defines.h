@@ -19,8 +19,9 @@
 /*
  * SECURE is 1 if you wish to disable a bunch of features in order to
  * be safe to run by unprivileged users.
+ * SECURE_COMPILE is set by the --with-secure configure option.
  */
-#define	SECURE		0
+#define	SECURE		SECURE_COMPILE
 
 /*
  * SMALL is 1 if you wish to disable a bunch of features in order to
@@ -112,10 +113,13 @@
  * LESSKEYFILE_SYS is the filename of the system-wide lesskey output file.
  * DEF_LESSKEYINFILE is the filename of the default lesskey input
  * (in the HOME directory).
+ * LESSHISTFILE is the filename of the history file
+ * (in the HOME directory).
  */
 #define	LESSKEYFILE		".less"
 #define	LESSKEYFILE_SYS		SYSDIR "/sysless"
 #define	DEF_LESSKEYINFILE	".lesskey"
+#define LESSHISTFILE		".lesshst"
 
 
 /* Settings always true on Unix.  */
@@ -129,6 +133,12 @@
  * Pathname separator character.
  */
 #define	PATHNAME_SEP	"/"
+
+/*
+ * The value returned from tgetent on success.
+ * Some HP-UX systems return 0 on success.
+ */
+#define TGETENT_OK  1
 
 /*
  * HAVE_SYS_TYPES_H is 1 if your system has <sys/types.h>.
@@ -159,13 +169,22 @@
 /*
  * Default shell metacharacters and meta-escape character.
  */
-#define	DEF_METACHARS	"; *?\t\n'\"()<>|&^`#\\"
+#define	DEF_METACHARS	"; *?\t\n'\"()<>[]|&^`#\\$%=~"
 #define	DEF_METAESCAPE	"\\"
 
 /*
  * HAVE_DUP is 1 if your system has the dup() call.
  */
 #define	HAVE_DUP	1
+
+/* Define to 1 if you have the memcpy() function. */
+#define HAVE_MEMCPY 1
+
+/* Define to 1 if you have the strchr() function. */
+#define HAVE_STRCHR 1
+
+/* Define to 1 if you have the strstr() function. */
+#define HAVE_STRSTR 1
 
 /*
  * Sizes of various buffers.
@@ -198,11 +217,17 @@
 /* Define to 1 if you have the <errno.h> header file. */
 #define HAVE_ERRNO_H 1
 
+/* Define to 1 if you have the `fchmod' function. */
+/* #undef HAVE_FCHMOD */
+
 /* Define to 1 if you have the <fcntl.h> header file. */
 #define HAVE_FCNTL_H 1
 
 /* Define HAVE_FILENO if you have the fileno() macro. */
 #define HAVE_FILENO 1
+
+/* Define HAVE_FLOAT if your compiler supports the "double" type. */
+/* #undef HAVE_FLOAT */
 
 /* Define to 1 if you have the `fsync' function. */
 #define HAVE_FSYNC 1
@@ -224,9 +249,6 @@
 
 /* Define HAVE_LOCALE if you have locale.h and setlocale. */
 #define HAVE_LOCALE 1
-
-/* Define to 1 if you have the `memcpy' function. */
-#define HAVE_MEMCPY 1
 
 /* Define to 1 if you have the <memory.h> header file. */
 #define HAVE_MEMORY_H 1
@@ -261,11 +283,17 @@
 /* Define to 1 if you have the `sigsetmask' function. */
 #define HAVE_SIGSETMASK 1
 
-/* Define HAVE_SIGSET_T you have the sigset_t type. */
+/* Define to 1 if the system has the type `sigset_t'. */
 #define HAVE_SIGSET_T 1
+
+/* Define to 1 if you have the `snprintf' function. */
+#define HAVE_SNPRINTF 1
 
 /* Define to 1 if you have the `stat' function. */
 #define HAVE_STAT 1
+
+/* Define HAVE_STAT_INO if your struct stat has st_ino and st_dev. */
+#define HAVE_STAT_INO 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
 /* #undef HAVE_STDINT_H */
@@ -276,9 +304,6 @@
 /* Define to 1 if you have the <stdlib.h> header file. */
 #define HAVE_STDLIB_H 1
 
-/* Define to 1 if you have the `strchr' function. */
-#define HAVE_STRCHR 1
-
 /* Define HAVE_STRERROR if you have the strerror() function. */
 #define HAVE_STRERROR 1
 
@@ -288,9 +313,6 @@
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
 
-/* Define to 1 if you have the `strstr' function. */
-#define HAVE_STRSTR 1
-
 /* Define to 1 if you have the `system' function. */
 #define HAVE_SYSTEM 1
 
@@ -299,9 +321,6 @@
 
 /* Define to 1 if you have the <sys/ioctl.h> header file. */
 #define HAVE_SYS_IOCTL_H 1
-
-/* Define to 1 if you have the <sys/ptem.h> header file. */
-/* #undef HAVE_SYS_PTEM_H */
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
@@ -345,6 +364,12 @@
 /* Define HAVE_VOID if your compiler supports the "void" type. */
 #define HAVE_VOID 1
 
+/* Define HAVE_WCTYPE if you have iswupper, iswlower, towupper, towlower. */
+/* #undef HAVE_WCTYPE */
+
+/* Define to 1 if you have the <wctype.h> header file. */
+/* #undef HAVE_WCTYPE_H */
+
 /* Define to 1 if you have the `_setjmp' function. */
 #define HAVE__SETJMP 1
 
@@ -371,11 +396,17 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "less"
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "1"
 
 /* Define as the return type of signal handlers (`int' or `void'). */
 #define RETSIGTYPE void
+
+/* Define SECURE_COMPILE=1 to build a secure version of less. */
+#define SECURE_COMPILE 0
 
 /* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
 /* #undef STAT_MACROS_BROKEN */
@@ -395,8 +426,8 @@
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
 
-/* Define to `long' if <sys/types.h> does not define. */
+/* Define to `long int' if <sys/types.h> does not define. */
 /* #undef off_t */
 
-/* Define to `unsigned' if <sys/types.h> does not define. */
+/* Define to `unsigned int' if <sys/types.h> does not define. */
 /* #undef size_t */

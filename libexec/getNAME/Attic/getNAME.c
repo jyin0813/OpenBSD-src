@@ -1,4 +1,4 @@
-/*	$OpenBSD: getNAME.c,v 1.15 2006/08/17 23:53:52 ray Exp $	*/
+/*	$OpenBSD: getNAME.c,v 1.16 2009/10/27 23:59:31 deraadt Exp $	*/
 /*	$NetBSD: getNAME.c,v 1.7.2.1 1997/11/10 19:54:46 thorpej Exp $	*/
 
 /*-

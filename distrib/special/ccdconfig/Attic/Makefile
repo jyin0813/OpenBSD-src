@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2003/12/17 01:46:51 millert Exp $
+#	$OpenBSD: Makefile,v 1.2 2009/10/28 07:36:49 deraadt Exp $
 
 PROG=	ccdconfig
 COPTS+=	-DSMALL

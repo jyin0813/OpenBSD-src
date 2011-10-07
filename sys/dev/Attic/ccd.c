@@ -1,4 +1,4 @@
-/*	$OpenBSD: ccd.c,v 1.96 2011/06/30 16:28:05 matthew Exp $	*/
+/*	$OpenBSD: ccd.c,v 1.97 2011/07/06 04:49:36 matthew Exp $	*/
 /*	$NetBSD: ccd.c,v 1.33 1996/05/05 04:21:14 thorpej Exp $	*/
 
 /*-

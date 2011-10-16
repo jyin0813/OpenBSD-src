@@ -1,4 +1,4 @@
-/*	$OpenBSD: ungetwc.c,v 1.3 2009/10/22 01:23:16 guenther Exp $	*/
+/*	$OpenBSD: ungetwc.c,v 1.4 2009/11/09 00:18:27 kurt Exp $	*/
 /* $NetBSD: ungetwc.c,v 1.2 2003/01/18 11:29:59 thorpej Exp $ */
 
 /*-
@@ -35,14 +35,13 @@
 #include "local.h"
 
 wint_t
-ungetwc(wint_t wc, FILE *fp)
+__ungetwc(wint_t wc, FILE *fp)
 {
 	struct wchar_io_data *wcio;
 
 	if (wc == WEOF)
 		return WEOF;
 
-	FLOCKFILE(fp);
 	_SET_ORIENTATION(fp, 1);
 	/*
 	 * XXX since we have no way to transform a wchar string to
@@ -52,19 +51,27 @@ ungetwc(wint_t wc, FILE *fp)
 
 	wcio = WCIO_GET(fp);
 	if (wcio == 0) {
-		FUNLOCKFILE(fp);
 		errno = ENOMEM; /* XXX */
 		return WEOF;
 	}
 
 	if (wcio->wcio_ungetwc_inbuf >= WCIO_UNGETWC_BUFSIZE) {
-		FUNLOCKFILE(fp);
 		return WEOF;
 	}
 
 	wcio->wcio_ungetwc_buf[wcio->wcio_ungetwc_inbuf++] = wc;
 	__sclearerr(fp);
-	FUNLOCKFILE(fp);
 
 	return wc;
+}
+
+wint_t
+ungetwc(wint_t wc, FILE *fp)
+{
+	wint_t r;
+
+	FLOCKFILE(fp);
+	r = __ungetwc(wc, fp);
+	FUNLOCKFILE(fp);
+	return (r);
 }

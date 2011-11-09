@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: __svfscanf.c,v 1.1 2005/05/11 18:39:19 espie Exp $ */
 
 /*
  * Copyright (c) 2005 Marc Espie <espie@openbsd.org>

@@ -1,4 +1,4 @@
-/* $OpenBSD: ahb.h,v 1.2 2011/10/21 22:55:01 drahn Exp $ */
+/* $OpenBSD: ahb.h,v 1.3 2011/11/10 00:19:36 matthieu Exp $ */
 /*
  * Copyright (c) 2005,2008 Dale Rahn <drahn@drahn.com>
  *

@@ -8,7 +8,7 @@ for list in $ltypes; do
   for arg in $atypes; do
     [ "X$arg" = "Xcompact" ] && arg2="" || arg2="Ds"
     ${MANDOC} ${MANDOCOPTS} > ENOTYPE.out_tmp 2> ENOTYPE.err_tmp << __EOF__;
-.Dd \$Mdocdate: October 21 2009 $
+.Dd \$Mdocdate: October 28 2009 $
 .Dt ENOTYPE 1
 .Os
 .Sh NAME

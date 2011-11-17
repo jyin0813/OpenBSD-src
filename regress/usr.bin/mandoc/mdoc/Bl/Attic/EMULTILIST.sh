@@ -7,7 +7,7 @@ ltypes="bullet dash enum hyphen item tag diag hang ohang inset column"
 for first in $ltypes; do
   for second in $ltypes; do
     ${MANDOC} > EMULTILIST.out_tmp 2> EMULTILIST.err_tmp << __EOF__;
-.Dd \$Mdocdate: October 21 2009 $
+.Dd \$Mdocdate: October 28 2009 $
 .Dt EMULTILIST 1
 .Os
 .Sh NAME

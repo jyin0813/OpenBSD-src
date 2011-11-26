@@ -1,4 +1,4 @@
-/*      $Id$ */
+/*      $Id: man_conf.c,v 1.1 2011/11/17 14:52:32 schwarze Exp $ */
 /*
  * Copyright (c) 2011 Ingo Schwarze <schwarze@openbsd.org>
  *

@@ -1,5 +1,5 @@
-# $OpenBSD: Makefile,v 1.1.1.1 2005/09/30 14:51:52 kurt Exp $
+# $OpenBSD: Makefile,v 1.1 2011/11/08 23:51:02 guenther Exp $
 
-SUBDIR+= libif1 libif2 libif3 libnormal prog1
+SUBDIR+= test1 test2
 
 .include <bsd.subdir.mk>

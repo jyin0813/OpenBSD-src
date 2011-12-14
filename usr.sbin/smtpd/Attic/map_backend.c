@@ -1,4 +1,4 @@
-/*	$OpenBSD: map_backend.c,v 1.6 2011/05/21 18:43:08 gilles Exp $	*/
+/*	$OpenBSD: map_backend.c,v 1.7 2011/08/30 11:19:51 chl Exp $	*/
 
 /*
  * Copyright (c) 2010 Gilles Chehade <gilles@openbsd.org>

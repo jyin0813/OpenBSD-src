@@ -1,4 +1,4 @@
-/*	$OpenBSD: user_backend.c,v 1.1 2011/05/17 18:54:32 gilles Exp $	*/
+/*	$OpenBSD: user_backend.c,v 1.2 2011/12/08 17:00:28 todd Exp $	*/
 
 /*
  * Copyright (c) 2011 Gilles Chehade <gilles@openbsd.org>

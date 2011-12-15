@@ -1,4 +1,4 @@
-/*	$OpenBSD: queue_shared.c,v 1.54 2011/11/15 23:06:39 gilles Exp $	*/
+/*	$OpenBSD: queue_shared.c,v 1.55 2011/12/14 18:42:27 eric Exp $	*/
 
 /*
  * Copyright (c) 2008 Gilles Chehade <gilles@openbsd.org>

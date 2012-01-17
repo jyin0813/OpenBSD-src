@@ -1,4 +1,4 @@
-/*	$OpenBSD: net_addrcmp.c,v 1.9 2005/03/25 13:24:12 otto Exp $	*/
+/*	$OpenBSD: net_addrcmp.c,v 1.10 2005/06/17 20:36:16 henning Exp $	*/
 
 /*
  * Copyright (c) 1999 Theo de Raadt

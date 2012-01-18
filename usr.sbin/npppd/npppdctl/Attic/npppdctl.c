@@ -1,4 +1,4 @@
-/* $OpenBSD: npppdctl.c,v 1.5 2010/07/31 09:33:09 yasuoka Exp $ */
+/* $OpenBSD: npppdctl.c,v 1.6 2010/09/22 00:32:48 jsg Exp $ */
 
 /*-
  * Copyright (c) 2009 Internet Initiative Japan Inc.
@@ -25,7 +25,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-/* $Id: npppdctl.c,v 1.5 2010/07/31 09:33:09 yasuoka Exp $ */
+/* $Id: npppdctl.c,v 1.6 2010/09/22 00:32:48 jsg Exp $ */
 #include <sys/types.h>
 #include <sys/param.h>
 #include <sys/socket.h>

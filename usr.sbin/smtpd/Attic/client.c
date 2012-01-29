@@ -1,4 +1,4 @@
-/*	$OpenBSD: client.c,v 1.38 2011/11/03 14:34:13 chl Exp $	*/
+/*	$OpenBSD: client.c,v 1.39 2011/12/11 19:58:09 eric Exp $	*/
 
 /*
  * Copyright (c) 2009 Jacek Masiulaniec <jacekm@dobremiasto.net>

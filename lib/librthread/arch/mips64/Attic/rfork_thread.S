@@ -1,4 +1,4 @@
-/*	$OpenBSD: rfork_thread.S,v 1.3 2012/01/17 02:34:18 guenther Exp $	*/
+/*	$OpenBSD: rfork_thread.S,v 1.4 2012/02/17 18:02:18 miod Exp $	*/
 
 /*
  * Copyright (c) 2005, Miodrag Vallat

@@ -1,5 +1,5 @@
-.\"	$OpenBSD: gio.4,v 1.2 2007/05/31 19:19:56 jmc Exp $
-.\"	$NetBSD: gio.4,v 1.6 2004/02/10 16:55:43 wiz Exp $
+.\"	$OpenBSD$
+.\"	$NetBSD: gio.4,v 1.20 2008/04/30 13:10:56 martin Exp $
 .\"
 .\" Copyright (c) 2002 The NetBSD Foundation, Inc.
 .\" All rights reserved.
@@ -15,13 +15,6 @@
 .\" 2. Redistributions in binary form must reproduce the above copyright
 .\"    notice, this list of conditions and the following disclaimer in the
 .\"    documentation and/or other materials provided with the distribution.
-.\" 3. All advertising materials mentioning features or use of this software
-.\"    must display the following acknowledgement:
-.\"        This product includes software developed by the NetBSD
-.\"        Foundation, Inc. and its contributors.
-.\" 4. Neither the name of The NetBSD Foundation nor the names of its
-.\"    contributors may be used to endorse or promote products derived
-.\"    from this software without specific prior written permission.
 .\"
 .\" THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS
 .\" ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
@@ -35,36 +28,55 @@
 .\" ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 .\" POSSIBILITY OF SUCH DAMAGE.
 .\"
-.Dd $Mdocdate: May 31 2007 $
+.Dd $Mdocdate$
 .Dt GIO 4 sgi
 .Os
 .Sh NAME
-.Nm gio
-.Nd SGI's early PCI-like bus
+.Nd Graphics I/O GIO bus
 .Sh SYNOPSIS
 .Cd "gio0 at imc0"
-.Cd "gio0 at pic0"
 .Sh DESCRIPTION
 The
 .Nm
 bus is a bus for connecting high-speed peripherals to the main memory and
 CPU.
-The devices themselves are connected to the
+The devices themselves are typically (but not necessarily) connected to the
 .Xr hpc 4
 peripheral controller, and memory and CPU are accessed through the
 .Xr imc 4
-(Indy Memory Controller) or
-.Xr pic 4
-(Processor Interface Controller).
+system controller.
 The
 .Nm
-bus is found on the Indigo, Indy, and Indigo2 machines.
+bus is found on the Indigo, Indy, Challenge S,
+Challenge M, and Indigo2 machines and exists in three incarnations:
+GIO32, GIO32-bis, and GIO64.
 .Sh SEE ALSO
+.\" .Xr giopci 4 ,
+.\" .Xr grtwo 4 ,
 .Xr hpc 4 ,
 .Xr imc 4 ,
-.Xr pic 4
-.Sh HISTORY
-The
+.Xr intro 4
+.\" .Xr light 4 ,
+.\" .Xr newport 4
+.Sh CAVEATS
+Challenge S systems may use only one
 .Nm
-driver first appeared in
-.Ox 3.6 .
+DMA-capable expansion card, despite having two slots.
+Cards based on the
+.Xr hpc 4
+controller, such as the GIO32 scsi and E++ Ethernet adapters, must be
+placed in slot 1 (closest to the side of the case).
+All other cards must be placed in slot 0 (adjacent to the memory banks).
+.Pp
+Indigo2 and Challenge M systems contain either three or four GIO64 connectors,
+depending on the model.
+However, in both cases only two electrically distinct slots are present.
+Therefore, distinct expansion cards may not share physical connectors
+associated with the same slot.
+On the other hand, this apparently redundant slot connectors allows
+multiple board assemblies to draw more power from the bus, and also
+helps mixing
+.Nm
+and EISA boards in the same chassis.
+In all systems, the upper two GIO64 connectors are GIO slot 1, while
+the lower connectors (either one or two of them) are GIO slot 0.

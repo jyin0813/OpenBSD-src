@@ -1,4 +1,4 @@
-/*	$OpenBSD: btd.c,v 1.1 2008/11/24 23:34:42 uwe Exp $	*/
+/*	$OpenBSD: atomicio.c,v 1.1 2008/11/26 06:51:43 uwe Exp $	*/
 
 /*
  * Copyright (c) 2003 Can Erkin Acar

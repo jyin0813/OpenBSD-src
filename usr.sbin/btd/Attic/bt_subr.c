@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: bt_subr.c,v 1.1 2008/11/26 06:51:43 uwe Exp $	*/
 /*	$NetBSD: bluetooth.c,v 1.1 2006/06/19 15:44:36 gdamore Exp $	*/
 
 /*
@@ -26,7 +26,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: bluetooth.c,v 1.1 2006/06/19 15:44:36 gdamore Exp $
+ * $Id: bt_subr.c,v 1.1 2008/11/26 06:51:43 uwe Exp $
  * $FreeBSD: src/lib/libbluetooth/bluetooth.c,v 1.2 2004/03/05 08:10:17 markm Exp $
  */
 

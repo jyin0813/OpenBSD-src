@@ -57,7 +57,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: sdp.h,v 1.2 2006/08/17 20:13:31 plunky Exp $
+ * $Id: sdp.h,v 1.1 2008/11/26 21:48:30 uwe Exp $
  * $FreeBSD: src/lib/libsdp/sdp.h,v 1.5 2005/05/27 19:11:33 emax Exp $
  */
 

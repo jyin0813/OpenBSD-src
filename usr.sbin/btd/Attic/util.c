@@ -1,4 +1,4 @@
-/*	$OpenBSD: util.c,v 1.13 2007/03/27 18:22:02 otto Exp $ */
+/*	$OpenBSD: util.c,v 1.1 2008/11/24 23:34:42 uwe Exp $ */
 
 /*
  * Copyright (c) 2004 Alexander Guy <alexander.guy@andern.org>

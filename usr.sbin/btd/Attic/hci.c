@@ -1,4 +1,4 @@
-/*	$OpenBSD: hci.c,v 1.5 2008/11/26 21:48:30 uwe Exp $	*/
+/*	$OpenBSD: hci.c,v 1.6 2008/11/27 00:51:17 uwe Exp $	*/
 /*	$NetBSD: btconfig.c,v 1.13 2008/07/21 13:36:57 lukem Exp $	*/
 
 /*-

@@ -1,4 +1,4 @@
-/*	$OpenBSD: privsep_fdpass.c,v 1.7 2008/03/24 16:11:06 deraadt Exp $	*/
+/*	$OpenBSD: fdpass.c,v 1.1 2008/11/26 06:51:43 uwe Exp $	*/
 
 /*
  * Copyright (c) 2002 Matthieu Herrb

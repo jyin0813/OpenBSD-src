@@ -27,7 +27,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: search.c,v 1.3 2007/12/15 16:03:29 perry Exp $
+ * $Id: sdp_search.c,v 1.1 2008/11/26 21:48:30 uwe Exp $
  * $FreeBSD: src/lib/libsdp/search.c,v 1.8 2007/11/16 15:13:12 emax Exp $
  */
 

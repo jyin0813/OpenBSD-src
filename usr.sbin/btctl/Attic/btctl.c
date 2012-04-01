@@ -1,4 +1,4 @@
-/*	$OpenBSD: btctl.c,v 1.1 2008/11/24 23:34:41 uwe Exp $	*/
+/*	$OpenBSD: btctl.c,v 1.2 2008/11/26 22:17:18 uwe Exp $	*/
 
 /*
  * Copyright (c) 2008 Uwe Stuehler

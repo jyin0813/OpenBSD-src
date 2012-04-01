@@ -1,4 +1,4 @@
-/*	$OpenBSD: sdp.c,v 1.2 2008/11/25 17:13:53 uwe Exp $	*/
+/*	$OpenBSD: sdp_query.c,v 1.1 2008/11/26 21:48:30 uwe Exp $	*/
 /*	$NetBSD: sdp.c,v 1.5 2008/04/20 19:34:23 plunky Exp $	*/
 
 /*-

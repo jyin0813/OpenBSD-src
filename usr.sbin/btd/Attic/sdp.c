@@ -1,4 +1,4 @@
-/*	$OpenBSD: sdp.c,v 1.4 2008/11/26 21:48:30 uwe Exp $	*/
+/*	$OpenBSD: sdp.c,v 1.5 2008/11/27 00:51:17 uwe Exp $	*/
 
 /*
  * Copyright (c) 2008 Uwe Stuehler <uwe@openbsd.org>

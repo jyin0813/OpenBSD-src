@@ -1,4 +1,4 @@
-/*	$OpenBSD: control.c,v 1.2 2008/11/25 17:13:53 uwe Exp $	*/
+/*	$OpenBSD: control.c,v 1.3 2008/11/26 06:51:43 uwe Exp $	*/
 
 /*
  * Copyright (c) 2008 Uwe Stuehler <uwe@openbsd.org>

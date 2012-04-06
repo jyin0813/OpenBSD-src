@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_evenodd.c,v 1.5 2002/12/16 07:01:03 tdeval Exp $	*/
+/*	$OpenBSD: rf_evenodd.c,v 1.6 2011/06/21 16:46:00 tedu Exp $	*/
 /*	$NetBSD: rf_evenodd.c,v 1.4 2000/01/07 03:40:59 oster Exp $	*/
 
 /*

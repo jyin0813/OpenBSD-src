@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_openbsd.h,v 1.6 2008/06/26 05:42:17 ray Exp $	*/
+/*	$OpenBSD: rf_openbsd.h,v 1.7 2008/06/27 06:03:08 ray Exp $	*/
 
 /*
  * Copyright (c) 1996, 1997, 1998 The NetBSD Foundation, Inc.

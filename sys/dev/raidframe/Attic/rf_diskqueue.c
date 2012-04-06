@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_diskqueue.c,v 1.7 2002/12/16 07:01:03 tdeval Exp $	*/
+/*	$OpenBSD: rf_diskqueue.c,v 1.8 2007/09/09 16:50:23 krw Exp $	*/
 /*	$NetBSD: rf_diskqueue.c,v 1.13 2000/03/04 04:22:34 oster Exp $	*/
 
 /*

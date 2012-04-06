@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_map.c,v 1.5 2002/12/16 07:01:04 tdeval Exp $	*/
+/*	$OpenBSD: rf_map.c,v 1.6 2011/06/21 16:46:00 tedu Exp $	*/
 /*	$NetBSD: rf_map.c,v 1.5 2000/06/29 00:22:27 oster Exp $	*/
 
 /*

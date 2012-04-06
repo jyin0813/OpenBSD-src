@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_debugMem.h,v 1.5 2002/12/16 07:01:03 tdeval Exp $	*/
+/*	$OpenBSD: rf_debugMem.h,v 1.6 2007/09/09 16:50:23 krw Exp $	*/
 /*	$NetBSD: rf_debugMem.h,v 1.7 1999/09/05 01:58:11 oster Exp $	*/
 
 /*

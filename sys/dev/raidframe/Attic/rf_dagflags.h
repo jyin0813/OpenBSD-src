@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_dagflags.h,v 1.3 2002/12/16 07:01:03 tdeval Exp $	*/
+/*	$OpenBSD: rf_dagflags.h,v 1.4 2007/11/26 09:28:33 martynas Exp $	*/
 /*	$NetBSD: rf_dagflags.h,v 1.3 1999/02/05 00:06:08 oster Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: raidctl.c,v 1.30 2009/11/12 15:29:24 deraadt Exp $	*/
+/*	$OpenBSD: raidctl.c,v 1.31 2010/09/24 00:11:15 deraadt Exp $	*/
 /*      $NetBSD: raidctl.c,v 1.27 2001/07/10 01:30:52 lukem Exp $   */
 
 /*-

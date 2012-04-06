@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_reconstruct.c,v 1.17 2010/05/23 13:49:35 naddy Exp $	*/
+/*	$OpenBSD: rf_reconstruct.c,v 1.18 2011/06/21 16:46:00 tedu Exp $	*/
 /*	$NetBSD: rf_reconstruct.c,v 1.26 2000/06/04 02:05:13 oster Exp $	*/
 
 /*

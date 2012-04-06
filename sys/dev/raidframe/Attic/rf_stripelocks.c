@@ -1,4 +1,4 @@
-/*	$OpenBSD: rf_stripelocks.c,v 1.5 2002/12/16 07:01:05 tdeval Exp $	*/
+/*	$OpenBSD: rf_stripelocks.c,v 1.6 2007/11/26 09:28:33 martynas Exp $	*/
 /*	$NetBSD: rf_stripelocks.c,v 1.5 2000/01/08 23:45:05 oster Exp $	*/
 
 /*

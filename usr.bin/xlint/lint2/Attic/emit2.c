@@ -1,4 +1,4 @@
-/*	$OpenBSD: emit2.c,v 1.6 2010/07/24 22:17:03 guenther Exp $	*/
+/*	$OpenBSD: emit2.c,v 1.7 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: emit2.c,v 1.2 1995/07/03 21:24:44 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: init.c,v 1.12 2010/09/09 11:31:40 miod Exp $	*/
+/*	$OpenBSD: init.c,v 1.13 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: init.c,v 1.4 1995/10/02 17:21:37 jpo Exp $	*/
 
 /*

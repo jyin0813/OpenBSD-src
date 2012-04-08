@@ -1,4 +1,4 @@
-/*	$OpenBSD: read.c,v 1.11 2011/03/15 21:59:27 espie Exp $	*/
+/*	$OpenBSD: read.c,v 1.12 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: read.c,v 1.2 1995/07/03 21:24:59 cgd Exp $	*/
 
 /*

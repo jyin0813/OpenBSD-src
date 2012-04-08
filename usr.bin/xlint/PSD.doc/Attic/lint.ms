@@ -1,4 +1,4 @@
-.\"	$OpenBSD$
+.\"	$OpenBSD: lint.ms,v 1.1 2003/06/26 16:30:10 mickey Exp $
 .\"
 .\" Copyright (C) Caldera International Inc.  2001-2002.
 .\" All rights reserved.

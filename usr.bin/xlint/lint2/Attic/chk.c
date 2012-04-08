@@ -1,4 +1,4 @@
-/*	$OpenBSD: chk.c,v 1.25 2011/07/03 18:15:10 martynas Exp $	*/
+/*	$OpenBSD: chk.c,v 1.26 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: chk.c,v 1.2 1995/07/03 21:24:42 cgd Exp $	*/
 
 /*

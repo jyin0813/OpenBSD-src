@@ -1,4 +1,4 @@
-/*	$OpenBSD: externs1.h,v 1.15 2006/05/29 20:47:22 cloder Exp $	*/
+/*	$OpenBSD: externs1.h,v 1.16 2010/07/24 22:17:03 guenther Exp $	*/
 /*	$NetBSD: externs1.h,v 1.7 1995/10/02 17:31:39 jpo Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lint1.h,v 1.14 2010/07/24 22:17:03 guenther Exp $	*/
+/*	$OpenBSD: lint1.h,v 1.15 2011/05/30 15:15:58 martynas Exp $	*/
 /*	$NetBSD: lint1.h,v 1.6 1995/10/02 17:31:41 jpo Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: mem2.c,v 1.4 2005/11/20 17:09:55 cloder Exp $	*/
+/*	$OpenBSD: mem2.c,v 1.5 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: mem2.c,v 1.3 1995/10/02 17:27:11 jpo Exp $	*/
 
 /*

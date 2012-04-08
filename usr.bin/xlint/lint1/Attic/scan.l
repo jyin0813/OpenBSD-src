@@ -1,5 +1,5 @@
 %{
-/*	$OpenBSD: scan.l,v 1.32 2010/07/24 22:17:03 guenther Exp $	*/
+/*	$OpenBSD: scan.l,v 1.33 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: scan.l,v 1.8 1995/10/23 13:38:51 jpo Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: op.h,v 1.3 2005/11/29 20:09:57 cloder Exp $	*/
+/*	$OpenBSD: op.h,v 1.4 2010/07/24 22:17:03 guenther Exp $	*/
 /*	$NetBSD: op.h,v 1.2 1995/07/03 21:24:27 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: lint.h,v 1.6 2006/05/29 20:47:22 cloder Exp $	*/
+/*	$OpenBSD: lint.h,v 1.7 2010/07/24 22:17:03 guenther Exp $	*/
 /*	$NetBSD: lint.h,v 1.2 1995/07/03 21:24:18 cgd Exp $	*/
 
 /*

@@ -1,4 +1,4 @@
-/*	$OpenBSD: msg.c,v 1.8 2005/12/10 20:26:10 cloder Exp $	*/
+/*	$OpenBSD: msg.c,v 1.9 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: msg.c,v 1.2 1995/07/03 21:24:56 cgd Exp $	*/
 
 /*

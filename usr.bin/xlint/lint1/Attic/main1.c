@@ -1,4 +1,4 @@
-/*	$OpenBSD: main1.c,v 1.11 2006/05/29 20:47:22 cloder Exp $	*/
+/*	$OpenBSD: main1.c,v 1.12 2011/09/21 18:08:07 jsg Exp $	*/
 /*	$NetBSD: main1.c,v 1.3 1995/10/02 17:29:56 jpo Exp $	*/
 
 /*

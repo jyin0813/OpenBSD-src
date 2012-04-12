@@ -1,4 +1,4 @@
-/*	$OpenBSD: local2.c,v 1.6 2007/12/22 22:56:31 stefan Exp $	*/
+/*	$OpenBSD: local2.c,v 1.7 2008/08/17 18:40:13 ragge Exp $	*/
 /*
  * Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
  *

@@ -1,4 +1,4 @@
-/*      $OpenBSD: gcc_compat.c,v 1.5 2008/04/11 20:45:52 stefan Exp $     */
+/*      $OpenBSD: gcc_compat.c,v 1.6 2008/08/17 18:40:12 ragge Exp $     */
 /*
  * Copyright (c) 2004 Anders Magnusson (ragge@ludd.luth.se).
  * All rights reserved.

@@ -1,4 +1,4 @@
-/*	$Id: token.c,v 1.28 2009/08/23 12:23:13 ragge Exp $	*/
+/*	$Id: token.c,v 1.1 2009/12/17 17:52:54 ragge Exp $	*/
 
 /*
  * Copyright (c) 2004,2009 Anders Magnusson. All rights reserved.

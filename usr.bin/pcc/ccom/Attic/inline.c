@@ -1,4 +1,4 @@
-/*	$OpenBSD: inline.c,v 1.1 2007/10/07 17:58:51 otto Exp $	*/
+/*	$OpenBSD: inline.c,v 1.2 2008/01/12 17:26:16 ragge Exp $	*/
 /*
  * Copyright (c) 2003 Anders Magnusson (ragge@ludd.luth.se).
  * All rights reserved.

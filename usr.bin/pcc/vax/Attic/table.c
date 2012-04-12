@@ -1,4 +1,4 @@
-/*	$OpenBSD: table.c,v 1.2 2007/10/27 14:19:18 ragge Exp $	*/
+/*	$OpenBSD: table.c,v 1.3 2007/10/29 16:38:55 ragge Exp $	*/
 /*
  * Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
  *

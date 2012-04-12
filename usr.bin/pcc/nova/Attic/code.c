@@ -1,4 +1,4 @@
-/*	$OpenBSD: code.c,v 1.3 2007/11/22 15:06:43 stefan Exp $	*/
+/*	$OpenBSD: code.c,v 1.4 2007/12/22 13:13:27 stefan Exp $	*/
 /*
  * Copyright (c) 2006 Anders Magnusson (ragge@ludd.luth.se).
  * All rights reserved.

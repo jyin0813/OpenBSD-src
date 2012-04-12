@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.1 2002/02/17 05:44:07 art Exp $
+#	$OpenBSD: Makefile,v 1.1 2010/08/04 06:05:26 guenther Exp $
 
 PROG=kqueue
 

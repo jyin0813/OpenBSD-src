@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.2 2007/09/15 21:48:06 ray Exp $
+#	$OpenBSD: Makefile,v 1.3 2007/10/07 17:58:50 otto Exp $
 #
 # Makefile.in for top-level of pcc.
 #

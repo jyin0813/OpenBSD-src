@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: local2.c,v 1.4 2008/04/11 20:45:52 stefan Exp $	*/
 
 /*
  * Copyright (c) 2007 Michael Shalayeff

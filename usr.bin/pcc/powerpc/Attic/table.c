@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: table.c,v 1.10 2008/04/11 20:45:52 stefan Exp $	*/
 /*-
  * Copyright (c) 2007 Gregory McGarry <g.mcgarry@ieee.org>
  *

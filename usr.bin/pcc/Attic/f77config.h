@@ -1,4 +1,4 @@
-/*	$OpenBSD: f77config.h,v 1.2 2007/09/15 22:04:39 ray Exp $	*/
+/*	$OpenBSD: f77config.h,v 1.1 2007/10/07 17:58:50 otto Exp $	*/
 
 /*
  * Copyright (c) 2004 Anders Magnusson (ragge@ludd.luth.se).

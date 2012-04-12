@@ -1,4 +1,4 @@
-/*	$OpenBSD: code.c,v 1.2 2007/11/22 15:06:43 stefan Exp $	*/
+/*	$OpenBSD: code.c,v 1.4 2008/04/11 20:45:52 stefan Exp $	*/
 
 /*
  * Copyright (c) 2007 Michael Shalayeff

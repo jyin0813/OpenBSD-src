@@ -1,4 +1,4 @@
-/*	$OpenBSD: main.c,v 1.5 2008/04/11 20:45:52 stefan Exp $	*/
+/*	$OpenBSD: main.c,v 1.6 2008/08/17 18:40:13 ragge Exp $	*/
 
 /*
  * Copyright (c) 2002 Anders Magnusson. All rights reserved.

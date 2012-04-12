@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: macdefs.h,v 1.3 2008/04/11 20:45:52 stefan Exp $	*/
 
 /*
  * Copyright (c) 2007 Michael Shalayeff

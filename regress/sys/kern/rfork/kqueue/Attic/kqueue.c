@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: kqueue.c,v 1.1 2010/08/04 06:05:26 guenther Exp $	*/
 /*
  * Written by Philip Guenther <guenther@openbsd.org>, 2010 Public Domain.
  *

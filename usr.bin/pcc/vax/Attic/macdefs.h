@@ -1,4 +1,4 @@
-/*	$OpenBSD: macdefs.h,v 1.2 2007/10/27 14:19:18 ragge Exp $	*/
+/*	$OpenBSD: macdefs.h,v 1.3 2007/11/17 12:00:37 ragge Exp $	*/
 /*
  * Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
  *

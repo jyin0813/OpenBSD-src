@@ -1,4 +1,4 @@
-/*	$OpenBSD: manifest.h,v 1.10 2008/04/11 20:45:52 stefan Exp $	*/
+/*	$OpenBSD: manifest.h,v 1.11 2008/08/17 18:40:13 ragge Exp $	*/
 /*
  * Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
  *

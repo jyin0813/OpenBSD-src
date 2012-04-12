@@ -1,4 +1,4 @@
-/*	$OpenBSD: rfork.S,v 1.1 2002/02/17 23:40:57 deraadt Exp $	*/
+/*	$OpenBSD: rfork.S,v 1.2 2003/06/02 20:18:33 millert Exp $	*/
 
 /*
  * Copyright (c) 1992, 1993

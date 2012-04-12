@@ -1,4 +1,4 @@
-/*	$OpenBSD: cc.c,v 1.14 2008/08/17 18:40:12 ragge Exp $	*/
+/*	$OpenBSD: cc.c,v 1.15 2008/08/18 20:54:10 ragge Exp $	*/
 /*
  * Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
  *

@@ -1,4 +1,4 @@
-/*	$OpenBSD: local.c,v 1.2 2007/11/18 17:39:55 ragge Exp $	*/
+/*	$OpenBSD: local.c,v 1.4 2008/04/11 20:45:52 stefan Exp $	*/
 
 /*
  * Copyright (c) 2007 Michael Shalayeff

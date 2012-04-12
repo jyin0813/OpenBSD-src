@@ -1,4 +1,4 @@
-/* $OpenBSD: rfork.S,v 1.1 2004/01/20 03:06:03 drahn Exp $ */
+/* $OpenBSD: rfork.S,v 1.1 2004/02/01 05:30:41 drahn Exp $ */
 
 /*
  * Copyright (c) 2004 Dale Rahn

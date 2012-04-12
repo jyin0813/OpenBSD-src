@@ -1,4 +1,4 @@
-/*	$OpenBSD: optim2.c,v 1.7 2008/01/12 17:17:28 ragge Exp $	*/
+/*	$OpenBSD: optim2.c,v 1.8 2008/08/17 18:40:13 ragge Exp $	*/
 /*
  * Copyright (c) 2004 Anders Magnusson (ragge@ludd.luth.se).
  * All rights reserved.

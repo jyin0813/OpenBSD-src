@@ -1,4 +1,4 @@
-/*	$OpenBSD: order.c,v 1.3 2007/11/16 09:00:13 otto Exp $	*/
+/*	$OpenBSD: order.c,v 1.4 2007/12/09 18:56:17 ragge Exp $	*/
 /*
  * Copyright(C) Caldera International Inc. 2001-2002. All rights reserved.
  *

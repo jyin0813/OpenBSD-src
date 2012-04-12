@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile,v 1.5 2007/10/22 13:40:08 otto Exp $
+#	$OpenBSD: Makefile,v 1.6 2008/08/17 18:40:12 ragge Exp $
 #
 # Makefile for the cc part of pcc.
 #

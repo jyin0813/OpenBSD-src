@@ -1,4 +1,4 @@
-/*	$OpenBSD: rfsharefd.c,v 1.2 2002/02/17 18:32:09 deraadt Exp $	*/
+/*	$OpenBSD: rfsharefd.c,v 1.3 2003/07/31 21:48:09 deraadt Exp $	*/
 /*
  * Written by Artur Grabowski <art@openbsd.org>, 2002 Public Domain.
  */

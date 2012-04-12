@@ -1,4 +1,4 @@
-/*	$OpenBSD: protos.h,v 1.7 2008/01/12 17:17:28 ragge Exp $	*/
+/*	$OpenBSD: protos.h,v 1.8 2008/08/17 18:40:13 ragge Exp $	*/
 
 void cerror(char *s, ...);
 void werror(char *s, ...);

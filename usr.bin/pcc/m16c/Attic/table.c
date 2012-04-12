@@ -1,4 +1,4 @@
-/*	$OpenBSD: table.c,v 1.2 2007/09/15 22:04:38 ray Exp $	*/
+/*	$OpenBSD: table.c,v 1.1 2007/10/07 17:58:51 otto Exp $	*/
 
 #include "pass2.h"
 

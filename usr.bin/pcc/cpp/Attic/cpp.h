@@ -1,4 +1,4 @@
-/*	$OpenBSD: cpp.h,v 1.6 2008/08/17 18:40:13 ragge Exp $	*/
+/*	$OpenBSD: cpp.h,v 1.7 2009/12/17 17:52:54 ragge Exp $	*/
 
 /*
  * Copyright (c) 2004 Anders Magnusson (ragge@ludd.luth.se).

@@ -1,4 +1,4 @@
-/*	$OpenBSD$ */
+/*	$OpenBSD: rfork.S,v 1.3 2005/08/07 16:40:16 espie Exp $ */
 /*
  * Copyright (c) 1983, 1993
  *	The Regents of the University of California.  All rights reserved.

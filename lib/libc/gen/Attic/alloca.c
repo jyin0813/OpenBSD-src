@@ -1,4 +1,4 @@
-/*	$OpenBSD: alloca.c,v 1.7 2005/11/30 15:02:59 deraadt Exp $	*/
+/*	$OpenBSD: alloca.c,v 1.8 2007/02/26 19:32:54 miod Exp $	*/
 
 /* alloca.c -- allocate automatically reclaimed memory
    (Mostly) portable public-domain implementation -- D A Gwyn

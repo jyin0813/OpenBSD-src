@@ -1,4 +1,4 @@
-/*	$OpenBSD: Lint_rfork.c,v 1.1 1998/02/08 22:45:10 tholo Exp $	*/
+/*	$OpenBSD: Lint_rfork.c,v 1.1 2004/09/14 22:18:35 deraadt Exp $	*/
 
 /*
  * This file placed in the public domain.

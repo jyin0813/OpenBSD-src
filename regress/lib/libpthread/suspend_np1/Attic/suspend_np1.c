@@ -1,4 +1,4 @@
-/*	$OpenBSD$	*/
+/*	$OpenBSD: suspend_np1.c,v 1.1 2012/02/21 13:02:28 kurt Exp $	*/
 /*
  * Copyright (c) 2012 Kurt Miller <kurt@intricatesoftware.com>
  *

@@ -1,4 +1,4 @@
-#	$OpenBSD: Makefile.bsd-wrapper,v 1.1 2004/02/29 19:32:33 drahn Exp $
+#	$OpenBSD: Makefile.bsd-wrapper,v 1.2 2004/12/30 17:35:26 espie Exp $
 
 # this only supports gcc3, because of internal types
 

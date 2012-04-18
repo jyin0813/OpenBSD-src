@@ -1,4 +1,4 @@
-/*	$OpenBSD: impactreg.h,v 1.1 2010/03/07 21:26:24 miod Exp $	*/
+/*	$OpenBSD: impactreg.h,v 1.2 2012/04/16 22:17:16 miod Exp $	*/
 /*
  * Copyright (c) 2010 Miodrag Vallat.
  * Copyright (c) 2009, 2010 Joel Sing <jsing@openbsd.org>

@@ -1,4 +1,4 @@
-/*	$OpenBSD: impact.c,v 1.6 2010/04/06 19:12:34 miod Exp $	*/
+/*	$OpenBSD: impact.c,v 1.7 2012/04/16 22:17:16 miod Exp $	*/
 
 /*
  * Copyright (c) 2010 Miodrag Vallat.

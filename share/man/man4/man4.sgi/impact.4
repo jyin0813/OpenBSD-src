@@ -1,4 +1,4 @@
-.\"     $OpenBSD: odyssey.4,v 1.2 2010/03/07 14:13:58 jsing Exp $
+.\"     $OpenBSD: impact.4,v 1.1 2010/03/07 21:26:24 miod Exp $
 .\"
 .\" Copyright (c) 2010 Joel Sing <jsing@openbsd.org>
 .\"
@@ -21,6 +21,7 @@
 .Nm impact
 .Nd SGI Impact (aka Mardigras) graphics
 .Sh SYNOPSIS
+.Cd "impact* at gio?"
 .Cd "impact* at xbow?"
 .Cd "wsdisplay* at impact?"
 .Sh DESCRIPTION
@@ -28,15 +29,12 @@ The
 .Nm
 driver provides support for the Impact (aka Mardigras) graphics card,
 which can be found in SGI
-.Tn Octane ,
-.Tn Octane2 ,
-and
-.Tn Onyx
-systems.
+Indigo2, Octane, Octane 2 and Onyx systems.
 Console support is provided by the
 .Xr wscons 4
 console framework.
 .Sh SEE ALSO
+.Xr gio 4 ,
 .Xr intro 4 ,
 .Xr wscons 4 ,
 .Xr wsdisplay 4 ,

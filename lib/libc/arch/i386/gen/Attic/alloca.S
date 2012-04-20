@@ -1,4 +1,4 @@
-/* $OpenBSD$ */
+/* $OpenBSD: alloca.S,v 1.6 2005/08/07 11:30:38 espie Exp $ */
 /*-
  * Copyright (c) 1990 The Regents of the University of California.
  * All rights reserved.

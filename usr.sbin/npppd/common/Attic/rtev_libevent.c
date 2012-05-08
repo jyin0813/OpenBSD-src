@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-/* $Id: rtev_libevent.c,v 1.1 2010/01/11 04:20:57 yasuoka Exp $ */
+/* $Id: rtev_libevent.c,v 1.2 2010/07/01 03:38:17 yasuoka Exp $ */
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <net/route.h>
